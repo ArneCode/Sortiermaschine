@@ -12,6 +12,7 @@ tasks:
       sudo apt install -y graphviz
       sudo apt-get install -y texlive-fonts-recommended
       sudo apt-get install -y texlive-fonts-extra
+      echo "Fertig"
   - command: |
       doxygen Doxyfile
       cd html
