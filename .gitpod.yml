@@ -1,6 +1,13 @@
 tasks:
   - command: |
-      sudo apt-get -y install doxygen
+      git clone https://github.com/doxygen/doxygen.git
+      cd doxygen
+      mkdir build
+      cd build
+      cmake -G "Unix Makefiles" ..
+      make
+      make install
+      cd ..
       sudo apt install -y graphviz
       sudo apt-get install -y texlive-fonts-recommended
       sudo apt-get install -y texlive-fonts-extra
