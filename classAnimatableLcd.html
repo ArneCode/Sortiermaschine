@@ -65,11 +65,14 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classAnimatableLcd-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AnimatableLcd Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="animLcd_8h_source.html">animLcd.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AnimatableLcd:</div>
 <div class="dyncontent">
@@ -84,40 +87,340 @@ Collaboration diagram for AnimatableLcd:</div>
 <div class="dyncontent">
 <div class="center"><img src="classAnimatableLcd__coll__graph.png" border="0" usemap="#AnimatableLcd_coll__map" alt="Collaboration graph"/></div>
 <map name="AnimatableLcd_coll__map" id="AnimatableLcd_coll__map">
-<area shape="rect" title=" " alt="" coords="13,80,132,107"/>
-<area shape="rect" title=" " alt="" coords="5,5,140,32"/>
+<area shape="rect" title=" " alt="" coords="105,81,223,108"/>
+<area shape="rect" href="structLcdString.html" title=" " alt="" coords="33,171,116,197"/>
+<area shape="rect" title=" " alt="" coords="97,5,231,32"/>
+<area shape="rect" href="classAnimString.html" title=" " alt="" coords="71,247,166,273"/>
+<area shape="rect" href="structCallable.html" title=" " alt="" coords="5,81,80,108"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abd8ee2191732afcaccc26c8caf5dc108"><td class="memItemLeft" align="right" valign="top"><a id="abd8ee2191732afcaccc26c8caf5dc108"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnimation</b> (<a class="el" href="classAnimString.html">AnimString</a> *_animString)</td></tr>
+<tr class="memitem:abd8ee2191732afcaccc26c8caf5dc108"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatableLcd.html#abd8ee2191732afcaccc26c8caf5dc108">setAnimation</a> (<a class="el" href="classAnimString.html">AnimString</a> *_animString)</td></tr>
+<tr class="memdesc:abd8ee2191732afcaccc26c8caf5dc108"><td class="mdescLeft">&#160;</td><td class="mdescRight">setzt die aktuelle animation  <a href="classAnimatableLcd.html#abd8ee2191732afcaccc26c8caf5dc108">More...</a><br /></td></tr>
 <tr class="separator:abd8ee2191732afcaccc26c8caf5dc108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaff767fb418dbc3e902dd4a1be3207a8"><td class="memItemLeft" align="right" valign="top"><a id="aaff767fb418dbc3e902dd4a1be3207a8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printCentered</b> (String text, int length=-1, int row=0)</td></tr>
+<tr class="memitem:aaff767fb418dbc3e902dd4a1be3207a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a> (String text, int length=-1, int row=0)</td></tr>
+<tr class="memdesc:aaff767fb418dbc3e902dd4a1be3207a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt einen String zentriert auf dem Lcd-Display aus.  <a href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">More...</a><br /></td></tr>
 <tr class="separator:aaff767fb418dbc3e902dd4a1be3207a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5509573d45cc84cda93b125fdca749e"><td class="memItemLeft" align="right" valign="top"><a id="ad5509573d45cc84cda93b125fdca749e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printPretty</b> (String text)</td></tr>
+<tr class="memitem:ad5509573d45cc84cda93b125fdca749e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">printPretty</a> (String text)</td></tr>
+<tr class="memdesc:ad5509573d45cc84cda93b125fdca749e"><td class="mdescLeft">&#160;</td><td class="mdescRight">gibt den Text "schön" aus, das heißt zentriert und mit automatischen Zeilenumbrüchen  <a href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">More...</a><br /></td></tr>
 <tr class="separator:ad5509573d45cc84cda93b125fdca749e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85725484bae8d5c0b1190366b3121f99"><td class="memItemLeft" align="right" valign="top"><a id="a85725484bae8d5c0b1190366b3121f99"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memitem:a85725484bae8d5c0b1190366b3121f99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99">update</a> ()</td></tr>
+<tr class="memdesc:a85725484bae8d5c0b1190366b3121f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">wird immer wieder von loop aufgerufen um die Animationen zu updaten  <a href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99">More...</a><br /></td></tr>
 <tr class="separator:a85725484bae8d5c0b1190366b3121f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f93bbf8c49a76e17272721e67a24b38"><td class="memItemLeft" align="right" valign="top"><a id="a0f93bbf8c49a76e17272721e67a24b38"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+<tr class="memitem:a0f93bbf8c49a76e17272721e67a24b38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">init</a> ()</td></tr>
+<tr class="memdesc:a0f93bbf8c49a76e17272721e67a24b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Überschreibt die normale lcd init function.  <a href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">More...</a><br /></td></tr>
 <tr class="separator:a0f93bbf8c49a76e17272721e67a24b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9f318e41e16a8527eaeffa9500831ca"><td class="memItemLeft" align="right" valign="top"><a id="ae9f318e41e16a8527eaeffa9500831ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> (const String &amp;text)</td></tr>
+<tr class="memitem:ae9f318e41e16a8527eaeffa9500831ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">print</a> (const String &amp;text)</td></tr>
+<tr class="memdesc:ae9f318e41e16a8527eaeffa9500831ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eigene Lcd-print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen.  <a href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">More...</a><br /></td></tr>
 <tr class="separator:ae9f318e41e16a8527eaeffa9500831ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab18b2860b063a5af62da8f28f07d3182"><td class="memItemLeft" align="right" valign="top"><a id="ab18b2860b063a5af62da8f28f07d3182"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>doAnimation</b> = false</td></tr>
+<tr class="memitem:ab18b2860b063a5af62da8f28f07d3182"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatableLcd.html#ab18b2860b063a5af62da8f28f07d3182">doAnimation</a> = false</td></tr>
 <tr class="separator:ab18b2860b063a5af62da8f28f07d3182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2ee9324b53d0646c9a28faf7db6e6997"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAnimString.html">AnimString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnimatableLcd.html#a2ee9324b53d0646c9a28faf7db6e6997">animString</a></td></tr>
+<tr class="separator:a2ee9324b53d0646c9a28faf7db6e6997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0f93bbf8c49a76e17272721e67a24b38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f93bbf8c49a76e17272721e67a24b38">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AnimatableLcd::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Überschreibt die normale lcd init function. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38_icgraph.png" border="0" usemap="#classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38_icgraph" alt=""/></div>
+<map name="classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38_icgraph" id="classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38_icgraph">
+<area shape="rect" title="Überschreibt die normale lcd init function." alt="" coords="112,5,260,32"/>
+<area shape="rect" href="sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="wird am Anfang des Programms aufgerufen" alt="" coords="5,5,64,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae9f318e41e16a8527eaeffa9500831ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f318e41e16a8527eaeffa9500831ca">&#9670;&nbsp;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AnimatableLcd::print </td>
+          <td>(</td>
+          <td class="paramtype">const String &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Eigene Lcd-print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen. </p>
+<p>für eigene Character einfach die nummer des Characters in den Text einfügen <b>(\1n für den nten Character)</b>, \1 für leerzeichen, das nicht in Zeilenumbruch resultiert </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph.png" border="0" usemap="#classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph" alt=""/></div>
+<map name="classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph" id="classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph">
+<area shape="rect" title="Eigene Lcd&#45;print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen." alt="" coords="716,56,873,83"/>
+<area shape="rect" href="classLcdLoadingAnim.html#a1dcb953ecdb84881d1c80769e7c3829c" title=" " alt="" coords="227,5,385,32"/>
+<area shape="rect" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="452,56,668,83"/>
+<area shape="rect" href="classLcdLoadingAnim.html#a939368d0d51f766b20a82176294fba70" title=" " alt="" coords="469,107,651,133"/>
+<area shape="rect" href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="208,56,404,83"/>
+<area shape="rect" href="classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" title=" " alt="" coords="17,5,148,32"/>
+<area shape="rect" href="structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" title="gibt den String auf dem Lcd&#45;Display aus" alt="" coords="27,56,138,83"/>
+<area shape="rect" href="classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" title=" " alt="" coords="5,107,160,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaff767fb418dbc3e902dd4a1be3207a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff767fb418dbc3e902dd4a1be3207a8">&#9670;&nbsp;</a></span>printCentered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AnimatableLcd::printCentered </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gibt einen String zentriert auf dem Lcd-Display aus. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td></td></tr>
+    <tr><td class="paramname">length</td><td>Länge des Textes, wird neu berechnet wenn nicht angegeben </td></tr>
+    <tr><td class="paramname">row</td><td>Zeile in der der Text ausgegeben werden soll </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_cgraph.png" border="0" usemap="#classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_cgraph" alt=""/></div>
+<map name="classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_cgraph" id="classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_cgraph">
+<area shape="rect" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="5,5,221,32"/>
+<area shape="rect" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca" title="Eigene Lcd&#45;print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen." alt="" coords="269,5,427,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_icgraph.png" border="0" usemap="#classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_icgraph" alt=""/></div>
+<map name="classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_icgraph" id="classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_icgraph">
+<area shape="rect" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="452,31,668,57"/>
+<area shape="rect" href="classLcdLoadingAnim.html#a1dcb953ecdb84881d1c80769e7c3829c" title=" " alt="" coords="227,5,385,32"/>
+<area shape="rect" href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="208,56,404,83"/>
+<area shape="rect" href="classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" title=" " alt="" coords="17,5,148,32"/>
+<area shape="rect" href="structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" title="gibt den String auf dem Lcd&#45;Display aus" alt="" coords="27,56,138,83"/>
+<area shape="rect" href="classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" title=" " alt="" coords="5,107,160,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad5509573d45cc84cda93b125fdca749e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5509573d45cc84cda93b125fdca749e">&#9670;&nbsp;</a></span>printPretty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AnimatableLcd::printPretty </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>gibt den Text "schön" aus, das heißt zentriert und mit automatischen Zeilenumbrüchen </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_cgraph.png" border="0" usemap="#classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_cgraph" alt=""/></div>
+<map name="classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_cgraph" id="classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_cgraph">
+<area shape="rect" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="5,5,201,32"/>
+<area shape="rect" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="249,5,465,32"/>
+<area shape="rect" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca" title="Eigene Lcd&#45;print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen." alt="" coords="513,5,671,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_icgraph.png" border="0" usemap="#classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_icgraph" alt=""/></div>
+<map name="classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_icgraph" id="classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_icgraph">
+<area shape="rect" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="208,56,404,83"/>
+<area shape="rect" href="classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" title=" " alt="" coords="17,5,148,32"/>
+<area shape="rect" href="structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" title="gibt den String auf dem Lcd&#45;Display aus" alt="" coords="27,56,138,83"/>
+<area shape="rect" href="classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" title=" " alt="" coords="5,107,160,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abd8ee2191732afcaccc26c8caf5dc108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd8ee2191732afcaccc26c8caf5dc108">&#9670;&nbsp;</a></span>setAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AnimatableLcd::setAnimation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAnimString.html">AnimString</a> *&#160;</td>
+          <td class="paramname"><em>_animString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setzt die aktuelle animation </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_animString</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108_icgraph.png" border="0" usemap="#classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108_icgraph" alt=""/></div>
+<map name="classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108_icgraph" id="classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108_icgraph">
+<area shape="rect" title="setzt die aktuelle animation" alt="" coords="176,5,391,32"/>
+<area shape="rect" href="classAnimString.html#a565ce4859f7d2d9e74af63c768cfc3e0" title="gibt den String auf dem Lcd&#45;Display aus" alt="" coords="5,5,128,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a85725484bae8d5c0b1190366b3121f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85725484bae8d5c0b1190366b3121f99">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AnimatableLcd::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>wird immer wieder von loop aufgerufen um die Animationen zu updaten </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_cgraph.png" border="0" usemap="#classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_cgraph" alt=""/></div>
+<map name="classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_cgraph" id="classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_cgraph">
+<area shape="rect" title="wird immer wieder von loop aufgerufen um die Animationen zu updaten" alt="" coords="5,5,177,32"/>
+<area shape="rect" href="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b" title=" " alt="" coords="225,5,360,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph.png" border="0" usemap="#classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph" alt=""/></div>
+<map name="classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph" id="classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph">
+<area shape="rect" title="wird immer wieder von loop aufgerufen um die Animationen zu updaten" alt="" coords="104,5,276,32"/>
+<area shape="rect" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2ee9324b53d0646c9a28faf7db6e6997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee9324b53d0646c9a28faf7db6e6997">&#9670;&nbsp;</a></span>animString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAnimString.html">AnimString</a>* AnimatableLcd::animString</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab18b2860b063a5af62da8f28f07d3182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18b2860b063a5af62da8f28f07d3182">&#9670;&nbsp;</a></span>doAnimation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AnimatableLcd::doAnimation = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="animLcd_8h_source.html">animLcd.h</a></li>
+<li><a class="el" href="animLcd_8ino.html">animLcd.ino</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

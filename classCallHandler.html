@@ -65,32 +65,340 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classCallHandler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CallHandler Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Ermöglicht es Calls wie z.B. Funktionen nacheinander aufzurufen, ohne die delay() Funktion zu verwenden.  
+ <a href="classCallHandler.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="callHandler_8h_source.html">callHandler.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for CallHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCallHandler__coll__graph.png" border="0" usemap="#CallHandler_coll__map" alt="Collaboration graph"/></div>
+<map name="CallHandler_coll__map" id="CallHandler_coll__map">
+<area shape="rect" title="Ermöglicht es Calls wie z.B. Funktionen nacheinander aufzurufen, ohne die delay() Funktion zu verwend..." alt="" coords="5,124,104,151"/>
+<area shape="rect" href="structCallable.html" title=" " alt="" coords="17,5,92,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a49ab239f771b84300df21bd426788c3e"><td class="memItemLeft" align="right" valign="top"><a id="a49ab239f771b84300df21bd426788c3e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteCalls</b> ()</td></tr>
+<tr class="memitem:a49ab239f771b84300df21bd426788c3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a> ()</td></tr>
+<tr class="memdesc:a49ab239f771b84300df21bd426788c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">setzt den Speicherplatz der von den Calls besetzt wurde frei  <a href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">More...</a><br /></td></tr>
 <tr class="separator:a49ab239f771b84300df21bd426788c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc5654ccaa266f3a81f8230afdb1c2a0"><td class="memItemLeft" align="right" valign="top"><a id="afc5654ccaa266f3a81f8230afdb1c2a0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCalls</b> (<a class="el" href="structCallable.html">Callable</a> *newCallPtrs[], size_t nCalls)</td></tr>
+<tr class="memitem:afc5654ccaa266f3a81f8230afdb1c2a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a> (<a class="el" href="structCallable.html">Callable</a> *newCallPtrs[], size_t nCalls)</td></tr>
+<tr class="memdesc:afc5654ccaa266f3a81f8230afdb1c2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt die neuen Calls, die ausgeführt werden sollen.  <a href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">More...</a><br /></td></tr>
 <tr class="separator:afc5654ccaa266f3a81f8230afdb1c2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57ff2e7ae3955d5ed4806dcc6469dcf7"><td class="memItemLeft" align="right" valign="top"><a id="a57ff2e7ae3955d5ed4806dcc6469dcf7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memitem:ab08a1aaf131e49f7accddb4f981607f9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCallHandler.html#ab08a1aaf131e49f7accddb4f981607f9">~ CallHandler</a> ()</td></tr>
+<tr class="separator:ab08a1aaf131e49f7accddb4f981607f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ff2e7ae3955d5ed4806dcc6469dcf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCallHandler.html#a57ff2e7ae3955d5ed4806dcc6469dcf7">update</a> ()</td></tr>
+<tr class="memdesc:a57ff2e7ae3955d5ed4806dcc6469dcf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">wird von loop aufgerufen, ermöglicht es zu überprüfen, wechselt zum nächsten Call, wenn der Aktuelle vorbei ist  <a href="classCallHandler.html#a57ff2e7ae3955d5ed4806dcc6469dcf7">More...</a><br /></td></tr>
 <tr class="separator:a57ff2e7ae3955d5ed4806dcc6469dcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab56ebeeecd75a34d9fdda13fff68cda7"><td class="memItemLeft" align="right" valign="top"><a id="ab56ebeeecd75a34d9fdda13fff68cda7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>running</b> = false</td></tr>
+<tr class="memitem:ab56ebeeecd75a34d9fdda13fff68cda7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">running</a> = false</td></tr>
 <tr class="separator:ab56ebeeecd75a34d9fdda13fff68cda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a70bf3c03de1953c55fc468b73c77e0f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCallable.html">Callable</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2">callPtrs</a></td></tr>
+<tr class="separator:a70bf3c03de1953c55fc468b73c77e0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a090fccd59cdc5b99f5f17f1215c4fd29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCallable.html">Callable</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCallHandler.html#a090fccd59cdc5b99f5f17f1215c4fd29">currCallPtr</a></td></tr>
+<tr class="separator:a090fccd59cdc5b99f5f17f1215c4fd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb0098f92adc006de8f8cd69c373fb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCallable.html">Callable</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCallHandler.html#a1bb0098f92adc006de8f8cd69c373fb2">lastCallPtr</a></td></tr>
+<tr class="separator:a1bb0098f92adc006de8f8cd69c373fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c98c2be5b62fafe94b32e3a0f68c84d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCallHandler.html#a2c98c2be5b62fafe94b32e3a0f68c84d">lastCallT</a></td></tr>
+<tr class="separator:a2c98c2be5b62fafe94b32e3a0f68c84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee97c59315e54746cef82a406a49236"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCallHandler.html#a1ee97c59315e54746cef82a406a49236">callsSet</a> = false</td></tr>
+<tr class="separator:a1ee97c59315e54746cef82a406a49236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Ermöglicht es Calls wie z.B. Funktionen nacheinander aufzurufen, ohne die delay() Funktion zu verwenden. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab08a1aaf131e49f7accddb4f981607f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab08a1aaf131e49f7accddb4f981607f9">&#9670;&nbsp;</a></span>~ CallHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual CallHandler::~ <a class="el" href="classCallHandler.html">CallHandler</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a49ab239f771b84300df21bd426788c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ab239f771b84300df21bd426788c3e">&#9670;&nbsp;</a></span>deleteCalls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CallHandler::deleteCalls </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setzt den Speicherplatz der von den Calls besetzt wurde frei </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCallHandler_a49ab239f771b84300df21bd426788c3e_icgraph.png" border="0" usemap="#classCallHandler_a49ab239f771b84300df21bd426788c3e_icgraph" alt=""/></div>
+<map name="classCallHandler_a49ab239f771b84300df21bd426788c3e_icgraph" id="classCallHandler_a49ab239f771b84300df21bd426788c3e_icgraph">
+<area shape="rect" title="setzt den Speicherplatz der von den Calls besetzt wurde frei" alt="" coords="300,31,479,57"/>
+<area shape="rect" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="157,5,207,32"/>
+<area shape="rect" href="sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="112,56,252,83"/>
+<area shape="rect" href="sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="wird am Anfang des Programms aufgerufen" alt="" coords="5,56,64,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afc5654ccaa266f3a81f8230afdb1c2a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc5654ccaa266f3a81f8230afdb1c2a0">&#9670;&nbsp;</a></span>setCalls()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CallHandler::setCalls </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCallable.html">Callable</a> *&#160;</td>
+          <td class="paramname"><em>newCallPtrs</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nCalls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setzt die neuen Calls, die ausgeführt werden sollen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newCallPtrs</td><td></td></tr>
+    <tr><td class="paramname">nCalls</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_cgraph.png" border="0" usemap="#classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_cgraph" alt=""/></div>
+<map name="classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_cgraph" id="classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_cgraph">
+<area shape="rect" title="Setzt die neuen Calls, die ausgeführt werden sollen." alt="" coords="5,5,164,32"/>
+<area shape="rect" href="structCallable.html#a0e146c329fbdf8720a9541f60fe910e9" title=" " alt="" coords="212,5,316,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_icgraph.png" border="0" usemap="#classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_icgraph" alt=""/></div>
+<map name="classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_icgraph" id="classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_icgraph">
+<area shape="rect" title="Setzt die neuen Calls, die ausgeführt werden sollen." alt="" coords="300,56,459,83"/>
+<area shape="rect" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="157,5,207,32"/>
+<area shape="rect" href="sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="wird am Anfang des Programms aufgerufen" alt="" coords="5,81,64,108"/>
+<area shape="rect" href="sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="112,107,252,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a57ff2e7ae3955d5ed4806dcc6469dcf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ff2e7ae3955d5ed4806dcc6469dcf7">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CallHandler::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>wird von loop aufgerufen, ermöglicht es zu überprüfen, wechselt zum nächsten Call, wenn der Aktuelle vorbei ist </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_cgraph.png" border="0" usemap="#classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_cgraph" alt=""/></div>
+<map name="classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_cgraph" id="classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_cgraph">
+<area shape="rect" title="wird von loop aufgerufen, ermöglicht es zu überprüfen, wechselt zum nächsten Call,..." alt="" coords="5,5,156,32"/>
+<area shape="rect" href="structCallable.html#a0e146c329fbdf8720a9541f60fe910e9" title=" " alt="" coords="204,5,308,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_icgraph.png" border="0" usemap="#classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_icgraph" alt=""/></div>
+<map name="classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_icgraph" id="classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_icgraph">
+<area shape="rect" title="wird von loop aufgerufen, ermöglicht es zu überprüfen, wechselt zum nächsten Call,..." alt="" coords="104,5,255,32"/>
+<area shape="rect" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a70bf3c03de1953c55fc468b73c77e0f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70bf3c03de1953c55fc468b73c77e0f2">&#9670;&nbsp;</a></span>callPtrs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCallable.html">Callable</a>** CallHandler::callPtrs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ee97c59315e54746cef82a406a49236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ee97c59315e54746cef82a406a49236">&#9670;&nbsp;</a></span>callsSet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CallHandler::callsSet = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a090fccd59cdc5b99f5f17f1215c4fd29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a090fccd59cdc5b99f5f17f1215c4fd29">&#9670;&nbsp;</a></span>currCallPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCallable.html">Callable</a>** CallHandler::currCallPtr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1bb0098f92adc006de8f8cd69c373fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb0098f92adc006de8f8cd69c373fb2">&#9670;&nbsp;</a></span>lastCallPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structCallable.html">Callable</a>** CallHandler::lastCallPtr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c98c2be5b62fafe94b32e3a0f68c84d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c98c2be5b62fafe94b32e3a0f68c84d">&#9670;&nbsp;</a></span>lastCallT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a> CallHandler::lastCallT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab56ebeeecd75a34d9fdda13fff68cda7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56ebeeecd75a34d9fdda13fff68cda7">&#9670;&nbsp;</a></span>running</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CallHandler::running = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="callHandler_8h_source.html">callHandler.h</a></li>
+<li><a class="el" href="callHandler_8ino.html">callHandler.ino</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

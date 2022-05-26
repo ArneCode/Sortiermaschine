@@ -1,0 +1,4 @@
+<map id="CallHandler" name="CallHandler">
+<area shape="rect" id="node1" title="Ermöglicht es Calls wie z.B. Funktionen nacheinander aufzurufen, ohne die delay() Funktion zu verwend..." alt="" coords="5,124,104,151"/>
+<area shape="rect" id="node2" href="$structCallable.html" title=" " alt="" coords="17,5,92,32"/>
+</map>

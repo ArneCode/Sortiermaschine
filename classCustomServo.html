@@ -65,17 +65,24 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classCustomServo-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CustomServo Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Eine Eigene Servo-Klasse, die es ermöglicht den Servo mit verschiedenen Geschwindigkeiten zu bewegen.  
+ <a href="classCustomServo.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="customServo_8h_source.html">customServo.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CustomServo:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCustomServo__inherit__graph.png" border="0" usemap="#CustomServo_inherit__map" alt="Inheritance graph"/></div>
 <map name="CustomServo_inherit__map" id="CustomServo_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,115,107"/>
+<area shape="rect" title="Eine Eigene Servo&#45;Klasse, die es ermöglicht den Servo mit verschiedenen Geschwindigkeiten zu bewegen." alt="" coords="5,80,115,107"/>
 <area shape="rect" title=" " alt="" coords="31,5,89,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -84,46 +91,490 @@ Collaboration diagram for CustomServo:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCustomServo__coll__graph.png" border="0" usemap="#CustomServo_coll__map" alt="Collaboration graph"/></div>
 <map name="CustomServo_coll__map" id="CustomServo_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,115,107"/>
+<area shape="rect" title="Eine Eigene Servo&#45;Klasse, die es ermöglicht den Servo mit verschiedenen Geschwindigkeiten zu bewegen." alt="" coords="5,80,115,107"/>
 <area shape="rect" title=" " alt="" coords="31,5,89,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d67b7154c659f1bf60a8464115c1e94"><td class="memItemLeft" align="right" valign="top"><a id="a9d67b7154c659f1bf60a8464115c1e94"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (short newAngle)</td></tr>
+<tr class="memitem:a9d67b7154c659f1bf60a8464115c1e94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a> (short newAngle)</td></tr>
+<tr class="memdesc:a9d67b7154c659f1bf60a8464115c1e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit  <a href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">More...</a><br /></td></tr>
 <tr class="separator:a9d67b7154c659f1bf60a8464115c1e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73b3e39ae0c5ac49cde683711517283a"><td class="memItemLeft" align="right" valign="top"><a id="a73b3e39ae0c5ac49cde683711517283a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (short newAngle, time_t duration)</td></tr>
+<tr class="memitem:a73b3e39ae0c5ac49cde683711517283a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#a73b3e39ae0c5ac49cde683711517283a">write</a> (short newAngle, <a class="el" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a> duration)</td></tr>
+<tr class="memdesc:a73b3e39ae0c5ac49cde683711517283a"><td class="mdescLeft">&#160;</td><td class="mdescRight">bewegt den Servo in <b>duration</b> ms  <a href="classCustomServo.html#a73b3e39ae0c5ac49cde683711517283a">More...</a><br /></td></tr>
 <tr class="separator:a73b3e39ae0c5ac49cde683711517283a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95761db4177f965e756bdf725cb10ada"><td class="memItemLeft" align="right" valign="top"><a id="a95761db4177f965e756bdf725cb10ada"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>writeDirect</b> (short angle)</td></tr>
+<tr class="memitem:a95761db4177f965e756bdf725cb10ada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#a95761db4177f965e756bdf725cb10ada">writeDirect</a> (short angle)</td></tr>
 <tr class="separator:a95761db4177f965e756bdf725cb10ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0750f5868c694b9f46638038b8536e0a"><td class="memItemLeft" align="right" valign="top"><a id="a0750f5868c694b9f46638038b8536e0a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpeed</b> (float newSpeed)</td></tr>
+<tr class="memitem:a0750f5868c694b9f46638038b8536e0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#a0750f5868c694b9f46638038b8536e0a">setSpeed</a> (float newSpeed)</td></tr>
 <tr class="separator:a0750f5868c694b9f46638038b8536e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91245621ca3e5340361f061d65025635"><td class="memItemLeft" align="right" valign="top"><a id="a91245621ca3e5340361f061d65025635"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updatePos</b> ()</td></tr>
+<tr class="memitem:a91245621ca3e5340361f061d65025635"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#a91245621ca3e5340361f061d65025635">updatePos</a> ()</td></tr>
 <tr class="separator:a91245621ca3e5340361f061d65025635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2504ffc997018dad9f3811b18b16c672"><td class="memItemLeft" align="right" valign="top"><a id="a2504ffc997018dad9f3811b18b16c672"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
+<tr class="memitem:a2504ffc997018dad9f3811b18b16c672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#a2504ffc997018dad9f3811b18b16c672">stop</a> ()</td></tr>
+<tr class="memdesc:a2504ffc997018dad9f3811b18b16c672"><td class="mdescLeft">&#160;</td><td class="mdescRight">stoppt den Servo  <a href="classCustomServo.html#a2504ffc997018dad9f3811b18b16c672">More...</a><br /></td></tr>
 <tr class="separator:a2504ffc997018dad9f3811b18b16c672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0f2d2d481d21c4d97f333efa744e0e8"><td class="memItemLeft" align="right" valign="top"><a id="ad0f2d2d481d21c4d97f333efa744e0e8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
+<tr class="memitem:ad0f2d2d481d21c4d97f333efa744e0e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#ad0f2d2d481d21c4d97f333efa744e0e8">start</a> ()</td></tr>
+<tr class="memdesc:ad0f2d2d481d21c4d97f333efa744e0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">lässt den Servo weiterlaufen  <a href="classCustomServo.html#ad0f2d2d481d21c4d97f333efa744e0e8">More...</a><br /></td></tr>
 <tr class="separator:ad0f2d2d481d21c4d97f333efa744e0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac247ddd89cf27db323522746e5afa922"><td class="memItemLeft" align="right" valign="top"><a id="ac247ddd89cf27db323522746e5afa922"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDone</b> ()</td></tr>
+<tr class="memitem:ac247ddd89cf27db323522746e5afa922"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#ac247ddd89cf27db323522746e5afa922">isDone</a> ()</td></tr>
+<tr class="memdesc:ac247ddd89cf27db323522746e5afa922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt an, ob der Servo angekommen ist.  <a href="classCustomServo.html#ac247ddd89cf27db323522746e5afa922">More...</a><br /></td></tr>
 <tr class="separator:ac247ddd89cf27db323522746e5afa922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aed492cad900432d556239dc5881bc4d8"><td class="memItemLeft" align="right" valign="top"><a id="aed492cad900432d556239dc5881bc4d8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>done</b></td></tr>
+<tr class="memitem:aed492cad900432d556239dc5881bc4d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#aed492cad900432d556239dc5881bc4d8">done</a></td></tr>
 <tr class="separator:aed492cad900432d556239dc5881bc4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a9ddb7875f2c036d6c4a06c4416e68fb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2">startMove</a> ()</td></tr>
+<tr class="memdesc:a9ddb7875f2c036d6c4a06c4416e68fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt Variabeln, die benötigt werden um den Servo zu bewegen.  <a href="classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2">More...</a><br /></td></tr>
+<tr class="separator:a9ddb7875f2c036d6c4a06c4416e68fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3b9955fef2cba6561cd6cabb0bf98744"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#a3b9955fef2cba6561cd6cabb0bf98744">startAngle</a></td></tr>
+<tr class="separator:a3b9955fef2cba6561cd6cabb0bf98744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d95e6d56c724ec1a25600d60dc8f7a2"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#a5d95e6d56c724ec1a25600d60dc8f7a2">targetAngle</a></td></tr>
+<tr class="separator:a5d95e6d56c724ec1a25600d60dc8f7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1606b8ae2c802448dabeafbb5df2a195"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#a1606b8ae2c802448dabeafbb5df2a195">speed</a></td></tr>
+<tr class="separator:a1606b8ae2c802448dabeafbb5df2a195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a921bf31525e695718b9e17381bf4f2bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#a921bf31525e695718b9e17381bf4f2bb">startTime</a></td></tr>
+<tr class="separator:a921bf31525e695718b9e17381bf4f2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfb21575ea0ea4127fbd95bf402da7e"><td class="memItemLeft" align="right" valign="top">Servo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCustomServo.html#abcfb21575ea0ea4127fbd95bf402da7e">servo</a></td></tr>
+<tr class="separator:abcfb21575ea0ea4127fbd95bf402da7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Eine Eigene Servo-Klasse, die es ermöglicht den Servo mit verschiedenen Geschwindigkeiten zu bewegen. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac247ddd89cf27db323522746e5afa922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac247ddd89cf27db323522746e5afa922">&#9670;&nbsp;</a></span>isDone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CustomServo::isDone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gibt an, ob der Servo angekommen ist. </p>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCustomServo_ac247ddd89cf27db323522746e5afa922_icgraph.png" border="0" usemap="#classCustomServo_ac247ddd89cf27db323522746e5afa922_icgraph" alt=""/></div>
+<map name="classCustomServo_ac247ddd89cf27db323522746e5afa922_icgraph" id="classCustomServo_ac247ddd89cf27db323522746e5afa922_icgraph">
+<area shape="rect" title="Gibt an, ob der Servo angekommen ist." alt="" coords="255,5,417,32"/>
+<area shape="rect" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791" title="hilf Function, Methoden können nicht als functionsparameter benutzt werden" alt="" coords="104,5,207,32"/>
+<area shape="rect" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0750f5868c694b9f46638038b8536e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0750f5868c694b9f46638038b8536e0a">&#9670;&nbsp;</a></span>setSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CustomServo::setSpeed </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newSpeed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCustomServo_a0750f5868c694b9f46638038b8536e0a_cgraph.png" border="0" usemap="#classCustomServo_a0750f5868c694b9f46638038b8536e0a_cgraph" alt=""/></div>
+<map name="classCustomServo_a0750f5868c694b9f46638038b8536e0a_cgraph" id="classCustomServo_a0750f5868c694b9f46638038b8536e0a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,183,32"/>
+<area shape="rect" href="classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2" title="Setzt Variabeln, die benötigt werden um den Servo zu bewegen." alt="" coords="231,5,413,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCustomServo_a0750f5868c694b9f46638038b8536e0a_icgraph.png" border="0" usemap="#classCustomServo_a0750f5868c694b9f46638038b8536e0a_icgraph" alt=""/></div>
+<map name="classCustomServo_a0750f5868c694b9f46638038b8536e0a_icgraph" id="classCustomServo_a0750f5868c694b9f46638038b8536e0a_icgraph">
+<area shape="rect" title=" " alt="" coords="104,5,281,32"/>
+<area shape="rect" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad0f2d2d481d21c4d97f333efa744e0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f2d2d481d21c4d97f333efa744e0e8">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CustomServo::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>lässt den Servo weiterlaufen </p>
+
+</div>
+</div>
+<a id="a9ddb7875f2c036d6c4a06c4416e68fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ddb7875f2c036d6c4a06c4416e68fb2">&#9670;&nbsp;</a></span>startMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CustomServo::startMove </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setzt Variabeln, die benötigt werden um den Servo zu bewegen. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2_icgraph.png" border="0" usemap="#classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2_icgraph" alt=""/></div>
+<map name="classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2_icgraph" id="classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2_icgraph">
+<area shape="rect" title="Setzt Variabeln, die benötigt werden um den Servo zu bewegen." alt="" coords="429,31,612,57"/>
+<area shape="rect" href="classCustomServo.html#a0750f5868c694b9f46638038b8536e0a" title=" " alt="" coords="204,5,381,32"/>
+<area shape="rect" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94" title="bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit" alt="" coords="217,56,368,83"/>
+<area shape="rect" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="55,5,106,32"/>
+<area shape="rect" href="classCustomServo.html#a73b3e39ae0c5ac49cde683711517283a" title="bewegt den Servo in duration ms" alt="" coords="5,56,156,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2504ffc997018dad9f3811b18b16c672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2504ffc997018dad9f3811b18b16c672">&#9670;&nbsp;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CustomServo::stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>stoppt den Servo </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCustomServo_a2504ffc997018dad9f3811b18b16c672_icgraph.png" border="0" usemap="#classCustomServo_a2504ffc997018dad9f3811b18b16c672_icgraph" alt=""/></div>
+<map name="classCustomServo_a2504ffc997018dad9f3811b18b16c672_icgraph" id="classCustomServo_a2504ffc997018dad9f3811b18b16c672_icgraph">
+<area shape="rect" title="stoppt den Servo" alt="" coords="300,5,445,32"/>
+<area shape="rect" href="sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="112,5,252,32"/>
+<area shape="rect" href="sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="wird am Anfang des Programms aufgerufen" alt="" coords="5,5,64,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a91245621ca3e5340361f061d65025635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91245621ca3e5340361f061d65025635">&#9670;&nbsp;</a></span>updatePos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CustomServo::updatePos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCustomServo_a91245621ca3e5340361f061d65025635_icgraph.png" border="0" usemap="#classCustomServo_a91245621ca3e5340361f061d65025635_icgraph" alt=""/></div>
+<map name="classCustomServo_a91245621ca3e5340361f061d65025635_icgraph" id="classCustomServo_a91245621ca3e5340361f061d65025635_icgraph">
+<area shape="rect" title=" " alt="" coords="104,5,289,32"/>
+<area shape="rect" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9d67b7154c659f1bf60a8464115c1e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d67b7154c659f1bf60a8464115c1e94">&#9670;&nbsp;</a></span>write() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CustomServo::write </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>newAngle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newAngle</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCustomServo_a9d67b7154c659f1bf60a8464115c1e94_cgraph.png" border="0" usemap="#classCustomServo_a9d67b7154c659f1bf60a8464115c1e94_cgraph" alt=""/></div>
+<map name="classCustomServo_a9d67b7154c659f1bf60a8464115c1e94_cgraph" id="classCustomServo_a9d67b7154c659f1bf60a8464115c1e94_cgraph">
+<area shape="rect" title="bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit" alt="" coords="5,5,156,32"/>
+<area shape="rect" href="classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2" title="Setzt Variabeln, die benötigt werden um den Servo zu bewegen." alt="" coords="204,5,387,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCustomServo_a9d67b7154c659f1bf60a8464115c1e94_icgraph.png" border="0" usemap="#classCustomServo_a9d67b7154c659f1bf60a8464115c1e94_icgraph" alt=""/></div>
+<map name="classCustomServo_a9d67b7154c659f1bf60a8464115c1e94_icgraph" id="classCustomServo_a9d67b7154c659f1bf60a8464115c1e94_icgraph">
+<area shape="rect" title="bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit" alt="" coords="204,31,355,57"/>
+<area shape="rect" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="55,5,106,32"/>
+<area shape="rect" href="classCustomServo.html#a73b3e39ae0c5ac49cde683711517283a" title="bewegt den Servo in duration ms" alt="" coords="5,56,156,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a73b3e39ae0c5ac49cde683711517283a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b3e39ae0c5ac49cde683711517283a">&#9670;&nbsp;</a></span>write() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CustomServo::write </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>newAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a>&#160;</td>
+          <td class="paramname"><em>duration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bewegt den Servo in <b>duration</b> ms </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newAngle</td><td></td></tr>
+    <tr><td class="paramname">duration</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCustomServo_a73b3e39ae0c5ac49cde683711517283a_cgraph.png" border="0" usemap="#classCustomServo_a73b3e39ae0c5ac49cde683711517283a_cgraph" alt=""/></div>
+<map name="classCustomServo_a73b3e39ae0c5ac49cde683711517283a_cgraph" id="classCustomServo_a73b3e39ae0c5ac49cde683711517283a_cgraph">
+<area shape="rect" title="bewegt den Servo in duration ms" alt="" coords="5,5,156,32"/>
+<area shape="rect" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94" title="bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit" alt="" coords="204,5,355,32"/>
+<area shape="rect" href="classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2" title="Setzt Variabeln, die benötigt werden um den Servo zu bewegen." alt="" coords="403,5,585,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a95761db4177f965e756bdf725cb10ada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95761db4177f965e756bdf725cb10ada">&#9670;&nbsp;</a></span>writeDirect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CustomServo::writeDirect </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCustomServo_a95761db4177f965e756bdf725cb10ada_icgraph.png" border="0" usemap="#classCustomServo_a95761db4177f965e756bdf725cb10ada_icgraph" alt=""/></div>
+<map name="classCustomServo_a95761db4177f965e756bdf725cb10ada_icgraph" id="classCustomServo_a95761db4177f965e756bdf725cb10ada_icgraph">
+<area shape="rect" title=" " alt="" coords="112,5,301,32"/>
+<area shape="rect" href="sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="wird am Anfang des Programms aufgerufen" alt="" coords="5,5,64,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aed492cad900432d556239dc5881bc4d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed492cad900432d556239dc5881bc4d8">&#9670;&nbsp;</a></span>done</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CustomServo::done</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcfb21575ea0ea4127fbd95bf402da7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcfb21575ea0ea4127fbd95bf402da7e">&#9670;&nbsp;</a></span>servo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Servo CustomServo::servo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1606b8ae2c802448dabeafbb5df2a195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1606b8ae2c802448dabeafbb5df2a195">&#9670;&nbsp;</a></span>speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CustomServo::speed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b9955fef2cba6561cd6cabb0bf98744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b9955fef2cba6561cd6cabb0bf98744">&#9670;&nbsp;</a></span>startAngle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">short CustomServo::startAngle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a921bf31525e695718b9e17381bf4f2bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921bf31525e695718b9e17381bf4f2bb">&#9670;&nbsp;</a></span>startTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a> CustomServo::startTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d95e6d56c724ec1a25600d60dc8f7a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d95e6d56c724ec1a25600d60dc8f7a2">&#9670;&nbsp;</a></span>targetAngle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">short CustomServo::targetAngle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="customServo_8h_source.html">customServo.h</a></li>
+<li><a class="el" href="customServo_8ino.html">customServo.ino</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

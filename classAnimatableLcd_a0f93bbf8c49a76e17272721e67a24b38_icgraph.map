@@ -1,0 +1,4 @@
+<map id="AnimatableLcd::init" name="AnimatableLcd::init">
+<area shape="rect" id="node1" title="Überschreibt die normale lcd init function." alt="" coords="112,5,260,32"/>
+<area shape="rect" id="node2" href="$sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="wird am Anfang des Programms aufgerufen" alt="" coords="5,5,64,32"/>
+</map>

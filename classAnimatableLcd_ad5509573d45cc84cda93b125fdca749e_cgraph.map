@@ -1,0 +1,5 @@
+<map id="AnimatableLcd::printPretty" name="AnimatableLcd::printPretty">
+<area shape="rect" id="node1" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="5,5,201,32"/>
+<area shape="rect" id="node2" href="$classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="249,5,465,32"/>
+<area shape="rect" id="node3" href="$classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca" title="Eigene Lcd&#45;print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen." alt="" coords="513,5,671,32"/>
+</map>

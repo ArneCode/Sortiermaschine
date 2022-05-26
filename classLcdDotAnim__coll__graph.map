@@ -1,8 +1,8 @@
 <map id="LcdDotAnim" name="LcdDotAnim">
-<area shape="rect" id="node1" title=" " alt="" coords="13,323,115,349"/>
-<area shape="rect" id="node2" href="$classAnimString.html" title=" " alt="" coords="17,247,111,273"/>
-<area shape="rect" id="node3" href="$structLcdString.html" title=" " alt="" coords="23,171,105,197"/>
-<area shape="rect" id="node4" href="$structCallable.html" title=" " alt="" coords="5,81,80,108"/>
-<area shape="rect" id="node5" href="$classAnimatableLcd.html" title=" " alt="" coords="105,81,223,108"/>
-<area shape="rect" id="node6" title=" " alt="" coords="97,5,231,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,107,121"/>
+<area shape="rect" id="node2" href="$classAnimString.html" title=" " alt="" coords="97,5,191,32"/>
+<area shape="rect" id="node5" href="$classAnimatableLcd.html" title=" " alt="" coords="281,95,399,121"/>
+<area shape="rect" id="node3" href="$structLcdString.html" title=" " alt="" coords="177,184,260,211"/>
+<area shape="rect" id="node4" href="$structCallable.html" title=" " alt="" coords="181,95,256,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="273,5,407,32"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="CustomServo::isDone" name="CustomServo::isDone">
+<area shape="rect" id="node1" title="Gibt an, ob der Servo angekommen ist." alt="" coords="255,5,417,32"/>
+<area shape="rect" id="node2" href="$sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791" title="hilf Function, Methoden können nicht als functionsparameter benutzt werden" alt="" coords="104,5,207,32"/>
+<area shape="rect" id="node3" href="$sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="5,5,56,32"/>
+</map>
