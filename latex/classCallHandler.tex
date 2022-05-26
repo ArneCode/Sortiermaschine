@@ -38,15 +38,15 @@ bool \mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{runnin
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structCallable}{Callable}} $\ast$$\ast$ \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{call\+Ptrs}}
-\begin{DoxyCompactList}\small\item\em die liste der aktuellen Calls \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Die liste der aktuellen Calls. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structCallable}{Callable}} $\ast$$\ast$ \mbox{\hyperlink{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}{curr\+Call\+Ptr}}
-\begin{DoxyCompactList}\small\item\em der Call der zurzeit ausgeführt wird \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Der Call der zurzeit ausgeführt wird. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structCallable}{Callable}} $\ast$$\ast$ \mbox{\hyperlink{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}{last\+Call\+Ptr}}
-\begin{DoxyCompactList}\small\item\em der letzte Call \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Der letzte Call. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} \mbox{\hyperlink{classCallHandler_a2c98c2be5b62fafe94b32e3a0f68c84d}{last\+CallT}}
 \begin{DoxyCompactList}\small\item\em Der Zeitpunkt an dem der letzte Call ausgeführt wurde. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classCallHandler_a1ee97c59315e54746cef82a406a49236}{calls\+Set}} = false
-\begin{DoxyCompactList}\small\item\em Sagt aus, ob call\+Ptrs zu einer gültigen Speicheradresse zeigt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sagt aus, ob \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{Call\+Handler\+::call\+Ptrs}} zu einer gültigen Speicheradresse zeigt. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Ausführliche Beschreibung}
@@ -84,16 +84,16 @@ Definiert in Zeile 13 der Datei call\+Handler.\+ino.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{13                               \{}
-\DoxyCodeLine{14   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classCallHandler_a1ee97c59315e54746cef82a406a49236}{callsSet}}) \{}
-\DoxyCodeLine{15     \textcolor{keywordflow}{return};}
-\DoxyCodeLine{16   \}}
-\DoxyCodeLine{17   \mbox{\hyperlink{classCallHandler_a1ee97c59315e54746cef82a406a49236}{callsSet}} = \textcolor{keyword}{false};}
-\DoxyCodeLine{18   \textcolor{keywordflow}{for} (\mbox{\hyperlink{structCallable}{Callable}}** callPtr = \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}}; callPtr <= \mbox{\hyperlink{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}{lastCallPtr}}; callPtr++) \{}
-\DoxyCodeLine{19     \textcolor{keyword}{delete} *callPtr;}
-\DoxyCodeLine{20   \}}
-\DoxyCodeLine{21   \textcolor{keyword}{delete} \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}};}
-\DoxyCodeLine{22 \}}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classCallHandler_a1ee97c59315e54746cef82a406a49236}{callsSet}}) \{}
+\DoxyCodeLine{16     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{17   \}}
+\DoxyCodeLine{18   \mbox{\hyperlink{classCallHandler_a1ee97c59315e54746cef82a406a49236}{callsSet}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{19   \textcolor{keywordflow}{for} (\mbox{\hyperlink{structCallable}{Callable}}** callPtr = \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}}; callPtr <= \mbox{\hyperlink{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}{lastCallPtr}}; callPtr++) \{}
+\DoxyCodeLine{20     \textcolor{keyword}{delete} *callPtr;}
+\DoxyCodeLine{21   \}}
+\DoxyCodeLine{22   \textcolor{keyword}{delete} \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}};}
+\DoxyCodeLine{23 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}\label{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}} 
@@ -118,22 +118,22 @@ n\+Calls darf auf keinen Fall größer als die tatsächliche Anzahl an Calls sei
 \end{DoxyParams}
 
 
-Definiert in Zeile 29 der Datei call\+Handler.\+ino.
+Definiert in Zeile 30 der Datei call\+Handler.\+ino.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{29                                                                  \{}
-\DoxyCodeLine{30   \textcolor{comment}{/*if(callsSet)\{ //doing this would result in two sets of calls being in heap at once}}
-\DoxyCodeLine{31 \textcolor{comment}{    deleteCalls(); //solution is to delete previus calls before initializing a new one}}
-\DoxyCodeLine{32 \textcolor{comment}{  \}*/}}
-\DoxyCodeLine{33   \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}} = newCallPtrs;}
-\DoxyCodeLine{34   \mbox{\hyperlink{classCallHandler_a1ee97c59315e54746cef82a406a49236}{callsSet}} = \textcolor{keyword}{true};}
-\DoxyCodeLine{35   \mbox{\hyperlink{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}{currCallPtr}} = \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}};}
-\DoxyCodeLine{36   (*currCallPtr)-\/>\mbox{\hyperlink{structCallable_a0e146c329fbdf8720a9541f60fe910e9}{run}}();}
-\DoxyCodeLine{37   \mbox{\hyperlink{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}{lastCallPtr}} = \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}} + nCalls -\/ 1;}
-\DoxyCodeLine{38   \mbox{\hyperlink{classCallHandler_a2c98c2be5b62fafe94b32e3a0f68c84d}{lastCallT}} = millis();}
-\DoxyCodeLine{39   \mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{running}} = \textcolor{keyword}{true};}
-\DoxyCodeLine{40 \}}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32   \textcolor{comment}{/*if(callsSet)\{ //doing this would result in two sets of calls being in heap at once}}
+\DoxyCodeLine{33 \textcolor{comment}{    deleteCalls(); //solution is to delete previus calls before initializing a new one}}
+\DoxyCodeLine{34 \textcolor{comment}{  \}*/}}
+\DoxyCodeLine{35   \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}} = newCallPtrs;}
+\DoxyCodeLine{36   \mbox{\hyperlink{classCallHandler_a1ee97c59315e54746cef82a406a49236}{callsSet}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{37   \mbox{\hyperlink{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}{currCallPtr}} = \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}};}
+\DoxyCodeLine{38   (*currCallPtr)-\/>\mbox{\hyperlink{structCallable_a0e146c329fbdf8720a9541f60fe910e9}{run}}();}
+\DoxyCodeLine{39   \mbox{\hyperlink{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}{lastCallPtr}} = \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}} + nCalls -\/ 1;}
+\DoxyCodeLine{40   \mbox{\hyperlink{classCallHandler_a2c98c2be5b62fafe94b32e3a0f68c84d}{lastCallT}} = millis();}
+\DoxyCodeLine{41   \mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{running}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{42 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7}\label{classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7}} 
@@ -148,24 +148,24 @@ wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den j
 
 wird von loop aufgerufen 
 
-Definiert in Zeile 45 der Datei call\+Handler.\+ino.
+Definiert in Zeile 47 der Datei call\+Handler.\+ino.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{45                          \{}
-\DoxyCodeLine{46   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{running}}) \{}
-\DoxyCodeLine{47     \textcolor{keywordflow}{return};}
-\DoxyCodeLine{48   \}}
-\DoxyCodeLine{49   \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\_t}} timePassed = millis() -\/ \mbox{\hyperlink{classCallHandler_a2c98c2be5b62fafe94b32e3a0f68c84d}{lastCallT}};}
-\DoxyCodeLine{50   \textcolor{keywordflow}{if} ((*currCallPtr)-\/>isDone()) \{\textcolor{comment}{//-\/>currCall-\/>isDone()}}
-\DoxyCodeLine{51     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}{currCallPtr}} == \mbox{\hyperlink{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}{lastCallPtr}}) \{}
-\DoxyCodeLine{52       \mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{running}} = \textcolor{keyword}{false};}
-\DoxyCodeLine{53       \textcolor{keywordflow}{return};}
-\DoxyCodeLine{54     \}}
-\DoxyCodeLine{55     \mbox{\hyperlink{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}{currCallPtr}}++;}
-\DoxyCodeLine{56     (*currCallPtr)-\/>\mbox{\hyperlink{structCallable_a0e146c329fbdf8720a9541f60fe910e9}{run}}();\textcolor{comment}{//-\/>currCall-\/>run();}}
-\DoxyCodeLine{57   \}}
-\DoxyCodeLine{58 \}}
+\DoxyCodeLine{48 \{}
+\DoxyCodeLine{49   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{running}}) \{}
+\DoxyCodeLine{50     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{51   \}}
+\DoxyCodeLine{52   \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\_t}} timePassed = millis() -\/ \mbox{\hyperlink{classCallHandler_a2c98c2be5b62fafe94b32e3a0f68c84d}{lastCallT}};}
+\DoxyCodeLine{53   \textcolor{keywordflow}{if} ((*currCallPtr)-\/>isDone()) \{\textcolor{comment}{//-\/>currCall-\/>isDone()}}
+\DoxyCodeLine{54     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}{currCallPtr}} == \mbox{\hyperlink{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}{lastCallPtr}}) \{}
+\DoxyCodeLine{55       \mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{running}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{56       \textcolor{keywordflow}{return};}
+\DoxyCodeLine{57     \}}
+\DoxyCodeLine{58     \mbox{\hyperlink{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}{currCallPtr}}++;}
+\DoxyCodeLine{59     (*currCallPtr)-\/>\mbox{\hyperlink{structCallable_a0e146c329fbdf8720a9541f60fe910e9}{run}}();\textcolor{comment}{//-\/>currCall-\/>run();}}
+\DoxyCodeLine{60   \}}
+\DoxyCodeLine{61 \}}
 
 \end{DoxyCode}
 
@@ -179,9 +179,9 @@ Definiert in Zeile 45 der Datei call\+Handler.\+ino.
 
 
 
-die liste der aktuellen Calls 
+Die liste der aktuellen Calls. 
 
-wird mithilfe von \mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{Call\+Handler\+::set\+Calls}} gesetzt Die Calls werden im Heap gespeichert, das heißt zum einen, dass sie zwischen Funktionen hin-\/ und hergegeben werden können, zum anderen aber auch, dass sie mithilfe von \mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{Call\+Handler\+::delete\+Calls}} manuell wieder gelöscht werden müssen 
+Wird mithilfe von \mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{Call\+Handler\+::set\+Calls}} gesetzt. Die Calls werden im Heap gespeichert, das heißt zum einen, dass sie zwischen Funktionen hin-\/ und hergegeben werden können, zum anderen aber auch, dass sie mithilfe von \mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{Call\+Handler\+::delete\+Calls}} manuell wieder gelöscht werden müssen 
 
 Definiert in Zeile 22 der Datei call\+Handler.\+h.
 
@@ -193,11 +193,11 @@ Definiert in Zeile 22 der Datei call\+Handler.\+h.
 
 
 
-Sagt aus, ob call\+Ptrs zu einer gültigen Speicheradresse zeigt. 
+Sagt aus, ob \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{Call\+Handler\+::call\+Ptrs}} zu einer gültigen Speicheradresse zeigt. 
 
 
 
-Definiert in Zeile 42 der Datei call\+Handler.\+h.
+Definiert in Zeile 43 der Datei call\+Handler.\+h.
 
 \mbox{\Hypertarget{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}\label{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}} 
 \index{CallHandler@{CallHandler}!currCallPtr@{currCallPtr}}
@@ -207,11 +207,11 @@ Definiert in Zeile 42 der Datei call\+Handler.\+h.
 
 
 
-der Call der zurzeit ausgeführt wird 
+Der Call der zurzeit ausgeführt wird. 
 
-Es handelt sich hierbei um einen Pointer-\/\+Pointer. Der Pointer zeigt zu einer Stelle in der call\+Ptrs Liste, die wiederum zum tatsächlichen Call zeigt 
+Es handelt sich hierbei um einen Pointer-\/\+Pointer. Der Pointer zeigt zu einer Stelle in der \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{Call\+Handler\+::call\+Ptrs}} Liste, die wiederum zum tatsächlichen Call zeigt 
 
-Definiert in Zeile 27 der Datei call\+Handler.\+h.
+Definiert in Zeile 28 der Datei call\+Handler.\+h.
 
 \mbox{\Hypertarget{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}\label{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}} 
 \index{CallHandler@{CallHandler}!lastCallPtr@{lastCallPtr}}
@@ -221,11 +221,11 @@ Definiert in Zeile 27 der Datei call\+Handler.\+h.
 
 
 
-der letzte Call 
+Der letzte Call. 
 
-wird benutzt um zu wissen, wann der letzte Call ausgeführt wurde 
+Wird benutzt um zu wissen, wann der letzte Call ausgeführt wurde 
 
-Definiert in Zeile 32 der Datei call\+Handler.\+h.
+Definiert in Zeile 33 der Datei call\+Handler.\+h.
 
 \mbox{\Hypertarget{classCallHandler_a2c98c2be5b62fafe94b32e3a0f68c84d}\label{classCallHandler_a2c98c2be5b62fafe94b32e3a0f68c84d}} 
 \index{CallHandler@{CallHandler}!lastCallT@{lastCallT}}
@@ -239,7 +239,7 @@ Der Zeitpunkt an dem der letzte Call ausgeführt wurde.
 
 
 
-Definiert in Zeile 37 der Datei call\+Handler.\+h.
+Definiert in Zeile 38 der Datei call\+Handler.\+h.
 
 \mbox{\Hypertarget{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}\label{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}} 
 \index{CallHandler@{CallHandler}!running@{running}}
@@ -249,7 +249,7 @@ Definiert in Zeile 37 der Datei call\+Handler.\+h.
 
 
 
-Definiert in Zeile 45 der Datei call\+Handler.\+h.
+Definiert in Zeile 46 der Datei call\+Handler.\+h.
 
 
 

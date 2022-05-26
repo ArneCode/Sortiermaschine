@@ -15,19 +15,20 @@ class CallHandler;
  */
 class CallHandler {//calls functions after a certain delay
     /**
-     * @brief die liste der aktuellen Calls
-     * @details wird mithilfe von CallHandler::setCalls gesetzt
+     * @brief Die liste der aktuellen Calls
+     * @details Wird mithilfe von CallHandler::setCalls gesetzt.
      Die Calls werden im Heap gespeichert, das heißt zum einen, dass sie zwischen Funktionen hin- und hergegeben werden können, zum anderen aber auch, dass sie mithilfe von CallHandler::deleteCalls manuell wieder gelöscht werden müssen
      */
     Callable** callPtrs;
     /**
-     * @brief der Call der zurzeit ausgeführt wird
-     * @details Es handelt sich hierbei um einen Pointer-Pointer. Der Pointer zeigt zu einer Stelle in der callPtrs Liste, die wiederum zum tatsächlichen Call zeigt
+     * @brief Der Call der zurzeit ausgeführt wird
+     * @details Es handelt sich hierbei um einen Pointer-Pointer. 
+     Der Pointer zeigt zu einer Stelle in der CallHandler::callPtrs Liste, die wiederum zum tatsächlichen Call zeigt
      */
     Callable** currCallPtr;
     /**
-     * @brief der letzte Call
-     * @details wird benutzt um zu wissen, wann der letzte Call ausgeführt wurde
+     * @brief Der letzte Call
+     * @details Wird benutzt um zu wissen, wann der letzte Call ausgeführt wurde
      */
     Callable** lastCallPtr;
     /**
@@ -36,7 +37,7 @@ class CallHandler {//calls functions after a certain delay
      */
     time_t lastCallT;
     /**
-     * @brief Sagt aus, ob callPtrs zu einer gültigen Speicheradresse zeigt 
+     * @brief Sagt aus, ob CallHandler::callPtrs zu einer gültigen Speicheradresse zeigt 
      * 
      */
     bool callsSet = false;

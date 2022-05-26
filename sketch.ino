@@ -56,29 +56,83 @@ const int PIN_GREEN = 10;
  * 
  */
 const int PIN_BLUE = 9;
+/**
+ * @brief Die normale Geschwindigkeit des Servos
+ * 
+ */
 const float SERVO_SPEED_DEFAULT = 0.01f;
+/**
+ * @brief Die "schnelle" Geschwindigkeit des Servos
+ * @warning Servo bewegt sich hier nicht mit Maximalgeschwindigkeit. Wenn diese Geschwindigkeit schneller eingestellt wird als der Servo tatsächlich ist, hört er möglicherweise auf sich zu bewegen, bevor er an seinem Ziel angekommen ist
+ * Alternativ könnte CustomServo::writeDirect benutzt werden
+ */
 const float SERVO_SPEED_FAST = 0.5f;
+/**
+ * @brief Der animierbare Lcd
+ * 
+ */
 AnimatableLcd lcd(0x27, 16, 2);
 CallHandler callHandler;
 CustomServo servo;
 
+/**
+ * @brief die Anzahl weißer Bälle, die schon sortiert wurden
+ */
 int nWhite = 0;
+/**
+ * @brief die Anzahl schwarzer Bälle, die schon sortiert wurden
+ */
 int nBlack = 0;
+/**
+ * @brief die Anzahl orangener Bälle, die schon sortiert/entfernt wurden
+ */
 int nOrange = 0;
+/**
+ * @brief sagt aus, ob das Display flackern und die Led blinken soll
+ * @details Wird auf true gesetzt, wenn ein Orangener Ball entdeckt wird
+ */
 bool doFlicker=false;
 
-
-
+/**
+ * @brief kleine Klasse die Knopfdrücke verarbeitet
+ * 
+ */
 class ButtonHandler { //handels button clicks
+    /**
+     * @brief der Pin an dem der Knopf angeschlossen ist
+     * 
+     */
     int pin;
+    /**
+     * @brief Gibt an, ob der Knopf momentan Gedrückt ist
+     * 
+     */
     bool isPressed = false;
   public:
+    /**
+     * @brief Die Funktion die bei einem Klick, d.h. einem Drücken und loslassen des Knopfes ausgeführt wird
+     * 
+     */
     void (*onclick)();
     ButtonHandler() {}
+    /**
+     * @brief Erstellt ein neues ButtonHandler Objekt
+     * 
+     * @param pin der Pin an dem der Knopf angeschlossen ist
+     * @param onclick Die Funktion die bei einem Klick, d.h. einem Drücken und loslassen des Knopfes ausgeführt wird
+     */
     ButtonHandler(int pin, void (*onclick)()): pin(pin), onclick(onclick) {
       pinMode(pin, INPUT_PULLUP);
     }
+    /**
+     * @brief prüft, ob der Knopf gedrückt/losgelassen wurde
+     * @details wird von loop aufgerufen und ruft die onclick Funktion auf, wenn ein Klick festgestellt wurde
+     */
     void update() {
+      /**
+       * @brief ob der Knopf momentan gedrückt ist
+       * 
+       */
       bool isPressedNew = digitalRead(pin) == HIGH;
       if (isPressedNew != isPressed) { //is not being pressed now, but was being pressed
         if (isPressed) {
@@ -89,6 +143,10 @@ class ButtonHandler { //handels button clicks
       isPressed = isPressedNew;
     }
 };
+/**
+ * @brief Farben, werden für die Messungen des Reflexoptokopplers benutzt
+ * 
+ */
 enum Farbe {
   WHITE,
   BLACK,
@@ -96,8 +154,14 @@ enum Farbe {
   NOTHING
 };
 Farbe mesureColor(); //sonst erkennt Arduino Farbe nicht als typ an (https://forum.arduino.cc/t/syntax-for-a-function-returning-an-enumerated-type/107241)
-Farbe mesureColor() {
-  return ORANGE;//inputs hardcoden
+/**
+ * @brief misst mithilfe des Reflexoptokopplers die Farbe des Balls
+ * 
+ * @return Farbe Die Farbe des Balls
+ */
+Farbe mesureColor() 
+{
+  return ORANGE;//inputs hardcoden, für Testzwecke
   int hue = random(0,1000);//inputs simulieren
   //int hue=analogRead(A0);//tatsächlich Farbe messen
   if (hue <= 100) {
@@ -119,7 +183,8 @@ Farbe mesureColor() {
  * @param g Grün (0-255)
  * @param b Blau (0-255)
  */
-void setLedColor(unsigned char r,unsigned char g, unsigned char b){ //unsigned char: 0-255
+void setLedColor(unsigned char r,unsigned char g, unsigned char b)//unsigned char: 0-255
+{ 
   analogWrite(PIN_RED,r);
   analogWrite(PIN_GREEN,g);
   analogWrite(PIN_BLUE,b);
@@ -128,7 +193,8 @@ void setLedColor(unsigned char r,unsigned char g, unsigned char b){ //unsigned c
  * @brief wird ausgeführt wenn der Stop-Knopf gedrückt wird
  * 
  */
-void stopButtonClicked() {
+void stopButtonClicked() 
+{
   static bool isStopped = false;//wird nur einmal initialisiert
   isStopped = !isStopped;
   if (isStopped) {
@@ -192,9 +258,13 @@ void loop() {
   servo.updatePos();
   stopButton.update();
   if(doFlicker){
-    unsigned short b=(millis()/2)%400;//helligkeit: 0-512
-    if (b>200){
-      b=511-b; //wenn b größer als 255, wird die helligkeit kleiner
+    /**
+     * @brief die momentane Helligkeit der Led
+     * 
+     */
+    unsigned short b=(millis()/2)%513;//helligkeit: 0-512
+    if (b>255){
+      b=511-b; //wenn b größer als 255, wird die helligkeit kleiner, Werte über 255 werden also "gespiegelt"
     }
     setLedColor(b,b/2,0);//orange
     if(random(3)==0){
@@ -206,6 +276,10 @@ void loop() {
   if (callHandler.running) {
     return;
   }
+  /**
+   * @brief die Farbe des Balls
+   * 
+   */
   Farbe farbe = mesureColor();
   servo.setSpeed(SERVO_SPEED_DEFAULT);
   switch (farbe) {

@@ -8,7 +8,8 @@
  * @brief Setzt Variabeln, die benötigt werden um den Servo zu bewegen
  * 
  */
-void CustomServo::startMove() {
+void CustomServo::startMove() 
+{
   startAngle = read();
   startTime = millis();
   done = false;
@@ -18,28 +19,47 @@ void CustomServo::startMove() {
  * 
  * @param newAngle 
  */
-void CustomServo::write(short newAngle) {
+void CustomServo::write(short newAngle) 
+{
   startMove();
   targetAngle = newAngle;
 }
 /**
- * @brief bewegt den Servo in <b>duration</b> ms
+ * @brief Bewegt den Servo in duration Millisekunden an den angegebenen Winkel
  * 
  * @param newAngle 
  * @param duration 
  */
-void CustomServo::write(short newAngle, time_t duration) {
+void CustomServo::write(short newAngle, time_t duration) 
+{
   write(newAngle);
   speed = (float)(targetAngle - startAngle) / (float)duration;
 }
-void CustomServo::writeDirect(short angle){
+/**
+ * @brief Steuert den Servo direkt an, enspricht dem normalen Servo::write
+ * 
+ * @param angle 
+ */
+void CustomServo::writeDirect(short angle)
+{
   Servo::write(angle);
 }
-void CustomServo::setSpeed(float newSpeed) {
+/**
+ * @brief Setzt eine neue Geschwindigkeit des Servos
+ * 
+ * @param newSpeed Die neue Geschwindigkeit in Grad pro Millisekunde
+ */
+void CustomServo::setSpeed(float newSpeed) 
+{
   startMove();
   speed = newSpeed;
 }
-void CustomServo::updatePos() {
+/**
+ * @brief Aktualisiert die Position des Servomotors
+ * @details Wird von loop() aufgerufen
+ */
+void CustomServo::updatePos() 
+{
   if (done) {
     return;
   }
@@ -68,20 +88,23 @@ void CustomServo::updatePos() {
  * @return true 
  * @return false 
  */
-bool CustomServo::isDone() {
+bool CustomServo::isDone() 
+{
   return read() == targetAngle;
 }
 /**
- * @brief stoppt den Servo
+ * @brief Stoppt den Servo
  * 
  */
-void CustomServo::stop() {
+void CustomServo::stop() 
+{
   done = true;
 }
 /**
- * @brief lässt den Servo weiterlaufen
+ * @brief Lässt den Servo weiterlaufen
  * 
  */
-void CustomServo::start() {
+void CustomServo::start() 
+{
   done = false;
 }

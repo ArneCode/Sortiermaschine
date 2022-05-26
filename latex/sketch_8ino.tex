@@ -20,7 +20,7 @@ Include-\/\+Abhängigkeitsdiagramm für sketch.\+ino\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classButtonHandler}{Button\+Handler}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em kleine Klasse die Knopfdrücke verarbeitet \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Makrodefinitionen}
 \begin{DoxyCompactItemize}
 \item 
@@ -34,12 +34,12 @@ enum \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2}{Farbe}} \{ 
 \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}{O\+R\+A\+N\+GE}}, 
 \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2}{N\+O\+T\+H\+I\+NG}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Farben, werden für die Messungen des Reflexoptokopplers benutzt. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Funktionen}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2}{Farbe}} \mbox{\hyperlink{sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd}{mesure\+Color}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em misst mithilfe des Reflexoptokopplers die Farbe des Balls \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{set\+Led\+Color}} (unsigned char r, unsigned char g, unsigned char b)
 \item 
 void \mbox{\hyperlink{sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc}{stop\+Button\+Clicked}} ()
@@ -54,43 +54,43 @@ void \mbox{\hyperlink{sketch_8ino_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
 \begin{DoxyCompactItemize}
 \item 
 const int \mbox{\hyperlink{sketch_8ino_ab09894308b534e1030021de3bc84710e}{L\+O\+A\+D\+I\+N\+G\+\_\+\+D\+U\+R\+A\+T\+I\+ON}} = 3000
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt an, wie lange die Ladeanimation beim \char`\"{}\+Hochfahren\char`\"{} dauert. \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{sketch_8ino_a759a9f39d205bf95aed6a556759ebd8a}{A\+N\+G\+L\+E\+\_\+\+L\+E\+F\+T\+\_\+\+H\+O\+LE}} = 180
-\item 
+\begin{DoxyCompactList}\small\item\em Winkel des linken Lochs in Grad. \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{sketch_8ino_aea1dd563eecdccc3c412c2eb13f99850}{A\+N\+G\+L\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+H\+O\+LE}} = 90
-\item 
+\begin{DoxyCompactList}\small\item\em Winkel des rechten Lochs in Grad. \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{sketch_8ino_ad79ce25ec94495875b917de81bbd692e}{A\+N\+G\+L\+E\+\_\+\+C\+E\+N\+T\+ER}} = 130
-\item 
+\begin{DoxyCompactList}\small\item\em Winkel der Ablagefläche für neue Bälle, die sortiert werden sollen. \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{sketch_8ino_ac82ee88c087fbd603a9a9ff334218360}{A\+N\+G\+L\+E\+\_\+\+M\+IN}} = 45
-\item 
+\begin{DoxyCompactList}\small\item\em Der kleinste sichere Winkel. \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{sketch_8ino_ae1e0b317f35c61409381a32ea905ba67}{P\+I\+N\+\_\+\+S\+E\+R\+VO}} = 6
-\item 
+\begin{DoxyCompactList}\small\item\em Der Pin an dem der Servomotor angeschlossen ist. \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{sketch_8ino_a05c5455b55db369d7d780a0a64525ecc}{P\+I\+N\+\_\+\+S\+T\+O\+P\+B\+U\+T\+T\+ON}} = 13
-\item 
+\begin{DoxyCompactList}\small\item\em Der Pin an dem der Start/\+Stop Knopf angeschlossen ist. \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{sketch_8ino_ac57f63ef8771d860562baf56fd4c2732}{P\+I\+N\+\_\+\+R\+ED}} = 11
-\item 
+\begin{DoxyCompactList}\small\item\em Der Pin um die Rotfärbung der R\+G\+B-\/\+Led zu steuern. \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{sketch_8ino_ac594418c6e368680a9de074d7d136caa}{P\+I\+N\+\_\+\+G\+R\+E\+EN}} = 10
-\item 
+\begin{DoxyCompactList}\small\item\em Der Pin um die Grünfärbung der R\+G\+B-\/\+Led zu steuern. \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{sketch_8ino_a275fb5d3177300cc6a29ae232344e4d8}{P\+I\+N\+\_\+\+B\+L\+UE}} = 9
-\item 
+\begin{DoxyCompactList}\small\item\em Der Pin um die Blaufärbung der R\+G\+B-\/\+Led zu steuern. \end{DoxyCompactList}\item 
 const float \mbox{\hyperlink{sketch_8ino_adef1ca0bee2c8b7c9b72001969ee3426}{S\+E\+R\+V\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+D\+E\+F\+A\+U\+LT}} = 0.\+01f
-\item 
+\begin{DoxyCompactList}\small\item\em Die normale Geschwindigkeit des Servos. \end{DoxyCompactList}\item 
 const float \mbox{\hyperlink{sketch_8ino_a8b8f576df7f10b8c79c4ee6ee1f94166}{S\+E\+R\+V\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+F\+A\+ST}} = 0.\+5f
-\item 
+\begin{DoxyCompactList}\small\item\em Die \char`\"{}schnelle\char`\"{} Geschwindigkeit des Servos. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}} (0x27, 16, 2)
-\item 
+\begin{DoxyCompactList}\small\item\em Der animierbare Lcd. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classCallHandler}{Call\+Handler}} \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{call\+Handler}}
 \item 
 \mbox{\hyperlink{classCustomServo}{Custom\+Servo}} \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}
 \item 
 int \mbox{\hyperlink{sketch_8ino_a13f268479b5aae34b4a2297104c7aecd}{n\+White}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em die Anzahl weißer Bälle, die schon sortiert wurden \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{sketch_8ino_a847f8cb2693f97028af9e2a0fb979d41}{n\+Black}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em die Anzahl schwarzer Bälle, die schon sortiert wurden \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{sketch_8ino_ab02bdede4356a3a7dffc99e97e927ca6}{n\+Orange}} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em die Anzahl orangener Bälle, die schon sortiert/entfernt wurden \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{sketch_8ino_ab7ffbbf9ac91d991bb0c81c6f4fa6699}{do\+Flicker}} =false
-\item 
+\begin{DoxyCompactList}\small\item\em sagt aus, ob das Display flackern und die Led blinken soll \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classButtonHandler}{Button\+Handler}} \mbox{\hyperlink{sketch_8ino_ae68a57cc22f2b256b21089a585de29df}{stop\+Button}}
 \begin{DoxyCompactList}\small\item\em der Stop Knopf \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -98,15 +98,6 @@ bool \mbox{\hyperlink{sketch_8ino_ab7ffbbf9ac91d991bb0c81c6f4fa6699}{do\+Flicker
 \doxysubsection{Ausführliche Beschreibung}
 Hauptdatei. 
 
-\begin{DoxyAuthor}{Autor}
-Arne de Borman 
-\end{DoxyAuthor}
-\begin{DoxyVersion}{Version}
-0.\+1 
-\end{DoxyVersion}
-\begin{DoxyDate}{Datum}
-2022-\/05-\/26 
-\end{DoxyDate}
 
 
 \doxysubsection{Makro-\/\+Dokumentation}
@@ -127,7 +118,7 @@ Arne de Borman
 \end{DoxyCode}
 
 
-Definiert in Zeile 142 der Datei sketch.\+ino.
+Definiert in Zeile 244 der Datei sketch.\+ino.
 
 
 
@@ -137,6 +128,10 @@ Definiert in Zeile 142 der Datei sketch.\+ino.
 \index{Farbe@{Farbe}!sketch.ino@{sketch.ino}}
 \doxysubsubsection{\texorpdfstring{Farbe}{Farbe}}
 {\footnotesize\ttfamily enum \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2}{Farbe}}}
+
+
+
+Farben, werden für die Messungen des Reflexoptokopplers benutzt. 
 
 \begin{DoxyEnumFields}{Aufzählungswerte}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{WHITE@{WHITE}!sketch.ino@{sketch.ino}}\index{sketch.ino@{sketch.ino}!WHITE@{WHITE}}}\mbox{\Hypertarget{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50}\label{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50}} 
@@ -158,16 +153,16 @@ N\+O\+T\+H\+I\+NG&\\
 \end{DoxyEnumFields}
 
 
-Definiert in Zeile 56 der Datei sketch.\+ino.
+Definiert in Zeile 150 der Datei sketch.\+ino.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{56            \{}
-\DoxyCodeLine{57   \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50}{WHITE}},}
-\DoxyCodeLine{58   \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3}{BLACK}},}
-\DoxyCodeLine{59   \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}{ORANGE}},}
-\DoxyCodeLine{60   \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2}{NOTHING}}}
-\DoxyCodeLine{61 \};}
+\DoxyCodeLine{150            \{}
+\DoxyCodeLine{151   \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50}{WHITE}},}
+\DoxyCodeLine{152   \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3}{BLACK}},}
+\DoxyCodeLine{153   \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}{ORANGE}},}
+\DoxyCodeLine{154   \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2}{NOTHING}}}
+\DoxyCodeLine{155 \};}
 
 \end{DoxyCode}
 
@@ -183,118 +178,120 @@ Definiert in Zeile 56 der Datei sketch.\+ino.
 
 wird immer wieder ausgeführt 
 
+die momentane Helligkeit der Led
 
+die Farbe des Balls
 
-Definiert in Zeile 153 der Datei sketch.\+ino.
+Definiert in Zeile 255 der Datei sketch.\+ino.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{153             \{}
-\DoxyCodeLine{154   \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7}{update}}();}
-\DoxyCodeLine{155   \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.\mbox{\hyperlink{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99}{update}}();}
-\DoxyCodeLine{156   \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a91245621ca3e5340361f061d65025635}{updatePos}}();}
-\DoxyCodeLine{157   \mbox{\hyperlink{sketch_8ino_ae68a57cc22f2b256b21089a585de29df}{stopButton}}.\mbox{\hyperlink{classButtonHandler_aaed9117143aa1674a71aa012e558d4e8}{update}}();}
-\DoxyCodeLine{158   \textcolor{keywordflow}{if}(\mbox{\hyperlink{sketch_8ino_ab7ffbbf9ac91d991bb0c81c6f4fa6699}{doFlicker}})\{}
-\DoxyCodeLine{159     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} b=(millis()/2)\%400;\textcolor{comment}{//helligkeit: 0-\/512}}
-\DoxyCodeLine{160     \textcolor{keywordflow}{if} (b>200)\{}
-\DoxyCodeLine{161       b=511-\/b; \textcolor{comment}{//wenn b größer als 255, wird die helligkeit kleiner}}
-\DoxyCodeLine{162     \}}
-\DoxyCodeLine{163     \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(b,b/2,0);\textcolor{comment}{//orange}}
-\DoxyCodeLine{164     \textcolor{keywordflow}{if}(random(3)==0)\{}
-\DoxyCodeLine{165       \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.noBacklight();}
-\DoxyCodeLine{166     \}\textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{167       \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.backlight();}
-\DoxyCodeLine{168     \}}
-\DoxyCodeLine{169   \}}
-\DoxyCodeLine{170   \textcolor{keywordflow}{if} (\mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{running}}) \{}
-\DoxyCodeLine{171     \textcolor{keywordflow}{return};}
-\DoxyCodeLine{172   \}}
-\DoxyCodeLine{173   \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2}{Farbe}} farbe = \mbox{\hyperlink{sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd}{mesureColor}}();}
-\DoxyCodeLine{174   \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a0750f5868c694b9f46638038b8536e0a}{setSpeed}}(\mbox{\hyperlink{sketch_8ino_adef1ca0bee2c8b7c9b72001969ee3426}{SERVO\_SPEED\_DEFAULT}});}
-\DoxyCodeLine{175   \textcolor{keywordflow}{switch} (farbe) \{}
-\DoxyCodeLine{176     \textcolor{keywordflow}{case} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50}{WHITE}}:}
-\DoxyCodeLine{177       \{}
-\DoxyCodeLine{178         \mbox{\hyperlink{sketch_8ino_a13f268479b5aae34b4a2297104c7aecd}{nWhite}}++;}
-\DoxyCodeLine{179         Serial.println(\textcolor{stringliteral}{"white"});}
-\DoxyCodeLine{180         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
-\DoxyCodeLine{181         \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} callsWhite = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[6] \{}
-\DoxyCodeLine{182           \textcolor{comment}{//static so that the space for the calls is only allocated once (https://cpp4arduino.com/2018/11/06/what-\/is-\/heap-\/fragmentation.html), }}
-\DoxyCodeLine{183           \textcolor{comment}{//didn't end up being necessary because at there is only one object in heap at one point in time (callHandler.deleteCalls())}}
-\DoxyCodeLine{184           \textcolor{comment}{// new so that it is allocated on the heap}}
-\DoxyCodeLine{185           \textcolor{comment}{//auto automatically sets the type, in this case Callable*[] (Callable**)}}
-\DoxyCodeLine{186           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"Ball erkannt, vorsicht"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000), \textcolor{comment}{//objects get upcasted to Callable*}}
-\DoxyCodeLine{187           \textcolor{keyword}{new} \mbox{\hyperlink{classLcdDotAnim}{LcdDotAnim}}(\textcolor{stringliteral}{"Wei\(\backslash\)342er Ball, drehe Links"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 0),}
-\DoxyCodeLine{188           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
-\DoxyCodeLine{189             \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}}(\mbox{\hyperlink{sketch_8ino_a759a9f39d205bf95aed6a556759ebd8a}{ANGLE\_LEFT\_HOLE}});}
-\DoxyCodeLine{190           \}, \&\mbox{\hyperlink{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}{servoIsDone}}),}
-\DoxyCodeLine{191           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"Angekommen"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000),}
-\DoxyCodeLine{192           \mbox{\hyperlink{sketch_8ino_a96e566c1144385ff3e4c1ec37bdd5274}{GEH\_ZURUECK}} \textcolor{comment}{//2 elemente}}
-\DoxyCodeLine{193         \};}
-\DoxyCodeLine{194         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(callsWhite, 6); \textcolor{comment}{//if the number is too large the program crashes}}
-\DoxyCodeLine{195         \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(255,255,255);}
-\DoxyCodeLine{196         \textcolor{keywordflow}{break};}
-\DoxyCodeLine{197       \}}
-\DoxyCodeLine{198     \textcolor{keywordflow}{case} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3}{BLACK}}:}
-\DoxyCodeLine{199       \{}
-\DoxyCodeLine{200         \mbox{\hyperlink{sketch_8ino_a847f8cb2693f97028af9e2a0fb979d41}{nBlack}}++;}
-\DoxyCodeLine{201         Serial.println(\textcolor{stringliteral}{"black"});}
-\DoxyCodeLine{202         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
-\DoxyCodeLine{203         \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} callsBlack = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[6]  \{}
-\DoxyCodeLine{204           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"Ball erkannt, vorsicht"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000),}
-\DoxyCodeLine{205           \textcolor{keyword}{new} \mbox{\hyperlink{classLcdDotAnim}{LcdDotAnim}}(\textcolor{stringliteral}{"Schwarzer Ball, drehe Rechts"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 0),}
-\DoxyCodeLine{206           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
-\DoxyCodeLine{207             \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}}(\mbox{\hyperlink{sketch_8ino_aea1dd563eecdccc3c412c2eb13f99850}{ANGLE\_RIGHT\_HOLE}});}
-\DoxyCodeLine{208           \}, \&\mbox{\hyperlink{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}{servoIsDone}}),}
-\DoxyCodeLine{209           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"Angekommen"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000),}
-\DoxyCodeLine{210           \mbox{\hyperlink{sketch_8ino_a96e566c1144385ff3e4c1ec37bdd5274}{GEH\_ZURUECK}}}
-\DoxyCodeLine{211         \};}
-\DoxyCodeLine{212         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(callsBlack, 6);}
-\DoxyCodeLine{213         \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(0,0,255);}
-\DoxyCodeLine{214         \textcolor{keywordflow}{break};}
-\DoxyCodeLine{215       \}}
-\DoxyCodeLine{216     \textcolor{keywordflow}{case} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2}{NOTHING}}:}
-\DoxyCodeLine{217       \{}
-\DoxyCodeLine{218         Serial.println(\textcolor{stringliteral}{"nothing"});}
-\DoxyCodeLine{219         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
-\DoxyCodeLine{220         \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} callsNothing = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[1] \{}
-\DoxyCodeLine{221           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(String(\textcolor{stringliteral}{"Ball einlegen W:"}) + \mbox{\hyperlink{sketch_8ino_a13f268479b5aae34b4a2297104c7aecd}{nWhite}} + String(\textcolor{stringliteral}{" S:"}) + \mbox{\hyperlink{sketch_8ino_a847f8cb2693f97028af9e2a0fb979d41}{nBlack}} + String(\textcolor{stringliteral}{" O:"}) + \mbox{\hyperlink{sketch_8ino_ab02bdede4356a3a7dffc99e97e927ca6}{nOrange}}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000)}
-\DoxyCodeLine{222         \};}
-\DoxyCodeLine{223         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(callsNothing, 1);}
-\DoxyCodeLine{224         \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(0,255,0);}
-\DoxyCodeLine{225         \textcolor{keywordflow}{break};}
-\DoxyCodeLine{226       \}}
-\DoxyCodeLine{227     \textcolor{keywordflow}{case} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}{ORANGE}}:}
-\DoxyCodeLine{228       \{}
-\DoxyCodeLine{229         \mbox{\hyperlink{sketch_8ino_ab7ffbbf9ac91d991bb0c81c6f4fa6699}{doFlicker}}=\textcolor{keyword}{true};}
-\DoxyCodeLine{230         \mbox{\hyperlink{sketch_8ino_ab02bdede4356a3a7dffc99e97e927ca6}{nOrange}}++;}
-\DoxyCodeLine{231         Serial.println(\textcolor{stringliteral}{"orange"});}
-\DoxyCodeLine{232         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
-\DoxyCodeLine{233         \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} callsOrange = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[9] \{}
-\DoxyCodeLine{234           \textcolor{keyword}{new} \mbox{\hyperlink{classLcdDotAnim}{LcdDotAnim}}(\textcolor{stringliteral}{"\(\backslash\)xC0ra\(\backslash\)10g\(\backslash\)xD9ner Ba\(\backslash\)xEDl"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 0), \textcolor{comment}{//https://arduino.stackexchange.com/a/46833}}
-\DoxyCodeLine{235           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
-\DoxyCodeLine{236             \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}}(\mbox{\hyperlink{sketch_8ino_aea1dd563eecdccc3c412c2eb13f99850}{ANGLE\_RIGHT\_HOLE}});}
-\DoxyCodeLine{237           \}, \&\mbox{\hyperlink{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}{servoIsDone}}),}
-\DoxyCodeLine{238           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"Fehler \(\backslash\)11rkannt"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000),}
-\DoxyCodeLine{239           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
-\DoxyCodeLine{240             \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a0750f5868c694b9f46638038b8536e0a}{setSpeed}}(\mbox{\hyperlink{sketch_8ino_a8b8f576df7f10b8c79c4ee6ee1f94166}{SERVO\_SPEED\_FAST}});}
-\DoxyCodeLine{241             \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}}(\mbox{\hyperlink{sketch_8ino_ac82ee88c087fbd603a9a9ff334218360}{ANGLE\_MIN}});}
-\DoxyCodeLine{242           \}, \&\mbox{\hyperlink{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}{servoIsDone}}),}
-\DoxyCodeLine{243           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
-\DoxyCodeLine{244             \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a0750f5868c694b9f46638038b8536e0a}{setSpeed}}(\mbox{\hyperlink{sketch_8ino_adef1ca0bee2c8b7c9b72001969ee3426}{SERVO\_SPEED\_DEFAULT}});}
-\DoxyCodeLine{245           \}, \&\mbox{\hyperlink{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}{servoIsDone}}),}
-\DoxyCodeLine{246           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
-\DoxyCodeLine{247             \mbox{\hyperlink{sketch_8ino_ab7ffbbf9ac91d991bb0c81c6f4fa6699}{doFlicker}}=\textcolor{keyword}{false};}
-\DoxyCodeLine{248             \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(0,255,0);}
-\DoxyCodeLine{249             \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.backlight();}
-\DoxyCodeLine{250           \}),}
-\DoxyCodeLine{251           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"Fehler beseitigt"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 2000),}
-\DoxyCodeLine{252           \mbox{\hyperlink{sketch_8ino_a96e566c1144385ff3e4c1ec37bdd5274}{GEH\_ZURUECK}}}
-\DoxyCodeLine{253         \};}
-\DoxyCodeLine{254         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(callsOrange, 9);}
-\DoxyCodeLine{255         \textcolor{keywordflow}{break};}
-\DoxyCodeLine{256       \}}
-\DoxyCodeLine{257   \}}
-\DoxyCodeLine{258 \}}
+\DoxyCodeLine{255             \{}
+\DoxyCodeLine{256   \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7}{update}}();}
+\DoxyCodeLine{257   \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.\mbox{\hyperlink{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99}{update}}();}
+\DoxyCodeLine{258   \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a91245621ca3e5340361f061d65025635}{updatePos}}();}
+\DoxyCodeLine{259   \mbox{\hyperlink{sketch_8ino_ae68a57cc22f2b256b21089a585de29df}{stopButton}}.\mbox{\hyperlink{classButtonHandler_aaed9117143aa1674a71aa012e558d4e8}{update}}();}
+\DoxyCodeLine{260   \textcolor{keywordflow}{if}(\mbox{\hyperlink{sketch_8ino_ab7ffbbf9ac91d991bb0c81c6f4fa6699}{doFlicker}})\{}
+\DoxyCodeLine{265     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} b=(millis()/2)\%513;\textcolor{comment}{//helligkeit: 0-\/512}}
+\DoxyCodeLine{266     \textcolor{keywordflow}{if} (b>255)\{}
+\DoxyCodeLine{267       b=511-\/b; \textcolor{comment}{//wenn b größer als 255, wird die helligkeit kleiner, Werte über 255 werden also "gespiegelt"}}
+\DoxyCodeLine{268     \}}
+\DoxyCodeLine{269     \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(b,b/2,0);\textcolor{comment}{//orange}}
+\DoxyCodeLine{270     \textcolor{keywordflow}{if}(random(3)==0)\{}
+\DoxyCodeLine{271       \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.noBacklight();}
+\DoxyCodeLine{272     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{273       \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.backlight();}
+\DoxyCodeLine{274     \}}
+\DoxyCodeLine{275   \}}
+\DoxyCodeLine{276   \textcolor{keywordflow}{if} (\mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{running}}) \{}
+\DoxyCodeLine{277     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{278   \}}
+\DoxyCodeLine{283   \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2}{Farbe}} farbe = \mbox{\hyperlink{sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd}{mesureColor}}();}
+\DoxyCodeLine{284   \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a0750f5868c694b9f46638038b8536e0a}{setSpeed}}(\mbox{\hyperlink{sketch_8ino_adef1ca0bee2c8b7c9b72001969ee3426}{SERVO\_SPEED\_DEFAULT}});}
+\DoxyCodeLine{285   \textcolor{keywordflow}{switch} (farbe) \{}
+\DoxyCodeLine{286     \textcolor{keywordflow}{case} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50}{WHITE}}:}
+\DoxyCodeLine{287       \{}
+\DoxyCodeLine{288         \mbox{\hyperlink{sketch_8ino_a13f268479b5aae34b4a2297104c7aecd}{nWhite}}++;}
+\DoxyCodeLine{289         Serial.println(\textcolor{stringliteral}{"white"});}
+\DoxyCodeLine{290         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
+\DoxyCodeLine{291         \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} callsWhite = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[6] \{}
+\DoxyCodeLine{292           \textcolor{comment}{//static so that the space for the calls is only allocated once (https://cpp4arduino.com/2018/11/06/what-\/is-\/heap-\/fragmentation.html), }}
+\DoxyCodeLine{293           \textcolor{comment}{//didn't end up being necessary because at there is only one object in heap at one point in time (callHandler.deleteCalls())}}
+\DoxyCodeLine{294           \textcolor{comment}{// new so that it is allocated on the heap}}
+\DoxyCodeLine{295           \textcolor{comment}{//auto automatically sets the type, in this case Callable*[] (Callable**)}}
+\DoxyCodeLine{296           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"Ball erkannt, vorsicht"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000), \textcolor{comment}{//objects get upcasted to Callable*}}
+\DoxyCodeLine{297           \textcolor{keyword}{new} \mbox{\hyperlink{classLcdDotAnim}{LcdDotAnim}}(\textcolor{stringliteral}{"Wei\(\backslash\)342er Ball, drehe Links"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 0),}
+\DoxyCodeLine{298           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
+\DoxyCodeLine{299             \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}}(\mbox{\hyperlink{sketch_8ino_a759a9f39d205bf95aed6a556759ebd8a}{ANGLE\_LEFT\_HOLE}});}
+\DoxyCodeLine{300           \}, \&\mbox{\hyperlink{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}{servoIsDone}}),}
+\DoxyCodeLine{301           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"Angekommen"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000),}
+\DoxyCodeLine{302           \mbox{\hyperlink{sketch_8ino_a96e566c1144385ff3e4c1ec37bdd5274}{GEH\_ZURUECK}} \textcolor{comment}{//2 elemente}}
+\DoxyCodeLine{303         \};}
+\DoxyCodeLine{304         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(callsWhite, 6); \textcolor{comment}{//if the number is too large the program crashes}}
+\DoxyCodeLine{305         \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(255,255,255);}
+\DoxyCodeLine{306         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{307       \}}
+\DoxyCodeLine{308     \textcolor{keywordflow}{case} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3}{BLACK}}:}
+\DoxyCodeLine{309       \{}
+\DoxyCodeLine{310         \mbox{\hyperlink{sketch_8ino_a847f8cb2693f97028af9e2a0fb979d41}{nBlack}}++;}
+\DoxyCodeLine{311         Serial.println(\textcolor{stringliteral}{"black"});}
+\DoxyCodeLine{312         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
+\DoxyCodeLine{313         \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} callsBlack = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[6]  \{}
+\DoxyCodeLine{314           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"Ball erkannt, vorsicht"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000),}
+\DoxyCodeLine{315           \textcolor{keyword}{new} \mbox{\hyperlink{classLcdDotAnim}{LcdDotAnim}}(\textcolor{stringliteral}{"Schwarzer Ball, drehe Rechts"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 0),}
+\DoxyCodeLine{316           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
+\DoxyCodeLine{317             \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}}(\mbox{\hyperlink{sketch_8ino_aea1dd563eecdccc3c412c2eb13f99850}{ANGLE\_RIGHT\_HOLE}});}
+\DoxyCodeLine{318           \}, \&\mbox{\hyperlink{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}{servoIsDone}}),}
+\DoxyCodeLine{319           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"Angekommen"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000),}
+\DoxyCodeLine{320           \mbox{\hyperlink{sketch_8ino_a96e566c1144385ff3e4c1ec37bdd5274}{GEH\_ZURUECK}}}
+\DoxyCodeLine{321         \};}
+\DoxyCodeLine{322         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(callsBlack, 6);}
+\DoxyCodeLine{323         \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(0,0,255);}
+\DoxyCodeLine{324         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{325       \}}
+\DoxyCodeLine{326     \textcolor{keywordflow}{case} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2}{NOTHING}}:}
+\DoxyCodeLine{327       \{}
+\DoxyCodeLine{328         Serial.println(\textcolor{stringliteral}{"nothing"});}
+\DoxyCodeLine{329         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
+\DoxyCodeLine{330         \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} callsNothing = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[1] \{}
+\DoxyCodeLine{331           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(String(\textcolor{stringliteral}{"Ball einlegen W:"}) + \mbox{\hyperlink{sketch_8ino_a13f268479b5aae34b4a2297104c7aecd}{nWhite}} + String(\textcolor{stringliteral}{" S:"}) + \mbox{\hyperlink{sketch_8ino_a847f8cb2693f97028af9e2a0fb979d41}{nBlack}} + String(\textcolor{stringliteral}{" O:"}) + \mbox{\hyperlink{sketch_8ino_ab02bdede4356a3a7dffc99e97e927ca6}{nOrange}}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000)}
+\DoxyCodeLine{332         \};}
+\DoxyCodeLine{333         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(callsNothing, 1);}
+\DoxyCodeLine{334         \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(0,255,0);}
+\DoxyCodeLine{335         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{336       \}}
+\DoxyCodeLine{337     \textcolor{keywordflow}{case} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}{ORANGE}}:}
+\DoxyCodeLine{338       \{}
+\DoxyCodeLine{339         \mbox{\hyperlink{sketch_8ino_ab7ffbbf9ac91d991bb0c81c6f4fa6699}{doFlicker}}=\textcolor{keyword}{true};}
+\DoxyCodeLine{340         \mbox{\hyperlink{sketch_8ino_ab02bdede4356a3a7dffc99e97e927ca6}{nOrange}}++;}
+\DoxyCodeLine{341         Serial.println(\textcolor{stringliteral}{"orange"});}
+\DoxyCodeLine{342         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
+\DoxyCodeLine{343         \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} callsOrange = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[9] \{}
+\DoxyCodeLine{344           \textcolor{keyword}{new} \mbox{\hyperlink{classLcdDotAnim}{LcdDotAnim}}(\textcolor{stringliteral}{"\(\backslash\)xC0ra\(\backslash\)10g\(\backslash\)xD9ner Ba\(\backslash\)xEDl"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 0), \textcolor{comment}{//https://arduino.stackexchange.com/a/46833}}
+\DoxyCodeLine{345           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
+\DoxyCodeLine{346             \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}}(\mbox{\hyperlink{sketch_8ino_aea1dd563eecdccc3c412c2eb13f99850}{ANGLE\_RIGHT\_HOLE}});}
+\DoxyCodeLine{347           \}, \&\mbox{\hyperlink{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}{servoIsDone}}),}
+\DoxyCodeLine{348           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"Fehler \(\backslash\)11rkannt"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000),}
+\DoxyCodeLine{349           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
+\DoxyCodeLine{350             \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a0750f5868c694b9f46638038b8536e0a}{setSpeed}}(\mbox{\hyperlink{sketch_8ino_a8b8f576df7f10b8c79c4ee6ee1f94166}{SERVO\_SPEED\_FAST}});}
+\DoxyCodeLine{351             \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}}(\mbox{\hyperlink{sketch_8ino_ac82ee88c087fbd603a9a9ff334218360}{ANGLE\_MIN}});}
+\DoxyCodeLine{352           \}, \&\mbox{\hyperlink{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}{servoIsDone}}),}
+\DoxyCodeLine{353           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
+\DoxyCodeLine{354             \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a0750f5868c694b9f46638038b8536e0a}{setSpeed}}(\mbox{\hyperlink{sketch_8ino_adef1ca0bee2c8b7c9b72001969ee3426}{SERVO\_SPEED\_DEFAULT}});}
+\DoxyCodeLine{355           \}, \&\mbox{\hyperlink{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}{servoIsDone}}),}
+\DoxyCodeLine{356           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
+\DoxyCodeLine{357             \mbox{\hyperlink{sketch_8ino_ab7ffbbf9ac91d991bb0c81c6f4fa6699}{doFlicker}}=\textcolor{keyword}{false};}
+\DoxyCodeLine{358             \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(0,255,0);}
+\DoxyCodeLine{359             \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.backlight();}
+\DoxyCodeLine{360           \}),}
+\DoxyCodeLine{361           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"Fehler beseitigt"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 2000),}
+\DoxyCodeLine{362           \mbox{\hyperlink{sketch_8ino_a96e566c1144385ff3e4c1ec37bdd5274}{GEH\_ZURUECK}}}
+\DoxyCodeLine{363         \};}
+\DoxyCodeLine{364         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(callsOrange, 9);}
+\DoxyCodeLine{365         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{366       \}}
+\DoxyCodeLine{367   \}}
+\DoxyCodeLine{368 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd}\label{sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd}} 
@@ -305,25 +302,32 @@ Definiert in Zeile 153 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 63 der Datei sketch.\+ino.
+misst mithilfe des Reflexoptokopplers die Farbe des Balls 
+
+\begin{DoxyReturn}{Rückgabe}
+Farbe Die Farbe des Balls 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 162 der Datei sketch.\+ino.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{63                     \{}
-\DoxyCodeLine{64   \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}{ORANGE}};\textcolor{comment}{//inputs hardcoden}}
-\DoxyCodeLine{65   \textcolor{keywordtype}{int} hue = random(0,1000);\textcolor{comment}{//inputs simulieren}}
-\DoxyCodeLine{66   \textcolor{comment}{//int hue=analogRead(A0);//tatsächlich Farbe messen}}
-\DoxyCodeLine{67   \textcolor{keywordflow}{if} (hue <= 100) \{}
-\DoxyCodeLine{68     \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}{ORANGE}};}
-\DoxyCodeLine{69   \}}
-\DoxyCodeLine{70   \textcolor{keywordflow}{if} (hue < 500) \{}
-\DoxyCodeLine{71     \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50}{WHITE}};}
-\DoxyCodeLine{72   \}}
-\DoxyCodeLine{73   \textcolor{keywordflow}{if} (hue < 830) \{}
-\DoxyCodeLine{74     \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2}{NOTHING}};}
-\DoxyCodeLine{75   \}}
-\DoxyCodeLine{76   \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3}{BLACK}};}
-\DoxyCodeLine{77 \}}
+\DoxyCodeLine{163 \{}
+\DoxyCodeLine{164   \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}{ORANGE}};\textcolor{comment}{//inputs hardcoden, für Testzwecke}}
+\DoxyCodeLine{165   \textcolor{keywordtype}{int} hue = random(0,1000);\textcolor{comment}{//inputs simulieren}}
+\DoxyCodeLine{166   \textcolor{comment}{//int hue=analogRead(A0);//tatsächlich Farbe messen}}
+\DoxyCodeLine{167   \textcolor{keywordflow}{if} (hue <= 100) \{}
+\DoxyCodeLine{168     \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}{ORANGE}};}
+\DoxyCodeLine{169   \}}
+\DoxyCodeLine{170   \textcolor{keywordflow}{if} (hue < 500) \{}
+\DoxyCodeLine{171     \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50}{WHITE}};}
+\DoxyCodeLine{172   \}}
+\DoxyCodeLine{173   \textcolor{keywordflow}{if} (hue < 830) \{}
+\DoxyCodeLine{174     \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2}{NOTHING}};}
+\DoxyCodeLine{175   \}}
+\DoxyCodeLine{176   \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3}{BLACK}};}
+\DoxyCodeLine{177 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}\label{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}} 
@@ -343,13 +347,13 @@ false
 \end{DoxyReturn}
 
 
-Definiert in Zeile 123 der Datei sketch.\+ino.
+Definiert in Zeile 225 der Datei sketch.\+ino.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{123                    \{}
-\DoxyCodeLine{124   \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_ac247ddd89cf27db323522746e5afa922}{isDone}}();}
-\DoxyCodeLine{125 \}}
+\DoxyCodeLine{225                    \{}
+\DoxyCodeLine{226   \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_ac247ddd89cf27db323522746e5afa922}{isDone}}();}
+\DoxyCodeLine{227 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}\label{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}} 
@@ -360,15 +364,15 @@ Definiert in Zeile 123 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 86 der Datei sketch.\+ino.
+Definiert in Zeile 186 der Datei sketch.\+ino.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{86                                                                   \{ \textcolor{comment}{//unsigned char: 0-\/255}}
-\DoxyCodeLine{87   analogWrite(\mbox{\hyperlink{sketch_8ino_ac57f63ef8771d860562baf56fd4c2732}{PIN\_RED}},r);}
-\DoxyCodeLine{88   analogWrite(\mbox{\hyperlink{sketch_8ino_ac594418c6e368680a9de074d7d136caa}{PIN\_GREEN}},g);}
-\DoxyCodeLine{89   analogWrite(\mbox{\hyperlink{sketch_8ino_a275fb5d3177300cc6a29ae232344e4d8}{PIN\_BLUE}},b);}
-\DoxyCodeLine{90 \}}
+\DoxyCodeLine{187 \{ }
+\DoxyCodeLine{188   analogWrite(\mbox{\hyperlink{sketch_8ino_ac57f63ef8771d860562baf56fd4c2732}{PIN\_RED}},r);}
+\DoxyCodeLine{189   analogWrite(\mbox{\hyperlink{sketch_8ino_ac594418c6e368680a9de074d7d136caa}{PIN\_GREEN}},g);}
+\DoxyCodeLine{190   analogWrite(\mbox{\hyperlink{sketch_8ino_a275fb5d3177300cc6a29ae232344e4d8}{PIN\_BLUE}},b);}
+\DoxyCodeLine{191 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d}\label{sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d}} 
@@ -383,22 +387,22 @@ wird am Anfang des Programms aufgerufen
 
 
 
-Definiert in Zeile 130 der Datei sketch.\+ino.
+Definiert in Zeile 232 der Datei sketch.\+ino.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{130              \{}
-\DoxyCodeLine{131   Serial.begin(9600);}
-\DoxyCodeLine{132   Serial.println(\textcolor{stringliteral}{"setup"});}
-\DoxyCodeLine{133   \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.attach(\mbox{\hyperlink{sketch_8ino_ae1e0b317f35c61409381a32ea905ba67}{PIN\_SERVO}});}
-\DoxyCodeLine{134   \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.\mbox{\hyperlink{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38}{init}}();}
-\DoxyCodeLine{135   \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a95761db4177f965e756bdf725cb10ada}{writeDirect}}(\mbox{\hyperlink{sketch_8ino_ad79ce25ec94495875b917de81bbd692e}{ANGLE\_CENTER}});}
-\DoxyCodeLine{136   \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(\textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[1] \{}
-\DoxyCodeLine{137     \textcolor{keyword}{new} \mbox{\hyperlink{classLcdLoadingAnim}{LcdLoadingAnim}}(\textcolor{stringliteral}{"Lade"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, \mbox{\hyperlink{sketch_8ino_ab09894308b534e1030021de3bc84710e}{LOADING\_DURATION}}),}
-\DoxyCodeLine{138   \}, 1);}
-\DoxyCodeLine{139   randomSeed(analogRead(A1));}
-\DoxyCodeLine{140   \mbox{\hyperlink{sketch_8ino_ae68a57cc22f2b256b21089a585de29df}{stopButton}} = \mbox{\hyperlink{classButtonHandler}{ButtonHandler}}(\mbox{\hyperlink{sketch_8ino_a05c5455b55db369d7d780a0a64525ecc}{PIN\_STOPBUTTON}}, \&\mbox{\hyperlink{sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc}{stopButtonClicked}});}
-\DoxyCodeLine{141 \}}
+\DoxyCodeLine{232              \{}
+\DoxyCodeLine{233   Serial.begin(9600);}
+\DoxyCodeLine{234   Serial.println(\textcolor{stringliteral}{"setup"});}
+\DoxyCodeLine{235   \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.attach(\mbox{\hyperlink{sketch_8ino_ae1e0b317f35c61409381a32ea905ba67}{PIN\_SERVO}});}
+\DoxyCodeLine{236   \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.\mbox{\hyperlink{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38}{init}}();}
+\DoxyCodeLine{237   \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a95761db4177f965e756bdf725cb10ada}{writeDirect}}(\mbox{\hyperlink{sketch_8ino_ad79ce25ec94495875b917de81bbd692e}{ANGLE\_CENTER}});}
+\DoxyCodeLine{238   \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(\textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[1] \{}
+\DoxyCodeLine{239     \textcolor{keyword}{new} \mbox{\hyperlink{classLcdLoadingAnim}{LcdLoadingAnim}}(\textcolor{stringliteral}{"Lade"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, \mbox{\hyperlink{sketch_8ino_ab09894308b534e1030021de3bc84710e}{LOADING\_DURATION}}),}
+\DoxyCodeLine{240   \}, 1);}
+\DoxyCodeLine{241   randomSeed(analogRead(A1));}
+\DoxyCodeLine{242   \mbox{\hyperlink{sketch_8ino_ae68a57cc22f2b256b21089a585de29df}{stopButton}} = \mbox{\hyperlink{classButtonHandler}{ButtonHandler}}(\mbox{\hyperlink{sketch_8ino_a05c5455b55db369d7d780a0a64525ecc}{PIN\_STOPBUTTON}}, \&\mbox{\hyperlink{sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc}{stopButtonClicked}});}
+\DoxyCodeLine{243 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc}\label{sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc}} 
@@ -413,27 +417,27 @@ wird ausgeführt wenn der Stop-\/\+Knopf gedrückt wird
 
 
 
-Definiert in Zeile 95 der Datei sketch.\+ino.
+Definiert in Zeile 196 der Datei sketch.\+ino.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{95                          \{}
-\DoxyCodeLine{96   \textcolor{keyword}{static} \textcolor{keywordtype}{bool} isStopped = \textcolor{keyword}{false};\textcolor{comment}{//wird nur einmal initialisiert}}
-\DoxyCodeLine{97   isStopped = !isStopped;}
-\DoxyCodeLine{98   \textcolor{keywordflow}{if} (isStopped) \{}
-\DoxyCodeLine{99     Serial.println(\textcolor{stringliteral}{"stopping servo"});}
-\DoxyCodeLine{100     \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a2504ffc997018dad9f3811b18b16c672}{stop}}();}
-\DoxyCodeLine{101     \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
-\DoxyCodeLine{102     \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} call = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[1] \{}
-\DoxyCodeLine{103       \textcolor{keyword}{new} \mbox{\hyperlink{classLcdDotAnim}{LcdDotAnim}}(\textcolor{stringliteral}{"gestoppt, warte auf start"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 100000000000000) \textcolor{comment}{//ja, sollte ich vermutlich besser implementieren}}
-\DoxyCodeLine{104     \};}
-\DoxyCodeLine{105     \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(call, 1);}
-\DoxyCodeLine{106     \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(255,0,0);}
-\DoxyCodeLine{107     \mbox{\hyperlink{sketch_8ino_ab7ffbbf9ac91d991bb0c81c6f4fa6699}{doFlicker}}=\textcolor{keyword}{false};}
-\DoxyCodeLine{108   \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{109     \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{running}} = \textcolor{keyword}{false};}
-\DoxyCodeLine{110   \}}
-\DoxyCodeLine{111 \}}
+\DoxyCodeLine{197 \{}
+\DoxyCodeLine{198   \textcolor{keyword}{static} \textcolor{keywordtype}{bool} isStopped = \textcolor{keyword}{false};\textcolor{comment}{//wird nur einmal initialisiert}}
+\DoxyCodeLine{199   isStopped = !isStopped;}
+\DoxyCodeLine{200   \textcolor{keywordflow}{if} (isStopped) \{}
+\DoxyCodeLine{201     Serial.println(\textcolor{stringliteral}{"stopping servo"});}
+\DoxyCodeLine{202     \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a2504ffc997018dad9f3811b18b16c672}{stop}}();}
+\DoxyCodeLine{203     \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
+\DoxyCodeLine{204     \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} call = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[1] \{}
+\DoxyCodeLine{205       \textcolor{keyword}{new} \mbox{\hyperlink{classLcdDotAnim}{LcdDotAnim}}(\textcolor{stringliteral}{"gestoppt, warte auf start"}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 100000000000000) \textcolor{comment}{//ja, sollte ich vermutlich besser implementieren}}
+\DoxyCodeLine{206     \};}
+\DoxyCodeLine{207     \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(call, 1);}
+\DoxyCodeLine{208     \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(255,0,0);}
+\DoxyCodeLine{209     \mbox{\hyperlink{sketch_8ino_ab7ffbbf9ac91d991bb0c81c6f4fa6699}{doFlicker}}=\textcolor{keyword}{false};}
+\DoxyCodeLine{210   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{211     \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{running}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{212   \}}
+\DoxyCodeLine{213 \}}
 
 \end{DoxyCode}
 
@@ -447,7 +451,11 @@ Definiert in Zeile 95 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 16 der Datei sketch.\+ino.
+Winkel der Ablagefläche für neue Bälle, die sortiert werden sollen. 
+
+
+
+Definiert in Zeile 28 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_a759a9f39d205bf95aed6a556759ebd8a}\label{sketch_8ino_a759a9f39d205bf95aed6a556759ebd8a}} 
 \index{sketch.ino@{sketch.ino}!ANGLE\_LEFT\_HOLE@{ANGLE\_LEFT\_HOLE}}
@@ -457,7 +465,11 @@ Definiert in Zeile 16 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 14 der Datei sketch.\+ino.
+Winkel des linken Lochs in Grad. 
+
+
+
+Definiert in Zeile 18 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_ac82ee88c087fbd603a9a9ff334218360}\label{sketch_8ino_ac82ee88c087fbd603a9a9ff334218360}} 
 \index{sketch.ino@{sketch.ino}!ANGLE\_MIN@{ANGLE\_MIN}}
@@ -467,7 +479,14 @@ Definiert in Zeile 14 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 17 der Datei sketch.\+ino.
+Der kleinste sichere Winkel. 
+
+\begin{DoxyWarning}{Warnung}
+wenn dieser Winkel nicht eingehalten wird schlägt der Arm gegen den Stopper 
+\end{DoxyWarning}
+
+
+Definiert in Zeile 33 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_aea1dd563eecdccc3c412c2eb13f99850}\label{sketch_8ino_aea1dd563eecdccc3c412c2eb13f99850}} 
 \index{sketch.ino@{sketch.ino}!ANGLE\_RIGHT\_HOLE@{ANGLE\_RIGHT\_HOLE}}
@@ -477,7 +496,11 @@ Definiert in Zeile 17 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 15 der Datei sketch.\+ino.
+Winkel des rechten Lochs in Grad. 
+
+
+
+Definiert in Zeile 23 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}\label{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}} 
 \index{sketch.ino@{sketch.ino}!callHandler@{callHandler}}
@@ -487,7 +510,7 @@ Definiert in Zeile 15 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 26 der Datei sketch.\+ino.
+Definiert in Zeile 75 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_ab7ffbbf9ac91d991bb0c81c6f4fa6699}\label{sketch_8ino_ab7ffbbf9ac91d991bb0c81c6f4fa6699}} 
 \index{sketch.ino@{sketch.ino}!doFlicker@{doFlicker}}
@@ -497,7 +520,11 @@ Definiert in Zeile 26 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 32 der Datei sketch.\+ino.
+sagt aus, ob das Display flackern und die Led blinken soll 
+
+Wird auf true gesetzt, wenn ein Orangener Ball entdeckt wird 
+
+Definiert in Zeile 94 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}\label{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}} 
 \index{sketch.ino@{sketch.ino}!lcd@{lcd}}
@@ -505,11 +532,19 @@ Definiert in Zeile 32 der Datei sketch.\+ino.
 \doxysubsubsection{\texorpdfstring{lcd}{lcd}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} lcd(0x27, 16, 2)}
 
+
+
+Der animierbare Lcd. 
+
 \mbox{\Hypertarget{sketch_8ino_ab09894308b534e1030021de3bc84710e}\label{sketch_8ino_ab09894308b534e1030021de3bc84710e}} 
 \index{sketch.ino@{sketch.ino}!LOADING\_DURATION@{LOADING\_DURATION}}
 \index{LOADING\_DURATION@{LOADING\_DURATION}!sketch.ino@{sketch.ino}}
 \doxysubsubsection{\texorpdfstring{LOADING\_DURATION}{LOADING\_DURATION}}
 {\footnotesize\ttfamily const int L\+O\+A\+D\+I\+N\+G\+\_\+\+D\+U\+R\+A\+T\+I\+ON = 3000}
+
+
+
+Gibt an, wie lange die Ladeanimation beim \char`\"{}\+Hochfahren\char`\"{} dauert. 
 
 
 
@@ -523,7 +558,11 @@ Definiert in Zeile 13 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 30 der Datei sketch.\+ino.
+die Anzahl schwarzer Bälle, die schon sortiert wurden 
+
+
+
+Definiert in Zeile 85 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_ab02bdede4356a3a7dffc99e97e927ca6}\label{sketch_8ino_ab02bdede4356a3a7dffc99e97e927ca6}} 
 \index{sketch.ino@{sketch.ino}!nOrange@{nOrange}}
@@ -533,7 +572,11 @@ Definiert in Zeile 30 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 31 der Datei sketch.\+ino.
+die Anzahl orangener Bälle, die schon sortiert/entfernt wurden 
+
+
+
+Definiert in Zeile 89 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_a13f268479b5aae34b4a2297104c7aecd}\label{sketch_8ino_a13f268479b5aae34b4a2297104c7aecd}} 
 \index{sketch.ino@{sketch.ino}!nWhite@{nWhite}}
@@ -543,7 +586,11 @@ Definiert in Zeile 31 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 29 der Datei sketch.\+ino.
+die Anzahl weißer Bälle, die schon sortiert wurden 
+
+
+
+Definiert in Zeile 81 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_a275fb5d3177300cc6a29ae232344e4d8}\label{sketch_8ino_a275fb5d3177300cc6a29ae232344e4d8}} 
 \index{sketch.ino@{sketch.ino}!PIN\_BLUE@{PIN\_BLUE}}
@@ -553,7 +600,11 @@ Definiert in Zeile 29 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 22 der Datei sketch.\+ino.
+Der Pin um die Blaufärbung der R\+G\+B-\/\+Led zu steuern. 
+
+
+
+Definiert in Zeile 58 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_ac594418c6e368680a9de074d7d136caa}\label{sketch_8ino_ac594418c6e368680a9de074d7d136caa}} 
 \index{sketch.ino@{sketch.ino}!PIN\_GREEN@{PIN\_GREEN}}
@@ -563,7 +614,11 @@ Definiert in Zeile 22 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 21 der Datei sketch.\+ino.
+Der Pin um die Grünfärbung der R\+G\+B-\/\+Led zu steuern. 
+
+
+
+Definiert in Zeile 53 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_ac57f63ef8771d860562baf56fd4c2732}\label{sketch_8ino_ac57f63ef8771d860562baf56fd4c2732}} 
 \index{sketch.ino@{sketch.ino}!PIN\_RED@{PIN\_RED}}
@@ -573,7 +628,11 @@ Definiert in Zeile 21 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 20 der Datei sketch.\+ino.
+Der Pin um die Rotfärbung der R\+G\+B-\/\+Led zu steuern. 
+
+
+
+Definiert in Zeile 48 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_ae1e0b317f35c61409381a32ea905ba67}\label{sketch_8ino_ae1e0b317f35c61409381a32ea905ba67}} 
 \index{sketch.ino@{sketch.ino}!PIN\_SERVO@{PIN\_SERVO}}
@@ -583,7 +642,11 @@ Definiert in Zeile 20 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 18 der Datei sketch.\+ino.
+Der Pin an dem der Servomotor angeschlossen ist. 
+
+
+
+Definiert in Zeile 38 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_a05c5455b55db369d7d780a0a64525ecc}\label{sketch_8ino_a05c5455b55db369d7d780a0a64525ecc}} 
 \index{sketch.ino@{sketch.ino}!PIN\_STOPBUTTON@{PIN\_STOPBUTTON}}
@@ -593,7 +656,11 @@ Definiert in Zeile 18 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 19 der Datei sketch.\+ino.
+Der Pin an dem der Start/\+Stop Knopf angeschlossen ist. 
+
+
+
+Definiert in Zeile 43 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}\label{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}} 
 \index{sketch.ino@{sketch.ino}!servo@{servo}}
@@ -603,7 +670,7 @@ Definiert in Zeile 19 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 27 der Datei sketch.\+ino.
+Definiert in Zeile 76 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_adef1ca0bee2c8b7c9b72001969ee3426}\label{sketch_8ino_adef1ca0bee2c8b7c9b72001969ee3426}} 
 \index{sketch.ino@{sketch.ino}!SERVO\_SPEED\_DEFAULT@{SERVO\_SPEED\_DEFAULT}}
@@ -613,7 +680,11 @@ Definiert in Zeile 27 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 23 der Datei sketch.\+ino.
+Die normale Geschwindigkeit des Servos. 
+
+
+
+Definiert in Zeile 63 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_a8b8f576df7f10b8c79c4ee6ee1f94166}\label{sketch_8ino_a8b8f576df7f10b8c79c4ee6ee1f94166}} 
 \index{sketch.ino@{sketch.ino}!SERVO\_SPEED\_FAST@{SERVO\_SPEED\_FAST}}
@@ -623,7 +694,14 @@ Definiert in Zeile 23 der Datei sketch.\+ino.
 
 
 
-Definiert in Zeile 24 der Datei sketch.\+ino.
+Die \char`\"{}schnelle\char`\"{} Geschwindigkeit des Servos. 
+
+\begin{DoxyWarning}{Warnung}
+Servo bewegt sich hier nicht mit Maximalgeschwindigkeit. Wenn diese Geschwindigkeit schneller eingestellt wird als der Servo tatsächlich ist, hört er möglicherweise auf sich zu bewegen, bevor er an seinem Ziel angekommen ist Alternativ könnte \mbox{\hyperlink{classCustomServo_a95761db4177f965e756bdf725cb10ada}{Custom\+Servo\+::write\+Direct}} benutzt werden 
+\end{DoxyWarning}
+
+
+Definiert in Zeile 69 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{sketch_8ino_ae68a57cc22f2b256b21089a585de29df}\label{sketch_8ino_ae68a57cc22f2b256b21089a585de29df}} 
 \index{sketch.ino@{sketch.ino}!stopButton@{stopButton}}
@@ -637,5 +715,5 @@ der Stop Knopf
 
 
 
-Definiert in Zeile 116 der Datei sketch.\+ino.
+Definiert in Zeile 218 der Datei sketch.\+ino.
 

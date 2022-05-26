@@ -10,7 +10,8 @@
  * @brief setzt den Speicherplatz der von den Calls besetzt wurde frei
  * 
  */
-void CallHandler::deleteCalls() {
+void CallHandler::deleteCalls() 
+{
   if (!callsSet) {
     return;
   }
@@ -26,7 +27,8 @@ void CallHandler::deleteCalls() {
  * @param newCallPtrs 
  * @param nCalls 
  */
-void CallHandler::setCalls(Callable* newCallPtrs[], size_t nCalls) {
+void CallHandler::setCalls(Callable* newCallPtrs[], size_t nCalls) 
+{
   /*if(callsSet){ //doing this would result in two sets of calls being in heap at once
     deleteCalls(); //solution is to delete previus calls before initializing a new one
   }*/
@@ -42,7 +44,8 @@ void CallHandler::setCalls(Callable* newCallPtrs[], size_t nCalls) {
  * @brief wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z.B. animationen)
  * @details wird von loop aufgerufen
  */
-void CallHandler::update() {
+void CallHandler::update() 
+{
   if (!running) {
     return;
   }
