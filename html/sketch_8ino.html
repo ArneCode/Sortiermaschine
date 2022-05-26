@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.17-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,10 +10,23 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="new_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeDarkModeToggle.title = "Zwischen hellem/dunklem Modus wechseln"
+    console.log(DoxygenAwesomeDarkModeToggle)
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -20,10 +34,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Sortiermaschiene
    </div>
-   <div id="projectbrief">Der Code für eine Sortiermaschiene, die weiße, scharze und orangene Bälle erkennt und sortiert</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +60,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('sketch_8ino.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,7 +91,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Klassen</a> &#124;
@@ -82,17 +112,7 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include-Abhängigkeitsdiagramm für sketch.ino:</div>
 <div class="dyncontent">
-<div class="center"><img src="sketch_8ino__incl.png" border="0" usemap="#sketch_8ino" alt=""/></div>
-<map name="sketch_8ino" id="sketch_8ino">
-<area shape="rect" title="Hauptdatei." alt="" coords="175,5,263,32"/>
-<area shape="rect" href="customServo_8h.html" title="Header Datei der CustomServo Klasse." alt="" coords="8,80,127,107"/>
-<area shape="rect" href="header_8h.html" title="definiert variablen&#45;types die überall im Programm benutzt werden" alt="" coords="256,229,335,256"/>
-<area shape="rect" href="animLcd_8h.html" title="Header&#45;Datei für den animierbaren lcd (AnimatableLcd)" alt="" coords="244,80,333,107"/>
-<area shape="rect" href="callHandler_8h.html" title="header datei für den CallHandler" alt="" coords="373,80,479,107"/>
-<area shape="rect" title=" " alt="" coords="5,155,76,181"/>
-<area shape="rect" title=" " alt="" coords="202,155,349,181"/>
-<area shape="rect" href="animString_8h.html" title="Header datei für eine Mehrzahl von animierbaren Strings und der Callable Klasse." alt="" coords="373,155,479,181"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino__incl.svg" width="502" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="sketch_8ino_source.html">gehe zum Quellcode dieser Datei</a></p>
@@ -100,7 +120,7 @@ Include-Abhängigkeitsdiagramm für sketch.ino:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Klassen</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classButtonHandler.html">ButtonHandler</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">kleine Klasse die Knopfdrücke verarbeitet  <a href="classButtonHandler.html#details">Mehr ...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kleine Klasse die Knopfdrücke verarbeitet.  <a href="classButtonHandler.html#details">Mehr ...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -121,21 +141,22 @@ Aufzählungen</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Funktionen</h2></td></tr>
 <tr class="memitem:ac80eb6baeaace0198948fd8ff196e4fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2">Farbe</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd">mesureColor</a> ()</td></tr>
-<tr class="memdesc:ac80eb6baeaace0198948fd8ff196e4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">misst mithilfe des Reflexoptokopplers die Farbe des Balls  <a href="sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd">Mehr ...</a><br /></td></tr>
+<tr class="memdesc:ac80eb6baeaace0198948fd8ff196e4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Misst mithilfe des Reflexoptokopplers die Farbe des Balls.  <a href="sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd">Mehr ...</a><br /></td></tr>
 <tr class="separator:ac80eb6baeaace0198948fd8ff196e4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a902e3350d6dfe8c210f24b31c7b284d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a> (unsigned char r, unsigned char g, unsigned char b)</td></tr>
+<tr class="memdesc:a902e3350d6dfe8c210f24b31c7b284d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt die Farbe der RGB-Led.  <a href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">Mehr ...</a><br /></td></tr>
 <tr class="separator:a902e3350d6dfe8c210f24b31c7b284d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbbe19f80bf8227bbfbb68d98a1937cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc">stopButtonClicked</a> ()</td></tr>
 <tr class="memdesc:abbbe19f80bf8227bbfbb68d98a1937cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">wird ausgeführt wenn der Stop-Knopf gedrückt wird  <a href="sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc">Mehr ...</a><br /></td></tr>
 <tr class="separator:abbbe19f80bf8227bbfbb68d98a1937cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39ddda5c3402f1f7b2c9ccad07e18791"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a> ()</td></tr>
-<tr class="memdesc:a39ddda5c3402f1f7b2c9ccad07e18791"><td class="mdescLeft">&#160;</td><td class="mdescRight">hilf Funktion, Methoden können nicht als functionsparameter benutzt werden  <a href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">Mehr ...</a><br /></td></tr>
+<tr class="memdesc:a39ddda5c3402f1f7b2c9ccad07e18791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hilf Funktion, Methoden können nicht als functionsparameter benutzt werden.  <a href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">Mehr ...</a><br /></td></tr>
 <tr class="separator:a39ddda5c3402f1f7b2c9ccad07e18791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
-<tr class="memdesc:a4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">wird am Anfang des Programms aufgerufen  <a href="sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d">Mehr ...</a><br /></td></tr>
+<tr class="memdesc:a4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wird am Anfang des Programms aufgerufen.  <a href="sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d">Mehr ...</a><br /></td></tr>
 <tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
-<tr class="memdesc:afe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">wird immer wieder ausgeführt  <a href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f">Mehr ...</a><br /></td></tr>
+<tr class="memdesc:afe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wird immer wieder ausgeführt.  <a href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f">Mehr ...</a><br /></td></tr>
 <tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -184,16 +205,16 @@ Variablen</h2></td></tr>
 <tr class="memitem:aa5f528bc8f15fc1d782a990a2841ec22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCustomServo.html">CustomServo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a></td></tr>
 <tr class="separator:aa5f528bc8f15fc1d782a990a2841ec22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13f268479b5aae34b4a2297104c7aecd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd">nWhite</a> = 0</td></tr>
-<tr class="memdesc:a13f268479b5aae34b4a2297104c7aecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">die Anzahl weißer Bälle, die schon sortiert wurden  <a href="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd">Mehr ...</a><br /></td></tr>
+<tr class="memdesc:a13f268479b5aae34b4a2297104c7aecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die Anzahl weißer Bälle, die schon sortiert wurden.  <a href="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd">Mehr ...</a><br /></td></tr>
 <tr class="separator:a13f268479b5aae34b4a2297104c7aecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a847f8cb2693f97028af9e2a0fb979d41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41">nBlack</a> = 0</td></tr>
-<tr class="memdesc:a847f8cb2693f97028af9e2a0fb979d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">die Anzahl schwarzer Bälle, die schon sortiert wurden  <a href="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41">Mehr ...</a><br /></td></tr>
+<tr class="memdesc:a847f8cb2693f97028af9e2a0fb979d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die Anzahl schwarzer Bälle, die schon sortiert wurden.  <a href="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41">Mehr ...</a><br /></td></tr>
 <tr class="separator:a847f8cb2693f97028af9e2a0fb979d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab02bdede4356a3a7dffc99e97e927ca6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#ab02bdede4356a3a7dffc99e97e927ca6">nOrange</a> = 0</td></tr>
-<tr class="memdesc:ab02bdede4356a3a7dffc99e97e927ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">die Anzahl orangener Bälle, die schon sortiert/entfernt wurden  <a href="sketch_8ino.html#ab02bdede4356a3a7dffc99e97e927ca6">Mehr ...</a><br /></td></tr>
+<tr class="memdesc:ab02bdede4356a3a7dffc99e97e927ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die Anzahl orangener Bälle, die schon sortiert/entfernt wurden.  <a href="sketch_8ino.html#ab02bdede4356a3a7dffc99e97e927ca6">Mehr ...</a><br /></td></tr>
 <tr class="separator:ab02bdede4356a3a7dffc99e97e927ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7ffbbf9ac91d991bb0c81c6f4fa6699"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699">doFlicker</a> =false</td></tr>
-<tr class="memdesc:ab7ffbbf9ac91d991bb0c81c6f4fa6699"><td class="mdescLeft">&#160;</td><td class="mdescRight">sagt aus, ob das Display flackern und die Led blinken soll  <a href="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699">Mehr ...</a><br /></td></tr>
+<tr class="memdesc:ab7ffbbf9ac91d991bb0c81c6f4fa6699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sagt aus, ob das Display flackern und die Led blinken soll.  <a href="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699">Mehr ...</a><br /></td></tr>
 <tr class="separator:ab7ffbbf9ac91d991bb0c81c6f4fa6699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae68a57cc22f2b256b21089a585de29df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classButtonHandler.html">ButtonHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#ae68a57cc22f2b256b21089a585de29df">stopButton</a></td></tr>
 <tr class="memdesc:ae68a57cc22f2b256b21089a585de29df"><td class="mdescLeft">&#160;</td><td class="mdescRight">der Stop Knopf  <a href="sketch_8ino.html#ae68a57cc22f2b256b21089a585de29df">Mehr ...</a><br /></td></tr>
@@ -246,13 +267,13 @@ Variablen</h2></td></tr>
 <tr><td class="fieldname"><a id="a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2"></a>NOTHING&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00150">150</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
-<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;           {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50">WHITE</a>,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3">BLACK</a>,</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a>,</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2">NOTHING</a></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00151">151</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50">WHITE</a>,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3">BLACK</a>,</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a>,</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2">NOTHING</a></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -272,9 +293,7 @@ Variablen</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>wird immer wieder ausgeführt </p>
-<p>die momentane Helligkeit der Led</p>
-<p>die Farbe des Balls</p>
+<p>Wird immer wieder ausgeführt. </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00255">255</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 <div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            {</div>
@@ -283,107 +302,112 @@ Variablen</h2></td></tr>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a91245621ca3e5340361f061d65025635">updatePos</a>();</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <a class="code" href="sketch_8ino.html#ae68a57cc22f2b256b21089a585de29df">stopButton</a>.<a class="code" href="classButtonHandler.html#aaed9117143aa1674a71aa012e558d4e8">update</a>();</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699">doFlicker</a>){</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> b=(millis()/2)%513;<span class="comment">//helligkeit: 0-512</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">if</span> (b&gt;255){</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      b=511-b; <span class="comment">//wenn b größer als 255, wird die helligkeit kleiner, Werte über 255 werden also &quot;gespiegelt&quot;</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(b,b/2,0);<span class="comment">//orange</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">if</span>(random(3)==0){</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      <a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.noBacklight();</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }<span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.backlight();</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  }</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">running</a>) {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  }</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2">Farbe</a> farbe = <a class="code" href="sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd">mesureColor</a>();</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a0750f5868c694b9f46638038b8536e0a">setSpeed</a>(<a class="code" href="sketch_8ino.html#adef1ca0bee2c8b7c9b72001969ee3426">SERVO_SPEED_DEFAULT</a>);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keywordflow">switch</span> (farbe) {</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50">WHITE</a>:</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <a class="code" href="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd">nWhite</a>++;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        Serial.println(<span class="stringliteral">&quot;white&quot;</span>);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a>();</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="comment">/*static*/</span> <span class="keyword">auto</span> callsWhite = <span class="keyword">new</span> <a class="code" href="structCallable.html">Callable</a>*[6] {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;          <span class="comment">//static so that the space for the calls is only allocated once (https://cpp4arduino.com/2018/11/06/what-is-heap-fragmentation.html), </span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;          <span class="comment">//didn&#39;t end up being necessary because at there is only one object in heap at one point in time (callHandler.deleteCalls())</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;          <span class="comment">// new so that it is allocated on the heap</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;          <span class="comment">//auto automatically sets the type, in this case Callable*[] (Callable**)</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Ball erkannt, vorsicht&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000), <span class="comment">//objects get upcasted to Callable*</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;          <span class="keyword">new</span> <a class="code" href="classLcdDotAnim.html">LcdDotAnim</a>(<span class="stringliteral">&quot;Wei\342er Ball, drehe Links&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 0),</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;          <span class="keyword">new</span> <a class="code" href="structFuncCall.html">FuncCall</a>([]() {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a>(<a class="code" href="sketch_8ino.html#a759a9f39d205bf95aed6a556759ebd8a">ANGLE_LEFT_HOLE</a>);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;          }, &amp;<a class="code" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a>),</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Angekommen&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000),</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;          <a class="code" href="sketch_8ino.html#a96e566c1144385ff3e4c1ec37bdd5274">GEH_ZURUECK</a> <span class="comment">//2 elemente</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        };</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a>(callsWhite, 6); <span class="comment">//if the number is too large the program crashes</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <a class="code" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(255,255,255);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      }</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3">BLACK</a>:</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      {</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <a class="code" href="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41">nBlack</a>++;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        Serial.println(<span class="stringliteral">&quot;black&quot;</span>);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a>();</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="comment">/*static*/</span> <span class="keyword">auto</span> callsBlack = <span class="keyword">new</span> <a class="code" href="structCallable.html">Callable</a>*[6]  {</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Ball erkannt, vorsicht&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000),</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;          <span class="keyword">new</span> <a class="code" href="classLcdDotAnim.html">LcdDotAnim</a>(<span class="stringliteral">&quot;Schwarzer Ball, drehe Rechts&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 0),</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;          <span class="keyword">new</span> <a class="code" href="structFuncCall.html">FuncCall</a>([]() {</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a>(<a class="code" href="sketch_8ino.html#aea1dd563eecdccc3c412c2eb13f99850">ANGLE_RIGHT_HOLE</a>);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;          }, &amp;<a class="code" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a>),</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Angekommen&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000),</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;          <a class="code" href="sketch_8ino.html#a96e566c1144385ff3e4c1ec37bdd5274">GEH_ZURUECK</a></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        };</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a>(callsBlack, 6);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <a class="code" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(0,0,255);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      }</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2">NOTHING</a>:</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      {</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        Serial.println(<span class="stringliteral">&quot;nothing&quot;</span>);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a>();</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="comment">/*static*/</span> <span class="keyword">auto</span> callsNothing = <span class="keyword">new</span> <a class="code" href="structCallable.html">Callable</a>*[1] {</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(String(<span class="stringliteral">&quot;Ball einlegen W:&quot;</span>) + <a class="code" href="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd">nWhite</a> + String(<span class="stringliteral">&quot; S:&quot;</span>) + <a class="code" href="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41">nBlack</a> + String(<span class="stringliteral">&quot; O:&quot;</span>) + <a class="code" href="sketch_8ino.html#ab02bdede4356a3a7dffc99e97e927ca6">nOrange</a>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000)</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        };</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a>(callsNothing, 1);</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <a class="code" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(0,255,0);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      }</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a>:</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      {</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <a class="code" href="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699">doFlicker</a>=<span class="keyword">true</span>;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <a class="code" href="sketch_8ino.html#ab02bdede4356a3a7dffc99e97e927ca6">nOrange</a>++;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        Serial.println(<span class="stringliteral">&quot;orange&quot;</span>);</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a>();</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="comment">/*static*/</span> <span class="keyword">auto</span> callsOrange = <span class="keyword">new</span> <a class="code" href="structCallable.html">Callable</a>*[9] {</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;          <span class="keyword">new</span> <a class="code" href="classLcdDotAnim.html">LcdDotAnim</a>(<span class="stringliteral">&quot;\xC0ra\10g\xD9ner Ba\xEDl&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 0), <span class="comment">//https://arduino.stackexchange.com/a/46833</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> b=(millis()/2)%513;<span class="comment">//helligkeit: 0-512</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">if</span> (b&gt;255){</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      b=511-b; <span class="comment">//wenn b größer als 255, wird die helligkeit kleiner, Werte über 255 werden also &quot;gespiegelt&quot;</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <a class="code" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(b,b/2,0);<span class="comment">//orange</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">if</span>(random(3)==0){</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      <a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.noBacklight();</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      <a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.backlight();</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  }</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">running</a>) {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2">Farbe</a> farbe = <a class="code" href="sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd">mesureColor</a>();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a0750f5868c694b9f46638038b8536e0a">setSpeed</a>(<a class="code" href="sketch_8ino.html#adef1ca0bee2c8b7c9b72001969ee3426">SERVO_SPEED_DEFAULT</a>);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keywordflow">switch</span> (farbe) {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50">WHITE</a>:</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <a class="code" href="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd">nWhite</a>++;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        Serial.println(<span class="stringliteral">&quot;white&quot;</span>);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a>();</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="comment">/*static*/</span> <span class="keyword">auto</span> callsWhite = <span class="keyword">new</span> <a class="code" href="classCallable.html">Callable</a>*[6] {</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;          <span class="comment">//static so that the space for the calls is only allocated once (https://cpp4arduino.com/2018/11/06/what-is-heap-fragmentation.html), </span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;          <span class="comment">//didn&#39;t end up being necessary because at there is only one object in heap at one point in time (callHandler.deleteCalls())</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;          <span class="comment">// new so that it is allocated on the heap</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;          <span class="comment">//auto automatically sets the type, in this case Callable*[] (Callable**)</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Ball erkannt, vorsicht&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000), <span class="comment">//objects get upcasted to Callable*</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;          <span class="keyword">new</span> <a class="code" href="classLcdDotAnim.html">LcdDotAnim</a>(<span class="stringliteral">&quot;Wei\342er Ball, drehe Links&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 0),</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;          <span class="keyword">new</span> <a class="code" href="structFuncCall.html">FuncCall</a>([]() {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a>(<a class="code" href="sketch_8ino.html#a759a9f39d205bf95aed6a556759ebd8a">ANGLE_LEFT_HOLE</a>);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;          }, &amp;<a class="code" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a>),</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Angekommen&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000),</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;          <a class="code" href="sketch_8ino.html#a96e566c1144385ff3e4c1ec37bdd5274">GEH_ZURUECK</a> <span class="comment">//2 elemente</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        };</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a>(callsWhite, 6); <span class="comment">//if the number is too large the program crashes</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <a class="code" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(255,255,255);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3">BLACK</a>:</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      {</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <a class="code" href="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41">nBlack</a>++;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        Serial.println(<span class="stringliteral">&quot;black&quot;</span>);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a>();</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="comment">/*static*/</span> <span class="keyword">auto</span> callsBlack = <span class="keyword">new</span> <a class="code" href="classCallable.html">Callable</a>*[6]  {</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Ball erkannt, vorsicht&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000),</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;          <span class="keyword">new</span> <a class="code" href="classLcdDotAnim.html">LcdDotAnim</a>(<span class="stringliteral">&quot;Schwarzer Ball, drehe Rechts&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 0),</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;          <span class="keyword">new</span> <a class="code" href="structFuncCall.html">FuncCall</a>([]() {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a>(<a class="code" href="sketch_8ino.html#aea1dd563eecdccc3c412c2eb13f99850">ANGLE_RIGHT_HOLE</a>);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;          }, &amp;<a class="code" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a>),</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Angekommen&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000),</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;          <a class="code" href="sketch_8ino.html#a96e566c1144385ff3e4c1ec37bdd5274">GEH_ZURUECK</a></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        };</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a>(callsBlack, 6);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <a class="code" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(0,0,255);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      }</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2">NOTHING</a>:</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      {</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        Serial.println(<span class="stringliteral">&quot;nothing&quot;</span>);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a>();</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="comment">/*static*/</span> <span class="keyword">auto</span> callsNothing = <span class="keyword">new</span> <a class="code" href="classCallable.html">Callable</a>*[1] {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(String(<span class="stringliteral">&quot;Ball einlegen W:&quot;</span>) + <a class="code" href="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd">nWhite</a> + String(<span class="stringliteral">&quot; S:&quot;</span>) + <a class="code" href="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41">nBlack</a> + String(<span class="stringliteral">&quot; O:&quot;</span>) + <a class="code" href="sketch_8ino.html#ab02bdede4356a3a7dffc99e97e927ca6">nOrange</a>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000)</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        };</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a>(callsNothing, 1);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <a class="code" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(0,255,0);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      }</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a>:</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <a class="code" href="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699">doFlicker</a>=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="sketch_8ino.html#ab02bdede4356a3a7dffc99e97e927ca6">nOrange</a>++;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        Serial.println(<span class="stringliteral">&quot;orange&quot;</span>);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a>();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="comment">/*static*/</span> <span class="keyword">auto</span> callsOrange = <span class="keyword">new</span> <a class="code" href="classCallable.html">Callable</a>*[9] {</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;          <span class="keyword">new</span> <a class="code" href="classLcdDotAnim.html">LcdDotAnim</a>(<span class="stringliteral">&quot;\xC0ra\10g\xD9ner Ba\xEDl&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 0), <span class="comment">//https://arduino.stackexchange.com/a/46833</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;          <span class="keyword">new</span> <a class="code" href="structFuncCall.html">FuncCall</a>([]() {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a>(<a class="code" href="sketch_8ino.html#aea1dd563eecdccc3c412c2eb13f99850">ANGLE_RIGHT_HOLE</a>);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;          }, &amp;<a class="code" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a>),</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Fehler \11rkannt&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000),</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;          <span class="keyword">new</span> <a class="code" href="structFuncCall.html">FuncCall</a>([]() {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a0750f5868c694b9f46638038b8536e0a">setSpeed</a>(<a class="code" href="sketch_8ino.html#a8b8f576df7f10b8c79c4ee6ee1f94166">SERVO_SPEED_FAST</a>);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a>(<a class="code" href="sketch_8ino.html#ac82ee88c087fbd603a9a9ff334218360">ANGLE_MIN</a>);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;          }, &amp;<a class="code" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a>),</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;          <span class="keyword">new</span> <a class="code" href="structFuncCall.html">FuncCall</a>([]() {</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a>(<a class="code" href="sketch_8ino.html#aea1dd563eecdccc3c412c2eb13f99850">ANGLE_RIGHT_HOLE</a>);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a0750f5868c694b9f46638038b8536e0a">setSpeed</a>(<a class="code" href="sketch_8ino.html#adef1ca0bee2c8b7c9b72001969ee3426">SERVO_SPEED_DEFAULT</a>);</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;          }, &amp;<a class="code" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a>),</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Fehler \11rkannt&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000),</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;          <span class="keyword">new</span> <a class="code" href="structFuncCall.html">FuncCall</a>([]() {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a0750f5868c694b9f46638038b8536e0a">setSpeed</a>(<a class="code" href="sketch_8ino.html#a8b8f576df7f10b8c79c4ee6ee1f94166">SERVO_SPEED_FAST</a>);</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a>(<a class="code" href="sketch_8ino.html#ac82ee88c087fbd603a9a9ff334218360">ANGLE_MIN</a>);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;          }, &amp;<a class="code" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a>),</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;          <span class="keyword">new</span> <a class="code" href="structFuncCall.html">FuncCall</a>([]() {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a0750f5868c694b9f46638038b8536e0a">setSpeed</a>(<a class="code" href="sketch_8ino.html#adef1ca0bee2c8b7c9b72001969ee3426">SERVO_SPEED_DEFAULT</a>);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;          }, &amp;<a class="code" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a>),</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;          <span class="keyword">new</span> <a class="code" href="structFuncCall.html">FuncCall</a>([]() {</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <a class="code" href="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699">doFlicker</a>=<span class="keyword">false</span>;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <a class="code" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(0,255,0);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.backlight();</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;          }),</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Fehler beseitigt&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 2000),</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;          <a class="code" href="sketch_8ino.html#a96e566c1144385ff3e4c1ec37bdd5274">GEH_ZURUECK</a></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        };</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a>(callsOrange, 9);</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      }</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;}</div>
-</div><!-- fragment -->
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;          <span class="keyword">new</span> <a class="code" href="structFuncCall.html">FuncCall</a>([]() {</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <a class="code" href="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699">doFlicker</a>=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <a class="code" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(0,255,0);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            <a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.backlight();</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;          }),</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;          <span class="keyword">new</span> <a class="code" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Fehler beseitigt&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 2000),</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;          <a class="code" href="sketch_8ino.html#a96e566c1144385ff3e4c1ec37bdd5274">GEH_ZURUECK</a></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        };</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a>(callsOrange, 9);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      }</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.svg" width="526" height="544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a id="ac80eb6baeaace0198948fd8ff196e4fd"></a>
@@ -401,25 +425,25 @@ Variablen</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>misst mithilfe des Reflexoptokopplers die Farbe des Balls </p>
+<p>Misst mithilfe des Reflexoptokopplers die Farbe des Balls. </p>
 <dl class="section return"><dt>Rückgabe</dt><dd>Farbe Die Farbe des Balls </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00162">162</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
-<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a>;<span class="comment">//inputs hardcoden, für Testzwecke</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">int</span> hue = random(0,1000);<span class="comment">//inputs simulieren</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="comment">//int hue=analogRead(A0);//tatsächlich Farbe messen</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordflow">if</span> (hue &lt;= 100) {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">if</span> (hue &lt; 500) {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50">WHITE</a>;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordflow">if</span> (hue &lt; 830) {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2">NOTHING</a>;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3">BLACK</a>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00164">164</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a>;<span class="comment">//inputs hardcoden, für Testzwecke</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">int</span> hue = random(0,1000);<span class="comment">//inputs simulieren</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="comment">//int hue=analogRead(A0);//tatsächlich Farbe messen</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordflow">if</span> (hue &lt;= 100) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordflow">if</span> (hue &lt; 500) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50">WHITE</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordflow">if</span> (hue &lt; 830) {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2">NOTHING</a>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3">BLACK</a>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -438,7 +462,7 @@ Variablen</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>hilf Funktion, Methoden können nicht als functionsparameter benutzt werden </p>
+<p>Hilf Funktion, Methoden können nicht als functionsparameter benutzt werden. </p>
 <dl class="section return"><dt>Rückgabe</dt><dd>true </dd>
 <dd>
 false </dd></dl>
@@ -447,7 +471,12 @@ false </dd></dl>
 <div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                   {</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#ac247ddd89cf27db323522746e5afa922">isDone</a>();</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_cgraph.svg" width="324" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a id="a902e3350d6dfe8c210f24b31c7b284d8"></a>
@@ -482,12 +511,22 @@ false </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00186">186</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
-<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;{ </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  analogWrite(<a class="code" href="sketch_8ino.html#ac57f63ef8771d860562baf56fd4c2732">PIN_RED</a>,r);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  analogWrite(<a class="code" href="sketch_8ino.html#ac594418c6e368680a9de074d7d136caa">PIN_GREEN</a>,g);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  analogWrite(<a class="code" href="sketch_8ino.html#a275fb5d3177300cc6a29ae232344e4d8">PIN_BLUE</a>,b);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
+<p>Setzt die Farbe der RGB-Led. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Rot (0-255) </td></tr>
+    <tr><td class="paramname">g</td><td>Grün (0-255) </td></tr>
+    <tr><td class="paramname">b</td><td>Blau (0-255) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00187">187</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;{ </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  analogWrite(<a class="code" href="sketch_8ino.html#ac57f63ef8771d860562baf56fd4c2732">PIN_RED</a>,r);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  analogWrite(<a class="code" href="sketch_8ino.html#ac594418c6e368680a9de074d7d136caa">PIN_GREEN</a>,g);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  analogWrite(<a class="code" href="sketch_8ino.html#a275fb5d3177300cc6a29ae232344e4d8">PIN_BLUE</a>,b);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -506,7 +545,7 @@ false </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>wird am Anfang des Programms aufgerufen </p>
+<p>Wird am Anfang des Programms aufgerufen. </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00232">232</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 <div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;             {</div>
@@ -515,13 +554,18 @@ false </dd></dl>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.attach(<a class="code" href="sketch_8ino.html#ae1e0b317f35c61409381a32ea905ba67">PIN_SERVO</a>);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.<a class="code" href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">init</a>();</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a95761db4177f965e756bdf725cb10ada">writeDirect</a>(<a class="code" href="sketch_8ino.html#ad79ce25ec94495875b917de81bbd692e">ANGLE_CENTER</a>);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a>(<span class="keyword">new</span> <a class="code" href="structCallable.html">Callable</a>*[1] {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a>(<span class="keyword">new</span> <a class="code" href="classCallable.html">Callable</a>*[1] {</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">new</span> <a class="code" href="classLcdLoadingAnim.html">LcdLoadingAnim</a>(<span class="stringliteral">&quot;Lade&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, <a class="code" href="sketch_8ino.html#ab09894308b534e1030021de3bc84710e">LOADING_DURATION</a>),</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  }, 1);</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  randomSeed(analogRead(A1));</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <a class="code" href="sketch_8ino.html#ae68a57cc22f2b256b21089a585de29df">stopButton</a> = <a class="code" href="classButtonHandler.html">ButtonHandler</a>(<a class="code" href="sketch_8ino.html#a05c5455b55db369d7d780a0a64525ecc">PIN_STOPBUTTON</a>, &amp;<a class="code" href="sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc">stopButtonClicked</a>);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;}</div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.svg" width="686" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a id="abbbe19f80bf8227bbfbb68d98a1937cc"></a>
@@ -541,25 +585,30 @@ false </dd></dl>
 
 <p>wird ausgeführt wenn der Stop-Knopf gedrückt wird </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00196">196</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
-<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> isStopped = <span class="keyword">false</span>;<span class="comment">//wird nur einmal initialisiert</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  isStopped = !isStopped;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordflow">if</span> (isStopped) {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    Serial.println(<span class="stringliteral">&quot;stopping servo&quot;</span>);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a2504ffc997018dad9f3811b18b16c672">stop</a>();</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a>();</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="comment">/*static*/</span> <span class="keyword">auto</span> call = <span class="keyword">new</span> <a class="code" href="structCallable.html">Callable</a>*[1] {</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <span class="keyword">new</span> <a class="code" href="classLcdDotAnim.html">LcdDotAnim</a>(<span class="stringliteral">&quot;gestoppt, warte auf start&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 100000000000000) <span class="comment">//ja, sollte ich vermutlich besser implementieren</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    };</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a>(call, 1);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(255,0,0);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699">doFlicker</a>=<span class="keyword">false</span>;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">running</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;}</div>
-</div><!-- fragment -->
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00197">197</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;{</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> isStopped = <span class="keyword">false</span>;<span class="comment">//wird nur einmal initialisiert</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  isStopped = !isStopped;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordflow">if</span> (isStopped) {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    Serial.println(<span class="stringliteral">&quot;stopping servo&quot;</span>);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code" href="classCustomServo.html#a2504ffc997018dad9f3811b18b16c672">stop</a>();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a>();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="comment">/*static*/</span> <span class="keyword">auto</span> call = <span class="keyword">new</span> <a class="code" href="classCallable.html">Callable</a>*[1] {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      <span class="keyword">new</span> <a class="code" href="classLcdDotAnim.html">LcdDotAnim</a>(<span class="stringliteral">&quot;gestoppt, warte auf start&quot;</span>, &amp;<a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 100000000000000) <span class="comment">//ja, sollte ich vermutlich besser implementieren</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    };</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a>(call, 1);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(255,0,0);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699">doFlicker</a>=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <a class="code" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code" href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">running</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_cgraph.svg" width="530" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">Variablen-Dokumentation</h2>
@@ -577,7 +626,7 @@ false </dd></dl>
 
 <p>Winkel der Ablagefläche für neue Bälle, die sortiert werden sollen. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00028">28</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00029">29</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -595,7 +644,7 @@ false </dd></dl>
 
 <p>Winkel des linken Lochs in Grad. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00018">18</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00019">19</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -612,9 +661,9 @@ false </dd></dl>
 </div><div class="memdoc">
 
 <p>Der kleinste sichere Winkel. </p>
-<dl class="section warning"><dt>Warnung</dt><dd>wenn dieser Winkel nicht eingehalten wird schlägt der Arm gegen den Stopper </dd></dl>
+<dl class="section warning"><dt>Warnung</dt><dd>Wenn dieser Winkel nicht eingehalten wird schlägt der Arm gegen den Stopper </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00033">33</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00034">34</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -632,7 +681,7 @@ false </dd></dl>
 
 <p>Winkel des rechten Lochs in Grad. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00023">23</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00024">24</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -648,7 +697,7 @@ false </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00075">75</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00076">76</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -664,10 +713,10 @@ false </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>sagt aus, ob das Display flackern und die Led blinken soll </p>
+<p>Sagt aus, ob das Display flackern und die Led blinken soll. </p>
 <p>Wird auf true gesetzt, wenn ein Orangener Ball entdeckt wird </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00094">94</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00095">95</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -701,7 +750,7 @@ false </dd></dl>
 
 <p>Gibt an, wie lange die Ladeanimation beim "Hochfahren" dauert. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00013">13</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00014">14</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -717,9 +766,9 @@ false </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>die Anzahl schwarzer Bälle, die schon sortiert wurden </p>
+<p>Die Anzahl schwarzer Bälle, die schon sortiert wurden. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00085">85</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00086">86</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -735,9 +784,9 @@ false </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>die Anzahl orangener Bälle, die schon sortiert/entfernt wurden </p>
+<p>Die Anzahl orangener Bälle, die schon sortiert/entfernt wurden. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00089">89</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00090">90</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -753,9 +802,9 @@ false </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>die Anzahl weißer Bälle, die schon sortiert wurden </p>
+<p>Die Anzahl weißer Bälle, die schon sortiert wurden. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00081">81</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00082">82</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -773,7 +822,7 @@ false </dd></dl>
 
 <p>Der Pin um die Blaufärbung der RGB-Led zu steuern. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00058">58</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00059">59</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -791,7 +840,7 @@ false </dd></dl>
 
 <p>Der Pin um die Grünfärbung der RGB-Led zu steuern. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00053">53</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00054">54</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -809,7 +858,7 @@ false </dd></dl>
 
 <p>Der Pin um die Rotfärbung der RGB-Led zu steuern. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00048">48</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00049">49</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -827,7 +876,7 @@ false </dd></dl>
 
 <p>Der Pin an dem der Servomotor angeschlossen ist. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00038">38</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00039">39</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -845,7 +894,7 @@ false </dd></dl>
 
 <p>Der Pin an dem der Start/Stop Knopf angeschlossen ist. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00043">43</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00044">44</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -861,7 +910,7 @@ false </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00076">76</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00077">77</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -879,7 +928,7 @@ false </dd></dl>
 
 <p>Die normale Geschwindigkeit des Servos. </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00063">63</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00064">64</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -898,7 +947,7 @@ false </dd></dl>
 <p>Die "schnelle" Geschwindigkeit des Servos. </p>
 <dl class="section warning"><dt>Warnung</dt><dd>Servo bewegt sich hier nicht mit Maximalgeschwindigkeit. Wenn diese Geschwindigkeit schneller eingestellt wird als der Servo tatsächlich ist, hört er möglicherweise auf sich zu bewegen, bevor er an seinem Ziel angekommen ist Alternativ könnte <a class="el" href="classCustomServo.html#a95761db4177f965e756bdf725cb10ada" title="Steuert den Servo direkt an, enspricht dem normalen Servo::write.">CustomServo::writeDirect</a> benutzt werden </dd></dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00069">69</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00070">70</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
@@ -916,65 +965,70 @@ false </dd></dl>
 
 <p>der Stop Knopf </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00218">218</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00219">219</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="aclassCustomServo_html_a9d67b7154c659f1bf60a8464115c1e94"><div class="ttname"><a href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">CustomServo::write</a></div><div class="ttdeci">void write(short newAngle)</div><div class="ttdoc">bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit</div><div class="ttdef"><b>Definition:</b> <a href="customServo_8ino_source.html#l00022">customServo.ino:22</a></div></div>
-<div class="ttc" id="asketch_8ino_html_ab02bdede4356a3a7dffc99e97e927ca6"><div class="ttname"><a href="sketch_8ino.html#ab02bdede4356a3a7dffc99e97e927ca6">nOrange</a></div><div class="ttdeci">int nOrange</div><div class="ttdoc">die Anzahl orangener Bälle, die schon sortiert/entfernt wurden</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00089">sketch.ino:89</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a39ddda5c3402f1f7b2c9ccad07e18791"><div class="ttname"><a href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a></div><div class="ttdeci">bool servoIsDone()</div><div class="ttdoc">hilf Funktion, Methoden können nicht als functionsparameter benutzt werden</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00225">sketch.ino:225</a></div></div>
-<div class="ttc" id="astructLcdString_html"><div class="ttname"><a href="structLcdString.html">LcdString</a></div><div class="ttdoc">Ein String der auf dem AnimatableLcd angezeigt werden kann.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00057">animString.h:57</a></div></div>
-<div class="ttc" id="asketch_8ino_html_ae1e0b317f35c61409381a32ea905ba67"><div class="ttname"><a href="sketch_8ino.html#ae1e0b317f35c61409381a32ea905ba67">PIN_SERVO</a></div><div class="ttdeci">const int PIN_SERVO</div><div class="ttdoc">Der Pin an dem der Servomotor angeschlossen ist.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00038">sketch.ino:38</a></div></div>
-<div class="ttc" id="aclassLcdDotAnim_html"><div class="ttname"><a href="classLcdDotAnim.html">LcdDotAnim</a></div><div class="ttdoc">Die Klasse der Lcd Punktanimationen.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00114">animString.h:114</a></div></div>
-<div class="ttc" id="astructFuncCall_html"><div class="ttname"><a href="structFuncCall.html">FuncCall</a></div><div class="ttdoc">Ein Call der eine Funktion ausführt.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00034">animString.h:34</a></div></div>
+</div><!-- doc-content -->
+<div class="ttc" id="aclassCustomServo_html_a9d67b7154c659f1bf60a8464115c1e94"><div class="ttname"><a href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">CustomServo::write</a></div><div class="ttdeci">void write(short newAngle)</div><div class="ttdoc">Bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit.</div><div class="ttdef"><b>Definition:</b> <a href="customServo_8ino_source.html#l00022">customServo.ino:22</a></div></div>
+<div class="ttc" id="asketch_8ino_html_ab02bdede4356a3a7dffc99e97e927ca6"><div class="ttname"><a href="sketch_8ino.html#ab02bdede4356a3a7dffc99e97e927ca6">nOrange</a></div><div class="ttdeci">int nOrange</div><div class="ttdoc">Die Anzahl orangener Bälle, die schon sortiert/entfernt wurden.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00090">sketch.ino:90</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a39ddda5c3402f1f7b2c9ccad07e18791"><div class="ttname"><a href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a></div><div class="ttdeci">bool servoIsDone()</div><div class="ttdoc">Hilf Funktion, Methoden können nicht als functionsparameter benutzt werden.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00225">sketch.ino:225</a></div></div>
+<div class="ttc" id="astructLcdString_html"><div class="ttname"><a href="structLcdString.html">LcdString</a></div><div class="ttdoc">Ein String der auf dem AnimatableLcd angezeigt werden kann.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00056">animString.h:56</a></div></div>
+<div class="ttc" id="asketch_8ino_html_ae1e0b317f35c61409381a32ea905ba67"><div class="ttname"><a href="sketch_8ino.html#ae1e0b317f35c61409381a32ea905ba67">PIN_SERVO</a></div><div class="ttdeci">const int PIN_SERVO</div><div class="ttdoc">Der Pin an dem der Servomotor angeschlossen ist.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00039">sketch.ino:39</a></div></div>
+<div class="ttc" id="aclassLcdDotAnim_html"><div class="ttname"><a href="classLcdDotAnim.html">LcdDotAnim</a></div><div class="ttdoc">Die Klasse der Lcd Punktanimationen.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00113">animString.h:113</a></div></div>
+<div class="ttc" id="astructFuncCall_html"><div class="ttname"><a href="structFuncCall.html">FuncCall</a></div><div class="ttdoc">Ein Call der eine Funktion ausführt.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00033">animString.h:33</a></div></div>
 <div class="ttc" id="aclassCustomServo_html_a91245621ca3e5340361f061d65025635"><div class="ttname"><a href="classCustomServo.html#a91245621ca3e5340361f061d65025635">CustomServo::updatePos</a></div><div class="ttdeci">void updatePos()</div><div class="ttdoc">Aktualisiert die Position des Servomotors.</div><div class="ttdef"><b>Definition:</b> <a href="customServo_8ino_source.html#l00061">customServo.ino:61</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50"><div class="ttname"><a href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50">WHITE</a></div><div class="ttdeci">@ WHITE</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00151">sketch.ino:151</a></div></div>
-<div class="ttc" id="aclassCallHandler_html_a57ff2e7ae3955d5ed4806dcc6469dcf7"><div class="ttname"><a href="classCallHandler.html#a57ff2e7ae3955d5ed4806dcc6469dcf7">CallHandler::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z....</div><div class="ttdef"><b>Definition:</b> <a href="callHandler_8ino_source.html#l00047">callHandler.ino:47</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a759a9f39d205bf95aed6a556759ebd8a"><div class="ttname"><a href="sketch_8ino.html#a759a9f39d205bf95aed6a556759ebd8a">ANGLE_LEFT_HOLE</a></div><div class="ttdeci">const int ANGLE_LEFT_HOLE</div><div class="ttdoc">Winkel des linken Lochs in Grad.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00018">sketch.ino:18</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3"><div class="ttname"><a href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3">BLACK</a></div><div class="ttdeci">@ BLACK</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00152">sketch.ino:152</a></div></div>
-<div class="ttc" id="aclassAnimatableLcd_html_a0f93bbf8c49a76e17272721e67a24b38"><div class="ttname"><a href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">AnimatableLcd::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Überschreibt die normale lcd init function.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00044">animLcd.ino:44</a></div></div>
-<div class="ttc" id="aclassCallHandler_html_afc5654ccaa266f3a81f8230afdb1c2a0"><div class="ttname"><a href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">CallHandler::setCalls</a></div><div class="ttdeci">void setCalls(Callable *newCallPtrs[], size_t nCalls)</div><div class="ttdoc">Setzt die neuen Calls, die ausgeführt werden sollen.</div><div class="ttdef"><b>Definition:</b> <a href="callHandler_8ino_source.html#l00030">callHandler.ino:30</a></div></div>
-<div class="ttc" id="astructCallable_html"><div class="ttname"><a href="structCallable.html">Callable</a></div><div class="ttdoc">Ein Call der vom CallHandler aufgerufen werden kann.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00025">animString.h:25</a></div></div>
-<div class="ttc" id="aclassButtonHandler_html"><div class="ttname"><a href="classButtonHandler.html">ButtonHandler</a></div><div class="ttdoc">kleine Klasse die Knopfdrücke verarbeitet</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00100">sketch.ino:100</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2"><div class="ttname"><a href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2">NOTHING</a></div><div class="ttdeci">@ NOTHING</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00154">sketch.ino:154</a></div></div>
-<div class="ttc" id="asketch_8ino_html_aea1dd563eecdccc3c412c2eb13f99850"><div class="ttname"><a href="sketch_8ino.html#aea1dd563eecdccc3c412c2eb13f99850">ANGLE_RIGHT_HOLE</a></div><div class="ttdeci">const int ANGLE_RIGHT_HOLE</div><div class="ttdoc">Winkel des rechten Lochs in Grad.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00023">sketch.ino:23</a></div></div>
-<div class="ttc" id="asketch_8ino_html_ac80eb6baeaace0198948fd8ff196e4fd"><div class="ttname"><a href="sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd">mesureColor</a></div><div class="ttdeci">Farbe mesureColor()</div><div class="ttdoc">misst mithilfe des Reflexoptokopplers die Farbe des Balls</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00162">sketch.ino:162</a></div></div>
-<div class="ttc" id="aclassButtonHandler_html_aaed9117143aa1674a71aa012e558d4e8"><div class="ttname"><a href="classButtonHandler.html#aaed9117143aa1674a71aa012e558d4e8">ButtonHandler::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">prüft, ob der Knopf gedrückt/losgelassen wurde</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00131">sketch.ino:131</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a97f1ef48e4db33e959bd4b1878116dcc"><div class="ttname"><a href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a></div><div class="ttdeci">CallHandler callHandler</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00075">sketch.ino:75</a></div></div>
-<div class="ttc" id="asketch_8ino_html_ab7ffbbf9ac91d991bb0c81c6f4fa6699"><div class="ttname"><a href="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699">doFlicker</a></div><div class="ttdeci">bool doFlicker</div><div class="ttdoc">sagt aus, ob das Display flackern und die Led blinken soll</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00094">sketch.ino:94</a></div></div>
-<div class="ttc" id="asketch_8ino_html_ae68a57cc22f2b256b21089a585de29df"><div class="ttname"><a href="sketch_8ino.html#ae68a57cc22f2b256b21089a585de29df">stopButton</a></div><div class="ttdeci">ButtonHandler stopButton</div><div class="ttdoc">der Stop Knopf</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00218">sketch.ino:218</a></div></div>
-<div class="ttc" id="asketch_8ino_html_ac82ee88c087fbd603a9a9ff334218360"><div class="ttname"><a href="sketch_8ino.html#ac82ee88c087fbd603a9a9ff334218360">ANGLE_MIN</a></div><div class="ttdeci">const int ANGLE_MIN</div><div class="ttdoc">Der kleinste sichere Winkel.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00033">sketch.ino:33</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a902e3350d6dfe8c210f24b31c7b284d8"><div class="ttname"><a href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a></div><div class="ttdeci">void setLedColor(unsigned char r, unsigned char g, unsigned char b)</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00186">sketch.ino:186</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a847f8cb2693f97028af9e2a0fb979d41"><div class="ttname"><a href="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41">nBlack</a></div><div class="ttdeci">int nBlack</div><div class="ttdoc">die Anzahl schwarzer Bälle, die schon sortiert wurden</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00085">sketch.ino:85</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50"><div class="ttname"><a href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50">WHITE</a></div><div class="ttdeci">@ WHITE</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00153">sketch.ino:153</a></div></div>
+<div class="ttc" id="aclassCallHandler_html_a57ff2e7ae3955d5ed4806dcc6469dcf7"><div class="ttname"><a href="classCallHandler.html#a57ff2e7ae3955d5ed4806dcc6469dcf7">CallHandler::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z....</div><div class="ttdef"><b>Definition:</b> <a href="callHandler_8ino_source.html#l00046">callHandler.ino:46</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a759a9f39d205bf95aed6a556759ebd8a"><div class="ttname"><a href="sketch_8ino.html#a759a9f39d205bf95aed6a556759ebd8a">ANGLE_LEFT_HOLE</a></div><div class="ttdeci">const int ANGLE_LEFT_HOLE</div><div class="ttdoc">Winkel des linken Lochs in Grad.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00019">sketch.ino:19</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3"><div class="ttname"><a href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3">BLACK</a></div><div class="ttdeci">@ BLACK</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00154">sketch.ino:154</a></div></div>
+<div class="ttc" id="aclassAnimatableLcd_html_a0f93bbf8c49a76e17272721e67a24b38"><div class="ttname"><a href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">AnimatableLcd::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Überschreibt die normale lcd init function.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00043">animLcd.ino:43</a></div></div>
+<div class="ttc" id="aclassCallHandler_html_afc5654ccaa266f3a81f8230afdb1c2a0"><div class="ttname"><a href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">CallHandler::setCalls</a></div><div class="ttdeci">void setCalls(Callable *newCallPtrs[], size_t nCalls)</div><div class="ttdoc">Setzt die neuen Calls, die ausgeführt werden sollen.</div><div class="ttdef"><b>Definition:</b> <a href="callHandler_8ino_source.html#l00029">callHandler.ino:29</a></div></div>
+<div class="ttc" id="aclassButtonHandler_html"><div class="ttname"><a href="classButtonHandler.html">ButtonHandler</a></div><div class="ttdoc">Kleine Klasse die Knopfdrücke verarbeitet.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00101">sketch.ino:101</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2"><div class="ttname"><a href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2">NOTHING</a></div><div class="ttdeci">@ NOTHING</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00156">sketch.ino:156</a></div></div>
+<div class="ttc" id="asketch_8ino_html_aea1dd563eecdccc3c412c2eb13f99850"><div class="ttname"><a href="sketch_8ino.html#aea1dd563eecdccc3c412c2eb13f99850">ANGLE_RIGHT_HOLE</a></div><div class="ttdeci">const int ANGLE_RIGHT_HOLE</div><div class="ttdoc">Winkel des rechten Lochs in Grad.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00024">sketch.ino:24</a></div></div>
+<div class="ttc" id="asketch_8ino_html_ac80eb6baeaace0198948fd8ff196e4fd"><div class="ttname"><a href="sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd">mesureColor</a></div><div class="ttdeci">Farbe mesureColor()</div><div class="ttdoc">Misst mithilfe des Reflexoptokopplers die Farbe des Balls.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00164">sketch.ino:164</a></div></div>
+<div class="ttc" id="aclassButtonHandler_html_aaed9117143aa1674a71aa012e558d4e8"><div class="ttname"><a href="classButtonHandler.html#aaed9117143aa1674a71aa012e558d4e8">ButtonHandler::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Prüft, ob der Knopf gedrückt/losgelassen wurde.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00132">sketch.ino:132</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a97f1ef48e4db33e959bd4b1878116dcc"><div class="ttname"><a href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a></div><div class="ttdeci">CallHandler callHandler</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00076">sketch.ino:76</a></div></div>
+<div class="ttc" id="asketch_8ino_html_ab7ffbbf9ac91d991bb0c81c6f4fa6699"><div class="ttname"><a href="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699">doFlicker</a></div><div class="ttdeci">bool doFlicker</div><div class="ttdoc">Sagt aus, ob das Display flackern und die Led blinken soll.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00095">sketch.ino:95</a></div></div>
+<div class="ttc" id="asketch_8ino_html_ae68a57cc22f2b256b21089a585de29df"><div class="ttname"><a href="sketch_8ino.html#ae68a57cc22f2b256b21089a585de29df">stopButton</a></div><div class="ttdeci">ButtonHandler stopButton</div><div class="ttdoc">der Stop Knopf</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00219">sketch.ino:219</a></div></div>
+<div class="ttc" id="asketch_8ino_html_ac82ee88c087fbd603a9a9ff334218360"><div class="ttname"><a href="sketch_8ino.html#ac82ee88c087fbd603a9a9ff334218360">ANGLE_MIN</a></div><div class="ttdeci">const int ANGLE_MIN</div><div class="ttdoc">Der kleinste sichere Winkel.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00034">sketch.ino:34</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a902e3350d6dfe8c210f24b31c7b284d8"><div class="ttname"><a href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a></div><div class="ttdeci">void setLedColor(unsigned char r, unsigned char g, unsigned char b)</div><div class="ttdoc">Setzt die Farbe der RGB-Led.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00187">sketch.ino:187</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a847f8cb2693f97028af9e2a0fb979d41"><div class="ttname"><a href="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41">nBlack</a></div><div class="ttdeci">int nBlack</div><div class="ttdoc">Die Anzahl schwarzer Bälle, die schon sortiert wurden.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00086">sketch.ino:86</a></div></div>
 <div class="ttc" id="aclassCustomServo_html_a2504ffc997018dad9f3811b18b16c672"><div class="ttname"><a href="classCustomServo.html#a2504ffc997018dad9f3811b18b16c672">CustomServo::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Stoppt den Servo.</div><div class="ttdef"><b>Definition:</b> <a href="customServo_8ino_source.html#l00099">customServo.ino:99</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a13f268479b5aae34b4a2297104c7aecd"><div class="ttname"><a href="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd">nWhite</a></div><div class="ttdeci">int nWhite</div><div class="ttdoc">die Anzahl weißer Bälle, die schon sortiert wurden</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00081">sketch.ino:81</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4"><div class="ttname"><a href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a></div><div class="ttdeci">@ ORANGE</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00153">sketch.ino:153</a></div></div>
-<div class="ttc" id="asketch_8ino_html_ad79ce25ec94495875b917de81bbd692e"><div class="ttname"><a href="sketch_8ino.html#ad79ce25ec94495875b917de81bbd692e">ANGLE_CENTER</a></div><div class="ttdeci">const int ANGLE_CENTER</div><div class="ttdoc">Winkel der Ablagefläche für neue Bälle, die sortiert werden sollen.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00028">sketch.ino:28</a></div></div>
-<div class="ttc" id="asketch_8ino_html_ac594418c6e368680a9de074d7d136caa"><div class="ttname"><a href="sketch_8ino.html#ac594418c6e368680a9de074d7d136caa">PIN_GREEN</a></div><div class="ttdeci">const int PIN_GREEN</div><div class="ttdoc">Der Pin um die Grünfärbung der RGB-Led zu steuern.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00053">sketch.ino:53</a></div></div>
-<div class="ttc" id="asketch_8ino_html_adef1ca0bee2c8b7c9b72001969ee3426"><div class="ttname"><a href="sketch_8ino.html#adef1ca0bee2c8b7c9b72001969ee3426">SERVO_SPEED_DEFAULT</a></div><div class="ttdeci">const float SERVO_SPEED_DEFAULT</div><div class="ttdoc">Die normale Geschwindigkeit des Servos.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00063">sketch.ino:63</a></div></div>
-<div class="ttc" id="asketch_8ino_html_abbbe19f80bf8227bbfbb68d98a1937cc"><div class="ttname"><a href="sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc">stopButtonClicked</a></div><div class="ttdeci">void stopButtonClicked()</div><div class="ttdoc">wird ausgeführt wenn der Stop-Knopf gedrückt wird</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00196">sketch.ino:196</a></div></div>
-<div class="ttc" id="aclassAnimatableLcd_html_a85725484bae8d5c0b1190366b3121f99"><div class="ttname"><a href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99">AnimatableLcd::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">wird immer wieder von loop aufgerufen um die Animationen zu updaten</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00133">animLcd.ino:133</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a8b8f576df7f10b8c79c4ee6ee1f94166"><div class="ttname"><a href="sketch_8ino.html#a8b8f576df7f10b8c79c4ee6ee1f94166">SERVO_SPEED_FAST</a></div><div class="ttdeci">const float SERVO_SPEED_FAST</div><div class="ttdoc">Die &quot;schnelle&quot; Geschwindigkeit des Servos.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00069">sketch.ino:69</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a911d5d65a486d5ecd013d13f3ab801b2"><div class="ttname"><a href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2">Farbe</a></div><div class="ttdeci">Farbe</div><div class="ttdoc">Farben, werden für die Messungen des Reflexoptokopplers benutzt.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00150">sketch.ino:150</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a275fb5d3177300cc6a29ae232344e4d8"><div class="ttname"><a href="sketch_8ino.html#a275fb5d3177300cc6a29ae232344e4d8">PIN_BLUE</a></div><div class="ttdeci">const int PIN_BLUE</div><div class="ttdoc">Der Pin um die Blaufärbung der RGB-Led zu steuern.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00058">sketch.ino:58</a></div></div>
-<div class="ttc" id="asketch_8ino_html_ac57f63ef8771d860562baf56fd4c2732"><div class="ttname"><a href="sketch_8ino.html#ac57f63ef8771d860562baf56fd4c2732">PIN_RED</a></div><div class="ttdeci">const int PIN_RED</div><div class="ttdoc">Der Pin um die Rotfärbung der RGB-Led zu steuern.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00048">sketch.ino:48</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a13f268479b5aae34b4a2297104c7aecd"><div class="ttname"><a href="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd">nWhite</a></div><div class="ttdeci">int nWhite</div><div class="ttdoc">Die Anzahl weißer Bälle, die schon sortiert wurden.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00082">sketch.ino:82</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4"><div class="ttname"><a href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a></div><div class="ttdeci">@ ORANGE</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00155">sketch.ino:155</a></div></div>
+<div class="ttc" id="asketch_8ino_html_ad79ce25ec94495875b917de81bbd692e"><div class="ttname"><a href="sketch_8ino.html#ad79ce25ec94495875b917de81bbd692e">ANGLE_CENTER</a></div><div class="ttdeci">const int ANGLE_CENTER</div><div class="ttdoc">Winkel der Ablagefläche für neue Bälle, die sortiert werden sollen.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00029">sketch.ino:29</a></div></div>
+<div class="ttc" id="asketch_8ino_html_ac594418c6e368680a9de074d7d136caa"><div class="ttname"><a href="sketch_8ino.html#ac594418c6e368680a9de074d7d136caa">PIN_GREEN</a></div><div class="ttdeci">const int PIN_GREEN</div><div class="ttdoc">Der Pin um die Grünfärbung der RGB-Led zu steuern.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00054">sketch.ino:54</a></div></div>
+<div class="ttc" id="asketch_8ino_html_adef1ca0bee2c8b7c9b72001969ee3426"><div class="ttname"><a href="sketch_8ino.html#adef1ca0bee2c8b7c9b72001969ee3426">SERVO_SPEED_DEFAULT</a></div><div class="ttdeci">const float SERVO_SPEED_DEFAULT</div><div class="ttdoc">Die normale Geschwindigkeit des Servos.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00064">sketch.ino:64</a></div></div>
+<div class="ttc" id="asketch_8ino_html_abbbe19f80bf8227bbfbb68d98a1937cc"><div class="ttname"><a href="sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc">stopButtonClicked</a></div><div class="ttdeci">void stopButtonClicked()</div><div class="ttdoc">wird ausgeführt wenn der Stop-Knopf gedrückt wird</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00197">sketch.ino:197</a></div></div>
+<div class="ttc" id="aclassAnimatableLcd_html_a85725484bae8d5c0b1190366b3121f99"><div class="ttname"><a href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99">AnimatableLcd::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">wird immer wieder von loop aufgerufen um die Animationen zu updaten</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00132">animLcd.ino:132</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a8b8f576df7f10b8c79c4ee6ee1f94166"><div class="ttname"><a href="sketch_8ino.html#a8b8f576df7f10b8c79c4ee6ee1f94166">SERVO_SPEED_FAST</a></div><div class="ttdeci">const float SERVO_SPEED_FAST</div><div class="ttdoc">Die &quot;schnelle&quot; Geschwindigkeit des Servos.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00070">sketch.ino:70</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a911d5d65a486d5ecd013d13f3ab801b2"><div class="ttname"><a href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2">Farbe</a></div><div class="ttdeci">Farbe</div><div class="ttdoc">Farben, werden für die Messungen des Reflexoptokopplers benutzt.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00151">sketch.ino:151</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a275fb5d3177300cc6a29ae232344e4d8"><div class="ttname"><a href="sketch_8ino.html#a275fb5d3177300cc6a29ae232344e4d8">PIN_BLUE</a></div><div class="ttdeci">const int PIN_BLUE</div><div class="ttdoc">Der Pin um die Blaufärbung der RGB-Led zu steuern.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00059">sketch.ino:59</a></div></div>
+<div class="ttc" id="asketch_8ino_html_ac57f63ef8771d860562baf56fd4c2732"><div class="ttname"><a href="sketch_8ino.html#ac57f63ef8771d860562baf56fd4c2732">PIN_RED</a></div><div class="ttdeci">const int PIN_RED</div><div class="ttdoc">Der Pin um die Rotfärbung der RGB-Led zu steuern.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00049">sketch.ino:49</a></div></div>
 <div class="ttc" id="aclassCustomServo_html_a95761db4177f965e756bdf725cb10ada"><div class="ttname"><a href="classCustomServo.html#a95761db4177f965e756bdf725cb10ada">CustomServo::writeDirect</a></div><div class="ttdeci">void writeDirect(short angle)</div><div class="ttdoc">Steuert den Servo direkt an, enspricht dem normalen Servo::write.</div><div class="ttdef"><b>Definition:</b> <a href="customServo_8ino_source.html#l00043">customServo.ino:43</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a05c5455b55db369d7d780a0a64525ecc"><div class="ttname"><a href="sketch_8ino.html#a05c5455b55db369d7d780a0a64525ecc">PIN_STOPBUTTON</a></div><div class="ttdeci">const int PIN_STOPBUTTON</div><div class="ttdoc">Der Pin an dem der Start/Stop Knopf angeschlossen ist.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00043">sketch.ino:43</a></div></div>
-<div class="ttc" id="aclassCallHandler_html_ab56ebeeecd75a34d9fdda13fff68cda7"><div class="ttname"><a href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">CallHandler::running</a></div><div class="ttdeci">bool running</div><div class="ttdef"><b>Definition:</b> <a href="callHandler_8h_source.html#l00046">callHandler.h:46</a></div></div>
-<div class="ttc" id="aclassCallHandler_html_a49ab239f771b84300df21bd426788c3e"><div class="ttname"><a href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">CallHandler::deleteCalls</a></div><div class="ttdeci">void deleteCalls()</div><div class="ttdoc">setzt den Speicherplatz der von den Calls besetzt wurde frei</div><div class="ttdef"><b>Definition:</b> <a href="callHandler_8ino_source.html#l00013">callHandler.ino:13</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a05c5455b55db369d7d780a0a64525ecc"><div class="ttname"><a href="sketch_8ino.html#a05c5455b55db369d7d780a0a64525ecc">PIN_STOPBUTTON</a></div><div class="ttdeci">const int PIN_STOPBUTTON</div><div class="ttdoc">Der Pin an dem der Start/Stop Knopf angeschlossen ist.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00044">sketch.ino:44</a></div></div>
+<div class="ttc" id="aclassCallHandler_html_ab56ebeeecd75a34d9fdda13fff68cda7"><div class="ttname"><a href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">CallHandler::running</a></div><div class="ttdeci">bool running</div><div class="ttdef"><b>Definition:</b> <a href="callHandler_8h_source.html#l00045">callHandler.h:45</a></div></div>
+<div class="ttc" id="aclassCallHandler_html_a49ab239f771b84300df21bd426788c3e"><div class="ttname"><a href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">CallHandler::deleteCalls</a></div><div class="ttdeci">void deleteCalls()</div><div class="ttdoc">setzt den Speicherplatz der von den Calls besetzt wurde frei</div><div class="ttdef"><b>Definition:</b> <a href="callHandler_8ino_source.html#l00012">callHandler.ino:12</a></div></div>
 <div class="ttc" id="aclassCustomServo_html_ac247ddd89cf27db323522746e5afa922"><div class="ttname"><a href="classCustomServo.html#ac247ddd89cf27db323522746e5afa922">CustomServo::isDone</a></div><div class="ttdeci">bool isDone()</div><div class="ttdoc">Gibt an, ob der Servo angekommen ist.</div><div class="ttdef"><b>Definition:</b> <a href="customServo_8ino_source.html#l00091">customServo.ino:91</a></div></div>
-<div class="ttc" id="aclassLcdLoadingAnim_html"><div class="ttname"><a href="classLcdLoadingAnim.html">LcdLoadingAnim</a></div><div class="ttdoc">Die Klasse der Lcd Ladeanimationen.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00104">animString.h:104</a></div></div>
+<div class="ttc" id="aclassLcdLoadingAnim_html"><div class="ttname"><a href="classLcdLoadingAnim.html">LcdLoadingAnim</a></div><div class="ttdoc">Die Klasse der Lcd Ladeanimationen.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00103">animString.h:103</a></div></div>
 <div class="ttc" id="aclassCustomServo_html_a0750f5868c694b9f46638038b8536e0a"><div class="ttname"><a href="classCustomServo.html#a0750f5868c694b9f46638038b8536e0a">CustomServo::setSpeed</a></div><div class="ttdeci">void setSpeed(float newSpeed)</div><div class="ttdoc">Setzt eine neue Geschwindigkeit des Servos.</div><div class="ttdef"><b>Definition:</b> <a href="customServo_8ino_source.html#l00052">customServo.ino:52</a></div></div>
 <div class="ttc" id="asketch_8ino_html_a96e566c1144385ff3e4c1ec37bdd5274"><div class="ttname"><a href="sketch_8ino.html#a96e566c1144385ff3e4c1ec37bdd5274">GEH_ZURUECK</a></div><div class="ttdeci">#define GEH_ZURUECK</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00244">sketch.ino:244</a></div></div>
-<div class="ttc" id="asketch_8ino_html_ab09894308b534e1030021de3bc84710e"><div class="ttname"><a href="sketch_8ino.html#ab09894308b534e1030021de3bc84710e">LOADING_DURATION</a></div><div class="ttdeci">const int LOADING_DURATION</div><div class="ttdoc">Gibt an, wie lange die Ladeanimation beim &quot;Hochfahren&quot; dauert.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00013">sketch.ino:13</a></div></div>
+<div class="ttc" id="asketch_8ino_html_ab09894308b534e1030021de3bc84710e"><div class="ttname"><a href="sketch_8ino.html#ab09894308b534e1030021de3bc84710e">LOADING_DURATION</a></div><div class="ttdeci">const int LOADING_DURATION</div><div class="ttdoc">Gibt an, wie lange die Ladeanimation beim &quot;Hochfahren&quot; dauert.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00014">sketch.ino:14</a></div></div>
 <div class="ttc" id="asketch_8ino_html_a7ec27b22420d7f2ad97962e41f9076b7"><div class="ttname"><a href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a></div><div class="ttdeci">AnimatableLcd lcd(0x27, 16, 2)</div><div class="ttdoc">Der animierbare Lcd.</div></div>
-<div class="ttc" id="asketch_8ino_html_aa5f528bc8f15fc1d782a990a2841ec22"><div class="ttname"><a href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a></div><div class="ttdeci">CustomServo servo</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00076">sketch.ino:76</a></div></div>
+<div class="ttc" id="asketch_8ino_html_aa5f528bc8f15fc1d782a990a2841ec22"><div class="ttname"><a href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a></div><div class="ttdeci">CustomServo servo</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00077">sketch.ino:77</a></div></div>
+<div class="ttc" id="aclassCallable_html"><div class="ttname"><a href="classCallable.html">Callable</a></div><div class="ttdoc">Ein Call der vom CallHandler aufgerufen werden kann.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00024">animString.h:24</a></div></div>
+<!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Erzeugt von &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="sketch_8ino.html">sketch.ino</a></li>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

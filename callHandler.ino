@@ -1,6 +1,5 @@
 /**
  * @file callHandler.ino
- * @author Arne de Borman
  * @brief Umsetzung der CallHandler Klasse
  */
 #include "header.h"
@@ -41,8 +40,8 @@ void CallHandler::setCalls(Callable* newCallPtrs[], size_t nCalls)
   running = true;
 }
 /**
- * @brief wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z.B. animationen)
- * @details wird von loop aufgerufen
+ * @brief Wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z.B. animationen)
+ * @details Wird von loop aufgerufen
  */
 void CallHandler::update() 
 {
@@ -58,11 +57,4 @@ void CallHandler::update()
     currCallPtr++;
     (*currCallPtr)->run();//->currCall->run();
   }
-}
-/**
- * @brief Destroy the Call Handler:: Call Handler object
- * 
- */
-CallHandler::~CallHandler() {
-  deleteCalls();
 }

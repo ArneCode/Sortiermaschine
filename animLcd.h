@@ -1,6 +1,5 @@
 /**
  * @file animLcd.h
- * @author Arne de Borman
  * @brief Header-Datei für den animierbaren lcd (AnimatableLcd)
  * 
  */

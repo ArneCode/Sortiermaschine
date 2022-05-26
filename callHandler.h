@@ -1,6 +1,5 @@
 /**
  * @file callHandler.h
- * @author your name (you@domain.com)
  * @brief header datei für den CallHandler
  */
 #ifndef CALLHANDLER_H
@@ -45,7 +44,6 @@ class CallHandler {//calls functions after a certain delay
     void deleteCalls();
     bool running = false;
     void setCalls(Callable* newCallPtrs[], size_t nCalls);
-    virtual ~ CallHandler();
     void update();
 };
 #endif

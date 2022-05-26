@@ -1,4 +1,4 @@
 <map id="servoIsDone" name="servoIsDone">
-<area shape="rect" id="node1" title="hilf Function, Methoden können nicht als functionsparameter benutzt werden" alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node1" title="Hilf Funktion, Methoden können nicht als functionsparameter benutzt werden." alt="" coords="5,5,108,32"/>
 <area shape="rect" id="node2" href="$classCustomServo.html#ac247ddd89cf27db323522746e5afa922" title="Gibt an, ob der Servo angekommen ist." alt="" coords="156,5,319,32"/>
 </map>

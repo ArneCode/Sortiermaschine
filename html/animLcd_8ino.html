@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.17-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,10 +10,23 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="new_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeDarkModeToggle.title = "Zwischen hellem/dunklem Modus wechseln"
+    console.log(DoxygenAwesomeDarkModeToggle)
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -20,10 +34,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Sortiermaschiene
    </div>
-   <div id="projectbrief">Der Code für eine Sortiermaschiene, die weiße, scharze und orangene Bälle erkennt und sortiert</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +60,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('animLcd_8ino.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,7 +91,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#var-members">Variablen</a>  </div>
@@ -78,15 +108,7 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include-Abhängigkeitsdiagramm für animLcd.ino:</div>
 <div class="dyncontent">
-<div class="center"><img src="animLcd_8ino__incl.png" border="0" usemap="#animLcd_8ino" alt=""/></div>
-<map name="animLcd_8ino" id="animLcd_8ino">
-<area shape="rect" title="Implementation für die AnimatableLcd Klasse." alt="" coords="172,5,273,32"/>
-<area shape="rect" title=" " alt="" coords="5,155,152,181"/>
-<area shape="rect" href="header_8h.html" title="definiert variablen&#45;types die überall im Programm benutzt werden" alt="" coords="281,229,359,256"/>
-<area shape="rect" href="animLcd_8h.html" title="Header&#45;Datei für den animierbaren lcd (AnimatableLcd)" alt="" coords="117,80,206,107"/>
-<area shape="rect" href="callHandler_8h.html" title="header datei für den CallHandler" alt="" coords="231,80,337,107"/>
-<area shape="rect" href="animString_8h.html" title="Header datei für eine Mehrzahl von animierbaren Strings und der Callable Klasse." alt="" coords="177,155,282,181"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="animLcd_8ino__incl.svg" width="368" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="animLcd_8ino_source.html">gehe zum Quellcode dieser Datei</a></p>
@@ -102,7 +124,6 @@ Variablen</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock"><p>Implementation für die <a class="el" href="classAnimatableLcd.html" title="Eigener Lcd, ermöglicht es Animationen auf dem Lcd Display anzuzeigen.">AnimatableLcd</a> Klasse. </p>
-<dl class="section author"><dt>Autor</dt><dd>Arne de Borman </dd></dl>
 
 <p class="definition">Definiert in Datei <a class="el" href="animLcd_8ino_source.html">animLcd.ino</a>.</p>
 </div><h2 class="groupheader">Variablen-Dokumentation</h2>
@@ -130,7 +151,7 @@ Variablen</h2></td></tr>
 </div><!-- fragment -->
 <p>Werte für einen eigenen Character der ein leeres Viereck darstellt (für die <a class="el" href="classLcdLoadingAnim.html" title="Die Klasse der Lcd Ladeanimationen.">LcdLoadingAnim</a>) </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="animLcd_8ino_source.html#l00016">16</a> der Datei <a class="el" href="animLcd_8ino_source.html">animLcd.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="animLcd_8ino_source.html#l00015">15</a> der Datei <a class="el" href="animLcd_8ino_source.html">animLcd.ino</a>.</p>
 
 </div>
 </div>
@@ -158,16 +179,21 @@ Variablen</h2></td></tr>
 </div><!-- fragment -->
 <p>Werte für einen eigenen Character der ein volles Viereck darstellt (für die <a class="el" href="classLcdLoadingAnim.html" title="Die Klasse der Lcd Ladeanimationen.">LcdLoadingAnim</a>) </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="animLcd_8ino_source.html#l00030">30</a> der Datei <a class="el" href="animLcd_8ino_source.html">animLcd.ino</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="animLcd_8ino_source.html#l00029">29</a> der Datei <a class="el" href="animLcd_8ino_source.html">animLcd.ino</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Erzeugt von &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="animLcd_8ino.html">animLcd.ino</a></li>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

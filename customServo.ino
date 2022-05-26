@@ -15,7 +15,7 @@ void CustomServo::startMove()
   done = false;
 }
 /**
- * @brief bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit
+ * @brief Bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit
  * 
  * @param newAngle 
  */

@@ -1,5 +1,5 @@
 <map id="CustomServo::write" name="CustomServo::write">
-<area shape="rect" id="node1" title="bewegt den Servo in duration ms" alt="" coords="5,5,156,32"/>
-<area shape="rect" id="node2" href="$classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94" title="bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit" alt="" coords="204,5,355,32"/>
+<area shape="rect" id="node1" title="Bewegt den Servo in duration Millisekunden an den angegebenen Winkel." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94" title="Bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit." alt="" coords="204,5,355,32"/>
 <area shape="rect" id="node3" href="$classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2" title="Setzt Variabeln, die benötigt werden um den Servo zu bewegen." alt="" coords="403,5,585,32"/>
 </map>

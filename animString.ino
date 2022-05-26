@@ -1,6 +1,5 @@
 /**
  * @file animString.ino
- * @author Arne de Borman
  * @brief Implementationen der Callable und LcdString Klassen
  * 
  */

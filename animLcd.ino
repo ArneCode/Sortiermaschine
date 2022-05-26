@@ -1,6 +1,5 @@
 /**
  * @file animLcd.ino
- * @author Arne de Borman
  * @brief Implementation für die AnimatableLcd Klasse
  * 
  */
@@ -50,7 +49,7 @@ void AnimatableLcd::init()
   lcd.createChar(1, loading_full_c);
 }
 /**
- * @brief setzt die aktuelle animation
+ * @brief Setzt die aktuelle Animation
  * 
  * @param _animString 
  */
@@ -61,7 +60,7 @@ void AnimatableLcd::setAnimation(AnimString* _animString)
 }
 /**
  * @brief Eigene Lcd-print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen
- * @details für eigene Character einfach die nummer des Characters in den Text einfügen <b>(\1n für den nten Character)</b>, \1 für Leerzeichen, das nicht in Zeilenumbruch resultiert
+ * @details Für eigene Character einfach die nummer des Characters in den Text einfügen <b>(\1n für den nten Character)</b>, \1 für Leerzeichen, das nicht in Zeilenumbruch resultiert
  * @param text 
  */
 void AnimatableLcd::print(const String& text)
@@ -83,7 +82,7 @@ void AnimatableLcd::print(const String& text)
  * @brief Gibt einen String zentriert auf dem Lcd-Display aus
  * 
  * @param text 
- * @param length Länge des Textes, wird neu berechnet wenn nicht angegeben
+ * @param length Länge des Textes, wird neu berechnet wenn Nichts angegeben
  * @param row Zeile in der der Text ausgegeben werden soll
  */
 void AnimatableLcd::printCentered(String text, int length = -1, int row = 0) //length<=16

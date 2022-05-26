@@ -1,5 +1,5 @@
 <map id="header.h" name="header.h">
-<area shape="rect" id="node1" title="definiert variablen&#45;types die überall im Programm benutzt werden" alt="" coords="213,5,292,32"/>
+<area shape="rect" id="node1" title="Definiert variablen&#45;types die überall im Programm benutzt werden." alt="" coords="213,5,292,32"/>
 <area shape="rect" id="node2" href="$animString_8h.html" title="Header datei für eine Mehrzahl von animierbaren Strings und der Callable Klasse." alt="" coords="200,80,305,107"/>
 <area shape="rect" id="node4" href="$animLcd_8ino.html" title="Implementation für die AnimatableLcd Klasse." alt="" coords="289,229,390,256"/>
 <area shape="rect" id="node5" href="$animString_8ino.html" title="Implementationen der Callable und LcdString Klassen." alt="" coords="147,229,265,256"/>

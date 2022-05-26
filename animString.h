@@ -1,6 +1,5 @@
 /**
  * @file animString.h
- * @author Arne de Borman
  * @brief Header datei für eine Mehrzahl von animierbaren Strings und der Callable Klasse
  * 
  */
@@ -22,7 +21,7 @@ class LcdDotAnim;
  * @details Wird nie selbst instanziert sondern nur Abgeleitete Klassen
  * 
  */
-struct Callable {
+class Callable {
   virtual void run() {} //virtual->must be implemented by derived classes
   virtual bool isDone() {}
   virtual ~Callable() {} //let's derived classes free their own memory. ~functions are called when the object is deleted

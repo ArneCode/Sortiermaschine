@@ -12,17 +12,17 @@
  */
 class CustomServo: public Servo {
     /**
-     * @brief der Winkel an dem sich der Servo bei Start der Animation befand
+     * @brief Der Winkel an dem sich der Servo bei Start der Animation befand
      * 
      */
     short startAngle;
     /**
-     * @brief der Ziel Winkel
+     * @brief Der Zielwinkel
      * 
      */
     short targetAngle;
     /**
-     * @brief die Geschwindigkeit des Servos in Grad pro Millisekunde
+     * @brief Die Geschwindigkeit des Servos in Grad pro Millisekunde
      * 
      */
     float speed;
