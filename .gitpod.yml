@@ -1,0 +1,6 @@
+tasks:
+  - init: sudo apt-get install doxygen
+  - command: |
+      doxygen Doxyfile
+      cd html
+      python -m http.server 3000

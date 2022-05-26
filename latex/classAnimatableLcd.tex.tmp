@@ -1,0 +1,42 @@
+\hypertarget{classAnimatableLcd}{}\doxysection{Animatable\+Lcd Class Reference}
+\label{classAnimatableLcd}\index{AnimatableLcd@{AnimatableLcd}}
+
+
+Inheritance diagram for Animatable\+Lcd\+:
+% FIG 0
+
+
+Collaboration diagram for Animatable\+Lcd\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108}\label{classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108}} 
+void {\bfseries set\+Animation} (\mbox{\hyperlink{classAnimString}{Anim\+String}} $\ast$\+\_\+anim\+String)
+\item 
+\mbox{\Hypertarget{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}\label{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}} 
+void {\bfseries print\+Centered} (String text, int length=-\/1, int row=0)
+\item 
+\mbox{\Hypertarget{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}\label{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}} 
+void {\bfseries print\+Pretty} (String text)
+\item 
+\mbox{\Hypertarget{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99}\label{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99}} 
+void {\bfseries update} ()
+\item 
+\mbox{\Hypertarget{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38}\label{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38}} 
+void {\bfseries init} ()
+\item 
+\mbox{\Hypertarget{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}\label{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}} 
+void {\bfseries print} (const String \&text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}\label{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}} 
+bool {\bfseries do\+Animation} = false
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+anim\+Lcd.\+h\end{DoxyCompactItemize}
