@@ -1,18 +1,6 @@
+image:
+  file: .gitpod.Dockerfile
 tasks:
-  - init: |
-      sudo apt-get -y install flex
-      git clone https://github.com/doxygen/doxygen.git
-      cd doxygen
-      mkdir build
-      cd build
-      cmake -G "Unix Makefiles" ..
-      make
-      sudo make install
-      cd ..
-      sudo apt install -y graphviz
-      sudo apt-get install -y texlive-fonts-recommended
-      sudo apt-get install -y texlive-fonts-extra
-      echo "Fertig"
   - command: |
       doxygen Doxyfile
       cd html
