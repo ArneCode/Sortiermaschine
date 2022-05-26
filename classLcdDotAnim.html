@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.17-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,10 +10,23 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="new_stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeDarkModeToggle.title = "Zwischen hellem/dunklem Modus wechseln"
+    console.log(DoxygenAwesomeDarkModeToggle)
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -20,10 +34,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Sortiermaschiene
    </div>
-   <div id="projectbrief">Der Code für eine Sortiermaschiene, die weiße, scharze und orangene Bälle erkennt und sortiert</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +60,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classLcdDotAnim.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,7 +91,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Öffentliche Methoden</a> &#124;
@@ -77,16 +107,8 @@ $(function() {
 <div class="dynheader">
 Zusammengehörigkeiten von LcdDotAnim:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLcdDotAnim__coll__graph.png" border="0" usemap="#LcdDotAnim_coll__map" alt="Collaboration graph"/></div>
-<map name="LcdDotAnim_coll__map" id="LcdDotAnim_coll__map">
-<area shape="rect" title="Die Klasse der Lcd Punktanimationen." alt="" coords="5,95,107,121"/>
-<area shape="rect" href="classAnimString.html" title="Die Klasse für animierbare LcdStrings." alt="" coords="97,5,191,32"/>
-<area shape="rect" href="classAnimatableLcd.html" title="Eigener Lcd, ermöglicht es Animationen auf dem Lcd Display anzuzeigen." alt="" coords="281,95,399,121"/>
-<area shape="rect" href="structLcdString.html" title="Ein String der auf dem AnimatableLcd angezeigt werden kann." alt="" coords="177,184,260,211"/>
-<area shape="rect" href="structCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann." alt="" coords="181,95,256,121"/>
-<area shape="rect" title=" " alt="" coords="273,5,407,32"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">Legende</a>]</span></center></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classLcdDotAnim__coll__graph.svg" width="406" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">Legende</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
@@ -114,9 +136,6 @@ Zusammengehörigkeiten von LcdDotAnim:</div>
 <tr class="memitem:a815ab8e4a5e0610637073fb76fb4dadf inherit pub_methods_structLcdString"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLcdString.html#a815ab8e4a5e0610637073fb76fb4dadf">isDone</a> ()</td></tr>
 <tr class="memdesc:a815ab8e4a5e0610637073fb76fb4dadf inherit pub_methods_structLcdString"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt zurück, ob die duration überschritten ist.  <a href="structLcdString.html#a815ab8e4a5e0610637073fb76fb4dadf">Mehr ...</a><br /></td></tr>
 <tr class="separator:a815ab8e4a5e0610637073fb76fb4dadf inherit pub_methods_structLcdString"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_structCallable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structCallable')"><img src="closed.png" alt="-"/>&#160;Öffentliche Methoden geerbt von <a class="el" href="structCallable.html">Callable</a></td></tr>
-<tr class="memitem:a84ab6ce6283cbf84c8b002e1941fad5d inherit pub_methods_structCallable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCallable.html#a84ab6ce6283cbf84c8b002e1941fad5d">~Callable</a> ()</td></tr>
-<tr class="separator:a84ab6ce6283cbf84c8b002e1941fad5d inherit pub_methods_structCallable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Weitere Geerbte Elemente</h2></td></tr>
@@ -145,7 +164,7 @@ Weitere Geerbte Elemente</h2></td></tr>
 <div class="textblock"><p>Die Klasse der Lcd Punktanimationen. </p>
 <p>zeigt immer wieder keinen, dann einen, dann zwei, dann drei und letzendlich wieder keinen Punkt nach dem Text an </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="animString_8h_source.html#l00114">114</a> der Datei <a class="el" href="animString_8h_source.html">animString.h</a>.</p>
+<p class="definition">Definiert in Zeile <a class="el" href="animString_8h_source.html#l00113">113</a> der Datei <a class="el" href="animString_8h_source.html">animString.h</a>.</p>
 </div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
 <a id="aba9b5e75d3dbc072cf0203d5116e266c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba9b5e75d3dbc072cf0203d5116e266c">&#9670;&nbsp;</a></span>LcdDotAnim()</h2>
@@ -193,10 +212,10 @@ Weitere Geerbte Elemente</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definiert in Zeile <a class="el" href="animString_8h_source.html#l00116">116</a> der Datei <a class="el" href="animString_8h_source.html">animString.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      : <a class="code" href="classAnimString.html">AnimString</a>(<a class="code" href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">text</a>, <a class="code" href="structLcdString.html#a89c4796702a713c1a7ddd580cd470780">lcd</a>, <a class="code" href="structLcdString.html#ab6c96ac47d1b85dfcd49fc286ae9e234">duration</a>) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <a class="code" href="classAnimString.html#a85a7de7c1a4d919dd25abdfc1f7a2386">stepDuration</a> = _stepDuration;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<p class="definition">Definiert in Zeile <a class="el" href="animString_8h_source.html#l00115">115</a> der Datei <a class="el" href="animString_8h_source.html">animString.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      : <a class="code" href="classAnimString.html">AnimString</a>(<a class="code" href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">text</a>, <a class="code" href="structLcdString.html#a89c4796702a713c1a7ddd580cd470780">lcd</a>, <a class="code" href="structLcdString.html#ab6c96ac47d1b85dfcd49fc286ae9e234">duration</a>) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <a class="code" href="classAnimString.html#a85a7de7c1a4d919dd25abdfc1f7a2386">stepDuration</a> = _stepDuration;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -228,11 +247,16 @@ Weitere Geerbte Elemente</h2></td></tr>
 
 <p>Erneute Implementation von <a class="el" href="classAnimString.html#a0dcc82eddb210af1a61ff12622a58913">AnimString</a>.</p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="animString_8ino_source.html#l00104">104</a> der Datei <a class="el" href="animString_8ino_source.html">animString.ino</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="structLcdString.html#a89c4796702a713c1a7ddd580cd470780">lcd</a>-&gt;<a class="code" href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">printPretty</a>(<a class="code" href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">text</a> + <span class="stringliteral">&quot;\1\1\1&quot;</span>);<span class="comment">//spaces that can&#39;t be broken up to newlines</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
-</div><!-- fragment -->
+<p class="definition">Definiert in Zeile <a class="el" href="animString_8ino_source.html#l00103">103</a> der Datei <a class="el" href="animString_8ino_source.html">animString.ino</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="structLcdString.html#a89c4796702a713c1a7ddd580cd470780">lcd</a>-&gt;<a class="code" href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">printPretty</a>(<a class="code" href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">text</a> + <span class="stringliteral">&quot;\1\1\1&quot;</span>);<span class="comment">//spaces that can&#39;t be broken up to newlines</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classLcdDotAnim_afad9c4d44a8a5ef9063e941fd97714e7_cgraph.svg" width="855" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <a id="a7dc0b25c1a3729a5c6aa652fffcccb71"></a>
@@ -262,26 +286,31 @@ Weitere Geerbte Elemente</h2></td></tr>
 
 <p>Erneute Implementation von <a class="el" href="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b">LcdString</a>.</p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="animString_8ino_source.html#l00112">112</a> der Datei <a class="el" href="animString_8ino_source.html">animString.ino</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a> time = millis();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">if</span> ((time - <a class="code" href="classAnimString.html#a7beba48f565a7bb4a93b34903558619b">lastRefresh</a>) &lt; <a class="code" href="classAnimString.html#a85a7de7c1a4d919dd25abdfc1f7a2386">stepDuration</a>) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="classAnimString.html#a7beba48f565a7bb4a93b34903558619b">lastRefresh</a> = time;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">int</span> numDots = ((time - <a class="code" href="classAnimString.html#a0cfc5a955509897da127b9f750a940c9">animStart</a>) / <a class="code" href="classAnimString.html#a85a7de7c1a4d919dd25abdfc1f7a2386">stepDuration</a>) % 4;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">char</span> dots[4];</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">if</span> (i &lt; numDots) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      dots[i] = <span class="charliteral">&#39;.&#39;</span>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      dots[i] = <span class="charliteral">&#39;\1&#39;</span>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  dots[3] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="structLcdString.html#a89c4796702a713c1a7ddd580cd470780">lcd</a>-&gt;<a class="code" href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">printPretty</a>(<a class="code" href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">text</a> + dots);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
-</div><!-- fragment -->
+<p class="definition">Definiert in Zeile <a class="el" href="animString_8ino_source.html#l00111">111</a> der Datei <a class="el" href="animString_8ino_source.html">animString.ino</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a> time = millis();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">if</span> ((time - <a class="code" href="classAnimString.html#a7beba48f565a7bb4a93b34903558619b">lastRefresh</a>) &lt; <a class="code" href="classAnimString.html#a85a7de7c1a4d919dd25abdfc1f7a2386">stepDuration</a>) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="classAnimString.html#a7beba48f565a7bb4a93b34903558619b">lastRefresh</a> = time;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">int</span> numDots = ((time - <a class="code" href="classAnimString.html#a0cfc5a955509897da127b9f750a940c9">animStart</a>) / <a class="code" href="classAnimString.html#a85a7de7c1a4d919dd25abdfc1f7a2386">stepDuration</a>) % 4;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">char</span> dots[4];</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">if</span> (i &lt; numDots) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      dots[i] = <span class="charliteral">&#39;.&#39;</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      dots[i] = <span class="charliteral">&#39;\1&#39;</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  dots[3] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="structLcdString.html#a89c4796702a713c1a7ddd580cd470780">lcd</a>-&gt;<a class="code" href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">printPretty</a>(<a class="code" href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">text</a> + dots);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+</div><!-- fragment --><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classLcdDotAnim_a7dc0b25c1a3729a5c6aa652fffcccb71_cgraph.svg" width="879" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
 </div>
 </div>
 <hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
@@ -289,20 +318,25 @@ Weitere Geerbte Elemente</h2></td></tr>
 <li><a class="el" href="animString_8ino_source.html">animString.ino</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="astructLcdString_html_ab6c96ac47d1b85dfcd49fc286ae9e234"><div class="ttname"><a href="structLcdString.html#ab6c96ac47d1b85dfcd49fc286ae9e234">LcdString::duration</a></div><div class="ttdeci">time_t duration</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00064">animString.h:64</a></div></div>
-<div class="ttc" id="aclassAnimString_html_a85a7de7c1a4d919dd25abdfc1f7a2386"><div class="ttname"><a href="classAnimString.html#a85a7de7c1a4d919dd25abdfc1f7a2386">AnimString::stepDuration</a></div><div class="ttdeci">time_t stepDuration</div><div class="ttdoc">wie lange ein Schritt der Animation dauert</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00083">animString.h:83</a></div></div>
-<div class="ttc" id="aclassAnimString_html_a0cfc5a955509897da127b9f750a940c9"><div class="ttname"><a href="classAnimString.html#a0cfc5a955509897da127b9f750a940c9">AnimString::animStart</a></div><div class="ttdeci">time_t animStart</div><div class="ttdoc">wann die animation begann</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00088">animString.h:88</a></div></div>
-<div class="ttc" id="aclassAnimString_html_a7beba48f565a7bb4a93b34903558619b"><div class="ttname"><a href="classAnimString.html#a7beba48f565a7bb4a93b34903558619b">AnimString::lastRefresh</a></div><div class="ttdeci">time_t lastRefresh</div><div class="ttdoc">wann das letzte mal die Anzeige erneuert wurde</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00093">animString.h:93</a></div></div>
-<div class="ttc" id="astructLcdString_html_a7f5aadf720a72e9c4e7d35fdf87ab886"><div class="ttname"><a href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">LcdString::text</a></div><div class="ttdeci">String text</div><div class="ttdoc">der Text der angezeigt wird</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00062">animString.h:62</a></div></div>
-<div class="ttc" id="aclassAnimatableLcd_html_ad5509573d45cc84cda93b125fdca749e"><div class="ttname"><a href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">AnimatableLcd::printPretty</a></div><div class="ttdeci">void printPretty(String text)</div><div class="ttdoc">gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00103">animLcd.ino:103</a></div></div>
-<div class="ttc" id="aclassAnimString_html"><div class="ttname"><a href="classAnimString.html">AnimString</a></div><div class="ttdoc">Die Klasse für animierbare LcdStrings.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00077">animString.h:77</a></div></div>
-<div class="ttc" id="astructLcdString_html_a89c4796702a713c1a7ddd580cd470780"><div class="ttname"><a href="structLcdString.html#a89c4796702a713c1a7ddd580cd470780">LcdString::lcd</a></div><div class="ttdeci">AnimatableLcd * lcd</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00063">animString.h:63</a></div></div>
+</div><!-- doc-content -->
+<div class="ttc" id="astructLcdString_html_ab6c96ac47d1b85dfcd49fc286ae9e234"><div class="ttname"><a href="structLcdString.html#ab6c96ac47d1b85dfcd49fc286ae9e234">LcdString::duration</a></div><div class="ttdeci">time_t duration</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00063">animString.h:63</a></div></div>
+<div class="ttc" id="aclassAnimString_html_a85a7de7c1a4d919dd25abdfc1f7a2386"><div class="ttname"><a href="classAnimString.html#a85a7de7c1a4d919dd25abdfc1f7a2386">AnimString::stepDuration</a></div><div class="ttdeci">time_t stepDuration</div><div class="ttdoc">wie lange ein Schritt der Animation dauert</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00082">animString.h:82</a></div></div>
+<div class="ttc" id="aclassAnimString_html_a0cfc5a955509897da127b9f750a940c9"><div class="ttname"><a href="classAnimString.html#a0cfc5a955509897da127b9f750a940c9">AnimString::animStart</a></div><div class="ttdeci">time_t animStart</div><div class="ttdoc">wann die animation begann</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00087">animString.h:87</a></div></div>
+<div class="ttc" id="aclassAnimString_html_a7beba48f565a7bb4a93b34903558619b"><div class="ttname"><a href="classAnimString.html#a7beba48f565a7bb4a93b34903558619b">AnimString::lastRefresh</a></div><div class="ttdeci">time_t lastRefresh</div><div class="ttdoc">wann das letzte mal die Anzeige erneuert wurde</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00092">animString.h:92</a></div></div>
+<div class="ttc" id="astructLcdString_html_a7f5aadf720a72e9c4e7d35fdf87ab886"><div class="ttname"><a href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">LcdString::text</a></div><div class="ttdeci">String text</div><div class="ttdoc">der Text der angezeigt wird</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00061">animString.h:61</a></div></div>
+<div class="ttc" id="aclassAnimatableLcd_html_ad5509573d45cc84cda93b125fdca749e"><div class="ttname"><a href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">AnimatableLcd::printPretty</a></div><div class="ttdeci">void printPretty(String text)</div><div class="ttdoc">gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00102">animLcd.ino:102</a></div></div>
+<div class="ttc" id="aclassAnimString_html"><div class="ttname"><a href="classAnimString.html">AnimString</a></div><div class="ttdoc">Die Klasse für animierbare LcdStrings.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00076">animString.h:76</a></div></div>
+<div class="ttc" id="astructLcdString_html_a89c4796702a713c1a7ddd580cd470780"><div class="ttname"><a href="structLcdString.html#a89c4796702a713c1a7ddd580cd470780">LcdString::lcd</a></div><div class="ttdeci">AnimatableLcd * lcd</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00062">animString.h:62</a></div></div>
 <div class="ttc" id="aheader_8h_html_a9d1a8265fefddad5533f063ef338d59f"><div class="ttname"><a href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a></div><div class="ttdeci">unsigned long time_t</div><div class="ttdoc">Ein Zeit typ.</div><div class="ttdef"><b>Definition:</b> <a href="header_8h_source.html#l00010">header.h:10</a></div></div>
+<!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Erzeugt von &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classLcdDotAnim.html">LcdDotAnim</a></li>
+    <li class="footer">Erzeugt von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

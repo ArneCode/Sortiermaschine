@@ -1,5 +1,5 @@
 <map id="LcdDotAnim::update" name="LcdDotAnim::update">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node1" title="aktualisiert die Punktanimation, wird von loop aufgerufen" alt="" coords="5,5,160,32"/>
 <area shape="rect" id="node2" href="$classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="208,5,404,32"/>
 <area shape="rect" id="node3" href="$classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="452,5,668,32"/>
 <area shape="rect" id="node4" href="$classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca" title="Eigene Lcd&#45;print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen." alt="" coords="716,5,873,32"/>

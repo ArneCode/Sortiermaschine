@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="Implementationen der Callable und LcdString Klassen." alt="" coords="154,5,271,32"/>
 <area shape="rect" id="node2" href="$animLcd_8h.html" title="Header&#45;Datei für den animierbaren lcd (AnimatableLcd)" alt="" coords="126,80,216,107"/>
 <area shape="rect" id="node4" href="$animString_8h.html" title="Header datei für eine Mehrzahl von animierbaren Strings und der Callable Klasse." alt="" coords="201,155,306,181"/>
-<area shape="rect" id="node5" href="$header_8h.html" title="definiert variablen&#45;types die überall im Programm benutzt werden" alt="" coords="214,229,293,256"/>
+<area shape="rect" id="node5" href="$header_8h.html" title="Definiert variablen&#45;types die überall im Programm benutzt werden." alt="" coords="214,229,293,256"/>
 <area shape="rect" id="node6" href="$callHandler_8h.html" title="header datei für den CallHandler" alt="" coords="291,80,398,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="30,155,176,181"/>
 </map>

@@ -2,5 +2,5 @@
 <area shape="rect" id="node1" title="Header&#45;Datei für den animierbaren lcd (AnimatableLcd)" alt="" coords="185,5,274,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,152,107"/>
 <area shape="rect" id="node3" href="$animString_8h.html" title="Header datei für eine Mehrzahl von animierbaren Strings und der Callable Klasse." alt="" coords="177,80,282,107"/>
-<area shape="rect" id="node4" href="$header_8h.html" title="definiert variablen&#45;types die überall im Programm benutzt werden" alt="" coords="190,155,269,181"/>
+<area shape="rect" id="node4" href="$header_8h.html" title="Definiert variablen&#45;types die überall im Programm benutzt werden." alt="" coords="190,155,269,181"/>
 </map>
