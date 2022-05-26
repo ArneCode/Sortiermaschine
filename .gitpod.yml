@@ -12,7 +12,6 @@ tasks:
       sudo apt install -y graphviz
       sudo apt-get install -y texlive-fonts-recommended
       sudo apt-get install -y texlive-fonts-extra
-      sudo apt-get install -y texlive-latex-extra
   - command: |
       doxygen Doxyfile
       cd html
