@@ -1,0 +1,6 @@
+<map id="LcdDotAnim" name="LcdDotAnim">
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,107,256"/>
+<area shape="rect" id="node2" href="$classAnimString.html" title=" " alt="" coords="9,155,103,181"/>
+<area shape="rect" id="node3" href="$structLcdString.html" title=" " alt="" coords="15,80,97,107"/>
+<area shape="rect" id="node4" href="$structCallable.html" title=" " alt="" coords="19,5,93,32"/>
+</map>
