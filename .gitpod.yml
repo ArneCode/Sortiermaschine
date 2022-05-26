@@ -1,6 +1,10 @@
 tasks:
-  - init: sudo apt-get -y install doxygen
   - command: |
+      sudo apt-get -y install doxygen
+      sudo apt install -y graphviz
       doxygen Doxyfile
       cd html
       python -m http.server 3000
+ports:
+  - port: 3000
+    onOpen: open-browser

@@ -1,3 +1,11 @@
+/**
+ * @file sketch.ino
+ * @author Arne de Borman
+ * @brief Hauptdatei
+ * @version 0.1
+ * @date 2022-05-26
+ * 
+ */
 #include "customServo.h"
 #include "animLcd.h"
 #include "callHandler.h"
