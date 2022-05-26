@@ -13,8 +13,8 @@ tasks:
       sudo apt-get install -y texlive-fonts-recommended
       sudo apt-get install -y texlive-fonts-extra
       sudo apt-get install -y texlive-latex-extra
-      doxygen Doxyfile
   - command: |
+      doxygen Doxyfile
       cd html
       python -m http.server 3000
 ports:
