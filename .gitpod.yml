@@ -1,5 +1,5 @@
 tasks:
-  - command: |
+  - init: |
       sudo apt-get -y install flex
       git clone https://github.com/doxygen/doxygen.git
       cd doxygen
@@ -7,13 +7,14 @@ tasks:
       cd build
       cmake -G "Unix Makefiles" ..
       make
-      make install
+      sudo make install
       cd ..
       sudo apt install -y graphviz
       sudo apt-get install -y texlive-fonts-recommended
       sudo apt-get install -y texlive-fonts-extra
       sudo apt-get install -y texlive-latex-extra
       doxygen Doxyfile
+  - command: |
       cd html
       python -m http.server 3000
 ports:
