@@ -1,6 +1,6 @@
 <map id="LcdLoadingAnim" name="LcdLoadingAnim">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,135,256"/>
-<area shape="rect" id="node2" href="$classAnimString.html" title=" " alt="" coords="23,155,117,181"/>
-<area shape="rect" id="node3" href="$structLcdString.html" title=" " alt="" coords="29,80,111,107"/>
-<area shape="rect" id="node4" href="$structCallable.html" title=" " alt="" coords="33,5,107,32"/>
+<area shape="rect" id="node1" title="Die Klasse der Lcd Ladeanimationen." alt="" coords="5,229,135,256"/>
+<area shape="rect" id="node2" href="$classAnimString.html" title="Die Klasse für animierbare LcdStrings." alt="" coords="23,155,117,181"/>
+<area shape="rect" id="node3" href="$structLcdString.html" title="Ein String der auf dem AnimatableLcd angezeigt werden kann." alt="" coords="29,80,111,107"/>
+<area shape="rect" id="node4" href="$structCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann." alt="" coords="33,5,107,32"/>
 </map>
