@@ -1,0 +1,8 @@
+<map id="stopButtonClicked" name="stopButtonClicked">
+<area shape="rect" id="node1" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="5,107,145,133"/>
+<area shape="rect" id="node2" href="$classCallHandler.html#a49ab239f771b84300df21bd426788c3e" title=" " alt="" coords="193,5,372,32"/>
+<area shape="rect" id="node3" href="$sketch_8c.html#adb190025266e3839986ad3f39116aeaa" title=" " alt="" coords="262,56,303,83"/>
+<area shape="rect" id="node4" href="$classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0" title=" " alt="" coords="203,107,362,133"/>
+<area shape="rect" id="node5" href="$sketch_8c.html#a902e3350d6dfe8c210f24b31c7b284d8" title="Setzt die Farbe der RGB&#45;Led." alt="" coords="233,157,332,184"/>
+<area shape="rect" id="node6" href="$classCustomServo.html#a2504ffc997018dad9f3811b18b16c672" title=" " alt="" coords="210,208,355,235"/>
+</map>

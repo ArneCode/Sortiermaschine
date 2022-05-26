@@ -1,0 +1,4 @@
+<map id="AnimatableLcd::printCentered" name="AnimatableLcd::printCentered">
+<area shape="rect" id="node1" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="5,5,221,32"/>
+<area shape="rect" id="node2" href="$classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca" title="Eigene Lcd&#45;print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen." alt="" coords="269,5,427,32"/>
+</map>

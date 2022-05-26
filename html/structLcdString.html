@@ -70,6 +70,8 @@ $(function() {
 <div class="title">LcdString Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="animString_8h_source.html">animString.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for LcdString:</div>
 <div class="dyncontent">
@@ -87,45 +89,283 @@ Collaboration diagram for LcdString:</div>
 <div class="dyncontent">
 <div class="center"><img src="structLcdString__coll__graph.png" border="0" usemap="#LcdString_coll__map" alt="Collaboration graph"/></div>
 <map name="LcdString_coll__map" id="LcdString_coll__map">
-<area shape="rect" title=" " alt="" coords="23,171,105,197"/>
-<area shape="rect" href="structCallable.html" title=" " alt="" coords="5,81,80,108"/>
-<area shape="rect" href="classAnimatableLcd.html" title=" " alt="" coords="105,81,223,108"/>
-<area shape="rect" title=" " alt="" coords="97,5,231,32"/>
+<area shape="rect" title=" " alt="" coords="218,81,301,108"/>
+<area shape="rect" href="classAnimString.html" title=" " alt="" coords="164,157,259,184"/>
+<area shape="rect" href="structCallable.html" title=" " alt="" coords="222,5,297,32"/>
+<area shape="rect" href="classAnimatableLcd.html" title=" " alt="" coords="152,247,271,273"/>
+<area shape="rect" title=" " alt="" coords="5,157,140,184"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2afc90b22de35ebb93a337ec604856b8"><td class="memItemLeft" align="right" valign="top"><a id="a2afc90b22de35ebb93a337ec604856b8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>LcdString</b> (String text, <a class="el" href="classAnimatableLcd.html">AnimatableLcd</a> *lcd, time_t duration=0)</td></tr>
+<tr class="memitem:a2afc90b22de35ebb93a337ec604856b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLcdString.html#a2afc90b22de35ebb93a337ec604856b8">LcdString</a> (String <a class="el" href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">text</a>, <a class="el" href="classAnimatableLcd.html">AnimatableLcd</a> *<a class="el" href="structLcdString.html#a89c4796702a713c1a7ddd580cd470780">lcd</a>, <a class="el" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a> <a class="el" href="structLcdString.html#ab6c96ac47d1b85dfcd49fc286ae9e234">duration</a>=0)</td></tr>
 <tr class="separator:a2afc90b22de35ebb93a337ec604856b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a815ab8e4a5e0610637073fb76fb4dadf"><td class="memItemLeft" align="right" valign="top"><a id="a815ab8e4a5e0610637073fb76fb4dadf"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDone</b> ()</td></tr>
+<tr class="memitem:a6c1e54bef2622058e45238872779536b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLcdString.html#a6c1e54bef2622058e45238872779536b">~LcdString</a> ()</td></tr>
+<tr class="separator:a6c1e54bef2622058e45238872779536b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815ab8e4a5e0610637073fb76fb4dadf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLcdString.html#a815ab8e4a5e0610637073fb76fb4dadf">isDone</a> ()</td></tr>
+<tr class="memdesc:a815ab8e4a5e0610637073fb76fb4dadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt zurück, ob die duration überschritten ist.  <a href="structLcdString.html#a815ab8e4a5e0610637073fb76fb4dadf">More...</a><br /></td></tr>
 <tr class="separator:a815ab8e4a5e0610637073fb76fb4dadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e4b9782235acacf1ebf6d17ecf70f9"><td class="memItemLeft" align="right" valign="top"><a id="a64e4b9782235acacf1ebf6d17ecf70f9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
-<tr class="separator:a64e4b9782235acacf1ebf6d17ecf70f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f014299eeb7654a391f1fbfc898719b"><td class="memItemLeft" align="right" valign="top"><a id="a1f014299eeb7654a391f1fbfc898719b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memitem:aa391ea895fc2ec0a5dfe249226daa017"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017">run</a> ()</td></tr>
+<tr class="memdesc:aa391ea895fc2ec0a5dfe249226daa017"><td class="mdescLeft">&#160;</td><td class="mdescRight">gibt den String auf dem Lcd-Display aus  <a href="structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017">More...</a><br /></td></tr>
+<tr class="separator:aa391ea895fc2ec0a5dfe249226daa017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f014299eeb7654a391f1fbfc898719b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b">update</a> ()</td></tr>
 <tr class="separator:a1f014299eeb7654a391f1fbfc898719b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structCallable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structCallable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structCallable.html">Callable</a></td></tr>
+<tr class="memitem:a84ab6ce6283cbf84c8b002e1941fad5d inherit pub_methods_structCallable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCallable.html#a84ab6ce6283cbf84c8b002e1941fad5d">~Callable</a> ()</td></tr>
+<tr class="separator:a84ab6ce6283cbf84c8b002e1941fad5d inherit pub_methods_structCallable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7f5aadf720a72e9c4e7d35fdf87ab886"><td class="memItemLeft" align="right" valign="top"><a id="a7f5aadf720a72e9c4e7d35fdf87ab886"></a>
-String&#160;</td><td class="memItemRight" valign="bottom"><b>text</b></td></tr>
+<tr class="memitem:a7f5aadf720a72e9c4e7d35fdf87ab886"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">text</a></td></tr>
 <tr class="separator:a7f5aadf720a72e9c4e7d35fdf87ab886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89c4796702a713c1a7ddd580cd470780"><td class="memItemLeft" align="right" valign="top"><a id="a89c4796702a713c1a7ddd580cd470780"></a>
-<a class="el" href="classAnimatableLcd.html">AnimatableLcd</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>lcd</b></td></tr>
+<tr class="memitem:a89c4796702a713c1a7ddd580cd470780"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAnimatableLcd.html">AnimatableLcd</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLcdString.html#a89c4796702a713c1a7ddd580cd470780">lcd</a></td></tr>
 <tr class="separator:a89c4796702a713c1a7ddd580cd470780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c96ac47d1b85dfcd49fc286ae9e234"><td class="memItemLeft" align="right" valign="top"><a id="ab6c96ac47d1b85dfcd49fc286ae9e234"></a>
-time_t&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b></td></tr>
+<tr class="memitem:ab6c96ac47d1b85dfcd49fc286ae9e234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLcdString.html#ab6c96ac47d1b85dfcd49fc286ae9e234">duration</a></td></tr>
 <tr class="separator:ab6c96ac47d1b85dfcd49fc286ae9e234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ed3581497a6d00d2b0106888ff192dd"><td class="memItemLeft" align="right" valign="top"><a id="a6ed3581497a6d00d2b0106888ff192dd"></a>
-time_t&#160;</td><td class="memItemRight" valign="bottom"><b>callStart</b></td></tr>
+<tr class="memitem:a6ed3581497a6d00d2b0106888ff192dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLcdString.html#a6ed3581497a6d00d2b0106888ff192dd">callStart</a></td></tr>
 <tr class="separator:a6ed3581497a6d00d2b0106888ff192dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2afc90b22de35ebb93a337ec604856b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2afc90b22de35ebb93a337ec604856b8">&#9670;&nbsp;</a></span>LcdString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LcdString::LcdString </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classAnimatableLcd.html">AnimatableLcd</a> *&#160;</td>
+          <td class="paramname"><em>lcd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a>&#160;</td>
+          <td class="paramname"><em>duration</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c1e54bef2622058e45238872779536b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1e54bef2622058e45238872779536b">&#9670;&nbsp;</a></span>~LcdString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual LcdString::~LcdString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a815ab8e4a5e0610637073fb76fb4dadf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815ab8e4a5e0610637073fb76fb4dadf">&#9670;&nbsp;</a></span>isDone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LcdString::isDone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gibt zurück, ob die duration überschritten ist. </p>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+<p>Reimplemented from <a class="el" href="structCallable.html#af0778d71c6196b6ba0215cce13f8c7dd">Callable</a>.</p>
+
+</div>
+</div>
+<a id="aa391ea895fc2ec0a5dfe249226daa017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa391ea895fc2ec0a5dfe249226daa017">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LcdString::run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gibt den String auf dem Lcd-Display aus </p>
+
+<p>Reimplemented from <a class="el" href="structCallable.html#a0e146c329fbdf8720a9541f60fe910e9">Callable</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classAnimString.html#a565ce4859f7d2d9e74af63c768cfc3e0">AnimString</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structLcdString_aa391ea895fc2ec0a5dfe249226daa017_cgraph.png" border="0" usemap="#structLcdString_aa391ea895fc2ec0a5dfe249226daa017_cgraph" alt=""/></div>
+<map name="structLcdString_aa391ea895fc2ec0a5dfe249226daa017_cgraph" id="structLcdString_aa391ea895fc2ec0a5dfe249226daa017_cgraph">
+<area shape="rect" title="gibt den String auf dem Lcd&#45;Display aus" alt="" coords="5,5,116,32"/>
+<area shape="rect" href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="164,5,360,32"/>
+<area shape="rect" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="408,5,624,32"/>
+<area shape="rect" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca" title="Eigene Lcd&#45;print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen." alt="" coords="672,5,829,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1f014299eeb7654a391f1fbfc898719b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f014299eeb7654a391f1fbfc898719b">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LcdString::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71">LcdDotAnim</a>, and <a class="el" href="classLcdLoadingAnim.html#a939368d0d51f766b20a82176294fba70">LcdLoadingAnim</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structLcdString_a1f014299eeb7654a391f1fbfc898719b_icgraph.png" border="0" usemap="#structLcdString_a1f014299eeb7654a391f1fbfc898719b_icgraph" alt=""/></div>
+<map name="structLcdString_a1f014299eeb7654a391f1fbfc898719b_icgraph" id="structLcdString_a1f014299eeb7654a391f1fbfc898719b_icgraph">
+<area shape="rect" title=" " alt="" coords="324,5,459,32"/>
+<area shape="rect" href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99" title="wird immer wieder von loop aufgerufen um die Animationen zu updaten" alt="" coords="104,5,276,32"/>
+<area shape="rect" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6ed3581497a6d00d2b0106888ff192dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ed3581497a6d00d2b0106888ff192dd">&#9670;&nbsp;</a></span>callStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a> LcdString::callStart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6c96ac47d1b85dfcd49fc286ae9e234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c96ac47d1b85dfcd49fc286ae9e234">&#9670;&nbsp;</a></span>duration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a> LcdString::duration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89c4796702a713c1a7ddd580cd470780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c4796702a713c1a7ddd580cd470780">&#9670;&nbsp;</a></span>lcd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAnimatableLcd.html">AnimatableLcd</a>* LcdString::lcd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f5aadf720a72e9c4e7d35fdf87ab886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f5aadf720a72e9c4e7d35fdf87ab886">&#9670;&nbsp;</a></span>text</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String LcdString::text</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="animString_8h_source.html">animString.h</a></li>
+<li><a class="el" href="animString_8ino.html">animString.ino</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

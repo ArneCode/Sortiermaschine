@@ -1,0 +1,4 @@
+<map id="AnimatableLcd::setAnimation" name="AnimatableLcd::setAnimation">
+<area shape="rect" id="node1" title="setzt die aktuelle animation" alt="" coords="176,5,391,32"/>
+<area shape="rect" id="node2" href="$classAnimString.html#a565ce4859f7d2d9e74af63c768cfc3e0" title="gibt den String auf dem Lcd&#45;Display aus" alt="" coords="5,5,128,32"/>
+</map>

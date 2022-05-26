@@ -1,22 +1,54 @@
+/**
+ * @file animString.ino
+ * @author Arne de Borman
+ * @brief 
+ * @version 0.1
+ * @date 2022-05-26
+ * 
+ * 
+ */
 #include "animLcd.h"
 #include "callHandler.h"
 #include "header.h"
 #include "animString.h"
-
+/**
+ * @brief ruft die angegebene Funktion auf
+ * 
+ */
 void FuncCall::run() {
   call();
 }
+/**
+ * @brief Gibt zurück, ob der nächste Call ausgeführt werden sollte
+ * 
+ * @return true 
+ * @return false 
+ */
 bool FuncCall::isDone() {
   return _isDone();
 }
+/**
+ * @brief gibt den String auf dem Lcd-Display aus
+ * 
+ */
 void LcdString::run() {
   callStart = millis();
   lcd->doAnimation = false;
   lcd->printPretty(this->text);
 }
+/**
+ * @brief Gibt zurück, ob die duration überschritten ist
+ * 
+ * @return true 
+ * @return false 
+ */
 bool LcdString::isDone() {
   return millis() - callStart > duration;
 }
+/**
+ * @brief 
+ * 
+ */
 void AnimString::run() {
   callStart = millis();
   lcd->clear();

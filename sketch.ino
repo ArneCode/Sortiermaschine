@@ -4,7 +4,6 @@
  * @brief Hauptdatei
  * @version 0.1
  * @date 2022-05-26
- * 
  */
 #include "customServo.h"
 #include "animLcd.h"
@@ -76,11 +75,23 @@ Farbe mesureColor() {
   }
   return BLACK;
 }
+/**
+ * @fn
+ * @brief Setzt die Farbe der RGB-Led
+ * 
+ * @param r Rot (0-255)
+ * @param g Grün (0-255)
+ * @param b Blau (0-255)
+ */
 void setLedColor(unsigned char r,unsigned char g, unsigned char b){ //unsigned char: 0-255
   analogWrite(PIN_RED,r);
   analogWrite(PIN_GREEN,g);
   analogWrite(PIN_BLUE,b);
 }
+/**
+ * @brief wird ausgeführt wenn der Stop-Knopf gedrückt wird
+ * 
+ */
 void stopButtonClicked() {
   static bool isStopped = false;//wird nur einmal initialisiert
   isStopped = !isStopped;
@@ -98,11 +109,24 @@ void stopButtonClicked() {
     callHandler.running = false;
   }
 }
+/**
+ * @brief der Stop Knopf
+ * 
+ */
 ButtonHandler stopButton;
-
+/**
+ * @brief hilf Function, Methoden können nicht als functionsparameter benutzt werden
+ * 
+ * @return true 
+ * @return false 
+ */
 bool servoIsDone() {
   return servo.isDone();
 }
+/**
+ * @brief wird am Anfang des Programms aufgerufen
+ * 
+ */
 void setup() {
   Serial.begin(9600);
   Serial.println("setup");
@@ -122,6 +146,10 @@ void setup() {
     servo.write(ANGLE_CENTER);\
   },&servoIsDone)
 
+/**
+ * @brief wird immer wieder ausgeführt
+ * 
+ */
 void loop() {
   callHandler.update();
   lcd.update();

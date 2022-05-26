@@ -2,6 +2,9 @@ tasks:
   - command: |
       sudo apt-get -y install doxygen
       sudo apt install -y graphviz
+      sudo apt-get install texlive-fonts-recommended
+      sudo apt-get install texlive-fonts-extra
+      sudo apt-get install texlive-latex-extra
       doxygen Doxyfile
       cd html
       python -m http.server 3000

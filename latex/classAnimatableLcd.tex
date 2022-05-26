@@ -2,8 +2,11 @@
 \label{classAnimatableLcd}\index{AnimatableLcd@{AnimatableLcd}}
 
 
-Inheritance diagram for Animatable\+Lcd\+:
-\nopagebreak
+{\ttfamily \#include $<$anim\+Lcd.\+h$>$}
+
+
+
+Inheritance diagram for Animatable\+Lcd\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,43 +15,210 @@ Inheritance diagram for Animatable\+Lcd\+:
 \end{figure}
 
 
-Collaboration diagram for Animatable\+Lcd\+:
-\nopagebreak
+Collaboration diagram for Animatable\+Lcd\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=181pt]{classAnimatableLcd__coll__graph}
+\includegraphics[width=250pt]{classAnimatableLcd__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108}\label{classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108}} 
-void {\bfseries set\+Animation} (\mbox{\hyperlink{classAnimString}{Anim\+String}} $\ast$\+\_\+anim\+String)
-\item 
-\mbox{\Hypertarget{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}\label{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}} 
-void {\bfseries print\+Centered} (String text, int length=-\/1, int row=0)
-\item 
-\mbox{\Hypertarget{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}\label{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}} 
-void {\bfseries print\+Pretty} (String text)
-\item 
-\mbox{\Hypertarget{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99}\label{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99}} 
-void {\bfseries update} ()
-\item 
-\mbox{\Hypertarget{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38}\label{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38}} 
-void {\bfseries init} ()
-\item 
-\mbox{\Hypertarget{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}\label{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}} 
-void {\bfseries print} (const String \&text)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108}{set\+Animation}} (\mbox{\hyperlink{classAnimString}{Anim\+String}} $\ast$\+\_\+anim\+String)
+\begin{DoxyCompactList}\small\item\em setzt die aktuelle animation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{print\+Centered}} (String text, int length=-\/1, int row=0)
+\begin{DoxyCompactList}\small\item\em Gibt einen String zentriert auf dem Lcd-\/\+Display aus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}{print\+Pretty}} (String text)
+\begin{DoxyCompactList}\small\item\em gibt den Text \char`\"{}schön\char`\"{} aus, das heißt zentriert und mit automatischen Zeilenumbrüchen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99}{update}} ()
+\begin{DoxyCompactList}\small\item\em wird immer wieder von loop aufgerufen um die Animationen zu updaten \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38}{init}} ()
+\begin{DoxyCompactList}\small\item\em Überschreibt die normale lcd init function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}{print}} (const String \&text)
+\begin{DoxyCompactList}\small\item\em Eigene Lcd-\/print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}\label{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}} 
-bool {\bfseries do\+Animation} = false
+bool \mbox{\hyperlink{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}{do\+Animation}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAnimString}{Anim\+String}} $\ast$ \mbox{\hyperlink{classAnimatableLcd_a2ee9324b53d0646c9a28faf7db6e6997}{anim\+String}}
 \end{DoxyCompactItemize}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38}\label{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38}} 
+\index{AnimatableLcd@{AnimatableLcd}!init@{init}}
+\index{init@{init}!AnimatableLcd@{AnimatableLcd}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Animatable\+Lcd\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Überschreibt die normale lcd init function. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}\label{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}} 
+\index{AnimatableLcd@{AnimatableLcd}!print@{print}}
+\index{print@{print}!AnimatableLcd@{AnimatableLcd}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Animatable\+Lcd\+::print (\begin{DoxyParamCaption}\item[{const String \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Eigene Lcd-\/print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen. 
+
+für eigene Character einfach die nummer des Characters in den Text einfügen {\bfseries{(\textbackslash{}1n für den nten Character)}}, \textbackslash{}1 für leerzeichen, das nicht in Zeilenumbruch resultiert 
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}\label{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}} 
+\index{AnimatableLcd@{AnimatableLcd}!printCentered@{printCentered}}
+\index{printCentered@{printCentered}!AnimatableLcd@{AnimatableLcd}}
+\doxysubsubsection{\texorpdfstring{printCentered()}{printCentered()}}
+{\footnotesize\ttfamily void Animatable\+Lcd\+::print\+Centered (\begin{DoxyParamCaption}\item[{String}]{text,  }\item[{int}]{length = {\ttfamily -\/1},  }\item[{int}]{row = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Gibt einen String zentriert auf dem Lcd-\/\+Display aus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+{\em length} & Länge des Textes, wird neu berechnet wenn nicht angegeben \\
+\hline
+{\em row} & Zeile in der der Text ausgegeben werden soll \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}\label{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}} 
+\index{AnimatableLcd@{AnimatableLcd}!printPretty@{printPretty}}
+\index{printPretty@{printPretty}!AnimatableLcd@{AnimatableLcd}}
+\doxysubsubsection{\texorpdfstring{printPretty()}{printPretty()}}
+{\footnotesize\ttfamily void Animatable\+Lcd\+::print\+Pretty (\begin{DoxyParamCaption}\item[{String}]{text }\end{DoxyParamCaption})}
+
+
+
+gibt den Text \char`\"{}schön\char`\"{} aus, das heißt zentriert und mit automatischen Zeilenumbrüchen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108}\label{classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108}} 
+\index{AnimatableLcd@{AnimatableLcd}!setAnimation@{setAnimation}}
+\index{setAnimation@{setAnimation}!AnimatableLcd@{AnimatableLcd}}
+\doxysubsubsection{\texorpdfstring{setAnimation()}{setAnimation()}}
+{\footnotesize\ttfamily void Animatable\+Lcd\+::set\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAnimString}{Anim\+String}} $\ast$}]{\+\_\+anim\+String }\end{DoxyParamCaption})}
+
+
+
+setzt die aktuelle animation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+anim\+String} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99}\label{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99}} 
+\index{AnimatableLcd@{AnimatableLcd}!update@{update}}
+\index{update@{update}!AnimatableLcd@{AnimatableLcd}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Animatable\+Lcd\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+wird immer wieder von loop aufgerufen um die Animationen zu updaten 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAnimatableLcd_a2ee9324b53d0646c9a28faf7db6e6997}\label{classAnimatableLcd_a2ee9324b53d0646c9a28faf7db6e6997}} 
+\index{AnimatableLcd@{AnimatableLcd}!animString@{animString}}
+\index{animString@{animString}!AnimatableLcd@{AnimatableLcd}}
+\doxysubsubsection{\texorpdfstring{animString}{animString}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnimString}{Anim\+String}}$\ast$ Animatable\+Lcd\+::anim\+String\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}\label{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}} 
+\index{AnimatableLcd@{AnimatableLcd}!doAnimation@{doAnimation}}
+\index{doAnimation@{doAnimation}!AnimatableLcd@{AnimatableLcd}}
+\doxysubsubsection{\texorpdfstring{doAnimation}{doAnimation}}
+{\footnotesize\ttfamily bool Animatable\+Lcd\+::do\+Animation = false}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-anim\+Lcd.\+h\end{DoxyCompactItemize}
+\mbox{\hyperlink{animLcd_8h}{anim\+Lcd.\+h}}\item 
+\mbox{\hyperlink{animLcd_8ino}{anim\+Lcd.\+ino}}\end{DoxyCompactItemize}

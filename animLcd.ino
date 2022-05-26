@@ -1,3 +1,12 @@
+/**
+ * @file animLcd.ino
+ * @author Arne de Borman
+ * @brief 
+ * @version 0.1
+ * @date 2022-05-26
+ * 
+ * 
+ */
 #include <LiquidCrystal_I2C.h>
 #include "header.h"
 #include "animLcd.h"
@@ -23,7 +32,10 @@ const byte loading_full_c[8] = { //is used to define a custom character represen
   B11111,
   B11111
 };
-
+/**
+ * @brief Überschreibt die normale lcd init function
+ * 
+ */
 void AnimatableLcd::init() {
   LiquidCrystal_I2C::init();
   backlight();
@@ -31,10 +43,20 @@ void AnimatableLcd::init() {
   lcd.createChar(0, loading_empty_c);
   lcd.createChar(1, loading_full_c);
 }
+/**
+ * @brief setzt die aktuelle animation
+ * 
+ * @param _animString 
+ */
 void AnimatableLcd::setAnimation(AnimString* _animString) {
   doAnimation = true;
   animString = _animString;
 }
+/**
+ * @brief Eigene Lcd-print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen
+ * @details für eigene Character einfach die nummer des Characters in den Text einfügen <b>(\1n für den nten Character)</b>, \1 für leerzeichen, das nicht in Zeilenumbruch resultiert
+ * @param text 
+ */
 void AnimatableLcd::print(const String& text){
   //custom print with ability to use custom characters, just inserst the number of the custom character in the string (\1n for the nth character)
   //and it will be converted to the custom character (\1n so that \0 doesn't appear in the string, because it means end of string)
@@ -49,6 +71,13 @@ void AnimatableLcd::print(const String& text){
     }
   }
 }
+/**
+ * @brief Gibt einen String zentriert auf dem Lcd-Display aus
+ * 
+ * @param text 
+ * @param length Länge des Textes, wird neu berechnet wenn nicht angegeben
+ * @param row Zeile in der der Text ausgegeben werden soll
+ */
 void AnimatableLcd::printCentered(String text, int length = -1, int row = 0) { //length<=16
   if (length == -1) {
     length = text.length();
@@ -57,10 +86,13 @@ void AnimatableLcd::printCentered(String text, int length = -1, int row = 0) { /
   setCursor(offset, row);
   print(text);
 }
+/**
+ * @brief gibt den Text "schön" aus, das heißt zentriert und mit automatischen Zeilenumbrüchen
+ * 
+ * @param text 
+ */
 void AnimatableLcd::printPretty(String text) { //handelt zeilenumbrüche und schreibt zentriert
   clear();
-  //Serial.print("printing pretty: ");
-  //Serial.println(text);
   int length = text.length();
   if (length <= 16) {
     printCentered(text, length);
@@ -84,6 +116,10 @@ void AnimatableLcd::printPretty(String text) { //handelt zeilenumbrüche und sch
   printCentered(row1, row1.length(), 0);
   printCentered(row2, row2.length(), 1);
 }
+/**
+ * @brief wird immer wieder von loop aufgerufen um die Animationen zu updaten
+ * 
+ */
 void AnimatableLcd::update() {
   if (!doAnimation) {
     return;

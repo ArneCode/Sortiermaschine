@@ -1,6 +1,19 @@
+/**
+ * @file callHandler.ino
+ * @author Arne de Borman
+ * @brief 
+ * @version 0.1
+ * @date 2022-05-26
+ * 
+ * 
+ */
 #include "header.h"
 #include "animString.h"
 #include "callHandler.h"
+/**
+ * @brief setzt den Speicherplatz der von den Calls besetzt wurde frei
+ * 
+ */
 void CallHandler::deleteCalls() {
   if (!callsSet) {
     return;
@@ -11,6 +24,12 @@ void CallHandler::deleteCalls() {
   }
   delete callPtrs;
 }
+/**
+ * @brief Setzt die neuen Calls, die ausgeführt werden sollen
+ * 
+ * @param newCallPtrs 
+ * @param nCalls 
+ */
 void CallHandler::setCalls(Callable* newCallPtrs[], size_t nCalls) {
   /*if(callsSet){ //doing this would result in two sets of calls being in heap at once
     deleteCalls(); //solution is to delete previus calls before initializing a new one
@@ -23,7 +42,10 @@ void CallHandler::setCalls(Callable* newCallPtrs[], size_t nCalls) {
   lastCallT = millis();
   running = true;
 }
-
+/**
+ * @brief wird von loop aufgerufen, ermöglicht es zu überprüfen, wechselt zum nächsten Call, wenn der Aktuelle vorbei ist
+ * 
+ */
 void CallHandler::update() {
   if (!running) {
     return;
@@ -38,6 +60,10 @@ void CallHandler::update() {
     (*currCallPtr)->run();//->currCall->run();
   }
 }
+/**
+ * @brief Destroy the Call Handler:: Call Handler object
+ * 
+ */
 CallHandler::~CallHandler() {
   deleteCalls();
 }

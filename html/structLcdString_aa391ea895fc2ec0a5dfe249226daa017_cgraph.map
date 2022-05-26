@@ -1,0 +1,6 @@
+<map id="LcdString::run" name="LcdString::run">
+<area shape="rect" id="node1" title="gibt den String auf dem Lcd&#45;Display aus" alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node2" href="$classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="164,5,360,32"/>
+<area shape="rect" id="node3" href="$classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="408,5,624,32"/>
+<area shape="rect" id="node4" href="$classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca" title="Eigene Lcd&#45;print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen." alt="" coords="672,5,829,32"/>
+</map>

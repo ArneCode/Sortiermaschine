@@ -1,7 +1,19 @@
+/**
+ * @file customServo.h
+ * @brief 
+ * @version 0.1
+ * @date 2022-05-26
+ * 
+ * 
+ */
 #ifndef CUSTOMSERVO_H
 #define CUSTOMSERVO_H
 #include <Servo.h>
 #include "header.h"
+/**
+ * @brief Eine Eigene Servo-Klasse, die es ermöglicht den Servo mit verschiedenen Geschwindigkeiten zu bewegen
+ * 
+ */
 class CustomServo: public Servo {
     short startAngle;
     short targetAngle;

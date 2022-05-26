@@ -2,8 +2,11 @@
 \label{structLcdString}\index{LcdString@{LcdString}}
 
 
-Inheritance diagram for Lcd\+String\+:
-\nopagebreak
+{\ttfamily \#include $<$anim\+String.\+h$>$}
+
+
+
+Inheritance diagram for Lcd\+String\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,46 +15,147 @@ Inheritance diagram for Lcd\+String\+:
 \end{figure}
 
 
-Collaboration diagram for Lcd\+String\+:
-\nopagebreak
+Collaboration diagram for Lcd\+String\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=250pt]{structLcdString__coll__graph}
+\includegraphics[width=317pt]{structLcdString__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structLcdString_a2afc90b22de35ebb93a337ec604856b8}\label{structLcdString_a2afc90b22de35ebb93a337ec604856b8}} 
-{\bfseries Lcd\+String} (String text, \mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} $\ast$lcd, time\+\_\+t duration=0)
+\mbox{\hyperlink{structLcdString_a2afc90b22de35ebb93a337ec604856b8}{Lcd\+String}} (String \mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}}, \mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} $\ast$\mbox{\hyperlink{structLcdString_a89c4796702a713c1a7ddd580cd470780}{lcd}}, \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} \mbox{\hyperlink{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}{duration}}=0)
 \item 
-\mbox{\Hypertarget{structLcdString_a815ab8e4a5e0610637073fb76fb4dadf}\label{structLcdString_a815ab8e4a5e0610637073fb76fb4dadf}} 
-bool {\bfseries is\+Done} ()
+virtual \mbox{\hyperlink{structLcdString_a6c1e54bef2622058e45238872779536b}{$\sim$\+Lcd\+String}} ()
 \item 
-\mbox{\Hypertarget{structLcdString_a64e4b9782235acacf1ebf6d17ecf70f9}\label{structLcdString_a64e4b9782235acacf1ebf6d17ecf70f9}} 
-virtual void {\bfseries run} ()
-\item 
-\mbox{\Hypertarget{structLcdString_a1f014299eeb7654a391f1fbfc898719b}\label{structLcdString_a1f014299eeb7654a391f1fbfc898719b}} 
-virtual void {\bfseries update} ()
+bool \mbox{\hyperlink{structLcdString_a815ab8e4a5e0610637073fb76fb4dadf}{is\+Done}} ()
+\begin{DoxyCompactList}\small\item\em Gibt zurück, ob die duration überschritten ist. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{structLcdString_aa391ea895fc2ec0a5dfe249226daa017}{run}} ()
+\begin{DoxyCompactList}\small\item\em gibt den String auf dem Lcd-\/\+Display aus \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{structLcdString_a1f014299eeb7654a391f1fbfc898719b}{update}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}\label{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}} 
-String {\bfseries text}
+String \mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}}
 \item 
-\mbox{\Hypertarget{structLcdString_a89c4796702a713c1a7ddd580cd470780}\label{structLcdString_a89c4796702a713c1a7ddd580cd470780}} 
-\mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} $\ast$ {\bfseries lcd}
+\mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} $\ast$ \mbox{\hyperlink{structLcdString_a89c4796702a713c1a7ddd580cd470780}{lcd}}
 \item 
-\mbox{\Hypertarget{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}\label{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}} 
-time\+\_\+t {\bfseries duration}
+\mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} \mbox{\hyperlink{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}{duration}}
 \item 
-\mbox{\Hypertarget{structLcdString_a6ed3581497a6d00d2b0106888ff192dd}\label{structLcdString_a6ed3581497a6d00d2b0106888ff192dd}} 
-time\+\_\+t {\bfseries call\+Start}
+\mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} \mbox{\hyperlink{structLcdString_a6ed3581497a6d00d2b0106888ff192dd}{call\+Start}}
 \end{DoxyCompactItemize}
 
 
-The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structLcdString_a2afc90b22de35ebb93a337ec604856b8}\label{structLcdString_a2afc90b22de35ebb93a337ec604856b8}} 
+\index{LcdString@{LcdString}!LcdString@{LcdString}}
+\index{LcdString@{LcdString}!LcdString@{LcdString}}
+\doxysubsubsection{\texorpdfstring{LcdString()}{LcdString()}}
+{\footnotesize\ttfamily Lcd\+String\+::\+Lcd\+String (\begin{DoxyParamCaption}\item[{String}]{text,  }\item[{\mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} $\ast$}]{lcd,  }\item[{\mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}}}]{duration = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structLcdString_a6c1e54bef2622058e45238872779536b}\label{structLcdString_a6c1e54bef2622058e45238872779536b}} 
+\index{LcdString@{LcdString}!````~LcdString@{$\sim$LcdString}}
+\index{````~LcdString@{$\sim$LcdString}!LcdString@{LcdString}}
+\doxysubsubsection{\texorpdfstring{$\sim$LcdString()}{~LcdString()}}
+{\footnotesize\ttfamily virtual Lcd\+String\+::$\sim$\+Lcd\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structLcdString_a815ab8e4a5e0610637073fb76fb4dadf}\label{structLcdString_a815ab8e4a5e0610637073fb76fb4dadf}} 
+\index{LcdString@{LcdString}!isDone@{isDone}}
+\index{isDone@{isDone}!LcdString@{LcdString}}
+\doxysubsubsection{\texorpdfstring{isDone()}{isDone()}}
+{\footnotesize\ttfamily bool Lcd\+String\+::is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gibt zurück, ob die duration überschritten ist. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{structCallable_af0778d71c6196b6ba0215cce13f8c7dd}{Callable}}.
+
+\mbox{\Hypertarget{structLcdString_aa391ea895fc2ec0a5dfe249226daa017}\label{structLcdString_aa391ea895fc2ec0a5dfe249226daa017}} 
+\index{LcdString@{LcdString}!run@{run}}
+\index{run@{run}!LcdString@{LcdString}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Lcd\+String\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+gibt den String auf dem Lcd-\/\+Display aus 
+
+
+
+Reimplemented from \mbox{\hyperlink{structCallable_a0e146c329fbdf8720a9541f60fe910e9}{Callable}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classAnimString_a565ce4859f7d2d9e74af63c768cfc3e0}{Anim\+String}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structLcdString_aa391ea895fc2ec0a5dfe249226daa017_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structLcdString_a1f014299eeb7654a391f1fbfc898719b}\label{structLcdString_a1f014299eeb7654a391f1fbfc898719b}} 
+\index{LcdString@{LcdString}!update@{update}}
+\index{update@{update}!LcdString@{LcdString}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Lcd\+String\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classLcdDotAnim_a7dc0b25c1a3729a5c6aa652fffcccb71}{Lcd\+Dot\+Anim}}, and \mbox{\hyperlink{classLcdLoadingAnim_a939368d0d51f766b20a82176294fba70}{Lcd\+Loading\+Anim}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structLcdString_a1f014299eeb7654a391f1fbfc898719b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structLcdString_a6ed3581497a6d00d2b0106888ff192dd}\label{structLcdString_a6ed3581497a6d00d2b0106888ff192dd}} 
+\index{LcdString@{LcdString}!callStart@{callStart}}
+\index{callStart@{callStart}!LcdString@{LcdString}}
+\doxysubsubsection{\texorpdfstring{callStart}{callStart}}
+{\footnotesize\ttfamily \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} Lcd\+String\+::call\+Start}
+
+\mbox{\Hypertarget{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}\label{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}} 
+\index{LcdString@{LcdString}!duration@{duration}}
+\index{duration@{duration}!LcdString@{LcdString}}
+\doxysubsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} Lcd\+String\+::duration}
+
+\mbox{\Hypertarget{structLcdString_a89c4796702a713c1a7ddd580cd470780}\label{structLcdString_a89c4796702a713c1a7ddd580cd470780}} 
+\index{LcdString@{LcdString}!lcd@{lcd}}
+\index{lcd@{lcd}!LcdString@{LcdString}}
+\doxysubsubsection{\texorpdfstring{lcd}{lcd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}}$\ast$ Lcd\+String\+::lcd}
+
+\mbox{\Hypertarget{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}\label{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}} 
+\index{LcdString@{LcdString}!text@{text}}
+\index{text@{text}!LcdString@{LcdString}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily String Lcd\+String\+::text}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-anim\+String.\+h\end{DoxyCompactItemize}
+\mbox{\hyperlink{animString_8h}{anim\+String.\+h}}\item 
+\mbox{\hyperlink{animString_8ino}{anim\+String.\+ino}}\end{DoxyCompactItemize}

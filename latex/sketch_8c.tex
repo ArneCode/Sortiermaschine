@@ -1,0 +1,402 @@
+\hypertarget{sketch_8c}{}\doxysection{sketch.\+c File Reference}
+\label{sketch_8c}\index{sketch.c@{sketch.c}}
+{\ttfamily \#include \char`\"{}custom\+Servo.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}anim\+Lcd.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}call\+Handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\newline
+Include dependency graph for sketch.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sketch_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classButtonHandler}{Button\+Handler}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sketch_8c_a96e566c1144385ff3e4c1ec37bdd5274}{G\+E\+H\+\_\+\+Z\+U\+R\+U\+E\+CK}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2}{Farbe}} \{ \mbox{\hyperlink{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50}{W\+H\+I\+TE}}, 
+\mbox{\hyperlink{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3}{B\+L\+A\+CK}}, 
+\mbox{\hyperlink{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}{O\+R\+A\+N\+GE}}, 
+\mbox{\hyperlink{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2}{N\+O\+T\+H\+I\+NG}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} \mbox{\hyperlink{sketch_8c_adb190025266e3839986ad3f39116aeaa}{lcd}} (0x27, 16, 2)
+\item 
+\mbox{\hyperlink{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2}{Farbe}} \mbox{\hyperlink{sketch_8c_ac80eb6baeaace0198948fd8ff196e4fd}{mesure\+Color}} ()
+\item 
+void \mbox{\hyperlink{sketch_8c_a902e3350d6dfe8c210f24b31c7b284d8}{set\+Led\+Color}} (unsigned char r, unsigned char g, unsigned char b)
+\begin{DoxyCompactList}\small\item\em Setzt die Farbe der R\+G\+B-\/\+Led. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sketch_8c_abbbe19f80bf8227bbfbb68d98a1937cc}{stop\+Button\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em wird ausgeführt wenn der Stop-\/\+Knopf gedrückt wird \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{sketch_8c_a39ddda5c3402f1f7b2c9ccad07e18791}{servo\+Is\+Done}} ()
+\begin{DoxyCompactList}\small\item\em hilf Function, Methoden können nicht als functionsparameter benutzt werden \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sketch_8c_a4fc01d736fe50cf5b977f755b675f11d}{setup}} ()
+\begin{DoxyCompactList}\small\item\em wird am Anfang des Programms aufgerufen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sketch_8c_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
+\begin{DoxyCompactList}\small\item\em wird immer wieder ausgeführt \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{sketch_8c_ab09894308b534e1030021de3bc84710e}{L\+O\+A\+D\+I\+N\+G\+\_\+\+D\+U\+R\+A\+T\+I\+ON}} = 3000
+\item 
+const int \mbox{\hyperlink{sketch_8c_a759a9f39d205bf95aed6a556759ebd8a}{A\+N\+G\+L\+E\+\_\+\+L\+E\+F\+T\+\_\+\+H\+O\+LE}} = 180
+\item 
+const int \mbox{\hyperlink{sketch_8c_aea1dd563eecdccc3c412c2eb13f99850}{A\+N\+G\+L\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+H\+O\+LE}} = 90
+\item 
+const int \mbox{\hyperlink{sketch_8c_ad79ce25ec94495875b917de81bbd692e}{A\+N\+G\+L\+E\+\_\+\+C\+E\+N\+T\+ER}} = 130
+\item 
+const int \mbox{\hyperlink{sketch_8c_ac82ee88c087fbd603a9a9ff334218360}{A\+N\+G\+L\+E\+\_\+\+M\+IN}} = 45
+\item 
+const int \mbox{\hyperlink{sketch_8c_ae1e0b317f35c61409381a32ea905ba67}{P\+I\+N\+\_\+\+S\+E\+R\+VO}} = 6
+\item 
+const int \mbox{\hyperlink{sketch_8c_a05c5455b55db369d7d780a0a64525ecc}{P\+I\+N\+\_\+\+S\+T\+O\+P\+B\+U\+T\+T\+ON}} = 13
+\item 
+const int \mbox{\hyperlink{sketch_8c_ac57f63ef8771d860562baf56fd4c2732}{P\+I\+N\+\_\+\+R\+ED}} = 11
+\item 
+const int \mbox{\hyperlink{sketch_8c_ac594418c6e368680a9de074d7d136caa}{P\+I\+N\+\_\+\+G\+R\+E\+EN}} = 10
+\item 
+const int \mbox{\hyperlink{sketch_8c_a275fb5d3177300cc6a29ae232344e4d8}{P\+I\+N\+\_\+\+B\+L\+UE}} = 9
+\item 
+const float \mbox{\hyperlink{sketch_8c_adef1ca0bee2c8b7c9b72001969ee3426}{S\+E\+R\+V\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+D\+E\+F\+A\+U\+LT}} = 0.\+01f
+\item 
+const float \mbox{\hyperlink{sketch_8c_a8b8f576df7f10b8c79c4ee6ee1f94166}{S\+E\+R\+V\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+F\+A\+ST}} = 0.\+5f
+\item 
+\mbox{\hyperlink{classCallHandler}{Call\+Handler}} \mbox{\hyperlink{sketch_8c_a97f1ef48e4db33e959bd4b1878116dcc}{call\+Handler}}
+\item 
+\mbox{\hyperlink{classCustomServo}{Custom\+Servo}} \mbox{\hyperlink{sketch_8c_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}
+\item 
+int \mbox{\hyperlink{sketch_8c_a13f268479b5aae34b4a2297104c7aecd}{n\+White}} = 0
+\item 
+int \mbox{\hyperlink{sketch_8c_a847f8cb2693f97028af9e2a0fb979d41}{n\+Black}} = 0
+\item 
+int \mbox{\hyperlink{sketch_8c_ab02bdede4356a3a7dffc99e97e927ca6}{n\+Orange}} = 0
+\item 
+bool \mbox{\hyperlink{sketch_8c_ab7ffbbf9ac91d991bb0c81c6f4fa6699}{do\+Flicker}} =false
+\item 
+\mbox{\hyperlink{classButtonHandler}{Button\+Handler}} \mbox{\hyperlink{sketch_8c_ae68a57cc22f2b256b21089a585de29df}{stop\+Button}}
+\begin{DoxyCompactList}\small\item\em der Stop Knopf \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{sketch_8c_a96e566c1144385ff3e4c1ec37bdd5274}\label{sketch_8c_a96e566c1144385ff3e4c1ec37bdd5274}} 
+\index{sketch.c@{sketch.c}!GEH\_ZURUECK@{GEH\_ZURUECK}}
+\index{GEH\_ZURUECK@{GEH\_ZURUECK}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{GEH\_ZURUECK}{GEH\_ZURUECK}}
+{\footnotesize\ttfamily \#define G\+E\+H\+\_\+\+Z\+U\+R\+U\+E\+CK}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{new} \mbox{\hyperlink{classLcdDotAnim}{LcdDotAnim}}(\textcolor{stringliteral}{"Gehe zur\(\backslash\)365ck"},\&\mbox{\hyperlink{sketch_8c_adb190025266e3839986ad3f39116aeaa}{lcd}}),\(\backslash\)}
+\DoxyCodeLine{  new \mbox{\hyperlink{structFuncCall}{FuncCall}}([]()\{\(\backslash\)}
+\DoxyCodeLine{    servo.setSpeed(\mbox{\hyperlink{sketch_8c_a8b8f576df7f10b8c79c4ee6ee1f94166}{SERVO\_SPEED\_FAST}});\(\backslash\)}
+\DoxyCodeLine{    servo.write(\mbox{\hyperlink{sketch_8c_ad79ce25ec94495875b917de81bbd692e}{ANGLE\_CENTER}});\(\backslash\)}
+\DoxyCodeLine{  \},\&\mbox{\hyperlink{sketch_8c_a39ddda5c3402f1f7b2c9ccad07e18791}{servoIsDone}})}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2}\label{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2}} 
+\index{sketch.c@{sketch.c}!Farbe@{Farbe}}
+\index{Farbe@{Farbe}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{Farbe}{Farbe}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2}{Farbe}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WHITE@{WHITE}!sketch.c@{sketch.c}}\index{sketch.c@{sketch.c}!WHITE@{WHITE}}}\mbox{\Hypertarget{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50}\label{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50}} 
+W\+H\+I\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLACK@{BLACK}!sketch.c@{sketch.c}}\index{sketch.c@{sketch.c}!BLACK@{BLACK}}}\mbox{\Hypertarget{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3}\label{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3}} 
+B\+L\+A\+CK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ORANGE@{ORANGE}!sketch.c@{sketch.c}}\index{sketch.c@{sketch.c}!ORANGE@{ORANGE}}}\mbox{\Hypertarget{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}\label{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}} 
+O\+R\+A\+N\+GE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOTHING@{NOTHING}!sketch.c@{sketch.c}}\index{sketch.c@{sketch.c}!NOTHING@{NOTHING}}}\mbox{\Hypertarget{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2}\label{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2}} 
+N\+O\+T\+H\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sketch_8c_adb190025266e3839986ad3f39116aeaa}\label{sketch_8c_adb190025266e3839986ad3f39116aeaa}} 
+\index{sketch.c@{sketch.c}!lcd@{lcd}}
+\index{lcd@{lcd}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{lcd()}{lcd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} lcd (\begin{DoxyParamCaption}\item[{0x27}]{,  }\item[{16}]{,  }\item[{2}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{sketch_8c_adb190025266e3839986ad3f39116aeaa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sketch_8c_afe461d27b9c48d5921c00d521181f12f}\label{sketch_8c_afe461d27b9c48d5921c00d521181f12f}} 
+\index{sketch.c@{sketch.c}!loop@{loop}}
+\index{loop@{loop}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+wird immer wieder ausgeführt 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sketch_8c_afe461d27b9c48d5921c00d521181f12f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sketch_8c_ac80eb6baeaace0198948fd8ff196e4fd}\label{sketch_8c_ac80eb6baeaace0198948fd8ff196e4fd}} 
+\index{sketch.c@{sketch.c}!mesureColor@{mesureColor}}
+\index{mesureColor@{mesureColor}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{mesureColor()}{mesureColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sketch_8c_a911d5d65a486d5ecd013d13f3ab801b2}{Farbe}} mesure\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{sketch_8c_ac80eb6baeaace0198948fd8ff196e4fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sketch_8c_a39ddda5c3402f1f7b2c9ccad07e18791}\label{sketch_8c_a39ddda5c3402f1f7b2c9ccad07e18791}} 
+\index{sketch.c@{sketch.c}!servoIsDone@{servoIsDone}}
+\index{servoIsDone@{servoIsDone}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{servoIsDone()}{servoIsDone()}}
+{\footnotesize\ttfamily bool servo\+Is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+hilf Function, Methoden können nicht als functionsparameter benutzt werden 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{sketch_8c_a39ddda5c3402f1f7b2c9ccad07e18791_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{sketch_8c_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sketch_8c_a902e3350d6dfe8c210f24b31c7b284d8}\label{sketch_8c_a902e3350d6dfe8c210f24b31c7b284d8}} 
+\index{sketch.c@{sketch.c}!setLedColor@{setLedColor}}
+\index{setLedColor@{setLedColor}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{setLedColor()}{setLedColor()}}
+{\footnotesize\ttfamily void set\+Led\+Color (\begin{DoxyParamCaption}\item[{unsigned char}]{r,  }\item[{unsigned char}]{g,  }\item[{unsigned char}]{b }\end{DoxyParamCaption})}
+
+
+
+Setzt die Farbe der R\+G\+B-\/\+Led. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Rot (0-\/255) \\
+\hline
+{\em g} & Grün (0-\/255) \\
+\hline
+{\em b} & Blau (0-\/255) \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sketch_8c_a902e3350d6dfe8c210f24b31c7b284d8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sketch_8c_a4fc01d736fe50cf5b977f755b675f11d}\label{sketch_8c_a4fc01d736fe50cf5b977f755b675f11d}} 
+\index{sketch.c@{sketch.c}!setup@{setup}}
+\index{setup@{setup}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+wird am Anfang des Programms aufgerufen 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sketch_8c_a4fc01d736fe50cf5b977f755b675f11d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sketch_8c_abbbe19f80bf8227bbfbb68d98a1937cc}\label{sketch_8c_abbbe19f80bf8227bbfbb68d98a1937cc}} 
+\index{sketch.c@{sketch.c}!stopButtonClicked@{stopButtonClicked}}
+\index{stopButtonClicked@{stopButtonClicked}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{stopButtonClicked()}{stopButtonClicked()}}
+{\footnotesize\ttfamily void stop\+Button\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+wird ausgeführt wenn der Stop-\/\+Knopf gedrückt wird 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sketch_8c_abbbe19f80bf8227bbfbb68d98a1937cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{sketch_8c_abbbe19f80bf8227bbfbb68d98a1937cc_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{sketch_8c_ad79ce25ec94495875b917de81bbd692e}\label{sketch_8c_ad79ce25ec94495875b917de81bbd692e}} 
+\index{sketch.c@{sketch.c}!ANGLE\_CENTER@{ANGLE\_CENTER}}
+\index{ANGLE\_CENTER@{ANGLE\_CENTER}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{ANGLE\_CENTER}{ANGLE\_CENTER}}
+{\footnotesize\ttfamily const int A\+N\+G\+L\+E\+\_\+\+C\+E\+N\+T\+ER = 130}
+
+\mbox{\Hypertarget{sketch_8c_a759a9f39d205bf95aed6a556759ebd8a}\label{sketch_8c_a759a9f39d205bf95aed6a556759ebd8a}} 
+\index{sketch.c@{sketch.c}!ANGLE\_LEFT\_HOLE@{ANGLE\_LEFT\_HOLE}}
+\index{ANGLE\_LEFT\_HOLE@{ANGLE\_LEFT\_HOLE}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{ANGLE\_LEFT\_HOLE}{ANGLE\_LEFT\_HOLE}}
+{\footnotesize\ttfamily const int A\+N\+G\+L\+E\+\_\+\+L\+E\+F\+T\+\_\+\+H\+O\+LE = 180}
+
+\mbox{\Hypertarget{sketch_8c_ac82ee88c087fbd603a9a9ff334218360}\label{sketch_8c_ac82ee88c087fbd603a9a9ff334218360}} 
+\index{sketch.c@{sketch.c}!ANGLE\_MIN@{ANGLE\_MIN}}
+\index{ANGLE\_MIN@{ANGLE\_MIN}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{ANGLE\_MIN}{ANGLE\_MIN}}
+{\footnotesize\ttfamily const int A\+N\+G\+L\+E\+\_\+\+M\+IN = 45}
+
+\mbox{\Hypertarget{sketch_8c_aea1dd563eecdccc3c412c2eb13f99850}\label{sketch_8c_aea1dd563eecdccc3c412c2eb13f99850}} 
+\index{sketch.c@{sketch.c}!ANGLE\_RIGHT\_HOLE@{ANGLE\_RIGHT\_HOLE}}
+\index{ANGLE\_RIGHT\_HOLE@{ANGLE\_RIGHT\_HOLE}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{ANGLE\_RIGHT\_HOLE}{ANGLE\_RIGHT\_HOLE}}
+{\footnotesize\ttfamily const int A\+N\+G\+L\+E\+\_\+\+R\+I\+G\+H\+T\+\_\+\+H\+O\+LE = 90}
+
+\mbox{\Hypertarget{sketch_8c_a97f1ef48e4db33e959bd4b1878116dcc}\label{sketch_8c_a97f1ef48e4db33e959bd4b1878116dcc}} 
+\index{sketch.c@{sketch.c}!callHandler@{callHandler}}
+\index{callHandler@{callHandler}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{callHandler}{callHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCallHandler}{Call\+Handler}} call\+Handler}
+
+\mbox{\Hypertarget{sketch_8c_ab7ffbbf9ac91d991bb0c81c6f4fa6699}\label{sketch_8c_ab7ffbbf9ac91d991bb0c81c6f4fa6699}} 
+\index{sketch.c@{sketch.c}!doFlicker@{doFlicker}}
+\index{doFlicker@{doFlicker}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{doFlicker}{doFlicker}}
+{\footnotesize\ttfamily bool do\+Flicker =false}
+
+\mbox{\Hypertarget{sketch_8c_ab09894308b534e1030021de3bc84710e}\label{sketch_8c_ab09894308b534e1030021de3bc84710e}} 
+\index{sketch.c@{sketch.c}!LOADING\_DURATION@{LOADING\_DURATION}}
+\index{LOADING\_DURATION@{LOADING\_DURATION}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{LOADING\_DURATION}{LOADING\_DURATION}}
+{\footnotesize\ttfamily const int L\+O\+A\+D\+I\+N\+G\+\_\+\+D\+U\+R\+A\+T\+I\+ON = 3000}
+
+\mbox{\Hypertarget{sketch_8c_a847f8cb2693f97028af9e2a0fb979d41}\label{sketch_8c_a847f8cb2693f97028af9e2a0fb979d41}} 
+\index{sketch.c@{sketch.c}!nBlack@{nBlack}}
+\index{nBlack@{nBlack}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{nBlack}{nBlack}}
+{\footnotesize\ttfamily int n\+Black = 0}
+
+\mbox{\Hypertarget{sketch_8c_ab02bdede4356a3a7dffc99e97e927ca6}\label{sketch_8c_ab02bdede4356a3a7dffc99e97e927ca6}} 
+\index{sketch.c@{sketch.c}!nOrange@{nOrange}}
+\index{nOrange@{nOrange}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{nOrange}{nOrange}}
+{\footnotesize\ttfamily int n\+Orange = 0}
+
+\mbox{\Hypertarget{sketch_8c_a13f268479b5aae34b4a2297104c7aecd}\label{sketch_8c_a13f268479b5aae34b4a2297104c7aecd}} 
+\index{sketch.c@{sketch.c}!nWhite@{nWhite}}
+\index{nWhite@{nWhite}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{nWhite}{nWhite}}
+{\footnotesize\ttfamily int n\+White = 0}
+
+\mbox{\Hypertarget{sketch_8c_a275fb5d3177300cc6a29ae232344e4d8}\label{sketch_8c_a275fb5d3177300cc6a29ae232344e4d8}} 
+\index{sketch.c@{sketch.c}!PIN\_BLUE@{PIN\_BLUE}}
+\index{PIN\_BLUE@{PIN\_BLUE}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{PIN\_BLUE}{PIN\_BLUE}}
+{\footnotesize\ttfamily const int P\+I\+N\+\_\+\+B\+L\+UE = 9}
+
+\mbox{\Hypertarget{sketch_8c_ac594418c6e368680a9de074d7d136caa}\label{sketch_8c_ac594418c6e368680a9de074d7d136caa}} 
+\index{sketch.c@{sketch.c}!PIN\_GREEN@{PIN\_GREEN}}
+\index{PIN\_GREEN@{PIN\_GREEN}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{PIN\_GREEN}{PIN\_GREEN}}
+{\footnotesize\ttfamily const int P\+I\+N\+\_\+\+G\+R\+E\+EN = 10}
+
+\mbox{\Hypertarget{sketch_8c_ac57f63ef8771d860562baf56fd4c2732}\label{sketch_8c_ac57f63ef8771d860562baf56fd4c2732}} 
+\index{sketch.c@{sketch.c}!PIN\_RED@{PIN\_RED}}
+\index{PIN\_RED@{PIN\_RED}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{PIN\_RED}{PIN\_RED}}
+{\footnotesize\ttfamily const int P\+I\+N\+\_\+\+R\+ED = 11}
+
+\mbox{\Hypertarget{sketch_8c_ae1e0b317f35c61409381a32ea905ba67}\label{sketch_8c_ae1e0b317f35c61409381a32ea905ba67}} 
+\index{sketch.c@{sketch.c}!PIN\_SERVO@{PIN\_SERVO}}
+\index{PIN\_SERVO@{PIN\_SERVO}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{PIN\_SERVO}{PIN\_SERVO}}
+{\footnotesize\ttfamily const int P\+I\+N\+\_\+\+S\+E\+R\+VO = 6}
+
+\mbox{\Hypertarget{sketch_8c_a05c5455b55db369d7d780a0a64525ecc}\label{sketch_8c_a05c5455b55db369d7d780a0a64525ecc}} 
+\index{sketch.c@{sketch.c}!PIN\_STOPBUTTON@{PIN\_STOPBUTTON}}
+\index{PIN\_STOPBUTTON@{PIN\_STOPBUTTON}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{PIN\_STOPBUTTON}{PIN\_STOPBUTTON}}
+{\footnotesize\ttfamily const int P\+I\+N\+\_\+\+S\+T\+O\+P\+B\+U\+T\+T\+ON = 13}
+
+\mbox{\Hypertarget{sketch_8c_aa5f528bc8f15fc1d782a990a2841ec22}\label{sketch_8c_aa5f528bc8f15fc1d782a990a2841ec22}} 
+\index{sketch.c@{sketch.c}!servo@{servo}}
+\index{servo@{servo}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{servo}{servo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCustomServo}{Custom\+Servo}} servo}
+
+\mbox{\Hypertarget{sketch_8c_adef1ca0bee2c8b7c9b72001969ee3426}\label{sketch_8c_adef1ca0bee2c8b7c9b72001969ee3426}} 
+\index{sketch.c@{sketch.c}!SERVO\_SPEED\_DEFAULT@{SERVO\_SPEED\_DEFAULT}}
+\index{SERVO\_SPEED\_DEFAULT@{SERVO\_SPEED\_DEFAULT}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{SERVO\_SPEED\_DEFAULT}{SERVO\_SPEED\_DEFAULT}}
+{\footnotesize\ttfamily const float S\+E\+R\+V\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+D\+E\+F\+A\+U\+LT = 0.\+01f}
+
+\mbox{\Hypertarget{sketch_8c_a8b8f576df7f10b8c79c4ee6ee1f94166}\label{sketch_8c_a8b8f576df7f10b8c79c4ee6ee1f94166}} 
+\index{sketch.c@{sketch.c}!SERVO\_SPEED\_FAST@{SERVO\_SPEED\_FAST}}
+\index{SERVO\_SPEED\_FAST@{SERVO\_SPEED\_FAST}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{SERVO\_SPEED\_FAST}{SERVO\_SPEED\_FAST}}
+{\footnotesize\ttfamily const float S\+E\+R\+V\+O\+\_\+\+S\+P\+E\+E\+D\+\_\+\+F\+A\+ST = 0.\+5f}
+
+\mbox{\Hypertarget{sketch_8c_ae68a57cc22f2b256b21089a585de29df}\label{sketch_8c_ae68a57cc22f2b256b21089a585de29df}} 
+\index{sketch.c@{sketch.c}!stopButton@{stopButton}}
+\index{stopButton@{stopButton}!sketch.c@{sketch.c}}
+\doxysubsubsection{\texorpdfstring{stopButton}{stopButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classButtonHandler}{Button\+Handler}} stop\+Button}
+
+
+
+der Stop Knopf 
+

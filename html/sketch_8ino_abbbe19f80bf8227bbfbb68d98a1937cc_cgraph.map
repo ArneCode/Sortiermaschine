@@ -1,0 +1,8 @@
+<map id="stopButtonClicked" name="stopButtonClicked">
+<area shape="rect" id="node1" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="5,81,145,108"/>
+<area shape="rect" id="node2" href="$classCallHandler.html#a49ab239f771b84300df21bd426788c3e" title="setzt den Speicherplatz der von den Calls besetzt wurde frei" alt="" coords="193,5,372,32"/>
+<area shape="rect" id="node3" href="$classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0" title="Setzt die neuen Calls, die ausgeführt werden sollen." alt="" coords="203,56,362,83"/>
+<area shape="rect" id="node5" href="$sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8" title=" " alt="" coords="233,107,332,133"/>
+<area shape="rect" id="node6" href="$classCustomServo.html#a2504ffc997018dad9f3811b18b16c672" title="stoppt den Servo" alt="" coords="210,157,355,184"/>
+<area shape="rect" id="node4" href="$structCallable.html#a0e146c329fbdf8720a9541f60fe910e9" title=" " alt="" coords="420,56,524,83"/>
+</map>
