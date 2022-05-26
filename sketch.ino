@@ -11,14 +11,50 @@
  * 
  */
 const int LOADING_DURATION = 3000;
+/**
+ * @brief Winkel des linken Lochs in Grad
+ * 
+ */
 const int ANGLE_LEFT_HOLE = 180;
+/**
+ * @brief Winkel des rechten Lochs in Grad
+ * 
+ */
 const int ANGLE_RIGHT_HOLE = 90;
+/**
+ * @brief Winkel der Ablagefläche für neue Bälle, die sortiert werden sollen
+ * 
+ */
 const int ANGLE_CENTER = 130;
+/**
+ * @brief Der kleinste sichere Winkel
+ * @warning wenn dieser Winkel nicht eingehalten wird schlägt der Arm gegen den Stopper
+ */
 const int ANGLE_MIN = 45;
+/**
+ * @brief Der Pin an dem der Servomotor angeschlossen ist
+ * 
+ */
 const int PIN_SERVO = 6;
+/**
+ * @brief Der Pin an dem der Start/Stop Knopf angeschlossen ist
+ * 
+ */
 const int PIN_STOPBUTTON = 13;
+/**
+ * @brief Der Pin um die Rotfärbung der RGB-Led zu steuern
+ * 
+ */
 const int PIN_RED = 11;
+/**
+ * @brief Der Pin um die Grünfärbung der RGB-Led zu steuern
+ * 
+ */
 const int PIN_GREEN = 10;
+/**
+ * @brief Der Pin um die Blaufärbung der RGB-Led zu steuern
+ * 
+ */
 const int PIN_BLUE = 9;
 const float SERVO_SPEED_DEFAULT = 0.01f;
 const float SERVO_SPEED_FAST = 0.5f;
