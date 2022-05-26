@@ -1,11 +1,7 @@
 /**
  * @file callHandler.ino
  * @author Arne de Borman
- * @brief 
- * @version 0.1
- * @date 2022-05-26
- * 
- * 
+ * @brief Umsetzung der CallHandler Klasse
  */
 #include "header.h"
 #include "animString.h"
@@ -26,7 +22,7 @@ void CallHandler::deleteCalls() {
 }
 /**
  * @brief Setzt die neuen Calls, die ausgeführt werden sollen
- * 
+ * @warning nCalls darf auf keinen Fall größer als die tatsächliche Anzahl an Calls sein, sonst stürzt das Programm ab
  * @param newCallPtrs 
  * @param nCalls 
  */
@@ -43,8 +39,8 @@ void CallHandler::setCalls(Callable* newCallPtrs[], size_t nCalls) {
   running = true;
 }
 /**
- * @brief wird von loop aufgerufen, ermöglicht es zu überprüfen, wechselt zum nächsten Call, wenn der Aktuelle vorbei ist
- * 
+ * @brief wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z.B. animationen)
+ * @details wird von loop aufgerufen
  */
 void CallHandler::update() {
   if (!running) {

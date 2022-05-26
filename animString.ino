@@ -1,10 +1,7 @@
 /**
  * @file animString.ino
  * @author Arne de Borman
- * @brief 
- * @version 0.1
- * @date 2022-05-26
- * 
+ * @brief Implementationen der Callable und LcdString Klassen
  * 
  */
 #include "animLcd.h"
@@ -15,7 +12,8 @@
  * @brief ruft die angegebene Funktion auf
  * 
  */
-void FuncCall::run() {
+void FuncCall::run() 
+{
   call();
 }
 /**
@@ -24,14 +22,16 @@ void FuncCall::run() {
  * @return true 
  * @return false 
  */
-bool FuncCall::isDone() {
+bool FuncCall::isDone() 
+{
   return _isDone();
 }
 /**
  * @brief gibt den String auf dem Lcd-Display aus
  * 
  */
-void LcdString::run() {
+void LcdString::run() 
+{
   callStart = millis();
   lcd->doAnimation = false;
   lcd->printPretty(this->text);
@@ -42,14 +42,16 @@ void LcdString::run() {
  * @return true 
  * @return false 
  */
-bool LcdString::isDone() {
+bool LcdString::isDone() 
+{
   return millis() - callStart > duration;
 }
 /**
- * @brief 
+ * @brief setzt Variabeln die für alle Animationen notwendig sind und ruft dann ihre eigenen init Funktionen auf
  * 
  */
-void AnimString::run() {
+void AnimString::run() 
+{
   callStart = millis();
   lcd->clear();
   lcd->setAnimation(this);
@@ -57,7 +59,11 @@ void AnimString::run() {
   lastRefresh = millis();
   init();
 }
-void  LcdLoadingAnim::init() {
+/**
+ * @brief initialisierung der Ladeanimation
+ */
+void  LcdLoadingAnim::init() 
+{
   stepDuration = duration / 9;
   if (text.length() > 16) {
     Serial.print("warning: text given for loading animation is to long, text: ");
@@ -70,7 +76,12 @@ void  LcdLoadingAnim::init() {
   }
   lcd->print("0% ");
 }
-void LcdLoadingAnim::update() {
+/**
+ * @brief aktualisiert die Ladeanimation, wird von loop aufgerufen
+ * 
+ */
+void LcdLoadingAnim::update() 
+{
   time_t time = millis();
   short percent = (time - animStart) * 100 / duration;
   if (time - lastRefresh > stepDuration) {
@@ -86,10 +97,20 @@ void LcdLoadingAnim::update() {
   lcd->print(percent);
   lcd->print("%");
 }
-void LcdDotAnim::init() {
+/**
+ * @brief initialisiert die Punktanimation
+ * 
+ */
+void LcdDotAnim::init() 
+{
   lcd->printPretty(text + "\1\1\1");//spaces that can't be broken up to newlines
 }
-void LcdDotAnim::update() {
+/**
+ * @brief aktualisiert die Punktanimation, wird von loop aufgerufen
+ * 
+ */
+void LcdDotAnim::update() 
+{
   time_t time = millis();
   if ((time - lastRefresh) < stepDuration) {
     return;

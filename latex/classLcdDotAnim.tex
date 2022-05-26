@@ -1,40 +1,45 @@
-\hypertarget{classLcdDotAnim}{}\doxysection{Lcd\+Dot\+Anim Class Reference}
+\hypertarget{classLcdDotAnim}{}\doxysection{Lcd\+Dot\+Anim Klassenreferenz}
 \label{classLcdDotAnim}\index{LcdDotAnim@{LcdDotAnim}}
+
+
+Die Klasse der Lcd Punktanimationen.  
+
+
 
 
 {\ttfamily \#include $<$anim\+String.\+h$>$}
 
 
 
-Inheritance diagram for Lcd\+Dot\+Anim\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=156pt]{classLcdDotAnim__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Lcd\+Dot\+Anim\+:\nopagebreak
+Zusammengehörigkeiten von Lcd\+Dot\+Anim\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classLcdDotAnim__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classLcdDotAnim_aba9b5e75d3dbc072cf0203d5116e266c}{Lcd\+Dot\+Anim}} (String \mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}}, \mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} $\ast$\mbox{\hyperlink{structLcdString_a89c4796702a713c1a7ddd580cd470780}{lcd}}, \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} \mbox{\hyperlink{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}{duration}}=0, \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} \+\_\+step\+Duration=500)
 \item 
 void \mbox{\hyperlink{classLcdDotAnim_afad9c4d44a8a5ef9063e941fd97714e7}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em initialisiert die Punktanimation \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classLcdDotAnim_a7dc0b25c1a3729a5c6aa652fffcccb71}{update}} ()
-\end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
+\begin{DoxyCompactList}\small\item\em aktualisiert die Punktanimation, wird von loop aufgerufen \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Weitere Geerbte Elemente}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\doxysubsection{Ausführliche Beschreibung}
+Die Klasse der Lcd Punktanimationen. 
+
+zeigt immer wieder keinen, dann einen, dann zwei, dann drei und letzendlich wieder keinen Punkt nach dem Text an 
+
+Definiert in Zeile 114 der Datei anim\+String.\+h.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
 \mbox{\Hypertarget{classLcdDotAnim_aba9b5e75d3dbc072cf0203d5116e266c}\label{classLcdDotAnim_aba9b5e75d3dbc072cf0203d5116e266c}} 
 \index{LcdDotAnim@{LcdDotAnim}!LcdDotAnim@{LcdDotAnim}}
 \index{LcdDotAnim@{LcdDotAnim}!LcdDotAnim@{LcdDotAnim}}
@@ -43,7 +48,18 @@ void \mbox{\hyperlink{classLcdDotAnim_a7dc0b25c1a3729a5c6aa652fffcccb71}{update}
 
 
 
-\doxysubsection{Member Function Documentation}
+Definiert in Zeile 116 der Datei anim\+String.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{117       : \mbox{\hyperlink{classAnimString}{AnimString}}(\mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}}, \mbox{\hyperlink{structLcdString_a89c4796702a713c1a7ddd580cd470780}{lcd}}, \mbox{\hyperlink{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}{duration}}) \{}
+\DoxyCodeLine{118       \mbox{\hyperlink{classAnimString_a85a7de7c1a4d919dd25abdfc1f7a2386}{stepDuration}} = \_stepDuration;}
+\DoxyCodeLine{119     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
 \mbox{\Hypertarget{classLcdDotAnim_afad9c4d44a8a5ef9063e941fd97714e7}\label{classLcdDotAnim_afad9c4d44a8a5ef9063e941fd97714e7}} 
 \index{LcdDotAnim@{LcdDotAnim}!init@{init}}
 \index{init@{init}!LcdDotAnim@{LcdDotAnim}}
@@ -52,15 +68,23 @@ void \mbox{\hyperlink{classLcdDotAnim_a7dc0b25c1a3729a5c6aa652fffcccb71}{update}
 
 
 
-Reimplemented from \mbox{\hyperlink{classAnimString_a0dcc82eddb210af1a61ff12622a58913}{Anim\+String}}.
+initialisiert die Punktanimation 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classLcdDotAnim_afad9c4d44a8a5ef9063e941fd97714e7_cgraph}
-\end{center}
-\end{figure}
+
+
+Erneute Implementation von \mbox{\hyperlink{classAnimString_a0dcc82eddb210af1a61ff12622a58913}{Anim\+String}}.
+
+
+
+Definiert in Zeile 104 der Datei anim\+String.\+ino.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{105 \{}
+\DoxyCodeLine{106   \mbox{\hyperlink{structLcdString_a89c4796702a713c1a7ddd580cd470780}{lcd}}-\/>\mbox{\hyperlink{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}{printPretty}}(\mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}} + \textcolor{stringliteral}{"\(\backslash\)1\(\backslash\)1\(\backslash\)1"});\textcolor{comment}{//spaces that can't be broken up to newlines}}
+\DoxyCodeLine{107 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classLcdDotAnim_a7dc0b25c1a3729a5c6aa652fffcccb71}\label{classLcdDotAnim_a7dc0b25c1a3729a5c6aa652fffcccb71}} 
 \index{LcdDotAnim@{LcdDotAnim}!update@{update}}
 \index{update@{update}!LcdDotAnim@{LcdDotAnim}}
@@ -69,18 +93,41 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 
-Reimplemented from \mbox{\hyperlink{structLcdString_a1f014299eeb7654a391f1fbfc898719b}{Lcd\+String}}.
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classLcdDotAnim_a7dc0b25c1a3729a5c6aa652fffcccb71_cgraph}
-\end{center}
-\end{figure}
+aktualisiert die Punktanimation, wird von loop aufgerufen 
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+
+Erneute Implementation von \mbox{\hyperlink{structLcdString_a1f014299eeb7654a391f1fbfc898719b}{Lcd\+String}}.
+
+
+
+Definiert in Zeile 112 der Datei anim\+String.\+ino.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{113 \{}
+\DoxyCodeLine{114   \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\_t}} time = millis();}
+\DoxyCodeLine{115   \textcolor{keywordflow}{if} ((time -\/ \mbox{\hyperlink{classAnimString_a7beba48f565a7bb4a93b34903558619b}{lastRefresh}}) < \mbox{\hyperlink{classAnimString_a85a7de7c1a4d919dd25abdfc1f7a2386}{stepDuration}}) \{}
+\DoxyCodeLine{116     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{117   \}}
+\DoxyCodeLine{118   \mbox{\hyperlink{classAnimString_a7beba48f565a7bb4a93b34903558619b}{lastRefresh}} = time;}
+\DoxyCodeLine{119   \textcolor{keywordtype}{int} numDots = ((time -\/ \mbox{\hyperlink{classAnimString_a0cfc5a955509897da127b9f750a940c9}{animStart}}) / \mbox{\hyperlink{classAnimString_a85a7de7c1a4d919dd25abdfc1f7a2386}{stepDuration}}) \% 4;}
+\DoxyCodeLine{120   \textcolor{keywordtype}{char} dots[4];}
+\DoxyCodeLine{121   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 3; i++) \{}
+\DoxyCodeLine{122     \textcolor{keywordflow}{if} (i < numDots) \{}
+\DoxyCodeLine{123       dots[i] = \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{124     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{125       dots[i] = \textcolor{charliteral}{'\(\backslash\)1'};}
+\DoxyCodeLine{126     \}}
+\DoxyCodeLine{127   \}}
+\DoxyCodeLine{128   dots[3] = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{129   \mbox{\hyperlink{structLcdString_a89c4796702a713c1a7ddd580cd470780}{lcd}}-\/>\mbox{\hyperlink{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}{printPretty}}(\mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}} + dots);}
+\DoxyCodeLine{130 \}}
+
+\end{DoxyCode}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{animString_8h}{anim\+String.\+h}}\item 
 \mbox{\hyperlink{animString_8ino}{anim\+String.\+ino}}\end{DoxyCompactItemize}

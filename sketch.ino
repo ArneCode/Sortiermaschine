@@ -1,15 +1,15 @@
 /**
  * @file sketch.ino
- * @author Arne de Borman
  * @brief Hauptdatei
- * @version 0.1
- * @date 2022-05-26
  */
 #include "customServo.h"
 #include "animLcd.h"
 #include "callHandler.h"
 #include "header.h"
-
+/**
+ * @brief Gibt an, wie lange die Ladeanimation beim "Hochfahren" dauert
+ * 
+ */
 const int LOADING_DURATION = 3000;
 const int ANGLE_LEFT_HOLE = 180;
 const int ANGLE_RIGHT_HOLE = 90;
@@ -115,7 +115,7 @@ void stopButtonClicked() {
  */
 ButtonHandler stopButton;
 /**
- * @brief hilf Function, Methoden können nicht als functionsparameter benutzt werden
+ * @brief hilf Funktion, Methoden können nicht als functionsparameter benutzt werden
  * 
  * @return true 
  * @return false 

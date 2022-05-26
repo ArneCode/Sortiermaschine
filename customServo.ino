@@ -1,10 +1,6 @@
 /**
  * @file customServo.ino
- * @author Arne de borman
- * @brief 
- * @version 0.1
- * @date 2022-05-26
- * 
+ * @brief Umsetztung der CustomServo Klasse
  * 
  */
 #include "customServo.h"

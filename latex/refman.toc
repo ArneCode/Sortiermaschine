@@ -1,0 +1,178 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Main Page}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Einleitung}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Class Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Animatable\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd Class Reference}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Member Function Documentation}{11}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}init()}{11}{subsubsection.5.1.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.2}print()}{11}{subsubsection.5.1.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.1.3}printCentered()}{11}{subsubsection.5.1.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.1.4}printPretty()}{11}{subsubsection.5.1.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.1.5}setAnimation()}{12}{subsubsection.5.1.1.5}%
+\contentsline {subsubsection}{\numberline {5.1.1.6}update()}{12}{subsubsection.5.1.1.6}%
+\contentsline {subsection}{\numberline {5.1.2}Member Data Documentation}{12}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}animString}{12}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}doAnimation}{12}{subsubsection.5.1.2.2}%
+\contentsline {section}{\numberline {5.2}Anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String Class Reference}{13}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Constructor \& Destructor Documentation}{14}{subsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.1.1}$\sim $AnimString()}{14}{subsubsection.5.2.1.1}%
+\contentsline {subsection}{\numberline {5.2.2}Member Function Documentation}{14}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}init()}{14}{subsubsection.5.2.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}LcdString()}{14}{subsubsection.5.2.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.3}run()}{15}{subsubsection.5.2.2.3}%
+\contentsline {subsection}{\numberline {5.2.3}Member Data Documentation}{15}{subsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}animStart}{15}{subsubsection.5.2.3.1}%
+\contentsline {subsubsection}{\numberline {5.2.3.2}lastRefresh}{15}{subsubsection.5.2.3.2}%
+\contentsline {subsubsection}{\numberline {5.2.3.3}stepDuration}{15}{subsubsection.5.2.3.3}%
+\contentsline {section}{\numberline {5.3}Button\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler Class Reference}{15}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Constructor \& Destructor Documentation}{16}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}ButtonHandler()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{16}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.2}ButtonHandler()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{16}{subsubsection.5.3.1.2}%
+\contentsline {subsection}{\numberline {5.3.2}Member Function Documentation}{16}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}update()}{16}{subsubsection.5.3.2.1}%
+\contentsline {subsection}{\numberline {5.3.3}Member Data Documentation}{16}{subsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.3.1}isPressed}{16}{subsubsection.5.3.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.3.2}onclick}{16}{subsubsection.5.3.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3.3}pin}{17}{subsubsection.5.3.3.3}%
+\contentsline {section}{\numberline {5.4}Callable Struct Reference}{17}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Constructor \& Destructor Documentation}{17}{subsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.1}$\sim $Callable()}{17}{subsubsection.5.4.1.1}%
+\contentsline {subsection}{\numberline {5.4.2}Member Function Documentation}{18}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}isDone()}{18}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5.4.2.2}run()}{18}{subsubsection.5.4.2.2}%
+\contentsline {section}{\numberline {5.5}Call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler Class Reference}{18}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{19}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Constructor \& Destructor Documentation}{19}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}$\sim $ CallHandler()}{19}{subsubsection.5.5.2.1}%
+\contentsline {subsection}{\numberline {5.5.3}Member Function Documentation}{19}{subsection.5.5.3}%
+\contentsline {subsubsection}{\numberline {5.5.3.1}deleteCalls()}{19}{subsubsection.5.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.5.3.2}setCalls()}{19}{subsubsection.5.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.5.3.3}update()}{20}{subsubsection.5.5.3.3}%
+\contentsline {subsection}{\numberline {5.5.4}Member Data Documentation}{20}{subsection.5.5.4}%
+\contentsline {subsubsection}{\numberline {5.5.4.1}callPtrs}{20}{subsubsection.5.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.5.4.2}callsSet}{20}{subsubsection.5.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.5.4.3}currCallPtr}{20}{subsubsection.5.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.5.4.4}lastCallPtr}{20}{subsubsection.5.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.5.4.5}lastCallT}{20}{subsubsection.5.5.4.5}%
+\contentsline {subsubsection}{\numberline {5.5.4.6}running}{21}{subsubsection.5.5.4.6}%
+\contentsline {section}{\numberline {5.6}Custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo Class Reference}{21}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{22}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Member Function Documentation}{22}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}isDone()}{23}{subsubsection.5.6.2.1}%
+\contentsline {subsubsection}{\numberline {5.6.2.2}setSpeed()}{23}{subsubsection.5.6.2.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.3}start()}{23}{subsubsection.5.6.2.3}%
+\contentsline {subsubsection}{\numberline {5.6.2.4}startMove()}{23}{subsubsection.5.6.2.4}%
+\contentsline {subsubsection}{\numberline {5.6.2.5}stop()}{23}{subsubsection.5.6.2.5}%
+\contentsline {subsubsection}{\numberline {5.6.2.6}updatePos()}{23}{subsubsection.5.6.2.6}%
+\contentsline {subsubsection}{\numberline {5.6.2.7}write()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{23}{subsubsection.5.6.2.7}%
+\contentsline {subsubsection}{\numberline {5.6.2.8}write()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{24}{subsubsection.5.6.2.8}%
+\contentsline {subsubsection}{\numberline {5.6.2.9}writeDirect()}{24}{subsubsection.5.6.2.9}%
+\contentsline {subsection}{\numberline {5.6.3}Member Data Documentation}{24}{subsection.5.6.3}%
+\contentsline {subsubsection}{\numberline {5.6.3.1}done}{24}{subsubsection.5.6.3.1}%
+\contentsline {subsubsection}{\numberline {5.6.3.2}servo}{24}{subsubsection.5.6.3.2}%
+\contentsline {subsubsection}{\numberline {5.6.3.3}speed}{24}{subsubsection.5.6.3.3}%
+\contentsline {subsubsection}{\numberline {5.6.3.4}startAngle}{25}{subsubsection.5.6.3.4}%
+\contentsline {subsubsection}{\numberline {5.6.3.5}startTime}{25}{subsubsection.5.6.3.5}%
+\contentsline {subsubsection}{\numberline {5.6.3.6}targetAngle}{25}{subsubsection.5.6.3.6}%
+\contentsline {section}{\numberline {5.7}Func\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Call Struct Reference}{25}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Constructor \& Destructor Documentation}{26}{subsection.5.7.1}%
+\contentsline {subsubsection}{\numberline {5.7.1.1}FuncCall()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{26}{subsubsection.5.7.1.1}%
+\contentsline {subsubsection}{\numberline {5.7.1.2}FuncCall()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{26}{subsubsection.5.7.1.2}%
+\contentsline {subsubsection}{\numberline {5.7.1.3}$\sim $FuncCall()}{26}{subsubsection.5.7.1.3}%
+\contentsline {subsection}{\numberline {5.7.2}Member Function Documentation}{26}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}isDone()}{27}{subsubsection.5.7.2.1}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}run()}{27}{subsubsection.5.7.2.2}%
+\contentsline {subsection}{\numberline {5.7.3}Member Data Documentation}{27}{subsection.5.7.3}%
+\contentsline {subsubsection}{\numberline {5.7.3.1}\_isDone}{27}{subsubsection.5.7.3.1}%
+\contentsline {subsubsection}{\numberline {5.7.3.2}call}{27}{subsubsection.5.7.3.2}%
+\contentsline {section}{\numberline {5.8}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dot\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Anim Class Reference}{28}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Constructor \& Destructor Documentation}{29}{subsection.5.8.1}%
+\contentsline {subsubsection}{\numberline {5.8.1.1}LcdDotAnim()}{29}{subsubsection.5.8.1.1}%
+\contentsline {subsection}{\numberline {5.8.2}Member Function Documentation}{29}{subsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.2.1}init()}{29}{subsubsection.5.8.2.1}%
+\contentsline {subsubsection}{\numberline {5.8.2.2}update()}{29}{subsubsection.5.8.2.2}%
+\contentsline {section}{\numberline {5.9}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loading\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Anim Class Reference}{30}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Member Function Documentation}{31}{subsection.5.9.1}%
+\contentsline {subsubsection}{\numberline {5.9.1.1}init()}{31}{subsubsection.5.9.1.1}%
+\contentsline {subsubsection}{\numberline {5.9.1.2}update()}{31}{subsubsection.5.9.1.2}%
+\contentsline {section}{\numberline {5.10}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String Struct Reference}{31}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Constructor \& Destructor Documentation}{32}{subsection.5.10.1}%
+\contentsline {subsubsection}{\numberline {5.10.1.1}LcdString()}{33}{subsubsection.5.10.1.1}%
+\contentsline {subsubsection}{\numberline {5.10.1.2}$\sim $LcdString()}{33}{subsubsection.5.10.1.2}%
+\contentsline {subsection}{\numberline {5.10.2}Member Function Documentation}{33}{subsection.5.10.2}%
+\contentsline {subsubsection}{\numberline {5.10.2.1}isDone()}{33}{subsubsection.5.10.2.1}%
+\contentsline {subsubsection}{\numberline {5.10.2.2}run()}{33}{subsubsection.5.10.2.2}%
+\contentsline {subsubsection}{\numberline {5.10.2.3}update()}{33}{subsubsection.5.10.2.3}%
+\contentsline {subsection}{\numberline {5.10.3}Member Data Documentation}{34}{subsection.5.10.3}%
+\contentsline {subsubsection}{\numberline {5.10.3.1}callStart}{34}{subsubsection.5.10.3.1}%
+\contentsline {subsubsection}{\numberline {5.10.3.2}duration}{34}{subsubsection.5.10.3.2}%
+\contentsline {subsubsection}{\numberline {5.10.3.3}lcd}{34}{subsubsection.5.10.3.3}%
+\contentsline {subsubsection}{\numberline {5.10.3.4}text}{34}{subsubsection.5.10.3.4}%
+\contentsline {chapter}{\numberline {6}File Documentation}{35}{chapter.6}%
+\contentsline {section}{\numberline {6.1}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{35}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Variable Documentation}{36}{subsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1.1}LOADING\_BAR\_OFFSET}{36}{subsubsection.6.1.1.1}%
+\contentsline {section}{\numberline {6.2}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino File Reference}{36}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{37}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Variable Documentation}{37}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}loading\_empty\_c}{38}{subsubsection.6.2.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2.2}loading\_full\_c}{38}{subsubsection.6.2.2.2}%
+\contentsline {section}{\numberline {6.3}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{38}{section.6.3}%
+\contentsline {section}{\numberline {6.4}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino File Reference}{39}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{40}{subsection.6.4.1}%
+\contentsline {section}{\numberline {6.5}call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{40}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{41}{subsection.6.5.1}%
+\contentsline {section}{\numberline {6.6}call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino File Reference}{41}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{42}{subsection.6.6.1}%
+\contentsline {section}{\numberline {6.7}custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{42}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{43}{subsection.6.7.1}%
+\contentsline {section}{\numberline {6.8}custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino File Reference}{43}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{43}{subsection.6.8.1}%
+\contentsline {section}{\numberline {6.9}header.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{44}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{44}{subsection.6.9.1}%
+\contentsline {subsection}{\numberline {6.9.2}Typedef Documentation}{44}{subsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.2.1}func\_t}{44}{subsubsection.6.9.2.1}%
+\contentsline {subsubsection}{\numberline {6.9.2.2}time\_t}{45}{subsubsection.6.9.2.2}%
+\contentsline {section}{\numberline {6.10}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c File Reference}{45}{section.6.10}%
+\contentsline {section}{\numberline {6.11}sketch.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino File Reference}{45}{section.6.11}%
+\contentsline {subsection}{\numberline {6.11.1}Detailed Description}{47}{subsection.6.11.1}%
+\contentsline {subsection}{\numberline {6.11.2}Macro Definition Documentation}{47}{subsection.6.11.2}%
+\contentsline {subsubsection}{\numberline {6.11.2.1}GEH\_ZURUECK}{47}{subsubsection.6.11.2.1}%
+\contentsline {subsection}{\numberline {6.11.3}Enumeration Type Documentation}{47}{subsection.6.11.3}%
+\contentsline {subsubsection}{\numberline {6.11.3.1}Farbe}{47}{subsubsection.6.11.3.1}%
+\contentsline {subsection}{\numberline {6.11.4}Function Documentation}{48}{subsection.6.11.4}%
+\contentsline {subsubsection}{\numberline {6.11.4.1}loop()}{48}{subsubsection.6.11.4.1}%
+\contentsline {subsubsection}{\numberline {6.11.4.2}mesureColor()}{48}{subsubsection.6.11.4.2}%
+\contentsline {subsubsection}{\numberline {6.11.4.3}servoIsDone()}{48}{subsubsection.6.11.4.3}%
+\contentsline {subsubsection}{\numberline {6.11.4.4}setLedColor()}{48}{subsubsection.6.11.4.4}%
+\contentsline {subsubsection}{\numberline {6.11.4.5}setup()}{48}{subsubsection.6.11.4.5}%
+\contentsline {subsubsection}{\numberline {6.11.4.6}stopButtonClicked()}{49}{subsubsection.6.11.4.6}%
+\contentsline {subsection}{\numberline {6.11.5}Variable Documentation}{49}{subsection.6.11.5}%
+\contentsline {subsubsection}{\numberline {6.11.5.1}ANGLE\_CENTER}{49}{subsubsection.6.11.5.1}%
+\contentsline {subsubsection}{\numberline {6.11.5.2}ANGLE\_LEFT\_HOLE}{49}{subsubsection.6.11.5.2}%
+\contentsline {subsubsection}{\numberline {6.11.5.3}ANGLE\_MIN}{49}{subsubsection.6.11.5.3}%
+\contentsline {subsubsection}{\numberline {6.11.5.4}ANGLE\_RIGHT\_HOLE}{49}{subsubsection.6.11.5.4}%
+\contentsline {subsubsection}{\numberline {6.11.5.5}callHandler}{49}{subsubsection.6.11.5.5}%
+\contentsline {subsubsection}{\numberline {6.11.5.6}doFlicker}{49}{subsubsection.6.11.5.6}%
+\contentsline {subsubsection}{\numberline {6.11.5.7}lcd}{50}{subsubsection.6.11.5.7}%
+\contentsline {subsubsection}{\numberline {6.11.5.8}LOADING\_DURATION}{50}{subsubsection.6.11.5.8}%
+\contentsline {subsubsection}{\numberline {6.11.5.9}nBlack}{50}{subsubsection.6.11.5.9}%
+\contentsline {subsubsection}{\numberline {6.11.5.10}nOrange}{50}{subsubsection.6.11.5.10}%
+\contentsline {subsubsection}{\numberline {6.11.5.11}nWhite}{50}{subsubsection.6.11.5.11}%
+\contentsline {subsubsection}{\numberline {6.11.5.12}PIN\_BLUE}{50}{subsubsection.6.11.5.12}%
+\contentsline {subsubsection}{\numberline {6.11.5.13}PIN\_GREEN}{50}{subsubsection.6.11.5.13}%
+\contentsline {subsubsection}{\numberline {6.11.5.14}PIN\_RED}{50}{subsubsection.6.11.5.14}%
+\contentsline {subsubsection}{\numberline {6.11.5.15}PIN\_SERVO}{51}{subsubsection.6.11.5.15}%
+\contentsline {subsubsection}{\numberline {6.11.5.16}PIN\_STOPBUTTON}{51}{subsubsection.6.11.5.16}%
+\contentsline {subsubsection}{\numberline {6.11.5.17}servo}{51}{subsubsection.6.11.5.17}%
+\contentsline {subsubsection}{\numberline {6.11.5.18}SERVO\_SPEED\_DEFAULT}{51}{subsubsection.6.11.5.18}%
+\contentsline {subsubsection}{\numberline {6.11.5.19}SERVO\_SPEED\_FAST}{51}{subsubsection.6.11.5.19}%
+\contentsline {subsubsection}{\numberline {6.11.5.20}stopButton}{51}{subsubsection.6.11.5.20}%
+\contentsline {section}{\numberline {6.12}wokwi-\/project.txt File Reference}{51}{section.6.12}%
+\contentsline {chapter}{Index}{53}{section*.68}%

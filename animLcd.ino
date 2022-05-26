@@ -1,10 +1,7 @@
 /**
  * @file animLcd.ino
  * @author Arne de Borman
- * @brief 
- * @version 0.1
- * @date 2022-05-26
- * 
+ * @brief Implementation für die AnimatableLcd Klasse
  * 
  */
 #include <LiquidCrystal_I2C.h>
@@ -12,6 +9,10 @@
 #include "animLcd.h"
 #include "callHandler.h"
 
+/**
+ * @brief Werte für einen eigenen Character der ein leeres Viereck darstellt (für die LcdLoadingAnim)
+ * 
+ */
 const byte loading_empty_c[8] = { //is used to define a custom character representing a square
   B11111,
   B10001,
@@ -22,6 +23,10 @@ const byte loading_empty_c[8] = { //is used to define a custom character represe
   B10001,
   B11111
 };
+/**
+ * @brief Werte für einen eigenen Character der ein volles Viereck darstellt (für die LcdLoadingAnim)
+ * 
+ */
 const byte loading_full_c[8] = { //is used to define a custom character representing a filled square
   B11111,
   B11111,
@@ -36,7 +41,8 @@ const byte loading_full_c[8] = { //is used to define a custom character represen
  * @brief Überschreibt die normale lcd init function
  * 
  */
-void AnimatableLcd::init() {
+void AnimatableLcd::init() 
+{
   LiquidCrystal_I2C::init();
   backlight();
   noCursor();
@@ -48,16 +54,18 @@ void AnimatableLcd::init() {
  * 
  * @param _animString 
  */
-void AnimatableLcd::setAnimation(AnimString* _animString) {
+void AnimatableLcd::setAnimation(AnimString* _animString) 
+{
   doAnimation = true;
   animString = _animString;
 }
 /**
  * @brief Eigene Lcd-print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen
- * @details für eigene Character einfach die nummer des Characters in den Text einfügen <b>(\1n für den nten Character)</b>, \1 für leerzeichen, das nicht in Zeilenumbruch resultiert
+ * @details für eigene Character einfach die nummer des Characters in den Text einfügen <b>(\1n für den nten Character)</b>, \1 für Leerzeichen, das nicht in Zeilenumbruch resultiert
  * @param text 
  */
-void AnimatableLcd::print(const String& text){
+void AnimatableLcd::print(const String& text)
+{
   //custom print with ability to use custom characters, just inserst the number of the custom character in the string (\1n for the nth character)
   //and it will be converted to the custom character (\1n so that \0 doesn't appear in the string, because it means end of string)
   for(char c:text){
@@ -78,7 +86,8 @@ void AnimatableLcd::print(const String& text){
  * @param length Länge des Textes, wird neu berechnet wenn nicht angegeben
  * @param row Zeile in der der Text ausgegeben werden soll
  */
-void AnimatableLcd::printCentered(String text, int length = -1, int row = 0) { //length<=16
+void AnimatableLcd::printCentered(String text, int length = -1, int row = 0) //length<=16
+{ 
   if (length == -1) {
     length = text.length();
   }
@@ -91,7 +100,8 @@ void AnimatableLcd::printCentered(String text, int length = -1, int row = 0) { /
  * 
  * @param text 
  */
-void AnimatableLcd::printPretty(String text) { //handelt zeilenumbrüche und schreibt zentriert
+void AnimatableLcd::printPretty(String text) //handelt zeilenumbrüche und schreibt zentriert
+{ 
   clear();
   int length = text.length();
   if (length <= 16) {
@@ -120,7 +130,8 @@ void AnimatableLcd::printPretty(String text) { //handelt zeilenumbrüche und sch
  * @brief wird immer wieder von loop aufgerufen um die Animationen zu updaten
  * 
  */
-void AnimatableLcd::update() {
+void AnimatableLcd::update() 
+{
   if (!doAnimation) {
     return;
   }

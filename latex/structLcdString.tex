@@ -1,28 +1,24 @@
-\hypertarget{structLcdString}{}\doxysection{Lcd\+String Struct Reference}
+\hypertarget{structLcdString}{}\doxysection{Lcd\+String Strukturreferenz}
 \label{structLcdString}\index{LcdString@{LcdString}}
+
+
+Ein String der auf dem \mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} angezeigt werden kann.  
+
+
 
 
 {\ttfamily \#include $<$anim\+String.\+h$>$}
 
 
 
-Inheritance diagram for Lcd\+String\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=272pt]{structLcdString__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Lcd\+String\+:\nopagebreak
+Zusammengehörigkeiten von Lcd\+String\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=317pt]{structLcdString__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structLcdString_a2afc90b22de35ebb93a337ec604856b8}{Lcd\+String}} (String \mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}}, \mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} $\ast$\mbox{\hyperlink{structLcdString_a89c4796702a713c1a7ddd580cd470780}{lcd}}, \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} \mbox{\hyperlink{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}{duration}}=0)
@@ -35,11 +31,11 @@ virtual void \mbox{\hyperlink{structLcdString_aa391ea895fc2ec0a5dfe249226daa017}
 \begin{DoxyCompactList}\small\item\em gibt den String auf dem Lcd-\/\+Display aus \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structLcdString_a1f014299eeb7654a391f1fbfc898719b}{update}} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
+\doxysubsection*{Öffentliche Attribute}
 \begin{DoxyCompactItemize}
 \item 
 String \mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}}
-\item 
+\begin{DoxyCompactList}\small\item\em der Text der angezeigt wird \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} $\ast$ \mbox{\hyperlink{structLcdString_a89c4796702a713c1a7ddd580cd470780}{lcd}}
 \item 
 \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} \mbox{\hyperlink{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}{duration}}
@@ -48,13 +44,31 @@ String \mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\doxysubsection{Ausführliche Beschreibung}
+Ein String der auf dem \mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} angezeigt werden kann. 
+
+Animationen werden von dieser Klasse abgeleitet 
+
+Definiert in Zeile 57 der Datei anim\+String.\+h.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
 \mbox{\Hypertarget{structLcdString_a2afc90b22de35ebb93a337ec604856b8}\label{structLcdString_a2afc90b22de35ebb93a337ec604856b8}} 
 \index{LcdString@{LcdString}!LcdString@{LcdString}}
 \index{LcdString@{LcdString}!LcdString@{LcdString}}
 \doxysubsubsection{\texorpdfstring{LcdString()}{LcdString()}}
 {\footnotesize\ttfamily Lcd\+String\+::\+Lcd\+String (\begin{DoxyParamCaption}\item[{String}]{text,  }\item[{\mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}} $\ast$}]{lcd,  }\item[{\mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}}}]{duration = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Definiert in Zeile 66 der Datei anim\+String.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67     : \mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}}(\mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}}), \mbox{\hyperlink{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}{duration}}(\mbox{\hyperlink{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}{duration}}), \mbox{\hyperlink{structLcdString_a89c4796702a713c1a7ddd580cd470780}{lcd}}(\mbox{\hyperlink{structLcdString_a89c4796702a713c1a7ddd580cd470780}{lcd}}) \{  \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{structLcdString_a6c1e54bef2622058e45238872779536b}\label{structLcdString_a6c1e54bef2622058e45238872779536b}} 
 \index{LcdString@{LcdString}!````~LcdString@{$\sim$LcdString}}
 \index{````~LcdString@{$\sim$LcdString}!LcdString@{LcdString}}
@@ -63,7 +77,16 @@ String \mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}
 
 
 
-\doxysubsection{Member Function Documentation}
+Definiert in Zeile 68 der Datei anim\+String.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
 \mbox{\Hypertarget{structLcdString_a815ab8e4a5e0610637073fb76fb4dadf}\label{structLcdString_a815ab8e4a5e0610637073fb76fb4dadf}} 
 \index{LcdString@{LcdString}!isDone@{isDone}}
 \index{isDone@{isDone}!LcdString@{LcdString}}
@@ -74,15 +97,26 @@ String \mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}
 
 Gibt zurück, ob die duration überschritten ist. 
 
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Rückgabe}
 true 
 
 false 
 \end{DoxyReturn}
 
 
-Reimplemented from \mbox{\hyperlink{structCallable_af0778d71c6196b6ba0215cce13f8c7dd}{Callable}}.
+Erneute Implementation von \mbox{\hyperlink{structCallable_af0778d71c6196b6ba0215cce13f8c7dd}{Callable}}.
 
+
+
+Definiert in Zeile 45 der Datei anim\+String.\+ino.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{}
+\DoxyCodeLine{47   \textcolor{keywordflow}{return} millis() -\/ \mbox{\hyperlink{structLcdString_a6ed3581497a6d00d2b0106888ff192dd}{callStart}} > \mbox{\hyperlink{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}{duration}};}
+\DoxyCodeLine{48 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{structLcdString_aa391ea895fc2ec0a5dfe249226daa017}\label{structLcdString_aa391ea895fc2ec0a5dfe249226daa017}} 
 \index{LcdString@{LcdString}!run@{run}}
 \index{run@{run}!LcdString@{LcdString}}
@@ -95,20 +129,25 @@ gibt den String auf dem Lcd-\/\+Display aus
 
 
 
-Reimplemented from \mbox{\hyperlink{structCallable_a0e146c329fbdf8720a9541f60fe910e9}{Callable}}.
+Erneute Implementation von \mbox{\hyperlink{structCallable_a0e146c329fbdf8720a9541f60fe910e9}{Callable}}.
 
 
 
-Reimplemented in \mbox{\hyperlink{classAnimString_a565ce4859f7d2d9e74af63c768cfc3e0}{Anim\+String}}.
+Erneute Implementation in \mbox{\hyperlink{classAnimString_a565ce4859f7d2d9e74af63c768cfc3e0}{Anim\+String}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structLcdString_aa391ea895fc2ec0a5dfe249226daa017_cgraph}
-\end{center}
-\end{figure}
+
+
+Definiert in Zeile 33 der Datei anim\+String.\+ino.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35   \mbox{\hyperlink{structLcdString_a6ed3581497a6d00d2b0106888ff192dd}{callStart}} = millis();}
+\DoxyCodeLine{36   \mbox{\hyperlink{structLcdString_a89c4796702a713c1a7ddd580cd470780}{lcd}}-\/>\mbox{\hyperlink{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}{doAnimation}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{37   \mbox{\hyperlink{structLcdString_a89c4796702a713c1a7ddd580cd470780}{lcd}}-\/>\mbox{\hyperlink{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}{printPretty}}(this-\/>\mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}});}
+\DoxyCodeLine{38 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{structLcdString_a1f014299eeb7654a391f1fbfc898719b}\label{structLcdString_a1f014299eeb7654a391f1fbfc898719b}} 
 \index{LcdString@{LcdString}!update@{update}}
 \index{update@{update}!LcdString@{LcdString}}
@@ -117,23 +156,29 @@ Here is the call graph for this function\+:
 
 
 
-Reimplemented in \mbox{\hyperlink{classLcdDotAnim_a7dc0b25c1a3729a5c6aa652fffcccb71}{Lcd\+Dot\+Anim}}, and \mbox{\hyperlink{classLcdLoadingAnim_a939368d0d51f766b20a82176294fba70}{Lcd\+Loading\+Anim}}.
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structLcdString_a1f014299eeb7654a391f1fbfc898719b_icgraph}
-\end{center}
-\end{figure}
+Erneute Implementation in \mbox{\hyperlink{classLcdDotAnim_a7dc0b25c1a3729a5c6aa652fffcccb71}{Lcd\+Dot\+Anim}} und \mbox{\hyperlink{classLcdLoadingAnim_a939368d0d51f766b20a82176294fba70}{Lcd\+Loading\+Anim}}.
 
 
-\doxysubsection{Member Data Documentation}
+
+Definiert in Zeile 71 der Datei anim\+String.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Datenelemente}
 \mbox{\Hypertarget{structLcdString_a6ed3581497a6d00d2b0106888ff192dd}\label{structLcdString_a6ed3581497a6d00d2b0106888ff192dd}} 
 \index{LcdString@{LcdString}!callStart@{callStart}}
 \index{callStart@{callStart}!LcdString@{LcdString}}
 \doxysubsubsection{\texorpdfstring{callStart}{callStart}}
 {\footnotesize\ttfamily \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} Lcd\+String\+::call\+Start}
+
+
+
+Definiert in Zeile 65 der Datei anim\+String.\+h.
 
 \mbox{\Hypertarget{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}\label{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}} 
 \index{LcdString@{LcdString}!duration@{duration}}
@@ -141,11 +186,19 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{duration}{duration}}
 {\footnotesize\ttfamily \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} Lcd\+String\+::duration}
 
+
+
+Definiert in Zeile 64 der Datei anim\+String.\+h.
+
 \mbox{\Hypertarget{structLcdString_a89c4796702a713c1a7ddd580cd470780}\label{structLcdString_a89c4796702a713c1a7ddd580cd470780}} 
 \index{LcdString@{LcdString}!lcd@{lcd}}
 \index{lcd@{lcd}!LcdString@{LcdString}}
 \doxysubsubsection{\texorpdfstring{lcd}{lcd}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classAnimatableLcd}{Animatable\+Lcd}}$\ast$ Lcd\+String\+::lcd}
+
+
+
+Definiert in Zeile 63 der Datei anim\+String.\+h.
 
 \mbox{\Hypertarget{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}\label{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}} 
 \index{LcdString@{LcdString}!text@{text}}
@@ -155,7 +208,15 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+der Text der angezeigt wird 
+
+
+
+Definiert in Zeile 62 der Datei anim\+String.\+h.
+
+
+
+Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{animString_8h}{anim\+String.\+h}}\item 
 \mbox{\hyperlink{animString_8ino}{anim\+String.\+ino}}\end{DoxyCompactItemize}

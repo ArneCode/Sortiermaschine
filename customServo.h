@@ -1,10 +1,6 @@
 /**
  * @file customServo.h
- * @brief 
- * @version 0.1
- * @date 2022-05-26
- * 
- * 
+ * @brief Header Datei der CustomServo Klasse
  */
 #ifndef CUSTOMSERVO_H
 #define CUSTOMSERVO_H
@@ -15,11 +11,26 @@
  * 
  */
 class CustomServo: public Servo {
+    /**
+     * @brief der Winkel an dem sich der Servo bei Start der Animation befand
+     * 
+     */
     short startAngle;
+    /**
+     * @brief der Ziel Winkel
+     * 
+     */
     short targetAngle;
+    /**
+     * @brief die Geschwindigkeit des Servos in Grad pro Millisekunde
+     * 
+     */
     float speed;
+    /**
+     * @brief Zeitpunkt an dem der Servo anfing sich zu bewegen (in Millisekunden)
+     * 
+     */
     time_t startTime;//time at which servo started moving
-    Servo servo;
     void startMove();
   public:
     bool done;

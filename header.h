@@ -1,8 +1,6 @@
 /**
  * @file header.h
  * @brief definiert variablen-types die überall im Programm benutzt werden
- * @version 0.1
- * @date 2022-05-26
  */
 #ifndef HEADER_H
 #define HEADER_H

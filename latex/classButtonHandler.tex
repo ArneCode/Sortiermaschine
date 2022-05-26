@@ -1,6 +1,6 @@
-\hypertarget{classButtonHandler}{}\doxysection{Button\+Handler Class Reference}
+\hypertarget{classButtonHandler}{}\doxysection{Button\+Handler Klassenreferenz}
 \label{classButtonHandler}\index{ButtonHandler@{ButtonHandler}}
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classButtonHandler_a3fb2e862d738eab6222a4eaae0a966fa}{Button\+Handler}} ()
@@ -9,12 +9,12 @@
 \item 
 void \mbox{\hyperlink{classButtonHandler_aaed9117143aa1674a71aa012e558d4e8}{update}} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
+\doxysubsection*{Öffentliche Attribute}
 \begin{DoxyCompactItemize}
 \item 
 void($\ast$ \mbox{\hyperlink{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}{onclick}} )()
 \end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}
@@ -23,13 +23,29 @@ bool \mbox{\hyperlink{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}{is\+
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\doxysubsection{Ausführliche Beschreibung}
+
+
+Definiert in Zeile 36 der Datei sketch.\+ino.
+
+
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
 \mbox{\Hypertarget{classButtonHandler_a3fb2e862d738eab6222a4eaae0a966fa}\label{classButtonHandler_a3fb2e862d738eab6222a4eaae0a966fa}} 
 \index{ButtonHandler@{ButtonHandler}!ButtonHandler@{ButtonHandler}}
 \index{ButtonHandler@{ButtonHandler}!ButtonHandler@{ButtonHandler}}
 \doxysubsubsection{\texorpdfstring{ButtonHandler()}{ButtonHandler()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Button\+Handler\+::\+Button\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Definiert in Zeile 41 der Datei sketch.\+ino.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41 \{\}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classButtonHandler_a4551356eb296a56a1ced7d3b5a7ecfaf}\label{classButtonHandler_a4551356eb296a56a1ced7d3b5a7ecfaf}} 
 \index{ButtonHandler@{ButtonHandler}!ButtonHandler@{ButtonHandler}}
 \index{ButtonHandler@{ButtonHandler}!ButtonHandler@{ButtonHandler}}
@@ -38,34 +54,64 @@ bool \mbox{\hyperlink{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}{is\+
 
 
 
-\doxysubsection{Member Function Documentation}
+Definiert in Zeile 42 der Datei sketch.\+ino.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                              : \mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}(\mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}), \mbox{\hyperlink{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}{onclick}}(\mbox{\hyperlink{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}{onclick}}) \{}
+\DoxyCodeLine{43       pinMode(\mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}, INPUT\_PULLUP);}
+\DoxyCodeLine{44     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
 \mbox{\Hypertarget{classButtonHandler_aaed9117143aa1674a71aa012e558d4e8}\label{classButtonHandler_aaed9117143aa1674a71aa012e558d4e8}} 
 \index{ButtonHandler@{ButtonHandler}!update@{update}}
 \index{update@{update}!ButtonHandler@{ButtonHandler}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily void Button\+Handler\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=281pt]{classButtonHandler_aaed9117143aa1674a71aa012e558d4e8_icgraph}
-\end{center}
-\end{figure}
 
 
-\doxysubsection{Member Data Documentation}
+Definiert in Zeile 45 der Datei sketch.\+ino.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                   \{}
+\DoxyCodeLine{46       \textcolor{keywordtype}{bool} isPressedNew = digitalRead(\mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}) == HIGH;}
+\DoxyCodeLine{47       \textcolor{keywordflow}{if} (isPressedNew != \mbox{\hyperlink{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}{isPressed}}) \{ \textcolor{comment}{//is not being pressed now, but was being pressed}}
+\DoxyCodeLine{48         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}{isPressed}}) \{}
+\DoxyCodeLine{49           Serial.println(\textcolor{stringliteral}{"click"});}
+\DoxyCodeLine{50           \mbox{\hyperlink{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}{onclick}}();}
+\DoxyCodeLine{51         \}}
+\DoxyCodeLine{52       \}}
+\DoxyCodeLine{53       \mbox{\hyperlink{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}{isPressed}} = isPressedNew;}
+\DoxyCodeLine{54     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Dokumentation der Datenelemente}
 \mbox{\Hypertarget{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}\label{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}} 
 \index{ButtonHandler@{ButtonHandler}!isPressed@{isPressed}}
 \index{isPressed@{isPressed}!ButtonHandler@{ButtonHandler}}
 \doxysubsubsection{\texorpdfstring{isPressed}{isPressed}}
 {\footnotesize\ttfamily bool Button\+Handler\+::is\+Pressed = false\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Definiert in Zeile 38 der Datei sketch.\+ino.
+
 \mbox{\Hypertarget{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}\label{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}} 
 \index{ButtonHandler@{ButtonHandler}!onclick@{onclick}}
 \index{onclick@{onclick}!ButtonHandler@{ButtonHandler}}
 \doxysubsubsection{\texorpdfstring{onclick}{onclick}}
 {\footnotesize\ttfamily void($\ast$ Button\+Handler\+::onclick) ()}
+
+
+
+Definiert in Zeile 40 der Datei sketch.\+ino.
 
 \mbox{\Hypertarget{classButtonHandler_ad6516fd08addb841598242784a088e97}\label{classButtonHandler_ad6516fd08addb841598242784a088e97}} 
 \index{ButtonHandler@{ButtonHandler}!pin@{pin}}
@@ -75,6 +121,10 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definiert in Zeile 37 der Datei sketch.\+ino.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{sketch_8ino}{sketch.\+ino}}\end{DoxyCompactItemize}

@@ -21,13 +21,12 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
-{text:"Classes",url:"annotated.html",children:[
-{text:"Class List",url:"annotated.html"},
-{text:"Class Index",url:"classes.html"},
-{text:"Class Hierarchy",url:"inherits.html"},
-{text:"Class Members",url:"functions.html",children:[
-{text:"All",url:"functions.html",children:[
+{text:"Hauptseite",url:"index.html"},
+{text:"Klassen",url:"annotated.html",children:[
+{text:"Auflistung der Klassen",url:"annotated.html"},
+{text:"Klassenhierarchie",url:"inherits.html"},
+{text:"Klassen-Elemente",url:"functions.html",children:[
+{text:"Alle",url:"functions.html",children:[
 {text:"_",url:"functions.html#index__5F"},
 {text:"a",url:"functions.html#index_a"},
 {text:"b",url:"functions.html#index_b"},
@@ -44,7 +43,7 @@ var menudata={children:[
 {text:"u",url:"functions.html#index_u"},
 {text:"w",url:"functions.html#index_w"},
 {text:"~",url:"functions.html#index__7E"}]},
-{text:"Functions",url:"functions_func.html",children:[
+{text:"Funktionen",url:"functions_func.html",children:[
 {text:"b",url:"functions_func.html#index_b"},
 {text:"d",url:"functions_func.html#index_d"},
 {text:"f",url:"functions_func.html#index_f"},
@@ -56,11 +55,11 @@ var menudata={children:[
 {text:"u",url:"functions_func.html#index_u"},
 {text:"w",url:"functions_func.html#index_w"},
 {text:"~",url:"functions_func.html#index__7E"}]},
-{text:"Variables",url:"functions_vars.html"}]}]},
-{text:"Files",url:"files.html",children:[
-{text:"File List",url:"files.html"},
-{text:"File Members",url:"globals.html",children:[
-{text:"All",url:"globals.html",children:[
+{text:"Variablen",url:"functions_vars.html"}]}]},
+{text:"Dateien",url:"files.html",children:[
+{text:"Auflistung der Dateien",url:"files.html"},
+{text:"Datei-Elemente",url:"globals.html",children:[
+{text:"Alle",url:"globals.html",children:[
 {text:"a",url:"globals.html#index_a"},
 {text:"b",url:"globals.html#index_b"},
 {text:"c",url:"globals.html#index_c"},
@@ -75,9 +74,9 @@ var menudata={children:[
 {text:"s",url:"globals.html#index_s"},
 {text:"t",url:"globals.html#index_t"},
 {text:"w",url:"globals.html#index_w"}]},
-{text:"Functions",url:"globals_func.html"},
-{text:"Variables",url:"globals_vars.html"},
-{text:"Typedefs",url:"globals_type.html"},
-{text:"Enumerations",url:"globals_enum.html"},
-{text:"Enumerator",url:"globals_eval.html"},
-{text:"Macros",url:"globals_defs.html"}]}]}]}
+{text:"Funktionen",url:"globals_func.html"},
+{text:"Variablen",url:"globals_vars.html"},
+{text:"Typdefinitionen",url:"globals_type.html"},
+{text:"Aufzählungen",url:"globals_enum.html"},
+{text:"Aufzählungswerte",url:"globals_eval.html"},
+{text:"Makrodefinitionen",url:"globals_defs.html"}]}]}]}
