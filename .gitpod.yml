@@ -1,5 +1,6 @@
 tasks:
   - command: |
+      sudo apt-get -y install flex
       git clone https://github.com/doxygen/doxygen.git
       cd doxygen
       mkdir build
