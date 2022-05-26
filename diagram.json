@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -141.01,
+      "left": 271.8,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": -0.66, "left": 353.78, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 274.52,
+      "left": 192.01,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": -173.38,
+      "left": 114.59,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -193.36,
+      "left": -1.06,
+      "attrs": { "value": "100" }
+    }
+  ],
+  "connections": [
+    [ "lcd1:GND", "uno:GND.1", "black", [ "h0" ] ],
+    [ "lcd1:VCC", "uno:5V", "red", [ "h0" ] ],
+    [ "lcd1:SDA", "uno:A4", "green", [ "h0" ] ],
+    [ "lcd1:SCL", "uno:A5", "green", [ "h0" ] ],
+    [ "servo1:GND", "uno:GND.1", "black", [ "h0" ] ],
+    [ "servo1:V+", "uno:5V", "green", [ "h0" ] ],
+    [ "btn1:1.r", "uno:13", "green", [ "v0" ] ],
+    [ "btn1:1.l", "uno:GND.2", "green", [ "h0" ] ],
+    [ "btn1:2.l", "uno:5V", "green", [ "h0" ] ],
+    [ "servo1:PWM", "uno:6", "green", [ "h0" ] ],
+    [ "rgb1:R", "uno:11", "green", [ "v0" ] ],
+    [ "rgb1:G", "uno:10", "green", [ "v0" ] ],
+    [ "rgb1:B", "uno:9", "green", [ "v0" ] ],
+    [ "rgb1:COM", "r1:2", "green", [ "v0" ] ],
+    [ "r1:1", "uno:GND.3", "green", [ "v0" ] ]
+  ]
+}
