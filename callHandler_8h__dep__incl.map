@@ -3,5 +3,5 @@
 <area shape="rect" id="node2" href="$animLcd_8ino.html" title="Implementation für die AnimatableLcd Klasse." alt="" coords="5,80,107,107"/>
 <area shape="rect" id="node3" href="$animString_8ino.html" title="Implementationen der Callable und LcdString Klassen." alt="" coords="131,80,248,107"/>
 <area shape="rect" id="node4" href="$callHandler_8ino.html" title="Umsetzung der CallHandler Klasse." alt="" coords="271,80,390,107"/>
-<area shape="rect" id="node5" href="$sketch_8ino.html" title="Hauptdatei." alt="" coords="415,80,503,107"/>
+<area shape="rect" id="node5" href="$sketch_8ino.html" title="Hauptdatei, wichtigste Funktionen sind setup() und loop()" alt="" coords="415,80,503,107"/>
 </map>

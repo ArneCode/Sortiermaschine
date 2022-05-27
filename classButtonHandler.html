@@ -241,20 +241,19 @@ Private Attribute</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Prüft, ob der Knopf gedrückt/losgelassen wurde. </p>
-<p >Wird von loop aufgerufen und ruft die onclick Funktion auf, wenn ein Klick festgestellt wurde </p>
-<p >Ob der Knopf momentan gedrückt ist</p>
+<p >Wird von <a class="el" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Wird immer wieder ausgeführt.">loop()</a> aufgerufen und ruft die <a class="el" href="classButtonHandler.html#acd031a9133f6ff6b5a9c707fdf8183c3" title="Die Funktion die bei einem Klick, d.h. einem Drücken und loslassen des Knopfes ausgeführt wird.">ButtonHandler::onclick</a> Funktion auf, wenn ein Klick festgestellt wurde </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00140">140</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  140</span>                  {</div>
-<div class="line"><span class="lineno">  145</span>      <span class="keywordtype">bool</span> isPressedNew = digitalRead(<a class="code hl_variable" href="classButtonHandler.html#ad6516fd08addb841598242784a088e97">pin</a>) == HIGH;</div>
-<div class="line"><span class="lineno">  146</span>      <span class="keywordflow">if</span> (isPressedNew != <a class="code hl_variable" href="classButtonHandler.html#a23b1eed2ad71da361d02054d53e56d05">isPressed</a>) { <span class="comment">//is not being pressed now, but was being pressed</span></div>
-<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classButtonHandler.html#a23b1eed2ad71da361d02054d53e56d05">isPressed</a>) {</div>
-<div class="line"><span class="lineno">  148</span>          Serial.println(<span class="stringliteral">&quot;click&quot;</span>);</div>
-<div class="line"><span class="lineno">  149</span>          <a class="code hl_variable" href="classButtonHandler.html#acd031a9133f6ff6b5a9c707fdf8183c3">onclick</a>();</div>
-<div class="line"><span class="lineno">  150</span>        }</div>
-<div class="line"><span class="lineno">  151</span>      }</div>
-<div class="line"><span class="lineno">  152</span>      <a class="code hl_variable" href="classButtonHandler.html#a23b1eed2ad71da361d02054d53e56d05">isPressed</a> = isPressedNew;</div>
-<div class="line"><span class="lineno">  153</span>    }</div>
+<div class="fragment"><div class="line"><span class="lineno">  141</span>    {</div>
+<div class="line"><span class="lineno">  142</span>      <span class="keywordtype">bool</span> isPressedNew = digitalRead(<a class="code hl_variable" href="classButtonHandler.html#ad6516fd08addb841598242784a088e97">pin</a>) == HIGH;</div>
+<div class="line"><span class="lineno">  143</span>      <span class="keywordflow">if</span> (isPressedNew != <a class="code hl_variable" href="classButtonHandler.html#a23b1eed2ad71da361d02054d53e56d05">isPressed</a>) { <span class="comment">//is not being pressed now, but was being pressed</span></div>
+<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classButtonHandler.html#a23b1eed2ad71da361d02054d53e56d05">isPressed</a>) {</div>
+<div class="line"><span class="lineno">  145</span>          Serial.println(<span class="stringliteral">&quot;click&quot;</span>);</div>
+<div class="line"><span class="lineno">  146</span>          <a class="code hl_variable" href="classButtonHandler.html#acd031a9133f6ff6b5a9c707fdf8183c3">onclick</a>();</div>
+<div class="line"><span class="lineno">  147</span>        }</div>
+<div class="line"><span class="lineno">  148</span>      }</div>
+<div class="line"><span class="lineno">  149</span>      <a class="code hl_variable" href="classButtonHandler.html#a23b1eed2ad71da361d02054d53e56d05">isPressed</a> = isPressedNew;</div>
+<div class="line"><span class="lineno">  150</span>    }</div>
 <div class="ttc" id="aclassButtonHandler_html_a23b1eed2ad71da361d02054d53e56d05"><div class="ttname"><a href="classButtonHandler.html#a23b1eed2ad71da361d02054d53e56d05">ButtonHandler::isPressed</a></div><div class="ttdeci">bool isPressed</div><div class="ttdoc">Gibt an, ob der Knopf momentan Gedrückt ist.</div><div class="ttdef"><b>Definition:</b> <a href="sketch_8ino_source.html#l00119">sketch.ino:119</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>

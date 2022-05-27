@@ -110,7 +110,7 @@
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99" target="_top" xlink:title="wird immer wieder von loop aufgerufen um die Animationen zu updaten">
+<g id="a_node11"><a xlink:href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99" target="_top" xlink:title="wird immer wieder von loop() aufgerufen um die Animationen zu updaten">
 <polygon fill="none" stroke="black" points="79,-152.5 79,-171.5 208,-171.5 208,-152.5 79,-152.5"/>
 <text text-anchor="middle" x="143.5" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">AnimatableLcd::update</text>
 </a>

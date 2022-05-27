@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Hauptdatei.">
+<g id="a_node1"><a xlink:title="Hauptdatei, wichtigste Funktionen sind setup() und loop()">
 <polygon fill="#bfbfbf" stroke="black" points="127.5,-168.5 127.5,-187.5 193.5,-187.5 193.5,-168.5 127.5,-168.5"/>
 <text text-anchor="middle" x="160.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">sketch.ino</text>
 </a>

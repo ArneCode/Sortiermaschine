@@ -65,7 +65,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="sketch_8ino.html" target="_top" xlink:title="Hauptdatei.">
+<g id="a_node6"><a xlink:href="sketch_8ino.html" target="_top" xlink:title="Hauptdatei, wichtigste Funktionen sind setup() und loop()">
 <polygon fill="none" stroke="black" points="200,-0.5 200,-19.5 266,-19.5 266,-0.5 200,-0.5"/>
 <text text-anchor="middle" x="233" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">sketch.ino</text>
 </a>
