@@ -1,0 +1,37 @@
+var sketch_8ino =
+[
+    [ "ButtonHandler", "classButtonHandler.html", "classButtonHandler" ],
+    [ "GEH_ZURUECK", "sketch_8ino.html#a96e566c1144385ff3e4c1ec37bdd5274", null ],
+    [ "Farbe", "sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2", [
+      [ "WHITE", "sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50", null ],
+      [ "BLACK", "sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3", null ],
+      [ "ORANGE", "sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4", null ],
+      [ "NOTHING", "sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2", null ]
+    ] ],
+    [ "loop", "sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f", null ],
+    [ "mesureColor", "sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd", null ],
+    [ "servoIsDone", "sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791", null ],
+    [ "setLedColor", "sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8", null ],
+    [ "setup", "sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d", null ],
+    [ "stopButtonClicked", "sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc", null ],
+    [ "ANGLE_CENTER", "sketch_8ino.html#ad79ce25ec94495875b917de81bbd692e", null ],
+    [ "ANGLE_LEFT_HOLE", "sketch_8ino.html#a759a9f39d205bf95aed6a556759ebd8a", null ],
+    [ "ANGLE_MIN", "sketch_8ino.html#ac82ee88c087fbd603a9a9ff334218360", null ],
+    [ "ANGLE_RIGHT_HOLE", "sketch_8ino.html#aea1dd563eecdccc3c412c2eb13f99850", null ],
+    [ "callHandler", "sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc", null ],
+    [ "doFlicker", "sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699", null ],
+    [ "lcd", "sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7", null ],
+    [ "LOADING_DURATION", "sketch_8ino.html#ab09894308b534e1030021de3bc84710e", null ],
+    [ "nBlack", "sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41", null ],
+    [ "nOrange", "sketch_8ino.html#ab02bdede4356a3a7dffc99e97e927ca6", null ],
+    [ "nWhite", "sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd", null ],
+    [ "PIN_BLUE", "sketch_8ino.html#a275fb5d3177300cc6a29ae232344e4d8", null ],
+    [ "PIN_GREEN", "sketch_8ino.html#ac594418c6e368680a9de074d7d136caa", null ],
+    [ "PIN_RED", "sketch_8ino.html#ac57f63ef8771d860562baf56fd4c2732", null ],
+    [ "PIN_SERVO", "sketch_8ino.html#ae1e0b317f35c61409381a32ea905ba67", null ],
+    [ "PIN_STOPBUTTON", "sketch_8ino.html#a05c5455b55db369d7d780a0a64525ecc", null ],
+    [ "servo", "sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22", null ],
+    [ "SERVO_SPEED_DEFAULT", "sketch_8ino.html#adef1ca0bee2c8b7c9b72001969ee3426", null ],
+    [ "SERVO_SPEED_FAST", "sketch_8ino.html#a8b8f576df7f10b8c79c4ee6ee1f94166", null ],
+    [ "stopButton", "sketch_8ino.html#ae68a57cc22f2b256b21089a585de29df", null ]
+];
