@@ -1,8 +1,9 @@
 <map id="Callable::run" name="Callable::run">
 <area shape="rect" id="node1" title=" " alt="" coords="507,31,611,57"/>
 <area shape="rect" id="node2" href="$classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0" title="Setzt die neuen Calls, die ausgeführt werden sollen." alt="" coords="300,56,459,83"/>
-<area shape="rect" id="node6" href="$classCallHandler.html#a57ff2e7ae3955d5ed4806dcc6469dcf7" title="Wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z...." alt="" coords="304,5,455,32"/>
-<area shape="rect" id="node3" href="$sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Wird immer wieder ausgeführt." alt="" coords="157,5,207,32"/>
-<area shape="rect" id="node4" href="$sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="Wird am Anfang des Programms aufgerufen." alt="" coords="5,81,64,108"/>
-<area shape="rect" id="node5" href="$sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="112,107,252,133"/>
+<area shape="rect" id="node7" href="$classCallHandler.html#a57ff2e7ae3955d5ed4806dcc6469dcf7" title="Wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z...." alt="" coords="304,5,455,32"/>
+<area shape="rect" id="node3" href="$sketch_8ino.html#a39b44b8ad8390b202d1c91f96e22d7a2" title="Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück." alt="" coords="140,56,224,83"/>
+<area shape="rect" id="node4" href="$sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Wird immer wieder ausgeführt." alt="" coords="157,5,207,32"/>
+<area shape="rect" id="node5" href="$sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="Wird am Anfang des Programms aufgerufen." alt="" coords="5,132,64,159"/>
+<area shape="rect" id="node6" href="$sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="112,157,252,184"/>
 </map>

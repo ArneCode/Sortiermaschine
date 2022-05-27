@@ -50,7 +50,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791" target="_top" xlink:title="Hilf Funktion, Methoden können nicht als Funktionsparameter benutzt werden.">
+<g id="a_node4"><a xlink:href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791" target="_top" xlink:title="Hilfs Funktion, Methoden können nicht als Funktionsparameter benutzt werden.">
 <polygon fill="none" stroke="black" points="105,-304.5 105,-323.5 182,-323.5 182,-304.5 105,-304.5"/>
 <text text-anchor="middle" x="143.5" y="-311.5" font-family="Helvetica,sans-Serif" font-size="10.00">servoIsDone</text>
 </a>

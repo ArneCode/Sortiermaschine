@@ -33,7 +33,7 @@ class CustomServo: public Servo {
     time_t startTime;//time at which servo started moving
     void startMove();
   public:
-    bool done;
+    bool done=true;
     void write(short newAngle);
     void write(short newAngle, time_t duration);
     void writeDirect(short angle);
