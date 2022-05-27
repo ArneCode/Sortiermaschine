@@ -4,9 +4,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sortiermaschiene: animLcd.ino Quellcode</title>
+<title>Sortiermaschine: animLcd.ino Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Sortiermaschiene
+   <div id="projectname">Sortiermaschine
    </div>
   </td>
  </tr>
@@ -44,21 +44,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Erzeugt von Doxygen 1.8.17 -->
+<!-- Erzeugt von Doxygen 1.9.5 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Suchen','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','Suchen');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -72,7 +73,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('animLcd_8ino_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -92,124 +93,123 @@ $(document).ready(function(){initNavTree('animLcd_8ino_source.html',''); initRes
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">animLcd.ino</div>  </div>
+  <div class="headertitle"><div class="title">animLcd.ino</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="animLcd_8ino.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;LiquidCrystal_I2C.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="header_8h.html">header.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="animLcd_8h.html">animLcd.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="callHandler_8h.html">callHandler.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="animLcd_8ino.html#af9de0017ae44e85326d55921c478325c">   15</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">byte</span> <a class="code" href="animLcd_8ino.html#af9de0017ae44e85326d55921c478325c">loading_empty_c</a>[8] = { <span class="comment">//is used to define a custom character representing a square</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  B11111,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  B10001,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  B10001,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  B10001,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  B10001,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  B10001,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  B10001,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  B11111</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="animLcd_8ino.html#addc6f0caadffd9774296f5fa89d43837">   29</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">byte</span> <a class="code" href="animLcd_8ino.html#addc6f0caadffd9774296f5fa89d43837">loading_full_c</a>[8] = { <span class="comment">//is used to define a custom character representing a filled square</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  B11111,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  B11111,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  B11111,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  B11111,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  B11111,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  B11111,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  B11111,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  B11111</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">AnimatableLcd::init</a>() </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  LiquidCrystal_I2C::init();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  backlight();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  noCursor();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.createChar(0, <a class="code" href="animLcd_8ino.html#af9de0017ae44e85326d55921c478325c">loading_empty_c</a>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.createChar(1, <a class="code" href="animLcd_8ino.html#addc6f0caadffd9774296f5fa89d43837">loading_full_c</a>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classAnimatableLcd.html#abd8ee2191732afcaccc26c8caf5dc108">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAnimatableLcd.html#abd8ee2191732afcaccc26c8caf5dc108">AnimatableLcd::setAnimation</a>(<a class="code" href="classAnimString.html">AnimString</a>* _animString) </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classAnimatableLcd.html#ab18b2860b063a5af62da8f28f07d3182">doAnimation</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classAnimatableLcd.html#a2ee9324b53d0646c9a28faf7db6e6997">animString</a> = _animString;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">   66</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">AnimatableLcd::print</a>(<span class="keyword">const</span> String&amp; text)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="comment">//custom print with ability to use custom characters, just inserst the number of the custom character in the string (\1n for the nth character)</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">//and it will be converted to the custom character (\1n so that \0 doesn&#39;t appear in the string, because it means end of string)</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">char</span> c:text){</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span>(c&gt;=8&amp;&amp;c&lt;=15){<span class="comment">//if it is a custom character</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      write(c-8);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(c==1){<span class="comment">//defining a non-newline space</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      LiquidCrystal_I2C::print(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      LiquidCrystal_I2C::print(c);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">   88</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">AnimatableLcd::printCentered</a>(String text, <span class="keywordtype">int</span> length = -1, <span class="keywordtype">int</span> row = 0) <span class="comment">//length&lt;=16</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{ </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">if</span> (length == -1) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    length = text.length();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">int</span> offset = (16 - length) / 2; <span class="comment">//rundet immer ab, da int</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  setCursor(offset, row);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">print</a>(text);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">  102</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">AnimatableLcd::printPretty</a>(String text) <span class="comment">//handelt zeilenumbrüche und schreibt zentriert</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{ </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  clear();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">int</span> length = text.length();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">if</span> (length &lt;= 16) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a>(text, length);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">int</span> spacePos = -1;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 15; i &gt;= 0; i--) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span> (text[i] == <span class="charliteral">&#39; &#39;</span>) {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      spacePos = i;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  String row1, row2;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">if</span> (spacePos != -1) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    row1 = text.substring(0, spacePos);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    row2 = text.substring(spacePos + 1);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    row1 = text.substring(0, 16);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    row2 = text.substring(16);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a>(row1, row1.length(), 0);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a>(row2, row2.length(), 1);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99">  132</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99">AnimatableLcd::update</a>() </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="classAnimatableLcd.html#ab18b2860b063a5af62da8f28f07d3182">doAnimation</a>) {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <a class="code" href="classAnimatableLcd.html#a2ee9324b53d0646c9a28faf7db6e6997">animString</a>-&gt;<a class="code" href="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b">update</a>();</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
-</div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
-<div class="ttc" id="aclassAnimatableLcd_html_a0f93bbf8c49a76e17272721e67a24b38"><div class="ttname"><a href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">AnimatableLcd::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Überschreibt die normale lcd init function.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00043">animLcd.ino:43</a></div></div>
-<div class="ttc" id="aclassAnimatableLcd_html_ae9f318e41e16a8527eaeffa9500831ca"><div class="ttname"><a href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">AnimatableLcd::print</a></div><div class="ttdeci">void print(const String &amp;text)</div><div class="ttdoc">Eigene Lcd-print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00066">animLcd.ino:66</a></div></div>
-<div class="ttc" id="aclassAnimatableLcd_html_ab18b2860b063a5af62da8f28f07d3182"><div class="ttname"><a href="classAnimatableLcd.html#ab18b2860b063a5af62da8f28f07d3182">AnimatableLcd::doAnimation</a></div><div class="ttdeci">bool doAnimation</div><div class="ttdoc">ob der Monitor animiert werden soll</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8h_source.html#l00028">animLcd.h:28</a></div></div>
+<a href="animLcd_8ino.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;LiquidCrystal_I2C.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="header_8h.html">header.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="animLcd_8h.html">animLcd.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="callHandler_8h.html">callHandler.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="animLcd_8ino.html#af9de0017ae44e85326d55921c478325c">   15</a></span><span class="keyword">const</span> <span class="keywordtype">byte</span> <a class="code hl_variable" href="animLcd_8ino.html#af9de0017ae44e85326d55921c478325c">loading_empty_c</a>[8] = { <span class="comment">//is used to define a custom character representing a square</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  B11111,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  B10001,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  B10001,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  B10001,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  B10001,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  B10001,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  B10001,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  B11111</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="animLcd_8ino.html#addc6f0caadffd9774296f5fa89d43837">   29</a></span><span class="keyword">const</span> <span class="keywordtype">byte</span> <a class="code hl_variable" href="animLcd_8ino.html#addc6f0caadffd9774296f5fa89d43837">loading_full_c</a>[8] = { <span class="comment">//is used to define a custom character representing a filled square</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  B11111,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  B11111,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  B11111,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  B11111,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  B11111,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  B11111,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  B11111,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  B11111</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">AnimatableLcd::init</a>() </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  LiquidCrystal_I2C::init();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  backlight();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  noCursor();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.createChar(0, <a class="code hl_variable" href="animLcd_8ino.html#af9de0017ae44e85326d55921c478325c">loading_empty_c</a>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.createChar(1, <a class="code hl_variable" href="animLcd_8ino.html#addc6f0caadffd9774296f5fa89d43837">loading_full_c</a>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classAnimatableLcd.html#abd8ee2191732afcaccc26c8caf5dc108">   56</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAnimatableLcd.html#abd8ee2191732afcaccc26c8caf5dc108">AnimatableLcd::setAnimation</a>(<a class="code hl_class" href="classAnimString.html">AnimString</a>* _animString) </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_variable" href="classAnimatableLcd.html#ab18b2860b063a5af62da8f28f07d3182">doAnimation</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <a class="code hl_variable" href="classAnimatableLcd.html#a2ee9324b53d0646c9a28faf7db6e6997">animString</a> = _animString;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">   66</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">AnimatableLcd::print</a>(<span class="keyword">const</span> String&amp; text)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="comment">//custom print with ability to use custom characters, just inserst the number of the custom character in the string (\1n for the nth character)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="comment">//and it will be converted to the custom character (\1n so that \0 doesn&#39;t appear in the string, because it means end of string)</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordflow">for</span>(<span class="keywordtype">char</span> c:text){</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span>(c&gt;=8&amp;&amp;c&lt;=15){<span class="comment">//if it is a custom character</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      write(c-8);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(c==1){<span class="comment">//defining a non-newline space</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      LiquidCrystal_I2C::print(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      LiquidCrystal_I2C::print(c);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">   88</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">AnimatableLcd::printCentered</a>(String text, <span class="keywordtype">int</span> length = -1, <span class="keywordtype">int</span> row = 0) <span class="comment">//length&lt;=16</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>{ </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordflow">if</span> (length == -1) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    length = text.length();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">int</span> offset = (16 - length) / 2; <span class="comment">//rundet immer ab, da int</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  setCursor(offset, row);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <a class="code hl_function" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">print</a>(text);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">  102</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">AnimatableLcd::printPretty</a>(String text) <span class="comment">//handelt zeilenumbrüche und schreibt zentriert</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>{ </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  clear();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordtype">int</span> length = text.length();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordflow">if</span> (length &lt;= 16) {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_function" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a>(text, length);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordtype">int</span> spacePos = -1;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 15; i &gt;= 0; i--) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">if</span> (text[i] == <span class="charliteral">&#39; &#39;</span>) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      spacePos = i;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  String row1, row2;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="keywordflow">if</span> (spacePos != -1) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    row1 = text.substring(0, spacePos);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    row2 = text.substring(spacePos + 1);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    row1 = text.substring(0, 16);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    row2 = text.substring(16);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <a class="code hl_function" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a>(row1, row1.length(), 0);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <a class="code hl_function" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a>(row2, row2.length(), 1);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99">  132</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99">AnimatableLcd::update</a>() </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>{</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classAnimatableLcd.html#ab18b2860b063a5af62da8f28f07d3182">doAnimation</a>) {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  <a class="code hl_variable" href="classAnimatableLcd.html#a2ee9324b53d0646c9a28faf7db6e6997">animString</a>-&gt;<a class="code hl_function" href="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b">update</a>();</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
 <div class="ttc" id="aanimLcd_8h_html"><div class="ttname"><a href="animLcd_8h.html">animLcd.h</a></div><div class="ttdoc">Header-Datei für den animierbaren lcd (AnimatableLcd)</div></div>
 <div class="ttc" id="aanimLcd_8ino_html_addc6f0caadffd9774296f5fa89d43837"><div class="ttname"><a href="animLcd_8ino.html#addc6f0caadffd9774296f5fa89d43837">loading_full_c</a></div><div class="ttdeci">const byte loading_full_c[8]</div><div class="ttdoc">Werte für einen eigenen Character der ein volles Viereck darstellt (für die LcdLoadingAnim)</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00029">animLcd.ino:29</a></div></div>
-<div class="ttc" id="astructLcdString_html_a1f014299eeb7654a391f1fbfc898719b"><div class="ttname"><a href="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b">LcdString::update</a></div><div class="ttdeci">virtual void update()</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00070">animString.h:70</a></div></div>
-<div class="ttc" id="aclassAnimatableLcd_html_a2ee9324b53d0646c9a28faf7db6e6997"><div class="ttname"><a href="classAnimatableLcd.html#a2ee9324b53d0646c9a28faf7db6e6997">AnimatableLcd::animString</a></div><div class="ttdeci">AnimString * animString</div><div class="ttdoc">die zurzeit laufende Animation</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8h_source.html#l00022">animLcd.h:22</a></div></div>
-<div class="ttc" id="acallHandler_8h_html"><div class="ttname"><a href="callHandler_8h.html">callHandler.h</a></div><div class="ttdoc">header datei für den CallHandler</div></div>
-<div class="ttc" id="aclassAnimatableLcd_html_ad5509573d45cc84cda93b125fdca749e"><div class="ttname"><a href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">AnimatableLcd::printPretty</a></div><div class="ttdeci">void printPretty(String text)</div><div class="ttdoc">gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00102">animLcd.ino:102</a></div></div>
-<div class="ttc" id="aclassAnimatableLcd_html_a85725484bae8d5c0b1190366b3121f99"><div class="ttname"><a href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99">AnimatableLcd::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">wird immer wieder von loop aufgerufen um die Animationen zu updaten</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00132">animLcd.ino:132</a></div></div>
 <div class="ttc" id="aanimLcd_8ino_html_af9de0017ae44e85326d55921c478325c"><div class="ttname"><a href="animLcd_8ino.html#af9de0017ae44e85326d55921c478325c">loading_empty_c</a></div><div class="ttdeci">const byte loading_empty_c[8]</div><div class="ttdoc">Werte für einen eigenen Character der ein leeres Viereck darstellt (für die LcdLoadingAnim)</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00015">animLcd.ino:15</a></div></div>
+<div class="ttc" id="acallHandler_8h_html"><div class="ttname"><a href="callHandler_8h.html">callHandler.h</a></div><div class="ttdoc">header datei für den CallHandler</div></div>
 <div class="ttc" id="aclassAnimString_html"><div class="ttname"><a href="classAnimString.html">AnimString</a></div><div class="ttdoc">Die Klasse für animierbare LcdStrings.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00076">animString.h:76</a></div></div>
+<div class="ttc" id="aclassAnimatableLcd_html_a0f93bbf8c49a76e17272721e67a24b38"><div class="ttname"><a href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">AnimatableLcd::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Überschreibt die normale lcd init function.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00043">animLcd.ino:43</a></div></div>
+<div class="ttc" id="aclassAnimatableLcd_html_a2ee9324b53d0646c9a28faf7db6e6997"><div class="ttname"><a href="classAnimatableLcd.html#a2ee9324b53d0646c9a28faf7db6e6997">AnimatableLcd::animString</a></div><div class="ttdeci">AnimString * animString</div><div class="ttdoc">Die zurzeit laufende Animation.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8h_source.html#l00022">animLcd.h:22</a></div></div>
+<div class="ttc" id="aclassAnimatableLcd_html_a85725484bae8d5c0b1190366b3121f99"><div class="ttname"><a href="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99">AnimatableLcd::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">wird immer wieder von loop aufgerufen um die Animationen zu updaten</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00132">animLcd.ino:132</a></div></div>
 <div class="ttc" id="aclassAnimatableLcd_html_aaff767fb418dbc3e902dd4a1be3207a8"><div class="ttname"><a href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">AnimatableLcd::printCentered</a></div><div class="ttdeci">void printCentered(String text, int length=-1, int row=0)</div><div class="ttdoc">Gibt einen String zentriert auf dem Lcd-Display aus.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00088">animLcd.ino:88</a></div></div>
+<div class="ttc" id="aclassAnimatableLcd_html_ab18b2860b063a5af62da8f28f07d3182"><div class="ttname"><a href="classAnimatableLcd.html#ab18b2860b063a5af62da8f28f07d3182">AnimatableLcd::doAnimation</a></div><div class="ttdeci">bool doAnimation</div><div class="ttdoc">Gibt an, ob der Monitor animiert werden soll.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8h_source.html#l00028">animLcd.h:28</a></div></div>
 <div class="ttc" id="aclassAnimatableLcd_html_abd8ee2191732afcaccc26c8caf5dc108"><div class="ttname"><a href="classAnimatableLcd.html#abd8ee2191732afcaccc26c8caf5dc108">AnimatableLcd::setAnimation</a></div><div class="ttdeci">void setAnimation(AnimString *_animString)</div><div class="ttdoc">Setzt die aktuelle Animation.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00056">animLcd.ino:56</a></div></div>
-<div class="ttc" id="asketch_8ino_html_a7ec27b22420d7f2ad97962e41f9076b7"><div class="ttname"><a href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a></div><div class="ttdeci">AnimatableLcd lcd(0x27, 16, 2)</div><div class="ttdoc">Der animierbare Lcd.</div></div>
+<div class="ttc" id="aclassAnimatableLcd_html_ad5509573d45cc84cda93b125fdca749e"><div class="ttname"><a href="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e">AnimatableLcd::printPretty</a></div><div class="ttdeci">void printPretty(String text)</div><div class="ttdoc">gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00102">animLcd.ino:102</a></div></div>
+<div class="ttc" id="aclassAnimatableLcd_html_ae9f318e41e16a8527eaeffa9500831ca"><div class="ttname"><a href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">AnimatableLcd::print</a></div><div class="ttdeci">void print(const String &amp;text)</div><div class="ttdoc">Eigene Lcd-print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00066">animLcd.ino:66</a></div></div>
 <div class="ttc" id="aheader_8h_html"><div class="ttname"><a href="header_8h.html">header.h</a></div><div class="ttdoc">Definiert variablen-types die überall im Programm benutzt werden.</div></div>
+<div class="ttc" id="asketch_8ino_html_a7ec27b22420d7f2ad97962e41f9076b7"><div class="ttname"><a href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a></div><div class="ttdeci">AnimatableLcd lcd(0x27, 16, 2)</div><div class="ttdoc">Der animierbare Lcd.</div></div>
+<div class="ttc" id="astructLcdString_html_a1f014299eeb7654a391f1fbfc898719b"><div class="ttname"><a href="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b">LcdString::update</a></div><div class="ttdeci">virtual void update()</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00070">animString.h:70</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('animLcd_8ino_source.html',''); initRes
     <li class="navelem"><a class="el" href="animLcd_8ino.html">animLcd.ino</a></li>
     <li class="footer">Erzeugt von
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

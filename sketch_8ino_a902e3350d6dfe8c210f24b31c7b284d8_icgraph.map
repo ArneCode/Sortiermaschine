@@ -1,6 +1,6 @@
 <map id="setLedColor" name="setLedColor">
-<area shape="rect" id="node1" title=" " alt="" coords="300,31,399,57"/>
-<area shape="rect" id="node2" href="$sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="157,5,207,32"/>
+<area shape="rect" id="node1" title="Setzt die Farbe der RGB&#45;Led." alt="" coords="300,31,399,57"/>
+<area shape="rect" id="node2" href="$sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Wird immer wieder ausgeführt." alt="" coords="157,5,207,32"/>
 <area shape="rect" id="node3" href="$sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="112,56,252,83"/>
-<area shape="rect" id="node4" href="$sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="wird am Anfang des Programms aufgerufen" alt="" coords="5,56,64,83"/>
+<area shape="rect" id="node4" href="$sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="Wird am Anfang des Programms aufgerufen." alt="" coords="5,56,64,83"/>
 </map>

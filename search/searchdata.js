@@ -8,7 +8,8 @@ var indexSectionsWithContent =
   5: "ft",
   6: "f",
   7: "bnow",
-  8: "g"
+  8: "g",
+  9: "s"
 };
 
 var indexSectionNames =
@@ -21,7 +22,8 @@ var indexSectionNames =
   5: "typedefs",
   6: "enums",
   7: "enumvalues",
-  8: "defines"
+  8: "defines",
+  9: "pages"
 };
 
 var indexSectionLabels =
@@ -34,6 +36,7 @@ var indexSectionLabels =
   5: "Typdefinitionen",
   6: "Aufzählungen",
   7: "Aufzählungswerte",
-  8: "Makrodefinitionen"
+  8: "Makrodefinitionen",
+  9: "Seiten"
 };
 

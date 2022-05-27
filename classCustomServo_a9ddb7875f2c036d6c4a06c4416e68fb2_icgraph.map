@@ -1,7 +1,7 @@
 <map id="CustomServo::startMove" name="CustomServo::startMove">
 <area shape="rect" id="node1" title="Setzt Variabeln, die benötigt werden um den Servo zu bewegen." alt="" coords="429,31,612,57"/>
-<area shape="rect" id="node2" href="$classCustomServo.html#a0750f5868c694b9f46638038b8536e0a" title=" " alt="" coords="204,5,381,32"/>
-<area shape="rect" id="node4" href="$classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94" title="bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit" alt="" coords="217,56,368,83"/>
-<area shape="rect" id="node3" href="$sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="55,5,106,32"/>
-<area shape="rect" id="node5" href="$classCustomServo.html#a73b3e39ae0c5ac49cde683711517283a" title="bewegt den Servo in duration ms" alt="" coords="5,56,156,83"/>
+<area shape="rect" id="node2" href="$classCustomServo.html#a0750f5868c694b9f46638038b8536e0a" title="Setzt eine neue Geschwindigkeit des Servos." alt="" coords="204,5,381,32"/>
+<area shape="rect" id="node4" href="$classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94" title="Bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit." alt="" coords="217,56,368,83"/>
+<area shape="rect" id="node3" href="$sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Wird immer wieder ausgeführt." alt="" coords="55,5,106,32"/>
+<area shape="rect" id="node5" href="$classCustomServo.html#a73b3e39ae0c5ac49cde683711517283a" title="Bewegt den Servo in duration Millisekunden an den angegebenen Winkel." alt="" coords="5,56,156,83"/>
 </map>
