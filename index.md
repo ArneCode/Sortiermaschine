@@ -1,4 +1,4 @@
-Hallo, dies ist die Online-Dokumentation für den Code der Sortiermaschine  
+Hallo, dies ist die Online-Dokumentation für den Code der Sortiermaschine von Johannes und Arne   
   
 # Zur Dokumentation
 Diese Seite hat eine Suchfunktion. Dort kann nach Klassen/Variabeln/Funktionen etc. gesucht werden  
