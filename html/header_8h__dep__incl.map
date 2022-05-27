@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$animLcd_8ino.html" title="Implementation für die AnimatableLcd Klasse." alt="" coords="147,229,248,256"/>
 <area shape="rect" id="node3" href="$animString_8h.html" title="Header datei für eine Mehrzahl von animierbaren Strings und der Callable Klasse." alt="" coords="127,80,233,107"/>
 <area shape="rect" id="node5" href="$animString_8ino.html" title="Implementationen der Callable und LcdString Klassen." alt="" coords="5,229,123,256"/>
-<area shape="rect" id="node6" href="$sketch_8ino.html" title="Hauptdatei." alt="" coords="272,229,360,256"/>
+<area shape="rect" id="node6" href="$sketch_8ino.html" title="Hauptdatei, wichtigste Funktionen sind setup() und loop()" alt="" coords="272,229,360,256"/>
 <area shape="rect" id="node7" href="$callHandler_8h.html" title="header datei für den CallHandler" alt="" coords="233,155,340,181"/>
 <area shape="rect" id="node8" href="$callHandler_8ino.html" title="Umsetzung der CallHandler Klasse." alt="" coords="385,229,503,256"/>
 <area shape="rect" id="node9" href="$customServo_8h.html" title="Header Datei der CustomServo Klasse." alt="" coords="419,80,538,107"/>

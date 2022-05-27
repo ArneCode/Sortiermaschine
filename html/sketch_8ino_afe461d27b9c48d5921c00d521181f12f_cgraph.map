@@ -6,7 +6,7 @@
 <area shape="rect" id="node6" href="$classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0" title="Setzt die neuen Calls, die ausgeführt werden sollen." alt="" coords="117,157,276,184"/>
 <area shape="rect" id="node8" href="$sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8" title="Setzt die Farbe der RGB&#45;Led." alt="" coords="147,208,246,235"/>
 <area shape="rect" id="node9" href="$classCustomServo.html#a0750f5868c694b9f46638038b8536e0a" title="Setzt eine neue Geschwindigkeit des Servos." alt="" coords="108,360,285,387"/>
-<area shape="rect" id="node11" href="$classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99" title="wird immer wieder von loop aufgerufen um die Animationen zu updaten" alt="" coords="111,309,283,336"/>
+<area shape="rect" id="node11" href="$classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99" title="wird immer wieder von loop() aufgerufen um die Animationen zu updaten" alt="" coords="111,309,283,336"/>
 <area shape="rect" id="node13" href="$classCallHandler.html#a57ff2e7ae3955d5ed4806dcc6469dcf7" title="Wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z...." alt="" coords="121,259,272,285"/>
 <area shape="rect" id="node14" href="$classButtonHandler.html#aaed9117143aa1674a71aa012e558d4e8" title="Prüft, ob der Knopf gedrückt/losgelassen wurde." alt="" coords="112,411,281,437"/>
 <area shape="rect" id="node15" href="$classCustomServo.html#a91245621ca3e5340361f061d65025635" title="Aktualisiert die Position des Servomotors." alt="" coords="104,461,289,488"/>

@@ -1,5 +1,5 @@
 <map id="customServo.h" name="customServo.h">
 <area shape="rect" id="node1" title="Header Datei der CustomServo Klasse." alt="" coords="78,5,197,32"/>
 <area shape="rect" id="node2" href="$customServo_8ino.html" title="Umsetztung der CustomServo Klasse." alt="" coords="5,80,136,107"/>
-<area shape="rect" id="node3" href="$sketch_8ino.html" title="Hauptdatei." alt="" coords="160,80,248,107"/>
+<area shape="rect" id="node3" href="$sketch_8ino.html" title="Hauptdatei, wichtigste Funktionen sind setup() und loop()" alt="" coords="160,80,248,107"/>
 </map>

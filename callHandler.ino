@@ -41,7 +41,7 @@ void CallHandler::setCalls(Callable* newCallPtrs[], size_t nCalls)
 }
 /**
  * @brief Wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z.B. animationen)
- * @details Wird von loop aufgerufen
+ * @details Wird von loop() aufgerufen
  */
 void CallHandler::update() 
 {

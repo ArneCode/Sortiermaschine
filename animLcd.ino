@@ -126,7 +126,7 @@ void AnimatableLcd::printPretty(String text) //handelt zeilenumbrüche und schre
   printCentered(row2, row2.length(), 1);
 }
 /**
- * @brief wird immer wieder von loop aufgerufen um die Animationen zu updaten
+ * @brief wird immer wieder von loop() aufgerufen um die Animationen zu updaten
  * 
  */
 void AnimatableLcd::update() 

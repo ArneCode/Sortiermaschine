@@ -76,7 +76,7 @@ void  LcdLoadingAnim::init()
   lcd->print("0% ");
 }
 /**
- * @brief aktualisiert die Ladeanimation, wird von loop aufgerufen
+ * @brief aktualisiert die Ladeanimation, wird von loop() aufgerufen
  * 
  */
 void LcdLoadingAnim::update() 

@@ -1,7 +1,7 @@
 /**
    @file sketch.ino
-   @brief Hauptdatei
-
+   @brief Hauptdatei, wichtigste Funktionen sind setup() und loop()
+   
 */
 #include "customServo.h"
 #include "animLcd.h"
@@ -135,13 +135,10 @@ class ButtonHandler { //handels button clicks
     }
     /**
        @brief Prüft, ob der Knopf gedrückt/losgelassen wurde
-       @details Wird von loop aufgerufen und ruft die onclick Funktion auf, wenn ein Klick festgestellt wurde
+       @details Wird von loop() aufgerufen und ruft die ButtonHandler::onclick Funktion auf, wenn ein Klick festgestellt wurde
     */
-    void update() {
-      /**
-         @brief Ob der Knopf momentan gedrückt ist
-
-      */
+    void update() 
+    {
       bool isPressedNew = digitalRead(pin) == HIGH;
       if (isPressedNew != isPressed) { //is not being pressed now, but was being pressed
         if (isPressed) {
@@ -289,9 +286,9 @@ void setup()
 
 
 /**
-   @brief Wird immer wieder ausgeführt
-
-*/
+ * @brief Wird immer wieder ausgeführt
+ * @details Hier werden alle möglichen Objekte wie der Servo, der Lcd usw. aktualisiert und die Aktionen (Farbe des Balls messen, Bewegung des Servos Starten etc. ) koordiniert
+ */
 void loop()
 {
   callHandler.update();
