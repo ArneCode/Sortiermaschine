@@ -1,4 +1,3 @@
 <map id="Grafische Darstellung der Klassenhierarchie" name="Grafische Darstellung der Klassenhierarchie">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,140,32"/>
-<area shape="rect" id="node2" href="$classAnimatableLcd.html" title="Eigener Lcd, ermöglicht es Animationen auf dem Lcd Display anzuzeigen." alt="" coords="188,5,307,32"/>
+<area shape="rect" id="node1" href="$classButtonHandler.html" title="Kleine Klasse die Knopfdrücke verarbeitet." alt="" coords="5,5,121,32"/>
 </map>

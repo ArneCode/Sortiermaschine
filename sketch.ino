@@ -73,7 +73,15 @@ const float SERVO_SPEED_FAST = 0.5f;
  * 
  */
 AnimatableLcd lcd(0x27, 16, 2);
+/**
+ * @brief Die CallHandler Instanz
+ * 
+ */
 CallHandler callHandler;
+/**
+ * @brief Der Servo, eine CustomServo Instanz
+ * 
+ */
 CustomServo servo;
 
 /**
@@ -218,18 +226,20 @@ void stopButtonClicked()
  */
 ButtonHandler stopButton;
 /**
- * @brief Hilf Funktion, Methoden können nicht als functionsparameter benutzt werden
+ * @brief Hilf Funktion, Methoden können nicht als Funktionsparameter benutzt werden
  * @return true 
  * @return false 
  */
-bool servoIsDone() {
+bool servoIsDone() 
+{
   return servo.isDone();
 }
 /**
  * @brief Wird am Anfang des Programms aufgerufen
  * 
  */
-void setup() {
+void setup() 
+{
   Serial.begin(9600);
   Serial.println("setup");
   servo.attach(PIN_SERVO);
@@ -241,6 +251,10 @@ void setup() {
   randomSeed(analogRead(A1));
   stopButton = ButtonHandler(PIN_STOPBUTTON, &stopButtonClicked);
 }
+/**
+ * @brief 2 Befehle, gibt "gehe zurück" auf dem Bildschirm aus und geht zurück
+ * 
+ */
 #define GEH_ZURUECK \
   new LcdDotAnim("Gehe zur\365ck",&lcd),\
   new FuncCall([](){\
@@ -252,7 +266,8 @@ void setup() {
  * @brief Wird immer wieder ausgeführt
  * 
  */
-void loop() {
+void loop() 
+{
   callHandler.update();
   lcd.update();
   servo.updatePos();

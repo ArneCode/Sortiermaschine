@@ -5,11 +5,11 @@
 #ifndef HEADER_H
 #define HEADER_H
 /**
- * @brief Ein Zeit typ
+ * @brief Ein Zeit Typ
  */
 using time_t = unsigned long;
 /**
- * @brief Ein Funktions-typ
+ * @brief Ein Funktions Typ
  * 
  * @tparam ReturnT der Rückgabewert der Funktion die referenziert wird
  */

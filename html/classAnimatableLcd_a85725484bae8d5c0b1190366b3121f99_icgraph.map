@@ -1,4 +1,4 @@
 <map id="AnimatableLcd::update" name="AnimatableLcd::update">
 <area shape="rect" id="node1" title="wird immer wieder von loop aufgerufen um die Animationen zu updaten" alt="" coords="104,5,276,32"/>
-<area shape="rect" id="node2" href="$sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="wird immer wieder ausgeführt" alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node2" href="$sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Wird immer wieder ausgeführt." alt="" coords="5,5,56,32"/>
 </map>

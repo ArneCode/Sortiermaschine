@@ -9,7 +9,9 @@ class CallHandler;
 #include "header.h"
 #include "animString.h"
 /**
- * @brief Ermöglicht es Calls wie z.B. Funktionen nacheinander aufzurufen, ohne die delay() Funktion zu verwenden
+ * 
+ * @brief Klasse, die Calls nacheinander aufruft
+ * @details Ermöglicht es Calls wie z.B. Funktionen nacheinander aufzurufen, ohne die delay() Funktion zu verwenden
  * 
  */
 class CallHandler {//calls functions after a certain delay
@@ -41,8 +43,12 @@ class CallHandler {//calls functions after a certain delay
      */
     bool callsSet = false;
   public:
-    void deleteCalls();
+  /**
+   * @brief Gibt an, ob der CallHandler fertig ist
+   * 
+   */
     bool running = false;
+    void deleteCalls();
     void setCalls(Callable* newCallPtrs[], size_t nCalls);
     void update();
 };

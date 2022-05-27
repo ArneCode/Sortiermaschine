@@ -16,13 +16,13 @@ const int LOADING_BAR_OFFSET = 2;
  */
 class AnimatableLcd: public LiquidCrystal_I2C {
     /**
-     * @brief die zurzeit laufende Animation
+     * @brief Die zurzeit laufende Animation
      * 
      */
     AnimString* animString;
   public:
     /**
-     * @brief ob der Monitor animiert werden soll
+     * @brief Gibt an, ob der Monitor animiert werden soll
      * 
      */
     bool doAnimation = false;
