@@ -221,7 +221,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </div><div class="memdoc">
 
 <p>Setzt die neuen Calls, die ausgeführt werden sollen. </p>
-<dl class="section warning"><dt>Warnung</dt><dd>nCalls darf auf keinen Fall größer als die tatsächliche Anzahl an Calls sein, sonst stürzt das Programm ab </dd></dl>
+<p >Calls werden im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert um sie zwischen Funktionen hin- und hergeben zu können und sie benutzen nachdem die Exekution abgeschlossen ist (bzw an das <a class="el" href="classCallHandler.html" title="Klasse, die Calls nacheinander aufruft.">CallHandler</a> Objekt) </p><dl class="section warning"><dt>Warnung</dt><dd>nCalls darf auf keinen Fall größer als die tatsächliche Anzahl an Calls sein, sonst stürzt das Programm ab weil es versucht nicht vorhandene Calls auszuführen </dd></dl>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
     <tr><td class="paramname">newCallPtrs</td><td></td></tr>
@@ -230,19 +230,19 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </dd>
 </dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="callHandler_8ino_source.html#l00029">29</a> der Datei <a class="el" href="callHandler_8ino_source.html">callHandler.ino</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>{</div>
-<div class="line"><span class="lineno">   31</span>  <span class="comment">/*if(callsSet){ //doing this would result in two sets of calls being in heap at once</span></div>
-<div class="line"><span class="lineno">   32</span><span class="comment">    deleteCalls(); //solution is to delete previus calls before initializing a new one</span></div>
-<div class="line"><span class="lineno">   33</span><span class="comment">  }*/</span></div>
-<div class="line"><span class="lineno">   34</span>  <a class="code hl_variable" href="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2">callPtrs</a> = newCallPtrs;</div>
-<div class="line"><span class="lineno">   35</span>  <a class="code hl_variable" href="classCallHandler.html#a1ee97c59315e54746cef82a406a49236">callsSet</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   36</span>  <a class="code hl_variable" href="classCallHandler.html#a090fccd59cdc5b99f5f17f1215c4fd29">currCallPtr</a> = <a class="code hl_variable" href="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2">callPtrs</a>;</div>
-<div class="line"><span class="lineno">   37</span>  (*currCallPtr)-&gt;<a class="code hl_function" href="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9">run</a>();</div>
-<div class="line"><span class="lineno">   38</span>  <a class="code hl_variable" href="classCallHandler.html#a1bb0098f92adc006de8f8cd69c373fb2">lastCallPtr</a> = <a class="code hl_variable" href="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2">callPtrs</a> + nCalls - 1;</div>
-<div class="line"><span class="lineno">   39</span>  <a class="code hl_variable" href="classCallHandler.html#a2c98c2be5b62fafe94b32e3a0f68c84d">lastCallT</a> = millis();</div>
-<div class="line"><span class="lineno">   40</span>  <a class="code hl_variable" href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">running</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   41</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="callHandler_8ino_source.html#l00030">30</a> der Datei <a class="el" href="callHandler_8ino_source.html">callHandler.ino</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>{</div>
+<div class="line"><span class="lineno">   32</span>  <span class="comment">/*if(callsSet){ //doing this would result in two sets of calls being in heap at once</span></div>
+<div class="line"><span class="lineno">   33</span><span class="comment">    deleteCalls(); //solution is to delete previus calls before initializing a new one</span></div>
+<div class="line"><span class="lineno">   34</span><span class="comment">  }*/</span></div>
+<div class="line"><span class="lineno">   35</span>  <a class="code hl_variable" href="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2">callPtrs</a> = newCallPtrs;</div>
+<div class="line"><span class="lineno">   36</span>  <a class="code hl_variable" href="classCallHandler.html#a1ee97c59315e54746cef82a406a49236">callsSet</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   37</span>  <a class="code hl_variable" href="classCallHandler.html#a090fccd59cdc5b99f5f17f1215c4fd29">currCallPtr</a> = <a class="code hl_variable" href="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2">callPtrs</a>;</div>
+<div class="line"><span class="lineno">   38</span>  (*currCallPtr)-&gt;<a class="code hl_function" href="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9">run</a>();</div>
+<div class="line"><span class="lineno">   39</span>  <a class="code hl_variable" href="classCallHandler.html#a1bb0098f92adc006de8f8cd69c373fb2">lastCallPtr</a> = <a class="code hl_variable" href="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2">callPtrs</a> + nCalls - 1;</div>
+<div class="line"><span class="lineno">   40</span>  <a class="code hl_variable" href="classCallHandler.html#a2c98c2be5b62fafe94b32e3a0f68c84d">lastCallT</a> = millis();</div>
+<div class="line"><span class="lineno">   41</span>  <a class="code hl_variable" href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">running</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   42</span>}</div>
 <div class="ttc" id="aclassCallHandler_html_a090fccd59cdc5b99f5f17f1215c4fd29"><div class="ttname"><a href="classCallHandler.html#a090fccd59cdc5b99f5f17f1215c4fd29">CallHandler::currCallPtr</a></div><div class="ttdeci">Callable ** currCallPtr</div><div class="ttdoc">Der Call der zurzeit ausgeführt wird.</div><div class="ttdef"><b>Definition:</b> <a href="callHandler_8h_source.html#l00029">callHandler.h:29</a></div></div>
 <div class="ttc" id="aclassCallHandler_html_a2c98c2be5b62fafe94b32e3a0f68c84d"><div class="ttname"><a href="classCallHandler.html#a2c98c2be5b62fafe94b32e3a0f68c84d">CallHandler::lastCallT</a></div><div class="ttdeci">time_t lastCallT</div><div class="ttdoc">Der Zeitpunkt an dem der letzte Call ausgeführt wurde.</div><div class="ttdef"><b>Definition:</b> <a href="callHandler_8h_source.html#l00039">callHandler.h:39</a></div></div>
 <div class="ttc" id="aclassCallHandler_html_ab56ebeeecd75a34d9fdda13fff68cda7"><div class="ttname"><a href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">CallHandler::running</a></div><div class="ttdeci">bool running</div><div class="ttdoc">Gibt an, ob der CallHandler fertig ist.</div><div class="ttdef"><b>Definition:</b> <a href="callHandler_8h_source.html#l00050">callHandler.h:50</a></div></div>
@@ -278,21 +278,21 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p>Wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z.B. animationen) </p>
 <p >Wird von <a class="el" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Wird immer wieder ausgeführt.">loop()</a> aufgerufen </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="callHandler_8ino_source.html#l00046">46</a> der Datei <a class="el" href="callHandler_8ino_source.html">callHandler.ino</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>{</div>
-<div class="line"><span class="lineno">   48</span>  <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">running</a>) {</div>
-<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   50</span>  }</div>
-<div class="line"><span class="lineno">   51</span>  <a class="code hl_typedef" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a> timePassed = millis() - <a class="code hl_variable" href="classCallHandler.html#a2c98c2be5b62fafe94b32e3a0f68c84d">lastCallT</a>;</div>
-<div class="line"><span class="lineno">   52</span>  <span class="keywordflow">if</span> ((*currCallPtr)-&gt;isDone()) {<span class="comment">//-&gt;currCall-&gt;isDone()</span></div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classCallHandler.html#a090fccd59cdc5b99f5f17f1215c4fd29">currCallPtr</a> == <a class="code hl_variable" href="classCallHandler.html#a1bb0098f92adc006de8f8cd69c373fb2">lastCallPtr</a>) {</div>
-<div class="line"><span class="lineno">   54</span>      <a class="code hl_variable" href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">running</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   55</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   56</span>    }</div>
-<div class="line"><span class="lineno">   57</span>    <a class="code hl_variable" href="classCallHandler.html#a090fccd59cdc5b99f5f17f1215c4fd29">currCallPtr</a>++;</div>
-<div class="line"><span class="lineno">   58</span>    (*currCallPtr)-&gt;<a class="code hl_function" href="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9">run</a>();<span class="comment">//-&gt;currCall-&gt;run();</span></div>
-<div class="line"><span class="lineno">   59</span>  }</div>
-<div class="line"><span class="lineno">   60</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="callHandler_8ino_source.html#l00047">47</a> der Datei <a class="el" href="callHandler_8ino_source.html">callHandler.ino</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{</div>
+<div class="line"><span class="lineno">   49</span>  <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">running</a>) {</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   51</span>  }</div>
+<div class="line"><span class="lineno">   52</span>  <a class="code hl_typedef" href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a> timePassed = millis() - <a class="code hl_variable" href="classCallHandler.html#a2c98c2be5b62fafe94b32e3a0f68c84d">lastCallT</a>;</div>
+<div class="line"><span class="lineno">   53</span>  <span class="keywordflow">if</span> ((*currCallPtr)-&gt;isDone()) {<span class="comment">//-&gt;currCall-&gt;isDone()</span></div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classCallHandler.html#a090fccd59cdc5b99f5f17f1215c4fd29">currCallPtr</a> == <a class="code hl_variable" href="classCallHandler.html#a1bb0098f92adc006de8f8cd69c373fb2">lastCallPtr</a>) {</div>
+<div class="line"><span class="lineno">   55</span>      <a class="code hl_variable" href="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7">running</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   56</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_variable" href="classCallHandler.html#a090fccd59cdc5b99f5f17f1215c4fd29">currCallPtr</a>++;</div>
+<div class="line"><span class="lineno">   59</span>    (*currCallPtr)-&gt;<a class="code hl_function" href="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9">run</a>();<span class="comment">//-&gt;currCall-&gt;run();</span></div>
+<div class="line"><span class="lineno">   60</span>  }</div>
+<div class="line"><span class="lineno">   61</span>}</div>
 <div class="ttc" id="aheader_8h_html_a9d1a8265fefddad5533f063ef338d59f"><div class="ttname"><a href="header_8h.html#a9d1a8265fefddad5533f063ef338d59f">time_t</a></div><div class="ttdeci">unsigned long time_t</div><div class="ttdoc">Ein Zeit Typ.</div><div class="ttdef"><b>Definition:</b> <a href="header_8h_source.html#l00010">header.h:10</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
