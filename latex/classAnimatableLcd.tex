@@ -22,13 +22,13 @@ Zusammengehörigkeiten von Animatable\+Lcd\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108}{set\+Animation}} (\mbox{\hyperlink{classAnimString}{Anim\+String}} $\ast$\+\_\+anim\+String)
-\begin{DoxyCompactList}\small\item\em setzt die aktuelle animation \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Setzt die aktuelle Animation. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{print\+Centered}} (String text, int length=-\/1, int row=0)
 \begin{DoxyCompactList}\small\item\em Gibt einen String zentriert auf dem Lcd-\/\+Display aus. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}{print\+Pretty}} (String text)
 \begin{DoxyCompactList}\small\item\em gibt den Text \char`\"{}schön\char`\"{} aus, das heißt zentriert und mit automatischen Zeilenumbrüchen \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99}{update}} ()
-\begin{DoxyCompactList}\small\item\em wird immer wieder von loop aufgerufen um die Animationen zu updaten \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em wird immer wieder von \mbox{\hyperlink{sketch_8ino_afe461d27b9c48d5921c00d521181f12f}{loop()}} aufgerufen um die Animationen zu updaten \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38}{init}} ()
 \begin{DoxyCompactList}\small\item\em Überschreibt die normale lcd init function. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}{print}} (const String \&text)
@@ -37,20 +37,18 @@ void \mbox{\hyperlink{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}{prin
 \begin{DoxyCompactItemize}
 \item 
 bool \mbox{\hyperlink{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}{do\+Animation}} = false
-\begin{DoxyCompactList}\small\item\em ob der Monitor animiert werden soll \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gibt an, ob der Monitor animiert werden soll. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classAnimString}{Anim\+String}} $\ast$ \mbox{\hyperlink{classAnimatableLcd_a2ee9324b53d0646c9a28faf7db6e6997}{anim\+String}}
-\begin{DoxyCompactList}\small\item\em die zurzeit laufende Animation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Die zurzeit laufende Animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Ausführliche Beschreibung}
 Eigener Lcd, ermöglicht es Animationen auf dem Lcd Display anzuzeigen. 
 
-
-
-Definiert in Zeile 18 der Datei anim\+Lcd.\+h.
+Definiert in Zeile \mbox{\hyperlink{animLcd_8h_source_l00017}{17}} der Datei \mbox{\hyperlink{animLcd_8h_source}{anim\+Lcd.\+h}}.
 
 
 
@@ -67,19 +65,26 @@ Definiert in Zeile 18 der Datei anim\+Lcd.\+h.
 
 
 
-Definiert in Zeile 44 der Datei anim\+Lcd.\+ino.
+Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00043}{43}} der Datei \mbox{\hyperlink{animLcd_8ino_source}{anim\+Lcd.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{45 \{}
-\DoxyCodeLine{46   LiquidCrystal\_I2C::init();}
-\DoxyCodeLine{47   backlight();}
-\DoxyCodeLine{48   noCursor();}
-\DoxyCodeLine{49   \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.createChar(0, \mbox{\hyperlink{animLcd_8ino_af9de0017ae44e85326d55921c478325c}{loading\_empty\_c}});}
-\DoxyCodeLine{50   \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.createChar(1, \mbox{\hyperlink{animLcd_8ino_addc6f0caadffd9774296f5fa89d43837}{loading\_full\_c}});}
-\DoxyCodeLine{51 \}}
+\DoxyCodeLine{00044 \{}
+\DoxyCodeLine{00045   LiquidCrystal\_I2C::init();}
+\DoxyCodeLine{00046   backlight();}
+\DoxyCodeLine{00047   noCursor();}
+\DoxyCodeLine{00048   \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.createChar(0, \mbox{\hyperlink{animLcd_8ino_af9de0017ae44e85326d55921c478325c}{loading\_empty\_c}});}
+\DoxyCodeLine{00049   \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.createChar(1, \mbox{\hyperlink{animLcd_8ino_addc6f0caadffd9774296f5fa89d43837}{loading\_full\_c}});}
+\DoxyCodeLine{00050 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}\label{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}} 
 \index{AnimatableLcd@{AnimatableLcd}!print@{print}}
 \index{print@{print}!AnimatableLcd@{AnimatableLcd}}
@@ -90,33 +95,40 @@ Definiert in Zeile 44 der Datei anim\+Lcd.\+ino.
 
 Eigene Lcd-\/print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen. 
 
-für eigene Character einfach die nummer des Characters in den Text einfügen {\bfseries{(\textbackslash{}1n für den nten Character)}}, \textbackslash{}1 für Leerzeichen, das nicht in Zeilenumbruch resultiert 
+Für eigene Character einfach die nummer des Characters in den Text einfügen {\bfseries{(\textbackslash{}1n für den nten Character)}}, \textbackslash{}1 für Leerzeichen, das nicht in Zeilenumbruch resultiert 
 \begin{DoxyParams}{Parameter}
 {\em text} & \\
 \hline
 \end{DoxyParams}
 
 
-Definiert in Zeile 67 der Datei anim\+Lcd.\+ino.
+Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00066}{66}} der Datei \mbox{\hyperlink{animLcd_8ino_source}{anim\+Lcd.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{68 \{}
-\DoxyCodeLine{69   \textcolor{comment}{//custom print with ability to use custom characters, just inserst the number of the custom character in the string (\(\backslash\)1n for the nth character)}}
-\DoxyCodeLine{70   \textcolor{comment}{//and it will be converted to the custom character (\(\backslash\)1n so that \(\backslash\)0 doesn't appear in the string, because it means end of string)}}
-\DoxyCodeLine{71   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{char} c:text)\{}
-\DoxyCodeLine{72     \textcolor{keywordflow}{if}(c>=8\&\&c<=15)\{\textcolor{comment}{//if it is a custom character}}
-\DoxyCodeLine{73       write(c-\/8);}
-\DoxyCodeLine{74     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(c==1)\{\textcolor{comment}{//defining a non-\/newline space}}
-\DoxyCodeLine{75       LiquidCrystal\_I2C::print(\textcolor{stringliteral}{" "});}
-\DoxyCodeLine{76     \}}
-\DoxyCodeLine{77     \textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{78       LiquidCrystal\_I2C::print(c);}
-\DoxyCodeLine{79     \}}
-\DoxyCodeLine{80   \}}
-\DoxyCodeLine{81 \}}
+\DoxyCodeLine{00067 \{}
+\DoxyCodeLine{00068   \textcolor{comment}{//custom print with ability to use custom characters, just inserst the number of the custom character in the string (\(\backslash\)1n for the nth character)}}
+\DoxyCodeLine{00069   \textcolor{comment}{//and it will be converted to the custom character (\(\backslash\)1n so that \(\backslash\)0 doesn't appear in the string, because it means end of string)}}
+\DoxyCodeLine{00070   \textcolor{keywordflow}{for}(\textcolor{keywordtype}{char} c:text)\{}
+\DoxyCodeLine{00071     \textcolor{keywordflow}{if}(c>=8\&\&c<=15)\{\textcolor{comment}{//if it is a custom character}}
+\DoxyCodeLine{00072       write(c-\/8);}
+\DoxyCodeLine{00073     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(c==1)\{\textcolor{comment}{//defining a non-\/newline space}}
+\DoxyCodeLine{00074       LiquidCrystal\_I2C::print(\textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{00075     \}}
+\DoxyCodeLine{00076     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00077       LiquidCrystal\_I2C::print(c);}
+\DoxyCodeLine{00078     \}}
+\DoxyCodeLine{00079   \}}
+\DoxyCodeLine{00080 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}\label{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}} 
 \index{AnimatableLcd@{AnimatableLcd}!printCentered@{printCentered}}
 \index{printCentered@{printCentered}!AnimatableLcd@{AnimatableLcd}}
@@ -131,27 +143,41 @@ Gibt einen String zentriert auf dem Lcd-\/\+Display aus.
 \begin{DoxyParams}{Parameter}
 {\em text} & \\
 \hline
-{\em length} & Länge des Textes, wird neu berechnet wenn nicht angegeben \\
+{\em length} & Länge des Textes, wird neu berechnet wenn Nichts angegeben \\
 \hline
 {\em row} & Zeile in der der Text ausgegeben werden soll \\
 \hline
 \end{DoxyParams}
 
 
-Definiert in Zeile 89 der Datei anim\+Lcd.\+ino.
+Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00088}{88}} der Datei \mbox{\hyperlink{animLcd_8ino_source}{anim\+Lcd.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{90 \{ }
-\DoxyCodeLine{91   \textcolor{keywordflow}{if} (length == -\/1) \{}
-\DoxyCodeLine{92     length = text.length();}
-\DoxyCodeLine{93   \}}
-\DoxyCodeLine{94   \textcolor{keywordtype}{int} offset = (16 -\/ length) / 2; \textcolor{comment}{//rundet immer ab, da int}}
-\DoxyCodeLine{95   setCursor(offset, row);}
-\DoxyCodeLine{96   \mbox{\hyperlink{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}{print}}(text);}
-\DoxyCodeLine{97 \}}
+\DoxyCodeLine{00089 \{ }
+\DoxyCodeLine{00090   \textcolor{keywordflow}{if} (length == -\/1) \{}
+\DoxyCodeLine{00091     length = text.length();}
+\DoxyCodeLine{00092   \}}
+\DoxyCodeLine{00093   \textcolor{keywordtype}{int} offset = (16 -\/ length) / 2; \textcolor{comment}{//rundet immer ab, da int}}
+\DoxyCodeLine{00094   setCursor(offset, row);}
+\DoxyCodeLine{00095   \mbox{\hyperlink{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}{print}}(text);}
+\DoxyCodeLine{00096 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_cgraph}
+\end{center}
+\end{figure}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}\label{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e}} 
 \index{AnimatableLcd@{AnimatableLcd}!printPretty@{printPretty}}
 \index{printPretty@{printPretty}!AnimatableLcd@{AnimatableLcd}}
@@ -169,37 +195,51 @@ gibt den Text \char`\"{}schön\char`\"{} aus, das heißt zentriert und mit autom
 \end{DoxyParams}
 
 
-Definiert in Zeile 103 der Datei anim\+Lcd.\+ino.
+Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00102}{102}} der Datei \mbox{\hyperlink{animLcd_8ino_source}{anim\+Lcd.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{104 \{ }
-\DoxyCodeLine{105   clear();}
-\DoxyCodeLine{106   \textcolor{keywordtype}{int} length = text.length();}
-\DoxyCodeLine{107   \textcolor{keywordflow}{if} (length <= 16) \{}
-\DoxyCodeLine{108     \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{printCentered}}(text, length);}
-\DoxyCodeLine{109     \textcolor{keywordflow}{return} 0;}
-\DoxyCodeLine{110   \}}
-\DoxyCodeLine{111   \textcolor{keywordtype}{int} spacePos = -\/1;}
-\DoxyCodeLine{112   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 15; i >= 0; i-\/-\/) \{}
-\DoxyCodeLine{113     \textcolor{keywordflow}{if} (text[i] == \textcolor{charliteral}{' '}) \{}
-\DoxyCodeLine{114       spacePos = i;}
-\DoxyCodeLine{115       \textcolor{keywordflow}{break};}
-\DoxyCodeLine{116     \}}
-\DoxyCodeLine{117   \}}
-\DoxyCodeLine{118   String row1, row2;}
-\DoxyCodeLine{119   \textcolor{keywordflow}{if} (spacePos != -\/1) \{}
-\DoxyCodeLine{120     row1 = text.substring(0, spacePos);}
-\DoxyCodeLine{121     row2 = text.substring(spacePos + 1);}
-\DoxyCodeLine{122   \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{123     row1 = text.substring(0, 16);}
-\DoxyCodeLine{124     row2 = text.substring(16);}
-\DoxyCodeLine{125   \}}
-\DoxyCodeLine{126   \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{printCentered}}(row1, row1.length(), 0);}
-\DoxyCodeLine{127   \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{printCentered}}(row2, row2.length(), 1);}
-\DoxyCodeLine{128 \}}
+\DoxyCodeLine{00103 \{ }
+\DoxyCodeLine{00104   clear();}
+\DoxyCodeLine{00105   \textcolor{keywordtype}{int} length = text.length();}
+\DoxyCodeLine{00106   \textcolor{keywordflow}{if} (length <= 16) \{}
+\DoxyCodeLine{00107     \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{printCentered}}(text, length);}
+\DoxyCodeLine{00108     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00109   \}}
+\DoxyCodeLine{00110   \textcolor{keywordtype}{int} spacePos = -\/1;}
+\DoxyCodeLine{00111   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 15; i >= 0; i-\/-\/) \{}
+\DoxyCodeLine{00112     \textcolor{keywordflow}{if} (text[i] == \textcolor{charliteral}{' '}) \{}
+\DoxyCodeLine{00113       spacePos = i;}
+\DoxyCodeLine{00114       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00115     \}}
+\DoxyCodeLine{00116   \}}
+\DoxyCodeLine{00117   String row1, row2;}
+\DoxyCodeLine{00118   \textcolor{keywordflow}{if} (spacePos != -\/1) \{}
+\DoxyCodeLine{00119     row1 = text.substring(0, spacePos);}
+\DoxyCodeLine{00120     row2 = text.substring(spacePos + 1);}
+\DoxyCodeLine{00121   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00122     row1 = text.substring(0, 16);}
+\DoxyCodeLine{00123     row2 = text.substring(16);}
+\DoxyCodeLine{00124   \}}
+\DoxyCodeLine{00125   \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{printCentered}}(row1, row1.length(), 0);}
+\DoxyCodeLine{00126   \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{printCentered}}(row2, row2.length(), 1);}
+\DoxyCodeLine{00127 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_cgraph}
+\end{center}
+\end{figure}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108}\label{classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108}} 
 \index{AnimatableLcd@{AnimatableLcd}!setAnimation@{setAnimation}}
 \index{setAnimation@{setAnimation}!AnimatableLcd@{AnimatableLcd}}
@@ -208,7 +248,7 @@ Definiert in Zeile 103 der Datei anim\+Lcd.\+ino.
 
 
 
-setzt die aktuelle animation 
+Setzt die aktuelle Animation. 
 
 
 \begin{DoxyParams}{Parameter}
@@ -217,16 +257,23 @@ setzt die aktuelle animation
 \end{DoxyParams}
 
 
-Definiert in Zeile 57 der Datei anim\+Lcd.\+ino.
+Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00056}{56}} der Datei \mbox{\hyperlink{animLcd_8ino_source}{anim\+Lcd.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{58 \{}
-\DoxyCodeLine{59   \mbox{\hyperlink{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}{doAnimation}} = \textcolor{keyword}{true};}
-\DoxyCodeLine{60   \mbox{\hyperlink{classAnimatableLcd_a2ee9324b53d0646c9a28faf7db6e6997}{animString}} = \_animString;}
-\DoxyCodeLine{61 \}}
+\DoxyCodeLine{00057 \{}
+\DoxyCodeLine{00058   \mbox{\hyperlink{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}{doAnimation}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00059   \mbox{\hyperlink{classAnimatableLcd_a2ee9324b53d0646c9a28faf7db6e6997}{animString}} = \_animString;}
+\DoxyCodeLine{00060 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99}\label{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99}} 
 \index{AnimatableLcd@{AnimatableLcd}!update@{update}}
 \index{update@{update}!AnimatableLcd@{AnimatableLcd}}
@@ -235,22 +282,36 @@ Definiert in Zeile 57 der Datei anim\+Lcd.\+ino.
 
 
 
-wird immer wieder von loop aufgerufen um die Animationen zu updaten 
+wird immer wieder von \mbox{\hyperlink{sketch_8ino_afe461d27b9c48d5921c00d521181f12f}{loop()}} aufgerufen um die Animationen zu updaten 
 
 
 
-Definiert in Zeile 133 der Datei anim\+Lcd.\+ino.
+Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00132}{132}} der Datei \mbox{\hyperlink{animLcd_8ino_source}{anim\+Lcd.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{134 \{}
-\DoxyCodeLine{135   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}{doAnimation}}) \{}
-\DoxyCodeLine{136     \textcolor{keywordflow}{return};}
-\DoxyCodeLine{137   \}}
-\DoxyCodeLine{138   \mbox{\hyperlink{classAnimatableLcd_a2ee9324b53d0646c9a28faf7db6e6997}{animString}}-\/>\mbox{\hyperlink{structLcdString_a1f014299eeb7654a391f1fbfc898719b}{update}}();}
-\DoxyCodeLine{139 \}}
+\DoxyCodeLine{00133 \{}
+\DoxyCodeLine{00134   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}{doAnimation}}) \{}
+\DoxyCodeLine{00135     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00136   \}}
+\DoxyCodeLine{00137   \mbox{\hyperlink{classAnimatableLcd_a2ee9324b53d0646c9a28faf7db6e6997}{animString}}-\/>\mbox{\hyperlink{structLcdString_a1f014299eeb7654a391f1fbfc898719b}{update}}();}
+\DoxyCodeLine{00138 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_cgraph}
+\end{center}
+\end{figure}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Dokumentation der Datenelemente}
@@ -262,11 +323,11 @@ Definiert in Zeile 133 der Datei anim\+Lcd.\+ino.
 
 
 
-die zurzeit laufende Animation 
+Die zurzeit laufende Animation. 
 
 
 
-Definiert in Zeile 23 der Datei anim\+Lcd.\+h.
+Definiert in Zeile \mbox{\hyperlink{animLcd_8h_source_l00022}{22}} der Datei \mbox{\hyperlink{animLcd_8h_source}{anim\+Lcd.\+h}}.
 
 \mbox{\Hypertarget{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}\label{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}} 
 \index{AnimatableLcd@{AnimatableLcd}!doAnimation@{doAnimation}}
@@ -276,11 +337,11 @@ Definiert in Zeile 23 der Datei anim\+Lcd.\+h.
 
 
 
-ob der Monitor animiert werden soll 
+Gibt an, ob der Monitor animiert werden soll. 
 
 
 
-Definiert in Zeile 29 der Datei anim\+Lcd.\+h.
+Definiert in Zeile \mbox{\hyperlink{animLcd_8h_source_l00028}{28}} der Datei \mbox{\hyperlink{animLcd_8h_source}{anim\+Lcd.\+h}}.
 
 
 

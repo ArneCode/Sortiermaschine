@@ -22,25 +22,25 @@ Zusammengehörigkeiten von Custom\+Servo\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}} (short new\+Angle)
-\begin{DoxyCompactList}\small\item\em bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCustomServo_a73b3e39ae0c5ac49cde683711517283a}{write}} (short new\+Angle, \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} duration)
-\begin{DoxyCompactList}\small\item\em bewegt den Servo in {\bfseries{duration}} ms \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Bewegt den Servo in duration Millisekunden an den angegebenen Winkel. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCustomServo_a95761db4177f965e756bdf725cb10ada}{write\+Direct}} (short angle)
-\item 
+\begin{DoxyCompactList}\small\item\em Steuert den Servo direkt an, enspricht dem normalen Servo\+::write. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCustomServo_a0750f5868c694b9f46638038b8536e0a}{set\+Speed}} (float new\+Speed)
-\item 
+\begin{DoxyCompactList}\small\item\em Setzt eine neue Geschwindigkeit des Servos. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCustomServo_a91245621ca3e5340361f061d65025635}{update\+Pos}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Aktualisiert die Position des Servomotors. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCustomServo_a2504ffc997018dad9f3811b18b16c672}{stop}} ()
-\begin{DoxyCompactList}\small\item\em stoppt den Servo \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Stoppt den Servo. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCustomServo_ad0f2d2d481d21c4d97f333efa744e0e8}{start}} ()
-\begin{DoxyCompactList}\small\item\em lässt den Servo weiterlaufen \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Lässt den Servo weiterlaufen. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classCustomServo_ac247ddd89cf27db323522746e5afa922}{is\+Done}} ()
 \begin{DoxyCompactList}\small\item\em Gibt an, ob der Servo angekommen ist. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Öffentliche Attribute}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}}
+bool \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}} =true
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Methoden}
 \begin{DoxyCompactItemize}
@@ -51,11 +51,11 @@ void \mbox{\hyperlink{classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2}{start\
 \begin{DoxyCompactItemize}
 \item 
 short \mbox{\hyperlink{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}{start\+Angle}}
-\begin{DoxyCompactList}\small\item\em der Winkel an dem sich der Servo bei Start der Animation befand \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Der Winkel an dem sich der Servo bei Start der Animation befand. \end{DoxyCompactList}\item 
 short \mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{target\+Angle}}
-\begin{DoxyCompactList}\small\item\em der Ziel Winkel \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Der Zielwinkel. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}{speed}}
-\begin{DoxyCompactList}\small\item\em die Geschwindigkeit des Servos in Grad pro Millisekunde \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Die Geschwindigkeit des Servos in Grad pro Millisekunde. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} \mbox{\hyperlink{classCustomServo_a921bf31525e695718b9e17381bf4f2bb}{start\+Time}}
 \begin{DoxyCompactList}\small\item\em Zeitpunkt an dem der Servo anfing sich zu bewegen (in Millisekunden) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -63,9 +63,7 @@ float \mbox{\hyperlink{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}{speed
 \doxysubsection{Ausführliche Beschreibung}
 Eine Eigene Servo-\/\+Klasse, die es ermöglicht den Servo mit verschiedenen Geschwindigkeiten zu bewegen. 
 
-
-
-Definiert in Zeile 13 der Datei custom\+Servo.\+h.
+Definiert in Zeile \mbox{\hyperlink{customServo_8h_source_l00013}{13}} der Datei \mbox{\hyperlink{customServo_8h_source}{custom\+Servo.\+h}}.
 
 
 
@@ -87,15 +85,22 @@ false
 \end{DoxyReturn}
 
 
-Definiert in Zeile 71 der Datei custom\+Servo.\+ino.
+Definiert in Zeile \mbox{\hyperlink{customServo_8ino_source_l00091}{91}} der Datei \mbox{\hyperlink{customServo_8ino_source}{custom\+Servo.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{71                          \{}
-\DoxyCodeLine{72   \textcolor{keywordflow}{return} read() == \mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}};}
-\DoxyCodeLine{73 \}}
+\DoxyCodeLine{00092 \{}
+\DoxyCodeLine{00093   \textcolor{keywordflow}{return} read() == \mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}};}
+\DoxyCodeLine{00094 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCustomServo_ac247ddd89cf27db323522746e5afa922_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classCustomServo_a0750f5868c694b9f46638038b8536e0a}\label{classCustomServo_a0750f5868c694b9f46638038b8536e0a}} 
 \index{CustomServo@{CustomServo}!setSpeed@{setSpeed}}
 \index{setSpeed@{setSpeed}!CustomServo@{CustomServo}}
@@ -104,16 +109,39 @@ Definiert in Zeile 71 der Datei custom\+Servo.\+ino.
 
 
 
-Definiert in Zeile 38 der Datei custom\+Servo.\+ino.
+Setzt eine neue Geschwindigkeit des Servos. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em new\+Speed} & Die neue Geschwindigkeit in Grad pro Millisekunde \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{customServo_8ino_source_l00052}{52}} der Datei \mbox{\hyperlink{customServo_8ino_source}{custom\+Servo.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{38                                          \{}
-\DoxyCodeLine{39   \mbox{\hyperlink{classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2}{startMove}}();}
-\DoxyCodeLine{40   \mbox{\hyperlink{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}{speed}} = newSpeed;}
-\DoxyCodeLine{41 \}}
+\DoxyCodeLine{00053 \{}
+\DoxyCodeLine{00054   \mbox{\hyperlink{classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2}{startMove}}();}
+\DoxyCodeLine{00055   \mbox{\hyperlink{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}{speed}} = newSpeed;}
+\DoxyCodeLine{00056 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCustomServo_a0750f5868c694b9f46638038b8536e0a_cgraph}
+\end{center}
+\end{figure}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{classCustomServo_a0750f5868c694b9f46638038b8536e0a_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classCustomServo_ad0f2d2d481d21c4d97f333efa744e0e8}\label{classCustomServo_ad0f2d2d481d21c4d97f333efa744e0e8}} 
 \index{CustomServo@{CustomServo}!start@{start}}
 \index{start@{start}!CustomServo@{CustomServo}}
@@ -122,17 +150,17 @@ Definiert in Zeile 38 der Datei custom\+Servo.\+ino.
 
 
 
-lässt den Servo weiterlaufen 
+Lässt den Servo weiterlaufen. 
 
 
 
-Definiert in Zeile 85 der Datei custom\+Servo.\+ino.
+Definiert in Zeile \mbox{\hyperlink{customServo_8ino_source_l00107}{107}} der Datei \mbox{\hyperlink{customServo_8ino_source}{custom\+Servo.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{85                         \{}
-\DoxyCodeLine{86   \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}} = \textcolor{keyword}{false};}
-\DoxyCodeLine{87 \}}
+\DoxyCodeLine{00108 \{}
+\DoxyCodeLine{00109   \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{00110 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2}\label{classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2}} 
@@ -147,17 +175,24 @@ Setzt Variabeln, die benötigt werden um den Servo zu bewegen.
 
 
 
-Definiert in Zeile 11 der Datei custom\+Servo.\+ino.
+Definiert in Zeile \mbox{\hyperlink{customServo_8ino_source_l00011}{11}} der Datei \mbox{\hyperlink{customServo_8ino_source}{custom\+Servo.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{11                             \{}
-\DoxyCodeLine{12   \mbox{\hyperlink{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}{startAngle}} = read();}
-\DoxyCodeLine{13   \mbox{\hyperlink{classCustomServo_a921bf31525e695718b9e17381bf4f2bb}{startTime}} = millis();}
-\DoxyCodeLine{14   \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}} = \textcolor{keyword}{false};}
-\DoxyCodeLine{15 \}}
+\DoxyCodeLine{00012 \{}
+\DoxyCodeLine{00013   \mbox{\hyperlink{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}{startAngle}} = read();}
+\DoxyCodeLine{00014   \mbox{\hyperlink{classCustomServo_a921bf31525e695718b9e17381bf4f2bb}{startTime}} = millis();}
+\DoxyCodeLine{00015   \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{00016 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classCustomServo_a2504ffc997018dad9f3811b18b16c672}\label{classCustomServo_a2504ffc997018dad9f3811b18b16c672}} 
 \index{CustomServo@{CustomServo}!stop@{stop}}
 \index{stop@{stop}!CustomServo@{CustomServo}}
@@ -166,19 +201,26 @@ Definiert in Zeile 11 der Datei custom\+Servo.\+ino.
 
 
 
-stoppt den Servo 
+Stoppt den Servo. 
 
 
 
-Definiert in Zeile 78 der Datei custom\+Servo.\+ino.
+Definiert in Zeile \mbox{\hyperlink{customServo_8ino_source_l00099}{99}} der Datei \mbox{\hyperlink{customServo_8ino_source}{custom\+Servo.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{78                        \{}
-\DoxyCodeLine{79   \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}} = \textcolor{keyword}{true};}
-\DoxyCodeLine{80 \}}
+\DoxyCodeLine{00100 \{}
+\DoxyCodeLine{00101   \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00102 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCustomServo_a2504ffc997018dad9f3811b18b16c672_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classCustomServo_a91245621ca3e5340361f061d65025635}\label{classCustomServo_a91245621ca3e5340361f061d65025635}} 
 \index{CustomServo@{CustomServo}!updatePos@{updatePos}}
 \index{updatePos@{updatePos}!CustomServo@{CustomServo}}
@@ -187,35 +229,46 @@ Definiert in Zeile 78 der Datei custom\+Servo.\+ino.
 
 
 
-Definiert in Zeile 42 der Datei custom\+Servo.\+ino.
+Aktualisiert die Position des Servomotors. 
+
+Wird von \mbox{\hyperlink{sketch_8ino_afe461d27b9c48d5921c00d521181f12f}{loop()}} aufgerufen 
+
+Definiert in Zeile \mbox{\hyperlink{customServo_8ino_source_l00061}{61}} der Datei \mbox{\hyperlink{customServo_8ino_source}{custom\+Servo.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{42                             \{}
-\DoxyCodeLine{43   \textcolor{keywordflow}{if} (\mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}}) \{}
-\DoxyCodeLine{44     \textcolor{keywordflow}{return};}
-\DoxyCodeLine{45   \}}
-\DoxyCodeLine{46   \textcolor{keywordtype}{long} timePassed = millis() -\/ \mbox{\hyperlink{classCustomServo_a921bf31525e695718b9e17381bf4f2bb}{startTime}};}
-\DoxyCodeLine{47   \textcolor{keywordtype}{short} newAngle;}
-\DoxyCodeLine{48   \textcolor{keywordflow}{if} (\mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}} > \mbox{\hyperlink{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}{startAngle}}) \{}
-\DoxyCodeLine{49     newAngle = \mbox{\hyperlink{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}{startAngle}} + timePassed * \mbox{\hyperlink{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}{speed}};}
-\DoxyCodeLine{50     \textcolor{keywordflow}{if} (newAngle >= \mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}}) \{}
-\DoxyCodeLine{51       Servo::write(\mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}});}
-\DoxyCodeLine{52       \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}} = \textcolor{keyword}{true};}
-\DoxyCodeLine{53       \textcolor{keywordflow}{return};}
-\DoxyCodeLine{54     \}}
-\DoxyCodeLine{55   \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{56     newAngle = \mbox{\hyperlink{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}{startAngle}} -\/ timePassed * \mbox{\hyperlink{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}{speed}};}
-\DoxyCodeLine{57     \textcolor{keywordflow}{if} (newAngle <= \mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}}) \{}
-\DoxyCodeLine{58       Servo::write(\mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}});}
-\DoxyCodeLine{59       \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}} = \textcolor{keyword}{true};}
-\DoxyCodeLine{60       \textcolor{keywordflow}{return};}
-\DoxyCodeLine{61     \}}
-\DoxyCodeLine{62   \}}
-\DoxyCodeLine{63   Servo::write(newAngle);}
-\DoxyCodeLine{64 \}}
+\DoxyCodeLine{00062 \{}
+\DoxyCodeLine{00063   \textcolor{keywordflow}{if} (\mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}}) \{}
+\DoxyCodeLine{00064     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00065   \}}
+\DoxyCodeLine{00066   \textcolor{keywordtype}{long} timePassed = millis() -\/ \mbox{\hyperlink{classCustomServo_a921bf31525e695718b9e17381bf4f2bb}{startTime}};}
+\DoxyCodeLine{00067   \textcolor{keywordtype}{short} newAngle;}
+\DoxyCodeLine{00068   \textcolor{keywordflow}{if} (\mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}} > \mbox{\hyperlink{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}{startAngle}}) \{}
+\DoxyCodeLine{00069     newAngle = \mbox{\hyperlink{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}{startAngle}} + timePassed * \mbox{\hyperlink{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}{speed}};}
+\DoxyCodeLine{00070     \textcolor{keywordflow}{if} (newAngle >= \mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}}) \{}
+\DoxyCodeLine{00071       Servo::write(\mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}});}
+\DoxyCodeLine{00072       \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00073       \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00074     \}}
+\DoxyCodeLine{00075   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00076     newAngle = \mbox{\hyperlink{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}{startAngle}} -\/ timePassed * \mbox{\hyperlink{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}{speed}};}
+\DoxyCodeLine{00077     \textcolor{keywordflow}{if} (newAngle <= \mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}}) \{}
+\DoxyCodeLine{00078       Servo::write(\mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}});}
+\DoxyCodeLine{00079       \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00080       \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00081     \}}
+\DoxyCodeLine{00082   \}}
+\DoxyCodeLine{00083   Servo::write(newAngle);}
+\DoxyCodeLine{00084 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classCustomServo_a91245621ca3e5340361f061d65025635_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}\label{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}} 
 \index{CustomServo@{CustomServo}!write@{write}}
 \index{write@{write}!CustomServo@{CustomServo}}
@@ -224,7 +277,7 @@ Definiert in Zeile 42 der Datei custom\+Servo.\+ino.
 
 
 
-bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit 
+Bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit. 
 
 
 \begin{DoxyParams}{Parameter}
@@ -233,16 +286,30 @@ bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit
 \end{DoxyParams}
 
 
-Definiert in Zeile 21 der Datei custom\+Servo.\+ino.
+Definiert in Zeile \mbox{\hyperlink{customServo_8ino_source_l00022}{22}} der Datei \mbox{\hyperlink{customServo_8ino_source}{custom\+Servo.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{21                                       \{}
-\DoxyCodeLine{22   \mbox{\hyperlink{classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2}{startMove}}();}
-\DoxyCodeLine{23   \mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}} = newAngle;}
-\DoxyCodeLine{24 \}}
+\DoxyCodeLine{00023 \{}
+\DoxyCodeLine{00024   \mbox{\hyperlink{classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2}{startMove}}();}
+\DoxyCodeLine{00025   \mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}} = newAngle;}
+\DoxyCodeLine{00026 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94_cgraph}
+\end{center}
+\end{figure}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classCustomServo_a73b3e39ae0c5ac49cde683711517283a}\label{classCustomServo_a73b3e39ae0c5ac49cde683711517283a}} 
 \index{CustomServo@{CustomServo}!write@{write}}
 \index{write@{write}!CustomServo@{CustomServo}}
@@ -251,7 +318,7 @@ Definiert in Zeile 21 der Datei custom\+Servo.\+ino.
 
 
 
-bewegt den Servo in {\bfseries{duration}} ms 
+Bewegt den Servo in duration Millisekunden an den angegebenen Winkel. 
 
 
 \begin{DoxyParams}{Parameter}
@@ -262,16 +329,23 @@ bewegt den Servo in {\bfseries{duration}} ms
 \end{DoxyParams}
 
 
-Definiert in Zeile 31 der Datei custom\+Servo.\+ino.
+Definiert in Zeile \mbox{\hyperlink{customServo_8ino_source_l00033}{33}} der Datei \mbox{\hyperlink{customServo_8ino_source}{custom\+Servo.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{31                                                        \{}
-\DoxyCodeLine{32   \mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}}(newAngle);}
-\DoxyCodeLine{33   \mbox{\hyperlink{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}{speed}} = (float)(\mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}} -\/ \mbox{\hyperlink{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}{startAngle}}) / (float)duration;}
-\DoxyCodeLine{34 \}}
+\DoxyCodeLine{00034 \{}
+\DoxyCodeLine{00035   \mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}}(newAngle);}
+\DoxyCodeLine{00036   \mbox{\hyperlink{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}{speed}} = (float)(\mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{targetAngle}} -\/ \mbox{\hyperlink{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}{startAngle}}) / (float)duration;}
+\DoxyCodeLine{00037 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCustomServo_a73b3e39ae0c5ac49cde683711517283a_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{classCustomServo_a95761db4177f965e756bdf725cb10ada}\label{classCustomServo_a95761db4177f965e756bdf725cb10ada}} 
 \index{CustomServo@{CustomServo}!writeDirect@{writeDirect}}
 \index{writeDirect@{writeDirect}!CustomServo@{CustomServo}}
@@ -280,15 +354,31 @@ Definiert in Zeile 31 der Datei custom\+Servo.\+ino.
 
 
 
-Definiert in Zeile 35 der Datei custom\+Servo.\+ino.
+Steuert den Servo direkt an, enspricht dem normalen Servo\+::write. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em angle} & \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile \mbox{\hyperlink{customServo_8ino_source_l00043}{43}} der Datei \mbox{\hyperlink{customServo_8ino_source}{custom\+Servo.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{35                                         \{}
-\DoxyCodeLine{36   Servo::write(angle);}
-\DoxyCodeLine{37 \}}
+\DoxyCodeLine{00044 \{}
+\DoxyCodeLine{00045   Servo::write(angle);}
+\DoxyCodeLine{00046 \}}
 
 \end{DoxyCode}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classCustomServo_a95761db4177f965e756bdf725cb10ada_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Dokumentation der Datenelemente}
@@ -296,11 +386,11 @@ Definiert in Zeile 35 der Datei custom\+Servo.\+ino.
 \index{CustomServo@{CustomServo}!done@{done}}
 \index{done@{done}!CustomServo@{CustomServo}}
 \doxysubsubsection{\texorpdfstring{done}{done}}
-{\footnotesize\ttfamily bool Custom\+Servo\+::done}
+{\footnotesize\ttfamily bool Custom\+Servo\+::done =true}
 
 
 
-Definiert in Zeile 36 der Datei custom\+Servo.\+h.
+Definiert in Zeile \mbox{\hyperlink{customServo_8h_source_l00036}{36}} der Datei \mbox{\hyperlink{customServo_8h_source}{custom\+Servo.\+h}}.
 
 \mbox{\Hypertarget{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}\label{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}} 
 \index{CustomServo@{CustomServo}!speed@{speed}}
@@ -310,11 +400,11 @@ Definiert in Zeile 36 der Datei custom\+Servo.\+h.
 
 
 
-die Geschwindigkeit des Servos in Grad pro Millisekunde 
+Die Geschwindigkeit des Servos in Grad pro Millisekunde. 
 
 
 
-Definiert in Zeile 28 der Datei custom\+Servo.\+h.
+Definiert in Zeile \mbox{\hyperlink{customServo_8h_source_l00028}{28}} der Datei \mbox{\hyperlink{customServo_8h_source}{custom\+Servo.\+h}}.
 
 \mbox{\Hypertarget{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}\label{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}} 
 \index{CustomServo@{CustomServo}!startAngle@{startAngle}}
@@ -324,11 +414,11 @@ Definiert in Zeile 28 der Datei custom\+Servo.\+h.
 
 
 
-der Winkel an dem sich der Servo bei Start der Animation befand 
+Der Winkel an dem sich der Servo bei Start der Animation befand. 
 
 
 
-Definiert in Zeile 18 der Datei custom\+Servo.\+h.
+Definiert in Zeile \mbox{\hyperlink{customServo_8h_source_l00018}{18}} der Datei \mbox{\hyperlink{customServo_8h_source}{custom\+Servo.\+h}}.
 
 \mbox{\Hypertarget{classCustomServo_a921bf31525e695718b9e17381bf4f2bb}\label{classCustomServo_a921bf31525e695718b9e17381bf4f2bb}} 
 \index{CustomServo@{CustomServo}!startTime@{startTime}}
@@ -342,7 +432,7 @@ Zeitpunkt an dem der Servo anfing sich zu bewegen (in Millisekunden)
 
 
 
-Definiert in Zeile 33 der Datei custom\+Servo.\+h.
+Definiert in Zeile \mbox{\hyperlink{customServo_8h_source_l00033}{33}} der Datei \mbox{\hyperlink{customServo_8h_source}{custom\+Servo.\+h}}.
 
 \mbox{\Hypertarget{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}\label{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}} 
 \index{CustomServo@{CustomServo}!targetAngle@{targetAngle}}
@@ -352,11 +442,11 @@ Definiert in Zeile 33 der Datei custom\+Servo.\+h.
 
 
 
-der Ziel Winkel 
+Der Zielwinkel. 
 
 
 
-Definiert in Zeile 23 der Datei custom\+Servo.\+h.
+Definiert in Zeile \mbox{\hyperlink{customServo_8h_source_l00023}{23}} der Datei \mbox{\hyperlink{customServo_8h_source}{custom\+Servo.\+h}}.
 
 
 
