@@ -1,364 +1,364 @@
 \begin{theindex}
 
   \item {\_isDone}
-    \subitem {FuncCall}, \hyperpage{38}
+    \subitem {FuncCall}, \hyperpage{31}
   \item {$\sim$AnimString}
-    \subitem {AnimString}, \hyperpage{16}
+    \subitem {AnimString}, \hyperpage{11}
   \item {$\sim$Callable}
-    \subitem {Callable}, \hyperpage{22}
+    \subitem {Callable}, \hyperpage{15}
   \item {$\sim$FuncCall}
-    \subitem {FuncCall}, \hyperpage{37}
+    \subitem {FuncCall}, \hyperpage{30}
   \item {$\sim$LcdString}
-    \subitem {LcdString}, \hyperpage{45}
+    \subitem {LcdString}, \hyperpage{37}
 
   \indexspace
 
   \item {ANGLE\_CENTER}
-    \subitem {sketch.ino}, \hyperpage{75}
+    \subitem {sketch.ino}, \hyperpage{64}
   \item {ANGLE\_LEFT\_HOLE}
-    \subitem {sketch.ino}, \hyperpage{75}
+    \subitem {sketch.ino}, \hyperpage{64}
   \item {ANGLE\_MIN}
-    \subitem {sketch.ino}, \hyperpage{75}
+    \subitem {sketch.ino}, \hyperpage{64}
   \item {ANGLE\_RIGHT\_HOLE}
-    \subitem {sketch.ino}, \hyperpage{75}
-  \item {AnimatableLcd}, \hyperpage{9}
-    \subitem {animString}, \hyperpage{15}
-    \subitem {doAnimation}, \hyperpage{15}
-    \subitem {init}, \hyperpage{10}
-    \subitem {print}, \hyperpage{10}
-    \subitem {printCentered}, \hyperpage{11}
-    \subitem {printPretty}, \hyperpage{12}
-    \subitem {setAnimation}, \hyperpage{13}
-    \subitem {update}, \hyperpage{14}
-  \item {animLcd.h}, \hyperpage{49}
-    \subitem {LOADING\_BAR\_OFFSET}, \hyperpage{50}
-  \item {animLcd.ino}, \hyperpage{51}
-    \subitem {loading\_empty\_c}, \hyperpage{52}
-    \subitem {loading\_full\_c}, \hyperpage{52}
+    \subitem {sketch.ino}, \hyperpage{64}
+  \item {AnimatableLcd}, \hyperpage{3}
+    \subitem {animString}, \hyperpage{9}
+    \subitem {doAnimation}, \hyperpage{9}
+    \subitem {init}, \hyperpage{5}
+    \subitem {print}, \hyperpage{5}
+    \subitem {printCentered}, \hyperpage{6}
+    \subitem {printPretty}, \hyperpage{7}
+    \subitem {setAnimation}, \hyperpage{8}
+    \subitem {update}, \hyperpage{8}
+  \item {animLcd.h}, \hyperpage{39}
+    \subitem {LOADING\_BAR\_OFFSET}, \hyperpage{40}
+  \item {animLcd.ino}, \hyperpage{40}
+    \subitem {loading\_empty\_c}, \hyperpage{41}
+    \subitem {loading\_full\_c}, \hyperpage{41}
   \item {animStart}
-    \subitem {AnimString}, \hyperpage{18}
-  \item {AnimString}, \hyperpage{15}
-    \subitem {$\sim$AnimString}, \hyperpage{16}
-    \subitem {animStart}, \hyperpage{18}
-    \subitem {init}, \hyperpage{16}
-    \subitem {lastRefresh}, \hyperpage{18}
-    \subitem {LcdString}, \hyperpage{17}
-    \subitem {run}, \hyperpage{17}
-    \subitem {stepDuration}, \hyperpage{18}
+    \subitem {AnimString}, \hyperpage{12}
+  \item {AnimString}, \hyperpage{10}
+    \subitem {$\sim$AnimString}, \hyperpage{11}
+    \subitem {animStart}, \hyperpage{12}
+    \subitem {init}, \hyperpage{11}
+    \subitem {lastRefresh}, \hyperpage{12}
+    \subitem {LcdString}, \hyperpage{11}
+    \subitem {run}, \hyperpage{11}
+    \subitem {stepDuration}, \hyperpage{12}
   \item {animString}
-    \subitem {AnimatableLcd}, \hyperpage{15}
-  \item {animString.h}, \hyperpage{54}
-  \item {animString.ino}, \hyperpage{56}
+    \subitem {AnimatableLcd}, \hyperpage{9}
+  \item {animString.h}, \hyperpage{43}
+  \item {animString.ino}, \hyperpage{45}
 
   \indexspace
 
   \item {BLACK}
-    \subitem {sketch.ino}, \hyperpage{68}
-  \item {ButtonHandler}, \hyperpage{19}
-    \subitem {ButtonHandler}, \hyperpage{19}
-    \subitem {isPressed}, \hyperpage{20}
-    \subitem {onclick}, \hyperpage{21}
-    \subitem {pin}, \hyperpage{21}
-    \subitem {update}, \hyperpage{20}
+    \subitem {sketch.ino}, \hyperpage{57}
+  \item {ButtonHandler}, \hyperpage{13}
+    \subitem {ButtonHandler}, \hyperpage{13}
+    \subitem {isPressed}, \hyperpage{14}
+    \subitem {onclick}, \hyperpage{14}
+    \subitem {pin}, \hyperpage{15}
+    \subitem {update}, \hyperpage{14}
 
   \indexspace
 
   \item {call}
-    \subitem {FuncCall}, \hyperpage{38}
-  \item {Callable}, \hyperpage{21}
-    \subitem {$\sim$Callable}, \hyperpage{22}
-    \subitem {isDone}, \hyperpage{22}
-    \subitem {run}, \hyperpage{22}
-  \item {CallHandler}, \hyperpage{23}
-    \subitem {callPtrs}, \hyperpage{26}
-    \subitem {callsSet}, \hyperpage{26}
-    \subitem {currCallPtr}, \hyperpage{27}
-    \subitem {deleteCalls}, \hyperpage{24}
-    \subitem {lastCallPtr}, \hyperpage{27}
-    \subitem {lastCallT}, \hyperpage{27}
-    \subitem {running}, \hyperpage{27}
-    \subitem {setCalls}, \hyperpage{24}
-    \subitem {update}, \hyperpage{25}
+    \subitem {FuncCall}, \hyperpage{31}
+  \item {Callable}, \hyperpage{15}
+    \subitem {$\sim$Callable}, \hyperpage{15}
+    \subitem {isDone}, \hyperpage{15}
+    \subitem {run}, \hyperpage{16}
+  \item {CallHandler}, \hyperpage{16}
+    \subitem {callPtrs}, \hyperpage{20}
+    \subitem {callsSet}, \hyperpage{20}
+    \subitem {currCallPtr}, \hyperpage{20}
+    \subitem {deleteCalls}, \hyperpage{17}
+    \subitem {lastCallPtr}, \hyperpage{21}
+    \subitem {lastCallT}, \hyperpage{21}
+    \subitem {running}, \hyperpage{21}
+    \subitem {setCalls}, \hyperpage{18}
+    \subitem {update}, \hyperpage{19}
   \item {callHandler}
-    \subitem {sketch.ino}, \hyperpage{76}
-  \item {callHandler.h}, \hyperpage{58}
-  \item {callHandler.ino}, \hyperpage{59}
+    \subitem {sketch.ino}, \hyperpage{64}
+  \item {callHandler.h}, \hyperpage{47}
+  \item {callHandler.ino}, \hyperpage{49}
   \item {callPtrs}
-    \subitem {CallHandler}, \hyperpage{26}
+    \subitem {CallHandler}, \hyperpage{20}
   \item {callsSet}
-    \subitem {CallHandler}, \hyperpage{26}
+    \subitem {CallHandler}, \hyperpage{20}
   \item {callStart}
-    \subitem {LcdString}, \hyperpage{46}
+    \subitem {LcdString}, \hyperpage{38}
   \item {currCallPtr}
-    \subitem {CallHandler}, \hyperpage{27}
-  \item {CustomServo}, \hyperpage{28}
-    \subitem {done}, \hyperpage{34}
-    \subitem {isDone}, \hyperpage{29}
-    \subitem {setSpeed}, \hyperpage{30}
-    \subitem {speed}, \hyperpage{35}
-    \subitem {start}, \hyperpage{31}
-    \subitem {startAngle}, \hyperpage{35}
-    \subitem {startMove}, \hyperpage{31}
-    \subitem {startTime}, \hyperpage{35}
-    \subitem {stop}, \hyperpage{31}
-    \subitem {targetAngle}, \hyperpage{35}
-    \subitem {updatePos}, \hyperpage{32}
-    \subitem {write}, \hyperpage{32, 33}
-    \subitem {writeDirect}, \hyperpage{34}
-  \item {customServo.h}, \hyperpage{61}
-  \item {customServo.ino}, \hyperpage{62}
+    \subitem {CallHandler}, \hyperpage{20}
+  \item {CustomServo}, \hyperpage{21}
+    \subitem {done}, \hyperpage{27}
+    \subitem {isDone}, \hyperpage{22}
+    \subitem {setSpeed}, \hyperpage{23}
+    \subitem {speed}, \hyperpage{28}
+    \subitem {start}, \hyperpage{24}
+    \subitem {startAngle}, \hyperpage{28}
+    \subitem {startMove}, \hyperpage{24}
+    \subitem {startTime}, \hyperpage{28}
+    \subitem {stop}, \hyperpage{24}
+    \subitem {targetAngle}, \hyperpage{28}
+    \subitem {updatePos}, \hyperpage{25}
+    \subitem {write}, \hyperpage{25, 26}
+    \subitem {writeDirect}, \hyperpage{27}
+  \item {customServo.h}, \hyperpage{50}
+  \item {customServo.ino}, \hyperpage{51}
 
   \indexspace
 
   \item {deleteCalls}
-    \subitem {CallHandler}, \hyperpage{24}
+    \subitem {CallHandler}, \hyperpage{17}
   \item {doAnimation}
-    \subitem {AnimatableLcd}, \hyperpage{15}
+    \subitem {AnimatableLcd}, \hyperpage{9}
   \item {doFlicker}
-    \subitem {sketch.ino}, \hyperpage{76}
+    \subitem {sketch.ino}, \hyperpage{65}
   \item {done}
-    \subitem {CustomServo}, \hyperpage{34}
+    \subitem {CustomServo}, \hyperpage{27}
   \item {duration}
-    \subitem {LcdString}, \hyperpage{47}
+    \subitem {LcdString}, \hyperpage{38}
 
   \indexspace
 
   \item {Farbe}
-    \subitem {sketch.ino}, \hyperpage{68}
+    \subitem {sketch.ino}, \hyperpage{56}
   \item {func\_t}
-    \subitem {header.h}, \hyperpage{64}
-  \item {FuncCall}, \hyperpage{36}
-    \subitem {\_isDone}, \hyperpage{38}
-    \subitem {$\sim$FuncCall}, \hyperpage{37}
-    \subitem {call}, \hyperpage{38}
-    \subitem {FuncCall}, \hyperpage{36, 37}
-    \subitem {isDone}, \hyperpage{37}
-    \subitem {run}, \hyperpage{37}
+    \subitem {header.h}, \hyperpage{53}
+  \item {FuncCall}, \hyperpage{29}
+    \subitem {\_isDone}, \hyperpage{31}
+    \subitem {$\sim$FuncCall}, \hyperpage{30}
+    \subitem {call}, \hyperpage{31}
+    \subitem {FuncCall}, \hyperpage{29, 30}
+    \subitem {isDone}, \hyperpage{30}
+    \subitem {run}, \hyperpage{30}
 
   \indexspace
 
   \item {GEH\_ZURUECK}
-    \subitem {sketch.ino}, \hyperpage{67}
+    \subitem {sketch.ino}, \hyperpage{56}
 
   \indexspace
 
-  \item {header.h}, \hyperpage{64}
-    \subitem {func\_t}, \hyperpage{64}
-    \subitem {time\_t}, \hyperpage{65}
+  \item {header.h}, \hyperpage{53}
+    \subitem {func\_t}, \hyperpage{53}
+    \subitem {time\_t}, \hyperpage{54}
 
   \indexspace
 
-  \item {index.md}, \hyperpage{65}
+  \item {index.md}, \hyperpage{54}
   \item {init}
-    \subitem {AnimatableLcd}, \hyperpage{10}
-    \subitem {AnimString}, \hyperpage{16}
-    \subitem {LcdDotAnim}, \hyperpage{40}
-    \subitem {LcdLoadingAnim}, \hyperpage{42}
+    \subitem {AnimatableLcd}, \hyperpage{5}
+    \subitem {AnimString}, \hyperpage{11}
+    \subitem {LcdDotAnim}, \hyperpage{32}
+    \subitem {LcdLoadingAnim}, \hyperpage{34}
   \item {isDone}
-    \subitem {Callable}, \hyperpage{22}
-    \subitem {CustomServo}, \hyperpage{29}
-    \subitem {FuncCall}, \hyperpage{37}
-    \subitem {LcdString}, \hyperpage{45}
+    \subitem {Callable}, \hyperpage{15}
+    \subitem {CustomServo}, \hyperpage{22}
+    \subitem {FuncCall}, \hyperpage{30}
+    \subitem {LcdString}, \hyperpage{37}
   \item {isPressed}
-    \subitem {ButtonHandler}, \hyperpage{20}
+    \subitem {ButtonHandler}, \hyperpage{14}
 
   \indexspace
 
   \item {lastCallPtr}
-    \subitem {CallHandler}, \hyperpage{27}
+    \subitem {CallHandler}, \hyperpage{21}
   \item {lastCallT}
-    \subitem {CallHandler}, \hyperpage{27}
+    \subitem {CallHandler}, \hyperpage{21}
   \item {lastRefresh}
-    \subitem {AnimString}, \hyperpage{18}
+    \subitem {AnimString}, \hyperpage{12}
   \item {lcd}
-    \subitem {LcdString}, \hyperpage{47}
-    \subitem {sketch.ino}, \hyperpage{76}
-  \item {LcdDotAnim}, \hyperpage{39}
-    \subitem {init}, \hyperpage{40}
-    \subitem {LcdDotAnim}, \hyperpage{39}
-    \subitem {update}, \hyperpage{40}
-  \item {LcdLoadingAnim}, \hyperpage{41}
-    \subitem {init}, \hyperpage{42}
-    \subitem {update}, \hyperpage{42}
-  \item {LcdString}, \hyperpage{43}
-    \subitem {$\sim$LcdString}, \hyperpage{45}
-    \subitem {AnimString}, \hyperpage{17}
-    \subitem {callStart}, \hyperpage{46}
-    \subitem {duration}, \hyperpage{47}
-    \subitem {isDone}, \hyperpage{45}
-    \subitem {lcd}, \hyperpage{47}
-    \subitem {LcdString}, \hyperpage{45}
-    \subitem {run}, \hyperpage{45}
-    \subitem {text}, \hyperpage{47}
-    \subitem {update}, \hyperpage{46}
+    \subitem {LcdString}, \hyperpage{38}
+    \subitem {sketch.ino}, \hyperpage{65}
+  \item {LcdDotAnim}, \hyperpage{31}
+    \subitem {init}, \hyperpage{32}
+    \subitem {LcdDotAnim}, \hyperpage{32}
+    \subitem {update}, \hyperpage{32}
+  \item {LcdLoadingAnim}, \hyperpage{33}
+    \subitem {init}, \hyperpage{34}
+    \subitem {update}, \hyperpage{35}
+  \item {LcdString}, \hyperpage{36}
+    \subitem {$\sim$LcdString}, \hyperpage{37}
+    \subitem {AnimString}, \hyperpage{11}
+    \subitem {callStart}, \hyperpage{38}
+    \subitem {duration}, \hyperpage{38}
+    \subitem {isDone}, \hyperpage{37}
+    \subitem {lcd}, \hyperpage{38}
+    \subitem {LcdString}, \hyperpage{37}
+    \subitem {run}, \hyperpage{37}
+    \subitem {text}, \hyperpage{38}
+    \subitem {update}, \hyperpage{37}
   \item {legBallAb}
-    \subitem {sketch.ino}, \hyperpage{68}
+    \subitem {sketch.ino}, \hyperpage{57}
   \item {LOADING\_BAR\_OFFSET}
-    \subitem {animLcd.h}, \hyperpage{50}
+    \subitem {animLcd.h}, \hyperpage{40}
   \item {LOADING\_DURATION}
-    \subitem {sketch.ino}, \hyperpage{76}
+    \subitem {sketch.ino}, \hyperpage{65}
   \item {loading\_empty\_c}
-    \subitem {animLcd.ino}, \hyperpage{52}
+    \subitem {animLcd.ino}, \hyperpage{41}
   \item {loading\_full\_c}
-    \subitem {animLcd.ino}, \hyperpage{52}
+    \subitem {animLcd.ino}, \hyperpage{41}
   \item {loop}
-    \subitem {sketch.ino}, \hyperpage{69}
+    \subitem {sketch.ino}, \hyperpage{58}
 
   \indexspace
 
   \item {mesureColor}
-    \subitem {sketch.ino}, \hyperpage{71}
+    \subitem {sketch.ino}, \hyperpage{60}
 
   \indexspace
 
   \item {nBlack}
-    \subitem {sketch.ino}, \hyperpage{76}
+    \subitem {sketch.ino}, \hyperpage{65}
   \item {nOrange}
-    \subitem {sketch.ino}, \hyperpage{77}
+    \subitem {sketch.ino}, \hyperpage{65}
   \item {NOTHING}
-    \subitem {sketch.ino}, \hyperpage{68}
+    \subitem {sketch.ino}, \hyperpage{57}
   \item {nWhite}
-    \subitem {sketch.ino}, \hyperpage{77}
+    \subitem {sketch.ino}, \hyperpage{65}
 
   \indexspace
 
   \item {onclick}
-    \subitem {ButtonHandler}, \hyperpage{21}
+    \subitem {ButtonHandler}, \hyperpage{14}
   \item {ORANGE}
-    \subitem {sketch.ino}, \hyperpage{68}
+    \subitem {sketch.ino}, \hyperpage{57}
 
   \indexspace
 
   \item {pin}
-    \subitem {ButtonHandler}, \hyperpage{21}
+    \subitem {ButtonHandler}, \hyperpage{15}
   \item {PIN\_BLUE}
-    \subitem {sketch.ino}, \hyperpage{77}
+    \subitem {sketch.ino}, \hyperpage{66}
   \item {PIN\_GREEN}
-    \subitem {sketch.ino}, \hyperpage{77}
+    \subitem {sketch.ino}, \hyperpage{66}
   \item {PIN\_RED}
-    \subitem {sketch.ino}, \hyperpage{77}
+    \subitem {sketch.ino}, \hyperpage{66}
   \item {PIN\_SERVO}
-    \subitem {sketch.ino}, \hyperpage{78}
+    \subitem {sketch.ino}, \hyperpage{66}
   \item {PIN\_STOPBUTTON}
-    \subitem {sketch.ino}, \hyperpage{78}
+    \subitem {sketch.ino}, \hyperpage{66}
   \item {print}
-    \subitem {AnimatableLcd}, \hyperpage{10}
+    \subitem {AnimatableLcd}, \hyperpage{5}
   \item {printCentered}
-    \subitem {AnimatableLcd}, \hyperpage{11}
+    \subitem {AnimatableLcd}, \hyperpage{6}
   \item {printPretty}
-    \subitem {AnimatableLcd}, \hyperpage{12}
+    \subitem {AnimatableLcd}, \hyperpage{7}
 
   \indexspace
 
   \item {run}
-    \subitem {AnimString}, \hyperpage{17}
-    \subitem {Callable}, \hyperpage{22}
-    \subitem {FuncCall}, \hyperpage{37}
-    \subitem {LcdString}, \hyperpage{45}
+    \subitem {AnimString}, \hyperpage{11}
+    \subitem {Callable}, \hyperpage{16}
+    \subitem {FuncCall}, \hyperpage{30}
+    \subitem {LcdString}, \hyperpage{37}
   \item {running}
-    \subitem {CallHandler}, \hyperpage{27}
+    \subitem {CallHandler}, \hyperpage{21}
 
   \indexspace
 
   \item {servo}
-    \subitem {sketch.ino}, \hyperpage{78}
+    \subitem {sketch.ino}, \hyperpage{66}
   \item {SERVO\_SPEED\_DEFAULT}
-    \subitem {sketch.ino}, \hyperpage{78}
+    \subitem {sketch.ino}, \hyperpage{67}
   \item {SERVO\_SPEED\_FAST}
-    \subitem {sketch.ino}, \hyperpage{78}
+    \subitem {sketch.ino}, \hyperpage{67}
   \item {servoIsDone}
-    \subitem {sketch.ino}, \hyperpage{72}
+    \subitem {sketch.ino}, \hyperpage{61}
   \item {setAnimation}
-    \subitem {AnimatableLcd}, \hyperpage{13}
+    \subitem {AnimatableLcd}, \hyperpage{8}
   \item {setCalls}
-    \subitem {CallHandler}, \hyperpage{24}
+    \subitem {CallHandler}, \hyperpage{18}
   \item {setLedColor}
-    \subitem {sketch.ino}, \hyperpage{73}
+    \subitem {sketch.ino}, \hyperpage{61}
   \item {setSpeed}
-    \subitem {CustomServo}, \hyperpage{30}
+    \subitem {CustomServo}, \hyperpage{23}
   \item {setup}
-    \subitem {sketch.ino}, \hyperpage{73}
-  \item {sketch.ino}, \hyperpage{65}
-    \subitem {ANGLE\_CENTER}, \hyperpage{75}
-    \subitem {ANGLE\_LEFT\_HOLE}, \hyperpage{75}
-    \subitem {ANGLE\_MIN}, \hyperpage{75}
-    \subitem {ANGLE\_RIGHT\_HOLE}, \hyperpage{75}
-    \subitem {BLACK}, \hyperpage{68}
-    \subitem {callHandler}, \hyperpage{76}
-    \subitem {doFlicker}, \hyperpage{76}
-    \subitem {Farbe}, \hyperpage{68}
-    \subitem {GEH\_ZURUECK}, \hyperpage{67}
-    \subitem {lcd}, \hyperpage{76}
-    \subitem {legBallAb}, \hyperpage{68}
-    \subitem {LOADING\_DURATION}, \hyperpage{76}
-    \subitem {loop}, \hyperpage{69}
-    \subitem {mesureColor}, \hyperpage{71}
-    \subitem {nBlack}, \hyperpage{76}
-    \subitem {nOrange}, \hyperpage{77}
-    \subitem {NOTHING}, \hyperpage{68}
-    \subitem {nWhite}, \hyperpage{77}
-    \subitem {ORANGE}, \hyperpage{68}
-    \subitem {PIN\_BLUE}, \hyperpage{77}
-    \subitem {PIN\_GREEN}, \hyperpage{77}
-    \subitem {PIN\_RED}, \hyperpage{77}
-    \subitem {PIN\_SERVO}, \hyperpage{78}
-    \subitem {PIN\_STOPBUTTON}, \hyperpage{78}
-    \subitem {servo}, \hyperpage{78}
-    \subitem {SERVO\_SPEED\_DEFAULT}, \hyperpage{78}
-    \subitem {SERVO\_SPEED\_FAST}, \hyperpage{78}
-    \subitem {servoIsDone}, \hyperpage{72}
-    \subitem {setLedColor}, \hyperpage{73}
-    \subitem {setup}, \hyperpage{73}
-    \subitem {stopButton}, \hyperpage{79}
-    \subitem {stopButtonClicked}, \hyperpage{74}
-    \subitem {WHITE}, \hyperpage{68}
+    \subitem {sketch.ino}, \hyperpage{62}
+  \item {sketch.ino}, \hyperpage{54}
+    \subitem {ANGLE\_CENTER}, \hyperpage{64}
+    \subitem {ANGLE\_LEFT\_HOLE}, \hyperpage{64}
+    \subitem {ANGLE\_MIN}, \hyperpage{64}
+    \subitem {ANGLE\_RIGHT\_HOLE}, \hyperpage{64}
+    \subitem {BLACK}, \hyperpage{57}
+    \subitem {callHandler}, \hyperpage{64}
+    \subitem {doFlicker}, \hyperpage{65}
+    \subitem {Farbe}, \hyperpage{56}
+    \subitem {GEH\_ZURUECK}, \hyperpage{56}
+    \subitem {lcd}, \hyperpage{65}
+    \subitem {legBallAb}, \hyperpage{57}
+    \subitem {LOADING\_DURATION}, \hyperpage{65}
+    \subitem {loop}, \hyperpage{58}
+    \subitem {mesureColor}, \hyperpage{60}
+    \subitem {nBlack}, \hyperpage{65}
+    \subitem {nOrange}, \hyperpage{65}
+    \subitem {NOTHING}, \hyperpage{57}
+    \subitem {nWhite}, \hyperpage{65}
+    \subitem {ORANGE}, \hyperpage{57}
+    \subitem {PIN\_BLUE}, \hyperpage{66}
+    \subitem {PIN\_GREEN}, \hyperpage{66}
+    \subitem {PIN\_RED}, \hyperpage{66}
+    \subitem {PIN\_SERVO}, \hyperpage{66}
+    \subitem {PIN\_STOPBUTTON}, \hyperpage{66}
+    \subitem {servo}, \hyperpage{66}
+    \subitem {SERVO\_SPEED\_DEFAULT}, \hyperpage{67}
+    \subitem {SERVO\_SPEED\_FAST}, \hyperpage{67}
+    \subitem {servoIsDone}, \hyperpage{61}
+    \subitem {setLedColor}, \hyperpage{61}
+    \subitem {setup}, \hyperpage{62}
+    \subitem {stopButton}, \hyperpage{67}
+    \subitem {stopButtonClicked}, \hyperpage{63}
+    \subitem {WHITE}, \hyperpage{57}
   \item {speed}
-    \subitem {CustomServo}, \hyperpage{35}
+    \subitem {CustomServo}, \hyperpage{28}
   \item {start}
-    \subitem {CustomServo}, \hyperpage{31}
+    \subitem {CustomServo}, \hyperpage{24}
   \item {startAngle}
-    \subitem {CustomServo}, \hyperpage{35}
+    \subitem {CustomServo}, \hyperpage{28}
   \item {startMove}
-    \subitem {CustomServo}, \hyperpage{31}
+    \subitem {CustomServo}, \hyperpage{24}
   \item {startTime}
-    \subitem {CustomServo}, \hyperpage{35}
+    \subitem {CustomServo}, \hyperpage{28}
   \item {stepDuration}
-    \subitem {AnimString}, \hyperpage{18}
+    \subitem {AnimString}, \hyperpage{12}
   \item {stop}
-    \subitem {CustomServo}, \hyperpage{31}
+    \subitem {CustomServo}, \hyperpage{24}
   \item {stopButton}
-    \subitem {sketch.ino}, \hyperpage{79}
+    \subitem {sketch.ino}, \hyperpage{67}
   \item {stopButtonClicked}
-    \subitem {sketch.ino}, \hyperpage{74}
+    \subitem {sketch.ino}, \hyperpage{63}
 
   \indexspace
 
   \item {targetAngle}
-    \subitem {CustomServo}, \hyperpage{35}
+    \subitem {CustomServo}, \hyperpage{28}
   \item {text}
-    \subitem {LcdString}, \hyperpage{47}
+    \subitem {LcdString}, \hyperpage{38}
   \item {time\_t}
-    \subitem {header.h}, \hyperpage{65}
+    \subitem {header.h}, \hyperpage{54}
 
   \indexspace
 
   \item {update}
-    \subitem {AnimatableLcd}, \hyperpage{14}
-    \subitem {ButtonHandler}, \hyperpage{20}
-    \subitem {CallHandler}, \hyperpage{25}
-    \subitem {LcdDotAnim}, \hyperpage{40}
-    \subitem {LcdLoadingAnim}, \hyperpage{42}
-    \subitem {LcdString}, \hyperpage{46}
+    \subitem {AnimatableLcd}, \hyperpage{8}
+    \subitem {ButtonHandler}, \hyperpage{14}
+    \subitem {CallHandler}, \hyperpage{19}
+    \subitem {LcdDotAnim}, \hyperpage{32}
+    \subitem {LcdLoadingAnim}, \hyperpage{35}
+    \subitem {LcdString}, \hyperpage{37}
   \item {updatePos}
-    \subitem {CustomServo}, \hyperpage{32}
+    \subitem {CustomServo}, \hyperpage{25}
 
   \indexspace
 
   \item {WHITE}
-    \subitem {sketch.ino}, \hyperpage{68}
+    \subitem {sketch.ino}, \hyperpage{57}
   \item {write}
-    \subitem {CustomServo}, \hyperpage{32, 33}
+    \subitem {CustomServo}, \hyperpage{25, 26}
   \item {writeDirect}
-    \subitem {CustomServo}, \hyperpage{34}
+    \subitem {CustomServo}, \hyperpage{27}
 
 \end{theindex}

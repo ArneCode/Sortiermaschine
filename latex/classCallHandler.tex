@@ -1,9 +1,13 @@
-\hypertarget{classCallHandler}{}\doxysection{Call\+Handler Klassenreferenz}
+\hypertarget{classCallHandler}{}\doxysubsection{Call\+Handler Klassenreferenz}
 \label{classCallHandler}\index{CallHandler@{CallHandler}}
 
 
-Klasse, die Calls nacheinander aufruft.  
+\doxysubsubsection{Ausführliche Beschreibung}
+Klasse, die Calls nacheinander aufruft. 
 
+Ermöglicht es Calls wie z.\+B. Funktionen nacheinander aufzurufen, ohne die delay() Funktion zu verwenden 
+
+Definiert in Zeile \mbox{\hyperlink{callHandler_8h_source_l00017}{17}} der Datei \mbox{\hyperlink{callHandler_8h_source}{call\+Handler.\+h}}.
 
 
 
@@ -18,7 +22,7 @@ Zusammengehörigkeiten von Call\+Handler\+:\nopagebreak
 \includegraphics[width=169pt]{classCallHandler__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Öffentliche Methoden}
+\doxysubsubsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{delete\+Calls}} ()
@@ -27,12 +31,12 @@ void \mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{set\+C
 \begin{DoxyCompactList}\small\item\em Setzt die neuen Calls, die ausgeführt werden sollen. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7}{update}} ()
 \begin{DoxyCompactList}\small\item\em Wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z.\+B. animationen) \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Öffentliche Attribute}
+\doxysubsubsection*{Öffentliche Attribute}
 \begin{DoxyCompactItemize}
 \item 
 bool \mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{running}} = false
 \begin{DoxyCompactList}\small\item\em Gibt an, ob der \mbox{\hyperlink{classCallHandler}{Call\+Handler}} fertig ist. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attribute}
+\doxysubsubsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classCallable}{Callable}} $\ast$$\ast$ \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{call\+Ptrs}}
@@ -47,20 +51,11 @@ bool \mbox{\hyperlink{classCallHandler_a1ee97c59315e54746cef82a406a49236}{calls\
 \begin{DoxyCompactList}\small\item\em Sagt aus, ob \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{Call\+Handler\+::call\+Ptrs}} zu einer gültigen Speicheradresse zeigt. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Ausführliche Beschreibung}
-Klasse, die Calls nacheinander aufruft. 
-
-Ermöglicht es Calls wie z.\+B. Funktionen nacheinander aufzurufen, ohne die delay() Funktion zu verwenden 
-
-Definiert in Zeile \mbox{\hyperlink{callHandler_8h_source_l00017}{17}} der Datei \mbox{\hyperlink{callHandler_8h_source}{call\+Handler.\+h}}.
-
-
-
-\doxysubsection{Dokumentation der Elementfunktionen}
+\doxysubsubsection{Dokumentation der Elementfunktionen}
 \mbox{\Hypertarget{classCallHandler_a49ab239f771b84300df21bd426788c3e}\label{classCallHandler_a49ab239f771b84300df21bd426788c3e}} 
 \index{CallHandler@{CallHandler}!deleteCalls@{deleteCalls}}
 \index{deleteCalls@{deleteCalls}!CallHandler@{CallHandler}}
-\doxysubsubsection{\texorpdfstring{deleteCalls()}{deleteCalls()}}
+\doxyparagraph{\texorpdfstring{deleteCalls()}{deleteCalls()}}
 {\footnotesize\ttfamily void Call\+Handler\+::delete\+Calls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -95,7 +90,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 \mbox{\Hypertarget{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}\label{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}} 
 \index{CallHandler@{CallHandler}!setCalls@{setCalls}}
 \index{setCalls@{setCalls}!CallHandler@{CallHandler}}
-\doxysubsubsection{\texorpdfstring{setCalls()}{setCalls()}}
+\doxyparagraph{\texorpdfstring{setCalls()}{setCalls()}}
 {\footnotesize\ttfamily void Call\+Handler\+::set\+Calls (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCallable}{Callable}} $\ast$}]{new\+Call\+Ptrs\mbox{[}$\,$\mbox{]},  }\item[{size\+\_\+t}]{n\+Calls }\end{DoxyParamCaption})}
 
 
@@ -149,7 +144,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 \mbox{\Hypertarget{classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7}\label{classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7}} 
 \index{CallHandler@{CallHandler}!update@{update}}
 \index{update@{update}!CallHandler@{CallHandler}}
-\doxysubsubsection{\texorpdfstring{update()}{update()}}
+\doxyparagraph{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily void Call\+Handler\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -194,11 +189,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 \end{figure}
 
 
-\doxysubsection{Dokumentation der Datenelemente}
+\doxysubsubsection{Dokumentation der Datenelemente}
 \mbox{\Hypertarget{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}\label{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}} 
 \index{CallHandler@{CallHandler}!callPtrs@{callPtrs}}
 \index{callPtrs@{callPtrs}!CallHandler@{CallHandler}}
-\doxysubsubsection{\texorpdfstring{callPtrs}{callPtrs}}
+\doxyparagraph{\texorpdfstring{callPtrs}{callPtrs}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classCallable}{Callable}}$\ast$$\ast$ Call\+Handler\+::call\+Ptrs\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -212,7 +207,7 @@ Definiert in Zeile \mbox{\hyperlink{callHandler_8h_source_l00023}{23}} der Datei
 \mbox{\Hypertarget{classCallHandler_a1ee97c59315e54746cef82a406a49236}\label{classCallHandler_a1ee97c59315e54746cef82a406a49236}} 
 \index{CallHandler@{CallHandler}!callsSet@{callsSet}}
 \index{callsSet@{callsSet}!CallHandler@{CallHandler}}
-\doxysubsubsection{\texorpdfstring{callsSet}{callsSet}}
+\doxyparagraph{\texorpdfstring{callsSet}{callsSet}}
 {\footnotesize\ttfamily bool Call\+Handler\+::calls\+Set = false\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -226,7 +221,7 @@ Definiert in Zeile \mbox{\hyperlink{callHandler_8h_source_l00044}{44}} der Datei
 \mbox{\Hypertarget{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}\label{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}} 
 \index{CallHandler@{CallHandler}!currCallPtr@{currCallPtr}}
 \index{currCallPtr@{currCallPtr}!CallHandler@{CallHandler}}
-\doxysubsubsection{\texorpdfstring{currCallPtr}{currCallPtr}}
+\doxyparagraph{\texorpdfstring{currCallPtr}{currCallPtr}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classCallable}{Callable}}$\ast$$\ast$ Call\+Handler\+::curr\+Call\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -240,7 +235,7 @@ Definiert in Zeile \mbox{\hyperlink{callHandler_8h_source_l00029}{29}} der Datei
 \mbox{\Hypertarget{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}\label{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}} 
 \index{CallHandler@{CallHandler}!lastCallPtr@{lastCallPtr}}
 \index{lastCallPtr@{lastCallPtr}!CallHandler@{CallHandler}}
-\doxysubsubsection{\texorpdfstring{lastCallPtr}{lastCallPtr}}
+\doxyparagraph{\texorpdfstring{lastCallPtr}{lastCallPtr}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classCallable}{Callable}}$\ast$$\ast$ Call\+Handler\+::last\+Call\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -254,7 +249,7 @@ Definiert in Zeile \mbox{\hyperlink{callHandler_8h_source_l00034}{34}} der Datei
 \mbox{\Hypertarget{classCallHandler_a2c98c2be5b62fafe94b32e3a0f68c84d}\label{classCallHandler_a2c98c2be5b62fafe94b32e3a0f68c84d}} 
 \index{CallHandler@{CallHandler}!lastCallT@{lastCallT}}
 \index{lastCallT@{lastCallT}!CallHandler@{CallHandler}}
-\doxysubsubsection{\texorpdfstring{lastCallT}{lastCallT}}
+\doxyparagraph{\texorpdfstring{lastCallT}{lastCallT}}
 {\footnotesize\ttfamily \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} Call\+Handler\+::last\+CallT\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -268,7 +263,7 @@ Definiert in Zeile \mbox{\hyperlink{callHandler_8h_source_l00039}{39}} der Datei
 \mbox{\Hypertarget{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}\label{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}} 
 \index{CallHandler@{CallHandler}!running@{running}}
 \index{running@{running}!CallHandler@{CallHandler}}
-\doxysubsubsection{\texorpdfstring{running}{running}}
+\doxyparagraph{\texorpdfstring{running}{running}}
 {\footnotesize\ttfamily bool Call\+Handler\+::running = false}
 
 

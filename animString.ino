@@ -105,7 +105,7 @@ void LcdDotAnim::init()
   lcd->printPretty(text + "\1\1\1");//spaces that can't be broken up to newlines
 }
 /**
- * @brief aktualisiert die Punktanimation, wird von loop aufgerufen
+ * @brief aktualisiert die Punktanimation, wird von loop() aufgerufen
  * 
  */
 void LcdDotAnim::update() 

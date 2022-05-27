@@ -98,7 +98,7 @@ class AnimString: public LcdString {
 };
 /**
  * @brief Die Klasse der Lcd Ladeanimationen
- * @details Zeigt acht Ladebalken und den Fortschritt in Prozent an
+ * @details Zeigt Acht Ladebalken und den Fortschritt in Prozent an
  */
 class LcdLoadingAnim: public AnimString {
   public:
