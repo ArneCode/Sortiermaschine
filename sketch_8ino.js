@@ -8,6 +8,7 @@ var sketch_8ino =
       [ "ORANGE", "sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4", null ],
       [ "NOTHING", "sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2", null ]
     ] ],
+    [ "legBallAb", "sketch_8ino.html#a39b44b8ad8390b202d1c91f96e22d7a2", null ],
     [ "loop", "sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f", null ],
     [ "mesureColor", "sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd", null ],
     [ "servoIsDone", "sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791", null ],

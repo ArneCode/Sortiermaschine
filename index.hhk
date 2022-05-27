@@ -1,0 +1,606 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ad79ce25ec94495875b917de81bbd692e"><param name="Name" value="ANGLE_CENTER"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a759a9f39d205bf95aed6a556759ebd8a"><param name="Name" value="ANGLE_LEFT_HOLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ac82ee88c087fbd603a9a9ff334218360"><param name="Name" value="ANGLE_MIN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#aea1dd563eecdccc3c412c2eb13f99850"><param name="Name" value="ANGLE_RIGHT_HOLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html"><param name="Name" value="AnimString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html"><param name="Name" value="AnimString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a2afc90b22de35ebb93a337ec604856b8"><param name="Name" value="LcdString(String text, AnimatableLcd *lcd, time_t duration=0)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html"><param name="Name" value="AnimString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a0cfc5a955509897da127b9f750a940c9"><param name="Name" value="animStart"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html"><param name="Name" value="AnimString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a0dcc82eddb210af1a61ff12622a58913"><param name="Name" value="init()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html"><param name="Name" value="AnimString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a7beba48f565a7bb4a93b34903558619b"><param name="Name" value="lastRefresh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html"><param name="Name" value="AnimString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a565ce4859f7d2d9e74af63c768cfc3e0"><param name="Name" value="run()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html"><param name="Name" value="AnimString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a85a7de7c1a4d919dd25abdfc1f7a2386"><param name="Name" value="stepDuration"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html"><param name="Name" value="AnimString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a33a56e9fd3d67c30da293619681669c1"><param name="Name" value="~AnimString()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html"><param name="Name" value="AnimatableLcd"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html"><param name="Name" value="AnimatableLcd"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#a2ee9324b53d0646c9a28faf7db6e6997"><param name="Name" value="animString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html"><param name="Name" value="AnimatableLcd"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#ab18b2860b063a5af62da8f28f07d3182"><param name="Name" value="doAnimation"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html"><param name="Name" value="AnimatableLcd"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38"><param name="Name" value="init()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html"><param name="Name" value="AnimatableLcd"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca"><param name="Name" value="print(const String &amp;text)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html"><param name="Name" value="AnimatableLcd"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8"><param name="Name" value="printCentered(String text, int length=-1, int row=0)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html"><param name="Name" value="AnimatableLcd"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e"><param name="Name" value="printPretty(String text)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html"><param name="Name" value="AnimatableLcd"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#abd8ee2191732afcaccc26c8caf5dc108"><param name="Name" value="setAnimation(AnimString *_animString)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html"><param name="Name" value="AnimatableLcd"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99"><param name="Name" value="update()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3"><param name="Name" value="BLACK"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html"><param name="Name" value="ButtonHandler"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#a3fb2e862d738eab6222a4eaae0a966fa"><param name="Name" value="ButtonHandler()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#a4551356eb296a56a1ced7d3b5a7ecfaf"><param name="Name" value="ButtonHandler(int pin, void(*onclick)())"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html"><param name="Name" value="ButtonHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#a3fb2e862d738eab6222a4eaae0a966fa"><param name="Name" value="ButtonHandler()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html"><param name="Name" value="ButtonHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#a4551356eb296a56a1ced7d3b5a7ecfaf"><param name="Name" value="ButtonHandler(int pin, void(*onclick)())"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html"><param name="Name" value="ButtonHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#a23b1eed2ad71da361d02054d53e56d05"><param name="Name" value="isPressed"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html"><param name="Name" value="ButtonHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#acd031a9133f6ff6b5a9c707fdf8183c3"><param name="Name" value="onclick)()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html"><param name="Name" value="ButtonHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#ad6516fd08addb841598242784a088e97"><param name="Name" value="pin"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html"><param name="Name" value="ButtonHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#aaed9117143aa1674a71aa012e558d4e8"><param name="Name" value="update()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html"><param name="Name" value="CallHandler"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html"><param name="Name" value="CallHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2"><param name="Name" value="callPtrs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html"><param name="Name" value="CallHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a1ee97c59315e54746cef82a406a49236"><param name="Name" value="callsSet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html"><param name="Name" value="CallHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a090fccd59cdc5b99f5f17f1215c4fd29"><param name="Name" value="currCallPtr"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html"><param name="Name" value="CallHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a49ab239f771b84300df21bd426788c3e"><param name="Name" value="deleteCalls()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html"><param name="Name" value="CallHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a1bb0098f92adc006de8f8cd69c373fb2"><param name="Name" value="lastCallPtr"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html"><param name="Name" value="CallHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a2c98c2be5b62fafe94b32e3a0f68c84d"><param name="Name" value="lastCallT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html"><param name="Name" value="CallHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7"><param name="Name" value="running"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html"><param name="Name" value="CallHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0"><param name="Name" value="setCalls(Callable *newCallPtrs[], size_t nCalls)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html"><param name="Name" value="CallHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a57ff2e7ae3955d5ed4806dcc6469dcf7"><param name="Name" value="update()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallable.html"><param name="Name" value="Callable"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallable.html"><param name="Name" value="Callable"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallable.html#af0778d71c6196b6ba0215cce13f8c7dd"><param name="Name" value="isDone()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallable.html"><param name="Name" value="Callable"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9"><param name="Name" value="run()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallable.html"><param name="Name" value="Callable"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallable.html#a84ab6ce6283cbf84c8b002e1941fad5d"><param name="Name" value="~Callable()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#aed492cad900432d556239dc5881bc4d8"><param name="Name" value="done"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#ac247ddd89cf27db323522746e5afa922"><param name="Name" value="isDone()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a0750f5868c694b9f46638038b8536e0a"><param name="Name" value="setSpeed(float newSpeed)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a1606b8ae2c802448dabeafbb5df2a195"><param name="Name" value="speed"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#ad0f2d2d481d21c4d97f333efa744e0e8"><param name="Name" value="start()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a3b9955fef2cba6561cd6cabb0bf98744"><param name="Name" value="startAngle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2"><param name="Name" value="startMove()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a921bf31525e695718b9e17381bf4f2bb"><param name="Name" value="startTime"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a2504ffc997018dad9f3811b18b16c672"><param name="Name" value="stop()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a5d95e6d56c724ec1a25600d60dc8f7a2"><param name="Name" value="targetAngle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a91245621ca3e5340361f061d65025635"><param name="Name" value="updatePos()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94"><param name="Name" value="write(short newAngle)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a73b3e39ae0c5ac49cde683711517283a"><param name="Name" value="write(short newAngle, time_t duration)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html"><param name="Name" value="CustomServo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a95761db4177f965e756bdf725cb10ada"><param name="Name" value="writeDirect(short angle)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2"><param name="Name" value="Farbe"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html"><param name="Name" value="FuncCall"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#abc6fcbf4330eff5b8eeddfc715f56f3e"><param name="Name" value="FuncCall(func_t&lt; void &gt; call)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#a59d80304bd4e7dcace90f0b0d996fc04"><param name="Name" value="FuncCall(func_t&lt; void &gt; call, func_t&lt; bool &gt; _isDone)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html"><param name="Name" value="FuncCall"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#abc6fcbf4330eff5b8eeddfc715f56f3e"><param name="Name" value="FuncCall(func_t&lt; void &gt; call)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html"><param name="Name" value="FuncCall"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#a59d80304bd4e7dcace90f0b0d996fc04"><param name="Name" value="FuncCall(func_t&lt; void &gt; call, func_t&lt; bool &gt; _isDone)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html"><param name="Name" value="FuncCall"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#a137681b6c51b59f43b155e6741029e11"><param name="Name" value="_isDone"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html"><param name="Name" value="FuncCall"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#aa18b529a8cc3df2ca01006906d0c3876"><param name="Name" value="call"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html"><param name="Name" value="FuncCall"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#a94be310a67fffa7f15c88a832aec16ee"><param name="Name" value="isDone()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html"><param name="Name" value="FuncCall"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#a2f1b37d6d7162c91d5367288b20824db"><param name="Name" value="run()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html"><param name="Name" value="FuncCall"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#aec0032eebb29fcba418c25fa0b987138"><param name="Name" value="~FuncCall()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a96e566c1144385ff3e4c1ec37bdd5274"><param name="Name" value="GEH_ZURUECK"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="animLcd_8h.html#a4fb812c2fb39bac66bd2170c07099870"><param name="Name" value="LOADING_BAR_OFFSET"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ab09894308b534e1030021de3bc84710e"><param name="Name" value="LOADING_DURATION"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdDotAnim.html"><param name="Name" value="LcdDotAnim"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdDotAnim.html#aba9b5e75d3dbc072cf0203d5116e266c"><param name="Name" value="LcdDotAnim(String text, AnimatableLcd *lcd, time_t duration=0, time_t _stepDuration=500)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdDotAnim.html"><param name="Name" value="LcdDotAnim"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdDotAnim.html#aba9b5e75d3dbc072cf0203d5116e266c"><param name="Name" value="LcdDotAnim(String text, AnimatableLcd *lcd, time_t duration=0, time_t _stepDuration=500)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdDotAnim.html"><param name="Name" value="LcdDotAnim"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7"><param name="Name" value="init()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdDotAnim.html"><param name="Name" value="LcdDotAnim"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71"><param name="Name" value="update()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdLoadingAnim.html"><param name="Name" value="LcdLoadingAnim"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdLoadingAnim.html"><param name="Name" value="LcdLoadingAnim"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdLoadingAnim.html#a1dcb953ecdb84881d1c80769e7c3829c"><param name="Name" value="init()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdLoadingAnim.html"><param name="Name" value="LcdLoadingAnim"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdLoadingAnim.html#a939368d0d51f766b20a82176294fba70"><param name="Name" value="update()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html"><param name="Name" value="LcdString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a2afc90b22de35ebb93a337ec604856b8"><param name="Name" value="LcdString(String text, AnimatableLcd *lcd, time_t duration=0)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a2afc90b22de35ebb93a337ec604856b8"><param name="Name" value="AnimString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a2afc90b22de35ebb93a337ec604856b8"><param name="Name" value="LcdString(String text, AnimatableLcd *lcd, time_t duration=0)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a2afc90b22de35ebb93a337ec604856b8"><param name="Name" value="LcdString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html"><param name="Name" value="LcdString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a2afc90b22de35ebb93a337ec604856b8"><param name="Name" value="LcdString(String text, AnimatableLcd *lcd, time_t duration=0)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html"><param name="Name" value="LcdString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a6ed3581497a6d00d2b0106888ff192dd"><param name="Name" value="callStart"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html"><param name="Name" value="LcdString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#ab6c96ac47d1b85dfcd49fc286ae9e234"><param name="Name" value="duration"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html"><param name="Name" value="LcdString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a815ab8e4a5e0610637073fb76fb4dadf"><param name="Name" value="isDone()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html"><param name="Name" value="LcdString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a89c4796702a713c1a7ddd580cd470780"><param name="Name" value="lcd"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html"><param name="Name" value="LcdString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017"><param name="Name" value="run()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html"><param name="Name" value="LcdString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886"><param name="Name" value="text"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html"><param name="Name" value="LcdString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b"><param name="Name" value="update()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html"><param name="Name" value="LcdString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a6c1e54bef2622058e45238872779536b"><param name="Name" value="~LcdString()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2"><param name="Name" value="NOTHING"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4"><param name="Name" value="ORANGE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a275fb5d3177300cc6a29ae232344e4d8"><param name="Name" value="PIN_BLUE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ac594418c6e368680a9de074d7d136caa"><param name="Name" value="PIN_GREEN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ac57f63ef8771d860562baf56fd4c2732"><param name="Name" value="PIN_RED"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ae1e0b317f35c61409381a32ea905ba67"><param name="Name" value="PIN_SERVO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a05c5455b55db369d7d780a0a64525ecc"><param name="Name" value="PIN_STOPBUTTON"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#adef1ca0bee2c8b7c9b72001969ee3426"><param name="Name" value="SERVO_SPEED_DEFAULT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a8b8f576df7f10b8c79c4ee6ee1f94166"><param name="Name" value="SERVO_SPEED_FAST"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50"><param name="Name" value="WHITE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#a137681b6c51b59f43b155e6741029e11"><param name="Name" value="_isDone"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="animLcd_8h.html#a4fb812c2fb39bac66bd2170c07099870"><param name="Name" value="animLcd.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="animLcd_8ino.html"><param name="Name" value="animLcd.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="animLcd_8ino.html#af9de0017ae44e85326d55921c478325c"><param name="Name" value="loading_empty_c[8]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="animLcd_8ino.html"><param name="Name" value="animLcd.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="animLcd_8ino.html#addc6f0caadffd9774296f5fa89d43837"><param name="Name" value="loading_full_c[8]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a0cfc5a955509897da127b9f750a940c9"><param name="Name" value="animStart"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#a2ee9324b53d0646c9a28faf7db6e6997"><param name="Name" value="animString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#aa18b529a8cc3df2ca01006906d0c3876"><param name="Name" value="call"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc"><param name="Name" value="callHandler"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2"><param name="Name" value="callPtrs"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a6ed3581497a6d00d2b0106888ff192dd"><param name="Name" value="callStart"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a1ee97c59315e54746cef82a406a49236"><param name="Name" value="callsSet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a090fccd59cdc5b99f5f17f1215c4fd29"><param name="Name" value="currCallPtr"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a49ab239f771b84300df21bd426788c3e"><param name="Name" value="deleteCalls()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#ab18b2860b063a5af62da8f28f07d3182"><param name="Name" value="doAnimation"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699"><param name="Name" value="doFlicker"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#aed492cad900432d556239dc5881bc4d8"><param name="Name" value="done"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#ab6c96ac47d1b85dfcd49fc286ae9e234"><param name="Name" value="duration"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="header_8h.html#a54f7e4f83944f3180d3db40c5ad46685"><param name="Name" value="func_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="header_8h.html"><param name="Name" value="header.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="header_8h.html#a54f7e4f83944f3180d3db40c5ad46685"><param name="Name" value="func_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="header_8h.html"><param name="Name" value="header.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="header_8h.html#a9d1a8265fefddad5533f063ef338d59f"><param name="Name" value="time_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a0dcc82eddb210af1a61ff12622a58913"><param name="Name" value="init()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a0dcc82eddb210af1a61ff12622a58913"><param name="Name" value="AnimString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38"><param name="Name" value="init()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38"><param name="Name" value="AnimatableLcd"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7"><param name="Name" value="init()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7"><param name="Name" value="LcdDotAnim"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdLoadingAnim.html#a1dcb953ecdb84881d1c80769e7c3829c"><param name="Name" value="init()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdLoadingAnim.html#a1dcb953ecdb84881d1c80769e7c3829c"><param name="Name" value="LcdLoadingAnim"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallable.html#af0778d71c6196b6ba0215cce13f8c7dd"><param name="Name" value="isDone()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallable.html#af0778d71c6196b6ba0215cce13f8c7dd"><param name="Name" value="Callable"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#ac247ddd89cf27db323522746e5afa922"><param name="Name" value="isDone()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#ac247ddd89cf27db323522746e5afa922"><param name="Name" value="CustomServo"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#a94be310a67fffa7f15c88a832aec16ee"><param name="Name" value="isDone()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#a94be310a67fffa7f15c88a832aec16ee"><param name="Name" value="FuncCall"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a815ab8e4a5e0610637073fb76fb4dadf"><param name="Name" value="isDone()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a815ab8e4a5e0610637073fb76fb4dadf"><param name="Name" value="LcdString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#a23b1eed2ad71da361d02054d53e56d05"><param name="Name" value="isPressed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a1bb0098f92adc006de8f8cd69c373fb2"><param name="Name" value="lastCallPtr"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a2c98c2be5b62fafe94b32e3a0f68c84d"><param name="Name" value="lastCallT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a7beba48f565a7bb4a93b34903558619b"><param name="Name" value="lastRefresh"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7"><param name="Name" value="lcd(0x27, 16, 2)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a89c4796702a713c1a7ddd580cd470780"><param name="Name" value="lcd"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a39b44b8ad8390b202d1c91f96e22d7a2"><param name="Name" value="legBallAb(String name)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="animLcd_8ino.html#af9de0017ae44e85326d55921c478325c"><param name="Name" value="loading_empty_c[8]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="animLcd_8ino.html#addc6f0caadffd9774296f5fa89d43837"><param name="Name" value="loading_full_c[8]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f"><param name="Name" value="loop()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd"><param name="Name" value="mesureColor()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41"><param name="Name" value="nBlack"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ab02bdede4356a3a7dffc99e97e927ca6"><param name="Name" value="nOrange"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd"><param name="Name" value="nWhite"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#acd031a9133f6ff6b5a9c707fdf8183c3"><param name="Name" value="onclick)()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#ad6516fd08addb841598242784a088e97"><param name="Name" value="pin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca"><param name="Name" value="print(const String &amp;text)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8"><param name="Name" value="printCentered(String text, int length=-1, int row=0)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e"><param name="Name" value="printPretty(String text)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a565ce4859f7d2d9e74af63c768cfc3e0"><param name="Name" value="run()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a565ce4859f7d2d9e74af63c768cfc3e0"><param name="Name" value="AnimString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9"><param name="Name" value="run()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9"><param name="Name" value="Callable"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#a2f1b37d6d7162c91d5367288b20824db"><param name="Name" value="run()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#a2f1b37d6d7162c91d5367288b20824db"><param name="Name" value="FuncCall"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017"><param name="Name" value="run()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017"><param name="Name" value="LcdString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7"><param name="Name" value="running"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22"><param name="Name" value="servo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791"><param name="Name" value="servoIsDone()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#abd8ee2191732afcaccc26c8caf5dc108"><param name="Name" value="setAnimation(AnimString *_animString)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0"><param name="Name" value="setCalls(Callable *newCallPtrs[], size_t nCalls)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8"><param name="Name" value="setLedColor(unsigned char r, unsigned char g, unsigned char b)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a0750f5868c694b9f46638038b8536e0a"><param name="Name" value="setSpeed(float newSpeed)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d"><param name="Name" value="setup()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ad79ce25ec94495875b917de81bbd692e"><param name="Name" value="ANGLE_CENTER"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a759a9f39d205bf95aed6a556759ebd8a"><param name="Name" value="ANGLE_LEFT_HOLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ac82ee88c087fbd603a9a9ff334218360"><param name="Name" value="ANGLE_MIN"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#aea1dd563eecdccc3c412c2eb13f99850"><param name="Name" value="ANGLE_RIGHT_HOLE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2af77fb67151d0c18d397069ad8c271ba3"><param name="Name" value="BLACK"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2"><param name="Name" value="Farbe"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a96e566c1144385ff3e4c1ec37bdd5274"><param name="Name" value="GEH_ZURUECK"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ab09894308b534e1030021de3bc84710e"><param name="Name" value="LOADING_DURATION"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2acfe24a7b308a82835c8a9a9a89bc4ca2"><param name="Name" value="NOTHING"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4"><param name="Name" value="ORANGE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a275fb5d3177300cc6a29ae232344e4d8"><param name="Name" value="PIN_BLUE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ac594418c6e368680a9de074d7d136caa"><param name="Name" value="PIN_GREEN"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ac57f63ef8771d860562baf56fd4c2732"><param name="Name" value="PIN_RED"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ae1e0b317f35c61409381a32ea905ba67"><param name="Name" value="PIN_SERVO"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a05c5455b55db369d7d780a0a64525ecc"><param name="Name" value="PIN_STOPBUTTON"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#adef1ca0bee2c8b7c9b72001969ee3426"><param name="Name" value="SERVO_SPEED_DEFAULT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a8b8f576df7f10b8c79c4ee6ee1f94166"><param name="Name" value="SERVO_SPEED_FAST"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2a283fc479650da98250635b9c3c0e7e50"><param name="Name" value="WHITE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc"><param name="Name" value="callHandler"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ab7ffbbf9ac91d991bb0c81c6f4fa6699"><param name="Name" value="doFlicker"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7"><param name="Name" value="lcd(0x27, 16, 2)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a39b44b8ad8390b202d1c91f96e22d7a2"><param name="Name" value="legBallAb(String name)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f"><param name="Name" value="loop()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd"><param name="Name" value="mesureColor()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41"><param name="Name" value="nBlack"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ab02bdede4356a3a7dffc99e97e927ca6"><param name="Name" value="nOrange"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd"><param name="Name" value="nWhite"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22"><param name="Name" value="servo"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791"><param name="Name" value="servoIsDone()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8"><param name="Name" value="setLedColor(unsigned char r, unsigned char g, unsigned char b)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d"><param name="Name" value="setup()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ae68a57cc22f2b256b21089a585de29df"><param name="Name" value="stopButton"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html"><param name="Name" value="sketch.ino"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc"><param name="Name" value="stopButtonClicked()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a1606b8ae2c802448dabeafbb5df2a195"><param name="Name" value="speed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#ad0f2d2d481d21c4d97f333efa744e0e8"><param name="Name" value="start()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a3b9955fef2cba6561cd6cabb0bf98744"><param name="Name" value="startAngle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2"><param name="Name" value="startMove()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a921bf31525e695718b9e17381bf4f2bb"><param name="Name" value="startTime"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a85a7de7c1a4d919dd25abdfc1f7a2386"><param name="Name" value="stepDuration"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a2504ffc997018dad9f3811b18b16c672"><param name="Name" value="stop()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#ae68a57cc22f2b256b21089a585de29df"><param name="Name" value="stopButton"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc"><param name="Name" value="stopButtonClicked()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a5d95e6d56c724ec1a25600d60dc8f7a2"><param name="Name" value="targetAngle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886"><param name="Name" value="text"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="header_8h.html#a9d1a8265fefddad5533f063ef338d59f"><param name="Name" value="time_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99"><param name="Name" value="update()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimatableLcd.html#a85725484bae8d5c0b1190366b3121f99"><param name="Name" value="AnimatableLcd"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#aaed9117143aa1674a71aa012e558d4e8"><param name="Name" value="update()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classButtonHandler.html#aaed9117143aa1674a71aa012e558d4e8"><param name="Name" value="ButtonHandler"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a57ff2e7ae3955d5ed4806dcc6469dcf7"><param name="Name" value="update()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallHandler.html#a57ff2e7ae3955d5ed4806dcc6469dcf7"><param name="Name" value="CallHandler"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71"><param name="Name" value="update()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71"><param name="Name" value="LcdDotAnim"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdLoadingAnim.html#a939368d0d51f766b20a82176294fba70"><param name="Name" value="update()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classLcdLoadingAnim.html#a939368d0d51f766b20a82176294fba70"><param name="Name" value="LcdLoadingAnim"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b"><param name="Name" value="update()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b"><param name="Name" value="LcdString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a91245621ca3e5340361f061d65025635"><param name="Name" value="updatePos()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94"><param name="Name" value="write(short newAngle)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a73b3e39ae0c5ac49cde683711517283a"><param name="Name" value="write(short newAngle, time_t duration)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCustomServo.html#a95761db4177f965e756bdf725cb10ada"><param name="Name" value="writeDirect(short angle)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAnimString.html#a33a56e9fd3d67c30da293619681669c1"><param name="Name" value="~AnimString()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classCallable.html#a84ab6ce6283cbf84c8b002e1941fad5d"><param name="Name" value="~Callable()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structFuncCall.html#aec0032eebb29fcba418c25fa0b987138"><param name="Name" value="~FuncCall()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structLcdString.html#a6c1e54bef2622058e45238872779536b"><param name="Name" value="~LcdString()"></OBJECT>
+</UL>
+</BODY>
+</HTML>
