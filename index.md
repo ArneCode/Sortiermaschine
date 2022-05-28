@@ -13,3 +13,16 @@ Ein paar wichtige Klassen in diesem Projekt sind:
 - CustomServo - Servo, bei dem die Geschwindigkeit gesteuert werden kann  
 ## Code
 Der Code ist interaktiv, man kann Variabeln, Funktionen Methoden und Klassen anklicken um zu Ihrer Beschreibung zu gelangen. \htmlonly Oder man kann mit der Maus über dem Begriff "schweben" und ein Tooltip wird angezeigt \endhtmlonly
+
+# Begründungen - Code 
+Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu "erforschen"
+
+## Warum verschiedene Callable Klassen? 
+
+Es wäre möglich gewesen statt mehrerer Callable Klassen einfach eine zu benutzen und dann die Art des Calls in einer Variable zu speichern. Der Nachteil dieser Methode wäre, dass bei jeder Funktion die etwas mit der Klasse zu tun hat (Callable::run, Callable::isDone, etc.) überprüft werden müsste, was die Art des Calls ist. Das würde zu einer schlechteren Lesbarkeit des Codes führen. 
+
+ 
+
+# Optimierungsideen – Code 
+
+Beim Ausführen des Programms mangelte es manchmal an Speicherplatz. Um dieses Problem zu umgehen hätte man statt der Arduino String Klasse auch C-Strings also char [] benutzen können. Das hätte den Code leider aber auch an ein Paar stellen komplizierter gemacht. Ein anderer Fehler der sehr häufig auftrat war, dass mit Speicheradressen falsch umgegangen wurde und dadurch das Programm ohne jegliche Fehlermeldung abstürzte, oft sogar an völlig anderen Stellen. Eine mögliche Lösung wäre es hier eine Programmiersprache zu benutzen, die Speicherplatzfehler beim kompilieren, das heißt beim umwandeln des Programmcodes in Maschinencode aufdeckt. Eine Möglichkeit dafür wäre diese Arduino Bibliothek für Rust (Beispiel: https://creativcoder.dev/rust-on-arduino-uno). Solche Bibliotheken sind aber auch weniger Dokumentiert und haben weniger Features als die Standard C++ Arduino Bibliothek und deshalb alles in allem für ein kleines Schulprojekt keine gute Option. 
