@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Eine Eigene Servo&#45;Klasse, die es ermöglicht den Servo mit verschiedenen Geschwindigkeiten zu bewegen.">
+<g id="a_node1"><a xlink:title="Eine erweiterte Version der Servo&#45;Klasse, die es ermöglicht den Servo mit verschiedenen Geschwindigke...">
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-19.5 82,-19.5 82,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="41" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">CustomServo</text>
 </a>
