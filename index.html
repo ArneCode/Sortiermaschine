@@ -121,170 +121,178 @@ Warum werden Calls im Heap gespeichert</h2>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Warum verschiedene Callable Klassen?</h2>
 <p >Es wäre möglich gewesen statt mehrerer <a class="el" href="classCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann.">Callable</a> Klassen einfach eine zu benutzen und dann die Art des Calls in einer Variable zu speichern. Der Nachteil dieser Methode wäre, dass bei jeder Funktion die etwas mit der Klasse zu tun hat (<a class="el" href="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9">Callable::run</a>, <a class="el" href="classCallable.html#af0778d71c6196b6ba0215cce13f8c7dd">Callable::isDone</a>, etc.) überprüft werden müsste, was die Art des Calls ist. Das würde zu einer schlechteren Lesbarkeit des Codes führen. Das war in einer älteren Version der Fall. </p><details >
-<p ><summary>Code</summary> </p><div class="fragment"><div class="line"> {c++}</div>
-<div class="line">class LcdHandler {</div>
-<div class="line">  public:</div>
-<div class="line">    enum AnimType {</div>
+<p ><summary>Code</summary> </p><div class="fragment"><div class="line"><span class="keyword">class </span>LcdHandler {</div>
+<div class="line">  <span class="keyword">public</span>:</div>
+<div class="line">    <span class="keyword">enum</span> AnimType {</div>
 <div class="line">      DOT,</div>
 <div class="line">      LOADING,</div>
 <div class="line">      NO_ANIMATION</div>
 <div class="line">    };</div>
-<div class="line">    struct LcdString {</div>
-<div class="line">      long duration;</div>
+<div class="line">    <span class="keyword">struct </span><a class="code hl_struct" href="structLcdString.html">LcdString</a> {</div>
+<div class="line">      <span class="keywordtype">long</span> duration;</div>
 <div class="line">      AnimType animType;</div>
 <div class="line">      String text;</div>
-<div class="line">      LcdString(String text, long duration, AnimType animType = NO_ANIMATION): text(text), duration(duration), animType(animType) {}</div>
-<div class="line">      operator String() const {</div>
-<div class="line">        return text;</div>
+<div class="line">      <a class="code hl_struct" href="structLcdString.html">LcdString</a>(String text, <span class="keywordtype">long</span> duration, AnimType animType = NO_ANIMATION): text(text), duration(duration), animType(animType) {}</div>
+<div class="line">      <span class="keyword">operator</span> String()<span class="keyword"> const </span>{</div>
+<div class="line">        <span class="keywordflow">return</span> text;</div>
 <div class="line">      }</div>
 <div class="line">    };</div>
-<div class="line">    bool running = false;</div>
-<div class="line">  private:</div>
-<div class="line">    LcdString * currString;</div>
-<div class="line">    long t;</div>
-<div class="line">    LcdString * lastString;</div>
-<div class="line">    LcdString * lcdStrings;</div>
-<div class="line">    long stepDuration;</div>
-<div class="line">    long lastRefresh;</div>
-<div class="line">    void( * callback)(); //function pointer</div>
-<div class="line">  public:</div>
+<div class="line">    <span class="keywordtype">bool</span> running = <span class="keyword">false</span>;</div>
+<div class="line">  <span class="keyword">private</span>:</div>
+<div class="line">    <a class="code hl_struct" href="structLcdString.html">LcdString</a> * currString;</div>
+<div class="line">    <span class="keywordtype">long</span> t;</div>
+<div class="line">    <a class="code hl_struct" href="structLcdString.html">LcdString</a> * lastString;</div>
+<div class="line">    <a class="code hl_struct" href="structLcdString.html">LcdString</a> * lcdStrings;</div>
+<div class="line">    <span class="keywordtype">long</span> stepDuration;</div>
+<div class="line">    <span class="keywordtype">long</span> lastRefresh;</div>
+<div class="line">    void( * callback)(); <span class="comment">//function pointer</span></div>
+<div class="line">  <span class="keyword">public</span>:</div>
 <div class="line">    ~LcdHandler() {</div>
-<div class="line">      delete[] lcdStrings;</div>
+<div class="line">      <span class="keyword">delete</span>[] lcdStrings;</div>
 <div class="line">    }</div>
-<div class="line">    void init() {</div>
-<div class="line">      lcd.init();</div>
-<div class="line">      lcd.backlight();</div>
-<div class="line">      lcd.createChar(0, loading_empty_c);</div>
-<div class="line">      lcd.createChar(1, loading_full_c);</div>
+<div class="line">    <span class="keywordtype">void</span> init() {</div>
+<div class="line">      <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.<a class="code hl_function" href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">init</a>();</div>
+<div class="line">      <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.backlight();</div>
+<div class="line">      <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.createChar(0, <a class="code hl_variable" href="animLcd_8ino.html#af9de0017ae44e85326d55921c478325c">loading_empty_c</a>);</div>
+<div class="line">      <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.createChar(1, <a class="code hl_variable" href="animLcd_8ino.html#addc6f0caadffd9774296f5fa89d43837">loading_full_c</a>);</div>
 <div class="line">    }</div>
-<div class="line">    void setStrings(LcdString newLcdStrings[], size_t numStrings, void( * newCallback)() = NULL, int newStepDuration = 1000) {</div>
-<div class="line">      delete[] lcdStrings; //Speicherplatz frei machen</div>
+<div class="line">    <span class="keywordtype">void</span> setStrings(<a class="code hl_struct" href="structLcdString.html">LcdString</a> newLcdStrings[], <span class="keywordtype">size_t</span> numStrings, <span class="keywordtype">void</span>( * newCallback)() = NULL, <span class="keywordtype">int</span> newStepDuration = 1000) {</div>
+<div class="line">      <span class="keyword">delete</span>[] lcdStrings; <span class="comment">//Speicherplatz frei machen</span></div>
 <div class="line">      lcdStrings = newLcdStrings;</div>
 <div class="line">      currString = newLcdStrings;</div>
 <div class="line">      lastString = newLcdStrings + numStrings - 1;</div>
 <div class="line">      t = millis();</div>
 <div class="line">      stepDuration = newStepDuration;</div>
 <div class="line">      lastRefresh = millis();</div>
-<div class="line">      running = true;</div>
+<div class="line">      running = <span class="keyword">true</span>;</div>
 <div class="line">      callback = newCallback;</div>
 <div class="line">      prepareAnimation(currString);</div>
 <div class="line">    }</div>
-<div class="line">    void prepareAnimation(LcdString* currString) {</div>
-<div class="line">      switch (currString-&gt;animType) {</div>
-<div class="line">        case LOADING:</div>
-<div class="line">          stepDuration = currString-&gt;duration / 9;</div>
-<div class="line">          if (currString-&gt;text.length() &gt; 16) {</div>
-<div class="line">            Serial.print(&quot;text given for loading animation is to long, text: &quot;);</div>
+<div class="line">    <span class="keywordtype">void</span> prepareAnimation(<a class="code hl_struct" href="structLcdString.html">LcdString</a>* currString) {</div>
+<div class="line">      <span class="keywordflow">switch</span> (currString-&gt;animType) {</div>
+<div class="line">        <span class="keywordflow">case</span> LOADING:</div>
+<div class="line">          stepDuration = currString-&gt;<a class="code hl_variable" href="structLcdString.html#ab6c96ac47d1b85dfcd49fc286ae9e234">duration</a> / 9;</div>
+<div class="line">          <span class="keywordflow">if</span> (currString-&gt;<a class="code hl_variable" href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">text</a>.length() &gt; 16) {</div>
+<div class="line">            Serial.print(<span class="stringliteral">&quot;text given for loading animation is to long, text: &quot;</span>);</div>
 <div class="line">            Serial.println(*currString);</div>
 <div class="line">          }</div>
 <div class="line">          printCentered(*currString);</div>
-<div class="line">          lcd.setCursor(LOADING_BAR_OFFSET, 1);</div>
-<div class="line">          for (int i = 0; i &lt; 8; i++) {</div>
-<div class="line">            lcd.write(0);</div>
+<div class="line">          <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.setCursor(<a class="code hl_variable" href="animLcd_8h.html#a4fb812c2fb39bac66bd2170c07099870">LOADING_BAR_OFFSET</a>, 1);</div>
+<div class="line">          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 8; i++) {</div>
+<div class="line">            <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.write(0);</div>
 <div class="line">          }</div>
-<div class="line">          lcd.print(&quot;0% &quot;);</div>
-<div class="line">          break;</div>
-<div class="line">        case DOT:</div>
-<div class="line">          printPretty(currString-&gt;text + String(&quot;   &quot;));</div>
-<div class="line">          break;</div>
-<div class="line">        default:</div>
+<div class="line">          <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.<a class="code hl_function" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">print</a>(<span class="stringliteral">&quot;0% &quot;</span>);</div>
+<div class="line">          <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> DOT:</div>
+<div class="line">          printPretty(currString-&gt;<a class="code hl_variable" href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">text</a> + String(<span class="stringliteral">&quot;   &quot;</span>));</div>
+<div class="line">          <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">default</span>:</div>
 <div class="line">          printPretty(*currString);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
-<div class="line">    void printCentered(String text, int length = -1, int row = 0) { //length&lt;=16</div>
-<div class="line">      if (length == -1) {</div>
+<div class="line">    <span class="keywordtype">void</span> printCentered(String text, <span class="keywordtype">int</span> length = -1, <span class="keywordtype">int</span> row = 0) { <span class="comment">//length&lt;=16</span></div>
+<div class="line">      <span class="keywordflow">if</span> (length == -1) {</div>
 <div class="line">        length = text.length();</div>
 <div class="line">      }</div>
-<div class="line">      int offset = (16 - length) / 2; //rundet immer ab, da int</div>
-<div class="line">      lcd.setCursor(offset, row);</div>
-<div class="line">      lcd.print(text);</div>
+<div class="line">      <span class="keywordtype">int</span> offset = (16 - length) / 2; <span class="comment">//rundet immer ab, da int</span></div>
+<div class="line">      <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.setCursor(offset, row);</div>
+<div class="line">      <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.<a class="code hl_function" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">print</a>(text);</div>
 <div class="line">    }</div>
-<div class="line">    void printPretty(String text) { //handelt zeilenumbrüche und schreibt zentriert</div>
-<div class="line">      lcd.clear();</div>
-<div class="line">      int length = text.length();</div>
-<div class="line">      if (length &lt;= 16) {</div>
+<div class="line">    <span class="keywordtype">void</span> printPretty(String text) { <span class="comment">//handelt zeilenumbrüche und schreibt zentriert</span></div>
+<div class="line">      <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.clear();</div>
+<div class="line">      <span class="keywordtype">int</span> length = text.length();</div>
+<div class="line">      <span class="keywordflow">if</span> (length &lt;= 16) {</div>
 <div class="line">        printCentered(text, length);</div>
-<div class="line">        return 0;</div>
+<div class="line">        <span class="keywordflow">return</span> 0;</div>
 <div class="line">      }</div>
-<div class="line">      int spacePos = -1;</div>
-<div class="line">      for (int i = 15; i &gt;= 0; i--) {</div>
-<div class="line">        if (text[i] == &#39; &#39;) {</div>
+<div class="line">      <span class="keywordtype">int</span> spacePos = -1;</div>
+<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 15; i &gt;= 0; i--) {</div>
+<div class="line">        <span class="keywordflow">if</span> (text[i] == <span class="charliteral">&#39; &#39;</span>) {</div>
 <div class="line">          spacePos = i;</div>
-<div class="line">          break;</div>
+<div class="line">          <span class="keywordflow">break</span>;</div>
 <div class="line">        }</div>
 <div class="line">      }</div>
 <div class="line">      String row1, row2;</div>
-<div class="line">      if (spacePos != -1) {</div>
+<div class="line">      <span class="keywordflow">if</span> (spacePos != -1) {</div>
 <div class="line">        row1 = text.substring(0, spacePos);</div>
 <div class="line">        row2 = text.substring(spacePos + 1);</div>
-<div class="line">      } else {</div>
+<div class="line">      } <span class="keywordflow">else</span> {</div>
 <div class="line">        row1 = text.substring(0, 16);</div>
 <div class="line">        row2 = text.substring(16);</div>
 <div class="line">      }</div>
 <div class="line">      printCentered(row1, row1.length(), 0);</div>
 <div class="line">      printCentered(row2, row2.length(), 1);</div>
 <div class="line">    }</div>
-<div class="line">    void printAnimated() {</div>
-<div class="line">      long time = millis();</div>
+<div class="line">    <span class="keywordtype">void</span> printAnimated() {</div>
+<div class="line">      <span class="keywordtype">long</span> time = millis();</div>
 <div class="line">      AnimType type = currString-&gt;animType;</div>
-<div class="line">      if (type == DOT) {</div>
-<div class="line">        if ((time - lastRefresh) &lt; stepDuration) {</div>
-<div class="line">          return;</div>
+<div class="line">      <span class="keywordflow">if</span> (type == DOT) {</div>
+<div class="line">        <span class="keywordflow">if</span> ((time - lastRefresh) &lt; stepDuration) {</div>
+<div class="line">          <span class="keywordflow">return</span>;</div>
 <div class="line">        }</div>
 <div class="line">        lastRefresh = time;</div>
-<div class="line">        int numDots = ((time - t) / stepDuration) % 4;</div>
-<div class="line">        char dots[4];</div>
-<div class="line">        for (int i = 0; i &lt; 3; i++) {</div>
-<div class="line">          if (i &lt; numDots) {</div>
-<div class="line">            dots[i] = &#39;.&#39;;</div>
-<div class="line">          } else {</div>
-<div class="line">            dots[i] = &#39; &#39;;</div>
+<div class="line">        <span class="keywordtype">int</span> numDots = ((time - t) / stepDuration) % 4;</div>
+<div class="line">        <span class="keywordtype">char</span> dots[4];</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
+<div class="line">          <span class="keywordflow">if</span> (i &lt; numDots) {</div>
+<div class="line">            dots[i] = <span class="charliteral">&#39;.&#39;</span>;</div>
+<div class="line">          } <span class="keywordflow">else</span> {</div>
+<div class="line">            dots[i] = <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line">          }</div>
 <div class="line">        }</div>
-<div class="line">        dots[3] = &#39;\0&#39;;</div>
-<div class="line">        printPretty(currString-&gt;text + dots);</div>
-<div class="line">      } else if (type == LOADING) {</div>
-<div class="line">        short percent = (time - t) * 100 / currString-&gt;duration;</div>
+<div class="line">        dots[3] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line">        printPretty(currString-&gt;<a class="code hl_variable" href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">text</a> + dots);</div>
+<div class="line">      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == LOADING) {</div>
+<div class="line">        <span class="keywordtype">short</span> percent = (time - t) * 100 / currString-&gt;<a class="code hl_variable" href="structLcdString.html#ab6c96ac47d1b85dfcd49fc286ae9e234">duration</a>;</div>
 <div class="line">        if (time - lastRefresh &gt; stepDuration) {</div>
-<div class="line">          short nToFill = percent * 8 / 100;</div>
-<div class="line">          if (nToFill == 0) {</div>
-<div class="line">            return;</div>
+<div class="line">          <span class="keywordtype">short</span> nToFill = percent * 8 / 100;</div>
+<div class="line">          <span class="keywordflow">if</span> (nToFill == 0) {</div>
+<div class="line">            <span class="keywordflow">return</span>;</div>
 <div class="line">          }</div>
-<div class="line">          lcd.setCursor(nToFill + LOADING_BAR_OFFSET - 1, 1);</div>
-<div class="line">          lcd.write(1);</div>
+<div class="line">          <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.setCursor(nToFill + <a class="code hl_variable" href="animLcd_8h.html#a4fb812c2fb39bac66bd2170c07099870">LOADING_BAR_OFFSET</a> - 1, 1);</div>
+<div class="line">          <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.write(1);</div>
 <div class="line">          lastRefresh = time;</div>
 <div class="line">        }</div>
-<div class="line">        lcd.setCursor(8 + LOADING_BAR_OFFSET, 1);</div>
-<div class="line">        lcd.print(percent);</div>
-<div class="line">        lcd.print(&quot;%&quot;);</div>
-<div class="line">      } else {</div>
-<div class="line">        Serial.println(&quot;unknown animation type&quot;);</div>
+<div class="line">        <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.setCursor(8 + <a class="code hl_variable" href="animLcd_8h.html#a4fb812c2fb39bac66bd2170c07099870">LOADING_BAR_OFFSET</a>, 1);</div>
+<div class="line">        <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.<a class="code hl_function" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">print</a>(percent);</div>
+<div class="line">        <a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>.<a class="code hl_function" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">print</a>(<span class="stringliteral">&quot;%&quot;</span>);</div>
+<div class="line">      } <span class="keywordflow">else</span> {</div>
+<div class="line">        Serial.println(<span class="stringliteral">&quot;unknown animation type&quot;</span>);</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
-<div class="line">    void animate() {</div>
-<div class="line">      if (!running) {</div>
-<div class="line">        return;</div>
+<div class="line">    <span class="keywordtype">void</span> animate() {</div>
+<div class="line">      <span class="keywordflow">if</span> (!running) {</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
 <div class="line">      }</div>
-<div class="line">      int timePassed = millis() - t;</div>
-<div class="line">      if (timePassed &gt; currString -&gt; duration) {</div>
-<div class="line">        if (currString + 1 &gt; lastString) {</div>
-<div class="line">          running = false;</div>
-<div class="line">          if (callback != NULL) {</div>
+<div class="line">      <span class="keywordtype">int</span> timePassed = millis() - t;</div>
+<div class="line">      <span class="keywordflow">if</span> (timePassed &gt; currString -&gt; duration) {</div>
+<div class="line">        <span class="keywordflow">if</span> (currString + 1 &gt; lastString) {</div>
+<div class="line">          running = <span class="keyword">false</span>;</div>
+<div class="line">          <span class="keywordflow">if</span> (callback != NULL) {</div>
 <div class="line">            callback();</div>
 <div class="line">          }</div>
-<div class="line">          return;</div>
+<div class="line">          <span class="keywordflow">return</span>;</div>
 <div class="line">        }</div>
 <div class="line">        currString++;</div>
 <div class="line">        t = millis();</div>
 <div class="line">        prepareAnimation(currString);</div>
-<div class="line">        return;</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
 <div class="line">      }</div>
-<div class="line">      if (currString-&gt;animType == NO_ANIMATION) {</div>
-<div class="line">        return;</div>
+<div class="line">      <span class="keywordflow">if</span> (currString-&gt;animType == NO_ANIMATION) {</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
 <div class="line">      }</div>
 <div class="line">      printAnimated();</div>
 <div class="line">    }</div>
 <div class="line">};</div>
+<div class="ttc" id="aanimLcd_8h_html_a4fb812c2fb39bac66bd2170c07099870"><div class="ttname"><a href="animLcd_8h.html#a4fb812c2fb39bac66bd2170c07099870">LOADING_BAR_OFFSET</a></div><div class="ttdeci">const int LOADING_BAR_OFFSET</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8h_source.html#l00012">animLcd.h:12</a></div></div>
+<div class="ttc" id="aanimLcd_8ino_html_addc6f0caadffd9774296f5fa89d43837"><div class="ttname"><a href="animLcd_8ino.html#addc6f0caadffd9774296f5fa89d43837">loading_full_c</a></div><div class="ttdeci">const byte loading_full_c[8]</div><div class="ttdoc">Werte für einen eigenen Character der ein volles Viereck darstellt (für die LcdLoadingAnim)</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00029">animLcd.ino:29</a></div></div>
+<div class="ttc" id="aanimLcd_8ino_html_af9de0017ae44e85326d55921c478325c"><div class="ttname"><a href="animLcd_8ino.html#af9de0017ae44e85326d55921c478325c">loading_empty_c</a></div><div class="ttdeci">const byte loading_empty_c[8]</div><div class="ttdoc">Werte für einen eigenen Character der ein leeres Viereck darstellt (für die LcdLoadingAnim)</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00015">animLcd.ino:15</a></div></div>
+<div class="ttc" id="aclassAnimatableLcd_html_a0f93bbf8c49a76e17272721e67a24b38"><div class="ttname"><a href="classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38">AnimatableLcd::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Überschreibt die normale lcd init function.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00043">animLcd.ino:43</a></div></div>
+<div class="ttc" id="aclassAnimatableLcd_html_ae9f318e41e16a8527eaeffa9500831ca"><div class="ttname"><a href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">AnimatableLcd::print</a></div><div class="ttdeci">void print(const String &amp;text)</div><div class="ttdoc">Eigene Lcd-print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00066">animLcd.ino:66</a></div></div>
+<div class="ttc" id="asketch_8ino_html_a7ec27b22420d7f2ad97962e41f9076b7"><div class="ttname"><a href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a></div><div class="ttdeci">AnimatableLcd lcd(0x27, 16, 2)</div><div class="ttdoc">Der animierbare Lcd.</div></div>
+<div class="ttc" id="astructLcdString_html"><div class="ttname"><a href="structLcdString.html">LcdString</a></div><div class="ttdoc">Ein String der auf dem AnimatableLcd angezeigt werden kann.</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00056">animString.h:56</a></div></div>
+<div class="ttc" id="astructLcdString_html_a7f5aadf720a72e9c4e7d35fdf87ab886"><div class="ttname"><a href="structLcdString.html#a7f5aadf720a72e9c4e7d35fdf87ab886">LcdString::text</a></div><div class="ttdeci">String text</div><div class="ttdoc">der Text der angezeigt wird</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00061">animString.h:61</a></div></div>
+<div class="ttc" id="astructLcdString_html_ab6c96ac47d1b85dfcd49fc286ae9e234"><div class="ttname"><a href="structLcdString.html#ab6c96ac47d1b85dfcd49fc286ae9e234">LcdString::duration</a></div><div class="ttdeci">time_t duration</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00063">animString.h:63</a></div></div>
 </div><!-- fragment --> </details>
 <h1><a class="anchor" id="autotoc_md6"></a>
 Optimierungsideen – Code</h1>
