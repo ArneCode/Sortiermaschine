@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.28)  28 MAY 2022 08:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.28)  28 MAY 2022 08:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -895,20 +895,23 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 172.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 174.
  (./index.tex
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 4.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 5.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 8
-.
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 6.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 7.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
+0.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 8.
+(Font)              scaled to size 8.99994pt on input line 10.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
@@ -937,10 +940,10 @@ Here is how much of TeX's memory you used:
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (3 pages, 21535 bytes).
+Output written on refman.pdf (3 pages, 21645 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  12 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
