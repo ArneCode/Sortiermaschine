@@ -1,5 +1,5 @@
 Hallo, dies ist die \htmlonly Online -\endhtmlonly Dokumentation für den Code der Sortiermaschine von Johannes und Arne   
-\latexonly \href {https://arnecode.github.io/Sortiermaschine}{Online Dokumentation} \endlatexonly
+\latexonly \href {https://arnecode.github.io/Sortiermaschine}{Online Dokumentation} (empfohlen) \endlatexonly
 \htmlonly <a href="doc.pdf">Dokumentation als PDF \endhtmlonly
 # Zur Dokumentation
 \htmlonly Diese Seite hat eine Suchfunktion. Dort kann nach Klassen/Variabeln/Funktionen etc. gesucht werden  \endhtmlonly
