@@ -14,7 +14,7 @@ var hierarchy =
     [ "LiquidCrystal_I2C", null, [
       [ "AnimatableLcd", "classAnimatableLcd.html", null ]
     ] ],
-    [ "Servo", null, [
+    [ "Servo", "classServo.html", [
       [ "CustomServo", "classCustomServo.html", null ]
     ] ]
 ];

@@ -9,5 +9,6 @@ var annotated_dup =
     [ "FuncCall", "structFuncCall.html", "structFuncCall" ],
     [ "LcdDotAnim", "classLcdDotAnim.html", "classLcdDotAnim" ],
     [ "LcdLoadingAnim", "classLcdLoadingAnim.html", "classLcdLoadingAnim" ],
-    [ "LcdString", "structLcdString.html", "structLcdString" ]
+    [ "LcdString", "structLcdString.html", "structLcdString" ],
+    [ "Servo", "classServo.html", null ]
 ];
