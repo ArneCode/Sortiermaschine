@@ -26,7 +26,8 @@ var NAVTREE =
 [
   [ "Sortiermaschine", "index.html", [
     [ "Zur Dokumentation", "index.html#autotoc_md0", [
-      [ "Klassen", "index.html#autotoc_md1", null ]
+      [ "Klassen", "index.html#autotoc_md1", null ],
+      [ "Code", "index.html#autotoc_md2", null ]
     ] ],
     [ "Klassen", "annotated.html", [
       [ "Auflistung der Klassen", "annotated.html", "annotated_dup" ],
