@@ -1,5 +1,5 @@
 <map id="AnimString::run" name="AnimString::run">
-<area shape="rect" id="node1" title="setzt Variabeln die für alle Animationen notwendig sind und ruft dann ihre eigenen init Funktionen au..." alt="" coords="5,31,128,57"/>
+<area shape="rect" id="node1" title="setzt Variablen die für alle Animationen notwendig sind und ruft dann ihre eigenen init Funktionen au..." alt="" coords="5,31,128,57"/>
 <area shape="rect" id="node2" href="$classAnimString.html#a0dcc82eddb210af1a61ff12622a58913" title=" " alt="" coords="222,5,345,32"/>
 <area shape="rect" id="node3" href="$classAnimatableLcd.html#abd8ee2191732afcaccc26c8caf5dc108" title="Setzt die aktuelle Animation." alt="" coords="176,56,391,83"/>
 </map>

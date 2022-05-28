@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2" target="_top" xlink:title="Setzt Variabeln, die benötigt werden um den Servo zu bewegen.">
+<g id="a_node2"><a xlink:href="classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2" target="_top" xlink:title="Setzt Variablen, die benötigt werden um den Servo zu bewegen.">
 <polygon fill="none" stroke="black" points="149,-0.5 149,-19.5 286,-19.5 286,-0.5 149,-0.5"/>
 <text text-anchor="middle" x="217.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">CustomServo::startMove</text>
 </a>

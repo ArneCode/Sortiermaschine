@@ -2,7 +2,7 @@ Hallo, dies ist die \htmlonly Online -\endhtmlonly Dokumentation für den Code d
 \latexonly \href {https://arnecode.github.io/Sortiermaschine}{Online Dokumentation} (empfohlen) \endlatexonly
 \htmlonly <a href="doc.pdf">Dokumentation als PDF \endhtmlonly
 # Zur Dokumentation
-\htmlonly Diese Seite hat eine Suchfunktion. Dort kann nach Klassen/Variabeln/Funktionen etc. gesucht werden  \endhtmlonly
+\htmlonly Diese Seite hat eine Suchfunktion. Dort kann nach Klassen/Variablen/Funktionen etc. gesucht werden  \endhtmlonly
 Ein guter Ort um zu starten ist die sketch.ino Datei. Dort wird wird die Logik des gesamten Programms zusammengeführt. Für eine Liste aller Dateien bitte im Menü unter Dateien nachschauen.
 Für die loop() Funktion ist auch ein Programmablaufplan vorhanden
 ## Klassen
@@ -12,7 +12,7 @@ Ein paar wichtige Klassen in diesem Projekt sind:
 - CallHandler - lässt Calls nacheinander laufen
 - CustomServo - Servo, bei dem die Geschwindigkeit gesteuert werden kann  
 ## Code
-Der Code ist interaktiv, man kann Variabeln, Funktionen Methoden und Klassen anklicken um zu Ihrer Beschreibung zu gelangen. \htmlonly Oder man kann mit der Maus über dem Begriff "schweben" und ein Tooltip wird angezeigt \endhtmlonly
+Der Code ist interaktiv, man kann Variablen, Funktionen Methoden und Klassen anklicken um zu Ihrer Beschreibung zu gelangen. \htmlonly Oder man kann mit der Maus über dem Begriff "schweben" und ein Tooltip wird angezeigt \endhtmlonly
 
 # Begründungen
 @note Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu "erforschen"

@@ -46,7 +46,7 @@ bool LcdString::isDone()
   return millis() - callStart > duration;
 }
 /**
- * @brief setzt Variabeln die für alle Animationen notwendig sind und ruft dann ihre eigenen init Funktionen auf
+ * @brief setzt Variablen die für alle Animationen notwendig sind und ruft dann ihre eigenen init Funktionen auf
  * 
  */
 void AnimString::run() 

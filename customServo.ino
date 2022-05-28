@@ -5,7 +5,7 @@
  */
 #include "customServo.h"
 /**
- * @brief Setzt Variabeln, die benötigt werden um den Servo zu bewegen
+ * @brief Setzt Variablen, die benötigt werden um den Servo zu bewegen
  * 
  */
 void CustomServo::startMove() 

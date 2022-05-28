@@ -243,7 +243,7 @@ bool servoIsDone()
 /**
  * @brief Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück
  * 
- * @tparam angle Der Winkel als Template, da Lambdas (Funktionen die als Parameter weitegegeben werden) keine Variabeln von Außen beinhalten dürfen
+ * @tparam angle Der Winkel als Template, da Lambdas (Funktionen die als Parameter weitegegeben werden) keine Variablen von Außen beinhalten dürfen
  * @param name Die Farbe des Balls
  */
 template <short angle>
