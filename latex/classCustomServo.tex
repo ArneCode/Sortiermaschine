@@ -106,7 +106,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 
 Setzt eine neue Geschwindigkeit des Servos. 
 
-
+Kann auch ausgeführt werden während der Servo sich schon bewegt 
 \begin{DoxyParams}{Parameter}
 {\em new\+Speed} & Die neue Geschwindigkeit in Grad pro Millisekunde \\
 \hline
@@ -274,6 +274,9 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 
 Bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit. 
 
+\begin{DoxyWarning}{Warnung}
+Winkel überprüfen! Wenn dieser zu klein ist schlägt der Arm gegen den Stopper 
+\end{DoxyWarning}
 
 \begin{DoxyParams}{Parameter}
 {\em new\+Angle} & \\
@@ -315,6 +318,9 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 
 Bewegt den Servo in duration Millisekunden an den angegebenen Winkel. 
 
+\begin{DoxyWarning}{Warnung}
+Winkel überprüfen! Wenn dieser zu klein ist schlägt der Arm gegen den Stopper 
+\end{DoxyWarning}
 
 \begin{DoxyParams}{Parameter}
 {\em new\+Angle} & \\
@@ -351,6 +357,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
 
 Steuert den Servo direkt an, enspricht dem normalen Servo\+::write. 
 
+\begin{DoxyWarning}{Warnung}
+Winkel überprüfen! Wenn dieser zu klein ist schlägt der Arm gegen den Stopper 
+\end{DoxyWarning}
 
 \begin{DoxyParams}{Parameter}
 {\em angle} & \\

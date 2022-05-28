@@ -16,7 +16,7 @@ void CustomServo::startMove()
 }
 /**
  * @brief Bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit
- * 
+ * @warning Winkel überprüfen! Wenn dieser zu klein ist schlägt der Arm gegen den Stopper
  * @param newAngle 
  */
 void CustomServo::write(short newAngle) 
@@ -26,7 +26,7 @@ void CustomServo::write(short newAngle)
 }
 /**
  * @brief Bewegt den Servo in duration Millisekunden an den angegebenen Winkel
- * 
+ * @warning Winkel überprüfen! Wenn dieser zu klein ist schlägt der Arm gegen den Stopper
  * @param newAngle 
  * @param duration 
  */
@@ -37,7 +37,7 @@ void CustomServo::write(short newAngle, time_t duration)
 }
 /**
  * @brief Steuert den Servo direkt an, enspricht dem normalen Servo::write
- * 
+ * @warning Winkel überprüfen! Wenn dieser zu klein ist schlägt der Arm gegen den Stopper
  * @param angle 
  */
 void CustomServo::writeDirect(short angle)
@@ -46,7 +46,7 @@ void CustomServo::writeDirect(short angle)
 }
 /**
  * @brief Setzt eine neue Geschwindigkeit des Servos
- * 
+ * @details Kann auch ausgeführt werden während der Servo sich schon bewegt
  * @param newSpeed Die neue Geschwindigkeit in Grad pro Millisekunde
  */
 void CustomServo::setSpeed(float newSpeed) 
