@@ -117,7 +117,7 @@ Zusammengehörigkeiten von CallHandler:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
 <tr class="memitem:a49ab239f771b84300df21bd426788c3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a> ()</td></tr>
-<tr class="memdesc:a49ab239f771b84300df21bd426788c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">setzt den Speicherplatz der von den Calls besetzt wurde frei  <a href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">Mehr ...</a><br /></td></tr>
+<tr class="memdesc:a49ab239f771b84300df21bd426788c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei  <a href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">Mehr ...</a><br /></td></tr>
 <tr class="separator:a49ab239f771b84300df21bd426788c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc5654ccaa266f3a81f8230afdb1c2a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">setCalls</a> (<a class="el" href="classCallable.html">Callable</a> *newCallPtrs[], size_t nCalls)</td></tr>
 <tr class="memdesc:afc5654ccaa266f3a81f8230afdb1c2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt die neuen Calls, die ausgeführt werden sollen.  <a href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0">Mehr ...</a><br /></td></tr>
@@ -166,7 +166,7 @@ Private Attribute</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>setzt den Speicherplatz der von den Calls besetzt wurde frei </p>
+<p>setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei </p>
 
 <p class="definition">Definiert in Zeile <a class="el" href="callHandler_8ino_source.html#l00012">12</a> der Datei <a class="el" href="callHandler_8ino_source.html">callHandler.ino</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   13</span>{</div>
@@ -186,7 +186,8 @@ Private Attribute</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCallHandler_a49ab239f771b84300df21bd426788c3e_icgraph.svg" width="484" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCallHandler_a49ab239f771b84300df21bd426788c3e_icgraph.svg" width="484" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -218,7 +219,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </div><div class="memdoc">
 
 <p>Setzt die neuen Calls, die ausgeführt werden sollen. </p>
-<dl class="section note"><dt>Zu beachten</dt><dd>Calls werden im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert um sie zwischen Funktionen hin- und hergeben zu können und sie benutzen nachdem die Exekution abgeschlossen ist (bzw an das <a class="el" href="classCallHandler.html" title="Klasse, die Calls nacheinander aufruft.">CallHandler</a> Objekt). Sie müssen aber such manuell mithilfe von <a class="el" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e" title="setzt den Speicherplatz der von den Calls besetzt wurde frei">CallHandler::deleteCalls</a> gelöscht werden </dd></dl>
+<dl class="section note"><dt>Zu beachten</dt><dd>Calls werden im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert um sie zwischen Funktionen hin- und hergeben zu können und sie benutzen nachdem die Exekution abgeschlossen ist (bzw an das <a class="el" href="classCallHandler.html" title="Klasse, die Calls nacheinander aufruft.">CallHandler</a> Objekt). Sie müssen aber such manuell mithilfe von <a class="el" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e" title="setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei">CallHandler::deleteCalls</a> gelöscht werden </dd></dl>
 <dl class="section warning"><dt>Warnung</dt><dd>nCalls darf auf keinen Fall größer als die tatsächliche Anzahl an Calls sein, sonst stürzt das Programm ab weil es versucht nicht vorhandene Calls auszuführen </dd></dl>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -327,7 +328,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </div><div class="memdoc">
 
 <p>Die liste der aktuellen Calls. </p>
-<p >Wird mithilfe von <a class="el" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0" title="Setzt die neuen Calls, die ausgeführt werden sollen.">CallHandler::setCalls</a> gesetzt. </p><dl class="section note"><dt>Zu beachten</dt><dd>Die Calls werden im Heap gespeichert, das heißt zum einen, dass sie zwischen Funktionen hin- und hergegeben werden können, zum anderen aber auch, dass sie mithilfe von <a class="el" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e" title="setzt den Speicherplatz der von den Calls besetzt wurde frei">CallHandler::deleteCalls</a> manuell wieder gelöscht werden müssen </dd></dl>
+<p >Wird mithilfe von <a class="el" href="classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0" title="Setzt die neuen Calls, die ausgeführt werden sollen.">CallHandler::setCalls</a> gesetzt. </p><dl class="section note"><dt>Zu beachten</dt><dd>Die Calls werden im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert, das heißt zum einen, dass sie zwischen Funktionen hin- und hergegeben werden können, zum anderen aber auch, dass sie mithilfe von <a class="el" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e" title="setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei">CallHandler::deleteCalls</a> manuell wieder gelöscht werden müssen </dd></dl>
 
 <p class="definition">Definiert in Zeile <a class="el" href="callHandler_8h_source.html#l00023">23</a> der Datei <a class="el" href="callHandler_8h_source.html">callHandler.h</a>.</p>
 
