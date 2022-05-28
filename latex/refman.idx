@@ -121,8 +121,8 @@
 \indexentry{LcdDotAnim@{LcdDotAnim}!update@{update}|hyperpage}{33}
 \indexentry{update@{update}!LcdDotAnim@{LcdDotAnim}|hyperpage}{33}
 \indexentry{LcdLoadingAnim@{LcdLoadingAnim}|hyperpage}{34}
-\indexentry{LcdLoadingAnim@{LcdLoadingAnim}!init@{init}|hyperpage}{35}
-\indexentry{init@{init}!LcdLoadingAnim@{LcdLoadingAnim}|hyperpage}{35}
+\indexentry{LcdLoadingAnim@{LcdLoadingAnim}!init@{init}|hyperpage}{34}
+\indexentry{init@{init}!LcdLoadingAnim@{LcdLoadingAnim}|hyperpage}{34}
 \indexentry{LcdLoadingAnim@{LcdLoadingAnim}!update@{update}|hyperpage}{35}
 \indexentry{update@{update}!LcdLoadingAnim@{LcdLoadingAnim}|hyperpage}{35}
 \indexentry{LcdString@{LcdString}|hyperpage}{36}
@@ -145,7 +145,7 @@
 \indexentry{LcdString@{LcdString}!text@{text}|hyperpage}{39}
 \indexentry{text@{text}!LcdString@{LcdString}|hyperpage}{39}
 \indexentry{Servo@{Servo}|hyperpage}{39}
-\indexentry{animLcd.h@{animLcd.h}|hyperpage}{40}
+\indexentry{animLcd.h@{animLcd.h}|hyperpage}{39}
 \indexentry{animLcd.h@{animLcd.h}!LOADING\_BAR\_OFFSET@{LOADING\_BAR\_OFFSET}|hyperpage}{41}
 \indexentry{LOADING\_BAR\_OFFSET@{LOADING\_BAR\_OFFSET}!animLcd.h@{animLcd.h}|hyperpage}{41}
 \indexentry{animLcd.ino@{animLcd.ino}|hyperpage}{41}

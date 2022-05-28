@@ -98,13 +98,13 @@
 \contentsline {subsection}{\numberline {5.8}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dot\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Anim Klassenreferenz}{32}{subsection.5.8}%
 \contentsline {subsubsection}{\numberline {5.8.1}Ausführliche Beschreibung}{32}{subsubsection.5.8.1}%
 \contentsline {subsubsection}{\numberline {5.8.2}Beschreibung der Konstruktoren und Destruktoren}{32}{subsubsection.5.8.2}%
-\contentsline {paragraph}{\numberline {5.8.2.1}LcdDotAnim()}{33}{paragraph.5.8.2.1}%
+\contentsline {paragraph}{\numberline {5.8.2.1}LcdDotAnim()}{32}{paragraph.5.8.2.1}%
 \contentsline {subsubsection}{\numberline {5.8.3}Dokumentation der Elementfunktionen}{33}{subsubsection.5.8.3}%
 \contentsline {paragraph}{\numberline {5.8.3.1}init()}{33}{paragraph.5.8.3.1}%
 \contentsline {paragraph}{\numberline {5.8.3.2}update()}{33}{paragraph.5.8.3.2}%
 \contentsline {subsection}{\numberline {5.9}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loading\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Anim Klassenreferenz}{34}{subsection.5.9}%
 \contentsline {subsubsection}{\numberline {5.9.1}Ausführliche Beschreibung}{34}{subsubsection.5.9.1}%
-\contentsline {subsubsection}{\numberline {5.9.2}Dokumentation der Elementfunktionen}{35}{subsubsection.5.9.2}%
+\contentsline {subsubsection}{\numberline {5.9.2}Dokumentation der Elementfunktionen}{34}{subsubsection.5.9.2}%
 \contentsline {paragraph}{\numberline {5.9.2.1}init()}{35}{paragraph.5.9.2.1}%
 \contentsline {paragraph}{\numberline {5.9.2.2}update()}{35}{paragraph.5.9.2.2}%
 \contentsline {subsection}{\numberline {5.10}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String Strukturreferenz}{36}{subsection.5.10}%
@@ -123,9 +123,9 @@
 \contentsline {paragraph}{\numberline {5.10.4.4}text}{39}{paragraph.5.10.4.4}%
 \contentsline {subsection}{\numberline {5.11}Servo Klassenreferenz}{39}{subsection.5.11}%
 \contentsline {subsubsection}{\numberline {5.11.1}Ausführliche Beschreibung}{39}{subsubsection.5.11.1}%
-\contentsline {section}{\numberline {6}Datei-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{40}{section.6}%
-\contentsline {subsection}{\numberline {6.1}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h-\/Dateireferenz}{40}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Ausführliche Beschreibung}{40}{subsubsection.6.1.1}%
+\contentsline {section}{\numberline {6}Datei-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{39}{section.6}%
+\contentsline {subsection}{\numberline {6.1}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h-\/Dateireferenz}{39}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Ausführliche Beschreibung}{39}{subsubsection.6.1.1}%
 \contentsline {subsubsection}{\numberline {6.1.2}Variablen-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{41}{subsubsection.6.1.2}%
 \contentsline {paragraph}{\numberline {6.1.2.1}LOADING\_BAR\_OFFSET}{41}{paragraph.6.1.2.1}%
 \contentsline {subsection}{\numberline {6.2}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{41}{subsection.6.2}%
