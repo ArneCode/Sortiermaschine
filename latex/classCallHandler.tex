@@ -98,7 +98,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 Setzt die neuen Calls, die ausgeführt werden sollen. 
 
 \begin{DoxyNote}{Zu beachten}
-Calls werden im \href{https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/}{\texttt{ Heap}} gespeichert um sie zwischen Funktionen hin-\/ und hergeben zu können und sie benutzen nachdem die Exekution abgeschlossen ist (bzw an das \mbox{\hyperlink{classCallHandler}{Call\+Handler}} Objekt) 
+Calls werden im \href{https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/}{\texttt{ Heap}} gespeichert um sie zwischen Funktionen hin-\/ und hergeben zu können und sie benutzen nachdem die Exekution abgeschlossen ist (bzw an das \mbox{\hyperlink{classCallHandler}{Call\+Handler}} Objekt). Sie müssen aber such manuell mithilfe von \mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{Call\+Handler\+::delete\+Calls}} gelöscht werden 
 \end{DoxyNote}
 \begin{DoxyWarning}{Warnung}
 n\+Calls darf auf keinen Fall größer als die tatsächliche Anzahl an Calls sein, sonst stürzt das Programm ab weil es versucht nicht vorhandene Calls auszuführen 

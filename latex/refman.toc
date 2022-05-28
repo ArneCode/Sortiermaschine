@@ -60,28 +60,28 @@
 \contentsline {paragraph}{\numberline {5.5.2.3}update()}{19}{paragraph.5.5.2.3}%
 \contentsline {subsubsection}{\numberline {5.5.3}Dokumentation der Datenelemente}{20}{subsubsection.5.5.3}%
 \contentsline {paragraph}{\numberline {5.5.3.1}callPtrs}{20}{paragraph.5.5.3.1}%
-\contentsline {paragraph}{\numberline {5.5.3.2}callsSet}{20}{paragraph.5.5.3.2}%
+\contentsline {paragraph}{\numberline {5.5.3.2}callsSet}{21}{paragraph.5.5.3.2}%
 \contentsline {paragraph}{\numberline {5.5.3.3}currCallPtr}{21}{paragraph.5.5.3.3}%
 \contentsline {paragraph}{\numberline {5.5.3.4}lastCallPtr}{21}{paragraph.5.5.3.4}%
 \contentsline {paragraph}{\numberline {5.5.3.5}lastCallT}{21}{paragraph.5.5.3.5}%
 \contentsline {paragraph}{\numberline {5.5.3.6}running}{21}{paragraph.5.5.3.6}%
-\contentsline {subsection}{\numberline {5.6}Custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo Klassenreferenz}{21}{subsection.5.6}%
-\contentsline {subsubsection}{\numberline {5.6.1}Ausführliche Beschreibung}{21}{subsubsection.5.6.1}%
-\contentsline {subsubsection}{\numberline {5.6.2}Dokumentation der Elementfunktionen}{22}{subsubsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6}Custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo Klassenreferenz}{22}{subsection.5.6}%
+\contentsline {subsubsection}{\numberline {5.6.1}Ausführliche Beschreibung}{22}{subsubsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {5.6.2}Dokumentation der Elementfunktionen}{23}{subsubsection.5.6.2}%
 \contentsline {paragraph}{\numberline {5.6.2.1}isDone()}{23}{paragraph.5.6.2.1}%
 \contentsline {paragraph}{\numberline {5.6.2.2}setSpeed()}{23}{paragraph.5.6.2.2}%
 \contentsline {paragraph}{\numberline {5.6.2.3}start()}{24}{paragraph.5.6.2.3}%
-\contentsline {paragraph}{\numberline {5.6.2.4}startMove()}{24}{paragraph.5.6.2.4}%
+\contentsline {paragraph}{\numberline {5.6.2.4}startMove()}{25}{paragraph.5.6.2.4}%
 \contentsline {paragraph}{\numberline {5.6.2.5}stop()}{25}{paragraph.5.6.2.5}%
-\contentsline {paragraph}{\numberline {5.6.2.6}updatePos()}{25}{paragraph.5.6.2.6}%
+\contentsline {paragraph}{\numberline {5.6.2.6}updatePos()}{26}{paragraph.5.6.2.6}%
 \contentsline {paragraph}{\numberline {5.6.2.7}write()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{26}{paragraph.5.6.2.7}%
 \contentsline {paragraph}{\numberline {5.6.2.8}write()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{27}{paragraph.5.6.2.8}%
-\contentsline {paragraph}{\numberline {5.6.2.9}writeDirect()}{27}{paragraph.5.6.2.9}%
+\contentsline {paragraph}{\numberline {5.6.2.9}writeDirect()}{28}{paragraph.5.6.2.9}%
 \contentsline {subsubsection}{\numberline {5.6.3}Dokumentation der Datenelemente}{28}{subsubsection.5.6.3}%
 \contentsline {paragraph}{\numberline {5.6.3.1}done}{28}{paragraph.5.6.3.1}%
-\contentsline {paragraph}{\numberline {5.6.3.2}speed}{28}{paragraph.5.6.3.2}%
-\contentsline {paragraph}{\numberline {5.6.3.3}startAngle}{28}{paragraph.5.6.3.3}%
-\contentsline {paragraph}{\numberline {5.6.3.4}startTime}{28}{paragraph.5.6.3.4}%
+\contentsline {paragraph}{\numberline {5.6.3.2}speed}{29}{paragraph.5.6.3.2}%
+\contentsline {paragraph}{\numberline {5.6.3.3}startAngle}{29}{paragraph.5.6.3.3}%
+\contentsline {paragraph}{\numberline {5.6.3.4}startTime}{29}{paragraph.5.6.3.4}%
 \contentsline {paragraph}{\numberline {5.6.3.5}targetAngle}{29}{paragraph.5.6.3.5}%
 \contentsline {subsection}{\numberline {5.7}Func\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Call Strukturreferenz}{29}{subsection.5.7}%
 \contentsline {subsubsection}{\numberline {5.7.1}Ausführliche Beschreibung}{29}{subsubsection.5.7.1}%
@@ -90,21 +90,21 @@
 \contentsline {paragraph}{\numberline {5.7.2.2}FuncCall()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{30}{paragraph.5.7.2.2}%
 \contentsline {paragraph}{\numberline {5.7.2.3}$\sim $FuncCall()}{30}{paragraph.5.7.2.3}%
 \contentsline {subsubsection}{\numberline {5.7.3}Dokumentation der Elementfunktionen}{30}{subsubsection.5.7.3}%
-\contentsline {paragraph}{\numberline {5.7.3.1}isDone()}{30}{paragraph.5.7.3.1}%
+\contentsline {paragraph}{\numberline {5.7.3.1}isDone()}{31}{paragraph.5.7.3.1}%
 \contentsline {paragraph}{\numberline {5.7.3.2}run()}{31}{paragraph.5.7.3.2}%
 \contentsline {subsubsection}{\numberline {5.7.4}Dokumentation der Datenelemente}{31}{subsubsection.5.7.4}%
 \contentsline {paragraph}{\numberline {5.7.4.1}\_isDone}{31}{paragraph.5.7.4.1}%
 \contentsline {paragraph}{\numberline {5.7.4.2}call}{31}{paragraph.5.7.4.2}%
-\contentsline {subsection}{\numberline {5.8}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dot\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Anim Klassenreferenz}{31}{subsection.5.8}%
-\contentsline {subsubsection}{\numberline {5.8.1}Ausführliche Beschreibung}{31}{subsubsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dot\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Anim Klassenreferenz}{32}{subsection.5.8}%
+\contentsline {subsubsection}{\numberline {5.8.1}Ausführliche Beschreibung}{32}{subsubsection.5.8.1}%
 \contentsline {subsubsection}{\numberline {5.8.2}Beschreibung der Konstruktoren und Destruktoren}{32}{subsubsection.5.8.2}%
-\contentsline {paragraph}{\numberline {5.8.2.1}LcdDotAnim()}{32}{paragraph.5.8.2.1}%
-\contentsline {subsubsection}{\numberline {5.8.3}Dokumentation der Elementfunktionen}{32}{subsubsection.5.8.3}%
+\contentsline {paragraph}{\numberline {5.8.2.1}LcdDotAnim()}{33}{paragraph.5.8.2.1}%
+\contentsline {subsubsection}{\numberline {5.8.3}Dokumentation der Elementfunktionen}{33}{subsubsection.5.8.3}%
 \contentsline {paragraph}{\numberline {5.8.3.1}init()}{33}{paragraph.5.8.3.1}%
 \contentsline {paragraph}{\numberline {5.8.3.2}update()}{33}{paragraph.5.8.3.2}%
 \contentsline {subsection}{\numberline {5.9}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loading\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Anim Klassenreferenz}{34}{subsection.5.9}%
 \contentsline {subsubsection}{\numberline {5.9.1}Ausführliche Beschreibung}{34}{subsubsection.5.9.1}%
-\contentsline {subsubsection}{\numberline {5.9.2}Dokumentation der Elementfunktionen}{34}{subsubsection.5.9.2}%
+\contentsline {subsubsection}{\numberline {5.9.2}Dokumentation der Elementfunktionen}{35}{subsubsection.5.9.2}%
 \contentsline {paragraph}{\numberline {5.9.2.1}init()}{35}{paragraph.5.9.2.1}%
 \contentsline {paragraph}{\numberline {5.9.2.2}update()}{35}{paragraph.5.9.2.2}%
 \contentsline {subsection}{\numberline {5.10}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String Strukturreferenz}{36}{subsection.5.10}%
