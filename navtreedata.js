@@ -33,7 +33,9 @@ var NAVTREE =
       [ "Warum werden Calls im Heap gespeichert?", "index.html#autotoc_md4", null ],
       [ "Warum verschiedene Callable Klassen?", "index.html#autotoc_md5", null ]
     ] ],
-    [ "Optimierungsideen", "index.html#autotoc_md6", null ],
+    [ "Optimierungsideen", "index.html#autotoc_md6", [
+      [ "Reflexion", "index.html#autotoc_md7", null ]
+    ] ],
     [ "Klassen", "annotated.html", [
       [ "Auflistung der Klassen", "annotated.html", "annotated_dup" ],
       [ "Klassenhierarchie", "hierarchy.html", "hierarchy" ],
