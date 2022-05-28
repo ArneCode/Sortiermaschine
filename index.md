@@ -17,7 +17,7 @@ Der Code ist interaktiv, man kann Variabeln, Funktionen Methoden und Klassen ank
 # Begründungen - Code 
 @note Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu "erforschen"
 
-## Warum werden Calls im Heap gespeichert
+## Warum werden Calls im Heap gespeichert?
 Calls (CallHandler::callPtrs) werden mithilfe des ```new``` Keywords im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert um sie weiter benutzen zu können nachdem die Funktion in der sie instanziert wurden abgeschlossen ist. Sie müssen deshalb aber auch manuell mit CallHandler::deleteCalls gelöscht werden.
 ## Warum verschiedene Callable Klassen? 
 
