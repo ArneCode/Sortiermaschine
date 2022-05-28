@@ -24,7 +24,7 @@ Calls (CallHandler::callPtrs) werden mithilfe des *new* Keywords im <a href="htt
 Es wäre möglich gewesen statt mehrerer Callable Klassen einfach eine zu benutzen und dann die Art des Calls in einer Variable zu speichern. Der Nachteil dieser Methode wäre, dass bei jeder Funktion die etwas mit der Klasse zu tun hat (Callable::run, Callable::isDone, etc.) überprüft werden müsste, was die Art des Calls ist. Das würde zu einer schlechteren Lesbarkeit des Codes führen. Das war in einer älteren Version der Fall.
 <details>
 <summary>Code</summary>
-```c++
+\code{.cpp}
 class LcdHandler {
   public:
     enum AnimType {
@@ -188,7 +188,7 @@ class LcdHandler {
       printAnimated();
     }
 };
-```
+\endcode
 </details>
  
 

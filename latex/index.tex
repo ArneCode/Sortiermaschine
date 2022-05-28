@@ -20,166 +20,165 @@ Es wäre möglich gewesen statt mehrerer \mbox{\hyperlink{classCallable}{Callabl
 
 {\bfseries{Code}}\newline 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{ \{c++\}}
-\DoxyCodeLine{class LcdHandler \{}
-\DoxyCodeLine{  public:}
-\DoxyCodeLine{    enum AnimType \{}
+\DoxyCodeLine{\textcolor{keyword}{class }LcdHandler \{}
+\DoxyCodeLine{  \textcolor{keyword}{public}:}
+\DoxyCodeLine{    \textcolor{keyword}{enum} AnimType \{}
 \DoxyCodeLine{      DOT,}
 \DoxyCodeLine{      LOADING,}
 \DoxyCodeLine{      NO\_ANIMATION}
 \DoxyCodeLine{    \};}
-\DoxyCodeLine{    struct LcdString \{}
-\DoxyCodeLine{      long duration;}
+\DoxyCodeLine{    \textcolor{keyword}{struct }\mbox{\hyperlink{structLcdString}{LcdString}} \{}
+\DoxyCodeLine{      \textcolor{keywordtype}{long} duration;}
 \DoxyCodeLine{      AnimType animType;}
 \DoxyCodeLine{      String text;}
-\DoxyCodeLine{      LcdString(String text, long duration, AnimType animType = NO\_ANIMATION): text(text), duration(duration), animType(animType) \{\}}
-\DoxyCodeLine{      operator String() const \{}
-\DoxyCodeLine{        return text;}
+\DoxyCodeLine{      \mbox{\hyperlink{structLcdString}{LcdString}}(String text, \textcolor{keywordtype}{long} duration, AnimType animType = NO\_ANIMATION): text(text), duration(duration), animType(animType) \{\}}
+\DoxyCodeLine{      \textcolor{keyword}{operator} String()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} text;}
 \DoxyCodeLine{      \}}
 \DoxyCodeLine{    \};}
-\DoxyCodeLine{    bool running = false;}
-\DoxyCodeLine{  private:}
-\DoxyCodeLine{    LcdString * currString;}
-\DoxyCodeLine{    long t;}
-\DoxyCodeLine{    LcdString * lastString;}
-\DoxyCodeLine{    LcdString * lcdStrings;}
-\DoxyCodeLine{    long stepDuration;}
-\DoxyCodeLine{    long lastRefresh;}
-\DoxyCodeLine{    void( * callback)(); //function pointer}
-\DoxyCodeLine{  public:}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} running = \textcolor{keyword}{false};}
+\DoxyCodeLine{  \textcolor{keyword}{private}:}
+\DoxyCodeLine{    \mbox{\hyperlink{structLcdString}{LcdString}} * currString;}
+\DoxyCodeLine{    \textcolor{keywordtype}{long} t;}
+\DoxyCodeLine{    \mbox{\hyperlink{structLcdString}{LcdString}} * lastString;}
+\DoxyCodeLine{    \mbox{\hyperlink{structLcdString}{LcdString}} * lcdStrings;}
+\DoxyCodeLine{    \textcolor{keywordtype}{long} stepDuration;}
+\DoxyCodeLine{    \textcolor{keywordtype}{long} lastRefresh;}
+\DoxyCodeLine{    void( * callback)(); \textcolor{comment}{//function pointer}}
+\DoxyCodeLine{  \textcolor{keyword}{public}:}
 \DoxyCodeLine{    \string~LcdHandler() \{}
-\DoxyCodeLine{      delete[] lcdStrings;}
+\DoxyCodeLine{      \textcolor{keyword}{delete}[] lcdStrings;}
 \DoxyCodeLine{    \}}
-\DoxyCodeLine{    void init() \{}
-\DoxyCodeLine{      lcd.init();}
-\DoxyCodeLine{      lcd.backlight();}
-\DoxyCodeLine{      lcd.createChar(0, loading\_empty\_c);}
-\DoxyCodeLine{      lcd.createChar(1, loading\_full\_c);}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} init() \{}
+\DoxyCodeLine{      \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.\mbox{\hyperlink{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38}{init}}();}
+\DoxyCodeLine{      \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.backlight();}
+\DoxyCodeLine{      \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.createChar(0, \mbox{\hyperlink{animLcd_8ino_af9de0017ae44e85326d55921c478325c}{loading\_empty\_c}});}
+\DoxyCodeLine{      \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.createChar(1, \mbox{\hyperlink{animLcd_8ino_addc6f0caadffd9774296f5fa89d43837}{loading\_full\_c}});}
 \DoxyCodeLine{    \}}
-\DoxyCodeLine{    void setStrings(LcdString newLcdStrings[], size\_t numStrings, void( * newCallback)() = NULL, int newStepDuration = 1000) \{}
-\DoxyCodeLine{      delete[] lcdStrings; //Speicherplatz frei machen}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} setStrings(\mbox{\hyperlink{structLcdString}{LcdString}} newLcdStrings[], \textcolor{keywordtype}{size\_t} numStrings, \textcolor{keywordtype}{void}( * newCallback)() = NULL, \textcolor{keywordtype}{int} newStepDuration = 1000) \{}
+\DoxyCodeLine{      \textcolor{keyword}{delete}[] lcdStrings; \textcolor{comment}{//Speicherplatz frei machen}}
 \DoxyCodeLine{      lcdStrings = newLcdStrings;}
 \DoxyCodeLine{      currString = newLcdStrings;}
 \DoxyCodeLine{      lastString = newLcdStrings + numStrings -\/ 1;}
 \DoxyCodeLine{      t = millis();}
 \DoxyCodeLine{      stepDuration = newStepDuration;}
 \DoxyCodeLine{      lastRefresh = millis();}
-\DoxyCodeLine{      running = true;}
+\DoxyCodeLine{      running = \textcolor{keyword}{true};}
 \DoxyCodeLine{      callback = newCallback;}
 \DoxyCodeLine{      prepareAnimation(currString);}
 \DoxyCodeLine{    \}}
-\DoxyCodeLine{    void prepareAnimation(LcdString* currString) \{}
-\DoxyCodeLine{      switch (currString-\/>animType) \{}
-\DoxyCodeLine{        case LOADING:}
-\DoxyCodeLine{          stepDuration = currString-\/>duration / 9;}
-\DoxyCodeLine{          if (currString-\/>text.length() > 16) \{}
-\DoxyCodeLine{            Serial.print("{}text given for loading animation is to long, text: "{});}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} prepareAnimation(\mbox{\hyperlink{structLcdString}{LcdString}}* currString) \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{switch} (currString-\/>animType) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{case} LOADING:}
+\DoxyCodeLine{          stepDuration = currString-\/>\mbox{\hyperlink{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}{duration}} / 9;}
+\DoxyCodeLine{          \textcolor{keywordflow}{if} (currString-\/>\mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}}.length() > 16) \{}
+\DoxyCodeLine{            Serial.print(\textcolor{stringliteral}{"{}text given for loading animation is to long, text: "{}});}
 \DoxyCodeLine{            Serial.println(*currString);}
 \DoxyCodeLine{          \}}
 \DoxyCodeLine{          printCentered(*currString);}
-\DoxyCodeLine{          lcd.setCursor(LOADING\_BAR\_OFFSET, 1);}
-\DoxyCodeLine{          for (int i = 0; i < 8; i++) \{}
-\DoxyCodeLine{            lcd.write(0);}
+\DoxyCodeLine{          \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.setCursor(\mbox{\hyperlink{animLcd_8h_a4fb812c2fb39bac66bd2170c07099870}{LOADING\_BAR\_OFFSET}}, 1);}
+\DoxyCodeLine{          \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 8; i++) \{}
+\DoxyCodeLine{            \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.write(0);}
 \DoxyCodeLine{          \}}
-\DoxyCodeLine{          lcd.print("{}0\% "{});}
-\DoxyCodeLine{          break;}
-\DoxyCodeLine{        case DOT:}
-\DoxyCodeLine{          printPretty(currString-\/>text + String("{}   "{}));}
-\DoxyCodeLine{          break;}
-\DoxyCodeLine{        default:}
+\DoxyCodeLine{          \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.\mbox{\hyperlink{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}{print}}(\textcolor{stringliteral}{"{}0\% "{}});}
+\DoxyCodeLine{          \textcolor{keywordflow}{break};}
+\DoxyCodeLine{        \textcolor{keywordflow}{case} DOT:}
+\DoxyCodeLine{          printPretty(currString-\/>\mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}} + String(\textcolor{stringliteral}{"{}   "{}}));}
+\DoxyCodeLine{          \textcolor{keywordflow}{break};}
+\DoxyCodeLine{        \textcolor{keywordflow}{default}:}
 \DoxyCodeLine{          printPretty(*currString);}
 \DoxyCodeLine{      \}}
 \DoxyCodeLine{    \}}
-\DoxyCodeLine{    void printCentered(String text, int length = -\/1, int row = 0) \{ //length<=16}
-\DoxyCodeLine{      if (length == -\/1) \{}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} printCentered(String text, \textcolor{keywordtype}{int} length = -\/1, \textcolor{keywordtype}{int} row = 0) \{ \textcolor{comment}{//length<=16}}
+\DoxyCodeLine{      \textcolor{keywordflow}{if} (length == -\/1) \{}
 \DoxyCodeLine{        length = text.length();}
 \DoxyCodeLine{      \}}
-\DoxyCodeLine{      int offset = (16 -\/ length) / 2; //rundet immer ab, da int}
-\DoxyCodeLine{      lcd.setCursor(offset, row);}
-\DoxyCodeLine{      lcd.print(text);}
+\DoxyCodeLine{      \textcolor{keywordtype}{int} offset = (16 -\/ length) / 2; \textcolor{comment}{//rundet immer ab, da int}}
+\DoxyCodeLine{      \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.setCursor(offset, row);}
+\DoxyCodeLine{      \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.\mbox{\hyperlink{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}{print}}(text);}
 \DoxyCodeLine{    \}}
-\DoxyCodeLine{    void printPretty(String text) \{ //handelt zeilenumbrüche und schreibt zentriert}
-\DoxyCodeLine{      lcd.clear();}
-\DoxyCodeLine{      int length = text.length();}
-\DoxyCodeLine{      if (length <= 16) \{}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} printPretty(String text) \{ \textcolor{comment}{//handelt zeilenumbrüche und schreibt zentriert}}
+\DoxyCodeLine{      \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.clear();}
+\DoxyCodeLine{      \textcolor{keywordtype}{int} length = text.length();}
+\DoxyCodeLine{      \textcolor{keywordflow}{if} (length <= 16) \{}
 \DoxyCodeLine{        printCentered(text, length);}
-\DoxyCodeLine{        return 0;}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} 0;}
 \DoxyCodeLine{      \}}
-\DoxyCodeLine{      int spacePos = -\/1;}
-\DoxyCodeLine{      for (int i = 15; i >= 0; i-\/-\/) \{}
-\DoxyCodeLine{        if (text[i] == ' ') \{}
+\DoxyCodeLine{      \textcolor{keywordtype}{int} spacePos = -\/1;}
+\DoxyCodeLine{      \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 15; i >= 0; i-\/-\/) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (text[i] == \textcolor{charliteral}{' '}) \{}
 \DoxyCodeLine{          spacePos = i;}
-\DoxyCodeLine{          break;}
+\DoxyCodeLine{          \textcolor{keywordflow}{break};}
 \DoxyCodeLine{        \}}
 \DoxyCodeLine{      \}}
 \DoxyCodeLine{      String row1, row2;}
-\DoxyCodeLine{      if (spacePos != -\/1) \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{if} (spacePos != -\/1) \{}
 \DoxyCodeLine{        row1 = text.substring(0, spacePos);}
 \DoxyCodeLine{        row2 = text.substring(spacePos + 1);}
-\DoxyCodeLine{      \} else \{}
+\DoxyCodeLine{      \} \textcolor{keywordflow}{else} \{}
 \DoxyCodeLine{        row1 = text.substring(0, 16);}
 \DoxyCodeLine{        row2 = text.substring(16);}
 \DoxyCodeLine{      \}}
 \DoxyCodeLine{      printCentered(row1, row1.length(), 0);}
 \DoxyCodeLine{      printCentered(row2, row2.length(), 1);}
 \DoxyCodeLine{    \}}
-\DoxyCodeLine{    void printAnimated() \{}
-\DoxyCodeLine{      long time = millis();}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} printAnimated() \{}
+\DoxyCodeLine{      \textcolor{keywordtype}{long} time = millis();}
 \DoxyCodeLine{      AnimType type = currString-\/>animType;}
-\DoxyCodeLine{      if (type == DOT) \{}
-\DoxyCodeLine{        if ((time -\/ lastRefresh) < stepDuration) \{}
-\DoxyCodeLine{          return;}
+\DoxyCodeLine{      \textcolor{keywordflow}{if} (type == DOT) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} ((time -\/ lastRefresh) < stepDuration) \{}
+\DoxyCodeLine{          \textcolor{keywordflow}{return};}
 \DoxyCodeLine{        \}}
 \DoxyCodeLine{        lastRefresh = time;}
-\DoxyCodeLine{        int numDots = ((time -\/ t) / stepDuration) \% 4;}
-\DoxyCodeLine{        char dots[4];}
-\DoxyCodeLine{        for (int i = 0; i < 3; i++) \{}
-\DoxyCodeLine{          if (i < numDots) \{}
-\DoxyCodeLine{            dots[i] = '.';}
-\DoxyCodeLine{          \} else \{}
-\DoxyCodeLine{            dots[i] = ' ';}
+\DoxyCodeLine{        \textcolor{keywordtype}{int} numDots = ((time -\/ t) / stepDuration) \% 4;}
+\DoxyCodeLine{        \textcolor{keywordtype}{char} dots[4];}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 3; i++) \{}
+\DoxyCodeLine{          \textcolor{keywordflow}{if} (i < numDots) \{}
+\DoxyCodeLine{            dots[i] = \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{          \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{            dots[i] = \textcolor{charliteral}{' '};}
 \DoxyCodeLine{          \}}
 \DoxyCodeLine{        \}}
-\DoxyCodeLine{        dots[3] = '\(\backslash\)0';}
-\DoxyCodeLine{        printPretty(currString-\/>text + dots);}
-\DoxyCodeLine{      \} else if (type == LOADING) \{}
-\DoxyCodeLine{        short percent = (time -\/ t) * 100 / currString-\/>duration;}
+\DoxyCodeLine{        dots[3] = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{        printPretty(currString-\/>\mbox{\hyperlink{structLcdString_a7f5aadf720a72e9c4e7d35fdf87ab886}{text}} + dots);}
+\DoxyCodeLine{      \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (type == LOADING) \{}
+\DoxyCodeLine{        \textcolor{keywordtype}{short} percent = (time -\/ t) * 100 / currString-\/>\mbox{\hyperlink{structLcdString_ab6c96ac47d1b85dfcd49fc286ae9e234}{duration}};}
 \DoxyCodeLine{        if (time -\/ lastRefresh > stepDuration) \{}
-\DoxyCodeLine{          short nToFill = percent * 8 / 100;}
-\DoxyCodeLine{          if (nToFill == 0) \{}
-\DoxyCodeLine{            return;}
+\DoxyCodeLine{          \textcolor{keywordtype}{short} nToFill = percent * 8 / 100;}
+\DoxyCodeLine{          \textcolor{keywordflow}{if} (nToFill == 0) \{}
+\DoxyCodeLine{            \textcolor{keywordflow}{return};}
 \DoxyCodeLine{          \}}
-\DoxyCodeLine{          lcd.setCursor(nToFill + LOADING\_BAR\_OFFSET -\/ 1, 1);}
-\DoxyCodeLine{          lcd.write(1);}
+\DoxyCodeLine{          \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.setCursor(nToFill + \mbox{\hyperlink{animLcd_8h_a4fb812c2fb39bac66bd2170c07099870}{LOADING\_BAR\_OFFSET}} -\/ 1, 1);}
+\DoxyCodeLine{          \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.write(1);}
 \DoxyCodeLine{          lastRefresh = time;}
 \DoxyCodeLine{        \}}
-\DoxyCodeLine{        lcd.setCursor(8 + LOADING\_BAR\_OFFSET, 1);}
-\DoxyCodeLine{        lcd.print(percent);}
-\DoxyCodeLine{        lcd.print("{}\%"{});}
-\DoxyCodeLine{      \} else \{}
-\DoxyCodeLine{        Serial.println("{}unknown animation type"{});}
+\DoxyCodeLine{        \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.setCursor(8 + \mbox{\hyperlink{animLcd_8h_a4fb812c2fb39bac66bd2170c07099870}{LOADING\_BAR\_OFFSET}}, 1);}
+\DoxyCodeLine{        \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.\mbox{\hyperlink{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}{print}}(percent);}
+\DoxyCodeLine{        \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.\mbox{\hyperlink{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}{print}}(\textcolor{stringliteral}{"{}\%"{}});}
+\DoxyCodeLine{      \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{        Serial.println(\textcolor{stringliteral}{"{}unknown animation type"{}});}
 \DoxyCodeLine{      \}}
 \DoxyCodeLine{    \}}
-\DoxyCodeLine{    void animate() \{}
-\DoxyCodeLine{      if (!running) \{}
-\DoxyCodeLine{        return;}
+\DoxyCodeLine{    \textcolor{keywordtype}{void} animate() \{}
+\DoxyCodeLine{      \textcolor{keywordflow}{if} (!running) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return};}
 \DoxyCodeLine{      \}}
-\DoxyCodeLine{      int timePassed = millis() -\/ t;}
-\DoxyCodeLine{      if (timePassed > currString -\/> duration) \{}
-\DoxyCodeLine{        if (currString + 1 > lastString) \{}
-\DoxyCodeLine{          running = false;}
-\DoxyCodeLine{          if (callback != NULL) \{}
+\DoxyCodeLine{      \textcolor{keywordtype}{int} timePassed = millis() -\/ t;}
+\DoxyCodeLine{      \textcolor{keywordflow}{if} (timePassed > currString -\/> duration) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} (currString + 1 > lastString) \{}
+\DoxyCodeLine{          running = \textcolor{keyword}{false};}
+\DoxyCodeLine{          \textcolor{keywordflow}{if} (callback != NULL) \{}
 \DoxyCodeLine{            callback();}
 \DoxyCodeLine{          \}}
-\DoxyCodeLine{          return;}
+\DoxyCodeLine{          \textcolor{keywordflow}{return};}
 \DoxyCodeLine{        \}}
 \DoxyCodeLine{        currString++;}
 \DoxyCodeLine{        t = millis();}
 \DoxyCodeLine{        prepareAnimation(currString);}
-\DoxyCodeLine{        return;}
+\DoxyCodeLine{        \textcolor{keywordflow}{return};}
 \DoxyCodeLine{      \}}
-\DoxyCodeLine{      if (currString-\/>animType == NO\_ANIMATION) \{}
-\DoxyCodeLine{        return;}
+\DoxyCodeLine{      \textcolor{keywordflow}{if} (currString-\/>animType == NO\_ANIMATION) \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return};}
 \DoxyCodeLine{      \}}
 \DoxyCodeLine{      printAnimated();}
 \DoxyCodeLine{    \}}
