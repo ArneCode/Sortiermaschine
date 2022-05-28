@@ -1,7 +1,6 @@
 /**
    @file sketch.ino
    @brief Hauptdatei, wichtigste Funktionen sind setup() und loop()
-   
 */
 #include "customServo.h"
 #include "animLcd.h"
@@ -288,7 +287,7 @@ void setup()
 /**
  * @brief Wird immer wieder ausgeführt
  * @details Hier werden alle möglichen Objekte wie der Servo, der Lcd usw. aktualisiert und die Aktionen (Farbe des Balls messen, Bewegung des Servos Starten etc. ) koordiniert
- * 
+ * @image html "loop Programmablaufplan.svg" "vereinfachter Programablaufplan für die loop() Funktion" size_inidication=size
  */
 void loop()
 {
@@ -371,9 +370,5 @@ void loop()
         callHandler.setCalls(callsOrange, 9);
         break;
       }
-      /**
-       * @image html "loop Programmablaufplan.svg" "vereinfachter Programablaufplan für die loop() Funktion" size_inidication=size
-       * 
-       */
   }
 }

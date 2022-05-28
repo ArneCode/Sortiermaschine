@@ -5,7 +5,7 @@
 \doxysubsubsection{Ausführliche Beschreibung}
 Kleine Klasse die Knopfdrücke verarbeitet. 
 
-Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00109}{109}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
+Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00108}{108}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
 
 \doxysubsubsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
@@ -39,11 +39,11 @@ bool \mbox{\hyperlink{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}{is\+
 
 
 
-Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00126}{126}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
+Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00125}{125}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00126 \{\}}
+\DoxyCodeLine{00125 \{\}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classButtonHandler_a4551356eb296a56a1ced7d3b5a7ecfaf}\label{classButtonHandler_a4551356eb296a56a1ced7d3b5a7ecfaf}} 
@@ -65,13 +65,13 @@ Erstellt ein neues \mbox{\hyperlink{classButtonHandler}{Button\+Handler}} Objekt
 \end{DoxyParams}
 
 
-Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00133}{133}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
+Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00132}{132}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00133                                              : \mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}(\mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}), \mbox{\hyperlink{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}{onclick}}(\mbox{\hyperlink{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}{onclick}}) \{}
-\DoxyCodeLine{00134       pinMode(\mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}, INPUT\_PULLUP);}
-\DoxyCodeLine{00135     \}}
+\DoxyCodeLine{00132                                              : \mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}(\mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}), \mbox{\hyperlink{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}{onclick}}(\mbox{\hyperlink{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}{onclick}}) \{}
+\DoxyCodeLine{00133       pinMode(\mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}, INPUT\_PULLUP);}
+\DoxyCodeLine{00134     \}}
 
 \end{DoxyCode}
 
@@ -89,20 +89,20 @@ Prüft, ob der Knopf gedrückt/losgelassen wurde.
 
 Wird von \mbox{\hyperlink{sketch_8ino_afe461d27b9c48d5921c00d521181f12f}{loop()}} aufgerufen und ruft die \mbox{\hyperlink{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}{Button\+Handler\+::onclick}} Funktion auf, wenn ein Klick festgestellt wurde 
 
-Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00140}{140}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
+Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00139}{139}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00141     \{}
-\DoxyCodeLine{00142       \textcolor{keywordtype}{bool} isPressedNew = digitalRead(\mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}) == HIGH;}
-\DoxyCodeLine{00143       \textcolor{keywordflow}{if} (isPressedNew != \mbox{\hyperlink{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}{isPressed}}) \{ \textcolor{comment}{//is not being pressed now, but was being pressed}}
-\DoxyCodeLine{00144         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}{isPressed}}) \{}
-\DoxyCodeLine{00145           Serial.println(\textcolor{stringliteral}{"{}click"{}});}
-\DoxyCodeLine{00146           \mbox{\hyperlink{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}{onclick}}();}
-\DoxyCodeLine{00147         \}}
-\DoxyCodeLine{00148       \}}
-\DoxyCodeLine{00149       \mbox{\hyperlink{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}{isPressed}} = isPressedNew;}
-\DoxyCodeLine{00150     \}}
+\DoxyCodeLine{00140     \{}
+\DoxyCodeLine{00141       \textcolor{keywordtype}{bool} isPressedNew = digitalRead(\mbox{\hyperlink{classButtonHandler_ad6516fd08addb841598242784a088e97}{pin}}) == HIGH;}
+\DoxyCodeLine{00142       \textcolor{keywordflow}{if} (isPressedNew != \mbox{\hyperlink{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}{isPressed}}) \{ \textcolor{comment}{//is not being pressed now, but was being pressed}}
+\DoxyCodeLine{00143         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}{isPressed}}) \{}
+\DoxyCodeLine{00144           Serial.println(\textcolor{stringliteral}{"{}click"{}});}
+\DoxyCodeLine{00145           \mbox{\hyperlink{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}{onclick}}();}
+\DoxyCodeLine{00146         \}}
+\DoxyCodeLine{00147       \}}
+\DoxyCodeLine{00148       \mbox{\hyperlink{classButtonHandler_a23b1eed2ad71da361d02054d53e56d05}{isPressed}} = isPressedNew;}
+\DoxyCodeLine{00149     \}}
 
 \end{DoxyCode}
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
@@ -127,7 +127,7 @@ Gibt an, ob der Knopf momentan Gedrückt ist.
 
 
 
-Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00119}{119}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
+Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00118}{118}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
 
 \mbox{\Hypertarget{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}\label{classButtonHandler_acd031a9133f6ff6b5a9c707fdf8183c3}} 
 \index{ButtonHandler@{ButtonHandler}!onclick@{onclick}}
@@ -141,7 +141,7 @@ Die Funktion die bei einem Klick, d.\+h. einem Drücken und loslassen des Knopfe
 
 
 
-Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00125}{125}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
+Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00124}{124}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
 
 \mbox{\Hypertarget{classButtonHandler_ad6516fd08addb841598242784a088e97}\label{classButtonHandler_ad6516fd08addb841598242784a088e97}} 
 \index{ButtonHandler@{ButtonHandler}!pin@{pin}}
@@ -155,7 +155,7 @@ Der Pin an dem der Knopf angeschlossen ist.
 
 
 
-Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00114}{114}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
+Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00113}{113}} der Datei \mbox{\hyperlink{sketch_8ino_source}{sketch.\+ino}}.
 
 
 
