@@ -9,5 +9,5 @@ RUN cd doxygen &&\
     sudo make install
 RUN sudo apt install -y graphviz && \
     sudo apt-get install -y texlive-fonts-recommended && \
-    sudo apt-get install -y texlive-fonts-extra && \
-    echo "Fertig"
+    sudo apt-get install -y texlive-fonts-extra
+RUN sudo apt -y install texlive-lang-german
