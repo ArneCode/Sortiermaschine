@@ -895,23 +895,20 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 172.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 174.
  (./index.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 5.
+(Font)              scaled to size 10.79993pt on input line 4.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 6.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 9
+(Font)              scaled to size 6.29996pt on input line 5.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 8
 .
+
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 9.
+(Font)              scaled to size 8.99994pt on input line 8.
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
@@ -940,7 +937,7 @@ Here is how much of TeX's memory you used:
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (3 pages, 21548 bytes).
+Output written on refman.pdf (3 pages, 21541 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
