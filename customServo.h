@@ -7,7 +7,7 @@
 #include <Servo.h>
 #include "header.h"
 /**
- * @class Servo
+ * @file Servo.h
  * @brief Die <a href="https://www.arduino.cc/reference/en/libraries/servo/" target="_blank">standart Servo Klasse
  */
 /**

@@ -3,13 +3,14 @@
 
 
 \doxysubsubsection{Ausführliche Beschreibung}
-Eine Eigene Servo-\/\+Klasse, die es ermöglicht den \mbox{\hyperlink{classServo}{Servo}} mit verschiedenen Geschwindigkeiten zu bewegen. 
+Eine Eigene Servo-\/\+Klasse, die es ermöglicht den Servo mit verschiedenen Geschwindigkeiten zu bewegen. 
 
 Definiert in Zeile \mbox{\hyperlink{customServo_8h_source_l00017}{17}} der Datei \mbox{\hyperlink{customServo_8h_source}{custom\+Servo.\+h}}.
 
 
 
-Zusammengehörigkeiten von Custom\+Servo\+:\nopagebreak
+Zusammengehörigkeiten von Custom\+Servo\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,21 +21,21 @@ Zusammengehörigkeiten von Custom\+Servo\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}} (short new\+Angle)
-\begin{DoxyCompactList}\small\item\em Bewegt den \mbox{\hyperlink{classServo}{Servo}} mit einer vorher spezifizierten Geschwindigkeit. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCustomServo_a73b3e39ae0c5ac49cde683711517283a}{write}} (short new\+Angle, \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} duration)
-\begin{DoxyCompactList}\small\item\em Bewegt den \mbox{\hyperlink{classServo}{Servo}} in duration Millisekunden an den angegebenen Winkel. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Bewegt den Servo in duration Millisekunden an den angegebenen Winkel. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCustomServo_a95761db4177f965e756bdf725cb10ada}{write\+Direct}} (short angle)
-\begin{DoxyCompactList}\small\item\em Steuert den \mbox{\hyperlink{classServo}{Servo}} direkt an, enspricht dem normalen \href{https://www.arduino.cc/reference/en/libraries/servo/write/}{\texttt{ Servo\+::write}} \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Steuert den Servo direkt an, enspricht dem normalen \href{https://www.arduino.cc/reference/en/libraries/servo/write/}{\texttt{ Servo\+::write}} \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCustomServo_a0750f5868c694b9f46638038b8536e0a}{set\+Speed}} (float new\+Speed)
 \begin{DoxyCompactList}\small\item\em Setzt eine neue Geschwindigkeit des Servos. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCustomServo_a91245621ca3e5340361f061d65025635}{update\+Pos}} ()
 \begin{DoxyCompactList}\small\item\em Aktualisiert die Position des Servomotors. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCustomServo_a2504ffc997018dad9f3811b18b16c672}{stop}} ()
-\begin{DoxyCompactList}\small\item\em Stoppt den \mbox{\hyperlink{classServo}{Servo}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Stoppt den Servo. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCustomServo_ad0f2d2d481d21c4d97f333efa744e0e8}{start}} ()
-\begin{DoxyCompactList}\small\item\em Lässt den \mbox{\hyperlink{classServo}{Servo}} weiterlaufen. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Lässt den Servo weiterlaufen. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classCustomServo_ac247ddd89cf27db323522746e5afa922}{is\+Done}} ()
-\begin{DoxyCompactList}\small\item\em Gibt an, ob der \mbox{\hyperlink{classServo}{Servo}} angekommen ist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gibt an, ob der Servo angekommen ist. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Öffentliche Attribute}
 \begin{DoxyCompactItemize}
 \item 
@@ -44,18 +45,18 @@ bool \mbox{\hyperlink{classCustomServo_aed492cad900432d556239dc5881bc4d8}{done}}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classCustomServo_a9ddb7875f2c036d6c4a06c4416e68fb2}{start\+Move}} ()
-\begin{DoxyCompactList}\small\item\em Setzt Variabeln, die benötigt werden um den \mbox{\hyperlink{classServo}{Servo}} zu bewegen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Setzt Variabeln, die benötigt werden um den Servo zu bewegen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
 short \mbox{\hyperlink{classCustomServo_a3b9955fef2cba6561cd6cabb0bf98744}{start\+Angle}}
-\begin{DoxyCompactList}\small\item\em Der Winkel an dem sich der \mbox{\hyperlink{classServo}{Servo}} bei Start der Animation befand. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Der Winkel an dem sich der Servo bei Start der Animation befand. \end{DoxyCompactList}\item 
 short \mbox{\hyperlink{classCustomServo_a5d95e6d56c724ec1a25600d60dc8f7a2}{target\+Angle}}
 \begin{DoxyCompactList}\small\item\em Der Zielwinkel. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}{speed}}
 \begin{DoxyCompactList}\small\item\em Die Geschwindigkeit des Servos in Grad pro Millisekunde. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} \mbox{\hyperlink{classCustomServo_a921bf31525e695718b9e17381bf4f2bb}{start\+Time}}
-\begin{DoxyCompactList}\small\item\em Zeitpunkt an dem der \mbox{\hyperlink{classServo}{Servo}} anfing sich zu bewegen (in Millisekunden) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Zeitpunkt an dem der Servo anfing sich zu bewegen (in Millisekunden) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsubsection{Dokumentation der Elementfunktionen}
@@ -67,7 +68,7 @@ float \mbox{\hyperlink{classCustomServo_a1606b8ae2c802448dabeafbb5df2a195}{speed
 
 
 
-Gibt an, ob der \mbox{\hyperlink{classServo}{Servo}} angekommen ist. 
+Gibt an, ob der Servo angekommen ist. 
 
 \begin{DoxyReturn}{Rückgabe}
 true 
@@ -102,7 +103,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 
 Setzt eine neue Geschwindigkeit des Servos. 
 
-Kann auch ausgeführt werden während der \mbox{\hyperlink{classServo}{Servo}} sich schon bewegt 
+Kann auch ausgeführt werden während der Servo sich schon bewegt 
 \begin{DoxyParams}{Parameter}
 {\em new\+Speed} & Die neue Geschwindigkeit in Grad pro Millisekunde \\
 \hline
@@ -141,7 +142,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 
 
 
-Lässt den \mbox{\hyperlink{classServo}{Servo}} weiterlaufen. 
+Lässt den Servo weiterlaufen. 
 
 
 
@@ -162,7 +163,7 @@ Definiert in Zeile \mbox{\hyperlink{customServo_8ino_source_l00107}{107}} der Da
 
 
 
-Setzt Variabeln, die benötigt werden um den \mbox{\hyperlink{classServo}{Servo}} zu bewegen. 
+Setzt Variabeln, die benötigt werden um den Servo zu bewegen. 
 
 
 
@@ -192,7 +193,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 
 
 
-Stoppt den \mbox{\hyperlink{classServo}{Servo}}. 
+Stoppt den Servo. 
 
 
 
@@ -268,7 +269,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 
 
 
-Bewegt den \mbox{\hyperlink{classServo}{Servo}} mit einer vorher spezifizierten Geschwindigkeit. 
+Bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit. 
 
 \begin{DoxyWarning}{Warnung}
 Winkel überprüfen! Wenn dieser zu klein ist schlägt der Arm gegen den Stopper 
@@ -312,7 +313,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 
 
 
-Bewegt den \mbox{\hyperlink{classServo}{Servo}} in duration Millisekunden an den angegebenen Winkel. 
+Bewegt den Servo in duration Millisekunden an den angegebenen Winkel. 
 
 \begin{DoxyWarning}{Warnung}
 Winkel überprüfen! Wenn dieser zu klein ist schlägt der Arm gegen den Stopper 
@@ -351,7 +352,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
 
 
 
-Steuert den \mbox{\hyperlink{classServo}{Servo}} direkt an, enspricht dem normalen \href{https://www.arduino.cc/reference/en/libraries/servo/write/}{\texttt{ Servo\+::write}} 
+Steuert den Servo direkt an, enspricht dem normalen \href{https://www.arduino.cc/reference/en/libraries/servo/write/}{\texttt{ Servo\+::write}} 
 
 \begin{DoxyWarning}{Warnung}
 Winkel überprüfen! Wenn dieser zu klein ist schlägt der Arm gegen den Stopper 
@@ -414,7 +415,7 @@ Definiert in Zeile \mbox{\hyperlink{customServo_8h_source_l00032}{32}} der Datei
 
 
 
-Der Winkel an dem sich der \mbox{\hyperlink{classServo}{Servo}} bei Start der Animation befand. 
+Der Winkel an dem sich der Servo bei Start der Animation befand. 
 
 
 
@@ -428,7 +429,7 @@ Definiert in Zeile \mbox{\hyperlink{customServo_8h_source_l00022}{22}} der Datei
 
 
 
-Zeitpunkt an dem der \mbox{\hyperlink{classServo}{Servo}} anfing sich zu bewegen (in Millisekunden) 
+Zeitpunkt an dem der Servo anfing sich zu bewegen (in Millisekunden) 
 
 
 

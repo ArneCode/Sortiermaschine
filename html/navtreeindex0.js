@@ -76,7 +76,6 @@ var NAVTREEINDEX0 =
 "classLcdLoadingAnim.html":[1,0,8],
 "classLcdLoadingAnim.html#a1dcb953ecdb84881d1c80769e7c3829c":[1,0,8,0],
 "classLcdLoadingAnim.html#a939368d0d51f766b20a82176294fba70":[1,0,8,1],
-"classServo.html":[1,0,10],
 "classes.html":[1,1],
 "customServo_8h.html":[2,0,6],
 "customServo_8h_source.html":[2,0,6],
