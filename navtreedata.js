@@ -41,16 +41,7 @@ var NAVTREE =
       [ "Klassenhierarchie", "hierarchy.html", "hierarchy" ]
     ] ],
     [ "Dateien", "files.html", [
-      [ "Auflistung der Dateien", "files.html", "files_dup" ],
-      [ "Datei-Elemente", "globals.html", [
-        [ "Alle", "globals.html", null ],
-        [ "Funktionen", "globals_func.html", null ],
-        [ "Variablen", "globals_vars.html", null ],
-        [ "Typdefinitionen", "globals_type.html", null ],
-        [ "Aufzählungen", "globals_enum.html", null ],
-        [ "Aufzählungswerte", "globals_eval.html", null ],
-        [ "Makrodefinitionen", "globals_defs.html", null ]
-      ] ]
+      [ "Auflistung der Dateien", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];

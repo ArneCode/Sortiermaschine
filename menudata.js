@@ -28,26 +28,4 @@ var menudata={children:[
 {text:"Auflistung der Klassen",url:"annotated.html"},
 {text:"Klassenhierarchie",url:"inherits.html"}]},
 {text:"Dateien",url:"files.html",children:[
-{text:"Auflistung der Dateien",url:"files.html"},
-{text:"Datei-Elemente",url:"globals.html",children:[
-{text:"Alle",url:"globals.html",children:[
-{text:"a",url:"globals.html#index_a"},
-{text:"b",url:"globals.html#index_b"},
-{text:"c",url:"globals.html#index_c"},
-{text:"d",url:"globals.html#index_d"},
-{text:"f",url:"globals.html#index_f"},
-{text:"g",url:"globals.html#index_g"},
-{text:"l",url:"globals.html#index_l"},
-{text:"m",url:"globals.html#index_m"},
-{text:"n",url:"globals.html#index_n"},
-{text:"o",url:"globals.html#index_o"},
-{text:"p",url:"globals.html#index_p"},
-{text:"s",url:"globals.html#index_s"},
-{text:"t",url:"globals.html#index_t"},
-{text:"w",url:"globals.html#index_w"}]},
-{text:"Funktionen",url:"globals_func.html"},
-{text:"Variablen",url:"globals_vars.html"},
-{text:"Typdefinitionen",url:"globals_type.html"},
-{text:"Aufzählungen",url:"globals_enum.html"},
-{text:"Aufzählungswerte",url:"globals_eval.html"},
-{text:"Makrodefinitionen",url:"globals_defs.html"}]}]}]}
+{text:"Auflistung der Dateien",url:"files.html"}]}]}
