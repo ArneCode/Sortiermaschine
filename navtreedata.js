@@ -29,6 +29,10 @@ var NAVTREE =
       [ "Klassen", "index.html#autotoc_md1", null ],
       [ "Code", "index.html#autotoc_md2", null ]
     ] ],
+    [ "Begründungen - Code", "index.html#autotoc_md3", [
+      [ "Warum verschiedene Callable Klassen?", "index.html#autotoc_md4", null ]
+    ] ],
+    [ "Optimierungsideen – Code", "index.html#autotoc_md5", null ],
     [ "Klassen", "annotated.html", [
       [ "Auflistung der Klassen", "annotated.html", "annotated_dup" ],
       [ "Klassen-Verzeichnis", "classes.html", null ],
