@@ -16,5 +16,177 @@ Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu \char`\"{}
 \end{DoxyNote}
 \hypertarget{index_autotoc_md4}{}\doxysubsubsection{Warum werden Calls im Heap gespeichert}\label{index_autotoc_md4}
 Calls (\mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{Call\+Handler\+::call\+Ptrs}}) werden mithilfe des {\itshape new} Keywords im \href{https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/}{\texttt{ Heap}} gespeichert um sie weiter benutzen zu können nachdem die Funktion in der sie instanziert wurden abgeschlossen ist. Sie müssen deshalb aber auch manuell mit \mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{Call\+Handler\+::delete\+Calls}} gelöscht werden. \hypertarget{index_autotoc_md5}{}\doxysubsubsection{Warum verschiedene Callable Klassen?}\label{index_autotoc_md5}
-Es wäre möglich gewesen statt mehrerer \mbox{\hyperlink{classCallable}{Callable}} Klassen einfach eine zu benutzen und dann die Art des Calls in einer Variable zu speichern. Der Nachteil dieser Methode wäre, dass bei jeder Funktion die etwas mit der Klasse zu tun hat (\mbox{\hyperlink{classCallable_a0e146c329fbdf8720a9541f60fe910e9}{Callable\+::run}}, \mbox{\hyperlink{classCallable_af0778d71c6196b6ba0215cce13f8c7dd}{Callable\+::is\+Done}}, etc.) überprüft werden müsste, was die Art des Calls ist. Das würde zu einer schlechteren Lesbarkeit des Codes führen.\hypertarget{index_autotoc_md6}{}\doxysubsection{Optimierungsideen – Code}\label{index_autotoc_md6}
+Es wäre möglich gewesen statt mehrerer \mbox{\hyperlink{classCallable}{Callable}} Klassen einfach eine zu benutzen und dann die Art des Calls in einer Variable zu speichern. Der Nachteil dieser Methode wäre, dass bei jeder Funktion die etwas mit der Klasse zu tun hat (\mbox{\hyperlink{classCallable_a0e146c329fbdf8720a9541f60fe910e9}{Callable\+::run}}, \mbox{\hyperlink{classCallable_af0778d71c6196b6ba0215cce13f8c7dd}{Callable\+::is\+Done}}, etc.) überprüft werden müsste, was die Art des Calls ist. Das würde zu einer schlechteren Lesbarkeit des Codes führen. Das war in einer älteren Version der Fall. 
+
+{\bfseries{Code}}\newline 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{c++\}}
+\DoxyCodeLine{class LcdHandler \{}
+\DoxyCodeLine{  public:}
+\DoxyCodeLine{    enum AnimType \{}
+\DoxyCodeLine{      DOT,}
+\DoxyCodeLine{      LOADING,}
+\DoxyCodeLine{      NO\_ANIMATION}
+\DoxyCodeLine{    \};}
+\DoxyCodeLine{    struct LcdString \{}
+\DoxyCodeLine{      long duration;}
+\DoxyCodeLine{      AnimType animType;}
+\DoxyCodeLine{      String text;}
+\DoxyCodeLine{      LcdString(String text, long duration, AnimType animType = NO\_ANIMATION): text(text), duration(duration), animType(animType) \{\}}
+\DoxyCodeLine{      operator String() const \{}
+\DoxyCodeLine{        return text;}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{    \};}
+\DoxyCodeLine{    bool running = false;}
+\DoxyCodeLine{  private:}
+\DoxyCodeLine{    LcdString * currString;}
+\DoxyCodeLine{    long t;}
+\DoxyCodeLine{    LcdString * lastString;}
+\DoxyCodeLine{    LcdString * lcdStrings;}
+\DoxyCodeLine{    long stepDuration;}
+\DoxyCodeLine{    long lastRefresh;}
+\DoxyCodeLine{    void( * callback)(); //function pointer}
+\DoxyCodeLine{  public:}
+\DoxyCodeLine{    \string~LcdHandler() \{}
+\DoxyCodeLine{      delete[] lcdStrings;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    void init() \{}
+\DoxyCodeLine{      lcd.init();}
+\DoxyCodeLine{      lcd.backlight();}
+\DoxyCodeLine{      lcd.createChar(0, loading\_empty\_c);}
+\DoxyCodeLine{      lcd.createChar(1, loading\_full\_c);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    void setStrings(LcdString newLcdStrings[], size\_t numStrings, void( * newCallback)() = NULL, int newStepDuration = 1000) \{}
+\DoxyCodeLine{      delete[] lcdStrings; //Speicherplatz frei machen}
+\DoxyCodeLine{      lcdStrings = newLcdStrings;}
+\DoxyCodeLine{      currString = newLcdStrings;}
+\DoxyCodeLine{      lastString = newLcdStrings + numStrings -\/ 1;}
+\DoxyCodeLine{      t = millis();}
+\DoxyCodeLine{      stepDuration = newStepDuration;}
+\DoxyCodeLine{      lastRefresh = millis();}
+\DoxyCodeLine{      running = true;}
+\DoxyCodeLine{      callback = newCallback;}
+\DoxyCodeLine{      prepareAnimation(currString);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    void prepareAnimation(LcdString* currString) \{}
+\DoxyCodeLine{      switch (currString-\/>animType) \{}
+\DoxyCodeLine{        case LOADING:}
+\DoxyCodeLine{          stepDuration = currString-\/>duration / 9;}
+\DoxyCodeLine{          if (currString-\/>text.length() > 16) \{}
+\DoxyCodeLine{            Serial.print("{}text given for loading animation is to long, text: "{});}
+\DoxyCodeLine{            Serial.println(*currString);}
+\DoxyCodeLine{          \}}
+\DoxyCodeLine{          printCentered(*currString);}
+\DoxyCodeLine{          lcd.setCursor(LOADING\_BAR\_OFFSET, 1);}
+\DoxyCodeLine{          for (int i = 0; i < 8; i++) \{}
+\DoxyCodeLine{            lcd.write(0);}
+\DoxyCodeLine{          \}}
+\DoxyCodeLine{          lcd.print("{}0\% "{});}
+\DoxyCodeLine{          break;}
+\DoxyCodeLine{        case DOT:}
+\DoxyCodeLine{          printPretty(currString-\/>text + String("{}   "{}));}
+\DoxyCodeLine{          break;}
+\DoxyCodeLine{        default:}
+\DoxyCodeLine{          printPretty(*currString);}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    void printCentered(String text, int length = -\/1, int row = 0) \{ //length<=16}
+\DoxyCodeLine{      if (length == -\/1) \{}
+\DoxyCodeLine{        length = text.length();}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{      int offset = (16 -\/ length) / 2; //rundet immer ab, da int}
+\DoxyCodeLine{      lcd.setCursor(offset, row);}
+\DoxyCodeLine{      lcd.print(text);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    void printPretty(String text) \{ //handelt zeilenumbrüche und schreibt zentriert}
+\DoxyCodeLine{      lcd.clear();}
+\DoxyCodeLine{      int length = text.length();}
+\DoxyCodeLine{      if (length <= 16) \{}
+\DoxyCodeLine{        printCentered(text, length);}
+\DoxyCodeLine{        return 0;}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{      int spacePos = -\/1;}
+\DoxyCodeLine{      for (int i = 15; i >= 0; i-\/-\/) \{}
+\DoxyCodeLine{        if (text[i] == ' ') \{}
+\DoxyCodeLine{          spacePos = i;}
+\DoxyCodeLine{          break;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{      String row1, row2;}
+\DoxyCodeLine{      if (spacePos != -\/1) \{}
+\DoxyCodeLine{        row1 = text.substring(0, spacePos);}
+\DoxyCodeLine{        row2 = text.substring(spacePos + 1);}
+\DoxyCodeLine{      \} else \{}
+\DoxyCodeLine{        row1 = text.substring(0, 16);}
+\DoxyCodeLine{        row2 = text.substring(16);}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{      printCentered(row1, row1.length(), 0);}
+\DoxyCodeLine{      printCentered(row2, row2.length(), 1);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    void printAnimated() \{}
+\DoxyCodeLine{      long time = millis();}
+\DoxyCodeLine{      AnimType type = currString-\/>animType;}
+\DoxyCodeLine{      if (type == DOT) \{}
+\DoxyCodeLine{        if ((time -\/ lastRefresh) < stepDuration) \{}
+\DoxyCodeLine{          return;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        lastRefresh = time;}
+\DoxyCodeLine{        int numDots = ((time -\/ t) / stepDuration) \% 4;}
+\DoxyCodeLine{        char dots[4];}
+\DoxyCodeLine{        for (int i = 0; i < 3; i++) \{}
+\DoxyCodeLine{          if (i < numDots) \{}
+\DoxyCodeLine{            dots[i] = '.';}
+\DoxyCodeLine{          \} else \{}
+\DoxyCodeLine{            dots[i] = ' ';}
+\DoxyCodeLine{          \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        dots[3] = '\(\backslash\)0';}
+\DoxyCodeLine{        printPretty(currString-\/>text + dots);}
+\DoxyCodeLine{      \} else if (type == LOADING) \{}
+\DoxyCodeLine{        short percent = (time -\/ t) * 100 / currString-\/>duration;}
+\DoxyCodeLine{        if (time -\/ lastRefresh > stepDuration) \{}
+\DoxyCodeLine{          short nToFill = percent * 8 / 100;}
+\DoxyCodeLine{          if (nToFill == 0) \{}
+\DoxyCodeLine{            return;}
+\DoxyCodeLine{          \}}
+\DoxyCodeLine{          lcd.setCursor(nToFill + LOADING\_BAR\_OFFSET -\/ 1, 1);}
+\DoxyCodeLine{          lcd.write(1);}
+\DoxyCodeLine{          lastRefresh = time;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        lcd.setCursor(8 + LOADING\_BAR\_OFFSET, 1);}
+\DoxyCodeLine{        lcd.print(percent);}
+\DoxyCodeLine{        lcd.print("{}\%"{});}
+\DoxyCodeLine{      \} else \{}
+\DoxyCodeLine{        Serial.println("{}unknown animation type"{});}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    void animate() \{}
+\DoxyCodeLine{      if (!running) \{}
+\DoxyCodeLine{        return;}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{      int timePassed = millis() -\/ t;}
+\DoxyCodeLine{      if (timePassed > currString -\/> duration) \{}
+\DoxyCodeLine{        if (currString + 1 > lastString) \{}
+\DoxyCodeLine{          running = false;}
+\DoxyCodeLine{          if (callback != NULL) \{}
+\DoxyCodeLine{            callback();}
+\DoxyCodeLine{          \}}
+\DoxyCodeLine{          return;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        currString++;}
+\DoxyCodeLine{        t = millis();}
+\DoxyCodeLine{        prepareAnimation(currString);}
+\DoxyCodeLine{        return;}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{      if (currString-\/>animType == NO\_ANIMATION) \{}
+\DoxyCodeLine{        return;}
+\DoxyCodeLine{      \}}
+\DoxyCodeLine{      printAnimated();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+ 
+
+\hypertarget{index_autotoc_md6}{}\doxysubsection{Optimierungsideen – Code}\label{index_autotoc_md6}
 Beim Ausführen des Programms mangelte es manchmal an Speicherplatz. Um dieses Problem zu umgehen hätte man statt der \href{https://www.arduino.cc/reference/de/language/variables/data-types/stringobject/}{\texttt{ Arduino String Klasse}} auch C-\/\+Strings also char \mbox{[}\mbox{]} benutzen können. Das hätte den Code leider aber auch an ein Paar stellen komplizierter gemacht. Ein anderer Fehler der sehr häufig auftrat war, dass mit Speicheradressen falsch umgegangen wurde und dadurch das Programm ohne jegliche Fehlermeldung abstürzte, oft sogar an völlig anderen Stellen. Eine mögliche Lösung wäre es hier eine Programmiersprache zu benutzen, die Speicherplatzfehler beim kompilieren, das heißt beim umwandeln des Programmcodes in Maschinencode aufdeckt. Eine Möglichkeit dafür wäre diese \href{https://github.com/Rahix/avr-hal}{\texttt{ Arduino Bibliothek}} für Rust (\href{https://creativcoder.dev/rust-on-arduino-uno}{\texttt{ Beispiel}}). Solche Bibliotheken sind aber auch weniger Dokumentiert und haben weniger Features als die Standard C++ Arduino Bibliothek und deshalb alles in allem für ein kleines Schulprojekt keine gute Option. 
