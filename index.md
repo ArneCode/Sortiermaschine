@@ -17,6 +17,8 @@ Der Code ist interaktiv, man kann Variabeln, Funktionen Methoden und Klassen ank
 # Begründungen - Code 
 @note Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu "erforschen"
 
+## Warum werden Calls im Heap gespeichert
+Calls (CallHandler::callPtrs) werden im [Heap](https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/) gespeichert um sie weiter benutzen zu können nachdem die Funktion in der sie instanziert wurden abgeschlossen ist
 ## Warum verschiedene Callable Klassen? 
 
 Es wäre möglich gewesen statt mehrerer Callable Klassen einfach eine zu benutzen und dann die Art des Calls in einer Variable zu speichern. Der Nachteil dieser Methode wäre, dass bei jeder Funktion die etwas mit der Klasse zu tun hat (Callable::run, Callable::isDone, etc.) überprüft werden müsste, was die Art des Calls ist. Das würde zu einer schlechteren Lesbarkeit des Codes führen. 
