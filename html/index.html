@@ -117,7 +117,7 @@ Begründungen - Code</h1>
 <dl class="section note"><dt>Zu beachten</dt><dd>Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu "erforschen"</dd></dl>
 <h2><a class="anchor" id="autotoc_md4"></a>
 Warum werden Calls im Heap gespeichert</h2>
-<p >Calls (<a class="el" href="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2" title="Die liste der aktuellen Calls.">CallHandler::callPtrs</a>) werden im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/">Heap</a> gespeichert um sie weiter benutzen zu können nachdem die Funktion in der sie instanziert wurden abgeschlossen ist </p>
+<p >Calls (<a class="el" href="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2" title="Die liste der aktuellen Calls.">CallHandler::callPtrs</a>) werden im  href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/"&gt;Heap gespeichert um sie weiter benutzen zu können nachdem die Funktion in der sie instanziert wurden abgeschlossen ist </p>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Warum verschiedene Callable Klassen?</h2>
 <p >Es wäre möglich gewesen statt mehrerer <a class="el" href="classCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann.">Callable</a> Klassen einfach eine zu benutzen und dann die Art des Calls in einer Variable zu speichern. Der Nachteil dieser Methode wäre, dass bei jeder Funktion die etwas mit der Klasse zu tun hat (<a class="el" href="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9">Callable::run</a>, <a class="el" href="classCallable.html#af0778d71c6196b6ba0215cce13f8c7dd">Callable::isDone</a>, etc.) überprüft werden müsste, was die Art des Calls ist. Das würde zu einer schlechteren Lesbarkeit des Codes führen.</p>
