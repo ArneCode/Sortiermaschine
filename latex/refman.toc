@@ -1,5 +1,5 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
-\babel@toc {nil}{}
+\babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Sortiermaschine}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Zur Dokumentation}{1}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Klassen}{1}{subsubsection.1.1.1}%
@@ -7,190 +7,191 @@
 \contentsline {subsection}{\numberline {2.1}Klassenhierarchie}{1}{subsection.2.1}%
 \contentsline {section}{\numberline {3}Klassen-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Verzeichnis}{2}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Auflistung der Klassen}{2}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Datei-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Verzeichnis}{2}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Auflistung der Dateien}{2}{subsection.4.1}%
+\contentsline {section}{\numberline {4}Datei-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Verzeichnis}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Auflistung der Dateien}{3}{subsection.4.1}%
 \contentsline {section}{\numberline {5}Klassen-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{3}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Animatable\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd Klassenreferenz}{3}{subsection.5.1}%
 \contentsline {subsubsection}{\numberline {5.1.1}Ausführliche Beschreibung}{3}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Dokumentation der Elementfunktionen}{4}{subsubsection.5.1.2}%
-\contentsline {paragraph}{\numberline {5.1.2.1}init()}{4}{paragraph.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Dokumentation der Elementfunktionen}{5}{subsubsection.5.1.2}%
+\contentsline {paragraph}{\numberline {5.1.2.1}init()}{5}{paragraph.5.1.2.1}%
 \contentsline {paragraph}{\numberline {5.1.2.2}print()}{5}{paragraph.5.1.2.2}%
-\contentsline {paragraph}{\numberline {5.1.2.3}printCentered()}{5}{paragraph.5.1.2.3}%
-\contentsline {paragraph}{\numberline {5.1.2.4}printPretty()}{6}{paragraph.5.1.2.4}%
-\contentsline {paragraph}{\numberline {5.1.2.5}setAnimation()}{7}{paragraph.5.1.2.5}%
+\contentsline {paragraph}{\numberline {5.1.2.3}printCentered()}{6}{paragraph.5.1.2.3}%
+\contentsline {paragraph}{\numberline {5.1.2.4}printPretty()}{7}{paragraph.5.1.2.4}%
+\contentsline {paragraph}{\numberline {5.1.2.5}setAnimation()}{8}{paragraph.5.1.2.5}%
 \contentsline {paragraph}{\numberline {5.1.2.6}update()}{8}{paragraph.5.1.2.6}%
-\contentsline {subsubsection}{\numberline {5.1.3}Dokumentation der Datenelemente}{8}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.3}Dokumentation der Datenelemente}{9}{subsubsection.5.1.3}%
 \contentsline {paragraph}{\numberline {5.1.3.1}animString}{9}{paragraph.5.1.3.1}%
 \contentsline {paragraph}{\numberline {5.1.3.2}doAnimation}{9}{paragraph.5.1.3.2}%
-\contentsline {subsection}{\numberline {5.2}Anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String Klassenreferenz}{9}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Ausführliche Beschreibung}{9}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Beschreibung der Konstruktoren und Destruktoren}{10}{subsubsection.5.2.2}%
-\contentsline {paragraph}{\numberline {5.2.2.1}$\sim $AnimString()}{10}{paragraph.5.2.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.3}Dokumentation der Elementfunktionen}{10}{subsubsection.5.2.3}%
-\contentsline {paragraph}{\numberline {5.2.3.1}init()}{10}{paragraph.5.2.3.1}%
+\contentsline {subsection}{\numberline {5.2}Anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String Klassenreferenz}{10}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Ausführliche Beschreibung}{10}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Beschreibung der Konstruktoren und Destruktoren}{11}{subsubsection.5.2.2}%
+\contentsline {paragraph}{\numberline {5.2.2.1}$\sim $AnimString()}{11}{paragraph.5.2.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.3}Dokumentation der Elementfunktionen}{11}{subsubsection.5.2.3}%
+\contentsline {paragraph}{\numberline {5.2.3.1}init()}{11}{paragraph.5.2.3.1}%
 \contentsline {paragraph}{\numberline {5.2.3.2}LcdString()}{11}{paragraph.5.2.3.2}%
-\contentsline {paragraph}{\numberline {5.2.3.3}run()}{11}{paragraph.5.2.3.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}Dokumentation der Datenelemente}{11}{subsubsection.5.2.4}%
-\contentsline {paragraph}{\numberline {5.2.4.1}animStart}{11}{paragraph.5.2.4.1}%
+\contentsline {paragraph}{\numberline {5.2.3.3}run()}{12}{paragraph.5.2.3.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Dokumentation der Datenelemente}{12}{subsubsection.5.2.4}%
+\contentsline {paragraph}{\numberline {5.2.4.1}animStart}{12}{paragraph.5.2.4.1}%
 \contentsline {paragraph}{\numberline {5.2.4.2}lastRefresh}{12}{paragraph.5.2.4.2}%
 \contentsline {paragraph}{\numberline {5.2.4.3}stepDuration}{12}{paragraph.5.2.4.3}%
-\contentsline {subsection}{\numberline {5.3}Button\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler Klassenreferenz}{12}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}Ausführliche Beschreibung}{12}{subsubsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3}Button\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler Klassenreferenz}{13}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Ausführliche Beschreibung}{13}{subsubsection.5.3.1}%
 \contentsline {subsubsection}{\numberline {5.3.2}Beschreibung der Konstruktoren und Destruktoren}{13}{subsubsection.5.3.2}%
 \contentsline {paragraph}{\numberline {5.3.2.1}ButtonHandler()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{13}{paragraph.5.3.2.1}%
 \contentsline {paragraph}{\numberline {5.3.2.2}ButtonHandler()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{13}{paragraph.5.3.2.2}%
-\contentsline {subsubsection}{\numberline {5.3.3}Dokumentation der Elementfunktionen}{13}{subsubsection.5.3.3}%
-\contentsline {paragraph}{\numberline {5.3.3.1}update()}{13}{paragraph.5.3.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.3}Dokumentation der Elementfunktionen}{14}{subsubsection.5.3.3}%
+\contentsline {paragraph}{\numberline {5.3.3.1}update()}{14}{paragraph.5.3.3.1}%
 \contentsline {subsubsection}{\numberline {5.3.4}Dokumentation der Datenelemente}{14}{subsubsection.5.3.4}%
 \contentsline {paragraph}{\numberline {5.3.4.1}isPressed}{14}{paragraph.5.3.4.1}%
-\contentsline {paragraph}{\numberline {5.3.4.2}onclick}{14}{paragraph.5.3.4.2}%
-\contentsline {paragraph}{\numberline {5.3.4.3}pin}{14}{paragraph.5.3.4.3}%
-\contentsline {subsection}{\numberline {5.4}Callable Klassenreferenz}{14}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Ausführliche Beschreibung}{14}{subsubsection.5.4.1}%
+\contentsline {paragraph}{\numberline {5.3.4.2}onclick}{15}{paragraph.5.3.4.2}%
+\contentsline {paragraph}{\numberline {5.3.4.3}pin}{15}{paragraph.5.3.4.3}%
+\contentsline {subsection}{\numberline {5.4}Callable Klassenreferenz}{15}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Ausführliche Beschreibung}{15}{subsubsection.5.4.1}%
 \contentsline {subsubsection}{\numberline {5.4.2}Beschreibung der Konstruktoren und Destruktoren}{15}{subsubsection.5.4.2}%
 \contentsline {paragraph}{\numberline {5.4.2.1}$\sim $Callable()}{15}{paragraph.5.4.2.1}%
 \contentsline {subsubsection}{\numberline {5.4.3}Dokumentation der Elementfunktionen}{15}{subsubsection.5.4.3}%
-\contentsline {paragraph}{\numberline {5.4.3.1}isDone()}{15}{paragraph.5.4.3.1}%
-\contentsline {paragraph}{\numberline {5.4.3.2}run()}{15}{paragraph.5.4.3.2}%
+\contentsline {paragraph}{\numberline {5.4.3.1}isDone()}{16}{paragraph.5.4.3.1}%
+\contentsline {paragraph}{\numberline {5.4.3.2}run()}{16}{paragraph.5.4.3.2}%
 \contentsline {subsection}{\numberline {5.5}Call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler Klassenreferenz}{16}{subsection.5.5}%
 \contentsline {subsubsection}{\numberline {5.5.1}Ausführliche Beschreibung}{16}{subsubsection.5.5.1}%
 \contentsline {subsubsection}{\numberline {5.5.2}Dokumentation der Elementfunktionen}{17}{subsubsection.5.5.2}%
-\contentsline {paragraph}{\numberline {5.5.2.1}deleteCalls()}{17}{paragraph.5.5.2.1}%
-\contentsline {paragraph}{\numberline {5.5.2.2}setCalls()}{17}{paragraph.5.5.2.2}%
-\contentsline {paragraph}{\numberline {5.5.2.3}update()}{18}{paragraph.5.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.5.3}Dokumentation der Datenelemente}{19}{subsubsection.5.5.3}%
-\contentsline {paragraph}{\numberline {5.5.3.1}callPtrs}{19}{paragraph.5.5.3.1}%
-\contentsline {paragraph}{\numberline {5.5.3.2}callsSet}{19}{paragraph.5.5.3.2}%
-\contentsline {paragraph}{\numberline {5.5.3.3}currCallPtr}{20}{paragraph.5.5.3.3}%
-\contentsline {paragraph}{\numberline {5.5.3.4}lastCallPtr}{20}{paragraph.5.5.3.4}%
-\contentsline {paragraph}{\numberline {5.5.3.5}lastCallT}{20}{paragraph.5.5.3.5}%
-\contentsline {paragraph}{\numberline {5.5.3.6}running}{20}{paragraph.5.5.3.6}%
-\contentsline {subsection}{\numberline {5.6}Custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo Klassenreferenz}{20}{subsection.5.6}%
-\contentsline {subsubsection}{\numberline {5.6.1}Ausführliche Beschreibung}{20}{subsubsection.5.6.1}%
-\contentsline {subsubsection}{\numberline {5.6.2}Dokumentation der Elementfunktionen}{21}{subsubsection.5.6.2}%
-\contentsline {paragraph}{\numberline {5.6.2.1}isDone()}{22}{paragraph.5.6.2.1}%
-\contentsline {paragraph}{\numberline {5.6.2.2}setSpeed()}{22}{paragraph.5.6.2.2}%
-\contentsline {paragraph}{\numberline {5.6.2.3}start()}{23}{paragraph.5.6.2.3}%
-\contentsline {paragraph}{\numberline {5.6.2.4}startMove()}{23}{paragraph.5.6.2.4}%
-\contentsline {paragraph}{\numberline {5.6.2.5}stop()}{24}{paragraph.5.6.2.5}%
-\contentsline {paragraph}{\numberline {5.6.2.6}updatePos()}{24}{paragraph.5.6.2.6}%
-\contentsline {paragraph}{\numberline {5.6.2.7}write()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{25}{paragraph.5.6.2.7}%
-\contentsline {paragraph}{\numberline {5.6.2.8}write()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{25}{paragraph.5.6.2.8}%
-\contentsline {paragraph}{\numberline {5.6.2.9}writeDirect()}{26}{paragraph.5.6.2.9}%
-\contentsline {subsubsection}{\numberline {5.6.3}Dokumentation der Datenelemente}{26}{subsubsection.5.6.3}%
-\contentsline {paragraph}{\numberline {5.6.3.1}done}{27}{paragraph.5.6.3.1}%
-\contentsline {paragraph}{\numberline {5.6.3.2}speed}{27}{paragraph.5.6.3.2}%
-\contentsline {paragraph}{\numberline {5.6.3.3}startAngle}{27}{paragraph.5.6.3.3}%
-\contentsline {paragraph}{\numberline {5.6.3.4}startTime}{27}{paragraph.5.6.3.4}%
-\contentsline {paragraph}{\numberline {5.6.3.5}targetAngle}{27}{paragraph.5.6.3.5}%
-\contentsline {subsection}{\numberline {5.7}Func\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Call Strukturreferenz}{28}{subsection.5.7}%
-\contentsline {subsubsection}{\numberline {5.7.1}Ausführliche Beschreibung}{28}{subsubsection.5.7.1}%
-\contentsline {subsubsection}{\numberline {5.7.2}Beschreibung der Konstruktoren und Destruktoren}{28}{subsubsection.5.7.2}%
-\contentsline {paragraph}{\numberline {5.7.2.1}FuncCall()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{29}{paragraph.5.7.2.1}%
-\contentsline {paragraph}{\numberline {5.7.2.2}FuncCall()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{29}{paragraph.5.7.2.2}%
-\contentsline {paragraph}{\numberline {5.7.2.3}$\sim $FuncCall()}{29}{paragraph.5.7.2.3}%
-\contentsline {subsubsection}{\numberline {5.7.3}Dokumentation der Elementfunktionen}{29}{subsubsection.5.7.3}%
-\contentsline {paragraph}{\numberline {5.7.3.1}isDone()}{29}{paragraph.5.7.3.1}%
-\contentsline {paragraph}{\numberline {5.7.3.2}run()}{29}{paragraph.5.7.3.2}%
-\contentsline {subsubsection}{\numberline {5.7.4}Dokumentation der Datenelemente}{30}{subsubsection.5.7.4}%
-\contentsline {paragraph}{\numberline {5.7.4.1}\_isDone}{30}{paragraph.5.7.4.1}%
-\contentsline {paragraph}{\numberline {5.7.4.2}call}{30}{paragraph.5.7.4.2}%
-\contentsline {subsection}{\numberline {5.8}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dot\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Anim Klassenreferenz}{30}{subsection.5.8}%
-\contentsline {subsubsection}{\numberline {5.8.1}Ausführliche Beschreibung}{30}{subsubsection.5.8.1}%
-\contentsline {subsubsection}{\numberline {5.8.2}Beschreibung der Konstruktoren und Destruktoren}{31}{subsubsection.5.8.2}%
-\contentsline {paragraph}{\numberline {5.8.2.1}LcdDotAnim()}{31}{paragraph.5.8.2.1}%
-\contentsline {subsubsection}{\numberline {5.8.3}Dokumentation der Elementfunktionen}{31}{subsubsection.5.8.3}%
-\contentsline {paragraph}{\numberline {5.8.3.1}init()}{31}{paragraph.5.8.3.1}%
-\contentsline {paragraph}{\numberline {5.8.3.2}update()}{32}{paragraph.5.8.3.2}%
-\contentsline {subsection}{\numberline {5.9}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loading\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Anim Klassenreferenz}{32}{subsection.5.9}%
-\contentsline {subsubsection}{\numberline {5.9.1}Ausführliche Beschreibung}{32}{subsubsection.5.9.1}%
-\contentsline {subsubsection}{\numberline {5.9.2}Dokumentation der Elementfunktionen}{33}{subsubsection.5.9.2}%
-\contentsline {paragraph}{\numberline {5.9.2.1}init()}{33}{paragraph.5.9.2.1}%
-\contentsline {paragraph}{\numberline {5.9.2.2}update()}{34}{paragraph.5.9.2.2}%
-\contentsline {subsection}{\numberline {5.10}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String Strukturreferenz}{35}{subsection.5.10}%
-\contentsline {subsubsection}{\numberline {5.10.1}Ausführliche Beschreibung}{35}{subsubsection.5.10.1}%
-\contentsline {subsubsection}{\numberline {5.10.2}Beschreibung der Konstruktoren und Destruktoren}{36}{subsubsection.5.10.2}%
-\contentsline {paragraph}{\numberline {5.10.2.1}LcdString()}{36}{paragraph.5.10.2.1}%
-\contentsline {paragraph}{\numberline {5.10.2.2}$\sim $LcdString()}{36}{paragraph.5.10.2.2}%
-\contentsline {subsubsection}{\numberline {5.10.3}Dokumentation der Elementfunktionen}{36}{subsubsection.5.10.3}%
-\contentsline {paragraph}{\numberline {5.10.3.1}isDone()}{36}{paragraph.5.10.3.1}%
-\contentsline {paragraph}{\numberline {5.10.3.2}run()}{36}{paragraph.5.10.3.2}%
-\contentsline {paragraph}{\numberline {5.10.3.3}update()}{37}{paragraph.5.10.3.3}%
-\contentsline {subsubsection}{\numberline {5.10.4}Dokumentation der Datenelemente}{37}{subsubsection.5.10.4}%
-\contentsline {paragraph}{\numberline {5.10.4.1}callStart}{37}{paragraph.5.10.4.1}%
-\contentsline {paragraph}{\numberline {5.10.4.2}duration}{37}{paragraph.5.10.4.2}%
-\contentsline {paragraph}{\numberline {5.10.4.3}lcd}{37}{paragraph.5.10.4.3}%
-\contentsline {paragraph}{\numberline {5.10.4.4}text}{37}{paragraph.5.10.4.4}%
-\contentsline {section}{\numberline {6}Datei-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{38}{section.6}%
-\contentsline {subsection}{\numberline {6.1}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h-\/Dateireferenz}{38}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Ausführliche Beschreibung}{38}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Variablen-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{39}{subsubsection.6.1.2}%
-\contentsline {paragraph}{\numberline {6.1.2.1}LOADING\_BAR\_OFFSET}{39}{paragraph.6.1.2.1}%
-\contentsline {subsection}{\numberline {6.2}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{39}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino-\/Dateireferenz}{39}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Ausführliche Beschreibung}{39}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Variablen-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{40}{subsubsection.6.3.2}%
-\contentsline {paragraph}{\numberline {6.3.2.1}loading\_empty\_c}{40}{paragraph.6.3.2.1}%
-\contentsline {paragraph}{\numberline {6.3.2.2}loading\_full\_c}{41}{paragraph.6.3.2.2}%
-\contentsline {subsection}{\numberline {6.4}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino}{41}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h-\/Dateireferenz}{42}{subsection.6.5}%
-\contentsline {subsubsection}{\numberline {6.5.1}Ausführliche Beschreibung}{42}{subsubsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.6}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{43}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino-\/Dateireferenz}{44}{subsection.6.7}%
-\contentsline {subsubsection}{\numberline {6.7.1}Ausführliche Beschreibung}{44}{subsubsection.6.7.1}%
-\contentsline {subsection}{\numberline {6.8}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino}{45}{subsection.6.8}%
-\contentsline {subsection}{\numberline {6.9}call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h-\/Dateireferenz}{46}{subsection.6.9}%
-\contentsline {subsubsection}{\numberline {6.9.1}Ausführliche Beschreibung}{46}{subsubsection.6.9.1}%
-\contentsline {subsection}{\numberline {6.10}call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{47}{subsection.6.10}%
-\contentsline {subsection}{\numberline {6.11}call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino-\/Dateireferenz}{48}{subsection.6.11}%
-\contentsline {subsubsection}{\numberline {6.11.1}Ausführliche Beschreibung}{48}{subsubsection.6.11.1}%
-\contentsline {subsection}{\numberline {6.12}call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino}{49}{subsection.6.12}%
-\contentsline {subsection}{\numberline {6.13}custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h-\/Dateireferenz}{49}{subsection.6.13}%
-\contentsline {subsubsection}{\numberline {6.13.1}Ausführliche Beschreibung}{49}{subsubsection.6.13.1}%
-\contentsline {subsection}{\numberline {6.14}custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{50}{subsection.6.14}%
-\contentsline {subsection}{\numberline {6.15}custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino-\/Dateireferenz}{50}{subsection.6.15}%
-\contentsline {subsubsection}{\numberline {6.15.1}Ausführliche Beschreibung}{50}{subsubsection.6.15.1}%
-\contentsline {subsection}{\numberline {6.16}custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino}{51}{subsection.6.16}%
-\contentsline {subsection}{\numberline {6.17}header.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h-\/Dateireferenz}{52}{subsection.6.17}%
-\contentsline {subsubsection}{\numberline {6.17.1}Ausführliche Beschreibung}{52}{subsubsection.6.17.1}%
-\contentsline {subsubsection}{\numberline {6.17.2}Dokumentation der benutzerdefinierten Typen}{52}{subsubsection.6.17.2}%
-\contentsline {paragraph}{\numberline {6.17.2.1}func\_t}{52}{paragraph.6.17.2.1}%
-\contentsline {paragraph}{\numberline {6.17.2.2}time\_t}{53}{paragraph.6.17.2.2}%
-\contentsline {subsection}{\numberline {6.18}header.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{53}{subsection.6.18}%
-\contentsline {subsection}{\numberline {6.19}index.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md-\/Dateireferenz}{53}{subsection.6.19}%
-\contentsline {subsection}{\numberline {6.20}sketch.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino-\/Dateireferenz}{53}{subsection.6.20}%
-\contentsline {subsubsection}{\numberline {6.20.1}Ausführliche Beschreibung}{53}{subsubsection.6.20.1}%
-\contentsline {subsubsection}{\numberline {6.20.2}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{55}{subsubsection.6.20.2}%
-\contentsline {paragraph}{\numberline {6.20.2.1}GEH\_ZURUECK}{55}{paragraph.6.20.2.1}%
-\contentsline {subsubsection}{\numberline {6.20.3}Dokumentation der Aufzählungstypen}{55}{subsubsection.6.20.3}%
-\contentsline {paragraph}{\numberline {6.20.3.1}Farbe}{55}{paragraph.6.20.3.1}%
-\contentsline {subsubsection}{\numberline {6.20.4}Dokumentation der Funktionen}{56}{subsubsection.6.20.4}%
-\contentsline {paragraph}{\numberline {6.20.4.1}legBallAb()}{56}{paragraph.6.20.4.1}%
-\contentsline {paragraph}{\numberline {6.20.4.2}loop()}{57}{paragraph.6.20.4.2}%
-\contentsline {paragraph}{\numberline {6.20.4.3}mesureColor()}{59}{paragraph.6.20.4.3}%
-\contentsline {paragraph}{\numberline {6.20.4.4}servoIsDone()}{60}{paragraph.6.20.4.4}%
-\contentsline {paragraph}{\numberline {6.20.4.5}setLedColor()}{61}{paragraph.6.20.4.5}%
-\contentsline {paragraph}{\numberline {6.20.4.6}setup()}{61}{paragraph.6.20.4.6}%
-\contentsline {paragraph}{\numberline {6.20.4.7}stopButtonClicked()}{62}{paragraph.6.20.4.7}%
-\contentsline {subsubsection}{\numberline {6.20.5}Variablen-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{63}{subsubsection.6.20.5}%
-\contentsline {paragraph}{\numberline {6.20.5.1}ANGLE\_CENTER}{63}{paragraph.6.20.5.1}%
-\contentsline {paragraph}{\numberline {6.20.5.2}ANGLE\_LEFT\_HOLE}{63}{paragraph.6.20.5.2}%
-\contentsline {paragraph}{\numberline {6.20.5.3}ANGLE\_MIN}{63}{paragraph.6.20.5.3}%
-\contentsline {paragraph}{\numberline {6.20.5.4}ANGLE\_RIGHT\_HOLE}{63}{paragraph.6.20.5.4}%
-\contentsline {paragraph}{\numberline {6.20.5.5}callHandler}{64}{paragraph.6.20.5.5}%
-\contentsline {paragraph}{\numberline {6.20.5.6}doFlicker}{64}{paragraph.6.20.5.6}%
-\contentsline {paragraph}{\numberline {6.20.5.7}lcd}{64}{paragraph.6.20.5.7}%
-\contentsline {paragraph}{\numberline {6.20.5.8}LOADING\_DURATION}{64}{paragraph.6.20.5.8}%
-\contentsline {paragraph}{\numberline {6.20.5.9}nBlack}{64}{paragraph.6.20.5.9}%
-\contentsline {paragraph}{\numberline {6.20.5.10}nOrange}{64}{paragraph.6.20.5.10}%
-\contentsline {paragraph}{\numberline {6.20.5.11}nWhite}{65}{paragraph.6.20.5.11}%
-\contentsline {paragraph}{\numberline {6.20.5.12}PIN\_BLUE}{65}{paragraph.6.20.5.12}%
-\contentsline {paragraph}{\numberline {6.20.5.13}PIN\_GREEN}{65}{paragraph.6.20.5.13}%
-\contentsline {paragraph}{\numberline {6.20.5.14}PIN\_RED}{65}{paragraph.6.20.5.14}%
-\contentsline {paragraph}{\numberline {6.20.5.15}PIN\_SERVO}{65}{paragraph.6.20.5.15}%
-\contentsline {paragraph}{\numberline {6.20.5.16}PIN\_STOPBUTTON}{65}{paragraph.6.20.5.16}%
-\contentsline {paragraph}{\numberline {6.20.5.17}servo}{66}{paragraph.6.20.5.17}%
-\contentsline {paragraph}{\numberline {6.20.5.18}SERVO\_SPEED\_DEFAULT}{66}{paragraph.6.20.5.18}%
-\contentsline {paragraph}{\numberline {6.20.5.19}SERVO\_SPEED\_FAST}{66}{paragraph.6.20.5.19}%
-\contentsline {paragraph}{\numberline {6.20.5.20}stopButton}{66}{paragraph.6.20.5.20}%
-\contentsline {subsection}{\numberline {6.21}sketch.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino}{67}{subsection.6.21}%
+\contentsline {paragraph}{\numberline {5.5.2.1}deleteCalls()}{18}{paragraph.5.5.2.1}%
+\contentsline {paragraph}{\numberline {5.5.2.2}setCalls()}{18}{paragraph.5.5.2.2}%
+\contentsline {paragraph}{\numberline {5.5.2.3}update()}{19}{paragraph.5.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.5.3}Dokumentation der Datenelemente}{20}{subsubsection.5.5.3}%
+\contentsline {paragraph}{\numberline {5.5.3.1}callPtrs}{20}{paragraph.5.5.3.1}%
+\contentsline {paragraph}{\numberline {5.5.3.2}callsSet}{20}{paragraph.5.5.3.2}%
+\contentsline {paragraph}{\numberline {5.5.3.3}currCallPtr}{21}{paragraph.5.5.3.3}%
+\contentsline {paragraph}{\numberline {5.5.3.4}lastCallPtr}{21}{paragraph.5.5.3.4}%
+\contentsline {paragraph}{\numberline {5.5.3.5}lastCallT}{21}{paragraph.5.5.3.5}%
+\contentsline {paragraph}{\numberline {5.5.3.6}running}{21}{paragraph.5.5.3.6}%
+\contentsline {subsection}{\numberline {5.6}Custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo Klassenreferenz}{21}{subsection.5.6}%
+\contentsline {subsubsection}{\numberline {5.6.1}Ausführliche Beschreibung}{21}{subsubsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {5.6.2}Dokumentation der Elementfunktionen}{22}{subsubsection.5.6.2}%
+\contentsline {paragraph}{\numberline {5.6.2.1}isDone()}{23}{paragraph.5.6.2.1}%
+\contentsline {paragraph}{\numberline {5.6.2.2}setSpeed()}{23}{paragraph.5.6.2.2}%
+\contentsline {paragraph}{\numberline {5.6.2.3}start()}{24}{paragraph.5.6.2.3}%
+\contentsline {paragraph}{\numberline {5.6.2.4}startMove()}{24}{paragraph.5.6.2.4}%
+\contentsline {paragraph}{\numberline {5.6.2.5}stop()}{25}{paragraph.5.6.2.5}%
+\contentsline {paragraph}{\numberline {5.6.2.6}updatePos()}{25}{paragraph.5.6.2.6}%
+\contentsline {paragraph}{\numberline {5.6.2.7}write()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{26}{paragraph.5.6.2.7}%
+\contentsline {paragraph}{\numberline {5.6.2.8}write()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{26}{paragraph.5.6.2.8}%
+\contentsline {paragraph}{\numberline {5.6.2.9}writeDirect()}{27}{paragraph.5.6.2.9}%
+\contentsline {subsubsection}{\numberline {5.6.3}Dokumentation der Datenelemente}{27}{subsubsection.5.6.3}%
+\contentsline {paragraph}{\numberline {5.6.3.1}done}{28}{paragraph.5.6.3.1}%
+\contentsline {paragraph}{\numberline {5.6.3.2}speed}{28}{paragraph.5.6.3.2}%
+\contentsline {paragraph}{\numberline {5.6.3.3}startAngle}{28}{paragraph.5.6.3.3}%
+\contentsline {paragraph}{\numberline {5.6.3.4}startTime}{28}{paragraph.5.6.3.4}%
+\contentsline {paragraph}{\numberline {5.6.3.5}targetAngle}{28}{paragraph.5.6.3.5}%
+\contentsline {subsection}{\numberline {5.7}Func\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Call Strukturreferenz}{29}{subsection.5.7}%
+\contentsline {subsubsection}{\numberline {5.7.1}Ausführliche Beschreibung}{29}{subsubsection.5.7.1}%
+\contentsline {subsubsection}{\numberline {5.7.2}Beschreibung der Konstruktoren und Destruktoren}{29}{subsubsection.5.7.2}%
+\contentsline {paragraph}{\numberline {5.7.2.1}FuncCall()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{30}{paragraph.5.7.2.1}%
+\contentsline {paragraph}{\numberline {5.7.2.2}FuncCall()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{30}{paragraph.5.7.2.2}%
+\contentsline {paragraph}{\numberline {5.7.2.3}$\sim $FuncCall()}{30}{paragraph.5.7.2.3}%
+\contentsline {subsubsection}{\numberline {5.7.3}Dokumentation der Elementfunktionen}{30}{subsubsection.5.7.3}%
+\contentsline {paragraph}{\numberline {5.7.3.1}isDone()}{30}{paragraph.5.7.3.1}%
+\contentsline {paragraph}{\numberline {5.7.3.2}run()}{30}{paragraph.5.7.3.2}%
+\contentsline {subsubsection}{\numberline {5.7.4}Dokumentation der Datenelemente}{31}{subsubsection.5.7.4}%
+\contentsline {paragraph}{\numberline {5.7.4.1}\_isDone}{31}{paragraph.5.7.4.1}%
+\contentsline {paragraph}{\numberline {5.7.4.2}call}{31}{paragraph.5.7.4.2}%
+\contentsline {subsection}{\numberline {5.8}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dot\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Anim Klassenreferenz}{31}{subsection.5.8}%
+\contentsline {subsubsection}{\numberline {5.8.1}Ausführliche Beschreibung}{31}{subsubsection.5.8.1}%
+\contentsline {subsubsection}{\numberline {5.8.2}Beschreibung der Konstruktoren und Destruktoren}{32}{subsubsection.5.8.2}%
+\contentsline {paragraph}{\numberline {5.8.2.1}LcdDotAnim()}{32}{paragraph.5.8.2.1}%
+\contentsline {subsubsection}{\numberline {5.8.3}Dokumentation der Elementfunktionen}{32}{subsubsection.5.8.3}%
+\contentsline {paragraph}{\numberline {5.8.3.1}init()}{32}{paragraph.5.8.3.1}%
+\contentsline {paragraph}{\numberline {5.8.3.2}update()}{33}{paragraph.5.8.3.2}%
+\contentsline {subsection}{\numberline {5.9}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loading\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Anim Klassenreferenz}{33}{subsection.5.9}%
+\contentsline {subsubsection}{\numberline {5.9.1}Ausführliche Beschreibung}{33}{subsubsection.5.9.1}%
+\contentsline {subsubsection}{\numberline {5.9.2}Dokumentation der Elementfunktionen}{34}{subsubsection.5.9.2}%
+\contentsline {paragraph}{\numberline {5.9.2.1}init()}{34}{paragraph.5.9.2.1}%
+\contentsline {paragraph}{\numberline {5.9.2.2}update()}{35}{paragraph.5.9.2.2}%
+\contentsline {subsection}{\numberline {5.10}Lcd\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String Strukturreferenz}{36}{subsection.5.10}%
+\contentsline {subsubsection}{\numberline {5.10.1}Ausführliche Beschreibung}{36}{subsubsection.5.10.1}%
+\contentsline {subsubsection}{\numberline {5.10.2}Beschreibung der Konstruktoren und Destruktoren}{37}{subsubsection.5.10.2}%
+\contentsline {paragraph}{\numberline {5.10.2.1}LcdString()}{37}{paragraph.5.10.2.1}%
+\contentsline {paragraph}{\numberline {5.10.2.2}$\sim $LcdString()}{37}{paragraph.5.10.2.2}%
+\contentsline {subsubsection}{\numberline {5.10.3}Dokumentation der Elementfunktionen}{37}{subsubsection.5.10.3}%
+\contentsline {paragraph}{\numberline {5.10.3.1}isDone()}{37}{paragraph.5.10.3.1}%
+\contentsline {paragraph}{\numberline {5.10.3.2}run()}{37}{paragraph.5.10.3.2}%
+\contentsline {paragraph}{\numberline {5.10.3.3}update()}{38}{paragraph.5.10.3.3}%
+\contentsline {subsubsection}{\numberline {5.10.4}Dokumentation der Datenelemente}{38}{subsubsection.5.10.4}%
+\contentsline {paragraph}{\numberline {5.10.4.1}callStart}{38}{paragraph.5.10.4.1}%
+\contentsline {paragraph}{\numberline {5.10.4.2}duration}{38}{paragraph.5.10.4.2}%
+\contentsline {paragraph}{\numberline {5.10.4.3}lcd}{38}{paragraph.5.10.4.3}%
+\contentsline {paragraph}{\numberline {5.10.4.4}text}{38}{paragraph.5.10.4.4}%
+\contentsline {section}{\numberline {6}Datei-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{39}{section.6}%
+\contentsline {subsection}{\numberline {6.1}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h-\/Dateireferenz}{39}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Ausführliche Beschreibung}{39}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Variablen-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{40}{subsubsection.6.1.2}%
+\contentsline {paragraph}{\numberline {6.1.2.1}LOADING\_BAR\_OFFSET}{40}{paragraph.6.1.2.1}%
+\contentsline {subsection}{\numberline {6.2}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{40}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino-\/Dateireferenz}{40}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Ausführliche Beschreibung}{40}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Variablen-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{41}{subsubsection.6.3.2}%
+\contentsline {paragraph}{\numberline {6.3.2.1}loading\_empty\_c}{41}{paragraph.6.3.2.1}%
+\contentsline {paragraph}{\numberline {6.3.2.2}loading\_full\_c}{42}{paragraph.6.3.2.2}%
+\contentsline {subsection}{\numberline {6.4}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lcd.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino}{42}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h-\/Dateireferenz}{43}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Ausführliche Beschreibung}{43}{subsubsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.6}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{44}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino-\/Dateireferenz}{45}{subsection.6.7}%
+\contentsline {subsubsection}{\numberline {6.7.1}Ausführliche Beschreibung}{45}{subsubsection.6.7.1}%
+\contentsline {subsection}{\numberline {6.8}anim\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino}{46}{subsection.6.8}%
+\contentsline {subsection}{\numberline {6.9}call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h-\/Dateireferenz}{47}{subsection.6.9}%
+\contentsline {subsubsection}{\numberline {6.9.1}Ausführliche Beschreibung}{47}{subsubsection.6.9.1}%
+\contentsline {subsection}{\numberline {6.10}call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{48}{subsection.6.10}%
+\contentsline {subsection}{\numberline {6.11}call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino-\/Dateireferenz}{49}{subsection.6.11}%
+\contentsline {subsubsection}{\numberline {6.11.1}Ausführliche Beschreibung}{49}{subsubsection.6.11.1}%
+\contentsline {subsection}{\numberline {6.12}call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino}{50}{subsection.6.12}%
+\contentsline {subsection}{\numberline {6.13}custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h-\/Dateireferenz}{50}{subsection.6.13}%
+\contentsline {subsubsection}{\numberline {6.13.1}Ausführliche Beschreibung}{50}{subsubsection.6.13.1}%
+\contentsline {subsection}{\numberline {6.14}custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{51}{subsection.6.14}%
+\contentsline {subsection}{\numberline {6.15}custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino-\/Dateireferenz}{51}{subsection.6.15}%
+\contentsline {subsubsection}{\numberline {6.15.1}Ausführliche Beschreibung}{51}{subsubsection.6.15.1}%
+\contentsline {subsection}{\numberline {6.16}custom\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servo.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino}{52}{subsection.6.16}%
+\contentsline {subsection}{\numberline {6.17}header.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h-\/Dateireferenz}{53}{subsection.6.17}%
+\contentsline {subsubsection}{\numberline {6.17.1}Ausführliche Beschreibung}{53}{subsubsection.6.17.1}%
+\contentsline {subsubsection}{\numberline {6.17.2}Dokumentation der benutzerdefinierten Typen}{53}{subsubsection.6.17.2}%
+\contentsline {paragraph}{\numberline {6.17.2.1}func\_t}{53}{paragraph.6.17.2.1}%
+\contentsline {paragraph}{\numberline {6.17.2.2}time\_t}{54}{paragraph.6.17.2.2}%
+\contentsline {subsection}{\numberline {6.18}header.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{54}{subsection.6.18}%
+\contentsline {subsection}{\numberline {6.19}index.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md-\/Dateireferenz}{54}{subsection.6.19}%
+\contentsline {subsection}{\numberline {6.20}sketch.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino-\/Dateireferenz}{54}{subsection.6.20}%
+\contentsline {subsubsection}{\numberline {6.20.1}Ausführliche Beschreibung}{54}{subsubsection.6.20.1}%
+\contentsline {subsubsection}{\numberline {6.20.2}Makro-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{56}{subsubsection.6.20.2}%
+\contentsline {paragraph}{\numberline {6.20.2.1}GEH\_ZURUECK}{56}{paragraph.6.20.2.1}%
+\contentsline {subsubsection}{\numberline {6.20.3}Dokumentation der Aufzählungstypen}{56}{subsubsection.6.20.3}%
+\contentsline {paragraph}{\numberline {6.20.3.1}Farbe}{56}{paragraph.6.20.3.1}%
+\contentsline {subsubsection}{\numberline {6.20.4}Dokumentation der Funktionen}{57}{subsubsection.6.20.4}%
+\contentsline {paragraph}{\numberline {6.20.4.1}legBallAb()}{57}{paragraph.6.20.4.1}%
+\contentsline {paragraph}{\numberline {6.20.4.2}loop()}{58}{paragraph.6.20.4.2}%
+\contentsline {paragraph}{\numberline {6.20.4.3}mesureColor()}{60}{paragraph.6.20.4.3}%
+\contentsline {paragraph}{\numberline {6.20.4.4}servoIsDone()}{61}{paragraph.6.20.4.4}%
+\contentsline {paragraph}{\numberline {6.20.4.5}setLedColor()}{62}{paragraph.6.20.4.5}%
+\contentsline {paragraph}{\numberline {6.20.4.6}setup()}{62}{paragraph.6.20.4.6}%
+\contentsline {paragraph}{\numberline {6.20.4.7}stopButtonClicked()}{63}{paragraph.6.20.4.7}%
+\contentsline {subsubsection}{\numberline {6.20.5}Variablen-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dokumentation}{64}{subsubsection.6.20.5}%
+\contentsline {paragraph}{\numberline {6.20.5.1}ANGLE\_CENTER}{64}{paragraph.6.20.5.1}%
+\contentsline {paragraph}{\numberline {6.20.5.2}ANGLE\_LEFT\_HOLE}{64}{paragraph.6.20.5.2}%
+\contentsline {paragraph}{\numberline {6.20.5.3}ANGLE\_MIN}{64}{paragraph.6.20.5.3}%
+\contentsline {paragraph}{\numberline {6.20.5.4}ANGLE\_RIGHT\_HOLE}{64}{paragraph.6.20.5.4}%
+\contentsline {paragraph}{\numberline {6.20.5.5}callHandler}{65}{paragraph.6.20.5.5}%
+\contentsline {paragraph}{\numberline {6.20.5.6}doFlicker}{65}{paragraph.6.20.5.6}%
+\contentsline {paragraph}{\numberline {6.20.5.7}lcd}{65}{paragraph.6.20.5.7}%
+\contentsline {paragraph}{\numberline {6.20.5.8}LOADING\_DURATION}{65}{paragraph.6.20.5.8}%
+\contentsline {paragraph}{\numberline {6.20.5.9}nBlack}{65}{paragraph.6.20.5.9}%
+\contentsline {paragraph}{\numberline {6.20.5.10}nOrange}{65}{paragraph.6.20.5.10}%
+\contentsline {paragraph}{\numberline {6.20.5.11}nWhite}{66}{paragraph.6.20.5.11}%
+\contentsline {paragraph}{\numberline {6.20.5.12}PIN\_BLUE}{66}{paragraph.6.20.5.12}%
+\contentsline {paragraph}{\numberline {6.20.5.13}PIN\_GREEN}{66}{paragraph.6.20.5.13}%
+\contentsline {paragraph}{\numberline {6.20.5.14}PIN\_RED}{66}{paragraph.6.20.5.14}%
+\contentsline {paragraph}{\numberline {6.20.5.15}PIN\_SERVO}{66}{paragraph.6.20.5.15}%
+\contentsline {paragraph}{\numberline {6.20.5.16}PIN\_STOPBUTTON}{66}{paragraph.6.20.5.16}%
+\contentsline {paragraph}{\numberline {6.20.5.17}servo}{67}{paragraph.6.20.5.17}%
+\contentsline {paragraph}{\numberline {6.20.5.18}SERVO\_SPEED\_DEFAULT}{67}{paragraph.6.20.5.18}%
+\contentsline {paragraph}{\numberline {6.20.5.19}SERVO\_SPEED\_FAST}{67}{paragraph.6.20.5.19}%
+\contentsline {paragraph}{\numberline {6.20.5.20}stopButton}{67}{paragraph.6.20.5.20}%
+\contentsline {subsection}{\numberline {6.21}sketch.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ino}{68}{subsection.6.21}%
+\contentsline {section}{Index}{71}{section*.103}%
