@@ -100,6 +100,7 @@ var NAVTREEINDEX0 =
 "index.html":[],
 "index.html#autotoc_md0":[0],
 "index.html#autotoc_md1":[0,0],
+"index.html#autotoc_md2":[0,1],
 "pages.html":[],
 "sketch_8ino.html":[2,0,9],
 "sketch_8ino.html#a05c5455b55db369d7d780a0a64525ecc":[2,0,9,25],
