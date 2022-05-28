@@ -120,7 +120,172 @@ Warum werden Calls im Heap gespeichert</h2>
 <p >Calls (<a class="el" href="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2" title="Die liste der aktuellen Calls.">CallHandler::callPtrs</a>) werden mithilfe des <em>new</em> Keywords im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert um sie weiter benutzen zu können nachdem die Funktion in der sie instanziert wurden abgeschlossen ist. Sie müssen deshalb aber auch manuell mit <a class="el" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e" title="setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei">CallHandler::deleteCalls</a> gelöscht werden. </p>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Warum verschiedene Callable Klassen?</h2>
-<p >Es wäre möglich gewesen statt mehrerer <a class="el" href="classCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann.">Callable</a> Klassen einfach eine zu benutzen und dann die Art des Calls in einer Variable zu speichern. Der Nachteil dieser Methode wäre, dass bei jeder Funktion die etwas mit der Klasse zu tun hat (<a class="el" href="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9">Callable::run</a>, <a class="el" href="classCallable.html#af0778d71c6196b6ba0215cce13f8c7dd">Callable::isDone</a>, etc.) überprüft werden müsste, was die Art des Calls ist. Das würde zu einer schlechteren Lesbarkeit des Codes führen.</p>
+<p >Es wäre möglich gewesen statt mehrerer <a class="el" href="classCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann.">Callable</a> Klassen einfach eine zu benutzen und dann die Art des Calls in einer Variable zu speichern. Der Nachteil dieser Methode wäre, dass bei jeder Funktion die etwas mit der Klasse zu tun hat (<a class="el" href="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9">Callable::run</a>, <a class="el" href="classCallable.html#af0778d71c6196b6ba0215cce13f8c7dd">Callable::isDone</a>, etc.) überprüft werden müsste, was die Art des Calls ist. Das würde zu einer schlechteren Lesbarkeit des Codes führen. Das war in einer älteren Version der Fall. </p><details >
+<p ><summary>Code</summary> </p><div class="fragment"><div class="line"> {c++}</div>
+<div class="line">class LcdHandler {</div>
+<div class="line">  public:</div>
+<div class="line">    enum AnimType {</div>
+<div class="line">      DOT,</div>
+<div class="line">      LOADING,</div>
+<div class="line">      NO_ANIMATION</div>
+<div class="line">    };</div>
+<div class="line">    struct LcdString {</div>
+<div class="line">      long duration;</div>
+<div class="line">      AnimType animType;</div>
+<div class="line">      String text;</div>
+<div class="line">      LcdString(String text, long duration, AnimType animType = NO_ANIMATION): text(text), duration(duration), animType(animType) {}</div>
+<div class="line">      operator String() const {</div>
+<div class="line">        return text;</div>
+<div class="line">      }</div>
+<div class="line">    };</div>
+<div class="line">    bool running = false;</div>
+<div class="line">  private:</div>
+<div class="line">    LcdString * currString;</div>
+<div class="line">    long t;</div>
+<div class="line">    LcdString * lastString;</div>
+<div class="line">    LcdString * lcdStrings;</div>
+<div class="line">    long stepDuration;</div>
+<div class="line">    long lastRefresh;</div>
+<div class="line">    void( * callback)(); //function pointer</div>
+<div class="line">  public:</div>
+<div class="line">    ~LcdHandler() {</div>
+<div class="line">      delete[] lcdStrings;</div>
+<div class="line">    }</div>
+<div class="line">    void init() {</div>
+<div class="line">      lcd.init();</div>
+<div class="line">      lcd.backlight();</div>
+<div class="line">      lcd.createChar(0, loading_empty_c);</div>
+<div class="line">      lcd.createChar(1, loading_full_c);</div>
+<div class="line">    }</div>
+<div class="line">    void setStrings(LcdString newLcdStrings[], size_t numStrings, void( * newCallback)() = NULL, int newStepDuration = 1000) {</div>
+<div class="line">      delete[] lcdStrings; //Speicherplatz frei machen</div>
+<div class="line">      lcdStrings = newLcdStrings;</div>
+<div class="line">      currString = newLcdStrings;</div>
+<div class="line">      lastString = newLcdStrings + numStrings - 1;</div>
+<div class="line">      t = millis();</div>
+<div class="line">      stepDuration = newStepDuration;</div>
+<div class="line">      lastRefresh = millis();</div>
+<div class="line">      running = true;</div>
+<div class="line">      callback = newCallback;</div>
+<div class="line">      prepareAnimation(currString);</div>
+<div class="line">    }</div>
+<div class="line">    void prepareAnimation(LcdString* currString) {</div>
+<div class="line">      switch (currString-&gt;animType) {</div>
+<div class="line">        case LOADING:</div>
+<div class="line">          stepDuration = currString-&gt;duration / 9;</div>
+<div class="line">          if (currString-&gt;text.length() &gt; 16) {</div>
+<div class="line">            Serial.print(&quot;text given for loading animation is to long, text: &quot;);</div>
+<div class="line">            Serial.println(*currString);</div>
+<div class="line">          }</div>
+<div class="line">          printCentered(*currString);</div>
+<div class="line">          lcd.setCursor(LOADING_BAR_OFFSET, 1);</div>
+<div class="line">          for (int i = 0; i &lt; 8; i++) {</div>
+<div class="line">            lcd.write(0);</div>
+<div class="line">          }</div>
+<div class="line">          lcd.print(&quot;0% &quot;);</div>
+<div class="line">          break;</div>
+<div class="line">        case DOT:</div>
+<div class="line">          printPretty(currString-&gt;text + String(&quot;   &quot;));</div>
+<div class="line">          break;</div>
+<div class="line">        default:</div>
+<div class="line">          printPretty(*currString);</div>
+<div class="line">      }</div>
+<div class="line">    }</div>
+<div class="line">    void printCentered(String text, int length = -1, int row = 0) { //length&lt;=16</div>
+<div class="line">      if (length == -1) {</div>
+<div class="line">        length = text.length();</div>
+<div class="line">      }</div>
+<div class="line">      int offset = (16 - length) / 2; //rundet immer ab, da int</div>
+<div class="line">      lcd.setCursor(offset, row);</div>
+<div class="line">      lcd.print(text);</div>
+<div class="line">    }</div>
+<div class="line">    void printPretty(String text) { //handelt zeilenumbrüche und schreibt zentriert</div>
+<div class="line">      lcd.clear();</div>
+<div class="line">      int length = text.length();</div>
+<div class="line">      if (length &lt;= 16) {</div>
+<div class="line">        printCentered(text, length);</div>
+<div class="line">        return 0;</div>
+<div class="line">      }</div>
+<div class="line">      int spacePos = -1;</div>
+<div class="line">      for (int i = 15; i &gt;= 0; i--) {</div>
+<div class="line">        if (text[i] == &#39; &#39;) {</div>
+<div class="line">          spacePos = i;</div>
+<div class="line">          break;</div>
+<div class="line">        }</div>
+<div class="line">      }</div>
+<div class="line">      String row1, row2;</div>
+<div class="line">      if (spacePos != -1) {</div>
+<div class="line">        row1 = text.substring(0, spacePos);</div>
+<div class="line">        row2 = text.substring(spacePos + 1);</div>
+<div class="line">      } else {</div>
+<div class="line">        row1 = text.substring(0, 16);</div>
+<div class="line">        row2 = text.substring(16);</div>
+<div class="line">      }</div>
+<div class="line">      printCentered(row1, row1.length(), 0);</div>
+<div class="line">      printCentered(row2, row2.length(), 1);</div>
+<div class="line">    }</div>
+<div class="line">    void printAnimated() {</div>
+<div class="line">      long time = millis();</div>
+<div class="line">      AnimType type = currString-&gt;animType;</div>
+<div class="line">      if (type == DOT) {</div>
+<div class="line">        if ((time - lastRefresh) &lt; stepDuration) {</div>
+<div class="line">          return;</div>
+<div class="line">        }</div>
+<div class="line">        lastRefresh = time;</div>
+<div class="line">        int numDots = ((time - t) / stepDuration) % 4;</div>
+<div class="line">        char dots[4];</div>
+<div class="line">        for (int i = 0; i &lt; 3; i++) {</div>
+<div class="line">          if (i &lt; numDots) {</div>
+<div class="line">            dots[i] = &#39;.&#39;;</div>
+<div class="line">          } else {</div>
+<div class="line">            dots[i] = &#39; &#39;;</div>
+<div class="line">          }</div>
+<div class="line">        }</div>
+<div class="line">        dots[3] = &#39;\0&#39;;</div>
+<div class="line">        printPretty(currString-&gt;text + dots);</div>
+<div class="line">      } else if (type == LOADING) {</div>
+<div class="line">        short percent = (time - t) * 100 / currString-&gt;duration;</div>
+<div class="line">        if (time - lastRefresh &gt; stepDuration) {</div>
+<div class="line">          short nToFill = percent * 8 / 100;</div>
+<div class="line">          if (nToFill == 0) {</div>
+<div class="line">            return;</div>
+<div class="line">          }</div>
+<div class="line">          lcd.setCursor(nToFill + LOADING_BAR_OFFSET - 1, 1);</div>
+<div class="line">          lcd.write(1);</div>
+<div class="line">          lastRefresh = time;</div>
+<div class="line">        }</div>
+<div class="line">        lcd.setCursor(8 + LOADING_BAR_OFFSET, 1);</div>
+<div class="line">        lcd.print(percent);</div>
+<div class="line">        lcd.print(&quot;%&quot;);</div>
+<div class="line">      } else {</div>
+<div class="line">        Serial.println(&quot;unknown animation type&quot;);</div>
+<div class="line">      }</div>
+<div class="line">    }</div>
+<div class="line">    void animate() {</div>
+<div class="line">      if (!running) {</div>
+<div class="line">        return;</div>
+<div class="line">      }</div>
+<div class="line">      int timePassed = millis() - t;</div>
+<div class="line">      if (timePassed &gt; currString -&gt; duration) {</div>
+<div class="line">        if (currString + 1 &gt; lastString) {</div>
+<div class="line">          running = false;</div>
+<div class="line">          if (callback != NULL) {</div>
+<div class="line">            callback();</div>
+<div class="line">          }</div>
+<div class="line">          return;</div>
+<div class="line">        }</div>
+<div class="line">        currString++;</div>
+<div class="line">        t = millis();</div>
+<div class="line">        prepareAnimation(currString);</div>
+<div class="line">        return;</div>
+<div class="line">      }</div>
+<div class="line">      if (currString-&gt;animType == NO_ANIMATION) {</div>
+<div class="line">        return;</div>
+<div class="line">      }</div>
+<div class="line">      printAnimated();</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+</div><!-- fragment --> </details>
 <h1><a class="anchor" id="autotoc_md6"></a>
 Optimierungsideen – Code</h1>
 <p >Beim Ausführen des Programms mangelte es manchmal an Speicherplatz. Um dieses Problem zu umgehen hätte man statt der <a href="https://www.arduino.cc/reference/de/language/variables/data-types/stringobject/">Arduino String Klasse</a> auch C-Strings also char [] benutzen können. Das hätte den Code leider aber auch an ein Paar stellen komplizierter gemacht. Ein anderer Fehler der sehr häufig auftrat war, dass mit Speicheradressen falsch umgegangen wurde und dadurch das Programm ohne jegliche Fehlermeldung abstürzte, oft sogar an völlig anderen Stellen. Eine mögliche Lösung wäre es hier eine Programmiersprache zu benutzen, die Speicherplatzfehler beim kompilieren, das heißt beim umwandeln des Programmcodes in Maschinencode aufdeckt. Eine Möglichkeit dafür wäre diese <a href="https://github.com/Rahix/avr-hal">Arduino Bibliothek</a> für Rust (<a href="https://creativcoder.dev/rust-on-arduino-uno">Beispiel</a>). Solche Bibliotheken sind aber auch weniger Dokumentiert und haben weniger Features als die Standard C++ Arduino Bibliothek und deshalb alles in allem für ein kleines Schulprojekt keine gute Option. </p>
