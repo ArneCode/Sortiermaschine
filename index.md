@@ -1,6 +1,6 @@
 Hallo, dies ist die \htmlonly Online -\endhtmlonly Dokumentation für den Code der Sortiermaschine von Johannes und Arne   
 \latexonly \href {https://arnecode.github.io/Sortiermaschine}{Online Dokumentation} \endlatexonly
-\htmlonly <a href="https://arnecode.github.io/Sortiermaschine/doc.pdf">Dokumentation als PDF \endhtmlonly
+\htmlonly <a href="doc.pdf">Dokumentation als PDF \endhtmlonly
 # Zur Dokumentation
 \htmlonly Diese Seite hat eine Suchfunktion. Dort kann nach Klassen/Variabeln/Funktionen etc. gesucht werden  \endhtmlonly
 Ein guter Ort um zu starten ist die sketch.ino Datei. Dort wird wird die Logik des gesamten Programms zusammengeführt. Für eine Liste aller Dateien bitte im Menü unter Dateien nachschauen.
