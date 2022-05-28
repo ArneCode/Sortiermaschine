@@ -72,6 +72,8 @@ void AnimatableLcd::print(const String& text)
       write(c-8);
     }else if(c==1){//defining a non-newline space
       LiquidCrystal_I2C::print(" ");
+    }else if(c==2){//defining a "random" character
+      LiquidCrystal_I2C::print(String((char)random(33,255)));
     }
     else{
       LiquidCrystal_I2C::print(c);

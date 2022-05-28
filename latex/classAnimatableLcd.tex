@@ -105,12 +105,14 @@ Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00066}{66}} der Datei \
 \DoxyCodeLine{00072       write(c-\/8);}
 \DoxyCodeLine{00073     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(c==1)\{\textcolor{comment}{//defining a non-\/newline space}}
 \DoxyCodeLine{00074       LiquidCrystal\_I2C::print(\textcolor{stringliteral}{"{} "{}});}
-\DoxyCodeLine{00075     \}}
-\DoxyCodeLine{00076     \textcolor{keywordflow}{else}\{}
-\DoxyCodeLine{00077       LiquidCrystal\_I2C::print(c);}
-\DoxyCodeLine{00078     \}}
-\DoxyCodeLine{00079   \}}
-\DoxyCodeLine{00080 \}}
+\DoxyCodeLine{00075     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(c==2)\{\textcolor{comment}{//defining a "{}random"{} character}}
+\DoxyCodeLine{00076       LiquidCrystal\_I2C::print(String((\textcolor{keywordtype}{char})random(33,255)));}
+\DoxyCodeLine{00077     \}}
+\DoxyCodeLine{00078     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00079       LiquidCrystal\_I2C::print(c);}
+\DoxyCodeLine{00080     \}}
+\DoxyCodeLine{00081   \}}
+\DoxyCodeLine{00082 \}}
 
 \end{DoxyCode}
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
@@ -141,18 +143,18 @@ Gibt einen String zentriert auf dem Lcd-\/\+Display aus.
 \end{DoxyParams}
 
 
-Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00088}{88}} der Datei \mbox{\hyperlink{animLcd_8ino_source}{anim\+Lcd.\+ino}}.
+Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00090}{90}} der Datei \mbox{\hyperlink{animLcd_8ino_source}{anim\+Lcd.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00089 \{ }
-\DoxyCodeLine{00090   \textcolor{keywordflow}{if} (length == -\/1) \{}
-\DoxyCodeLine{00091     length = text.length();}
-\DoxyCodeLine{00092   \}}
-\DoxyCodeLine{00093   \textcolor{keywordtype}{int} offset = (16 -\/ length) / 2; \textcolor{comment}{//rundet immer ab, da int}}
-\DoxyCodeLine{00094   setCursor(offset, row);}
-\DoxyCodeLine{00095   \mbox{\hyperlink{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}{print}}(text);}
-\DoxyCodeLine{00096 \}}
+\DoxyCodeLine{00091 \{ }
+\DoxyCodeLine{00092   \textcolor{keywordflow}{if} (length == -\/1) \{}
+\DoxyCodeLine{00093     length = text.length();}
+\DoxyCodeLine{00094   \}}
+\DoxyCodeLine{00095   \textcolor{keywordtype}{int} offset = (16 -\/ length) / 2; \textcolor{comment}{//rundet immer ab, da int}}
+\DoxyCodeLine{00096   setCursor(offset, row);}
+\DoxyCodeLine{00097   \mbox{\hyperlink{classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca}{print}}(text);}
+\DoxyCodeLine{00098 \}}
 
 \end{DoxyCode}
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
@@ -186,35 +188,35 @@ gibt den Text \char`\"{}schön\char`\"{} aus, das heißt zentriert und mit autom
 \end{DoxyParams}
 
 
-Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00102}{102}} der Datei \mbox{\hyperlink{animLcd_8ino_source}{anim\+Lcd.\+ino}}.
+Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00104}{104}} der Datei \mbox{\hyperlink{animLcd_8ino_source}{anim\+Lcd.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00103 \{ }
-\DoxyCodeLine{00104   clear();}
-\DoxyCodeLine{00105   \textcolor{keywordtype}{int} length = text.length();}
-\DoxyCodeLine{00106   \textcolor{keywordflow}{if} (length <= 16) \{}
-\DoxyCodeLine{00107     \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{printCentered}}(text, length);}
-\DoxyCodeLine{00108     \textcolor{keywordflow}{return} 0;}
-\DoxyCodeLine{00109   \}}
-\DoxyCodeLine{00110   \textcolor{keywordtype}{int} spacePos = -\/1;}
-\DoxyCodeLine{00111   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 15; i >= 0; i-\/-\/) \{}
-\DoxyCodeLine{00112     \textcolor{keywordflow}{if} (text[i] == \textcolor{charliteral}{' '}) \{}
-\DoxyCodeLine{00113       spacePos = i;}
-\DoxyCodeLine{00114       \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00115     \}}
-\DoxyCodeLine{00116   \}}
-\DoxyCodeLine{00117   String row1, row2;}
-\DoxyCodeLine{00118   \textcolor{keywordflow}{if} (spacePos != -\/1) \{}
-\DoxyCodeLine{00119     row1 = text.substring(0, spacePos);}
-\DoxyCodeLine{00120     row2 = text.substring(spacePos + 1);}
-\DoxyCodeLine{00121   \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{00122     row1 = text.substring(0, 16);}
-\DoxyCodeLine{00123     row2 = text.substring(16);}
-\DoxyCodeLine{00124   \}}
-\DoxyCodeLine{00125   \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{printCentered}}(row1, row1.length(), 0);}
-\DoxyCodeLine{00126   \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{printCentered}}(row2, row2.length(), 1);}
-\DoxyCodeLine{00127 \}}
+\DoxyCodeLine{00105 \{ }
+\DoxyCodeLine{00106   clear();}
+\DoxyCodeLine{00107   \textcolor{keywordtype}{int} length = text.length();}
+\DoxyCodeLine{00108   \textcolor{keywordflow}{if} (length <= 16) \{}
+\DoxyCodeLine{00109     \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{printCentered}}(text, length);}
+\DoxyCodeLine{00110     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00111   \}}
+\DoxyCodeLine{00112   \textcolor{keywordtype}{int} spacePos = -\/1;}
+\DoxyCodeLine{00113   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 15; i >= 0; i-\/-\/) \{}
+\DoxyCodeLine{00114     \textcolor{keywordflow}{if} (text[i] == \textcolor{charliteral}{' '}) \{}
+\DoxyCodeLine{00115       spacePos = i;}
+\DoxyCodeLine{00116       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00117     \}}
+\DoxyCodeLine{00118   \}}
+\DoxyCodeLine{00119   String row1, row2;}
+\DoxyCodeLine{00120   \textcolor{keywordflow}{if} (spacePos != -\/1) \{}
+\DoxyCodeLine{00121     row1 = text.substring(0, spacePos);}
+\DoxyCodeLine{00122     row2 = text.substring(spacePos + 1);}
+\DoxyCodeLine{00123   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00124     row1 = text.substring(0, 16);}
+\DoxyCodeLine{00125     row2 = text.substring(16);}
+\DoxyCodeLine{00126   \}}
+\DoxyCodeLine{00127   \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{printCentered}}(row1, row1.length(), 0);}
+\DoxyCodeLine{00128   \mbox{\hyperlink{classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8}{printCentered}}(row2, row2.length(), 1);}
+\DoxyCodeLine{00129 \}}
 
 \end{DoxyCode}
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
@@ -277,16 +279,16 @@ wird immer wieder von \mbox{\hyperlink{sketch_8ino_afe461d27b9c48d5921c00d521181
 
 
 
-Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00132}{132}} der Datei \mbox{\hyperlink{animLcd_8ino_source}{anim\+Lcd.\+ino}}.
+Definiert in Zeile \mbox{\hyperlink{animLcd_8ino_source_l00134}{134}} der Datei \mbox{\hyperlink{animLcd_8ino_source}{anim\+Lcd.\+ino}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00133 \{}
-\DoxyCodeLine{00134   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}{doAnimation}}) \{}
-\DoxyCodeLine{00135     \textcolor{keywordflow}{return};}
-\DoxyCodeLine{00136   \}}
-\DoxyCodeLine{00137   \mbox{\hyperlink{classAnimatableLcd_a2ee9324b53d0646c9a28faf7db6e6997}{animString}}-\/>\mbox{\hyperlink{structLcdString_a1f014299eeb7654a391f1fbfc898719b}{update}}();}
-\DoxyCodeLine{00138 \}}
+\DoxyCodeLine{00135 \{}
+\DoxyCodeLine{00136   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classAnimatableLcd_ab18b2860b063a5af62da8f28f07d3182}{doAnimation}}) \{}
+\DoxyCodeLine{00137     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00138   \}}
+\DoxyCodeLine{00139   \mbox{\hyperlink{classAnimatableLcd_a2ee9324b53d0646c9a28faf7db6e6997}{animString}}-\/>\mbox{\hyperlink{structLcdString_a1f014299eeb7654a391f1fbfc898719b}{update}}();}
+\DoxyCodeLine{00140 \}}
 
 \end{DoxyCode}
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak

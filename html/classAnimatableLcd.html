@@ -214,12 +214,14 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="line"><span class="lineno">   72</span>      write(c-8);</div>
 <div class="line"><span class="lineno">   73</span>    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(c==1){<span class="comment">//defining a non-newline space</span></div>
 <div class="line"><span class="lineno">   74</span>      LiquidCrystal_I2C::print(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><span class="lineno">   75</span>    }</div>
-<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">else</span>{</div>
-<div class="line"><span class="lineno">   77</span>      LiquidCrystal_I2C::print(c);</div>
-<div class="line"><span class="lineno">   78</span>    }</div>
-<div class="line"><span class="lineno">   79</span>  }</div>
-<div class="line"><span class="lineno">   80</span>}</div>
+<div class="line"><span class="lineno">   75</span>    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(c==2){<span class="comment">//defining a &quot;random&quot; character</span></div>
+<div class="line"><span class="lineno">   76</span>      LiquidCrystal_I2C::print(String((<span class="keywordtype">char</span>)random(33,255)));</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">else</span>{</div>
+<div class="line"><span class="lineno">   79</span>      LiquidCrystal_I2C::print(c);</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+<div class="line"><span class="lineno">   81</span>  }</div>
+<div class="line"><span class="lineno">   82</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
@@ -270,15 +272,15 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </dd>
 </dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="animLcd_8ino_source.html#l00088">88</a> der Datei <a class="el" href="animLcd_8ino_source.html">animLcd.ino</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>{ </div>
-<div class="line"><span class="lineno">   90</span>  <span class="keywordflow">if</span> (length == -1) {</div>
-<div class="line"><span class="lineno">   91</span>    length = text.length();</div>
-<div class="line"><span class="lineno">   92</span>  }</div>
-<div class="line"><span class="lineno">   93</span>  <span class="keywordtype">int</span> offset = (16 - length) / 2; <span class="comment">//rundet immer ab, da int</span></div>
-<div class="line"><span class="lineno">   94</span>  setCursor(offset, row);</div>
-<div class="line"><span class="lineno">   95</span>  <a class="code hl_function" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">print</a>(text);</div>
-<div class="line"><span class="lineno">   96</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="animLcd_8ino_source.html#l00090">90</a> der Datei <a class="el" href="animLcd_8ino_source.html">animLcd.ino</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>{ </div>
+<div class="line"><span class="lineno">   92</span>  <span class="keywordflow">if</span> (length == -1) {</div>
+<div class="line"><span class="lineno">   93</span>    length = text.length();</div>
+<div class="line"><span class="lineno">   94</span>  }</div>
+<div class="line"><span class="lineno">   95</span>  <span class="keywordtype">int</span> offset = (16 - length) / 2; <span class="comment">//rundet immer ab, da int</span></div>
+<div class="line"><span class="lineno">   96</span>  setCursor(offset, row);</div>
+<div class="line"><span class="lineno">   97</span>  <a class="code hl_function" href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">print</a>(text);</div>
+<div class="line"><span class="lineno">   98</span>}</div>
 <div class="ttc" id="aclassAnimatableLcd_html_ae9f318e41e16a8527eaeffa9500831ca"><div class="ttname"><a href="classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca">AnimatableLcd::print</a></div><div class="ttdeci">void print(const String &amp;text)</div><div class="ttdoc">Eigene Lcd-print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00066">animLcd.ino:66</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
@@ -317,33 +319,33 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </dd>
 </dl>
 
-<p class="definition">Definiert in Zeile <a class="el" href="animLcd_8ino_source.html#l00102">102</a> der Datei <a class="el" href="animLcd_8ino_source.html">animLcd.ino</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  103</span>{ </div>
-<div class="line"><span class="lineno">  104</span>  clear();</div>
-<div class="line"><span class="lineno">  105</span>  <span class="keywordtype">int</span> length = text.length();</div>
-<div class="line"><span class="lineno">  106</span>  <span class="keywordflow">if</span> (length &lt;= 16) {</div>
-<div class="line"><span class="lineno">  107</span>    <a class="code hl_function" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a>(text, length);</div>
-<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  109</span>  }</div>
-<div class="line"><span class="lineno">  110</span>  <span class="keywordtype">int</span> spacePos = -1;</div>
-<div class="line"><span class="lineno">  111</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 15; i &gt;= 0; i--) {</div>
-<div class="line"><span class="lineno">  112</span>    <span class="keywordflow">if</span> (text[i] == <span class="charliteral">&#39; &#39;</span>) {</div>
-<div class="line"><span class="lineno">  113</span>      spacePos = i;</div>
-<div class="line"><span class="lineno">  114</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  115</span>    }</div>
-<div class="line"><span class="lineno">  116</span>  }</div>
-<div class="line"><span class="lineno">  117</span>  String row1, row2;</div>
-<div class="line"><span class="lineno">  118</span>  <span class="keywordflow">if</span> (spacePos != -1) {</div>
-<div class="line"><span class="lineno">  119</span>    row1 = text.substring(0, spacePos);</div>
-<div class="line"><span class="lineno">  120</span>    row2 = text.substring(spacePos + 1);</div>
-<div class="line"><span class="lineno">  121</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  122</span>    row1 = text.substring(0, 16);</div>
-<div class="line"><span class="lineno">  123</span>    row2 = text.substring(16);</div>
-<div class="line"><span class="lineno">  124</span>  }</div>
-<div class="line"><span class="lineno">  125</span>  <a class="code hl_function" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a>(row1, row1.length(), 0);</div>
-<div class="line"><span class="lineno">  126</span>  <a class="code hl_function" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a>(row2, row2.length(), 1);</div>
-<div class="line"><span class="lineno">  127</span>}</div>
-<div class="ttc" id="aclassAnimatableLcd_html_aaff767fb418dbc3e902dd4a1be3207a8"><div class="ttname"><a href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">AnimatableLcd::printCentered</a></div><div class="ttdeci">void printCentered(String text, int length=-1, int row=0)</div><div class="ttdoc">Gibt einen String zentriert auf dem Lcd-Display aus.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00088">animLcd.ino:88</a></div></div>
+<p class="definition">Definiert in Zeile <a class="el" href="animLcd_8ino_source.html#l00104">104</a> der Datei <a class="el" href="animLcd_8ino_source.html">animLcd.ino</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>{ </div>
+<div class="line"><span class="lineno">  106</span>  clear();</div>
+<div class="line"><span class="lineno">  107</span>  <span class="keywordtype">int</span> length = text.length();</div>
+<div class="line"><span class="lineno">  108</span>  <span class="keywordflow">if</span> (length &lt;= 16) {</div>
+<div class="line"><span class="lineno">  109</span>    <a class="code hl_function" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a>(text, length);</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  111</span>  }</div>
+<div class="line"><span class="lineno">  112</span>  <span class="keywordtype">int</span> spacePos = -1;</div>
+<div class="line"><span class="lineno">  113</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 15; i &gt;= 0; i--) {</div>
+<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">if</span> (text[i] == <span class="charliteral">&#39; &#39;</span>) {</div>
+<div class="line"><span class="lineno">  115</span>      spacePos = i;</div>
+<div class="line"><span class="lineno">  116</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  117</span>    }</div>
+<div class="line"><span class="lineno">  118</span>  }</div>
+<div class="line"><span class="lineno">  119</span>  String row1, row2;</div>
+<div class="line"><span class="lineno">  120</span>  <span class="keywordflow">if</span> (spacePos != -1) {</div>
+<div class="line"><span class="lineno">  121</span>    row1 = text.substring(0, spacePos);</div>
+<div class="line"><span class="lineno">  122</span>    row2 = text.substring(spacePos + 1);</div>
+<div class="line"><span class="lineno">  123</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  124</span>    row1 = text.substring(0, 16);</div>
+<div class="line"><span class="lineno">  125</span>    row2 = text.substring(16);</div>
+<div class="line"><span class="lineno">  126</span>  }</div>
+<div class="line"><span class="lineno">  127</span>  <a class="code hl_function" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a>(row1, row1.length(), 0);</div>
+<div class="line"><span class="lineno">  128</span>  <a class="code hl_function" href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">printCentered</a>(row2, row2.length(), 1);</div>
+<div class="line"><span class="lineno">  129</span>}</div>
+<div class="ttc" id="aclassAnimatableLcd_html_aaff767fb418dbc3e902dd4a1be3207a8"><div class="ttname"><a href="classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8">AnimatableLcd::printCentered</a></div><div class="ttdeci">void printCentered(String text, int length=-1, int row=0)</div><div class="ttdoc">Gibt einen String zentriert auf dem Lcd-Display aus.</div><div class="ttdef"><b>Definition:</b> <a href="animLcd_8ino_source.html#l00090">animLcd.ino:90</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
@@ -413,13 +415,13 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 
 <p>wird immer wieder von <a class="el" href="sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Wird immer wieder ausgeführt.">loop()</a> aufgerufen um die Animationen zu updaten </p>
 
-<p class="definition">Definiert in Zeile <a class="el" href="animLcd_8ino_source.html#l00132">132</a> der Datei <a class="el" href="animLcd_8ino_source.html">animLcd.ino</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  133</span>{</div>
-<div class="line"><span class="lineno">  134</span>  <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classAnimatableLcd.html#ab18b2860b063a5af62da8f28f07d3182">doAnimation</a>) {</div>
-<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  136</span>  }</div>
-<div class="line"><span class="lineno">  137</span>  <a class="code hl_variable" href="classAnimatableLcd.html#a2ee9324b53d0646c9a28faf7db6e6997">animString</a>-&gt;<a class="code hl_function" href="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b">update</a>();</div>
-<div class="line"><span class="lineno">  138</span>}</div>
+<p class="definition">Definiert in Zeile <a class="el" href="animLcd_8ino_source.html#l00134">134</a> der Datei <a class="el" href="animLcd_8ino_source.html">animLcd.ino</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  135</span>{</div>
+<div class="line"><span class="lineno">  136</span>  <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classAnimatableLcd.html#ab18b2860b063a5af62da8f28f07d3182">doAnimation</a>) {</div>
+<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  138</span>  }</div>
+<div class="line"><span class="lineno">  139</span>  <a class="code hl_variable" href="classAnimatableLcd.html#a2ee9324b53d0646c9a28faf7db6e6997">animString</a>-&gt;<a class="code hl_function" href="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b">update</a>();</div>
+<div class="line"><span class="lineno">  140</span>}</div>
 <div class="ttc" id="astructLcdString_html_a1f014299eeb7654a391f1fbfc898719b"><div class="ttname"><a href="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b">LcdString::update</a></div><div class="ttdeci">virtual void update()</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00070">animString.h:70</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
