@@ -218,7 +218,8 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </div><div class="memdoc">
 
 <p>Setzt die neuen Calls, die ausgeführt werden sollen. </p>
-<p >Calls werden im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert um sie zwischen Funktionen hin- und hergeben zu können und sie benutzen nachdem die Exekution abgeschlossen ist (bzw an das <a class="el" href="classCallHandler.html" title="Klasse, die Calls nacheinander aufruft.">CallHandler</a> Objekt) </p><dl class="section warning"><dt>Warnung</dt><dd>nCalls darf auf keinen Fall größer als die tatsächliche Anzahl an Calls sein, sonst stürzt das Programm ab weil es versucht nicht vorhandene Calls auszuführen </dd></dl>
+<dl class="section note"><dt>Zu beachten</dt><dd>Calls werden im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert um sie zwischen Funktionen hin- und hergeben zu können und sie benutzen nachdem die Exekution abgeschlossen ist (bzw an das <a class="el" href="classCallHandler.html" title="Klasse, die Calls nacheinander aufruft.">CallHandler</a> Objekt) </dd></dl>
+<dl class="section warning"><dt>Warnung</dt><dd>nCalls darf auf keinen Fall größer als die tatsächliche Anzahl an Calls sein, sonst stürzt das Programm ab weil es versucht nicht vorhandene Calls auszuführen </dd></dl>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
     <tr><td class="paramname">newCallPtrs</td><td></td></tr>
