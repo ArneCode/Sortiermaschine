@@ -6,7 +6,7 @@
 #include "animString.h"
 #include "callHandler.h"
 /**
- * @brief setzt den Speicherplatz der von den Calls besetzt wurde frei
+ * @brief setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei
  * 
  */
 void CallHandler::deleteCalls() 

@@ -26,7 +26,7 @@ Zusammengehörigkeiten von Call\+Handler\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{delete\+Calls}} ()
-\begin{DoxyCompactList}\small\item\em setzt den Speicherplatz der von den Calls besetzt wurde frei \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{set\+Calls}} (\mbox{\hyperlink{classCallable}{Callable}} $\ast$new\+Call\+Ptrs\mbox{[}$\,$\mbox{]}, size\+\_\+t n\+Calls)
 \begin{DoxyCompactList}\small\item\em Setzt die neuen Calls, die ausgeführt werden sollen. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7}{update}} ()
@@ -60,7 +60,7 @@ bool \mbox{\hyperlink{classCallHandler_a1ee97c59315e54746cef82a406a49236}{calls\
 
 
 
-setzt den Speicherplatz der von den Calls besetzt wurde frei 
+setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei 
 
 
 
@@ -80,7 +80,8 @@ Definiert in Zeile \mbox{\hyperlink{callHandler_8ino_source_l00012}{12}} der Dat
 \DoxyCodeLine{00022 \}}
 
 \end{DoxyCode}
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -204,7 +205,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 Die liste der aktuellen Calls. 
 
 Wird mithilfe von \mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{Call\+Handler\+::set\+Calls}} gesetzt. \begin{DoxyNote}{Zu beachten}
-Die Calls werden im Heap gespeichert, das heißt zum einen, dass sie zwischen Funktionen hin-\/ und hergegeben werden können, zum anderen aber auch, dass sie mithilfe von \mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{Call\+Handler\+::delete\+Calls}} manuell wieder gelöscht werden müssen 
+Die Calls werden im \href{https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/}{\texttt{ Heap}} gespeichert, das heißt zum einen, dass sie zwischen Funktionen hin-\/ und hergegeben werden können, zum anderen aber auch, dass sie mithilfe von \mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{Call\+Handler\+::delete\+Calls}} manuell wieder gelöscht werden müssen 
 \end{DoxyNote}
 
 

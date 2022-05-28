@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e" target="_top" xlink:title="setzt den Speicherplatz der von den Calls besetzt wurde frei">
+<g id="a_node2"><a xlink:href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e" target="_top" xlink:title="setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei">
 <polygon fill="none" stroke="black" points="76.5,-380.5 76.5,-399.5 210.5,-399.5 210.5,-380.5 76.5,-380.5"/>
 <text text-anchor="middle" x="143.5" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallHandler::deleteCalls</text>
 </a>

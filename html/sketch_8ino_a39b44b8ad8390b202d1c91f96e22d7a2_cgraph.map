@@ -1,6 +1,6 @@
 <map id="legBallAb" name="legBallAb">
 <area shape="rect" id="node1" title="Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück." alt="" coords="5,81,89,108"/>
-<area shape="rect" id="node2" href="$classCallHandler.html#a49ab239f771b84300df21bd426788c3e" title="setzt den Speicherplatz der von den Calls besetzt wurde frei" alt="" coords="137,5,316,32"/>
+<area shape="rect" id="node2" href="$classCallHandler.html#a49ab239f771b84300df21bd426788c3e" title="setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei" alt="" coords="137,5,316,32"/>
 <area shape="rect" id="node3" href="$sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791" title="Hilfs Funktion, Methoden können nicht als Funktionsparameter benutzt werden." alt="" coords="175,56,278,83"/>
 <area shape="rect" id="node5" href="$classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0" title="Setzt die neuen Calls, die ausgeführt werden sollen." alt="" coords="147,107,306,133"/>
 <area shape="rect" id="node7" href="$classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94" title="Bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit." alt="" coords="151,157,302,184"/>

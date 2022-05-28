@@ -18,7 +18,7 @@ class CallHandler {//calls functions after a certain delay
     /**
      * @brief Die liste der aktuellen Calls
      * @details Wird mithilfe von CallHandler::setCalls gesetzt.
-     * @note Die Calls werden im Heap gespeichert, das heißt zum einen, dass sie zwischen Funktionen hin- und hergegeben werden können, zum anderen aber auch, dass sie mithilfe von CallHandler::deleteCalls manuell wieder gelöscht werden müssen
+     * @note Die Calls werden im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert, das heißt zum einen, dass sie zwischen Funktionen hin- und hergegeben werden können, zum anderen aber auch, dass sie mithilfe von CallHandler::deleteCalls manuell wieder gelöscht werden müssen
      */
     Callable** callPtrs;
     /**

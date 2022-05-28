@@ -36,7 +36,7 @@ void CustomServo::write(short newAngle, time_t duration)
   speed = (float)(targetAngle - startAngle) / (float)duration;
 }
 /**
- * @brief Steuert den Servo direkt an, enspricht dem normalen Servo::write
+ * @brief Steuert den Servo direkt an, enspricht dem normalen <a href="https://www.arduino.cc/reference/en/libraries/servo/write/" target="_blank">Servo::write</a>
  * @warning Winkel überprüfen! Wenn dieser zu klein ist schlägt der Arm gegen den Stopper
  * @param angle 
  */
