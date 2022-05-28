@@ -27,13 +27,35 @@ var NAVTREE =
   [ "Sortiermaschine", "index.html", [
     [ "Zur Dokumentation", "index.html#autotoc_md0", [
       [ "Klassen", "index.html#autotoc_md1", null ]
+    ] ],
+    [ "Klassen", "annotated.html", [
+      [ "Auflistung der Klassen", "annotated.html", "annotated_dup" ],
+      [ "Klassen-Verzeichnis", "classes.html", null ],
+      [ "Klassenhierarchie", "hierarchy.html", "hierarchy" ],
+      [ "Klassen-Elemente", "functions.html", [
+        [ "Alle", "functions.html", null ],
+        [ "Funktionen", "functions_func.html", null ],
+        [ "Variablen", "functions_vars.html", null ]
+      ] ]
+    ] ],
+    [ "Dateien", "files.html", [
+      [ "Auflistung der Dateien", "files.html", "files_dup" ],
+      [ "Datei-Elemente", "globals.html", [
+        [ "Alle", "globals.html", null ],
+        [ "Funktionen", "globals_func.html", null ],
+        [ "Variablen", "globals_vars.html", null ],
+        [ "Typdefinitionen", "globals_type.html", null ],
+        [ "Aufzählungen", "globals_enum.html", null ],
+        [ "Aufzählungswerte", "globals_eval.html", null ],
+        [ "Makrodefinitionen", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"animLcd_8h.html"
 ];
 
 var SYNCONMSG = 'Klicken um Panelsynchronisation auszuschalten';
