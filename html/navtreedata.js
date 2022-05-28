@@ -29,11 +29,11 @@ var NAVTREE =
       [ "Klassen", "index.html#autotoc_md1", null ],
       [ "Code", "index.html#autotoc_md2", null ]
     ] ],
-    [ "Begründungen - Code", "index.html#autotoc_md3", [
+    [ "Begründungen", "index.html#autotoc_md3", [
       [ "Warum werden Calls im Heap gespeichert?", "index.html#autotoc_md4", null ],
       [ "Warum verschiedene Callable Klassen?", "index.html#autotoc_md5", null ]
     ] ],
-    [ "Optimierungsideen – Code", "index.html#autotoc_md6", null ],
+    [ "Optimierungsideen", "index.html#autotoc_md6", null ],
     [ "Klassen", "annotated.html", [
       [ "Auflistung der Klassen", "annotated.html", "annotated_dup" ],
       [ "Klassen-Verzeichnis", "classes.html", null ],

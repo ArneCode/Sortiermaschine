@@ -113,7 +113,7 @@ Klassen</h2>
 Code</h2>
 <p >Der Code ist interaktiv, man kann Variabeln, Funktionen Methoden und Klassen anklicken um zu Ihrer Beschreibung zu gelangen.  Oder man kann mit der Maus über dem Begriff "schweben" und ein Tooltip wird angezeigt </p>
 <h1><a class="anchor" id="autotoc_md3"></a>
-Begründungen - Code</h1>
+Begründungen</h1>
 <dl class="section note"><dt>Zu beachten</dt><dd>Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu "erforschen"</dd></dl>
 <h2><a class="anchor" id="autotoc_md4"></a>
 Warum werden Calls im Heap gespeichert?</h2>
@@ -295,7 +295,7 @@ Warum verschiedene Callable Klassen?</h2>
 <div class="ttc" id="astructLcdString_html_ab6c96ac47d1b85dfcd49fc286ae9e234"><div class="ttname"><a href="structLcdString.html#ab6c96ac47d1b85dfcd49fc286ae9e234">LcdString::duration</a></div><div class="ttdeci">time_t duration</div><div class="ttdef"><b>Definition:</b> <a href="animString_8h_source.html#l00063">animString.h:63</a></div></div>
 </div><!-- fragment --> </details>
 <h1><a class="anchor" id="autotoc_md6"></a>
-Optimierungsideen – Code</h1>
+Optimierungsideen</h1>
 <p >Beim Ausführen des Programms mangelte es manchmal an Speicherplatz. Um dieses Problem zu umgehen hätte man statt der <a href="https://www.arduino.cc/reference/de/language/variables/data-types/stringobject/">Arduino String Klasse</a> auch C-Strings also char [] benutzen können. Das hätte den Code leider aber auch an ein Paar stellen komplizierter gemacht. Ein anderer Fehler der sehr häufig auftrat war, dass mit Speicheradressen falsch umgegangen wurde und dadurch das Programm ohne jegliche Fehlermeldung abstürzte, oft sogar an völlig anderen Stellen. Eine mögliche Lösung wäre es hier eine Programmiersprache zu benutzen, die Speicherplatzfehler beim kompilieren, das heißt beim umwandeln des Programmcodes in Maschinencode aufdeckt. Eine Möglichkeit dafür wäre diese <a href="https://github.com/Rahix/avr-hal">Arduino Bibliothek</a> für Rust (<a href="https://creativcoder.dev/rust-on-arduino-uno">Beispiel</a>). Solche Bibliotheken sind aber auch weniger Dokumentiert und haben weniger Features als die Standard C++ Arduino Bibliothek und deshalb alles in allem für ein kleines Schulprojekt keine gute Option. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
