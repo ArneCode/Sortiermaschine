@@ -15,7 +15,7 @@ Ein paar wichtige Klassen in diesem Projekt sind:
 Der Code ist interaktiv, man kann Variabeln, Funktionen Methoden und Klassen anklicken um zu Ihrer Beschreibung zu gelangen. \htmlonly Oder man kann mit der Maus über dem Begriff "schweben" und ein Tooltip wird angezeigt \endhtmlonly
 
 # Begründungen - Code 
-Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu "erforschen"
+@note Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu "erforschen"
 
 ## Warum verschiedene Callable Klassen? 
 

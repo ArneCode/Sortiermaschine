@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.28)  28 MAY 2022 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.28)  28 MAY 2022 11:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -915,17 +915,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
  []
 
 [1]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 16
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 14.
+
+Underfull \hbox (badness 10000) detected at line 14
+[][][]
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 19
 .
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)) (./hierarchy.tex) (./annotated.tex [2]) (./files.tex [3]) (./classAnimatable
-Lcd.tex <./classAnimatableLcd__coll__graph.pdf
+)) (./hierarchy.tex)
+(./annotated.tex [2]) (./files.tex [3]) (./classAnimatableLcd.tex <./classAnima
+tableLcd__coll__graph.pdf
 
 pdfTeX warning: pdflatex (file ./classAnimatableLcd__coll__graph.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 >
-<classAnimatableLcd__coll__graph.pdf, id=624, 250.9375pt x 282.05376pt>
+<classAnimatableLcd__coll__graph.pdf, id=625, 250.9375pt x 282.05376pt>
 File: classAnimatableLcd__coll__graph.pdf Graphic file (type pdf)
 <use classAnimatableLcd__coll__graph.pdf>
 Package pdftex.def Info: classAnimatableLcd__coll__graph.pdf  used on input lin
@@ -945,7 +953,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 7.19995pt on input line 51.
  <./classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38_icgraph.pdf>
-<classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38_icgraph.pdf, id=665, 272.
+<classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38_icgraph.pdf, id=666, 272.
 01625pt x 100.375pt>
 File: classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38_icgraph.pdf Graphic 
 file (type pdf)
@@ -957,7 +965,7 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 83.
 
 [5] <./classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph.pdf>
-<classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph.pdf, id=700, 733.
+<classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph.pdf, id=701, 733.
 74126pt x 176.66pt>
 File: classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph.pdf Graphic 
 file (type pdf)
@@ -1726,7 +1734,7 @@ ve/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helve
 tic/uhvro8a.pfb>
-Output written on refman.pdf (76 pages, 780766 bytes).
+Output written on refman.pdf (76 pages, 780893 bytes).
 PDF statistics:
  4466 PDF objects out of 5155 (max. 8388607)
  4126 compressed objects within 42 object streams
