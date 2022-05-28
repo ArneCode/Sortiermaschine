@@ -116,9 +116,12 @@ Code</h2>
 Begründungen - Code</h1>
 <dl class="section note"><dt>Zu beachten</dt><dd>Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu "erforschen"</dd></dl>
 <h2><a class="anchor" id="autotoc_md4"></a>
+Warum werden Calls im Heap gespeichert</h2>
+<p >Calls (<a class="el" href="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2" title="Die liste der aktuellen Calls.">CallHandler::callPtrs</a>) werden im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/">Heap</a> gespeichert um sie weiter benutzen zu können nachdem die Funktion in der sie instanziert wurden abgeschlossen ist </p>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Warum verschiedene Callable Klassen?</h2>
 <p >Es wäre möglich gewesen statt mehrerer <a class="el" href="classCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann.">Callable</a> Klassen einfach eine zu benutzen und dann die Art des Calls in einer Variable zu speichern. Der Nachteil dieser Methode wäre, dass bei jeder Funktion die etwas mit der Klasse zu tun hat (<a class="el" href="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9">Callable::run</a>, <a class="el" href="classCallable.html#af0778d71c6196b6ba0215cce13f8c7dd">Callable::isDone</a>, etc.) überprüft werden müsste, was die Art des Calls ist. Das würde zu einer schlechteren Lesbarkeit des Codes führen.</p>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 Optimierungsideen – Code</h1>
 <p >Beim Ausführen des Programms mangelte es manchmal an Speicherplatz. Um dieses Problem zu umgehen hätte man statt der <a href="https://www.arduino.cc/reference/de/language/variables/data-types/stringobject/">Arduino String Klasse</a> auch C-Strings also char [] benutzen können. Das hätte den Code leider aber auch an ein Paar stellen komplizierter gemacht. Ein anderer Fehler der sehr häufig auftrat war, dass mit Speicheradressen falsch umgegangen wurde und dadurch das Programm ohne jegliche Fehlermeldung abstürzte, oft sogar an völlig anderen Stellen. Eine mögliche Lösung wäre es hier eine Programmiersprache zu benutzen, die Speicherplatzfehler beim kompilieren, das heißt beim umwandeln des Programmcodes in Maschinencode aufdeckt. Eine Möglichkeit dafür wäre diese <a href="https://github.com/Rahix/avr-hal">Arduino Bibliothek</a> für Rust (<a href="https://creativcoder.dev/rust-on-arduino-uno">Beispiel</a>). Solche Bibliotheken sind aber auch weniger Dokumentiert und haben weniger Features als die Standard C++ Arduino Bibliothek und deshalb alles in allem für ein kleines Schulprojekt keine gute Option. </p>
 </div></div><!-- PageDoc -->
