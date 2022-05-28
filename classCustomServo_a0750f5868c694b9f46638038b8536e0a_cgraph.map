@@ -1,4 +1,4 @@
 <map id="CustomServo::setSpeed" name="CustomServo::setSpeed">
 <area shape="rect" id="node1" title="Setzt eine neue Geschwindigkeit des Servos." alt="" coords="5,5,183,32"/>
-<area shape="rect" id="node2" href="$classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2" title="Setzt Variabeln, die benötigt werden um den Servo zu bewegen." alt="" coords="231,5,413,32"/>
+<area shape="rect" id="node2" href="$classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2" title="Setzt Variablen, die benötigt werden um den Servo zu bewegen." alt="" coords="231,5,413,32"/>
 </map>
