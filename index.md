@@ -1,5 +1,6 @@
 Hallo, dies ist die \htmlonly Online -\endhtmlonly Dokumentation für den Code der Sortiermaschine von Johannes und Arne   
 \latexonly Online Dokumentation: https://arnecode.github.io/Sortiermaschine \endlatexonly
+\htmlonly [Dokumentation als PDF](https://arnecode.github.io/Sortiermaschine/refman.pdf) \endhtmlonly
 
 # Zur Dokumentation
 \htmlonly Diese Seite hat eine Suchfunktion. Dort kann nach Klassen/Variabeln/Funktionen etc. gesucht werden  \endhtmlonly
