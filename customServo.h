@@ -7,11 +7,7 @@
 #include <Servo.h>
 #include "header.h"
 /**
- * @file Servo.h
- * @brief Die <a href="https://www.arduino.cc/reference/en/libraries/servo/" target="_blank">standart Servo Klasse
- */
-/**
- * @brief Eine Eigene Servo-Klasse, die es ermöglicht den Servo mit verschiedenen Geschwindigkeiten zu bewegen
+ * @brief Eine erweiterte Version der <a href="https://www.arduino.cc/reference/en/libraries/servo/" target="_blank">Servo-Klasse</a>, die es ermöglicht den Servo mit verschiedenen Geschwindigkeiten zu bewegen
  * 
  */
 class CustomServo: public Servo {
