@@ -2,7 +2,7 @@
   % to overcome problems with too many open files
   \let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}
   % Set document class depending on configuration
-  \documentclass[twoside]{article}
+  \documentclass[twoside]{book}
   %% moved from doxygen.sty due to workaround for LaTex 2019 version and unmaintained tabu package
   \usepackage{ifthen}
   \ifx\requestedLaTeXdate\undefined
@@ -98,6 +98,9 @@
     \renewcommand{\headrulewidth}{0pt}
   }
   \pagestyle{fancyplain}
+  \renewcommand{\chaptermark}[1]{%
+    \markboth{#1}{}%
+  }
   \renewcommand{\sectionmark}[1]{%
     \markright{\thesection\ #1}%
   }
@@ -165,21 +168,23 @@
   {\large Erzeugt von Doxygen 1.9.5}\\
   \end{center}
   \end{titlepage}
+  \clearemptydoublepage
   \pagenumbering{roman}
   \tableofcontents
+  \clearemptydoublepage
   \pagenumbering{arabic}
   % re-enable anchors again
   \hypersetup{pageanchor=true}
 %--- Begin generated contents ---
-\doxysection{Sortiermaschine}
+\chapter{Sortiermaschine}
 \label{index}\hypertarget{index}{}\input{index}
-\doxysection{Hierarchie-\/\+Verzeichnis}
+\chapter{Hierarchie-\/\+Verzeichnis}
 \input{hierarchy}
-\doxysection{Klassen-\/\+Verzeichnis}
+\chapter{Klassen-\/\+Verzeichnis}
 \input{annotated}
-\doxysection{Datei-\/\+Verzeichnis}
+\chapter{Datei-\/\+Verzeichnis}
 \input{files}
-\doxysection{Klassen-\/\+Dokumentation}
+\chapter{Klassen-\/\+Dokumentation}
 \input{classAnimatableLcd}
 \input{classAnimString}
 \input{classButtonHandler}
@@ -190,7 +195,7 @@
 \input{classLcdDotAnim}
 \input{classLcdLoadingAnim}
 \input{structLcdString}
-\doxysection{Datei-\/\+Dokumentation}
+\chapter{Datei-\/\+Dokumentation}
 \input{animLcd_8h}
 \input{animLcd_8h_source}
 \input{animLcd_8ino}
@@ -214,10 +219,11 @@
 \input{sketch_8ino_source}
 %--- End generated contents ---
 % Index
+  \backmatter
   \newpage
   \phantomsection
   \clearemptydoublepage
-  \addcontentsline{toc}{section}{\indexname}
+  \addcontentsline{toc}{chapter}{\indexname}
   \printindex
 % Required for some languages (in combination with latexdocumentpre from the header)
 \end{document}
