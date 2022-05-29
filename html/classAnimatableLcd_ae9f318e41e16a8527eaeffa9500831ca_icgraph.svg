@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classAnimatableLcd.html#aca170e34fe99df76f7a1e4f4241878c1" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classAnimatableLcd.html#aca170e34fe99df76f7a1e4f4241878c1" target="_top" xlink:title="Überschreibt die standard print Funktion für String&amp;&amp; (text wird direkt als Argument gegeben,...">
 <polygon fill="none" stroke="black" points="357,-76.5 357,-95.5 475,-95.5 475,-76.5 357,-76.5"/>
 <text text-anchor="middle" x="416" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">AnimatableLcd::print</text>
 </a>
