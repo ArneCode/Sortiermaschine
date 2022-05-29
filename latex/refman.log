@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.28)  29 MAY 2022 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.28)  29 MAY 2022 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -988,7 +988,7 @@ File: classAnimatableLcd_aca170e34fe99df76f7a1e4f4241878c1_cgraph.pdf Graphic f
 ile (type pdf)
 <use classAnimatableLcd_aca170e34fe99df76f7a1e4f4241878c1_cgraph.pdf>
 Package pdftex.def Info: classAnimatableLcd_aca170e34fe99df76f7a1e4f4241878c1_c
-graph.pdf  used on input line 128.
+graph.pdf  used on input line 127.
 (pdftex.def)             Requested size: 350.0pt x 99.4328pt.
  <./classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph.pdf
 
@@ -1002,7 +1002,7 @@ File: classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph.pdf Graphic
 file (type pdf)
 <use classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_icgraph.pdf>
 Package pdftex.def Info: classAnimatableLcd_ae9f318e41e16a8527eaeffa9500831ca_i
-cgraph.pdf  used on input line 180.
+cgraph.pdf  used on input line 178.
 (pdftex.def)             Requested size: 350.0pt x 93.84633pt.
  [9] <./classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_cgraph.pdf>
 <classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_cgraph.pdf, id=822, 397.4
@@ -1011,7 +1011,7 @@ File: classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_cgraph.pdf Graphic f
 ile (type pdf)
 <use classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_cgraph.pdf>
 Package pdftex.def Info: classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_c
-graph.pdf  used on input line 222.
+graph.pdf  used on input line 220.
 (pdftex.def)             Requested size: 350.0pt x 88.38692pt.
  <./classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_icgraph.pdf
 
@@ -1025,7 +1025,7 @@ File: classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_icgraph.pdf Graphic
 file (type pdf)
 <use classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_icgraph.pdf>
 Package pdftex.def Info: classAnimatableLcd_aaff767fb418dbc3e902dd4a1be3207a8_i
-cgraph.pdf  used on input line 229.
+cgraph.pdf  used on input line 227.
 (pdftex.def)             Requested size: 350.0pt x 106.75966pt.
  [10] <./classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_cgraph.pdf>
 <classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_cgraph.pdf, id=854, 581.1
@@ -1034,7 +1034,7 @@ File: classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_cgraph.pdf Graphic f
 ile (type pdf)
 <use classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_cgraph.pdf>
 Package pdftex.def Info: classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_c
-graph.pdf  used on input line 284.
+graph.pdf  used on input line 282.
 (pdftex.def)             Requested size: 350.0pt x 60.44907pt.
  <./classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_icgraph.pdf
 
@@ -1048,11 +1048,11 @@ File: classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_icgraph.pdf Graphic
 file (type pdf)
 <use classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_icgraph.pdf>
 Package pdftex.def Info: classAnimatableLcd_ad5509573d45cc84cda93b125fdca749e_i
-cgraph.pdf  used on input line 291.
+cgraph.pdf  used on input line 289.
 (pdftex.def)             Requested size: 350.0pt x 162.53725pt.
  [11]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 298.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 296.
  <./classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108_icgraph.pdf>
 <classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108_icgraph.pdf, id=885, 370.
 38374pt x 100.375pt>
@@ -1060,7 +1060,7 @@ File: classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108_icgraph.pdf Graphic
 file (type pdf)
 <use classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108_icgraph.pdf>
 Package pdftex.def Info: classAnimatableLcd_abd8ee2191732afcaccc26c8caf5dc108_i
-cgraph.pdf  used on input line 325.
+cgraph.pdf  used on input line 323.
 (pdftex.def)             Requested size: 350.0pt x 94.85179pt.
  <./classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_cgraph.pdf
 
@@ -1074,7 +1074,7 @@ File: classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_cgraph.pdf Graphic f
 ile (type pdf)
 <use classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_cgraph.pdf>
 Package pdftex.def Info: classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_c
-graph.pdf  used on input line 356.
+graph.pdf  used on input line 354.
 (pdftex.def)             Requested size: 346.0pt x 100.00409pt.
  [12] <./classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph.pdf>
 <classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph.pdf, id=921, 284.
@@ -1083,7 +1083,7 @@ File: classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph.pdf Graphic
 file (type pdf)
 <use classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph.pdf>
 Package pdftex.def Info: classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_i
-cgraph.pdf  used on input line 363.
+cgraph.pdf  used on input line 361.
 (pdftex.def)             Requested size: 283.0pt x 100.01021pt.
 )
 (./classAnimString.tex <./classAnimString__inherit__graph.pdf
@@ -1816,7 +1816,7 @@ e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (84 pages, 833877 bytes).
+Output written on refman.pdf (84 pages, 833870 bytes).
 PDF statistics:
  4668 PDF objects out of 5155 (max. 8388607)
  4295 compressed objects within 43 object streams
