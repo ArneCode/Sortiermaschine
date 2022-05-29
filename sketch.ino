@@ -136,7 +136,7 @@ class ButtonHandler { //handels button clicks
        @brief Prüft, ob der Knopf gedrückt/losgelassen wurde
        @details Wird von loop() aufgerufen und ruft die ButtonHandler::onclick Funktion auf, wenn ein Klick festgestellt wurde
     */
-    void update() 
+    void update()
     {
       bool isPressedNew = digitalRead(pin) == HIGH;
       if (isPressedNew != isPressed) { //is not being pressed now, but was being pressed
@@ -241,13 +241,13 @@ bool servoIsDone()
     servo.write(ANGLE_CENTER);\
   },&servoIsDone)
 /**
- * @brief Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück
- * 
- * @tparam angle Der Winkel als Template, da Lambdas (Funktionen die als Parameter weitegegeben werden) keine Variablen von Außen beinhalten dürfen
- * @param name Die Farbe des Balls
- */
+   @brief Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück
+
+   @tparam angle Der Winkel als Template, da Lambdas (Funktionen die als Parameter weitegegeben werden) keine Variablen von Außen beinhalten dürfen
+   @param name Die Farbe des Balls
+*/
 template <short angle>
-void legBallAb(String name,String richtung) 
+void legBallAb(String name, String richtung)
 {
   callHandler.deleteCalls();
   /*static*/ auto calls = new Callable*[6] {
@@ -256,7 +256,7 @@ void legBallAb(String name,String richtung)
     // new so that it is allocated on the heap
     //auto automatically sets the type, in this case Callable*[] (Callable**)
     new LcdString("Ball erkannt, vorsicht", &lcd, 1000), //objects get upcasted to Callable*
-    new LcdDotAnim(name + "er Ball, drehe "+richtung, &lcd, 0),
+    new LcdDotAnim(name + "er Ball, drehe " + richtung, &lcd, 0),
     new FuncCall([]() {
       servo.write(angle);
     }, &servoIsDone),
@@ -285,11 +285,11 @@ void setup()
 
 
 /**
- * @brief Wird immer wieder ausgeführt
- * @details Hier werden alle möglichen Objekte wie der Servo, der Lcd usw. aktualisiert und die Aktionen (Farbe des Balls messen, Bewegung des Servos Starten etc. ) koordiniert
- * @image html "loop Programmablaufplan.svg" "vereinfachter Programablaufplan für die loop() Funktion" size_inidication=size
- * @image latex "loop Programmablaufplan.png" "vereinfachter Programablaufplan für die loop() Funktion" size_inidication=size
- */
+   @brief Wird immer wieder ausgeführt
+   @details Hier werden alle möglichen Objekte wie der Servo, der Lcd usw. aktualisiert und die Aktionen (Farbe des Balls messen, Bewegung des Servos Starten etc. ) koordiniert
+   @image html "loop Programmablaufplan.svg" "vereinfachter Programablaufplan für die loop() Funktion" size_inidication=size
+   @image latex "loop Programmablaufplan.png" "vereinfachter Programablaufplan für die loop() Funktion" size_inidication=size
+*/
 void loop()
 {
   callHandler.update();
@@ -318,7 +318,7 @@ void loop()
       {
         nWhite++;
         Serial.println("white");
-        legBallAb<ANGLE_LEFT_HOLE>("Wei\342","Links");
+        legBallAb<ANGLE_LEFT_HOLE>("Wei\342", "Links");
         setLedColor(255, 255, 255);
         break;
       }
@@ -326,7 +326,7 @@ void loop()
       {
         nBlack++;
         Serial.println("black");
-        legBallAb<ANGLE_RIGHT_HOLE>("Schwarz","Rechts");
+        legBallAb<ANGLE_RIGHT_HOLE>("Schwarz", "Rechts");
         setLedColor(0, 0, 255);
         break;
       }
@@ -348,12 +348,12 @@ void loop()
         Serial.println("orange");
         callHandler.deleteCalls();
         /*static*/ auto callsOrange = new Callable*[10] {
-          new LcdString("Oran\2er B\2ll",&lcd,1000),
-          new LcdString("\2\2\2\2O\2\2OR\2\2R\2\2A\2\2N\2\2G\2\2\2E\2\2\2\2!\2\2",&lcd,0),
+          new LcdString("Oran\2er B\2ll", &lcd, 1000),
+          new LcdString("\2\2\2\2O\2\2OR\2\2R\2\2A\2\2N\2\2G\2\2\2E\2\2\2\2!\2\2", &lcd, 0),
           new FuncCall([]() {
             servo.write(ANGLE_RIGHT_HOLE);
           }, &servoIsDone),
-          new LcdString("Fehler \11rkannt", &lcd, 1000),
+          new LcdString("Fehler \2rk\2nnt", &lcd, 1000),
           new FuncCall([]() {
             servo.setSpeed(SERVO_SPEED_FAST);
             servo.write(ANGLE_MIN);
