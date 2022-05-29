@@ -161,7 +161,7 @@ enum Farbe
 };
 Farbe mesureColor(); //sonst erkennt Arduino Farbe nicht als typ an (https://forum.arduino.cc/t/syntax-for-a-function-returning-an-enumerated-type/107241)
 /**
-   @brief Misst mithilfe des Reflexoptokopplers die Farbe des Balls.
+   @brief Misst mithilfe des Reflexoptokopplers die Farbe des Balls
 
    @return Farbe Die Farbe des Balls
 */
