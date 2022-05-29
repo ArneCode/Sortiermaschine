@@ -15,7 +15,7 @@ Ein paar wichtige Klassen in diesem Projekt sind:
 Der Code ist interaktiv, man kann Variablen, Funktionen Methoden und Klassen anklicken um zu Ihrer Beschreibung zu gelangen. \htmlonly Oder man kann mit der Maus über dem Begriff "schweben" und ein Tooltip wird angezeigt \endhtmlonly
 
 # Begründungen
-@note Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu "erforschen"
+@note Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu erforschen
 
 ## Warum werden Calls im Heap gespeichert?
 Calls (CallHandler::callPtrs) werden mithilfe des ```new``` Keywords im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert um sie weiter benutzen zu können nachdem die Funktion in der sie instanziert wurden abgeschlossen ist. Sie müssen deshalb aber auch manuell mit CallHandler::deleteCalls gelöscht werden.
