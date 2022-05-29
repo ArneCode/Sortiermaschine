@@ -521,8 +521,8 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00168">168</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  169</span>{</div>
 <div class="line"><span class="lineno">  170</span>  <span class="comment">//return ORANGE;//inputs hardcoden, für Testzwecke</span></div>
-<div class="line"><span class="lineno">  171</span>  <span class="keywordtype">int</span> hue = random(0, 1000); <span class="comment">//inputs simulieren</span></div>
-<div class="line"><span class="lineno">  172</span>  <span class="comment">//int hue=analogRead(A0);//tatsächlich Farbe messen</span></div>
+<div class="line"><span class="lineno">  171</span>  <span class="comment">//int hue = random(0, 1000); //inputs simulieren</span></div>
+<div class="line"><span class="lineno">  172</span>  <span class="keywordtype">int</span> hue=analogRead(A0);<span class="comment">//tatsächlich Farbe messen</span></div>
 <div class="line"><span class="lineno">  173</span>  <span class="keywordflow">if</span> (hue &lt;= 100) {</div>
 <div class="line"><span class="lineno">  174</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a>;</div>
 <div class="line"><span class="lineno">  175</span>  }</div>

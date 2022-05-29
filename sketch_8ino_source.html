@@ -154,8 +154,8 @@ $(document).ready(function(){initNavTree('sketch_8ino_source.html',''); initResi
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd">  168</a></span><span class="comment"></span><a class="code hl_enumeration" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2">Farbe</a> <a class="code hl_function" href="sketch_8ino.html#ac80eb6baeaace0198948fd8ff196e4fd">mesureColor</a>()</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>{</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="comment">//return ORANGE;//inputs hardcoden, für Testzwecke</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="keywordtype">int</span> hue = random(0, 1000); <span class="comment">//inputs simulieren</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="comment">//int hue=analogRead(A0);//tatsächlich Farbe messen</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="comment">//int hue = random(0, 1000); //inputs simulieren</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="keywordtype">int</span> hue=analogRead(A0);<span class="comment">//tatsächlich Farbe messen</span></div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="keywordflow">if</span> (hue &lt;= 100) {</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a>;</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  }</div>
