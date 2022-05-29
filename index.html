@@ -114,7 +114,7 @@ Code</h2>
 <p >Der Code ist interaktiv, man kann Variablen, Funktionen Methoden und Klassen anklicken um zu Ihrer Beschreibung zu gelangen.  Oder man kann mit der Maus über dem Begriff "schweben" und ein Tooltip wird angezeigt </p>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Begründungen</h1>
-<dl class="section note"><dt>Zu beachten</dt><dd>Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu "erforschen"</dd></dl>
+<dl class="section note"><dt>Zu beachten</dt><dd>Ich empfehle sich vor diesem Abschnitt ein wenig die Dokumentation zu erforschen</dd></dl>
 <h2><a class="anchor" id="autotoc_md4"></a>
 Warum werden Calls im Heap gespeichert?</h2>
 <p >Calls (<a class="el" href="classCallHandler.html#a70bf3c03de1953c55fc468b73c77e0f2" title="Die liste der aktuellen Calls.">CallHandler::callPtrs</a>) werden mithilfe des <code>new</code> Keywords im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert um sie weiter benutzen zu können nachdem die Funktion in der sie instanziert wurden abgeschlossen ist. Sie müssen deshalb aber auch manuell mit <a class="el" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e" title="setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei">CallHandler::deleteCalls</a> gelöscht werden. </p>
