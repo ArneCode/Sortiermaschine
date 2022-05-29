@@ -32,7 +32,8 @@ class AnimatableLcd: public LiquidCrystal_I2C {
     void printPretty(String text);
     void update();
     void init();
-    using LiquidCrystal_I2C::print;
-    void print(const String& text);
+    using LiquidCrystal_I2C::print;//übernehme den Standart print befehl
+    void print(const String& text); //überschreibt den standart print Befehl für String& (text wird als Variable übergeben, z.B. lcd.print(text);)
+    void print(const String&& text);//und String&& (text wird direkt als Argument gegeben, z.B. lcd.print("...");)
 };
 #endif

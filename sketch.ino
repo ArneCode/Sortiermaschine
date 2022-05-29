@@ -167,7 +167,7 @@ Farbe mesureColor(); //sonst erkennt Arduino Farbe nicht als typ an (https://for
 */
 Farbe mesureColor()
 {
-  //return WHITE;//inputs hardcoden, für Testzwecke
+  return ORANGE;//inputs hardcoden, für Testzwecke
   int hue = random(0, 1000); //inputs simulieren
   //int hue=analogRead(A0);//tatsächlich Farbe messen
   if (hue <= 100) {
@@ -347,8 +347,9 @@ void loop()
         nOrange++;
         Serial.println("orange");
         callHandler.deleteCalls();
-        /*static*/ auto callsOrange = new Callable*[9] {
-          new LcdDotAnim("\xC0ra\10g\xD9ner Ba\xEDl", &lcd, 0), //https://arduino.stackexchange.com/a/46833
+        /*static*/ auto callsOrange = new Callable*[10] {
+          new LcdString("Oran\2er B\2ll",&lcd,1000),
+          new LcdString("\2\2\2\2O\2\2OR\2\2R\2\2A\2\2N\2\2G\2\2\2E\2\2\2\2!\2\2",&lcd,0),
           new FuncCall([]() {
             servo.write(ANGLE_RIGHT_HOLE);
           }, &servoIsDone),
@@ -368,7 +369,7 @@ void loop()
           new LcdString("Fehler beseitigt", &lcd, 2000),
           GEH_ZURUECK
         };
-        callHandler.setCalls(callsOrange, 9);
+        callHandler.setCalls(callsOrange, 10);
         break;
       }
   }
