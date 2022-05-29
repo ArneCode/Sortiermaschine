@@ -1,4 +1,4 @@
 <map id="AnimatableLcd::print" name="AnimatableLcd::print">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,163,32"/>
+<area shape="rect" id="node1" title="Überschreibt die standard print Funktion für String&amp;&amp; (text wird direkt als Argument gegeben,..." alt="" coords="5,5,163,32"/>
 <area shape="rect" id="node2" href="$classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca" title="Eigene Lcd&#45;print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen." alt="" coords="211,5,368,32"/>
 </map>
