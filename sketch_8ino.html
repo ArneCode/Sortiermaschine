@@ -345,7 +345,7 @@ template&lt;short angle&gt; </div>
 <div class="line"><span class="lineno">  256</span>    <span class="comment">// new so that it is allocated on the heap</span></div>
 <div class="line"><span class="lineno">  257</span>    <span class="comment">//auto automatically sets the type, in this case Callable*[] (Callable**)</span></div>
 <div class="line"><span class="lineno">  258</span>    <span class="keyword">new</span> <a class="code hl_struct" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Ball erkannt, vorsicht&quot;</span>, &amp;<a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000), <span class="comment">//objects get upcasted to Callable*</span></div>
-<div class="line"><span class="lineno">  259</span>    <span class="keyword">new</span> <a class="code hl_class" href="classLcdDotAnim.html">LcdDotAnim</a>(name + <span class="stringliteral">&quot;er Ball, drehe &quot;</span>+richtung, &amp;<a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 0),</div>
+<div class="line"><span class="lineno">  259</span>    <span class="keyword">new</span> <a class="code hl_class" href="classLcdDotAnim.html">LcdDotAnim</a>(name + <span class="stringliteral">&quot;er Ball, drehe &quot;</span> + richtung, &amp;<a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 0),</div>
 <div class="line"><span class="lineno">  260</span>    <span class="keyword">new</span> <a class="code hl_struct" href="structFuncCall.html">FuncCall</a>([]() {</div>
 <div class="line"><span class="lineno">  261</span>      <a class="code hl_variable" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code hl_function" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a>(angle);</div>
 <div class="line"><span class="lineno">  262</span>    }, &amp;<a class="code hl_function" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a>),</div>
@@ -365,8 +365,7 @@ template&lt;short angle&gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph.svg" width="552" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph.svg" width="552" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -420,7 +419,7 @@ vereinfachter Programablaufplan für die loop() Funktion</div></div>
 <div class="line"><span class="lineno">  318</span>      {</div>
 <div class="line"><span class="lineno">  319</span>        <a class="code hl_variable" href="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd">nWhite</a>++;</div>
 <div class="line"><span class="lineno">  320</span>        Serial.println(<span class="stringliteral">&quot;white&quot;</span>);</div>
-<div class="line"><span class="lineno">  321</span>        legBallAb&lt;ANGLE_LEFT_HOLE&gt;(<span class="stringliteral">&quot;Wei\342&quot;</span>,<span class="stringliteral">&quot;Links&quot;</span>);</div>
+<div class="line"><span class="lineno">  321</span>        legBallAb&lt;ANGLE_LEFT_HOLE&gt;(<span class="stringliteral">&quot;Wei\342&quot;</span>, <span class="stringliteral">&quot;Links&quot;</span>);</div>
 <div class="line"><span class="lineno">  322</span>        <a class="code hl_function" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(255, 255, 255);</div>
 <div class="line"><span class="lineno">  323</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  324</span>      }</div>
@@ -428,7 +427,7 @@ vereinfachter Programablaufplan für die loop() Funktion</div></div>
 <div class="line"><span class="lineno">  326</span>      {</div>
 <div class="line"><span class="lineno">  327</span>        <a class="code hl_variable" href="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41">nBlack</a>++;</div>
 <div class="line"><span class="lineno">  328</span>        Serial.println(<span class="stringliteral">&quot;black&quot;</span>);</div>
-<div class="line"><span class="lineno">  329</span>        legBallAb&lt;ANGLE_RIGHT_HOLE&gt;(<span class="stringliteral">&quot;Schwarz&quot;</span>,<span class="stringliteral">&quot;Rechts&quot;</span>);</div>
+<div class="line"><span class="lineno">  329</span>        legBallAb&lt;ANGLE_RIGHT_HOLE&gt;(<span class="stringliteral">&quot;Schwarz&quot;</span>, <span class="stringliteral">&quot;Rechts&quot;</span>);</div>
 <div class="line"><span class="lineno">  330</span>        <a class="code hl_function" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(0, 0, 255);</div>
 <div class="line"><span class="lineno">  331</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  332</span>      }</div>
@@ -450,12 +449,12 @@ vereinfachter Programablaufplan für die loop() Funktion</div></div>
 <div class="line"><span class="lineno">  348</span>        Serial.println(<span class="stringliteral">&quot;orange&quot;</span>);</div>
 <div class="line"><span class="lineno">  349</span>        <a class="code hl_variable" href="sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc">callHandler</a>.<a class="code hl_function" href="classCallHandler.html#a49ab239f771b84300df21bd426788c3e">deleteCalls</a>();</div>
 <div class="line"><span class="lineno">  350</span>        <span class="comment">/*static*/</span> <span class="keyword">auto</span> callsOrange = <span class="keyword">new</span> <a class="code hl_class" href="classCallable.html">Callable</a>*[10] {</div>
-<div class="line"><span class="lineno">  351</span>          <span class="keyword">new</span> <a class="code hl_struct" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Oran\2er B\2ll&quot;</span>,&amp;<a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>,1000),</div>
-<div class="line"><span class="lineno">  352</span>          <span class="keyword">new</span> <a class="code hl_struct" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;\2\2\2\2O\2\2OR\2\2R\2\2A\2\2N\2\2G\2\2\2E\2\2\2\2!\2\2&quot;</span>,&amp;<a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>,0),</div>
+<div class="line"><span class="lineno">  351</span>          <span class="keyword">new</span> <a class="code hl_struct" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Oran\2er B\2ll&quot;</span>, &amp;<a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000),</div>
+<div class="line"><span class="lineno">  352</span>          <span class="keyword">new</span> <a class="code hl_struct" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;\2\2\2\2O\2\2OR\2\2R\2\2A\2\2N\2\2G\2\2\2E\2\2\2\2!\2\2&quot;</span>, &amp;<a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 0),</div>
 <div class="line"><span class="lineno">  353</span>          <span class="keyword">new</span> <a class="code hl_struct" href="structFuncCall.html">FuncCall</a>([]() {</div>
 <div class="line"><span class="lineno">  354</span>            <a class="code hl_variable" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code hl_function" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a>(<a class="code hl_variable" href="sketch_8ino.html#aea1dd563eecdccc3c412c2eb13f99850">ANGLE_RIGHT_HOLE</a>);</div>
 <div class="line"><span class="lineno">  355</span>          }, &amp;<a class="code hl_function" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a>),</div>
-<div class="line"><span class="lineno">  356</span>          <span class="keyword">new</span> <a class="code hl_struct" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Fehler \11rkannt&quot;</span>, &amp;<a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000),</div>
+<div class="line"><span class="lineno">  356</span>          <span class="keyword">new</span> <a class="code hl_struct" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Fehler \2rk\2nnt&quot;</span>, &amp;<a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000),</div>
 <div class="line"><span class="lineno">  357</span>          <span class="keyword">new</span> <a class="code hl_struct" href="structFuncCall.html">FuncCall</a>([]() {</div>
 <div class="line"><span class="lineno">  358</span>            <a class="code hl_variable" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code hl_function" href="classCustomServo.html#a0750f5868c694b9f46638038b8536e0a">setSpeed</a>(<a class="code hl_variable" href="sketch_8ino.html#a8b8f576df7f10b8c79c4ee6ee1f94166">SERVO_SPEED_FAST</a>);</div>
 <div class="line"><span class="lineno">  359</span>            <a class="code hl_variable" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code hl_function" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a>(<a class="code hl_variable" href="sketch_8ino.html#ac82ee88c087fbd603a9a9ff334218360">ANGLE_MIN</a>);</div>
@@ -576,8 +575,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph.svg" width="246" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph.svg" width="246" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
