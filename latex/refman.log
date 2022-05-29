@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.28)  29 MAY 2022 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.28)  29 MAY 2022 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1604,7 +1604,7 @@ tiple pdfs with page group included in a single page
 <animLcd_8h__dep__incl.pdf, id=2669, 454.69875pt x 269.005pt>
 File: animLcd_8h__dep__incl.pdf Graphic file (type pdf)
 <use animLcd_8h__dep__incl.pdf>
-Package pdftex.def Info: animLcd_8h__dep__incl.pdf  used on input line 26.
+Package pdftex.def Info: animLcd_8h__dep__incl.pdf  used on input line 25.
 (pdftex.def)             Requested size: 350.0pt x 207.0647pt.
  [55]) (./animLcd_8h_source.tex [56]) (./animLcd_8ino.tex <./animLcd_8ino__incl
 .pdf>
@@ -1632,7 +1632,7 @@ multiple pdfs with page group included in a single page
 <animString_8h__dep__incl.pdf, id=2894, 455.7025pt x 212.795pt>
 File: animString_8h__dep__incl.pdf Graphic file (type pdf)
 <use animString_8h__dep__incl.pdf>
-Package pdftex.def Info: animString_8h__dep__incl.pdf  used on input line 26.
+Package pdftex.def Info: animString_8h__dep__incl.pdf  used on input line 25.
 (pdftex.def)             Requested size: 350.0pt x 163.44028pt.
  [60]) (./animString_8h_source.tex [61]) (./animString_8ino.tex <./animString_8
 ino__incl.pdf>
@@ -1656,7 +1656,7 @@ pdfTeX warning: pdflatex (file ./callHandler_8h__dep__incl.pdf): PDF inclusion:
 <callHandler_8h__dep__incl.pdf, id=3300, 454.69875pt x 156.585pt>
 File: callHandler_8h__dep__incl.pdf Graphic file (type pdf)
 <use callHandler_8h__dep__incl.pdf>
-Package pdftex.def Info: callHandler_8h__dep__incl.pdf  used on input line 26.
+Package pdftex.def Info: callHandler_8h__dep__incl.pdf  used on input line 25.
 (pdftex.def)             Requested size: 350.0pt x 120.5302pt.
 ) (./callHandler_8h_source.tex [65]) (./callHandler_8ino.tex <./callHandler_8in
 o__incl.pdf>
@@ -1694,7 +1694,7 @@ Package pdftex.def Info: customServo_8ino__incl.pdf  used on input line 17.
 <header_8h__dep__incl.pdf, id=3605, 576.1525pt x 269.005pt>
 File: header_8h__dep__incl.pdf Graphic file (type pdf)
 <use header_8h__dep__incl.pdf>
-Package pdftex.def Info: header_8h__dep__incl.pdf  used on input line 17.
+Package pdftex.def Info: header_8h__dep__incl.pdf  used on input line 16.
 (pdftex.def)             Requested size: 350.0pt x 163.41963pt.
  [70]) (./header_8h_source.tex) (./index_8md.tex)
 (./sketch_8ino.tex [71] <./sketch_8ino__incl.pdf
@@ -1874,7 +1874,7 @@ e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (101 pages, 853576 bytes).
+Output written on refman.pdf (101 pages, 853573 bytes).
 PDF statistics:
  5157 PDF objects out of 6186 (max. 8388607)
  4756 compressed objects within 48 object streams
