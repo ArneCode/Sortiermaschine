@@ -71,7 +71,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="sketch_8ino.html#a39b44b8ad8390b202d1c91f96e22d7a2" target="_top" xlink:title="Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück.">
+<g id="a_node5"><a xlink:href="sketch_8ino.html#a6afc180dd30470854b71b1a9877a0d39" target="_top" xlink:title="Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück.">
 <polygon fill="none" stroke="black" points="25,-38.5 25,-57.5 88,-57.5 88,-38.5 25,-38.5"/>
 <text text-anchor="middle" x="56.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">legBallAb</text>
 </a>
