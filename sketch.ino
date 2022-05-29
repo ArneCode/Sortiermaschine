@@ -168,8 +168,8 @@ Farbe mesureColor(); //sonst erkennt Arduino Farbe nicht als typ an (https://for
 Farbe mesureColor()
 {
   //return ORANGE;//inputs hardcoden, für Testzwecke
-  int hue = random(0, 1000); //inputs simulieren
-  //int hue=analogRead(A0);//tatsächlich Farbe messen
+  //int hue = random(0, 1000); //inputs simulieren
+  int hue=analogRead(A0);//tatsächlich Farbe messen
   if (hue <= 100) {
     return ORANGE;
   }
