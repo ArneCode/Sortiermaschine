@@ -60,7 +60,7 @@ void AnimatableLcd::setAnimation(AnimString* _animString)
 }
 /**
  * @brief Eigene Lcd-print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen
- * @details Überschreibt den standart print Befehl für String&, das heißt der Text wird als Variable übergeben, z.B.: \code lcd.print(text); \endcode Für eigene Character einfach die Nummer des Characters in den Text einfügen (\1```n``` für den ```n```ten Character), \1 für Leerzeichen, das nicht in Zeilenumbruch resultiert.
+ * @details Überschreibt den standart print Befehl für String&, das heißt der Text wird als Variable übergeben, z.B.: \code lcd.print(text); \endcode Für eigene Character einfach die Nummer des Characters in den Text einfügen ("\1```n```" für den ```n```-ten Character), \1 für Leerzeichen, das nicht in Zeilenumbruch resultiert.
  * @param text 
  */
 void AnimatableLcd::print(const String& text)
