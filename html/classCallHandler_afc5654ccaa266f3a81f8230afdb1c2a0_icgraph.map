@@ -1,6 +1,6 @@
 <map id="CallHandler::setCalls" name="CallHandler::setCalls">
 <area shape="rect" id="node1" title="Setzt die neuen Calls, die ausgeführt werden sollen." alt="" coords="300,81,459,108"/>
-<area shape="rect" id="node2" href="$sketch_8ino.html#a39b44b8ad8390b202d1c91f96e22d7a2" title="Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück." alt="" coords="140,5,224,32"/>
+<area shape="rect" id="node2" href="$sketch_8ino.html#a6afc180dd30470854b71b1a9877a0d39" title="Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück." alt="" coords="140,5,224,32"/>
 <area shape="rect" id="node3" href="$sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Wird immer wieder ausgeführt." alt="" coords="157,56,207,83"/>
 <area shape="rect" id="node4" href="$sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="Wird am Anfang des Programms aufgerufen." alt="" coords="5,132,64,159"/>
 <area shape="rect" id="node5" href="$sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="112,157,252,184"/>

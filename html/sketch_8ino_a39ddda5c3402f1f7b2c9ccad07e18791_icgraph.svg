@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="sketch_8ino.html#a39b44b8ad8390b202d1c91f96e22d7a2" target="_top" xlink:title="Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück.">
+<g id="a_node2"><a xlink:href="sketch_8ino.html#a6afc180dd30470854b71b1a9877a0d39" target="_top" xlink:title="Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück.">
 <polygon fill="none" stroke="black" points="0,-38.5 0,-57.5 63,-57.5 63,-38.5 0,-38.5"/>
 <text text-anchor="middle" x="31.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">legBallAb</text>
 </a>

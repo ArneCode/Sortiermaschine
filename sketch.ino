@@ -167,7 +167,7 @@ Farbe mesureColor(); //sonst erkennt Arduino Farbe nicht als typ an (https://for
 */
 Farbe mesureColor()
 {
-  return ORANGE;//inputs hardcoden, für Testzwecke
+  //return ORANGE;//inputs hardcoden, für Testzwecke
   int hue = random(0, 1000); //inputs simulieren
   //int hue=analogRead(A0);//tatsächlich Farbe messen
   if (hue <= 100) {
@@ -247,7 +247,7 @@ bool servoIsDone()
  * @param name Die Farbe des Balls
  */
 template <short angle>
-void legBallAb(String name) 
+void legBallAb(String name,String richtung) 
 {
   callHandler.deleteCalls();
   /*static*/ auto calls = new Callable*[6] {
@@ -256,7 +256,7 @@ void legBallAb(String name)
     // new so that it is allocated on the heap
     //auto automatically sets the type, in this case Callable*[] (Callable**)
     new LcdString("Ball erkannt, vorsicht", &lcd, 1000), //objects get upcasted to Callable*
-    new LcdDotAnim(name + "er Ball, drehe Links", &lcd, 0),
+    new LcdDotAnim(name + "er Ball, drehe "+richtung, &lcd, 0),
     new FuncCall([]() {
       servo.write(angle);
     }, &servoIsDone),
@@ -318,7 +318,7 @@ void loop()
       {
         nWhite++;
         Serial.println("white");
-        legBallAb<ANGLE_LEFT_HOLE>("Wei\342");
+        legBallAb<ANGLE_LEFT_HOLE>("Wei\342","Links");
         setLedColor(255, 255, 255);
         break;
       }
@@ -326,7 +326,7 @@ void loop()
       {
         nBlack++;
         Serial.println("black");
-        legBallAb<ANGLE_RIGHT_HOLE>("Schwarz");
+        legBallAb<ANGLE_RIGHT_HOLE>("Schwarz","Rechts");
         setLedColor(0, 0, 255);
         break;
       }

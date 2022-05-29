@@ -31,7 +31,7 @@ void \mbox{\hyperlink{sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc}{stop\+Butto
 \begin{DoxyCompactList}\small\item\em wird ausgeführt wenn der Stop-\/\+Knopf gedrückt wird \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}{servo\+Is\+Done}} ()
 \begin{DoxyCompactList}\small\item\em Hilfs Funktion, Methoden können nicht als Funktionsparameter benutzt werden. \end{DoxyCompactList}\item 
-{\footnotesize template$<$short angle$>$ }\\void \mbox{\hyperlink{sketch_8ino_a39b44b8ad8390b202d1c91f96e22d7a2}{leg\+Ball\+Ab}} (String name)
+{\footnotesize template$<$short angle$>$ }\\void \mbox{\hyperlink{sketch_8ino_a6afc180dd30470854b71b1a9877a0d39}{leg\+Ball\+Ab}} (String name, String richtung)
 \begin{DoxyCompactList}\small\item\em Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d}{setup}} ()
 \begin{DoxyCompactList}\small\item\em Wird am Anfang des Programms aufgerufen. \end{DoxyCompactList}\item 
@@ -173,12 +173,12 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00155}{155}} der Datei \
 
 
 \doxysubsubsection{Dokumentation der Funktionen}
-\mbox{\Hypertarget{sketch_8ino_a39b44b8ad8390b202d1c91f96e22d7a2}\label{sketch_8ino_a39b44b8ad8390b202d1c91f96e22d7a2}} 
+\mbox{\Hypertarget{sketch_8ino_a6afc180dd30470854b71b1a9877a0d39}\label{sketch_8ino_a6afc180dd30470854b71b1a9877a0d39}} 
 \index{sketch.ino@{sketch.ino}!legBallAb@{legBallAb}}
 \index{legBallAb@{legBallAb}!sketch.ino@{sketch.ino}}
 \doxyparagraph{\texorpdfstring{legBallAb()}{legBallAb()}}
 {\footnotesize\ttfamily template$<$short angle$>$ \\
-void leg\+Ball\+Ab (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+void leg\+Ball\+Ab (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{String}]{richtung }\end{DoxyParamCaption})}
 
 
 
@@ -208,7 +208,7 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00250}{250}} der Datei \
 \DoxyCodeLine{00256     \textcolor{comment}{// new so that it is allocated on the heap}}
 \DoxyCodeLine{00257     \textcolor{comment}{//auto automatically sets the type, in this case Callable*[] (Callable**)}}
 \DoxyCodeLine{00258     \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"{}Ball erkannt, vorsicht"{}}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000), \textcolor{comment}{//objects get upcasted to Callable*}}
-\DoxyCodeLine{00259     \textcolor{keyword}{new} \mbox{\hyperlink{classLcdDotAnim}{LcdDotAnim}}(name + \textcolor{stringliteral}{"{}er Ball, drehe Links"{}}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 0),}
+\DoxyCodeLine{00259     \textcolor{keyword}{new} \mbox{\hyperlink{classLcdDotAnim}{LcdDotAnim}}(name + \textcolor{stringliteral}{"{}er Ball, drehe "{}}+richtung, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 0),}
 \DoxyCodeLine{00260     \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
 \DoxyCodeLine{00261       \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a9d67b7154c659f1bf60a8464115c1e94}{write}}(angle);}
 \DoxyCodeLine{00262     \}, \&\mbox{\hyperlink{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791}{servoIsDone}}),}
@@ -219,11 +219,12 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00250}{250}} der Datei \
 \DoxyCodeLine{00267 \}}
 
 \end{DoxyCode}
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{sketch_8ino_a39b44b8ad8390b202d1c91f96e22d7a2_cgraph}
+\includegraphics[width=350pt]{sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{sketch_8ino_afe461d27b9c48d5921c00d521181f12f}\label{sketch_8ino_afe461d27b9c48d5921c00d521181f12f}} 
@@ -274,7 +275,7 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00293}{293}} der Datei \
 \DoxyCodeLine{00318       \{}
 \DoxyCodeLine{00319         \mbox{\hyperlink{sketch_8ino_a13f268479b5aae34b4a2297104c7aecd}{nWhite}}++;}
 \DoxyCodeLine{00320         Serial.println(\textcolor{stringliteral}{"{}white"{}});}
-\DoxyCodeLine{00321         legBallAb<ANGLE\_LEFT\_HOLE>(\textcolor{stringliteral}{"{}Wei\(\backslash\)342"{}});}
+\DoxyCodeLine{00321         legBallAb<ANGLE\_LEFT\_HOLE>(\textcolor{stringliteral}{"{}Wei\(\backslash\)342"{}},\textcolor{stringliteral}{"{}Links"{}});}
 \DoxyCodeLine{00322         \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(255, 255, 255);}
 \DoxyCodeLine{00323         \textcolor{keywordflow}{break};}
 \DoxyCodeLine{00324       \}}
@@ -282,7 +283,7 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00293}{293}} der Datei \
 \DoxyCodeLine{00326       \{}
 \DoxyCodeLine{00327         \mbox{\hyperlink{sketch_8ino_a847f8cb2693f97028af9e2a0fb979d41}{nBlack}}++;}
 \DoxyCodeLine{00328         Serial.println(\textcolor{stringliteral}{"{}black"{}});}
-\DoxyCodeLine{00329         legBallAb<ANGLE\_RIGHT\_HOLE>(\textcolor{stringliteral}{"{}Schwarz"{}});}
+\DoxyCodeLine{00329         legBallAb<ANGLE\_RIGHT\_HOLE>(\textcolor{stringliteral}{"{}Schwarz"{}},\textcolor{stringliteral}{"{}Rechts"{}});}
 \DoxyCodeLine{00330         \mbox{\hyperlink{sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8}{setLedColor}}(0, 0, 255);}
 \DoxyCodeLine{00331         \textcolor{keywordflow}{break};}
 \DoxyCodeLine{00332       \}}
@@ -359,7 +360,7 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00168}{168}} der Datei \
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00169 \{}
-\DoxyCodeLine{00170   \textcolor{keywordflow}{return} \mbox{\hyperlink{sketch_8ino_a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4}{ORANGE}};\textcolor{comment}{//inputs hardcoden, für Testzwecke}}
+\DoxyCodeLine{00170   \textcolor{comment}{//return ORANGE;//inputs hardcoden, für Testzwecke}}
 \DoxyCodeLine{00171   \textcolor{keywordtype}{int} hue = random(0, 1000); \textcolor{comment}{//inputs simulieren}}
 \DoxyCodeLine{00172   \textcolor{comment}{//int hue=analogRead(A0);//tatsächlich Farbe messen}}
 \DoxyCodeLine{00173   \textcolor{keywordflow}{if} (hue <= 100) \{}
@@ -415,7 +416,8 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
 \includegraphics[width=315pt]{sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_cgraph}
 \end{center}
 \end{figure}
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

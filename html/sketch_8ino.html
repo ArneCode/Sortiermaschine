@@ -132,10 +132,10 @@ Funktionen</h2></td></tr>
 <tr class="memitem:a39ddda5c3402f1f7b2c9ccad07e18791"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a> ()</td></tr>
 <tr class="memdesc:a39ddda5c3402f1f7b2c9ccad07e18791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hilfs Funktion, Methoden können nicht als Funktionsparameter benutzt werden.  <a href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">Mehr ...</a><br /></td></tr>
 <tr class="separator:a39ddda5c3402f1f7b2c9ccad07e18791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b44b8ad8390b202d1c91f96e22d7a2"><td class="memTemplParams" colspan="2">template&lt;short angle&gt; </td></tr>
-<tr class="memitem:a39b44b8ad8390b202d1c91f96e22d7a2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#a39b44b8ad8390b202d1c91f96e22d7a2">legBallAb</a> (String name)</td></tr>
-<tr class="memdesc:a39b44b8ad8390b202d1c91f96e22d7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück.  <a href="sketch_8ino.html#a39b44b8ad8390b202d1c91f96e22d7a2">Mehr ...</a><br /></td></tr>
-<tr class="separator:a39b44b8ad8390b202d1c91f96e22d7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6afc180dd30470854b71b1a9877a0d39"><td class="memTemplParams" colspan="2">template&lt;short angle&gt; </td></tr>
+<tr class="memitem:a6afc180dd30470854b71b1a9877a0d39"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#a6afc180dd30470854b71b1a9877a0d39">legBallAb</a> (String name, String richtung)</td></tr>
+<tr class="memdesc:a6afc180dd30470854b71b1a9877a0d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück.  <a href="sketch_8ino.html#a6afc180dd30470854b71b1a9877a0d39">Mehr ...</a><br /></td></tr>
+<tr class="separator:a6afc180dd30470854b71b1a9877a0d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
 <tr class="memdesc:a4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wird am Anfang des Programms aufgerufen.  <a href="sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d">Mehr ...</a><br /></td></tr>
 <tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,8 +294,8 @@ Variablen</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Dokumentation der Funktionen</h2>
-<a id="a39b44b8ad8390b202d1c91f96e22d7a2" name="a39b44b8ad8390b202d1c91f96e22d7a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39b44b8ad8390b202d1c91f96e22d7a2">&#9670;&nbsp;</a></span>legBallAb()</h2>
+<a id="a6afc180dd30470854b71b1a9877a0d39" name="a6afc180dd30470854b71b1a9877a0d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6afc180dd30470854b71b1a9877a0d39">&#9670;&nbsp;</a></span>legBallAb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,8 +306,18 @@ template&lt;short angle&gt; </div>
           <td class="memname">void legBallAb </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>richtung</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -335,7 +345,7 @@ template&lt;short angle&gt; </div>
 <div class="line"><span class="lineno">  256</span>    <span class="comment">// new so that it is allocated on the heap</span></div>
 <div class="line"><span class="lineno">  257</span>    <span class="comment">//auto automatically sets the type, in this case Callable*[] (Callable**)</span></div>
 <div class="line"><span class="lineno">  258</span>    <span class="keyword">new</span> <a class="code hl_struct" href="structLcdString.html">LcdString</a>(<span class="stringliteral">&quot;Ball erkannt, vorsicht&quot;</span>, &amp;<a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 1000), <span class="comment">//objects get upcasted to Callable*</span></div>
-<div class="line"><span class="lineno">  259</span>    <span class="keyword">new</span> <a class="code hl_class" href="classLcdDotAnim.html">LcdDotAnim</a>(name + <span class="stringliteral">&quot;er Ball, drehe Links&quot;</span>, &amp;<a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 0),</div>
+<div class="line"><span class="lineno">  259</span>    <span class="keyword">new</span> <a class="code hl_class" href="classLcdDotAnim.html">LcdDotAnim</a>(name + <span class="stringliteral">&quot;er Ball, drehe &quot;</span>+richtung, &amp;<a class="code hl_variable" href="sketch_8ino.html#a7ec27b22420d7f2ad97962e41f9076b7">lcd</a>, 0),</div>
 <div class="line"><span class="lineno">  260</span>    <span class="keyword">new</span> <a class="code hl_struct" href="structFuncCall.html">FuncCall</a>([]() {</div>
 <div class="line"><span class="lineno">  261</span>      <a class="code hl_variable" href="sketch_8ino.html#aa5f528bc8f15fc1d782a990a2841ec22">servo</a>.<a class="code hl_function" href="classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94">write</a>(angle);</div>
 <div class="line"><span class="lineno">  262</span>    }, &amp;<a class="code hl_function" href="sketch_8ino.html#a39ddda5c3402f1f7b2c9ccad07e18791">servoIsDone</a>),</div>
@@ -355,7 +365,8 @@ template&lt;short angle&gt; </div>
 </div><!-- fragment --><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino_a39b44b8ad8390b202d1c91f96e22d7a2_cgraph.svg" width="552" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph.svg" width="552" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -409,7 +420,7 @@ vereinfachter Programablaufplan für die loop() Funktion</div></div>
 <div class="line"><span class="lineno">  318</span>      {</div>
 <div class="line"><span class="lineno">  319</span>        <a class="code hl_variable" href="sketch_8ino.html#a13f268479b5aae34b4a2297104c7aecd">nWhite</a>++;</div>
 <div class="line"><span class="lineno">  320</span>        Serial.println(<span class="stringliteral">&quot;white&quot;</span>);</div>
-<div class="line"><span class="lineno">  321</span>        legBallAb&lt;ANGLE_LEFT_HOLE&gt;(<span class="stringliteral">&quot;Wei\342&quot;</span>);</div>
+<div class="line"><span class="lineno">  321</span>        legBallAb&lt;ANGLE_LEFT_HOLE&gt;(<span class="stringliteral">&quot;Wei\342&quot;</span>,<span class="stringliteral">&quot;Links&quot;</span>);</div>
 <div class="line"><span class="lineno">  322</span>        <a class="code hl_function" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(255, 255, 255);</div>
 <div class="line"><span class="lineno">  323</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  324</span>      }</div>
@@ -417,7 +428,7 @@ vereinfachter Programablaufplan für die loop() Funktion</div></div>
 <div class="line"><span class="lineno">  326</span>      {</div>
 <div class="line"><span class="lineno">  327</span>        <a class="code hl_variable" href="sketch_8ino.html#a847f8cb2693f97028af9e2a0fb979d41">nBlack</a>++;</div>
 <div class="line"><span class="lineno">  328</span>        Serial.println(<span class="stringliteral">&quot;black&quot;</span>);</div>
-<div class="line"><span class="lineno">  329</span>        legBallAb&lt;ANGLE_RIGHT_HOLE&gt;(<span class="stringliteral">&quot;Schwarz&quot;</span>);</div>
+<div class="line"><span class="lineno">  329</span>        legBallAb&lt;ANGLE_RIGHT_HOLE&gt;(<span class="stringliteral">&quot;Schwarz&quot;</span>,<span class="stringliteral">&quot;Rechts&quot;</span>);</div>
 <div class="line"><span class="lineno">  330</span>        <a class="code hl_function" href="sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8">setLedColor</a>(0, 0, 255);</div>
 <div class="line"><span class="lineno">  331</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  332</span>      }</div>
@@ -510,7 +521,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p class="definition">Definiert in Zeile <a class="el" href="sketch_8ino_source.html#l00168">168</a> der Datei <a class="el" href="sketch_8ino_source.html">sketch.ino</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  169</span>{</div>
-<div class="line"><span class="lineno">  170</span>  <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="sketch_8ino.html#a911d5d65a486d5ecd013d13f3ab801b2ace9ee4c1a6b777940c7f3a766a9a88d4">ORANGE</a>;<span class="comment">//inputs hardcoden, für Testzwecke</span></div>
+<div class="line"><span class="lineno">  170</span>  <span class="comment">//return ORANGE;//inputs hardcoden, für Testzwecke</span></div>
 <div class="line"><span class="lineno">  171</span>  <span class="keywordtype">int</span> hue = random(0, 1000); <span class="comment">//inputs simulieren</span></div>
 <div class="line"><span class="lineno">  172</span>  <span class="comment">//int hue=analogRead(A0);//tatsächlich Farbe messen</span></div>
 <div class="line"><span class="lineno">  173</span>  <span class="keywordflow">if</span> (hue &lt;= 100) {</div>
@@ -565,7 +576,8 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph.svg" width="246" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph.svg" width="246" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
