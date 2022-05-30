@@ -1,5 +1,5 @@
 <map id="Callable::run" name="Callable::run">
-<area shape="rect" id="node1" title=" " alt="" coords="507,31,611,57"/>
+<area shape="rect" id="node1" title="Wird ausgeführt wenn der Call an der Reihe ist." alt="" coords="507,31,611,57"/>
 <area shape="rect" id="node2" href="$classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0" title="Setzt die neuen Calls, die ausgeführt werden sollen." alt="" coords="300,56,459,83"/>
 <area shape="rect" id="node7" href="$classCallHandler.html#a57ff2e7ae3955d5ed4806dcc6469dcf7" title="Wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z...." alt="" coords="304,5,455,32"/>
 <area shape="rect" id="node3" href="$sketch_8ino.html#a6afc180dd30470854b71b1a9877a0d39" title="Bewegt einen Ball zum Loch, legt ihn Ab und geht zurück." alt="" coords="140,56,224,83"/>
