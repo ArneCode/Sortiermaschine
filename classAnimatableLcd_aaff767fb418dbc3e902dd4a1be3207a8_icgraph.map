@@ -1,8 +1,8 @@
 <map id="AnimatableLcd::printCentered" name="AnimatableLcd::printCentered">
 <area shape="rect" id="node1" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="452,31,668,57"/>
-<area shape="rect" id="node2" href="$classLcdLoadingAnim.html#a1dcb953ecdb84881d1c80769e7c3829c" title="initialisierung der Ladeanimation" alt="" coords="227,5,385,32"/>
+<area shape="rect" id="node2" href="$classLcdLoadingAnim.html#a1dcb953ecdb84881d1c80769e7c3829c" title="Initialisierung der Ladeanimation." alt="" coords="227,5,385,32"/>
 <area shape="rect" id="node3" href="$classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="208,56,404,83"/>
-<area shape="rect" id="node4" href="$classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" title="initialisiert die Punktanimation" alt="" coords="17,5,148,32"/>
+<area shape="rect" id="node4" href="$classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" title="Initialisiert die Punktanimation." alt="" coords="17,5,148,32"/>
 <area shape="rect" id="node5" href="$structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" title="gibt den String (LcdString::text) auf dem Lcd&#45;Display aus" alt="" coords="27,56,138,83"/>
-<area shape="rect" id="node6" href="$classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" title="aktualisiert die Punktanimation, wird von loop() aufgerufen" alt="" coords="5,107,160,133"/>
+<area shape="rect" id="node6" href="$classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" title="Aktualisiert die Punktanimation, wird von loop() aufgerufen." alt="" coords="5,107,160,133"/>
 </map>
