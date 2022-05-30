@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" target="_top" xlink:title="initialisiert die Punktanimation">
+<g id="a_node2"><a xlink:href="classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" target="_top" xlink:title="Initialisiert die Punktanimation.">
 <polygon fill="none" stroke="black" points="9,-76.5 9,-95.5 107,-95.5 107,-76.5 9,-76.5"/>
 <text text-anchor="middle" x="58" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">LcdDotAnim::init</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" target="_top" xlink:title="aktualisiert die Punktanimation, wird von loop() aufgerufen">
+<g id="a_node4"><a xlink:href="classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" target="_top" xlink:title="Aktualisiert die Punktanimation, wird von loop() aufgerufen.">
 <polygon fill="none" stroke="black" points="0,-0.5 0,-19.5 116,-19.5 116,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="58" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">LcdDotAnim::update</text>
 </a>

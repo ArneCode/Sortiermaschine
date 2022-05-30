@@ -46,7 +46,7 @@ bool LcdString::isDone()
   return millis() - callStart > duration;
 }
 /**
- * @brief setzt Variablen die für alle Animationen notwendig sind und ruft dann ihre eigenen init Funktionen auf
+ * @brief Setzt Variablen die für alle Animationen notwendig sind und ruft dann die eigene init() Funktionen auf, die von Abgeleiteten Klassen definiert wird
  * 
  */
 void AnimString::run() 
@@ -59,7 +59,7 @@ void AnimString::run()
   init();
 }
 /**
- * @brief initialisierung der Ladeanimation
+ * @brief Initialisierung der Ladeanimation
  */
 void  LcdLoadingAnim::init() 
 {
@@ -76,7 +76,7 @@ void  LcdLoadingAnim::init()
   lcd->print("0% ");
 }
 /**
- * @brief aktualisiert die Ladeanimation, wird von loop() aufgerufen
+ * @brief Aktualisiert die Ladeanimation, wird von loop() aufgerufen
  * 
  */
 void LcdLoadingAnim::update() 
@@ -97,7 +97,7 @@ void LcdLoadingAnim::update()
   lcd->print("%");
 }
 /**
- * @brief initialisiert die Punktanimation
+ * @brief Initialisiert die Punktanimation
  * 
  */
 void LcdDotAnim::init() 
@@ -105,7 +105,7 @@ void LcdDotAnim::init()
   lcd->printPretty(text + "\1\1\1");//spaces that can't be broken up to newlines
 }
 /**
- * @brief aktualisiert die Punktanimation, wird von loop() aufgerufen
+ * @brief Aktualisiert die Punktanimation, wird von loop() aufgerufen
  * 
  */
 void LcdDotAnim::update() 

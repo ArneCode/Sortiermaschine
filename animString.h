@@ -106,6 +106,10 @@ class AnimString: public LcdString {
   public:
     using LcdString::LcdString;
     virtual ~AnimString() {}
+    /**
+     * @brief wird von Abgeleiteten Klassen definiert. 
+     * @details wird von der AnimString::run Funktion aus aufgerufen, nachdem für Animationen wichtige Variabeln gesetzt wurden
+     */
     virtual void init() {}
     void run();
 };
