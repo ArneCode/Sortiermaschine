@@ -1,6 +1,6 @@
 <map id="AnimatableLcd::printPretty" name="AnimatableLcd::printPretty">
 <area shape="rect" id="node1" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="208,56,404,83"/>
 <area shape="rect" id="node2" href="$classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" title="initialisiert die Punktanimation" alt="" coords="17,5,148,32"/>
-<area shape="rect" id="node3" href="$structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" title="gibt den String auf dem Lcd&#45;Display aus" alt="" coords="27,56,138,83"/>
+<area shape="rect" id="node3" href="$structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" title="gibt den String (LcdString::text) auf dem Lcd&#45;Display aus" alt="" coords="27,56,138,83"/>
 <area shape="rect" id="node4" href="$classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" title="aktualisiert die Punktanimation, wird von loop() aufgerufen" alt="" coords="5,107,160,133"/>
 </map>

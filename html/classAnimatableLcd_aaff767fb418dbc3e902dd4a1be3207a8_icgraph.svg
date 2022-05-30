@@ -65,7 +65,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" target="_top" xlink:title="gibt den String auf dem Lcd&#45;Display aus">
+<g id="a_node5"><a xlink:href="structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" target="_top" xlink:title="gibt den String (LcdString::text) auf dem Lcd&#45;Display aus">
 <polygon fill="none" stroke="black" points="16.5,-38.5 16.5,-57.5 99.5,-57.5 99.5,-38.5 16.5,-38.5"/>
 <text text-anchor="middle" x="58" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">LcdString::run</text>
 </a>

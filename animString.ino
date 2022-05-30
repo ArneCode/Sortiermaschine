@@ -26,7 +26,7 @@ bool FuncCall::isDone()
   return _isDone();
 }
 /**
- * @brief gibt den String auf dem Lcd-Display aus
+ * @brief gibt den String (LcdString::text) auf dem Lcd-Display aus
  * 
  */
 void LcdString::run() 
