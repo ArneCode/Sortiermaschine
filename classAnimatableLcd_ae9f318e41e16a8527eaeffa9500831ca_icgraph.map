@@ -6,6 +6,6 @@
 <area shape="rect" id="node9" href="$classLcdLoadingAnim.html#a939368d0d51f766b20a82176294fba70" title="aktualisiert die Ladeanimation, wird von loop() aufgerufen" alt="" coords="469,133,651,159"/>
 <area shape="rect" id="node5" href="$classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="208,82,404,109"/>
 <area shape="rect" id="node6" href="$classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" title="initialisiert die Punktanimation" alt="" coords="17,31,148,58"/>
-<area shape="rect" id="node7" href="$structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" title="gibt den String auf dem Lcd&#45;Display aus" alt="" coords="27,82,138,109"/>
+<area shape="rect" id="node7" href="$structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" title="gibt den String (LcdString::text) auf dem Lcd&#45;Display aus" alt="" coords="27,82,138,109"/>
 <area shape="rect" id="node8" href="$classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" title="aktualisiert die Punktanimation, wird von loop() aufgerufen" alt="" coords="5,133,160,159"/>
 </map>
