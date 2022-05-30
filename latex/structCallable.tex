@@ -5,14 +5,16 @@
 \doxysubsection{Ausführliche Beschreibung}
 Ein Call der vom \mbox{\hyperlink{classCallHandler}{Call\+Handler}} aufgerufen werden kann. 
 
-Wird nie selbst instanziert sondern nur Abgeleitete Klassen. Abgeleitete Klassen müssen eine run Funktion, die ausgeführt wird wenn der Call an der Reihe ist und eine is\+Done Funktion, die angibt ob der Call abgeschlossen ist implementieren 
+Wird nie selbst instanziert sondern nur Abgeleitete Klassen. Abgeleitete Klassen müssen eine run Funktion, die ausgeführt wird wenn der Call an der Reihe ist und eine is\+Done Funktion, die angibt ob der Call abgeschlossen ist implementieren \begin{DoxyNote}{Zu beachten}
+In dem gedruckten Code ist diese Klasse fälschlicherweise als mit dem class keyword definiert, was alle Methoden private, also nicht von anderen Funktionen aufrufbar machen würde. 
+\end{DoxyNote}
+
 
 Definiert in Zeile \mbox{\hyperlink{animString_8h_source_l00024}{24}} der Datei \mbox{\hyperlink{animString_8h_source}{anim\+String.\+h}}.
 
 
 
-Klassendiagramm für Callable\+:
-\nopagebreak
+Klassendiagramm für Callable\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -87,8 +89,7 @@ Definiert in Zeile \mbox{\hyperlink{animString_8h_source_l00025}{25}} der Datei 
 \DoxyCodeLine{00025 \{\} \textcolor{comment}{//virtual-\/>must be implemented by derived classes}}
 
 \end{DoxyCode}
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

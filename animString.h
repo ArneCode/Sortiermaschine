@@ -19,7 +19,7 @@ class LcdDotAnim;
 /**
  * @brief Ein Call der vom CallHandler aufgerufen werden kann.
  * @details Wird nie selbst instanziert sondern nur Abgeleitete Klassen. Abgeleitete Klassen müssen eine run Funktion, die ausgeführt wird wenn der Call an der Reihe ist und eine isDone Funktion, die angibt ob der Call abgeschlossen ist implementieren
- * 
+ * @note In dem gedruckten Code ist diese Klasse fälschlicherweise als mit dem class keyword definiert, was alle Methoden private, also nicht von anderen Funktionen aufrufbar machen würde.
  */
 struct Callable {
   virtual void run() {} //virtual->must be implemented by derived classes
