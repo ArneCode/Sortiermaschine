@@ -245,6 +245,7 @@ bool servoIsDone()
 
    @tparam angle Der Winkel als Template, da Lambdas (Funktionen die als Parameter weitegegeben werden) keine Variablen von Außen beinhalten dürfen
    @param name Die Farbe des Balls
+   @param richtung Der "Name" der Richtung des angegebenen Winkels
 */
 template <short angle>
 void legBallAb(String name, String richtung)

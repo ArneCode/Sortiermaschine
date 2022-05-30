@@ -1,7 +1,6 @@
 /**
  * @file animString.h
  * @brief Header datei für eine Mehrzahl von animierbaren Strings und der Callable Klasse
- * 
  */
 //the implementations for the animatable string class
 //animatable strings are strings that can be passed to the animatable lcd
