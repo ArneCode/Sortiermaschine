@@ -76,6 +76,10 @@ struct LcdString: public Callable {
   virtual ~LcdString() {}
   bool isDone();
   virtual void run();
+  /**
+   * @brief Updatet den String, wird für Animationen benutzt
+   * 
+   */
   virtual void update() {}
 };
 /**

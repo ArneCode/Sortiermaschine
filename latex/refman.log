@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.28)  30 MAY 2022 14:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.28)  30 MAY 2022 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1116,7 +1116,7 @@ File: classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_cgraph.pdf Graphic f
 ile (type pdf)
 <use classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_cgraph.pdf>
 Package pdftex.def Info: classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_c
-graph.pdf  used on input line 354.
+graph.pdf  used on input line 355.
 (pdftex.def)             Requested size: 346.0pt x 100.00409pt.
  <./classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph.pdf
 
@@ -1130,7 +1130,7 @@ File: classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph.pdf Graphic
 file (type pdf)
 <use classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_icgraph.pdf>
 Package pdftex.def Info: classAnimatableLcd_a85725484bae8d5c0b1190366b3121f99_i
-cgraph.pdf  used on input line 361.
+cgraph.pdf  used on input line 362.
 (pdftex.def)             Requested size: 283.0pt x 100.01021pt.
  [17]) (./classAnimString.tex <./classAnimString__inherit__graph.pdf>
 <classAnimString__inherit__graph.pdf, id=1490, 273.02pt x 269.005pt>
@@ -1203,7 +1203,7 @@ File: structCallable_a0e146c329fbdf8720a9541f60fe910e9_icgraph.pdf Graphic file
  (type pdf)
 <use structCallable_a0e146c329fbdf8720a9541f60fe910e9_icgraph.pdf>
 Package pdftex.def Info: structCallable_a0e146c329fbdf8720a9541f60fe910e9_icgra
-ph.pdf  used on input line 110.
+ph.pdf  used on input line 109.
 (pdftex.def)             Requested size: 350.0pt x 140.26237pt.
  [26])
 (./classCallHandler.tex <./classCallHandler__coll__graph.pdf
@@ -1249,7 +1249,7 @@ File: classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_cgraph.pdf Graphic fil
 e (type pdf)
 <use classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_cgraph.pdf>
 Package pdftex.def Info: classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_cgr
-aph.pdf  used on input line 134.
+aph.pdf  used on input line 133.
 (pdftex.def)             Requested size: 313.0pt x 100.00409pt.
  [29] <./classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_icgraph.pdf>
 <classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_icgraph.pdf, id=1863, 421.5
@@ -1258,7 +1258,7 @@ File: classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_icgraph.pdf Graphic fi
 le (type pdf)
 <use classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_icgraph.pdf>
 Package pdftex.def Info: classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0_icg
-raph.pdf  used on input line 141.
+raph.pdf  used on input line 140.
 (pdftex.def)             Requested size: 350.0pt x 178.33519pt.
  <./classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_cgraph.pdf
 
@@ -1272,7 +1272,7 @@ File: classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_cgraph.pdf Graphic fil
 e (type pdf)
 <use classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_cgraph.pdf>
 Package pdftex.def Info: classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_cgr
-aph.pdf  used on input line 181.
+aph.pdf  used on input line 179.
 (pdftex.def)             Requested size: 307.0pt x 100.00716pt.
  [30] <./classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_icgraph.pdf>
 <classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_icgraph.pdf, id=1898, 268.0
@@ -1281,10 +1281,10 @@ File: classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_icgraph.pdf Graphic fi
 le (type pdf)
 <use classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_icgraph.pdf>
 Package pdftex.def Info: classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7_icg
-raph.pdf  used on input line 188.
+raph.pdf  used on input line 186.
 (pdftex.def)             Requested size: 267.0pt x 99.9995pt.
 
-Underfull \hbox (badness 10000) detected at line 204
+Underfull \hbox (badness 10000) detected at line 202
 [][][]
  []
 
@@ -1590,7 +1590,7 @@ File: structLcdString_a1f014299eeb7654a391f1fbfc898719b_icgraph.pdf Graphic fil
 e (type pdf)
 <use structLcdString_a1f014299eeb7654a391f1fbfc898719b_icgraph.pdf>
 Package pdftex.def Info: structLcdString_a1f014299eeb7654a391f1fbfc898719b_icgr
-aph.pdf  used on input line 181.
+aph.pdf  used on input line 186.
 (pdftex.def)             Requested size: 350.0pt x 83.33418pt.
  [53]) [54]
 Kapitel 6.
@@ -1729,13 +1729,13 @@ File: sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph.pdf Graphic file (ty
 pe pdf)
 <use sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph.pdf>
 Package pdftex.def Info: sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph.p
-df  used on input line 227.
+df  used on input line 226.
 (pdftex.def)             Requested size: 350.0pt x 154.11687pt.
  [75] <./loop Programmablaufplan.png>
 <loop Programmablaufplan.png, id=3843, 495.8525pt x 1145.27875pt>
 File: loop Programmablaufplan.png Graphic file (type png)
 <use loop Programmablaufplan.png>
-Package pdftex.def Info: loop Programmablaufplan.png  used on input line 242.
+Package pdftex.def Info: loop Programmablaufplan.png  used on input line 241.
 (pdftex.def)             Requested size: 152.13893pt x 351.39783pt.
  [76] <./sketch_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf>
 <sketch_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf, id=3931, 467.7475pt 
@@ -1744,10 +1744,10 @@ File: sketch_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf Graphic file (ty
 pe pdf)
 <use sketch_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf>
 Package pdftex.def Info: sketch_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.p
-df  used on input line 341.
+df  used on input line 340.
 (pdftex.def)             Requested size: 350.0pt x 360.53307pt.
  [77]
-Underfull \hbox (badness 10000) detected at line 354
+Underfull \hbox (badness 10000) detected at line 353
 [][][]
  []
 
@@ -1763,10 +1763,10 @@ File: sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd_icgraph.pdf Graphic file (t
 ype pdf)
 <use sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd_icgraph.pdf>
 Package pdftex.def Info: sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd_icgraph.
-pdf  used on input line 384.
+pdf  used on input line 383.
 (pdftex.def)             Requested size: 233.0pt x 100.00562pt.
  [78]
-Underfull \hbox (badness 10000) detected at line 397
+Underfull \hbox (badness 10000) detected at line 396
 [][][]
  []
 
@@ -1777,7 +1777,7 @@ File: sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_cgraph.pdf Graphic file (ty
 pe pdf)
 <use sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_cgraph.pdf>
 Package pdftex.def Info: sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_cgraph.p
-df  used on input line 417.
+df  used on input line 416.
 (pdftex.def)             Requested size: 315.0pt x 100.00716pt.
  <./sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph.pdf
 
@@ -1791,7 +1791,7 @@ File: sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph.pdf Graphic file (t
 ype pdf)
 <use sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph.pdf>
 Package pdftex.def Info: sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph.
-pdf  used on input line 424.
+pdf  used on input line 423.
 (pdftex.def)             Requested size: 256.0pt x 138.00987pt.
  [79] <./sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8_icgraph.pdf>
 <sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8_icgraph.pdf, id=4002, 376.40625p
@@ -1800,7 +1800,7 @@ File: sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8_icgraph.pdf Graphic file (t
 ype pdf)
 <use sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8_icgraph.pdf>
 Package pdftex.def Info: sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8_icgraph.
-pdf  used on input line 463.
+pdf  used on input line 462.
 (pdftex.def)             Requested size: 350.0pt x 128.80936pt.
  <./sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.pdf
 
@@ -1814,7 +1814,7 @@ File: sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.pdf Graphic file (ty
 pe pdf)
 <use sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.pdf>
 Package pdftex.def Info: sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.p
-df  used on input line 501.
+df  used on input line 499.
 (pdftex.def)             Requested size: 350.0pt x 150.5138pt.
  [80] <./sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_cgraph.pdf>
 <sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_cgraph.pdf, id=4061, 470.75874pt
@@ -1823,7 +1823,7 @@ File: sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_cgraph.pdf Graphic file (ty
 pe pdf)
 <use sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_cgraph.pdf>
 Package pdftex.def Info: sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_cgraph.p
-df  used on input line 544.
+df  used on input line 541.
 (pdftex.def)             Requested size: 350.0pt x 159.70193pt.
  <./sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_icgraph.pdf
 
@@ -1837,15 +1837,15 @@ File: sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_icgraph.pdf Graphic file (t
 ype pdf)
 <use sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_icgraph.pdf>
 Package pdftex.def Info: sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_icgraph.
-pdf  used on input line 551.
+pdf  used on input line 548.
 (pdftex.def)             Requested size: 265.0pt x 100.00868pt.
  [81]
-Underfull \hbox (badness 10000) detected at line 595
+Underfull \hbox (badness 10000) detected at line 592
 [][][]
  []
 
 [82] [83] [84]
-Underfull \hbox (badness 10000) detected at line 818
+Underfull \hbox (badness 10000) detected at line 815
 [][][]
  []
 
@@ -1884,7 +1884,7 @@ e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (101 pages, 854601 bytes).
+Output written on refman.pdf (101 pages, 854798 bytes).
 PDF statistics:
  5158 PDF objects out of 6186 (max. 8388607)
  4758 compressed objects within 48 object streams
