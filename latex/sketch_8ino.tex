@@ -202,7 +202,7 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00250}{250}} der Datei \
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00251 \{}
 \DoxyCodeLine{00252   \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
-\DoxyCodeLine{00253   \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} calls = \textcolor{keyword}{new} \mbox{\hyperlink{classCallable}{Callable}}*[6] \{}
+\DoxyCodeLine{00253   \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} calls = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[6] \{}
 \DoxyCodeLine{00254     \textcolor{comment}{//static so that the space for the calls is only allocated once (https://cpp4arduino.com/2018/11/06/what-\/is-\/heap-\/fragmentation.html),}}
 \DoxyCodeLine{00255     \textcolor{comment}{//didn't end up being necessary because at there is only one object in heap at one point in time (callHandler.deleteCalls())}}
 \DoxyCodeLine{00256     \textcolor{comment}{// new so that it is allocated on the heap}}
@@ -219,7 +219,8 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00250}{250}} der Datei \
 \DoxyCodeLine{00267 \}}
 
 \end{DoxyCode}
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -290,7 +291,7 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00293}{293}} der Datei \
 \DoxyCodeLine{00334       \{}
 \DoxyCodeLine{00335         Serial.println(\textcolor{stringliteral}{"{}nothing"{}});}
 \DoxyCodeLine{00336         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
-\DoxyCodeLine{00337         \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} callsNothing = \textcolor{keyword}{new} \mbox{\hyperlink{classCallable}{Callable}}*[1] \{}
+\DoxyCodeLine{00337         \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} callsNothing = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[1] \{}
 \DoxyCodeLine{00338           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(String(\textcolor{stringliteral}{"{}Ball einlegen W:"{}}) + \mbox{\hyperlink{sketch_8ino_a13f268479b5aae34b4a2297104c7aecd}{nWhite}} + String(\textcolor{stringliteral}{"{} S:"{}}) + \mbox{\hyperlink{sketch_8ino_a847f8cb2693f97028af9e2a0fb979d41}{nBlack}} + String(\textcolor{stringliteral}{"{} O:"{}}) + \mbox{\hyperlink{sketch_8ino_ab02bdede4356a3a7dffc99e97e927ca6}{nOrange}}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000)}
 \DoxyCodeLine{00339         \};}
 \DoxyCodeLine{00340         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(callsNothing, 1);}
@@ -303,7 +304,7 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00293}{293}} der Datei \
 \DoxyCodeLine{00347         \mbox{\hyperlink{sketch_8ino_ab02bdede4356a3a7dffc99e97e927ca6}{nOrange}}++;}
 \DoxyCodeLine{00348         Serial.println(\textcolor{stringliteral}{"{}orange"{}});}
 \DoxyCodeLine{00349         \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
-\DoxyCodeLine{00350         \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} callsOrange = \textcolor{keyword}{new} \mbox{\hyperlink{classCallable}{Callable}}*[10] \{}
+\DoxyCodeLine{00350         \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} callsOrange = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[10] \{}
 \DoxyCodeLine{00351           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"{}Oran\(\backslash\)2er B\(\backslash\)2ll"{}}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 1000),}
 \DoxyCodeLine{00352           \textcolor{keyword}{new} \mbox{\hyperlink{structLcdString}{LcdString}}(\textcolor{stringliteral}{"{}\(\backslash\)2\(\backslash\)2\(\backslash\)2\(\backslash\)2O\(\backslash\)2\(\backslash\)2OR\(\backslash\)2\(\backslash\)2R\(\backslash\)2\(\backslash\)2A\(\backslash\)2\(\backslash\)2N\(\backslash\)2\(\backslash\)2G\(\backslash\)2\(\backslash\)2\(\backslash\)2E\(\backslash\)2\(\backslash\)2\(\backslash\)2\(\backslash\)2!\(\backslash\)2\(\backslash\)2"{}}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 0),}
 \DoxyCodeLine{00353           \textcolor{keyword}{new} \mbox{\hyperlink{structFuncCall}{FuncCall}}([]() \{}
@@ -332,7 +333,8 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00293}{293}} der Datei \
 \DoxyCodeLine{00376 \}}
 
 \end{DoxyCode}
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -483,7 +485,7 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00272}{272}} der Datei \
 \DoxyCodeLine{00276   \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.attach(\mbox{\hyperlink{sketch_8ino_ae1e0b317f35c61409381a32ea905ba67}{PIN\_SERVO}});}
 \DoxyCodeLine{00277   \mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}.\mbox{\hyperlink{classAnimatableLcd_a0f93bbf8c49a76e17272721e67a24b38}{init}}();}
 \DoxyCodeLine{00278   \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a95761db4177f965e756bdf725cb10ada}{writeDirect}}(\mbox{\hyperlink{sketch_8ino_ad79ce25ec94495875b917de81bbd692e}{ANGLE\_CENTER}});}
-\DoxyCodeLine{00279   \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(\textcolor{keyword}{new} \mbox{\hyperlink{classCallable}{Callable}}*[1] \{}
+\DoxyCodeLine{00279   \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(\textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[1] \{}
 \DoxyCodeLine{00280     \textcolor{keyword}{new} \mbox{\hyperlink{classLcdLoadingAnim}{LcdLoadingAnim}}(\textcolor{stringliteral}{"{}Lade"{}}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, \mbox{\hyperlink{sketch_8ino_ab09894308b534e1030021de3bc84710e}{LOADING\_DURATION}}),}
 \DoxyCodeLine{00281   \}, 1);}
 \DoxyCodeLine{00282   randomSeed(analogRead(A1));}
@@ -491,7 +493,8 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00272}{272}} der Datei \
 \DoxyCodeLine{00284 \}}
 
 \end{DoxyCode}
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -521,7 +524,7 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00201}{201}} der Datei \
 \DoxyCodeLine{00206     Serial.println(\textcolor{stringliteral}{"{}stopping servo"{}});}
 \DoxyCodeLine{00207     \mbox{\hyperlink{sketch_8ino_aa5f528bc8f15fc1d782a990a2841ec22}{servo}}.\mbox{\hyperlink{classCustomServo_a2504ffc997018dad9f3811b18b16c672}{stop}}();}
 \DoxyCodeLine{00208     \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{deleteCalls}}();}
-\DoxyCodeLine{00209     \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} call = \textcolor{keyword}{new} \mbox{\hyperlink{classCallable}{Callable}}*[1] \{}
+\DoxyCodeLine{00209     \textcolor{comment}{/*static*/} \textcolor{keyword}{auto} call = \textcolor{keyword}{new} \mbox{\hyperlink{structCallable}{Callable}}*[1] \{}
 \DoxyCodeLine{00210       \textcolor{keyword}{new} \mbox{\hyperlink{classLcdDotAnim}{LcdDotAnim}}(\textcolor{stringliteral}{"{}gestoppt, warte auf start"{}}, \&\mbox{\hyperlink{sketch_8ino_a7ec27b22420d7f2ad97962e41f9076b7}{lcd}}, 100000000000000) \textcolor{comment}{//ja, sollte ich vermutlich besser implementieren}}
 \DoxyCodeLine{00211     \};}
 \DoxyCodeLine{00212     \mbox{\hyperlink{sketch_8ino_a97f1ef48e4db33e959bd4b1878116dcc}{callHandler}}.\mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{setCalls}}(call, 1);}
@@ -533,7 +536,8 @@ Definiert in Zeile \mbox{\hyperlink{sketch_8ino_source_l00201}{201}} der Datei \
 \DoxyCodeLine{00218 \}}
 
 \end{DoxyCode}
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

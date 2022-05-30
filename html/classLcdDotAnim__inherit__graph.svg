@@ -50,7 +50,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classCallable.html" target="_top" xlink:title="Ein Call der vom CallHandler aufgerufen werden kann.">
+<g id="a_node4"><a xlink:href="structCallable.html" target="_top" xlink:title="Ein Call der vom CallHandler aufgerufen werden kann.">
 <polygon fill="none" stroke="black" points="10,-168.5 10,-187.5 66,-187.5 66,-168.5 10,-168.5"/>
 <text text-anchor="middle" x="38" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">Callable</text>
 </a>

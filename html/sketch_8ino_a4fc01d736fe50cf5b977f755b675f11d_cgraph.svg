@@ -80,7 +80,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classCallable.html#a0e146c329fbdf8720a9541f60fe910e9" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="structCallable.html#a0e146c329fbdf8720a9541f60fe910e9" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="428,-114.5 428,-133.5 506,-133.5 506,-114.5 428,-114.5"/>
 <text text-anchor="middle" x="467" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">Callable::run</text>
 </a>

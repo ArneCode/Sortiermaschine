@@ -18,10 +18,10 @@ class LcdDotAnim;
 
 /**
  * @brief Ein Call der vom CallHandler aufgerufen werden kann.
- * @details Wird nie selbst instanziert sondern nur Abgeleitete Klassen
+ * @details Wird nie selbst instanziert sondern nur Abgeleitete Klassen. Abgeleitete Klassen müssen eine run Funktion, die ausgeführt wird wenn der Call an der Reihe ist und eine isDone Funktion, die angibt ob der Call abgeschlossen ist implementieren
  * 
  */
-class Callable {
+struct Callable {
   virtual void run() {} //virtual->must be implemented by derived classes
   virtual bool isDone() {}
   virtual ~Callable() {} //let's derived classes free their own memory. ~functions are called when the object is deleted

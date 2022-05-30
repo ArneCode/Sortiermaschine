@@ -11,7 +11,8 @@ Definiert in Zeile \mbox{\hyperlink{callHandler_8h_source_l00017}{17}} der Datei
 
 
 
-Zusammengehörigkeiten von Call\+Handler\+:\nopagebreak
+Zusammengehörigkeiten von Call\+Handler\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,7 +24,7 @@ Zusammengehörigkeiten von Call\+Handler\+:\nopagebreak
 \item 
 void \mbox{\hyperlink{classCallHandler_a49ab239f771b84300df21bd426788c3e}{delete\+Calls}} ()
 \begin{DoxyCompactList}\small\item\em setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{set\+Calls}} (\mbox{\hyperlink{classCallable}{Callable}} $\ast$new\+Call\+Ptrs\mbox{[}$\,$\mbox{]}, size\+\_\+t n\+Calls)
+void \mbox{\hyperlink{classCallHandler_afc5654ccaa266f3a81f8230afdb1c2a0}{set\+Calls}} (\mbox{\hyperlink{structCallable}{Callable}} $\ast$new\+Call\+Ptrs\mbox{[}$\,$\mbox{]}, size\+\_\+t n\+Calls)
 \begin{DoxyCompactList}\small\item\em Setzt die neuen Calls, die ausgeführt werden sollen. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCallHandler_a57ff2e7ae3955d5ed4806dcc6469dcf7}{update}} ()
 \begin{DoxyCompactList}\small\item\em Wechselt zum nächsten Call, wenn der Aktuelle vorbei ist und aktualisiert den jetzigen (z.\+B. animationen) \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -35,11 +36,11 @@ bool \mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{runnin
 \doxysubsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classCallable}{Callable}} $\ast$$\ast$ \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{call\+Ptrs}}
+\mbox{\hyperlink{structCallable}{Callable}} $\ast$$\ast$ \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{call\+Ptrs}}
 \begin{DoxyCompactList}\small\item\em Die liste der aktuellen Calls. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classCallable}{Callable}} $\ast$$\ast$ \mbox{\hyperlink{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}{curr\+Call\+Ptr}}
+\mbox{\hyperlink{structCallable}{Callable}} $\ast$$\ast$ \mbox{\hyperlink{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}{curr\+Call\+Ptr}}
 \begin{DoxyCompactList}\small\item\em Der Call der zurzeit ausgeführt wird. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classCallable}{Callable}} $\ast$$\ast$ \mbox{\hyperlink{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}{last\+Call\+Ptr}}
+\mbox{\hyperlink{structCallable}{Callable}} $\ast$$\ast$ \mbox{\hyperlink{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}{last\+Call\+Ptr}}
 \begin{DoxyCompactList}\small\item\em Der letzte Call. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{header_8h_a9d1a8265fefddad5533f063ef338d59f}{time\+\_\+t}} \mbox{\hyperlink{classCallHandler_a2c98c2be5b62fafe94b32e3a0f68c84d}{last\+CallT}}
 \begin{DoxyCompactList}\small\item\em Der Zeitpunkt an dem der letzte Call ausgeführt wurde. \end{DoxyCompactList}\item 
@@ -69,7 +70,7 @@ Definiert in Zeile \mbox{\hyperlink{callHandler_8ino_source_l00012}{12}} der Dat
 \DoxyCodeLine{00015     \textcolor{keywordflow}{return};}
 \DoxyCodeLine{00016   \}}
 \DoxyCodeLine{00017   \mbox{\hyperlink{classCallHandler_a1ee97c59315e54746cef82a406a49236}{callsSet}} = \textcolor{keyword}{false};}
-\DoxyCodeLine{00018   \textcolor{keywordflow}{for} (\mbox{\hyperlink{classCallable}{Callable}}** callPtr = \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}}; callPtr <= \mbox{\hyperlink{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}{lastCallPtr}}; callPtr++) \{}
+\DoxyCodeLine{00018   \textcolor{keywordflow}{for} (\mbox{\hyperlink{structCallable}{Callable}}** callPtr = \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}}; callPtr <= \mbox{\hyperlink{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}{lastCallPtr}}; callPtr++) \{}
 \DoxyCodeLine{00019     \textcolor{keyword}{delete} *callPtr;}
 \DoxyCodeLine{00020   \}}
 \DoxyCodeLine{00021   \textcolor{keyword}{delete} \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}};}
@@ -87,7 +88,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 \index{CallHandler@{CallHandler}!setCalls@{setCalls}}
 \index{setCalls@{setCalls}!CallHandler@{CallHandler}}
 \doxysubsubsection{\texorpdfstring{setCalls()}{setCalls()}}
-{\footnotesize\ttfamily void Call\+Handler\+::set\+Calls (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCallable}{Callable}} $\ast$}]{new\+Call\+Ptrs\mbox{[}$\,$\mbox{]},  }\item[{size\+\_\+t}]{n\+Calls }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Call\+Handler\+::set\+Calls (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structCallable}{Callable}} $\ast$}]{new\+Call\+Ptrs\mbox{[}$\,$\mbox{]},  }\item[{size\+\_\+t}]{n\+Calls }\end{DoxyParamCaption})}
 
 
 
@@ -119,14 +120,15 @@ Definiert in Zeile \mbox{\hyperlink{callHandler_8ino_source_l00030}{30}} der Dat
 \DoxyCodeLine{00035   \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}} = newCallPtrs;}
 \DoxyCodeLine{00036   \mbox{\hyperlink{classCallHandler_a1ee97c59315e54746cef82a406a49236}{callsSet}} = \textcolor{keyword}{true};}
 \DoxyCodeLine{00037   \mbox{\hyperlink{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}{currCallPtr}} = \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}};}
-\DoxyCodeLine{00038   (*currCallPtr)-\/>\mbox{\hyperlink{classCallable_a0e146c329fbdf8720a9541f60fe910e9}{run}}();}
+\DoxyCodeLine{00038   (*currCallPtr)-\/>\mbox{\hyperlink{structCallable_a0e146c329fbdf8720a9541f60fe910e9}{run}}();}
 \DoxyCodeLine{00039   \mbox{\hyperlink{classCallHandler_a1bb0098f92adc006de8f8cd69c373fb2}{lastCallPtr}} = \mbox{\hyperlink{classCallHandler_a70bf3c03de1953c55fc468b73c77e0f2}{callPtrs}} + nCalls -\/ 1;}
 \DoxyCodeLine{00040   \mbox{\hyperlink{classCallHandler_a2c98c2be5b62fafe94b32e3a0f68c84d}{lastCallT}} = millis();}
 \DoxyCodeLine{00041   \mbox{\hyperlink{classCallHandler_ab56ebeeecd75a34d9fdda13fff68cda7}{running}} = \textcolor{keyword}{true};}
 \DoxyCodeLine{00042 \}}
 
 \end{DoxyCode}
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -167,12 +169,13 @@ Definiert in Zeile \mbox{\hyperlink{callHandler_8ino_source_l00047}{47}} der Dat
 \DoxyCodeLine{00056       \textcolor{keywordflow}{return};}
 \DoxyCodeLine{00057     \}}
 \DoxyCodeLine{00058     \mbox{\hyperlink{classCallHandler_a090fccd59cdc5b99f5f17f1215c4fd29}{currCallPtr}}++;}
-\DoxyCodeLine{00059     (*currCallPtr)-\/>\mbox{\hyperlink{classCallable_a0e146c329fbdf8720a9541f60fe910e9}{run}}();\textcolor{comment}{//-\/>currCall-\/>run();}}
+\DoxyCodeLine{00059     (*currCallPtr)-\/>\mbox{\hyperlink{structCallable_a0e146c329fbdf8720a9541f60fe910e9}{run}}();\textcolor{comment}{//-\/>currCall-\/>run();}}
 \DoxyCodeLine{00060   \}}
 \DoxyCodeLine{00061 \}}
 
 \end{DoxyCode}
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -193,7 +196,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
 \index{CallHandler@{CallHandler}!callPtrs@{callPtrs}}
 \index{callPtrs@{callPtrs}!CallHandler@{CallHandler}}
 \doxysubsubsection{\texorpdfstring{callPtrs}{callPtrs}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classCallable}{Callable}}$\ast$$\ast$ Call\+Handler\+::call\+Ptrs\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCallable}{Callable}}$\ast$$\ast$ Call\+Handler\+::call\+Ptrs\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -224,7 +227,7 @@ Definiert in Zeile \mbox{\hyperlink{callHandler_8h_source_l00044}{44}} der Datei
 \index{CallHandler@{CallHandler}!currCallPtr@{currCallPtr}}
 \index{currCallPtr@{currCallPtr}!CallHandler@{CallHandler}}
 \doxysubsubsection{\texorpdfstring{currCallPtr}{currCallPtr}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classCallable}{Callable}}$\ast$$\ast$ Call\+Handler\+::curr\+Call\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCallable}{Callable}}$\ast$$\ast$ Call\+Handler\+::curr\+Call\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -238,7 +241,7 @@ Definiert in Zeile \mbox{\hyperlink{callHandler_8h_source_l00029}{29}} der Datei
 \index{CallHandler@{CallHandler}!lastCallPtr@{lastCallPtr}}
 \index{lastCallPtr@{lastCallPtr}!CallHandler@{CallHandler}}
 \doxysubsubsection{\texorpdfstring{lastCallPtr}{lastCallPtr}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classCallable}{Callable}}$\ast$$\ast$ Call\+Handler\+::last\+Call\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structCallable}{Callable}}$\ast$$\ast$ Call\+Handler\+::last\+Call\+Ptr\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

@@ -1,6 +1,6 @@
 var animString_8h =
 [
-    [ "Callable", "classCallable.html", "classCallable" ],
+    [ "Callable", "structCallable.html", "structCallable" ],
     [ "FuncCall", "structFuncCall.html", "structFuncCall" ],
     [ "LcdString", "structLcdString.html", "structLcdString" ],
     [ "AnimString", "classAnimString.html", "classAnimString" ],

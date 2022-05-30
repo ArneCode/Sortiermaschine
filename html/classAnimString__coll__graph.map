@@ -2,6 +2,6 @@
 <area shape="rect" id="node1" title="Die Klasse für animierbare LcdStrings." alt="" coords="5,5,100,32"/>
 <area shape="rect" id="node4" href="$classAnimatableLcd.html" title="Eigener Lcd, ermöglicht es Animationen auf dem Lcd Display anzuzeigen." alt="" coords="89,95,208,121"/>
 <area shape="rect" id="node2" href="$structLcdString.html" title="Ein String der auf dem AnimatableLcd angezeigt werden kann." alt="" coords="107,184,190,211"/>
-<area shape="rect" id="node3" href="$classCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann." alt="" coords="231,95,306,121"/>
+<area shape="rect" id="node3" href="$structCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann." alt="" coords="231,95,306,121"/>
 <area shape="rect" id="node5" title=" " alt="" coords="124,5,259,32"/>
 </map>

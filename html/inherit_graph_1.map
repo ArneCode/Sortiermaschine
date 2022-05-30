@@ -1,5 +1,5 @@
 <map id="Grafische Darstellung der Klassenhierarchie" name="Grafische Darstellung der Klassenhierarchie">
-<area shape="rect" id="node1" href="$classCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann." alt="" coords="5,31,80,57"/>
+<area shape="rect" id="node1" href="$structCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann." alt="" coords="5,31,80,57"/>
 <area shape="rect" id="node2" href="$structFuncCall.html" title="Ein Call der eine Funktion ausführt." alt="" coords="131,5,208,32"/>
 <area shape="rect" id="node3" href="$structLcdString.html" title="Ein String der auf dem AnimatableLcd angezeigt werden kann." alt="" coords="128,56,211,83"/>
 <area shape="rect" id="node4" href="$classAnimString.html" title="Die Klasse für animierbare LcdStrings." alt="" coords="259,56,353,83"/>
