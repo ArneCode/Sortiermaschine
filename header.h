@@ -2,7 +2,7 @@
  * @file header.h
  * @brief Definiert variablen-types die überall im Programm benutzt werden
  */
-#ifndef HEADER_H
+#ifndef HEADER_H //include guards (https://www.geeksforgeeks.org/include-guards-in-c/)
 #define HEADER_H
 /**
  * @brief Ein Zeit Typ

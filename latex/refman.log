@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.28)  30 MAY 2022 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.28)  30 MAY 2022 20:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1601,10 +1601,16 @@ e (type pdf)
 Package pdftex.def Info: structLcdString_a1f014299eeb7654a391f1fbfc898719b_icgr
 aph.pdf  used on input line 185.
 (pdftex.def)             Requested size: 350.0pt x 83.33418pt.
- [53]) [54]
+ [53] [54]) [55] [56
+
+]
 Kapitel 6.
-(./animLcd_8h.tex <./animLcd_8h__incl.pdf>
-<animLcd_8h__incl.pdf, id=2668, 289.08pt x 212.795pt>
+(./animLcd_8h.tex <./animLcd_8h__incl.pdf
+
+pdfTeX warning: pdflatex (file ./animLcd_8h__incl.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+>
+<animLcd_8h__incl.pdf, id=2678, 289.08pt x 212.795pt>
 File: animLcd_8h__incl.pdf Graphic file (type pdf)
 <use animLcd_8h__incl.pdf>
 Package pdftex.def Info: animLcd_8h__incl.pdf  used on input line 18.
@@ -1614,27 +1620,25 @@ Package pdftex.def Info: animLcd_8h__incl.pdf  used on input line 18.
 pdfTeX warning: pdflatex (file ./animLcd_8h__dep__incl.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >
-<animLcd_8h__dep__incl.pdf, id=2676, 454.69875pt x 269.005pt>
+<animLcd_8h__dep__incl.pdf, id=2686, 454.69875pt x 269.005pt>
 File: animLcd_8h__dep__incl.pdf Graphic file (type pdf)
 <use animLcd_8h__dep__incl.pdf>
 Package pdftex.def Info: animLcd_8h__dep__incl.pdf  used on input line 25.
 (pdftex.def)             Requested size: 350.0pt x 207.0647pt.
- [55
-
-]) (./animLcd_8h_source.tex [56]) (./animLcd_8ino.tex <./animLcd_8ino__incl.pdf
->
-<animLcd_8ino__incl.pdf, id=2725, 349.305pt x 269.005pt>
+ [57]) (./animLcd_8h_source.tex [58]) (./animLcd_8ino.tex <./animLcd_8ino__incl
+.pdf>
+<animLcd_8ino__incl.pdf, id=2735, 349.305pt x 269.005pt>
 File: animLcd_8ino__incl.pdf Graphic file (type pdf)
 <use animLcd_8ino__incl.pdf>
 Package pdftex.def Info: animLcd_8ino__incl.pdf  used on input line 20.
 (pdftex.def)             Requested size: 348.0pt x 268.01509pt.
- [57]) (./animLcd_8ino_source.tex [58] [59]) (./animString_8h.tex <./animString
+ [59]) (./animLcd_8ino_source.tex [60] [61]) (./animString_8h.tex <./animString
 _8h__incl.pdf
 
 pdfTeX warning: pdflatex (file ./animString_8h__incl.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >
-<animString_8h__incl.pdf, id=2893, 246.9225pt x 212.795pt>
+<animString_8h__incl.pdf, id=2903, 246.9225pt x 212.795pt>
 File: animString_8h__incl.pdf Graphic file (type pdf)
 <use animString_8h__incl.pdf>
 Package pdftex.def Info: animString_8h__incl.pdf  used on input line 18.
@@ -1644,91 +1648,91 @@ Package pdftex.def Info: animString_8h__incl.pdf  used on input line 18.
 pdfTeX warning: pdflatex (file ./animString_8h__dep__incl.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >
-<animString_8h__dep__incl.pdf, id=2901, 455.7025pt x 212.795pt>
+<animString_8h__dep__incl.pdf, id=2911, 455.7025pt x 212.795pt>
 File: animString_8h__dep__incl.pdf Graphic file (type pdf)
 <use animString_8h__dep__incl.pdf>
 Package pdftex.def Info: animString_8h__dep__incl.pdf  used on input line 25.
 (pdftex.def)             Requested size: 350.0pt x 163.44028pt.
- [60]) (./animString_8h_source.tex [61]) (./animString_8ino.tex <./animString_8
+ [62]) (./animString_8h_source.tex [63]) (./animString_8ino.tex <./animString_8
 ino__incl.pdf>
-<animString_8ino__incl.pdf, id=3090, 375.4025pt x 269.005pt>
+<animString_8ino__incl.pdf, id=3100, 375.4025pt x 269.005pt>
 File: animString_8ino__incl.pdf Graphic file (type pdf)
 <use animString_8ino__incl.pdf>
 Package pdftex.def Info: animString_8ino__incl.pdf  used on input line 20.
 (pdftex.def)             Requested size: 350.0pt x 250.81648pt.
-) (./animString_8ino_source.tex [62] [63]) (./callHandler_8h.tex <./callHandler
+) (./animString_8ino_source.tex [64] [65]) (./callHandler_8h.tex <./callHandler
 _8h__incl.pdf>
-<callHandler_8h__incl.pdf, id=3254, 246.9225pt x 269.005pt>
+<callHandler_8h__incl.pdf, id=3265, 246.9225pt x 269.005pt>
 File: callHandler_8h__incl.pdf Graphic file (type pdf)
 <use callHandler_8h__incl.pdf>
 Package pdftex.def Info: callHandler_8h__incl.pdf  used on input line 18.
 (pdftex.def)             Requested size: 246.0pt x 267.99867pt.
- [64] <./callHandler_8h__dep__incl.pdf
+ [66] <./callHandler_8h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./callHandler_8h__dep__incl.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >
-<callHandler_8h__dep__incl.pdf, id=3307, 454.69875pt x 156.585pt>
+<callHandler_8h__dep__incl.pdf, id=3319, 454.69875pt x 156.585pt>
 File: callHandler_8h__dep__incl.pdf Graphic file (type pdf)
 <use callHandler_8h__dep__incl.pdf>
 Package pdftex.def Info: callHandler_8h__dep__incl.pdf  used on input line 25.
 (pdftex.def)             Requested size: 350.0pt x 120.5302pt.
-) (./callHandler_8h_source.tex [65]) (./callHandler_8ino.tex <./callHandler_8in
+) (./callHandler_8h_source.tex [67]) (./callHandler_8ino.tex <./callHandler_8in
 o__incl.pdf>
-<callHandler_8ino__incl.pdf, id=3361, 249.93375pt x 325.215pt>
+<callHandler_8ino__incl.pdf, id=3371, 249.93375pt x 325.215pt>
 File: callHandler_8ino__incl.pdf Graphic file (type pdf)
 <use callHandler_8ino__incl.pdf>
 Package pdftex.def Info: callHandler_8ino__incl.pdf  used on input line 19.
 (pdftex.def)             Requested size: 249.0pt x 324.0133pt.
-) (./callHandler_8ino_source.tex [66]) (./customServo_8h.tex <./customServo_8h_
+) (./callHandler_8ino_source.tex [68]) (./customServo_8h.tex <./customServo_8h_
 _incl.pdf>
-<customServo_8h__incl.pdf, id=3417, 210.7875pt x 156.585pt>
+<customServo_8h__incl.pdf, id=3427, 210.7875pt x 156.585pt>
 File: customServo_8h__incl.pdf Graphic file (type pdf)
 <use customServo_8h__incl.pdf>
 Package pdftex.def Info: customServo_8h__incl.pdf  used on input line 18.
 (pdftex.def)             Requested size: 210.0pt x 156.004pt.
- [67] <./customServo_8h__dep__incl.pdf
+ [69] <./customServo_8h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./customServo_8h__dep__incl.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >
-<customServo_8h__dep__incl.pdf, id=3470, 262.9825pt x 156.585pt>
+<customServo_8h__dep__incl.pdf, id=3480, 262.9825pt x 156.585pt>
 File: customServo_8h__dep__incl.pdf Graphic file (type pdf)
 <use customServo_8h__dep__incl.pdf>
 Package pdftex.def Info: customServo_8h__dep__incl.pdf  used on input line 25.
 (pdftex.def)             Requested size: 262.0pt x 156.0064pt.
-) (./customServo_8h_source.tex [68]) (./customServo_8ino.tex <./customServo_8in
+) (./customServo_8h_source.tex [70]) (./customServo_8ino.tex <./customServo_8in
 o__incl.pdf>
-<customServo_8ino__incl.pdf, id=3525, 210.7875pt x 212.795pt>
+<customServo_8ino__incl.pdf, id=3535, 210.7875pt x 212.795pt>
 File: customServo_8ino__incl.pdf Graphic file (type pdf)
 <use customServo_8ino__incl.pdf>
 Package pdftex.def Info: customServo_8ino__incl.pdf  used on input line 17.
 (pdftex.def)             Requested size: 210.0pt x 212.00543pt.
-) (./customServo_8ino_source.tex [69]) (./header_8h.tex <./header_8h__dep__incl
+) (./customServo_8ino_source.tex [71]) (./header_8h.tex <./header_8h__dep__incl
 .pdf>
-<header_8h__dep__incl.pdf, id=3612, 576.1525pt x 269.005pt>
+<header_8h__dep__incl.pdf, id=3623, 576.1525pt x 269.005pt>
 File: header_8h__dep__incl.pdf Graphic file (type pdf)
 <use header_8h__dep__incl.pdf>
 Package pdftex.def Info: header_8h__dep__incl.pdf  used on input line 16.
 (pdftex.def)             Requested size: 350.0pt x 163.41963pt.
- [70]) (./header_8h_source.tex) (./index_8md.tex)
-(./sketch_8ino.tex [71] <./sketch_8ino__incl.pdf
+ [72]) (./header_8h_source.tex) (./index_8md.tex)
+(./sketch_8ino.tex [73] <./sketch_8ino__incl.pdf
 
 pdfTeX warning: pdflatex (file ./sketch_8ino__incl.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >
-<sketch_8ino__incl.pdf, id=3699, 449.68pt x 269.005pt>
+<sketch_8ino__incl.pdf, id=3709, 449.68pt x 269.005pt>
 File: sketch_8ino__incl.pdf Graphic file (type pdf)
 <use sketch_8ino__incl.pdf>
 Package pdftex.def Info: sketch_8ino__incl.pdf  used on input line 20.
 (pdftex.def)             Requested size: 350.0pt x 209.38385pt.
- [72] [73] [74] <./sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph.pdf
+ [74] [75] [76] <./sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_
 cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
 >
-<sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph.pdf, id=3833, 487.8225pt 
+<sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph.pdf, id=3844, 487.8225pt 
 x 214.8025pt>
 File: sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1736,14 +1740,14 @@ pe pdf)
 Package pdftex.def Info: sketch_8ino_a6afc180dd30470854b71b1a9877a0d39_cgraph.p
 df  used on input line 228.
 (pdftex.def)             Requested size: 350.0pt x 154.11687pt.
- [75] <./loop Programmablaufplan.png>
-<loop Programmablaufplan.png, id=3849, 495.8525pt x 1145.27875pt>
+ [77] <./loop Programmablaufplan.png>
+<loop Programmablaufplan.png, id=3860, 495.8525pt x 1145.27875pt>
 File: loop Programmablaufplan.png Graphic file (type png)
 <use loop Programmablaufplan.png>
 Package pdftex.def Info: loop Programmablaufplan.png  used on input line 243.
 (pdftex.def)             Requested size: 152.13893pt x 351.39783pt.
- [76] <./sketch_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf>
-<sketch_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf, id=3937, 467.7475pt 
+ [78] <./sketch_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf>
+<sketch_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf, id=3948, 467.7475pt 
 x 481.8pt>
 File: sketch_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1751,7 +1755,7 @@ pe pdf)
 Package pdftex.def Info: sketch_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.p
 df  used on input line 341.
 (pdftex.def)             Requested size: 350.0pt x 360.53307pt.
- [77]
+ [79]
 Underfull \hbox (badness 10000) detected at line 354
 [][][]
  []
@@ -1762,7 +1766,7 @@ pdfTeX warning: pdflatex (file ./sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd_
 icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >
-<sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd_icgraph.pdf, id=3959, 233.87375p
+<sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd_icgraph.pdf, id=3969, 233.87375p
 t x 100.375pt>
 File: sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1770,13 +1774,13 @@ ype pdf)
 Package pdftex.def Info: sketch_8ino_ac80eb6baeaace0198948fd8ff196e4fd_icgraph.
 pdf  used on input line 384.
 (pdftex.def)             Requested size: 233.0pt x 100.00562pt.
- [78]
+ [80]
 Underfull \hbox (badness 10000) detected at line 397
 [][][]
  []
 
  <./sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_cgraph.pdf>
-<sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_cgraph.pdf, id=3978, 316.18124pt
+<sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_cgraph.pdf, id=3988, 316.18124pt
  x 100.375pt>
 File: sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1790,7 +1794,7 @@ pdfTeX warning: pdflatex (file ./sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_
 icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >
-<sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph.pdf, id=3986, 256.96pt x
+<sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph.pdf, id=3996, 256.96pt x
  138.5175pt>
 File: sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1798,8 +1802,8 @@ ype pdf)
 Package pdftex.def Info: sketch_8ino_a39ddda5c3402f1f7b2c9ccad07e18791_icgraph.
 pdf  used on input line 424.
 (pdftex.def)             Requested size: 256.0pt x 138.00987pt.
- [79] <./sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8_icgraph.pdf>
-<sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8_icgraph.pdf, id=4008, 376.40625p
+ [81] <./sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8_icgraph.pdf>
+<sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8_icgraph.pdf, id=4018, 376.40625p
 t x 138.5175pt>
 File: sketch_8ino_a902e3350d6dfe8c210f24b31c7b284d8_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1813,7 +1817,7 @@ pdfTeX warning: pdflatex (file ./sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d_
 cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
 >
-<sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.pdf, id=4035, 588.1975pt 
+<sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.pdf, id=4045, 588.1975pt 
 x 252.945pt>
 File: sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1821,8 +1825,8 @@ pe pdf)
 Package pdftex.def Info: sketch_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.p
 df  used on input line 500.
 (pdftex.def)             Requested size: 350.0pt x 150.5138pt.
- [80] <./sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_cgraph.pdf>
-<sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_cgraph.pdf, id=4068, 470.75874pt
+ [82] <./sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_cgraph.pdf>
+<sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_cgraph.pdf, id=4078, 470.75874pt
  x 214.8025pt>
 File: sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1836,7 +1840,7 @@ pdfTeX warning: pdflatex (file ./sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_
 icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >
-<sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_icgraph.pdf, id=4076, 265.99374p
+<sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_icgraph.pdf, id=4086, 265.99374p
 t x 100.375pt>
 File: sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1844,23 +1848,23 @@ ype pdf)
 Package pdftex.def Info: sketch_8ino_abbbe19f80bf8227bbfbb68d98a1937cc_icgraph.
 pdf  used on input line 549.
 (pdftex.def)             Requested size: 265.0pt x 100.00868pt.
- [81]
+ [83]
 Underfull \hbox (badness 10000) detected at line 593
 [][][]
  []
 
-[82] [83] [84]
+[84] [85] [86]
 Underfull \hbox (badness 10000) detected at line 816
 [][][]
  []
 
-[85]) (./sketch_8ino_source.tex [86] [87] [88]) [89] [90
+[87]) (./sketch_8ino_source.tex [88] [89] [90]) [91] [92
 
 ] (./refman.ind
-[91
+[93
 
 
-] [92] [93])
+] [94] [95])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
  (./refman.aux)
@@ -1870,8 +1874,8 @@ Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: 9F6F0A019E1B7C81927DFD577AA23B7F;39531.
  ) 
 Here is how much of TeX's memory you used:
- 19686 strings out of 483130
- 321410 string characters out of 5963883
+ 19688 strings out of 483130
+ 321424 string characters out of 5963883
  595919 words of memory out of 5000000
  33067 multiletter control sequences out of 15000+600000
  595729 words of font info for 100 fonts, out of 8000000 for 9000
@@ -1889,10 +1893,10 @@ e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (101 pages, 854665 bytes).
+Output written on refman.pdf (103 pages, 855878 bytes).
 PDF statistics:
- 5164 PDF objects out of 6186 (max. 8388607)
- 4762 compressed objects within 48 object streams
- 1233 named destinations out of 1440 (max. 500000)
+ 5175 PDF objects out of 6186 (max. 8388607)
+ 4770 compressed objects within 48 object streams
+ 1235 named destinations out of 1440 (max. 500000)
  1992 words of extra memory for PDF output out of 10000 (max. 10000000)
 

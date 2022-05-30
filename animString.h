@@ -67,8 +67,20 @@ struct LcdString: public Callable {
    * 
    */
   String text;
+  /**
+   * @brief Der Lcd
+   * @details Die Referenz wird benötigt, da Animationen AnimatableLcd::setAnimation aufrufen können sollen und LcdString sich selbst auf dem Monitor ausgeben muss, wenn der Call an der Reihe ist
+   */
   AnimatableLcd* lcd;
+  /**
+   * @brief Wie lange text angezeigt werden soll
+   * 
+   */
   time_t duration;
+  /**
+   * @brief Zeitpunkt ab dem Text auf dem Lcd ausgegeben wurde
+   * 
+   */
   time_t callStart;//time at which the string was written to the LCD
   LcdString(String text, AnimatableLcd* lcd, time_t duration = 0)
     : text(text), duration(duration), lcd(lcd) {  }
