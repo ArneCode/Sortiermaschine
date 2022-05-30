@@ -14,5 +14,5 @@
 <area shape="rect" id="node5" href="$classCustomServo.html#ac247ddd89cf27db323522746e5afa922" title="Gibt an, ob der Servo angekommen ist." alt="" coords="347,107,510,133"/>
 <area shape="rect" id="node7" href="$structCallable.html#a0e146c329fbdf8720a9541f60fe910e9" title="Wird ausgeführt wenn der Call an der Reihe ist." alt="" coords="377,208,481,235"/>
 <area shape="rect" id="node10" href="$classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2" title="Setzt Variablen, die benötigt werden um den Servo zu bewegen." alt="" coords="337,436,520,463"/>
-<area shape="rect" id="node12" href="$structLcdString.html#a1f014299eeb7654a391f1fbfc898719b" title="Updatet den String, wird für Animationen benutzt." alt="" coords="361,309,496,336"/>
+<area shape="rect" id="node12" href="$structLcdString.html#a1f014299eeb7654a391f1fbfc898719b" title="Aktualisiert den String, wird für Animationen benutzt." alt="" coords="361,309,496,336"/>
 </map>

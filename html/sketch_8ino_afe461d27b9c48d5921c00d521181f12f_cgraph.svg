@@ -230,7 +230,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b" target="_top" xlink:title="Updatet den String, wird für Animationen benutzt.">
+<g id="a_node12"><a xlink:href="structLcdString.html#a1f014299eeb7654a391f1fbfc898719b" target="_top" xlink:title="Aktualisiert den String, wird für Animationen benutzt.">
 <polygon fill="none" stroke="black" points="267,-152.5 267,-171.5 368,-171.5 368,-152.5 267,-152.5"/>
 <text text-anchor="middle" x="317.5" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">LcdString::update</text>
 </a>
