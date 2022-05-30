@@ -1,4 +1,4 @@
 <map id="CallHandler" name="CallHandler">
 <area shape="rect" id="node1" title="Klasse, die Calls nacheinander aufruft." alt="" coords="5,124,104,151"/>
-<area shape="rect" id="node2" href="$classCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann." alt="" coords="17,5,92,32"/>
+<area shape="rect" id="node2" href="$structCallable.html" title="Ein Call der vom CallHandler aufgerufen werden kann." alt="" coords="17,5,92,32"/>
 </map>

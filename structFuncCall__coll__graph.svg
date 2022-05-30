@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classCallable.html" target="_top" xlink:title="Ein Call der vom CallHandler aufgerufen werden kann.">
+<g id="a_node2"><a xlink:href="structCallable.html" target="_top" xlink:title="Ein Call der vom CallHandler aufgerufen werden kann.">
 <polygon fill="none" stroke="black" points="1,-56.5 1,-75.5 57,-75.5 57,-56.5 1,-56.5"/>
 <text text-anchor="middle" x="29" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">Callable</text>
 </a>

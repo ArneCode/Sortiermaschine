@@ -1,7 +1,7 @@
 var hierarchy =
 [
     [ "ButtonHandler", "classButtonHandler.html", null ],
-    [ "Callable", "classCallable.html", [
+    [ "Callable", "structCallable.html", [
       [ "FuncCall", "structFuncCall.html", null ],
       [ "LcdString", "structLcdString.html", [
         [ "AnimString", "classAnimString.html", [

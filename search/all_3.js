@@ -1,7 +1,7 @@
 var searchData=
 [
   ['call_0',['call',['../structFuncCall.html#aa18b529a8cc3df2ca01006906d0c3876',1,'FuncCall']]],
-  ['callable_1',['Callable',['../classCallable.html',1,'']]],
+  ['callable_1',['Callable',['../structCallable.html',1,'']]],
   ['callhandler_2',['CallHandler',['../classCallHandler.html',1,'']]],
   ['callhandler_3',['callHandler',['../sketch_8ino.html#a97f1ef48e4db33e959bd4b1878116dcc',1,'sketch.ino']]],
   ['callhandler_2eh_4',['callHandler.h',['../callHandler_8h.html',1,'']]],
