@@ -25,9 +25,9 @@ Klassendiagramm für Callable\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structCallable_a0e146c329fbdf8720a9541f60fe910e9}{run}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Wird ausgeführt wenn der Call an der Reihe ist. \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{structCallable_af0778d71c6196b6ba0215cce13f8c7dd}{is\+Done}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt zurück, ob der Call fertig ist, z.\+B. Bei einem \mbox{\hyperlink{structLcdString}{Lcd\+String}} ob die vorhergesehene Anzeigezeit vorbei ist. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{structCallable_a84ab6ce6283cbf84c8b002e1941fad5d}{$\sim$\+Callable}} ()
 \end{DoxyCompactItemize}
 
@@ -41,11 +41,11 @@ virtual \mbox{\hyperlink{structCallable_a84ab6ce6283cbf84c8b002e1941fad5d}{$\sim
 
 
 
-Definiert in Zeile \mbox{\hyperlink{animString_8h_source_l00027}{27}} der Datei \mbox{\hyperlink{animString_8h_source}{anim\+String.\+h}}.
+Definiert in Zeile \mbox{\hyperlink{animString_8h_source_l00036}{36}} der Datei \mbox{\hyperlink{animString_8h_source}{anim\+String.\+h}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00027 \{\} \textcolor{comment}{//let's derived classes free their own memory. \string~functions are called when the object is deleted}}
+\DoxyCodeLine{00036 \{\} \textcolor{comment}{//let's derived classes free their own memory. \string~functions are called when the object is deleted}}
 
 \end{DoxyCode}
 
@@ -59,15 +59,24 @@ Definiert in Zeile \mbox{\hyperlink{animString_8h_source_l00027}{27}} der Datei 
 
 
 
+Gibt zurück, ob der Call fertig ist, z.\+B. Bei einem \mbox{\hyperlink{structLcdString}{Lcd\+String}} ob die vorhergesehene Anzeigezeit vorbei ist. 
+
+\begin{DoxyReturn}{Rückgabe}
+true 
+
+false 
+\end{DoxyReturn}
+
+
 Erneute Implementation in \mbox{\hyperlink{structFuncCall_a94be310a67fffa7f15c88a832aec16ee}{Func\+Call}} und \mbox{\hyperlink{structLcdString_a815ab8e4a5e0610637073fb76fb4dadf}{Lcd\+String}}.
 
 
 
-Definiert in Zeile \mbox{\hyperlink{animString_8h_source_l00026}{26}} der Datei \mbox{\hyperlink{animString_8h_source}{anim\+String.\+h}}.
+Definiert in Zeile \mbox{\hyperlink{animString_8h_source_l00035}{35}} der Datei \mbox{\hyperlink{animString_8h_source}{anim\+String.\+h}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00026 \{\}}
+\DoxyCodeLine{00035 \{\}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{structCallable_a0e146c329fbdf8720a9541f60fe910e9}\label{structCallable_a0e146c329fbdf8720a9541f60fe910e9}} 
@@ -78,18 +87,23 @@ Definiert in Zeile \mbox{\hyperlink{animString_8h_source_l00026}{26}} der Datei 
 
 
 
+Wird ausgeführt wenn der Call an der Reihe ist. 
+
+
+
 Erneute Implementation in \mbox{\hyperlink{structFuncCall_a2f1b37d6d7162c91d5367288b20824db}{Func\+Call}}, \mbox{\hyperlink{structLcdString_aa391ea895fc2ec0a5dfe249226daa017}{Lcd\+String}} und \mbox{\hyperlink{classAnimString_a565ce4859f7d2d9e74af63c768cfc3e0}{Anim\+String}}.
 
 
 
-Definiert in Zeile \mbox{\hyperlink{animString_8h_source_l00025}{25}} der Datei \mbox{\hyperlink{animString_8h_source}{anim\+String.\+h}}.
+Definiert in Zeile \mbox{\hyperlink{animString_8h_source_l00029}{29}} der Datei \mbox{\hyperlink{animString_8h_source}{anim\+String.\+h}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00025 \{\} \textcolor{comment}{//virtual-\/>must be implemented by derived classes}}
+\DoxyCodeLine{00029 \{\} \textcolor{comment}{//virtual-\/>can be implemented by derived classes}}
 
 \end{DoxyCode}
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

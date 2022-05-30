@@ -22,9 +22,18 @@ class LcdDotAnim;
  * @note In dem gedruckten Code ist diese Klasse fälschlicherweise als mit dem ```class``` keyword definiert, was alle Methoden private, also nicht von anderen Funktionen aufrufbar machen würde.
  */
 struct Callable {
-  virtual void run() {} //virtual->must be implemented by derived classes
-  virtual bool isDone() {}
-  virtual ~Callable() {} //let's derived classes free their own memory. ~functions are called when the object is deleted
+  /**
+   * @brief Wird ausgeführt wenn der Call an der Reihe ist
+   * 
+   */
+  virtual void run(){} //virtual->can be implemented by derived classes
+  /**
+   * @brief Gibt zurück, ob der Call fertig ist, z.B. Bei einem LcdString ob die vorhergesehene Anzeigezeit vorbei ist
+   * @return true 
+   * @return false 
+   */
+  virtual bool isDone(){}
+  virtual ~Callable(){} //let's derived classes free their own memory. ~functions are called when the object is deleted
 };
 /**
  * @brief Ein Call der eine Funktion ausführt

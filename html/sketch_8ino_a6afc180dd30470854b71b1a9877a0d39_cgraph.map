@@ -5,6 +5,6 @@
 <area shape="rect" id="node5" href="$classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0" title="Setzt die neuen Calls, die ausgeführt werden sollen." alt="" coords="147,107,306,133"/>
 <area shape="rect" id="node7" href="$classCustomServo.html#a9d67b7154c659f1bf60a8464115c1e94" title="Bewegt den Servo mit einer vorher spezifizierten Geschwindigkeit." alt="" coords="151,157,302,184"/>
 <area shape="rect" id="node4" href="$classCustomServo.html#ac247ddd89cf27db323522746e5afa922" title="Gibt an, ob der Servo angekommen ist." alt="" coords="374,56,537,83"/>
-<area shape="rect" id="node6" href="$structCallable.html#a0e146c329fbdf8720a9541f60fe910e9" title=" " alt="" coords="403,107,507,133"/>
+<area shape="rect" id="node6" href="$structCallable.html#a0e146c329fbdf8720a9541f60fe910e9" title="Wird ausgeführt wenn der Call an der Reihe ist." alt="" coords="403,107,507,133"/>
 <area shape="rect" id="node8" href="$classCustomServo.html#a9ddb7875f2c036d6c4a06c4416e68fb2" title="Setzt Variablen, die benötigt werden um den Servo zu bewegen." alt="" coords="364,157,547,184"/>
 </map>
