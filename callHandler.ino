@@ -22,8 +22,8 @@ void CallHandler::deleteCalls()
 }
 /**
  * @brief Setzt die neuen Calls, die ausgeführt werden sollen
- * @note Calls werden im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert um sie zwischen Funktionen hin- und hergeben zu können und sie benutzen nachdem die Exekution abgeschlossen ist (bzw an das CallHandler Objekt). Sie müssen aber such manuell mithilfe von CallHandler::deleteCalls gelöscht werden
- * @warning nCalls darf auf keinen Fall größer als die tatsächliche Anzahl an Calls sein, sonst stürzt das Programm ab weil es versucht nicht vorhandene Calls auszuführen
+ * @note Calls werden im <a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/" target="_blank">Heap</a> gespeichert, um sie zwischen Funktionen hin- und hergeben zu können und sie zu benutzen nachdem die Exekution abgeschlossen ist (bzw an das CallHandler Objekt). Sie müssen aber such manuell mithilfe von CallHandler::deleteCalls gelöscht werden
+ * @warning nCalls darf auf keinen Fall größer als die tatsächliche Anzahl an Calls sein, sonst stürzt das Programm ab, weil es versucht nicht vorhandene Calls auszuführen
  * @param newCallPtrs 
  * @param nCalls 
  */
