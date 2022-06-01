@@ -22,7 +22,7 @@ const int ANGLE_LEFT_HOLE = 180;
 */
 const int ANGLE_RIGHT_HOLE = 90;
 /**
-   @brief Winkel der Ablagefläche für neue Bälle, die sortiert werden sollen
+   @brief Winkel der Ablagefläche für neue Bälle, die sortiert werden sollen.
 
 */
 const int ANGLE_CENTER = 130;
