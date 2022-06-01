@@ -1,8 +1,9 @@
 <map id="stopButtonClicked" name="stopButtonClicked">
 <area shape="rect" id="node1" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="5,81,145,108"/>
-<area shape="rect" id="node2" href="$classCallHandler.html#a49ab239f771b84300df21bd426788c3e" title="setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei" alt="" coords="193,5,372,32"/>
-<area shape="rect" id="node3" href="$classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0" title="Setzt die neuen Calls, die ausgeführt werden sollen." alt="" coords="203,56,362,83"/>
-<area shape="rect" id="node5" href="$sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8" title="Setzt die Farbe der RGB&#45;Led." alt="" coords="233,107,332,133"/>
-<area shape="rect" id="node6" href="$classCustomServo.html#a2504ffc997018dad9f3811b18b16c672" title="Stoppt den Servo." alt="" coords="210,157,355,184"/>
-<area shape="rect" id="node4" href="$structCallable.html#a0e146c329fbdf8720a9541f60fe910e9" title="Wird ausgeführt wenn der Call an der Reihe ist." alt="" coords="420,56,524,83"/>
+<area shape="rect" id="node2" href="$classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="193,5,389,32"/>
+<area shape="rect" id="node5" href="$sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8" title="Setzt die Farbe der RGB&#45;Led." alt="" coords="242,56,341,83"/>
+<area shape="rect" id="node6" href="$classCustomServo.html#ad0f2d2d481d21c4d97f333efa744e0e8" title="Lässt den Servo weiterlaufen." alt="" coords="218,107,365,133"/>
+<area shape="rect" id="node7" href="$classCustomServo.html#a2504ffc997018dad9f3811b18b16c672" title="Stoppt den Servo." alt="" coords="219,157,364,184"/>
+<area shape="rect" id="node3" href="$classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="437,5,653,32"/>
+<area shape="rect" id="node4" href="$classAnimatableLcd.html#ae9f318e41e16a8527eaeffa9500831ca" title="Eigene Lcd&#45;print funktion, die die Möglichkeit bietet eigene Characters in den Text einzufügen." alt="" coords="701,5,859,32"/>
 </map>

@@ -48,6 +48,7 @@ class CallHandler {//calls functions after a certain delay
    * 
    */
     bool running = false;
+    bool paused = false;
     void deleteCalls();
     void setCalls(Callable* newCallPtrs[], size_t nCalls);
     void update();

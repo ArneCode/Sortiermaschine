@@ -3,9 +3,10 @@
 <area shape="rect" id="node2" href="$classLcdLoadingAnim.html#a1dcb953ecdb84881d1c80769e7c3829c" title="Initialisierung der Ladeanimation." alt="" coords="227,6,385,33"/>
 <area shape="rect" id="node3" href="$classAnimatableLcd.html#aca170e34fe99df76f7a1e4f4241878c1" title="Überschreibt die standard print Funktion für String&amp;&amp;, das heißt der Text wird direkt als Argument ge..." alt="" coords="481,31,639,58"/>
 <area shape="rect" id="node4" href="$classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="452,82,668,109"/>
-<area shape="rect" id="node9" href="$classLcdLoadingAnim.html#a939368d0d51f766b20a82176294fba70" title="Aktualisiert die Ladeanimation, wird von loop() aufgerufen." alt="" coords="469,133,651,159"/>
+<area shape="rect" id="node10" href="$classLcdLoadingAnim.html#a939368d0d51f766b20a82176294fba70" title="Aktualisiert die Ladeanimation, wird von loop() aufgerufen." alt="" coords="469,133,651,159"/>
 <area shape="rect" id="node5" href="$classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="208,82,404,109"/>
-<area shape="rect" id="node6" href="$classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" title="Initialisiert die Punktanimation." alt="" coords="17,31,148,58"/>
-<area shape="rect" id="node7" href="$structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" title="gibt den String (LcdString::text) auf dem Lcd&#45;Display aus" alt="" coords="27,82,138,109"/>
-<area shape="rect" id="node8" href="$classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" title="Aktualisiert die Punktanimation, wird von loop() aufgerufen." alt="" coords="5,133,160,159"/>
+<area shape="rect" id="node6" href="$classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" title="Initialisiert die Punktanimation." alt="" coords="17,6,148,33"/>
+<area shape="rect" id="node7" href="$structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" title="gibt den String (LcdString::text) auf dem Lcd&#45;Display aus" alt="" coords="27,57,138,83"/>
+<area shape="rect" id="node8" href="$sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="13,107,153,134"/>
+<area shape="rect" id="node9" href="$classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" title="Aktualisiert die Punktanimation, wird von loop() aufgerufen." alt="" coords="5,158,160,185"/>
 </map>

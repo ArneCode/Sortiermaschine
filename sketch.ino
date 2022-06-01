@@ -205,15 +205,20 @@ void stopButtonClicked()
   if (isStopped) {
     Serial.println("stopping servo");
     servo.stop();
-    callHandler.deleteCalls();
-    /*static*/ auto call = new Callable*[1] {
+    callHandler.paused=true;
+    lcd.doAnimation=false;
+    lcd.printPretty("gestoppt, warte auf start");
+    /*callHandler.deleteCalls();
+    /*static auto call = new Callable*[1] {
       new LcdDotAnim("gestoppt, warte auf start", &lcd, 100000000000000) //ja, sollte ich vermutlich besser implementieren
     };
-    callHandler.setCalls(call, 1);
+    callHandler.setCalls(call, 1);*/
+
     setLedColor(255, 0, 0);
     doFlicker = false;
   } else {
-    callHandler.running = false;
+    callHandler.paused = false;
+    servo.start();
   }
 }
 /**
@@ -293,6 +298,7 @@ void setup()
 */
 void loop()
 {
+  
   callHandler.update();
   lcd.update();
   servo.updatePos();
@@ -334,6 +340,7 @@ void loop()
     case NOTHING:
       {
         Serial.println("nothing");
+        servo.write(ANGLE_CENTER);
         callHandler.deleteCalls();
         /*static*/ auto callsNothing = new Callable*[1] {
           new LcdString(String("Ball einlegen W:") + nWhite + String(" S:") + nBlack + String(" O:") + nOrange, &lcd, 1000)

@@ -1,11 +1,13 @@
 <map id="setup" name="setup">
 <area shape="rect" id="node1" title="Wird am Anfang des Programms aufgerufen." alt="" coords="5,81,64,108"/>
 <area shape="rect" id="node2" href="$classAnimatableLcd.html#a0f93bbf8c49a76e17272721e67a24b38" title="Überschreibt die normale lcd init function." alt="" coords="133,5,281,32"/>
-<area shape="rect" id="node3" href="$classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0" title="Setzt die neuen Calls, die ausgeführt werden sollen." alt="" coords="359,56,518,83"/>
+<area shape="rect" id="node3" href="$classCallHandler.html#afc5654ccaa266f3a81f8230afdb1c2a0" title="Setzt die neuen Calls, die ausgeführt werden sollen." alt="" coords="127,56,286,83"/>
 <area shape="rect" id="node5" href="$sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="137,107,277,133"/>
-<area shape="rect" id="node9" href="$classCustomServo.html#a95761db4177f965e756bdf725cb10ada" title="Steuert den Servo direkt an, enspricht dem normalen Servo::write" alt="" coords="112,157,301,184"/>
-<area shape="rect" id="node4" href="$structCallable.html#a0e146c329fbdf8720a9541f60fe910e9" title="Wird ausgeführt wenn der Call an der Reihe ist." alt="" coords="576,56,680,83"/>
-<area shape="rect" id="node6" href="$classCallHandler.html#a49ab239f771b84300df21bd426788c3e" title="setzt den Speicherplatz der von den Calls besetzt wurde mithilfe von delete frei" alt="" coords="349,107,528,133"/>
-<area shape="rect" id="node7" href="$sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8" title="Setzt die Farbe der RGB&#45;Led." alt="" coords="389,157,488,184"/>
-<area shape="rect" id="node8" href="$classCustomServo.html#a2504ffc997018dad9f3811b18b16c672" title="Stoppt den Servo." alt="" coords="366,208,511,235"/>
+<area shape="rect" id="node11" href="$classCustomServo.html#a95761db4177f965e756bdf725cb10ada" title="Steuert den Servo direkt an, enspricht dem normalen Servo::write" alt="" coords="112,157,301,184"/>
+<area shape="rect" id="node4" href="$structCallable.html#a0e146c329fbdf8720a9541f60fe910e9" title="Wird ausgeführt wenn der Call an der Reihe ist." alt="" coords="395,5,499,32"/>
+<area shape="rect" id="node6" href="$classAnimatableLcd.html#ad5509573d45cc84cda93b125fdca749e" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="349,56,545,83"/>
+<area shape="rect" id="node8" href="$sketch_8ino.html#a902e3350d6dfe8c210f24b31c7b284d8" title="Setzt die Farbe der RGB&#45;Led." alt="" coords="398,107,497,133"/>
+<area shape="rect" id="node9" href="$classCustomServo.html#ad0f2d2d481d21c4d97f333efa744e0e8" title="Lässt den Servo weiterlaufen." alt="" coords="374,157,521,184"/>
+<area shape="rect" id="node10" href="$classCustomServo.html#a2504ffc997018dad9f3811b18b16c672" title="Stoppt den Servo." alt="" coords="375,208,520,235"/>
+<area shape="rect" id="node7" href="$classAnimatableLcd.html#aaff767fb418dbc3e902dd4a1be3207a8" title="Gibt einen String zentriert auf dem Lcd&#45;Display aus." alt="" coords="593,56,809,83"/>
 </map>

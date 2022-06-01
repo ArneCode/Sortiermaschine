@@ -8,5 +8,6 @@ var classCallHandler =
     [ "currCallPtr", "classCallHandler.html#a090fccd59cdc5b99f5f17f1215c4fd29", null ],
     [ "lastCallPtr", "classCallHandler.html#a1bb0098f92adc006de8f8cd69c373fb2", null ],
     [ "lastCallT", "classCallHandler.html#a2c98c2be5b62fafe94b32e3a0f68c84d", null ],
+    [ "paused", "classCallHandler.html#a661d0bfb7f4db568304834ed0e33205a", null ],
     [ "running", "classCallHandler.html#ab56ebeeecd75a34d9fdda13fff68cda7", null ]
 ];

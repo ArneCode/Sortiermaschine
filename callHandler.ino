@@ -46,7 +46,7 @@ void CallHandler::setCalls(Callable* newCallPtrs[], size_t nCalls)
  */
 void CallHandler::update() 
 {
-  if (!running) {
+  if (!running||paused) {
     return;
   }
   time_t timePassed = millis() - lastCallT;
