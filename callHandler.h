@@ -48,6 +48,10 @@ class CallHandler {//calls functions after a certain delay
    * 
    */
     bool running = false;
+    /**
+     * @brief Gibt an, ob der Servo pausiert ist, wird zu true gesetzt, wenn der Stoppknopf gedrückt wird
+     * 
+     */
     bool paused = false;
     void deleteCalls();
     void setCalls(Callable* newCallPtrs[], size_t nCalls);
