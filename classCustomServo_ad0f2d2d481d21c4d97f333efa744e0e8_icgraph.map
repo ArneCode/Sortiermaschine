@@ -1,0 +1,5 @@
+<map id="CustomServo::start" name="CustomServo::start">
+<area shape="rect" id="node1" title="Lässt den Servo weiterlaufen." alt="" coords="300,5,447,32"/>
+<area shape="rect" id="node2" href="$sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="112,5,252,32"/>
+<area shape="rect" id="node3" href="$sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="Wird am Anfang des Programms aufgerufen." alt="" coords="5,5,64,32"/>
+</map>

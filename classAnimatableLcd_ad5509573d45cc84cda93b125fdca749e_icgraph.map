@@ -1,6 +1,8 @@
 <map id="AnimatableLcd::printPretty" name="AnimatableLcd::printPretty">
-<area shape="rect" id="node1" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="208,56,404,83"/>
-<area shape="rect" id="node2" href="$classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" title="Initialisiert die Punktanimation." alt="" coords="17,5,148,32"/>
-<area shape="rect" id="node3" href="$structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" title="gibt den String (LcdString::text) auf dem Lcd&#45;Display aus" alt="" coords="27,56,138,83"/>
-<area shape="rect" id="node4" href="$classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" title="Aktualisiert die Punktanimation, wird von loop() aufgerufen." alt="" coords="5,107,160,133"/>
+<area shape="rect" id="node1" title="gibt den Text &quot;schön&quot; aus, das heißt zentriert und mit automatischen Zeilenumbrüchen" alt="" coords="315,81,511,108"/>
+<area shape="rect" id="node2" href="$classLcdDotAnim.html#afad9c4d44a8a5ef9063e941fd97714e7" title="Initialisiert die Punktanimation." alt="" coords="124,5,255,32"/>
+<area shape="rect" id="node3" href="$structLcdString.html#aa391ea895fc2ec0a5dfe249226daa017" title="gibt den String (LcdString::text) auf dem Lcd&#45;Display aus" alt="" coords="134,56,245,83"/>
+<area shape="rect" id="node4" href="$sketch_8ino.html#abbbe19f80bf8227bbfbb68d98a1937cc" title="wird ausgeführt wenn der Stop&#45;Knopf gedrückt wird" alt="" coords="119,107,259,133"/>
+<area shape="rect" id="node6" href="$classLcdDotAnim.html#a7dc0b25c1a3729a5c6aa652fffcccb71" title="Aktualisiert die Punktanimation, wird von loop() aufgerufen." alt="" coords="112,157,267,184"/>
+<area shape="rect" id="node5" href="$sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="Wird am Anfang des Programms aufgerufen." alt="" coords="5,107,64,133"/>
 </map>
